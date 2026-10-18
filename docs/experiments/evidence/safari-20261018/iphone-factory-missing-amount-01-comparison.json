@@ -1,0 +1,6 @@
+{
+  "variant": "missing-amount",
+  "comparisonPassed": true,
+  "cases": 15,
+  "negativeControlDemonstrated": true
+}

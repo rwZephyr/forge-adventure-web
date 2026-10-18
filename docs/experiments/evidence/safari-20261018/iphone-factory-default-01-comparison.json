@@ -1,0 +1,25 @@
+{
+  "variant": "default",
+  "jvmMatch": false,
+  "expectedJvmRejection": "enum.trigger: mismatch in passed\nenum.trigger: mismatch in observations\nT1: mismatch in passed\nT1: mismatch in actualClass\nT1: mismatch in observations\nT2: mismatch in passed\nT2: mismatch in actualClass\nT2: mismatch in observations\nR1: mismatch in passed\nR1: mismatch in actualClass\nR1: mismatch in observations\nR2: mismatch in passed\nR2: mismatch in actualClass\nR2: mismatch in observations\nK2: mismatch in passed\nK2: mismatch in actualClass\nK2: mismatch in observations\nK3: mismatch in passed\nK3: mismatch in actualClass\nK3: mismatch in observations\nK4: mismatch in passed\nK4: mismatch in actualClass\nK4: mismatch in observations\nK5: mismatch in passed\nK5: mismatch in actualClass\nK5: mismatch in observations\ninvalid.trigger: mismatch in passed\ninvalid.trigger: mismatch in observations",
+  "chromiumCaseFieldsMatch": true,
+  "cases": 15,
+  "passedCases": 5,
+  "browserErrorTextDifferences": [
+    {
+      "id": "T1",
+      "chromium": "(JavaScript) TypeError: Cannot read properties of null (reading '$clone0')",
+      "safari": "(JavaScript) TypeError: null is not an object (evaluating 'fgt_TriggerType_$VALUES.$clone0')"
+    },
+    {
+      "id": "T2",
+      "chromium": "(JavaScript) TypeError: Cannot read properties of null (reading '$constructor')",
+      "safari": "(JavaScript) TypeError: null is not an object (evaluating '$this.$constructor')"
+    },
+    {
+      "id": "invalid.trigger",
+      "chromium": "(JavaScript) TypeError: Cannot read properties of null (reading '$clone0')",
+      "safari": "(JavaScript) TypeError: null is not an object (evaluating 'fgt_TriggerType_$VALUES.$clone0')"
+    }
+  ]
+}

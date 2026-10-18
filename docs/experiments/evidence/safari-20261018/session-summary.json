@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-18",
+  "timezone": "America/Vancouver",
+  "branch": "codex/safari-test-plan",
+  "spritePr": {
+    "commit": "57ed01d137e45ea2a304b64ef979402347cb0843",
+    "number": 8
+  },
+  "factoryPr": {
+    "commit": "226bb0fb6109a2a5f31b5dd931e8e1db3ac379c5",
+    "number": 11
+  },
+  "provenance": "Owner-operated actual iPhone Safari; user-pasted case JSON transcribed to files; screenshots preserved privately; shell verified artifacts, comparisons, listener and cleanup.",
+  "device": {
+    "settingsOsVersionIndependentlyVerified": false,
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.6.1 Mobile/15E148 Safari/604.1",
+    "versionInitiallyOwnerReported": "26.6.1",
+    "modelOwnerReported": "iPhone 14"
+  },
+  "sprite": {
+    "resetValuesCaptured": true,
+    "draggingOwnerReported": true,
+    "rotationInputOwnerReported": true,
+    "rendering": true,
+    "bothDrawChildOrdersCaptured": true,
+    "releaseOwnerReported": true,
+    "layoutLimitations": [
+      "Fixed 320x480 world and clamped drag bounds; landscape unused width",
+      "Header/footer overlap play area"
+    ],
+    "performance": "Owner reports response feels very good; no measured phone benchmark"
+  },
+  "factories": [
+    {
+      "variant": "explicit",
+      "firstExportPassedCases": 15,
+      "jvmComparisonPassed": true,
+      "ownerReportedRepeatLoads": 2,
+      "repeatConsoleErrorsOwnerReported": false,
+      "repeatPassedCases": 15,
+      "totalCases": 15
+    },
+    {
+      "repeatPassedCases": 14,
+      "ownerReportedRepeatLoads": 2,
+      "variant": "missing-amount",
+      "firstExportPassedCases": 14,
+      "onlyFailedCase": "K2",
+      "repeatConsoleCaptureOwnerConfirmedEmpty": true,
+      "expectedNegativeComparisonPassed": true,
+      "totalCases": 15
+    },
+    {
+      "variant": "default",
+      "jvmComparisonRejectedAsExpected": true,
+      "chromiumSemanticFieldsMatch": true,
+      "firstExportPassedCases": 5,
+      "totalCases": 15,
+      "browserErrorTextDifferentCases": [
+        "T1",
+        "T2",
+        "invalid.trigger"
+      ],
+      "ownerReportedRepeatLoads": 2,
+      "repeatPassedCases": 5,
+      "repeatConsoleCaptureSeparatelySupplied": false
+    }
+  ],
+  "network": {
+    "offModePagesAttempted": [
+      "spritegroup",
+      "factories/explicit"
+    ],
+    "freshCellularPageRequestSucceeded": true,
+    "freshOffModeHttpRequests": 0,
+    "factoryResultOwnerReported": "Blank screen waiting for timeout; no completed timeout claimed",
+    "otherFactoryOffModePagesNotSeparatelyAttempted": [
+      "default",
+      "missing-amount"
+    ],
+    "privateRelayWarningScreenshot": true,
+    "spriteTimeoutScreenshot": true,
+    "privacySettingsChanged": false
+  },
+  "cleanup": {
+    "serveFirewallNetworkSettingsChanged": false,
+    "method": "Ctrl+C to foreground demo server",
+    "originalDemoProcessGone": true,
+    "serveByteIdentical": true,
+    "verifiedUtc": "2026-10-18T13:50:39.9661756Z",
+    "remainingPort8765Listeners": 0
+  },
+  "draftPrsFinalRead": {
+    "pr8": {
+      "merged": false,
+      "draft": true,
+      "open": true
+    },
+    "pr11": {
+      "merged": false,
+      "draft": true,
+      "open": true
+    }
+  },
+  "stageBImplemented": false
+}
