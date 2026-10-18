@@ -1,0 +1,140 @@
+{
+  "sourceBaseline": "db893dcdb14fdd85a05437ad458dc70ef704ca2e",
+  "branch": "codex/spritegroup-teavm",
+  "jdk": "Oracle 17.0.12+8-LTS-286",
+  "maven": "3.9.16",
+  "gradle": "9.6.1",
+  "gdxTeavm": "1.6.1",
+  "gdx": "1.14.2",
+  "teavm": "0.15.0",
+  "rawLogs": [
+    {
+      "path": ".local-tools/logs/baseline-compile-20261017-223115.log",
+      "sha256": "5e2ebdd458963fd99f5570683ef7bd0810a989a92a6465de68c7f9bec414c8eb",
+      "success": true,
+      "summary": [
+        "[INFO] Reactor Summary for Forge Parent 2.0.16-SNAPSHOT:",
+        "[INFO] Forge Parent ....................................... SUCCESS [ 11.560 s]",
+        "[INFO] Forge Core ......................................... SUCCESS [ 12.939 s]",
+        "[INFO] Forge Game ......................................... SUCCESS [ 21.090 s]",
+        "[INFO] Forge AI ........................................... SUCCESS [  9.646 s]",
+        "[INFO] Forge Gui .......................................... SUCCESS [ 16.020 s]",
+        "[INFO] Forge Mobile ....................................... SUCCESS [ 24.274 s]",
+        "[INFO] Forge Mobile Dev ................................... SUCCESS [  5.171 s]",
+        "[INFO] BUILD SUCCESS",
+        "[INFO] Total time:  01:42 min"
+      ]
+    },
+    {
+      "path": ".local-tools/logs/baseline-compile-20261017-223536.log",
+      "sha256": "2a88710d47d9c3f7317d322f3e30399adf5468d0683f7b55f5af1cb69375ccd7",
+      "success": true,
+      "summary": [
+        "[INFO] Reactor Summary for Forge Parent 2.0.16-SNAPSHOT:",
+        "[INFO] Forge Parent ....................................... SUCCESS [  2.020 s]",
+        "[INFO] Forge Core ......................................... SUCCESS [ 10.483 s]",
+        "[INFO] Forge Game ......................................... SUCCESS [ 27.713 s]",
+        "[INFO] Forge AI ........................................... SUCCESS [  9.640 s]",
+        "[INFO] Forge Gui .......................................... SUCCESS [  9.246 s]",
+        "[INFO] Forge Mobile ....................................... SUCCESS [  9.607 s]",
+        "[INFO] Forge Mobile Dev ................................... SUCCESS [  2.027 s]",
+        "[INFO] BUILD SUCCESS",
+        "[INFO] Total time:  01:11 min"
+      ]
+    },
+    {
+      "path": ".local-tools/logs/baseline-test-20261017-223404.log",
+      "sha256": "84dfa6c8f3a10f8d9cc1b16e73e544bfe89622540456fccb5525a48797d2afb7",
+      "success": true,
+      "summary": [
+        "[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.701 s -- in TestSuite",
+        "[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0",
+        "[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.038 s -- in TestSuite",
+        "[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0",
+        "[INFO] Reactor Summary for Forge Parent 2.0.16-SNAPSHOT:",
+        "[INFO] Forge Parent ....................................... SUCCESS [  1.703 s]",
+        "[INFO] Forge Core ......................................... SUCCESS [  9.971 s]",
+        "[INFO] Forge Game ......................................... SUCCESS [ 14.009 s]",
+        "[INFO] Forge AI ........................................... SUCCESS [  3.983 s]",
+        "[INFO] Forge Gui .......................................... SUCCESS [ 19.010 s]",
+        "[INFO] Forge Mobile ....................................... SUCCESS [  8.592 s]",
+        "[INFO] Forge Mobile Dev ................................... SUCCESS [  1.682 s]",
+        "[INFO] BUILD SUCCESS",
+        "[INFO] Total time:  59.370 s"
+      ]
+    },
+    {
+      "path": ".local-tools/logs/browser-build-20261017-223310.log",
+      "sha256": "d3ebbc758ec88c69d9195d5d47ac804735710cad908ecbe3b722356df81b4112",
+      "success": true,
+      "summary": [
+        "BUILD SUCCESSFUL in 42s"
+      ]
+    },
+    {
+      "path": ".local-tools/logs/browser-build-20261017-223525.log",
+      "sha256": "5c5a5086a6f493afbb4ff966ef6040740aafc1a1e41b31ccbea332e39b427691",
+      "success": true,
+      "summary": [
+        "BUILD SUCCESSFUL in 1m 5s"
+      ]
+    }
+  ],
+  "artifact": {
+    "directory": "experiments/adventure-teavm/build/dist/js/webapp",
+    "fileCount": 398,
+    "totalBytes": 5283901,
+    "files": [
+      {
+        "path": "app.js",
+        "bytes": 1526119,
+        "sha256": "be2aad672aafddb9cd62a3b93be22f6ad7ba408f1136544c1764e0fa48d46ebf"
+      },
+      {
+        "path": "app.js.map",
+        "bytes": 193294,
+        "sha256": "e0e3603de04e342e0f07f2e61059f8b3f208e3fac081f85c7a408f292abc4ef7"
+      },
+      {
+        "path": "FORGE-LICENSE.txt",
+        "bytes": 35821,
+        "sha256": "81cbae84a29ce7e770bf2bc7b178e50bda0ce8de6067aba661b0bc7b05b562f8"
+      },
+      {
+        "path": "index.html",
+        "bytes": 2464,
+        "sha256": "eed617fd1fde5a0e45a533af2b700a4a78f9e3d9cbab3391220e6a887b93b9b5"
+      },
+      {
+        "path": "assets/sprites/treasure.atlas",
+        "bytes": 416,
+        "sha256": "8a3e940df9aefb853c9685ef4d21f31ca1f3dea35a429d5a64462e5c21247b9b"
+      },
+      {
+        "path": "assets/sprites/treasure.png",
+        "bytes": 18694,
+        "sha256": "79c3d4d6f833c6c009e06bc4f9b9bccab61be2489e7985ab33a372b8d1022b4d"
+      }
+    ],
+    "zip": {
+      "path": "experiments/adventure-teavm/build/spritegroup-web.zip",
+      "bytes": 1229431,
+      "sha256": "404876ea7d1a2f867ef513f414e2b46d84506632bb9e18a15148a459e92149ac"
+    }
+  },
+  "compiledApplicationClasses": [
+    "probe/SpriteGroupProbe$RecordingImage$1.class",
+    "probe/SpriteGroupProbe$RecordingImage.class",
+    "probe/SpriteGroupProbe.class",
+    "probe/WebLauncher$1.class",
+    "probe/WebLauncher.class",
+    "forge/adventure/stage/SpriteGroup$1.class",
+    "forge/adventure/stage/SpriteGroup.class"
+  ],
+  "browserExecution": "pending separate server approval; no runtime claim",
+  "originalSource": {
+    "path": "forge-gui-mobile/src/forge/adventure/stage/SpriteGroup.java",
+    "sha256": "60efe27b2d204d46e9f3a386f21cfdd4782f502fd4b6a5ecce0440be5c143582",
+    "sha256WithLFNewlines": "462ce28f1e1e6490b0ed7b5f6d237110dc1bd72f71ec691d0486e7d1c52973fc"
+  }
+}

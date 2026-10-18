@@ -1,0 +1,4 @@
+pluginManagement {
+    repositories { mavenCentral() }
+}
+rootProject.name = 'forge-adventure-spritegroup'

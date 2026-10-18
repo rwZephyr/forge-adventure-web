@@ -1,0 +1,59 @@
+plugins {
+    id 'java'
+    id 'com.github.xpenatan.gdx-teavm' version '1.6.1'
+}
+
+repositories { mavenCentral() }
+dependencies { implementation 'com.badlogicgames.gdx:gdx:1.14.2' }
+dependencyLocking { lockAllConfigurations() }
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+tasks.withType(JavaCompile).configureEach { options.release = 17 }
+
+// Compile the original file in place. Do not include other Forge classes or copy it.
+sourceSets.main.java {
+    setSrcDirs(['src/main/java', '../../forge-gui-mobile/src'])
+    include 'probe/**'
+    include 'forge/adventure/stage/SpriteGroup.java'
+}
+
+def fixtureAssets = tasks.register('prepareFixtureAssets', Sync) {
+    from('../../forge-gui/res/adventure/common/sprites') {
+        include 'treasure.atlas', 'treasure.png'
+        into 'sprites'
+    }
+    into layout.buildDirectory.dir('fixture-assets')
+}
+
+gdxTeaVM {
+    assets(layout.buildDirectory.dir('fixture-assets'))
+    js {
+        mainClass = 'probe.WebLauncher'
+        htmlTitle = 'Forge Adventure · SpriteGroup probe'
+        htmlWidth = 320
+        htmlHeight = 480
+        copyLoadingAsset = false
+        obfuscated = false
+        sourceMap = true
+        outOfProcess = false
+        // No dev server: only static artifact generation is authorized.
+        devServer { enabled = false }
+    }
+}
+tasks.named('compileJava') { dependsOn fixtureAssets }
+
+// Use our explicit page and include the upstream license with the local artifact.
+tasks.register('browserArtifact', Copy) {
+    dependsOn 'gdx_teavm_web_js_build'
+    from 'src/main/web'
+    from('../../LICENSE') { rename { 'FORGE-LICENSE.txt' } }
+    into layout.buildDirectory.dir('dist/js/webapp')
+}
+
+// A run task would open a listener. Refuse even accidental invocation here.
+tasks.matching { it.name.endsWith('_run') || it.name.toLowerCase().contains('devserver') }.configureEach {
+    enabled = false
+}

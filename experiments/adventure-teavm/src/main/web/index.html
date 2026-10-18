@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Forge Adventure · SpriteGroup probe</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: #0a0f19; color: #e4ebf5; font: 15px/1.4 system-ui, sans-serif; }
+    #canvas { display: block; width: 100%; height: 100%; touch-action: none; }
+    header, footer { position: fixed; left: 0; right: 0; padding: 16px max(16px, env(safe-area-inset-left)); pointer-events: none; }
+    header { top: 0; padding-top: max(16px, env(safe-area-inset-top)); }
+    footer { bottom: 0; padding-bottom: max(16px, env(safe-area-inset-bottom)); color: #a8b9ce; font-size: 12px; }
+    h1 { font-size: 18px; margin: 0 0 6px; }
+    p { margin: 0 0 6px; max-width: 36rem; }
+    .key { color: #94e3c5; }
+    #errors { color: #ffaaa0; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <canvas id="canvas" width="320" height="480" aria-label="Two draggable treasure sprites"></canvas>
+  <header>
+    <h1>Forge Adventure · SpriteGroup probe</h1>
+    <p>Drag a chest vertically past the other. The lower chest draws last.</p>
+    <p class="key">A: mint · B: amber. Reload to reset.</p>
+  </header>
+  <footer>
+    <p id="status">Loading the original treasure assets…</p>
+    <p>Original Forge component experiment. Adventure gameplay is not loaded.</p>
+    <p id="errors" role="alert"></p>
+  </footer>
+  <script>
+    window.__spriteGroupProbe = { started: performance.now(), ready: false, errors: [], intervals: [], orderChanges: 0 };
+    function recordError(message) {
+      window.__spriteGroupProbe.errors.push(String(message));
+      document.getElementById('errors').textContent = window.__spriteGroupProbe.errors.join('\n');
+    }
+    window.addEventListener('error', event => recordError(event.message));
+    window.addEventListener('unhandledrejection', event => recordError(event.reason));
+    document.getElementById('canvas').addEventListener('webglcontextlost', () => recordError('WebGL context lost'));
+    document.addEventListener('visibilitychange', () => { window.__spriteGroupProbe.lastFrame = null; });
+  </script>
+  <script src="app.js" onerror="recordError('Failed to load app.js')"></script>
+  <script>if (typeof main === 'function') main([]); else recordError('TeaVM entry point unavailable');</script>
+</body>
+</html>
