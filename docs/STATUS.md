@@ -135,12 +135,31 @@ compilation fails with 93 severe problems. Browser AI execution is blocked.**
   change. Independent reviews were read as assessments, not new executions.
 
 ## Next bounded step and handoff
+- The [embedded test extension plan](architecture/embedded-protocol-test-scope.md)
+  now narrows the immediate proposal to the existing
+  `ProtocolGuiGameInProcessTest`. No second gameplay harness or implementation.
+  Test-only HeadlessGuiDesktop and the single-thread sibling test are documented.
+- One unchanged-source offline baseline attempt on Silent: five preceding
+  modules pass, desktop stops resolving uncached
+  `org.codehaus.gmaven:groovy-maven-plugin:2.1.1`; exit 1, 33.786 seconds.
+  Selected test never compiled/ran. Full log/hash retained with the plan. No
+  dependency fetch, install, POM workaround or online retry was attempted.
+- Proposed additions: human target/manual-mana/cast/resolution and original AI
+  phase-loop/FutureTask witnesses, input/action thread identities, scoped
+  visibility assertions and unanswered-prompt negative control. Immediate
+  synchronous replies stay on their calling thread; controller clicks use EDT.
+  Raw Java views are private and are not a browser-safe payload.
+- Reconnect handling is excluded. ReplyPool's null completion and non-null-safe
+  callers are a separately documented blocker; prior same-prompt reconnect
+  acceptance is withdrawn. New source implementation requires review; any
+  missing dependency acquisition needs separate approval. Current changes are
+  documentation and baseline-attempt evidence only.
 - Review the completed actual-phone evidence; keep PRs #8 and #11 draft/unmerged.
 - Review first-slice actual results and the documented negative-control correction.
   The [reviewed scope](experiments/gate-2-stage-b-scope.md) is historical design;
   its zero-task negative assumption and predicted blockers now have actual evidence.
-- Review the architecture recommendation and proposed native browser/JVM duel
-  proof before implementation. The previous FutureTask canary recommendation
+- Review the architecture recommendation and existing embedded test extension
+  before implementation. The previous FutureTask canary recommendation
   remains historical and unimplemented; it is superseded as the immediate next
   step by the owner's architecture-review request. Any runtime/campaign boundary
   adaptation needs a separate concrete source diff and approval.
@@ -148,6 +167,7 @@ compilation fails with 93 severe problems. Browser AI execution is blocked.**
   completed single session. Whole-game porting, accounts, saves and unrelated
   services remain outside scope.
 - Current branch `codex/architecture-comparison` adds only the architecture
-  design and PROJECT/STATUS documentation updates, stacked on draft PR #15.
+  design, embedded-test plan/baseline-attempt evidence and PROJECT/STATUS
+  documentation updates, stacked on draft PR #15.
   Earlier draft PRs and successful experiments are unchanged and unmerged;
   no original Forge class/POM or asset changed.

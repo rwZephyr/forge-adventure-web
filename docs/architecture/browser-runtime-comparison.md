@@ -2,6 +2,16 @@
 
 2026-10-18. **Design only; no architecture has been implemented.**
 
+**Review update:** the next slice is now the [extension plan for the existing
+ProtocolGuiGameInProcessTest](embedded-protocol-test-scope.md), rather than a new
+harness or browser bridge. It already uses HostedMatch/ProtocolGuiGame/IRemote
+with test-only HeadlessGuiDesktop. The unchanged local baseline attempt is
+blocked by an uncached desktop Maven plugin; no test pass is claimed. Browser
+transport remains a later, unapproved step. The earlier reconnect acceptance
+target is withdrawn because current null-reply behavior cannot guarantee
+preservation of a pending prompt; that problem is documented separately in the
+extension plan.
+
 ## Recommendation and evidence
 
 Prefer a **native browser interface backed by the original JVM Forge engine**
@@ -213,8 +223,9 @@ Acceptance: three fresh successful runs of each positive scenario; separate
 negative; browser final projection agrees with Java assertions at every named
 revision; exact original path witnesses, no bypasses; no hidden AI hand/library
 identities in captured payloads; stale/duplicate actions cannot double-cast or
-pay twice; disconnect during a human prompt and reconnect recovers that prompt
-without mutating the game. Record startup/memory/payload sizes and browser
+pay twice. Reconnect is excluded pending a separate prompt/null-reply design;
+the existing cancellation path does not preserve every pending prompt.
+Record startup/memory/payload sizes and browser
 action-to-settled-state timings; use a provisional foreground loopback target
 of 500 ms for a simple human action excluding deliberation/AI time. Failure of
 that target is reported, not hidden by animation. Repeat on actual iPhone Safari
@@ -225,8 +236,11 @@ Before any listener: first test IRemote event capture and scripted replies
 in-process. Then request approval for exact temporary transport/listening scope
 and shutdown. Prefer an isolated additive browser target and reuse existing JVM
 GUI-platform dispatch/bootstrap initially (it may still require a local desktop
-runtime). The browser draws its own interface; no framebuffer/video/input
-streaming. **A new headless GuiBase implementation is not assumed or approved.**
+runtime). Existing HeadlessGuiDesktop in the test tree is a starting point for
+the in-process proof, with inherited Swing EDT and test dialog defaults;
+production headless hosting remains unproven. The browser would draw its own
+interface; no framebuffer/video/input streaming. **No new headless GuiBase
+implementation or production promotion of the test implementation is approved.**
 If original bootstrap cannot run without UI side effects or unexpectedly asks
 unhandled prompts, stop and report that boundary rather than stub it.
 
@@ -285,8 +299,8 @@ Evidence that would change the recommendation:
   First report the exact failing seam and costs, rather than assume either
   architecture is impossible.
 
-**Next decision:** review the duel bridge experiment and its bootstrap/transport
-scope. Both architectures remain unimplemented; all earlier drafts stay
+**Next decision:** review the existing embedded test's narrowly scoped extension
+before any bridge/transport work. Both architectures remain unimplemented; all earlier drafts stay
 unmerged. No shim, service, installation or network change follows from this
 recommendation without approval.
 
