@@ -1,6 +1,6 @@
 {
   "tool": "adventure-asset-scan",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "map": "forge-gui/res/adventure/common/maps/map/cave/cave_treasure.tmx",
   "plane_dir": "forge-gui/res/adventure/Shandalar",
   "common_dir": "forge-gui/res/adventure/common",
