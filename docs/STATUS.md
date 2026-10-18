@@ -1,6 +1,6 @@
 # Project status
 
-Last updated: 2026-10-17
+Last updated: 2026-10-18
 
 ## Current milestone
 **Gate 0 verified; Gate 1 verified on desktop Chromium, pending actual iPhone
@@ -57,19 +57,37 @@ has been demonstrated; Stage B remains unimplemented.
   or verified. Actual iPhone Safari remains pending its private arrangement.
 
 ## Next bounded assignment
-1. Agree on a private actual-iPhone Safari arrangement before enabling access.
-   Do not modify Silent's Tailscale or existing services without specific approval.
-2. Review Stage A's draft PR and its actual evidence; repeat the factory artifact
-   on actual Safari alongside PR #8's SpriteGroup artifact when arranged.
+1. Approve the [private Safari test plan](experiments/safari-private-test-plan.md)
+   before enabling access. Proposed: one temporary HTTP listener bound only to
+   Silent's Tailscale IPv4 on TCP 8765; no Serve/firewall/network changes.
+2. Stage A's Chromium results are accepted by the owner. Repeat the factory
+   artifact on actual Safari alongside PR #8's SpriteGroup artifact when arranged.
 3. Separately review/approve Stage B; localization/bootstrap, wider dependency
    reachability and threaded spell evaluation remain unproven. Do not start it yet.
 4. Keep PR #8 draft and unmerged. No whole-game port, custom rules, accounts,
    saves or unrelated services are part of this assignment.
 
+## Private Safari preparation (2026-10-18)
+- Separate local branch `codex/safari-test-plan`; no changes to PR #8/#11 branches.
+  Both PRs were rechecked: draft, open and unmerged.
+- Read-only inspection: existing Tailscale 1.102.2, preferred Tailscale IPv4,
+  existing HTTPS 443 Serve endpoint; proposed TCP 8765 currently unused.
+  Existing Python 3.12.10 will serve only an isolated artifact copy if approved.
+- Six SpriteGroup manifest hashes and 526 factory manifest hashes matched.
+  Offline staging copied 924 files, all checked byte-for-byte by SHA-256.
+  Proposed PowerShell command blocks parse. No listener was started; no
+  Tailscale, firewall, route, DNS, existing-service or dependency change occurred.
+- **Awaiting explicit listener approval.** Actual iPhone Safari, touch, tailnet
+  reachability and existing-firewall permission remain unverified. HTTP over
+  the encrypted tailnet does not test HTTPS secure-context-only APIs.
+- After approval: one coordinated phone session, preserve actual case evidence,
+  stop the demo process, verify no demo listener and unchanged Serve configuration.
+  If access is blocked, report it without changing network settings. Stage B waits.
+
 ## Handoff
-- **Branch:** `codex/gate2-factories`; draft Stage A implementation, no merges.
-- **Files:** experiments/rules-teavm, scoped ignore rules, this status and corrected
-  counts/constants in the approved design document.
-- **Verification:** original source preservation, offline compile, JVM comparator,
-  three TeaVM variants, actual Chromium results and deliberate fallback control.
-- **Next decision:** review results and agree on private phone access; Stage B waits.
+- **Branch:** `codex/safari-test-plan`; access plan only, based on PR #11.
+- **Files:** private Safari plan and this status; no game or experiment code changes.
+- **Verification:** prior Stage A compile/Chromium evidence plus offline artifact
+  identity/staging and read-only interface/Serve/port inspection.
+- **Next decision:** approve the proposed temporary listener for a coordinated
+  actual-iPhone session; PRs #8/#11 stay draft/unmerged and Stage B waits.
