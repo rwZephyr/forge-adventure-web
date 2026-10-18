@@ -6,11 +6,11 @@ Last checked: **2026-10-18**. The canonical upstream base `master` is still the 
 
 **Owner:** approves new work scopes, installs, network listeners, service changes and merges.
 
-**Codex (Silent, Windows 11):** primary runtime implementer. Bounded Stage B assignment: original Forge two-player Lightning Bolt/Mountain AI JVM comparator, constructor/dependency inventory and **unchanged** TeaVM compilation attempt. Three fresh positive fixtures and an empty-hand negative. Must preserve original AI `FutureTask` / `Thread` / timed-get, genuine payment/cast/resolution; if a compatibility adapter is required, stop and request separate approval.
+**Codex (Silent, Windows 11):** primary runtime implementer. Completed Stage B approved baseline in [PR #15](https://github.com/rwZephyr/forge-adventure-web/pull/15): 3/3 genuine original Forge JVM AI Bolt decisions/casts passed plus empty-hand no-spell control. Actual original `FutureTask` / named eval thread / timed get witnessed by shared-memory JDI. TeaVM compilation failed with 93 severe diagnostics; stopped without adapting engines or libraries. Next implementation or canary requires separate owner scope approval.
 
-**Muse/Marvin:** independent asset-scanner contributor. Its [PR #10](https://github.com/rwZephyr/forge-adventure-web/pull/10) contains stdlib scanner + unit tests + 9-file cave manifest. Follow-up review flags one path-safety hole: `--plane` or `--common` pointing outside `--root` may allow the probe to hash an external atlas before rejecting a child asset. Finish containment test and fix or document a deliberately different policy before relying on root containment. Don't implement Codex's Stage B.
+**Muse/Marvin:** independent asset-scanner contributor. Its [PR #10](https://github.com/rwZephyr/forge-adventure-web/pull/10) contains stdlib scanner + unit tests + 9-file cave manifest. Final v1.1.1 resolved the previously flagged external `--plane`/`--common` path-containment issue; 21/21 unit tests passed independently, and Muse reports the unchanged nine-file cave inventory. Muse separately reviewed PR #15's TeaVM diagnostics, finding roughly 13 statically reachable root-cause groups after filtering runtime-dead log paths. Assessment is a PR #15 comment; no second compilation and no authorized fix.
 
-**Claude (new account):** independent read-only Stage B review, not another broad repo audit or competing implementation. See onboarding prompt from owner; start with PR #13 and pinned Java source paths. Review TeaVM concurrency classlib and real call graph, identifying evidence, blockers, and minimal authentic compatibility approach.
+**Claude (new account):** Independent read-only concurrency review preserved in [draft PR #16](https://github.com/rwZephyr/forge-adventure-web/pull/16). Its minimal Java classlib compatibility assessment predated PR #15; missing concurrency components are now observed compile failures but remain unimplemented.
 
 **ChatGPT:** integrator, evidence assessment, team coordination, documentation, preparing reviewable PRs. The owner retains all approval/merge authority.
 
@@ -29,8 +29,10 @@ Last checked: **2026-10-18**. The canonical upstream base `master` is still the 
 | [#11](https://github.com/rwZephyr/forge-adventure-web/pull/11) | Factory Stage A implementation and records | Draft, on master |
 | [#12](https://github.com/rwZephyr/forge-adventure-web/pull/12) | Actual iPhone Safari evidence | Draft, **based on #11 head** |
 | [#13](https://github.com/rwZephyr/forge-adventure-web/pull/13) | Stage B JVM/TeaVM baseline scope | Draft, **based on #12 head** |
+| [#15](https://github.com/rwZephyr/forge-adventure-web/pull/15) | Stage B actual JVM AI and TeaVM compile diagnostics | Draft, **based on #13 head** |
+| [#16](https://github.com/rwZephyr/forge-adventure-web/pull/16) | Claude's independent read-only concurrency review | Draft, on master |
 
-The #11 → #12 → #13 branch stack is intentional for review, but merges/rebases need deliberate owner review and conflict resolution. Status edits are duplicated across different branches; do not overwrite or cherry-pick them uncritically.
+The #11 → #12 → #13 → #15 branch stack is intentional for review, but merges/rebases need deliberate owner review and conflict resolution. Status edits are duplicated across different branches; do not overwrite or cherry-pick them uncritically.
 
 ## Core technical boundaries
 
@@ -42,3 +44,7 @@ The #11 → #12 → #13 branch stack is intentional for review, but merges/rebas
 ## Contributing / reporting
 
 Use a separate branch and draft PR for each approved assignment. Never merge, edit someone else's branch, serve artifacts, change networking or install dependencies without explicit user approval. Keep hypotheses separate from actual compiler/browser results. Record exact commands, hashes, observed errors and limitations; attach source references. If running under a free plan or limited context, inspect the narrow sources/PRs relevant to your role rather than cloning or dumping entire Forge.
+
+## Architecture decision pending (after PR #15)
+
+The genuine, unchanged JVM rules/AI path works. Pinned TeaVM 0.15.0 does **not** compile that path, with 93 recorded severe diagnostics across resource, threading, logging/event, reflection and supporting-library APIs. Claude suggests a narrow concurrency seam merits exploration, while Muse's independent root-cause analysis argues that solving concurrency alone leaves too many other statically reachable gaps. Neither opinion is a second compiler/browser experiment, and static reachability is not proof a method runs in the fixture. The owner has not approved broad compatibility work or a browser/JVM architectural pivot. Consider a small source-based design review of the **real Forge Adventure-to-duel** and **game-state/UI interaction** seams before attempting any browser/JVM RPC proof, with strict separation from remote desktop streaming. Preserve the original Java engine, browser-native portrait UI, and isolated player sessions.
