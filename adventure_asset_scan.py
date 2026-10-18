@@ -26,7 +26,9 @@ plane-dir-then-common-dir lookup.
 
 Safety: every reference is resolved against --root and rejected (never
 traversed) when it is absolute, escapes --root via "..", or escapes via a
-symlink. Rejections always fail the scan, even with --allow-missing.
+symlink. The --plane/--common probe directories must themselves live inside
+--root (after symlink resolution) and are rejected before any asset is read.
+Rejections always fail the scan, even with --allow-missing.
 
 Reproducibility: the default manifest contains no absolute paths and no
 timestamps, so identical inputs produce byte-identical JSON. Pass --timestamp
@@ -43,7 +45,7 @@ import sys
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 
-TOOL_VERSION = "1.1.0"
+TOOL_VERSION = "1.1.1"
 
 IMAGE_EXTS = (".png", ".jpg", ".jpeg", ".bmp", ".gif")
 
@@ -88,11 +90,13 @@ def parse_atlas_images(atlas_path):
 class Scanner:
     def __init__(self, root, plane_dir=None, common_dir=None):
         # Canonical root: all references must stay inside it (after symlink
-        # resolution). plane/common are independent probe dirs and may live
-        # anywhere; candidates must stay inside their own probe dir.
+        # resolution). Probe dirs are independent inputs but must ALSO live
+        # inside root: otherwise runtime sprite probing could read an external
+        # atlas before any reference is rejected. Validated here, before any
+        # asset file is read.
         self.root = os.path.realpath(os.path.abspath(root))
-        self.plane_dir = os.path.realpath(os.path.abspath(plane_dir)) if plane_dir else None
-        self.common_dir = os.path.realpath(os.path.abspath(common_dir)) if common_dir else None
+        self.plane_dir = self._checked_probe_dir(plane_dir, "--plane")
+        self.common_dir = self._checked_probe_dir(common_dir, "--common")
         self.files = {}          # realpath -> record
         self.missing = {}        # realpath -> record
         self.rejected = []       # path-escape rejections (always fatal)
@@ -113,6 +117,18 @@ class Scanner:
             return os.path.commonpath([path, base]) == base
         except ValueError:
             return False  # e.g. different drives on Windows
+
+    def _checked_probe_dir(self, probe_dir, flag):
+        """Canonicalize a probe dir and require it inside --root. Raises
+        ValueError before any asset file is read."""
+        if not probe_dir:
+            return None
+        real = os.path.realpath(os.path.abspath(probe_dir))
+        if not self._within(real, self.root):
+            raise ValueError(
+                "%s directory is outside --root (%s): %s"
+                % (flag, self.root, probe_dir))
+        return real
 
     def resolve_ref(self, base_dir, source, ref_from):
         """Resolve a Tiled `source` attribute like Forge's getRelativeFileHandle
@@ -401,10 +417,12 @@ def main(argv=None):
                     help="designated repository root: manifest paths are relative "
                          "to it and no reference may escape it (default: cwd)")
     ap.add_argument("--plane",
-                    help="adventure plane dir, e.g. forge-gui/res/adventure/Shandalar "
+                    help="adventure plane dir inside --root, e.g. "
+                         "forge-gui/res/adventure/Shandalar "
                          "(used to probe 'sprite' property values like Config.getFile)")
     ap.add_argument("--common",
-                    help="adventure common dir, e.g. forge-gui/res/adventure/common")
+                    help="adventure common dir inside --root, e.g. "
+                         "forge-gui/res/adventure/common")
     ap.add_argument("--allow-missing", action="store_true",
                     help="tolerate missing files and dependency cycles (exit 0). "
                          "Parse errors, unreadable files and path escapes still fail.")
@@ -413,7 +431,12 @@ def main(argv=None):
                          "(off by default for byte-reproducible output)")
     args = ap.parse_args(argv)
 
-    scanner = Scanner(args.root, args.plane, args.common)
+    try:
+        scanner = Scanner(args.root, args.plane, args.common)
+    except ValueError as e:
+        # e.g. --plane/--common outside --root: rejected before any asset read.
+        print("error: %s" % e, file=sys.stderr)
+        return 2
 
     map_real = os.path.realpath(os.path.abspath(args.map))
     if not os.path.isfile(map_real):
