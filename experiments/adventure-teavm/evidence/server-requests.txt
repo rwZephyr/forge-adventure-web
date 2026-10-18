@@ -1,0 +1,31 @@
+Temporary server: python -m http.server 8765 --bind 127.0.0.1 --directory <repo>/experiments/adventure-teavm/build/dist/js/webapp
+Binding observed with netstat: TCP 127.0.0.1:8765 LISTENING, PID 30292.
+Corrected launcher requests and subsequent cached reload:
+127.0.0.1 - - [17/Oct/2026 22:48:10] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 22:48:10] "GET /app.js HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 22:48:10] "GET /scripts/howler.js HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 22:48:10] "GET /scripts/gdx.wasm.js HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 22:48:10] "GET /assets/sprites/treasure.atlas HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 22:48:10] "GET /assets/com/badlogic/gdx/graphics/g3d/particles/particles.fragment.glsl HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 22:48:10] "GET /assets/sprites/treasure.png HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 22:48:10] "GET /assets/com/badlogic/gdx/utils/lsans-15.png HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 22:48:10] "GET /assets/com/badlogic/gdx/utils/lsans-15.fnt HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 22:48:10] "GET /assets/com/badlogic/gdx/graphics/g3d/particles/particles.vertex.glsl HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 22:48:10] "GET /assets/com/badlogic/gdx/graphics/g3d/shaders/default.fragment.glsl HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 22:48:10] "GET /assets/com/badlogic/gdx/graphics/g3d/shaders/depth.fragment.glsl HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 22:48:10] "GET /assets/com/badlogic/gdx/graphics/g3d/shaders/depth.vertex.glsl HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 22:48:10] "GET /assets/com/badlogic/gdx/graphics/g3d/shaders/default.vertex.glsl HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 22:49:40] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [17/Oct/2026 22:49:40] "GET /app.js HTTP/1.1" 304 -
+127.0.0.1 - - [17/Oct/2026 22:49:41] "GET /scripts/gdx.wasm.js HTTP/1.1" 304 -
+127.0.0.1 - - [17/Oct/2026 22:49:41] "GET /scripts/howler.js HTTP/1.1" 304 -
+127.0.0.1 - - [17/Oct/2026 22:49:41] "GET /assets/sprites/treasure.atlas HTTP/1.1" 304 -
+127.0.0.1 - - [17/Oct/2026 22:49:41] "GET /assets/sprites/treasure.png HTTP/1.1" 304 -
+127.0.0.1 - - [17/Oct/2026 22:49:41] "GET /assets/com/badlogic/gdx/utils/lsans-15.fnt HTTP/1.1" 304 -
+127.0.0.1 - - [17/Oct/2026 22:49:41] "GET /assets/com/badlogic/gdx/utils/lsans-15.png HTTP/1.1" 304 -
+127.0.0.1 - - [17/Oct/2026 22:49:41] "GET /assets/com/badlogic/gdx/graphics/g3d/particles/particles.fragment.glsl HTTP/1.1" 304 -
+127.0.0.1 - - [17/Oct/2026 22:49:41] "GET /assets/com/badlogic/gdx/graphics/g3d/particles/particles.vertex.glsl HTTP/1.1" 304 -
+127.0.0.1 - - [17/Oct/2026 22:49:41] "GET /assets/com/badlogic/gdx/graphics/g3d/shaders/default.fragment.glsl HTTP/1.1" 304 -
+127.0.0.1 - - [17/Oct/2026 22:49:41] "GET /assets/com/badlogic/gdx/graphics/g3d/shaders/default.vertex.glsl HTTP/1.1" 304 -
+127.0.0.1 - - [17/Oct/2026 22:49:41] "GET /assets/com/badlogic/gdx/graphics/g3d/shaders/depth.fragment.glsl HTTP/1.1" 304 -
+127.0.0.1 - - [17/Oct/2026 22:49:41] "GET /assets/com/badlogic/gdx/graphics/g3d/shaders/depth.vertex.glsl HTTP/1.1" 304 -
