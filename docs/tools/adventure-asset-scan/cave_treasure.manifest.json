@@ -1,0 +1,151 @@
+{
+  "tool": "adventure-asset-scan",
+  "version": "1.0.0",
+  "map": "forge-gui/res/adventure/common/maps/map/cave/cave_treasure.tmx",
+  "root": "/home/hatch/workspace/forge-adventure-web",
+  "plane_dir": "forge-gui/res/adventure/Shandalar",
+  "common_dir": "forge-gui/res/adventure/common",
+  "generated_utc": "2026-10-18T06:07:31.000142+00:00",
+  "files": [
+    {
+      "path": "forge-gui/res/adventure/common/maps/map/cave/cave_treasure.tmx",
+      "kind": "tmx",
+      "size": 1580,
+      "sha256": "9741f85294d3a3db66fe5b4531eff11a5d18851d5dc122b733bce7fad90eda00",
+      "referenced_by": [],
+      "via": "static"
+    },
+    {
+      "path": "forge-gui/res/adventure/common/maps/obj/entry_up.tx",
+      "kind": "tx",
+      "size": 366,
+      "sha256": "d899755ad74aefe2f7df5afc28de4b15cd41ad4f51d4ea26474561b84039f2cf",
+      "referenced_by": [
+        "forge-gui/res/adventure/common/maps/map/cave/cave_treasure.tmx"
+      ],
+      "via": "static"
+    },
+    {
+      "path": "forge-gui/res/adventure/common/maps/obj/treasure.tx",
+      "kind": "tx",
+      "size": 985,
+      "sha256": "b080eb4f4d27e19388c57976bce7e75de7ca19c2df1219d77eba76bc4db0c9d8",
+      "referenced_by": [
+        "forge-gui/res/adventure/common/maps/map/cave/cave_treasure.tmx"
+      ],
+      "via": "static"
+    },
+    {
+      "path": "forge-gui/res/adventure/common/maps/tileset/buildings.png",
+      "kind": "image",
+      "size": 231923,
+      "sha256": "0c66ae0c8f97279030d7c62e6289d4249f5df3092e85588549cb42589ea8538e",
+      "referenced_by": [
+        "forge-gui/res/adventure/common/maps/tileset/buildings.tsx"
+      ],
+      "via": "static"
+    },
+    {
+      "path": "forge-gui/res/adventure/common/maps/tileset/buildings.tsx",
+      "kind": "tsx",
+      "size": 112669,
+      "sha256": "58feb218603bbc4dd760b1558e3ddb0c4dae3c92559eeaafddd02ee34e71f06b",
+      "referenced_by": [
+        "forge-gui/res/adventure/common/maps/map/cave/cave_treasure.tmx",
+        "forge-gui/res/adventure/common/maps/obj/entry_up.tx",
+        "forge-gui/res/adventure/common/maps/obj/treasure.tx"
+      ],
+      "via": "static"
+    },
+    {
+      "path": "forge-gui/res/adventure/common/maps/tileset/main.png",
+      "kind": "image",
+      "size": 790816,
+      "sha256": "86960714d0109a646d9317b4b93a25f422f3a0b4e54f687b1a70f9f8a0639815",
+      "referenced_by": [
+        "forge-gui/res/adventure/common/maps/tileset/main.tsx"
+      ],
+      "via": "static"
+    },
+    {
+      "path": "forge-gui/res/adventure/common/maps/tileset/main.tsx",
+      "kind": "tsx",
+      "size": 635866,
+      "sha256": "c7d6129873fbd05b04fccc09da11043311a9ae7a9532359066f21e6b7215ad7a",
+      "referenced_by": [
+        "forge-gui/res/adventure/common/maps/map/cave/cave_treasure.tmx"
+      ],
+      "via": "static"
+    },
+    {
+      "path": "forge-gui/res/adventure/common/sprites/treasure.atlas",
+      "kind": "atlas",
+      "size": 387,
+      "sha256": "ac4aa681d5d30b6efe4b9269b7c48646652dbe1aba43051120b04a2424a0fd1a",
+      "referenced_by": [],
+      "via": "runtime-probe"
+    },
+    {
+      "path": "forge-gui/res/adventure/common/sprites/treasure.png",
+      "kind": "image",
+      "size": 18694,
+      "sha256": "79c3d4d6f833c6c009e06bc4f9b9bccab61be2489e7985ab33a372b8d1022b4d",
+      "referenced_by": [
+        "forge-gui/res/adventure/common/sprites/treasure.atlas"
+      ],
+      "via": "runtime-probe"
+    }
+  ],
+  "missing": [],
+  "cycles": [],
+  "runtime_discovery": [
+    {
+      "kind": "map-reference",
+      "property": "teleport",
+      "value": "",
+      "source": "forge-gui/res/adventure/common/maps/obj/entry_up.tx",
+      "resolved": null,
+      "note": "Teleport target map name; resolved at runtime via Config.getCommonFilePath() in MapStage.loadMapFile(). Empty value = no teleport. Not recursed: target discovery is runtime plane logic."
+    },
+    {
+      "kind": "reward-spec",
+      "property": "reward",
+      "value": "[{\n  \"type\": \"randomCard\",\n  \"count\": 2,\n  \"colors\": [ \"colorID\" ]\n},{\n  \"type\": \"randomCard\",\n  \"count\": 1,\n  \"probability\": 0.5,\n  \"rarity\": [ \"rare\" ],\n  \"colors\": [ \"colorID\" ]\n},{\n  \"type\": \"randomCard\",\n  \"count\": 3,\n  \"addMaxCount\": 2\n}]",
+      "source": "forge-gui/res/adventure/common/maps/obj/treasure.tx",
+      "resolved": null,
+      "note": "Reward JSON resolved at runtime against the card database (e.g. randomCard specs); not a file dependency."
+    },
+    {
+      "kind": "sprite-atlas",
+      "property": "sprite",
+      "value": "sprites/treasure.atlas",
+      "source": "forge-gui/res/adventure/common/maps/obj/treasure.tx",
+      "resolved": {
+        "path": "forge-gui/res/adventure/common/sprites/treasure.atlas",
+        "size": 387,
+        "sha256": "ac4aa681d5d30b6efe4b9269b7c48646652dbe1aba43051120b04a2424a0fd1a"
+      },
+      "note": "Object 'sprite' property; resolved at runtime via Config.getFile(): plane dir, then common dir. When absent, MapStage.java substitutes code defaults ('sprites/portal.atlas' for portals, 'sprites/treasure.atlas' for rewards)."
+    },
+    {
+      "kind": "map-reference",
+      "property": "teleport",
+      "value": "",
+      "source": "forge-gui/res/adventure/common/maps/map/cave/cave_treasure.tmx",
+      "resolved": null,
+      "note": "Teleport target map name; resolved at runtime via Config.getCommonFilePath() in MapStage.loadMapFile(). Empty value = no teleport. Not recursed: target discovery is runtime plane logic."
+    }
+  ],
+  "errors": [],
+  "totals": {
+    "files": 9,
+    "static_files": 7,
+    "runtime_probed_files": 2,
+    "static_bytes": 1774205,
+    "runtime_probed_bytes": 19081,
+    "total_bytes": 1793286,
+    "missing": 0,
+    "duplicate_references": 2,
+    "cycles": 0
+  }
+}
