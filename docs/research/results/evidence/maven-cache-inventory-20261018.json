@@ -1,0 +1,733 @@
+{
+  "date": "2026-10-18",
+  "baselineCommit": "db893dcdb14fdd85a05437ad458dc70ef704ca2e",
+  "planReviewHead": "08e42ffb7d6496dd85552ea6947938e2ad9944be",
+  "method": "Read-only file inspection; published primary metadata for expected plugin closure; no Maven invocation or acquisition this task",
+  "cache": {
+    "relativePath": ".local-tools/m2",
+    "jarCount": 280,
+    "pomCount": 528,
+    "sortedPathAndContentSha256": "190e8a6eed6c39b530c087d0a365987b8e053a858e2d5772330a0565021e3c53"
+  },
+  "pluginExpectedCoordinatesNotResolved": [
+    {
+      "gav": "org.codehaus.gmaven:groovy-maven-plugin:2.1.1",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": false
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": []
+    },
+    {
+      "gav": "org.codehaus.gmaven:gmaven-adapter-api:2.1.1",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": false
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": []
+    },
+    {
+      "gav": "org.codehaus.gmaven:gmaven-adapter-impl:2.1.1",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": false
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": []
+    },
+    {
+      "gav": "org.slf4j:slf4j-api:1.7.5",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": false
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": [
+        "1.5.6",
+        "1.7.32",
+        "1.7.36",
+        "2.0.16"
+      ]
+    },
+    {
+      "gav": "com.google.guava:guava:14.0.1",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": false
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": [
+        "16.0.1",
+        "33.3.1-android",
+        "33.3.1-jre"
+      ]
+    },
+    {
+      "gav": "com.google.code.findbugs:jsr305:2.0.1",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": true,
+          "bytes": 965,
+          "sha256": "02c12c3c2ae12dd475219ff691c82a4d9ea21f44bc594a181295bf6d43dcfbb0"
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": [
+        "3.0.2"
+      ]
+    },
+    {
+      "gav": "org.codehaus.plexus:plexus-classworlds:2.4.2",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": false
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": [
+        "1.2-alpha-7",
+        "1.2-alpha-9",
+        "2.2.3",
+        "2.5.2",
+        "2.6.0"
+      ]
+    },
+    {
+      "gav": "org.codehaus.plexus:plexus-interpolation:1.16",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": false
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": [
+        "1.11",
+        "1.14",
+        "1.21",
+        "1.26"
+      ]
+    },
+    {
+      "gav": "org.eclipse.aether:aether-util:0.9.0.M2",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": false
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": [
+        "1.0.0.v20140518"
+      ]
+    },
+    {
+      "gav": "org.eclipse.aether:aether-api:0.9.0.M2",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": false
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": [
+        "1.0.0.v20140518"
+      ]
+    },
+    {
+      "gav": "org.sonatype.gossip:gossip-slf4j:1.8",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": false
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": []
+    },
+    {
+      "gav": "org.sonatype.gossip:gossip-core:1.8",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": false
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": []
+    },
+    {
+      "gav": "org.sonatype.gossip:gossip-bootstrap:1.8",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": false
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": []
+    },
+    {
+      "gav": "org.codehaus.groovy:groovy-all:2.4.9",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": false
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": []
+    },
+    {
+      "gav": "org.apache.ant:ant:1.9.4",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": false
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": []
+    },
+    {
+      "gav": "org.apache.ant:ant-launcher:1.9.4",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": false
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": []
+    },
+    {
+      "gav": "jline:jline:2.12",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": false
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": []
+    }
+  ],
+  "knownPluginParents": [
+    {
+      "gav": "org.codehaus.gmaven:gmaven:2.1.1",
+      "packaging": "pom",
+      "files": {
+        "pom": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": []
+    },
+    {
+      "gav": "com.planet57.buildsupport:public-parent:2",
+      "packaging": "pom",
+      "files": {
+        "pom": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": []
+    }
+  ],
+  "desktopDirectDependencies": [
+    {
+      "gav": "com.miglayout:miglayout-swing:4.2",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": false
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": [],
+      "scope": "compile"
+    },
+    {
+      "gav": "com.mortennobel:java-image-scaling:0.8.6",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": false
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": [],
+      "scope": "compile"
+    },
+    {
+      "gav": "org.testng:testng:7.10.2",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": true,
+          "bytes": 2602,
+          "sha256": "d6d51d678ad4cd3d5b228066ba0b88677976f10ad03521fe30433f2532461647"
+        },
+        "jar": {
+          "present": true,
+          "bytes": 987842,
+          "sha256": "225fd56447f2e5e439db3b483a79cd9f294fad9f357f8352b12ee6a3411ebb15"
+        }
+      },
+      "otherCachedVersions": [],
+      "scope": "test"
+    },
+    {
+      "gav": "org.mockito:mockito-core:5.14.2",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": true,
+          "bytes": 2467,
+          "sha256": "638e56a68f496879bc8a0f53cfbdf9c4cc39a45b6e438a333a5ea83c09ee9cfd"
+        },
+        "jar": {
+          "present": true,
+          "bytes": 707680,
+          "sha256": "2296141c1e1f2e1ae35c08d36a9ab4563ecd66e03533fe82630a764e7aa49182"
+        }
+      },
+      "otherCachedVersions": [],
+      "scope": "test"
+    },
+    {
+      "gav": "net.bytebuddy:byte-buddy:1.18.14",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": false
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": [
+        "1.14.18",
+        "1.15.4"
+      ],
+      "scope": "test"
+    },
+    {
+      "gav": "net.bytebuddy:byte-buddy-agent:1.18.14",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": false
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": [
+        "1.15.4"
+      ],
+      "scope": "test"
+    },
+    {
+      "gav": "org.objenesis:objenesis:3.4",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": false
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": [
+        "3.3"
+      ],
+      "scope": "test"
+    },
+    {
+      "gav": "org.freemarker:freemarker:2.3.33",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": false
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": [],
+      "scope": "compile"
+    },
+    {
+      "gav": "com.googlecode.soundlibs:jlayer:1.0.1.4",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": false
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": [],
+      "scope": "compile"
+    },
+    {
+      "gav": "com.beust:jcommander:1.82",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": true,
+          "bytes": 1511,
+          "sha256": "246344170b513b801ccf812234d4e1324a0f6ed2a81e90aa618913b66b9cc173"
+        },
+        "jar": {
+          "present": true,
+          "bytes": 88407,
+          "sha256": "deeac157c8de6822878d85d0c7bc8467a19cc8484d37788f7804f039dde280b1"
+        }
+      },
+      "otherCachedVersions": [],
+      "scope": "compile"
+    },
+    {
+      "gav": "com.sipgate:mp3-wav:1.0.4",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": false
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": [],
+      "scope": "compile"
+    },
+    {
+      "gav": "com.twelvemonkeys.imageio:imageio-jpeg:3.12.0",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": false
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": [],
+      "scope": "compile"
+    }
+  ],
+  "additionalLikelyProjectCoordinatesNotResolved": [
+    {
+      "gav": "com.miglayout:miglayout-core:4.2",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": false
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": []
+    },
+    {
+      "gav": "com.jhlabs:filters:2.0.235",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": false
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": []
+    },
+    {
+      "gav": "javazoom:jlayer:1.0.1",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": false
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": []
+    },
+    {
+      "gav": "com.googlecode.soundlibs:mp3spi:1.9.5.4",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": false
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": []
+    },
+    {
+      "gav": "com.googlecode.soundlibs:tritonus-share:0.3.7.4",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": false
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": []
+    },
+    {
+      "gav": "com.twelvemonkeys.imageio:imageio-core:3.12.0",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": false
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": []
+    },
+    {
+      "gav": "com.twelvemonkeys.imageio:imageio-metadata:3.12.0",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": false
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": []
+    },
+    {
+      "gav": "com.twelvemonkeys.common:common-lang:3.12.0",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": false
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": []
+    },
+    {
+      "gav": "com.twelvemonkeys.common:common-io:3.12.0",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": false
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": []
+    },
+    {
+      "gav": "com.twelvemonkeys.common:common-image:3.12.0",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": false
+        },
+        "jar": {
+          "present": false
+        }
+      },
+      "otherCachedVersions": []
+    }
+  ],
+  "cachedBuildAndProviderMarkers": [
+    {
+      "gav": "org.apache.maven.plugins:maven-resources-plugin:3.3.1",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": true,
+          "bytes": 8158,
+          "sha256": "3269d0a6e3cd614a29486f57fc86488b0f1e458a11bebc61f9408fd6c7cf85ae"
+        },
+        "jar": {
+          "present": true,
+          "bytes": 30951,
+          "sha256": "eb4069c7fe50a313b3f5295ccd214f30402f63971c26f443f7f3e798be8cc2a7"
+        }
+      },
+      "otherCachedVersions": []
+    },
+    {
+      "gav": "org.apache.maven.plugins:maven-compiler-plugin:3.8.1",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": true,
+          "bytes": 12473,
+          "sha256": "9c50ff65fb7ee9045bcf94eea07d4451d13acee678387de82547cddc4d05aae9"
+        },
+        "jar": {
+          "present": true,
+          "bytes": 62119,
+          "sha256": "d14731947840eec6facef2c8f3ca050ae6dd2ff4d071700e1e62ccfd510856bd"
+        }
+      },
+      "otherCachedVersions": []
+    },
+    {
+      "gav": "org.apache.maven.plugins:maven-surefire-plugin:3.1.2",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": true,
+          "bytes": 5452,
+          "sha256": "af6b01b48de15f2d4ded1e3884a0fdfd2deb4ef0156dccc6a2bfc13d3952c4ff"
+        },
+        "jar": {
+          "present": true,
+          "bytes": 43294,
+          "sha256": "079f1ce924197890598b651f515b8337261cb37a0714341ed5ff5b312736b316"
+        }
+      },
+      "otherCachedVersions": []
+    },
+    {
+      "gav": "org.codehaus.mojo:build-helper-maven-plugin:3.6.0",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": true,
+          "bytes": 8121,
+          "sha256": "3b8d3deb8f631259f2938af05d26a1ec05b34e5811ef7fd96f68d73bd259f558"
+        },
+        "jar": {
+          "present": true,
+          "bytes": 71946,
+          "sha256": "35922fb87521601144fe0b24b812d76a906df65aaa53d6f95962369fd39f4e74"
+        }
+      },
+      "otherCachedVersions": []
+    },
+    {
+      "gav": "org.apache.maven.plugins:maven-checkstyle-plugin:3.1.2",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": true,
+          "bytes": 15146,
+          "sha256": "abe58cb55c979f085f6e7391c9debf667bf055984ebb2b7297c605b5c6f8111a"
+        },
+        "jar": {
+          "present": true,
+          "bytes": 111625,
+          "sha256": "94c4db3bd08a23a90bf2ec19f2347f4625b2555bb1b79517cc40450286a88d1c"
+        }
+      },
+      "otherCachedVersions": []
+    },
+    {
+      "gav": "org.apache.maven.surefire:surefire-testng:3.1.2",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": true,
+          "bytes": 3646,
+          "sha256": "a24d347e02c7d96e4fcce0e8bae989057ce63e591f0ff68d5a5b65c32a4d9f30"
+        },
+        "jar": {
+          "present": true,
+          "bytes": 47087,
+          "sha256": "647cac581d6d23993851a250e55381c30435a07141d7cf563c5a6b4faaeb3290"
+        }
+      },
+      "otherCachedVersions": []
+    },
+    {
+      "gav": "org.apache.maven.surefire:surefire-testng-utils:3.1.2",
+      "packaging": "jar",
+      "files": {
+        "pom": {
+          "present": true,
+          "bytes": 3160,
+          "sha256": "5353d986cebed68cafb4abebfc2c9eb7a0dd3cb775b9b199e2c72883573fee47"
+        },
+        "jar": {
+          "present": true,
+          "bytes": 13693,
+          "sha256": "9d8c4b030787f8181784e0b5e9d1c3ca963b324cebf50df61f6484480b436de9"
+        }
+      },
+      "otherCachedVersions": []
+    }
+  ],
+  "bundledGradleGroovy": {
+    "version": "4.0.32",
+    "replacementPermitted": false
+  },
+  "missingPluginJars": 17,
+  "desktopDirectMissingJarAndPom": 9
+}

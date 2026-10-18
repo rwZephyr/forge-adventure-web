@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-18",
+  "branch": "codex/maven-baseline-inventory",
+  "headBeforeRun": "32b6a5d48475e76278b67637be36dadeb93c3182",
+  "baselineSourcePin": "db893dcdb14fdd85a05437ad458dc70ef704ca2e",
+  "protectedTrackedFileCount": 58903,
+  "protectedTrackedMapSha256": "68bf64dfc4deb89d743d178469efc326eb83fab25028af5ae5f843181ff474bf",
+  "protectedTrackedFilesUnchanged": true,
+  "outsideGeneratedFilesUnchanged": true,
+  "outsideGeneratedFileCount": 58905,
+  "toolConfigurationUnchanged": true,
+  "offlineCacheUnchanged": true,
+  "onlineNativeExit": 0,
+  "onlineWrapperRestorationFlag": false,
+  "onlineWrapperFlagExplanation": "PowerShell binds null string to empty on SetEnvironmentVariable; isolated reproduction confirmed. Child shell exited. Cleanup now explicitly removes originally absent process-only environment variables; no system environment was changed.",
+  "offlineNativeExit": 0,
+  "offlineEnvironmentRestored": true,
+  "surefireSuite": {
+    "name": "forge.net.embedded.ProtocolGuiGameInProcessTest",
+    "tests": "1",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "32.418"
+  },
+  "testCases": [
+    {
+      "name": "humanControllerRunsThroughInProcessRemote",
+      "classname": "forge.net.embedded.ProtocolGuiGameInProcessTest",
+      "time": "23.85"
+    }
+  ],
+  "criticalInputs": {
+    "pom.xml": {
+      "bytes": 16613,
+      "sha256": "8818d2be1bc10bbde37839ed7a350ce91a09bb02d7e8458296586eb72d8c27c1"
+    },
+    "forge-gui-desktop/pom.xml": {
+      "bytes": 36062,
+      "sha256": "c72f46fee22ee03e3f9a4e3c368b71cd8a7cd48583666ad9a4d057d42464e5d1"
+    },
+    ".mvn/maven.config": {
+      "bytes": 39,
+      "sha256": "b8662c62bd4e5f31f83fa07b1f5711156f557190617ee59c0fd1d3b6584fca4c"
+    },
+    ".mvn/local-settings.xml": {
+      "verifiedUnchanged": true,
+      "privateContentAndFingerprintNotPublished": true
+    },
+    "forge-gui-desktop/src/test/java/forge/net/embedded/ProtocolGuiGameInProcessTest.java": {
+      "bytes": 12985,
+      "sha256": "8d2fa79a91bbcb09c10a73ef650c0ca6308242cd594c7c1125e3804beb2f4154"
+    },
+    "forge-gui-desktop/src/test/java/forge/net/HeadlessGuiDesktop.java": {
+      "bytes": 5046,
+      "sha256": "e2f1687f7d8c92a459b308402f0d67e17f28ee15958546be8b7b350f6f3f9619"
+    },
+    "docs/architecture/embedded-protocol-test-scope.md": {
+      "bytes": 22974,
+      "sha256": "c24797f513d3f01316278b5feee72ca4f9366d0b3e999e9542baeb4989997e55"
+    }
+  },
+  "rawSurefireXmlSha256": "5e6a18222d8820fa19a3906f55945bd6a4739e36803c53b91f9bd970ef586266",
+  "mavenLogClaims": {
+    "fullStates": 3,
+    "stateDeltas": 30,
+    "eventDeltas": 30,
+    "rawEvents": 153,
+    "wrappedEvents": 0,
+    "newObjects": 193,
+    "changedObjects": 79,
+    "buttonPrompts": 19,
+    "blockingMethods": {
+      "getAbilityToPlay": 1
+    },
+    "observedBlockingThreads": [
+      "AWT-EventQueue-0"
+    ],
+    "newSelectedTransportClasses": []
+  },
+  "scopeLimits": [
+    "No Bolt extension",
+    "No FutureTask path witness in this baseline",
+    "No browser/transport/reconnect test",
+    "No additional tests run"
+  ],
+  "cleanup": {
+    "javaProcessesAfterRun": 0,
+    "serversStarted": false,
+    "networkOrServiceConfigurationChanged": false,
+    "systemEnvironmentChanged": false
+  }
+}

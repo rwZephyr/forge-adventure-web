@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-18",
+  "completeOriginalLogsLocation": ".local-tools/embedded-baseline-20261018/approved-run",
+  "rawSurefireReportLocation": "forge-gui-desktop/target/surefire-reports/TEST-forge.net.embedded.ProtocolGuiGameInProcessTest.xml",
+  "normalization": "Public text uses UTF-8/LF. Complete Maven log line order, output and outcomes retained except documented absolute-path substitutions. Surefire public copy omits system properties; original complete files remain locally. No private settings, profiles, downloaded artifacts or build outputs are published.",
+  "files": {
+    "acquired-artifacts.json": {
+      "bytes": 55683,
+      "sha256": "9cf78fb132fe243cea1d61d3e9d430052f1cd801e7f3a6776f69b1e46752d8cf"
+    },
+    "after-offline-changes.json": {
+      "bytes": 59813,
+      "sha256": "35d4b0c60b612c8014dbdad62647cf91e95923d52aa9e066c6997b13c70cdd6f"
+    },
+    "forge.net.embedded.ProtocolGuiGameInProcessTest.txt": {
+      "bytes": 344,
+      "sha256": "773315bc19a0d8d1d99b44876d6f141dc903f994706107b1b93d272326d4757d"
+    },
+    "offline-test-result.json": {
+      "bytes": 538,
+      "sha256": "f44ff34b390971b88a2884b901ef87939f376cef424e6c534c98404bb3c6e68d"
+    },
+    "offline-test.log": {
+      "bytes": 26940,
+      "sha256": "633f0b8f3b17b3284e404717f1d2782ae4fe813a9b5ab479fc51e3319d04f428"
+    },
+    "online-test-compile-result.json": {
+      "bytes": 416,
+      "sha256": "5a34a0588197f69d87948b5f053029a49efdafafed57fcbf2b2a23d799cac57e"
+    },
+    "online-test-compile.log": {
+      "bytes": 13943,
+      "sha256": "bf59f8cedfa14138896cf8fb692f9b7de150a9883c0d433eaaea55654f0ba297"
+    },
+    "surefire-result-without-system-properties.xml": {
+      "bytes": 12435,
+      "sha256": "c816db5746993a091a73972b692c46355b099db1449dbcc35d3a0482afc63774"
+    },
+    "testng-results.xml": {
+      "bytes": 1104,
+      "sha256": "7d65a33756949c2d09468799ab1d08a925b26c29d5d4b83d0c1936ac86ee05f6"
+    },
+    "verification-summary.json": {
+      "bytes": 3254,
+      "sha256": "f688470b341a1f6261ab8f93fa412de0bcf8c093e5e5b255b438fa23613379c4"
+    }
+  },
+  "publicationReview": {
+    "date": "2026-10-18",
+    "workspacePlaceholder": "<WORKSPACE> = absolute repository root, omitted for privacy",
+    "jdkPlaceholder": "<JDK17> = existing Oracle JDK 17 installation directory, omitted for privacy",
+    "pathSubstitutions": {
+      "docs/experiments/evidence/embedded-baseline-approved-20261018/offline-test-result.json": {
+        "<WORKSPACE>": 1
+      },
+      "docs/experiments/evidence/embedded-baseline-approved-20261018/offline-test.log": {
+        "<WORKSPACE>": 50,
+        "<JDK17>": 1
+      },
+      "docs/experiments/evidence/embedded-baseline-approved-20261018/online-test-compile-result.json": {
+        "<WORKSPACE>": 1
+      },
+      "docs/experiments/evidence/embedded-baseline-approved-20261018/online-test-compile.log": {
+        "<WORKSPACE>": 48,
+        "<JDK17>": 1
+      },
+      "docs/research/results/maven-baseline-results.md": {
+        "<JDK17>": 2
+      }
+    },
+    "credentialsOrTokensFound": false,
+    "urlUserInfoOrSensitiveQueriesFound": false,
+    "sourceOfPublicCopies": "Existing local evidence only; no downloads or test reruns"
+  }
+}

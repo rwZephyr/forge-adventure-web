@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="forge.net.embedded.ProtocolGuiGameInProcessTest" time="32.418" tests="1" errors="0" skipped="0" failures="0">
+  <testcase name="humanControllerRunsThroughInProcessRemote" classname="forge.net.embedded.ProtocolGuiGameInProcessTest" time="23.85">
+    <system-out>Language 'en-US' loaded successfully.
+(ThreadUtil first call): Running with priority 5
+Read cards: 34088 files in 2 ms (25 parts) using thread pool
+Read cards: 857 files in 0 ms (8 parts) using thread pool
+11:30:18 [INFO ] TestUtils: [TestConfig] checksum=stable, deltasync=on
+11:30:19 [INFO ] ProtocolGuiGame: Sending batch of 7: [GameEventZone x4, GameEventShuffle x2, GameEventFlipCoin]
+11:30:19 [INFO ] DeltaSyncManager: [DeltaSync] New objects: 163, Deltas: 0
+[in-process] prompt #1: 'Embedded, you have won the coin toss.  Would you like to play or draw?' buttons=[Play|Draw] turn=0 phase=null
+11:30:19 [INFO ] ProtocolGuiGame: Sending batch of 43: [GameEventGameStarted, GameEventZone x28, GameEventCardChangeZone x14]
+11:30:19 [INFO ] DeltaSyncManager: [DeltaSync] New objects: 28, Deltas: 2
+[in-process] prompt #2: 'Embedded, you are going first!  Do you want to keep your hand?' buttons=[Keep|Mulligan] turn=0 phase=null
+11:30:19 [INFO ] ProtocolGuiGame: Sending batch of 6: [GameEventAddLog x2, GameEventTurnBegan, GameEventTurnPhase x2, GameEventPlayerPriority]
+[in-process] prompt #3: 'Priority: Embedded Turn: 1 (Embedded) Phase: Upkeep step Stack: Empty' buttons=[OK|End Turn] turn=1 phase=UPKEEP
+11:30:19 [INFO ] ProtocolGuiGame: Sending batch of 4: [GameEventPlayerPriority x2, GameEventTurnPhase x2]
+[in-process] prompt #4: 'Priority: Embedded Turn: 1 (Embedded) Phase: Main phase, precombat Stack: Empty' buttons=[OK|End Turn] turn=1 phase=MAIN1
+11:30:19 [INFO ] ProtocolGuiGame: Sending batch of 14: [GameEventZone x10, GameEventAddLog, GameEventCardChangeZone, GameEventLandPlayed, GameEventPlayerPriority]
+[in-process] prompt #5: 'Priority: Embedded Turn: 1 (Embedded) Phase: Main phase, precombat Stack: Empty' buttons=[OK|Undo] turn=1 phase=MAIN1
+11:30:19 [INFO ] ProtocolGuiGame: Sending batch of 3: [GameEventPlayerPriority x2, GameEventTurnPhase]
+[in-process] prompt #6: 'Priority: Embedded Turn: 1 (Embedded) Phase: Beginning of Combat Step Stack: Empty' buttons=[OK|End Turn] turn=1 phase=COMBAT_BEGIN
+11:30:19 [INFO ] ProtocolGuiGame: Sending batch of 5: [GameEventPlayerPriority x2, GameEventTurnPhase, GameEventAttackersDeclared, GameEventCombatChanged]
+[in-process] prompt #7: 'Priority: Embedded Turn: 1 (Embedded) Phase: Declare Attackers Step Stack: Empty' buttons=[OK|End Turn] turn=1 phase=COMBAT_DECLARE_ATTACKERS
+11:30:19 [INFO ] ProtocolGuiGame: Sending batch of 6: [GameEventPlayerPriority x2, GameEventTurnPhase x4]
+11:30:19 [INFO ] DeltaSyncManager: [DeltaSync] Sampled checksum for seq=20: hash=-1710059755, props=[PaperFoil, SplitCard, Tapped, Remembered, PreparedSpell, Room, ManaCost, Loyalty, Defense, MaxLandPlay, Hand, IsExtraTurn, HasPriority, Turn, Phase]
+11:30:19 [INFO ] DeltaSyncManager: [DeltaSync]   Turn: 1 (snapshot), Phase: COMBAT_END (snapshot, current=COMBAT_END)
+11:30:19 [INFO ] DeltaSyncManager: [DeltaSync]   Player 0 (Embedded): Life=20, Hand=6, GY=0, BF=1
+11:30:19 [INFO ] DeltaSyncManager: [DeltaSync]   Player 1 (AI): Life=20, Hand=7, GY=0, BF=0
+[in-process] prompt #8: 'Priority: Embedded Turn: 1 (Embedded) Phase: End of Combat Step Stack: Empty' buttons=[OK|End Turn] turn=1 phase=COMBAT_END
+11:30:19 [INFO ] ProtocolGuiGame: Sending batch of 4: [GameEventPlayerPriority x2, GameEventCombatEnded, GameEventTurnPhase]
+[in-process] prompt #9: 'Priority: Embedded Turn: 1 (Embedded) Phase: Main phase, postcombat Stack: Empty' buttons=[OK|End Turn] turn=1 phase=MAIN2
+11:30:19 [INFO ] ProtocolGuiGame: Sending batch of 3: [GameEventPlayerPriority x2, GameEventTurnPhase]
+[in-process] prompt #10: 'Priority: Embedded Turn: 1 (Embedded) Phase: End step Stack: Empty' buttons=[OK|End Turn] turn=1 phase=END_OF_TURN
+11:30:19 [INFO ] ProtocolGuiGame: Sending batch of 2: [GameEventPlayerPriority, GameEventTurnPhase]
+11:30:19 [INFO ] ProtocolGuiGame: Sending batch of 5: [GameEventTurnEnded, GameEventTurnBegan, GameEventTurnPhase x2, GameEventPlayerPriority]
+11:30:19 [INFO ] ProtocolGuiGame: Sending batch of 1: [GameEventPlayerPriority]
+[in-process] prompt #11: 'Priority: Embedded Turn: 2 (AI) Phase: Upkeep step Stack: Empty' buttons=[OK|End Turn] turn=2 phase=UPKEEP
+11:30:19 [INFO ] ProtocolGuiGame: Sending batch of 5: [GameEventTurnPhase, GameEventZone x2, GameEventCardChangeZone, GameEventPlayerPriority]
+11:30:19 [INFO ] DeltaSyncManager: [DeltaSync] New objects: 2, Deltas: 3
+11:30:19 [INFO ] ProtocolGuiGame: Sending batch of 1: [GameEventPlayerPriority]
+[in-process] prompt #12: 'Priority: Embedded Turn: 2 (AI) Phase: Draw step Stack: Empty' buttons=[OK|End Turn] turn=2 phase=DRAW
+11:30:19 [INFO ] ProtocolGuiGame: Sending batch of 2: [GameEventTurnPhase, GameEventPlayerPriority]
+11:30:19 [INFO ] ProtocolGuiGame: Sending batch of 13: [GameEventZone x10, GameEventCardChangeZone, GameEventLandPlayed, GameEventPlayerPriority]
+11:30:20 [INFO ] ProtocolGuiGame: Sending batch of 1: [GameEventPlayerPriority]
+11:30:20 [INFO ] DeltaSyncManager: [DeltaSync] Sampled checksum for seq=40: hash=550098586, props=[Zone, Blocking, CommanderAltType, LethalDamage, ProtectingPlayer, ChosenDirection, Loyalty, NumDrawnThisTurn, Hand, Library, AttractionDeck, Turn, Phase, Mulligan, NumGamesInMatch]
+11:30:20 [INFO ] DeltaSyncManager: [DeltaSync]   Turn: 2 (snapshot), Phase: MAIN1 (snapshot, current=MAIN1)
+11:30:20 [INFO ] DeltaSyncManager: [DeltaSync]   Player 0 (Embedded): Life=20, Hand=6, GY=0, BF=1
+11:30:20 [INFO ] DeltaSyncManager: [DeltaSync]   Player 1 (AI): Life=20, Hand=7, GY=0, BF=1
+[in-process] prompt #13: 'Priority: Embedded Turn: 2 (AI) Phase: Main phase, precombat Stack: Empty' buttons=[OK|End Turn] turn=2 phase=MAIN1
+11:30:20 [INFO ] ProtocolGuiGame: Sending batch of 2: [GameEventTurnPhase, GameEventPlayerPriority]
+11:30:20 [INFO ] ProtocolGuiGame: Sending batch of 1: [GameEventPlayerPriority]
+[in-process] prompt #14: 'Priority: Embedded Turn: 2 (AI) Phase: Beginning of Combat Step Stack: Empty' buttons=[OK|End Turn] turn=2 phase=COMBAT_BEGIN
+11:30:20 [INFO ] ProtocolGuiGame: Sending batch of 4: [GameEventTurnPhase, GameEventAttackersDeclared, GameEventCombatChanged, GameEventPlayerPriority]
+11:30:20 [INFO ] ProtocolGuiGame: Sending batch of 1: [GameEventPlayerPriority]
+[in-process] prompt #15: 'Priority: Embedded Turn: 2 (AI) Phase: Declare Attackers Step Stack: Empty' buttons=[OK|End Turn] turn=2 phase=COMBAT_DECLARE_ATTACKERS
+11:30:20 [INFO ] ProtocolGuiGame: Sending batch of 5: [GameEventTurnPhase x4, GameEventPlayerPriority]
+11:30:20 [INFO ] ProtocolGuiGame: Sending batch of 1: [GameEventPlayerPriority]
+[in-process] prompt #16: 'Priority: Embedded Turn: 2 (AI) Phase: End of Combat Step Stack: Empty' buttons=[OK|End Turn] turn=2 phase=COMBAT_END
+11:30:20 [INFO ] ProtocolGuiGame: Sending batch of 3: [GameEventCombatEnded, GameEventTurnPhase, GameEventPlayerPriority]
+11:30:20 [INFO ] ProtocolGuiGame: Sending batch of 1: [GameEventPlayerPriority]
+[in-process] prompt #17: 'Priority: Embedded Turn: 2 (AI) Phase: Main phase, postcombat Stack: Empty' buttons=[OK|End Turn] turn=2 phase=MAIN2
+11:30:20 [INFO ] ProtocolGuiGame: Sending batch of 2: [GameEventTurnPhase, GameEventPlayerPriority]
+11:30:20 [INFO ] ProtocolGuiGame: Sending batch of 1: [GameEventPlayerPriority]
+11:30:20 [INFO ] DeltaSyncManager: [DeltaSync] Sampled checksum for seq=60: hash=-2050281822, props=[MergedCardsCollection, ProtectingPlayer, Remembered, WasDestroyed, Room, HiddenId, OriginalColors, SetCode, HasAnnihilator, NumLandThisTurn, AdditionalVillainousChoices, HasPriority, ActivatingPlayer, Ability, Phase]
+11:30:20 [INFO ] DeltaSyncManager: [DeltaSync]   Turn: 2 (snapshot), Phase: END_OF_TURN (snapshot, current=END_OF_TURN)
+11:30:20 [INFO ] DeltaSyncManager: [DeltaSync]   Player 0 (Embedded): Life=20, Hand=6, GY=0, BF=1
+11:30:20 [INFO ] DeltaSyncManager: [DeltaSync]   Player 1 (AI): Life=20, Hand=7, GY=0, BF=1
+[in-process] prompt #18: 'Priority: Embedded Turn: 2 (AI) Phase: End step Stack: Empty' buttons=[OK|End Turn] turn=2 phase=END_OF_TURN
+11:30:20 [INFO ] ProtocolGuiGame: Sending batch of 1: [GameEventTurnPhase]
+11:30:20 [INFO ] ProtocolGuiGame: Sending batch of 6: [GameEventTurnEnded, GameEventTurnBegan, GameEventTurnPhase x2, GameEventCardTapped, GameEventPlayerPriority]
+[in-process] prompt #19: 'Priority: Embedded Turn: 3 (Embedded) Phase: Upkeep step Stack: Empty' buttons=[OK|End Turn] turn=3 phase=UPKEEP
+Active player is no longer in the game...
+11:30:20 [INFO ] ProtocolGuiGame: Sending batch of 4: [GameEventPlayerControl x2, GameEventGameOutcome, GameEventGameFinished]
+[in-process] method counts: {getAbilityToPlay=1, updateButtons=19, clearWeaklySelectable=33, setGameView=3, openView=1, applyDelta=34, alertUser=17, awaitNextInput=17, showPromptMessage=19}
+[in-process] blocking calls: [getAbilityToPlay -&gt; Play land]
+[in-process] blocking threads: [AWT-EventQueue-0]
+[in-process] fullStates=3 deltasWithState=30 (new=193 changed=79) deltasWithEvents=30 rawEvents=153 wrapped=0
+[in-process] my battlefield: 1 card(s)
+[in-process] transport classes loaded by the game: [] (already loaded: [forge.gamemodes.net.server.RemoteClientGuiGame])
+</system-out>
+    <system-err>Upcoming set Marvel: Darkhold Destiny (MDD) dated in the future. All `upcoming` cards will be added to this set with unknown rarity.
+The card A-Alrund's Epiphany was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Baba Lysaga, Night Witch was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Divide by Zero was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Esika's Chariot was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Faceless Haven was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Fires of Invention was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Goldspan Dragon was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Hullbreaker Horror was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Kumano Faces Kakkazan was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Luminarch Aspirant was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Monster Manual was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Omnath, Locus of Creation was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-The Meathook Massacre was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Unholy Heat was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Blinding Radiance was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Goblin Bruiser was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Ogre Painbringer was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Titanic Pelagosaur was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Treetop Recluse was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+Upcoming set Marvel: Darkhold Destiny (MDD) dated in the future. All `upcoming` cards will be added to this set with unknown rarity.
+Unable to load music file: ..\forge-gui\res\music\match\Hitman.mp3
+[HeadlessGuiDesktop] Input: Personalize Forge Gameplay: By default, Forge will refer to you as the "Human" during gameplay.
+If you would prefer a different name please enter it now.
+</system-err>
+  </testcase>
+</testsuite>

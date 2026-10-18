@@ -1,0 +1,1518 @@
+{
+  "newFiles": 237,
+  "changedMetadata": [
+    "com/google/code/findbugs/jsr305/2.0.1/_remote.repositories"
+  ],
+  "removed": [],
+  "artifacts": [
+    {
+      "path": "com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.jar",
+      "coordinate": "com.google.code.findbugs:jsr305:2.0.1",
+      "kind": "jar",
+      "bytes": 31866,
+      "sha256": "1e7f53fa5b8b5c807e986ba335665da03f18d660802d8bf061823089d1bee468",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.pom"
+      }
+    },
+    {
+      "path": "com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.pom",
+      "coordinate": "com.google.guava:guava-parent:14.0.1",
+      "kind": "pom",
+      "bytes": 2555,
+      "sha256": "e5a525ed3b5d7fff2a8da9641e0cb985c7fdb847e3081e2a373daf2e70039b63",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.pom"
+      }
+    },
+    {
+      "path": "com/google/guava/guava/14.0.1/guava-14.0.1.jar",
+      "coordinate": "com.google.guava:guava:14.0.1",
+      "kind": "jar",
+      "bytes": 2189117,
+      "sha256": "d69df3331840605ef0e5fe4add60f2d28e870e3820937ea29f713d2035d9ab97",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.pom",
+        "inheritedFrom": "com.google.guava:guava-parent:14.0.1"
+      }
+    },
+    {
+      "path": "com/google/guava/guava/14.0.1/guava-14.0.1.pom",
+      "coordinate": "com.google.guava:guava:14.0.1",
+      "kind": "pom",
+      "bytes": 5376,
+      "sha256": "3dd4a992d53eb524a1c6546a24b853b332b26520755e26b25d38100131424b7b",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.pom",
+        "inheritedFrom": "com.google.guava:guava-parent:14.0.1"
+      }
+    },
+    {
+      "path": "com/googlecode/soundlibs/jlayer/1.0.1.4/jlayer-1.0.1.4.jar",
+      "coordinate": "com.googlecode.soundlibs:jlayer:1.0.1.4",
+      "kind": "jar",
+      "bytes": 140987,
+      "sha256": "863a51470ab4d581c6269dcd5a0471a226932ec5b2ef3f79fe86ab559387ac5c",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "LGPL 2.1 license",
+            "url": "http://www.opensource.org/licenses/lgpl-2.1.php"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/googlecode/soundlibs/soundlibs/1.4/soundlibs-1.4.pom",
+        "inheritedFrom": "com.googlecode.soundlibs:soundlibs:1.4"
+      }
+    },
+    {
+      "path": "com/googlecode/soundlibs/jlayer/1.0.1.4/jlayer-1.0.1.4.pom",
+      "coordinate": "com.googlecode.soundlibs:jlayer:1.0.1.4",
+      "kind": "pom",
+      "bytes": 1756,
+      "sha256": "96f6c6e455123ccd15b4f85d6f0c6e036e667fd90d4d1ea4fb62ac16b1805244",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "LGPL 2.1 license",
+            "url": "http://www.opensource.org/licenses/lgpl-2.1.php"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/googlecode/soundlibs/soundlibs/1.4/soundlibs-1.4.pom",
+        "inheritedFrom": "com.googlecode.soundlibs:soundlibs:1.4"
+      }
+    },
+    {
+      "path": "com/googlecode/soundlibs/mp3spi/1.9.5.4/mp3spi-1.9.5.4.jar",
+      "coordinate": "com.googlecode.soundlibs:mp3spi:1.9.5.4",
+      "kind": "jar",
+      "bytes": 34298,
+      "sha256": "f2bd4d0b63532b52eaf9c086528ed8379e5a8805af759c4dbdea5b7a40e4e87e",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "LGPL 2.1 license",
+            "url": "http://www.opensource.org/licenses/lgpl-2.1.php"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/googlecode/soundlibs/soundlibs/1.4/soundlibs-1.4.pom",
+        "inheritedFrom": "com.googlecode.soundlibs:soundlibs:1.4"
+      }
+    },
+    {
+      "path": "com/googlecode/soundlibs/mp3spi/1.9.5.4/mp3spi-1.9.5.4.pom",
+      "coordinate": "com.googlecode.soundlibs:mp3spi:1.9.5.4",
+      "kind": "pom",
+      "bytes": 2422,
+      "sha256": "5bf1abbc17a660c27c091e9d0282ea25e6bf357ab432a052345024e3c9c23936",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "LGPL 2.1 license",
+            "url": "http://www.opensource.org/licenses/lgpl-2.1.php"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/googlecode/soundlibs/soundlibs/1.4/soundlibs-1.4.pom",
+        "inheritedFrom": "com.googlecode.soundlibs:soundlibs:1.4"
+      }
+    },
+    {
+      "path": "com/googlecode/soundlibs/soundlibs/1.4/soundlibs-1.4.pom",
+      "coordinate": "com.googlecode.soundlibs:soundlibs:1.4",
+      "kind": "pom",
+      "bytes": 4664,
+      "sha256": "c7226b52a222da4e16e90fe93e8a6b98ef13df04c103df1434c7b2a357e0bb99",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "LGPL 2.1 license",
+            "url": "http://www.opensource.org/licenses/lgpl-2.1.php"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/googlecode/soundlibs/soundlibs/1.4/soundlibs-1.4.pom"
+      }
+    },
+    {
+      "path": "com/googlecode/soundlibs/tritonus-share/0.3.7.4/tritonus-share-0.3.7.4.jar",
+      "coordinate": "com.googlecode.soundlibs:tritonus-share:0.3.7.4",
+      "kind": "jar",
+      "bytes": 132760,
+      "sha256": "6f626b41dc72074656059de1a25bc6f1c5abb202b57d37c538f5714f54efdab4",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "LGPL 2.1 license",
+            "url": "http://www.opensource.org/licenses/lgpl-2.1.php"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/googlecode/soundlibs/soundlibs/1.4/soundlibs-1.4.pom",
+        "inheritedFrom": "com.googlecode.soundlibs:soundlibs:1.4"
+      }
+    },
+    {
+      "path": "com/googlecode/soundlibs/tritonus-share/0.3.7.4/tritonus-share-0.3.7.4.pom",
+      "coordinate": "com.googlecode.soundlibs:tritonus-share:0.3.7.4",
+      "kind": "pom",
+      "bytes": 1871,
+      "sha256": "9c3ab23a7f8dd3fc378dede09f5c3e91c5d17a727689591752a99eb09892c3a8",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "LGPL 2.1 license",
+            "url": "http://www.opensource.org/licenses/lgpl-2.1.php"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/googlecode/soundlibs/soundlibs/1.4/soundlibs-1.4.pom",
+        "inheritedFrom": "com.googlecode.soundlibs:soundlibs:1.4"
+      }
+    },
+    {
+      "path": "com/jhlabs/filters/2.0.235/filters-2.0.235.jar",
+      "coordinate": "com.jhlabs:filters:2.0.235",
+      "kind": "jar",
+      "bytes": 340318,
+      "sha256": "be6a1d54ebb043495e31e25e72b440f69156a5624cdd7e1c55c47e30d4fae308",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "Apache License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/jhlabs/filters/2.0.235/filters-2.0.235.pom"
+      }
+    },
+    {
+      "path": "com/jhlabs/filters/2.0.235/filters-2.0.235.pom",
+      "coordinate": "com.jhlabs:filters:2.0.235",
+      "kind": "pom",
+      "bytes": 1200,
+      "sha256": "b19a3da13f976143b4572f1ccf31cd13296c1f17e3abd1811855b5de5cf82569",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "Apache License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/jhlabs/filters/2.0.235/filters-2.0.235.pom"
+      }
+    },
+    {
+      "path": "com/miglayout/miglayout-core/4.2/miglayout-core-4.2.jar",
+      "coordinate": "com.miglayout:miglayout-core:4.2",
+      "kind": "jar",
+      "bytes": 66663,
+      "sha256": "bf69005361e7c282ac7508ce9e5b6caad46d7ada9946cd9b317ddbd3ebf9b2a2",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "BSD",
+            "url": "http://www.debian.org/misc/bsd.license"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/miglayout/miglayout-parent/4.2/miglayout-parent-4.2.pom",
+        "inheritedFrom": "com.miglayout:miglayout-parent:4.2"
+      }
+    },
+    {
+      "path": "com/miglayout/miglayout-core/4.2/miglayout-core-4.2.pom",
+      "coordinate": "com.miglayout:miglayout-core:4.2",
+      "kind": "pom",
+      "bytes": 617,
+      "sha256": "d33b3028abd827d2137da41dedf0f20cfbcc9dcb90c9287f070262f36433671a",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "BSD",
+            "url": "http://www.debian.org/misc/bsd.license"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/miglayout/miglayout-parent/4.2/miglayout-parent-4.2.pom",
+        "inheritedFrom": "com.miglayout:miglayout-parent:4.2"
+      }
+    },
+    {
+      "path": "com/miglayout/miglayout-parent/4.2/miglayout-parent-4.2.pom",
+      "coordinate": "com.miglayout:miglayout-parent:4.2",
+      "kind": "pom",
+      "bytes": 5690,
+      "sha256": "4718f26e03d73e41fb17d6e38e6f8ece6bb5a5f4c6d97f25fc37a99c941a2194",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "BSD",
+            "url": "http://www.debian.org/misc/bsd.license"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/miglayout/miglayout-parent/4.2/miglayout-parent-4.2.pom"
+      }
+    },
+    {
+      "path": "com/miglayout/miglayout-swing/4.2/miglayout-swing-4.2.jar",
+      "coordinate": "com.miglayout:miglayout-swing:4.2",
+      "kind": "jar",
+      "bytes": 14580,
+      "sha256": "7731416056d350b54ed5a5209d9a8728b5400080ccbd1f62b5b0d54d0d8435dd",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "BSD",
+            "url": "http://www.debian.org/misc/bsd.license"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/miglayout/miglayout-parent/4.2/miglayout-parent-4.2.pom",
+        "inheritedFrom": "com.miglayout:miglayout-parent:4.2"
+      }
+    },
+    {
+      "path": "com/miglayout/miglayout-swing/4.2/miglayout-swing-4.2.pom",
+      "coordinate": "com.miglayout:miglayout-swing:4.2",
+      "kind": "pom",
+      "bytes": 835,
+      "sha256": "2c709c9aea114ecd22c5a1fb33872ecc447c20b262e0cd2855649dbf7c76d404",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "BSD",
+            "url": "http://www.debian.org/misc/bsd.license"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/miglayout/miglayout-parent/4.2/miglayout-parent-4.2.pom",
+        "inheritedFrom": "com.miglayout:miglayout-parent:4.2"
+      }
+    },
+    {
+      "path": "com/mortennobel/java-image-scaling/0.8.6/java-image-scaling-0.8.6.jar",
+      "coordinate": "com.mortennobel:java-image-scaling:0.8.6",
+      "kind": "jar",
+      "bytes": 43656,
+      "sha256": "fabd02916eed5cd1cd5881d94970ea3c74e140b4c21acc6b640ddf3ed1472b95",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The BSD 3-Clause License",
+            "url": "http://opensource.org/licenses/BSD-3-Clause"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/mortennobel/java-image-scaling/0.8.6/java-image-scaling-0.8.6.pom"
+      }
+    },
+    {
+      "path": "com/mortennobel/java-image-scaling/0.8.6/java-image-scaling-0.8.6.pom",
+      "coordinate": "com.mortennobel:java-image-scaling:0.8.6",
+      "kind": "pom",
+      "bytes": 11907,
+      "sha256": "b567fa2dae5a7ecbcb64d935a990727ca92236779b51ddfae96dbd45cb596f5e",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The BSD 3-Clause License",
+            "url": "http://opensource.org/licenses/BSD-3-Clause"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/mortennobel/java-image-scaling/0.8.6/java-image-scaling-0.8.6.pom"
+      }
+    },
+    {
+      "path": "com/planet57/buildsupport/buildsupport/2/buildsupport-2.pom",
+      "coordinate": "com.planet57.buildsupport:buildsupport:2",
+      "kind": "pom",
+      "bytes": 22505,
+      "sha256": "452963207a1536c8caf086555f5dde99cc4982c8eb6ac0ad1d0345258dc53406",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "ASL2",
+            "url": "http://opensource.org/licenses/Apache-2.0"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/planet57/buildsupport/buildsupport/2/buildsupport-2.pom"
+      }
+    },
+    {
+      "path": "com/planet57/buildsupport/public-parent/2/public-parent-2.pom",
+      "coordinate": "com.planet57.buildsupport:public-parent:2",
+      "kind": "pom",
+      "bytes": 1390,
+      "sha256": "ca7177afb589433ff57fbc30992c42a8b565390d60f357da1bd6db692a57692c",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "ASL2",
+            "url": "http://opensource.org/licenses/Apache-2.0"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/planet57/buildsupport/public-parent/2/public-parent-2.pom"
+      }
+    },
+    {
+      "path": "com/sipgate/mp3-wav/1.0.4/mp3-wav-1.0.4.jar",
+      "coordinate": "com.sipgate:mp3-wav:1.0.4",
+      "kind": "jar",
+      "bytes": 5729,
+      "sha256": "bb4b17520540873741fa08614ff5b92c14b140b325002f5e9318473c47d88eee",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "Apache License, Version 2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/sipgate/mp3-wav/1.0.4/mp3-wav-1.0.4.pom"
+      }
+    },
+    {
+      "path": "com/sipgate/mp3-wav/1.0.4/mp3-wav-1.0.4.pom",
+      "coordinate": "com.sipgate:mp3-wav:1.0.4",
+      "kind": "pom",
+      "bytes": 5661,
+      "sha256": "bcc1eb51d145136914b2db7e636c975663b84910f18650a276e4f0a61c742afc",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "Apache License, Version 2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/sipgate/mp3-wav/1.0.4/mp3-wav-1.0.4.pom"
+      }
+    },
+    {
+      "path": "com/twelvemonkeys/common/common-image/3.12.0/common-image-3.12.0.jar",
+      "coordinate": "com.twelvemonkeys.common:common-image:3.12.0",
+      "kind": "jar",
+      "bytes": 79655,
+      "sha256": "62a3821c724fadfda346c1e2d83b0c506a0c4074be269a52bf4e3192c7dd92bc",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The BSD License",
+            "url": "https://github.com/haraldk/TwelveMonkeys#license"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/twelvemonkeys/twelvemonkeys/3.12.0/twelvemonkeys-3.12.0.pom",
+        "inheritedFrom": "com.twelvemonkeys.common:common:3.12.0"
+      }
+    },
+    {
+      "path": "com/twelvemonkeys/common/common-image/3.12.0/common-image-3.12.0.pom",
+      "coordinate": "com.twelvemonkeys.common:common-image:3.12.0",
+      "kind": "pom",
+      "bytes": 1310,
+      "sha256": "32fc63d184a5b14033ed9eae28f4c7f7570be8850c67ef34ab50c8a5bdea957f",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The BSD License",
+            "url": "https://github.com/haraldk/TwelveMonkeys#license"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/twelvemonkeys/twelvemonkeys/3.12.0/twelvemonkeys-3.12.0.pom",
+        "inheritedFrom": "com.twelvemonkeys.common:common:3.12.0"
+      }
+    },
+    {
+      "path": "com/twelvemonkeys/common/common-io/3.12.0/common-io-3.12.0.jar",
+      "coordinate": "com.twelvemonkeys.common:common-io:3.12.0",
+      "kind": "jar",
+      "bytes": 92346,
+      "sha256": "bfacfeb02acac47dbfd1fab0002eaeca65547d04249498b654320c9e0fdf6647",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The BSD License",
+            "url": "https://github.com/haraldk/TwelveMonkeys#license"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/twelvemonkeys/twelvemonkeys/3.12.0/twelvemonkeys-3.12.0.pom",
+        "inheritedFrom": "com.twelvemonkeys.common:common:3.12.0"
+      }
+    },
+    {
+      "path": "com/twelvemonkeys/common/common-io/3.12.0/common-io-3.12.0.pom",
+      "coordinate": "com.twelvemonkeys.common:common-io:3.12.0",
+      "kind": "pom",
+      "bytes": 1366,
+      "sha256": "5fb1b7a60aed026bfe16c2bbbb43039547dedd0d4e613e80127b93b4a2c56359",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The BSD License",
+            "url": "https://github.com/haraldk/TwelveMonkeys#license"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/twelvemonkeys/twelvemonkeys/3.12.0/twelvemonkeys-3.12.0.pom",
+        "inheritedFrom": "com.twelvemonkeys.common:common:3.12.0"
+      }
+    },
+    {
+      "path": "com/twelvemonkeys/common/common-lang/3.12.0/common-lang-3.12.0.jar",
+      "coordinate": "com.twelvemonkeys.common:common-lang:3.12.0",
+      "kind": "jar",
+      "bytes": 121817,
+      "sha256": "5c65e504b5b64d80683e0fa70a1dd154dd83d4de7da37f21e950f5a9c03bc66d",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The BSD License",
+            "url": "https://github.com/haraldk/TwelveMonkeys#license"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/twelvemonkeys/twelvemonkeys/3.12.0/twelvemonkeys-3.12.0.pom",
+        "inheritedFrom": "com.twelvemonkeys.common:common:3.12.0"
+      }
+    },
+    {
+      "path": "com/twelvemonkeys/common/common-lang/3.12.0/common-lang-3.12.0.pom",
+      "coordinate": "com.twelvemonkeys.common:common-lang:3.12.0",
+      "kind": "pom",
+      "bytes": 998,
+      "sha256": "9c515229cf4a4e5ef721da6347ffa19b9c027ad5de10799059405d7fa32d8d52",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The BSD License",
+            "url": "https://github.com/haraldk/TwelveMonkeys#license"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/twelvemonkeys/twelvemonkeys/3.12.0/twelvemonkeys-3.12.0.pom",
+        "inheritedFrom": "com.twelvemonkeys.common:common:3.12.0"
+      }
+    },
+    {
+      "path": "com/twelvemonkeys/common/common/3.12.0/common-3.12.0.pom",
+      "coordinate": "com.twelvemonkeys.common:common:3.12.0",
+      "kind": "pom",
+      "bytes": 1880,
+      "sha256": "da9ac9958bb74efa47d0402e8631c0c38763874a9530370ff57f073132c956ff",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The BSD License",
+            "url": "https://github.com/haraldk/TwelveMonkeys#license"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/twelvemonkeys/twelvemonkeys/3.12.0/twelvemonkeys-3.12.0.pom",
+        "inheritedFrom": "com.twelvemonkeys:twelvemonkeys:3.12.0"
+      }
+    },
+    {
+      "path": "com/twelvemonkeys/imageio/imageio-core/3.12.0/imageio-core-3.12.0.jar",
+      "coordinate": "com.twelvemonkeys.imageio:imageio-core:3.12.0",
+      "kind": "jar",
+      "bytes": 119909,
+      "sha256": "34c6f91bf3b217ed0115bce8283238fbd0264562aa682b4226a3960d0ede9815",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The BSD License",
+            "url": "https://github.com/haraldk/TwelveMonkeys#license"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/twelvemonkeys/twelvemonkeys/3.12.0/twelvemonkeys-3.12.0.pom",
+        "inheritedFrom": "com.twelvemonkeys.imageio:imageio:3.12.0"
+      }
+    },
+    {
+      "path": "com/twelvemonkeys/imageio/imageio-core/3.12.0/imageio-core-3.12.0.pom",
+      "coordinate": "com.twelvemonkeys.imageio:imageio-core:3.12.0",
+      "kind": "pom",
+      "bytes": 1800,
+      "sha256": "37d6adb7cd291e6f67f629f36bc6e91a257a5458e3ee581fec127f6992181b78",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The BSD License",
+            "url": "https://github.com/haraldk/TwelveMonkeys#license"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/twelvemonkeys/twelvemonkeys/3.12.0/twelvemonkeys-3.12.0.pom",
+        "inheritedFrom": "com.twelvemonkeys.imageio:imageio:3.12.0"
+      }
+    },
+    {
+      "path": "com/twelvemonkeys/imageio/imageio-jpeg/3.12.0/imageio-jpeg-3.12.0.jar",
+      "coordinate": "com.twelvemonkeys.imageio:imageio-jpeg:3.12.0",
+      "kind": "jar",
+      "bytes": 94514,
+      "sha256": "fc62f5d7df04d1af27dc7e5b74ea5f93c23b1013064ddd4e74879d709a9d859e",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The BSD License",
+            "url": "https://github.com/haraldk/TwelveMonkeys#license"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/twelvemonkeys/twelvemonkeys/3.12.0/twelvemonkeys-3.12.0.pom",
+        "inheritedFrom": "com.twelvemonkeys.imageio:imageio:3.12.0"
+      }
+    },
+    {
+      "path": "com/twelvemonkeys/imageio/imageio-jpeg/3.12.0/imageio-jpeg-3.12.0.pom",
+      "coordinate": "com.twelvemonkeys.imageio:imageio-jpeg:3.12.0",
+      "kind": "pom",
+      "bytes": 2035,
+      "sha256": "c2f529afb4414f992c372ec89d4c11b9c62a96ec3a8de811805a2cd72d643ffe",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The BSD License",
+            "url": "https://github.com/haraldk/TwelveMonkeys#license"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/twelvemonkeys/twelvemonkeys/3.12.0/twelvemonkeys-3.12.0.pom",
+        "inheritedFrom": "com.twelvemonkeys.imageio:imageio:3.12.0"
+      }
+    },
+    {
+      "path": "com/twelvemonkeys/imageio/imageio-metadata/3.12.0/imageio-metadata-3.12.0.jar",
+      "coordinate": "com.twelvemonkeys.imageio:imageio-metadata:3.12.0",
+      "kind": "jar",
+      "bytes": 83615,
+      "sha256": "797d026b67d07e6d5eb00a1ab53a55acaab6f80a71c5ee325572093eb90c0caa",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The BSD License",
+            "url": "https://github.com/haraldk/TwelveMonkeys#license"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/twelvemonkeys/twelvemonkeys/3.12.0/twelvemonkeys-3.12.0.pom",
+        "inheritedFrom": "com.twelvemonkeys.imageio:imageio:3.12.0"
+      }
+    },
+    {
+      "path": "com/twelvemonkeys/imageio/imageio-metadata/3.12.0/imageio-metadata-3.12.0.pom",
+      "coordinate": "com.twelvemonkeys.imageio:imageio-metadata:3.12.0",
+      "kind": "pom",
+      "bytes": 1373,
+      "sha256": "90852a8f3cf891906a8d28700bcfc443f1197758846e6ee5651d691c1342ae9c",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The BSD License",
+            "url": "https://github.com/haraldk/TwelveMonkeys#license"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/twelvemonkeys/twelvemonkeys/3.12.0/twelvemonkeys-3.12.0.pom",
+        "inheritedFrom": "com.twelvemonkeys.imageio:imageio:3.12.0"
+      }
+    },
+    {
+      "path": "com/twelvemonkeys/imageio/imageio/3.12.0/imageio-3.12.0.pom",
+      "coordinate": "com.twelvemonkeys.imageio:imageio:3.12.0",
+      "kind": "pom",
+      "bytes": 6671,
+      "sha256": "648eb6abdae996e5e1d248eacb51a4dcb603e2ec271cae8c8e1f0f9cba4af8f9",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The BSD License",
+            "url": "https://github.com/haraldk/TwelveMonkeys#license"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/twelvemonkeys/twelvemonkeys/3.12.0/twelvemonkeys-3.12.0.pom",
+        "inheritedFrom": "com.twelvemonkeys:twelvemonkeys:3.12.0"
+      }
+    },
+    {
+      "path": "com/twelvemonkeys/twelvemonkeys/3.12.0/twelvemonkeys-3.12.0.pom",
+      "coordinate": "com.twelvemonkeys:twelvemonkeys:3.12.0",
+      "kind": "pom",
+      "bytes": 14442,
+      "sha256": "b6d09874fbddd9bb250d17817a931ef8e093bc18e74286ff06b040541980c730",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The BSD License",
+            "url": "https://github.com/haraldk/TwelveMonkeys#license"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/com/twelvemonkeys/twelvemonkeys/3.12.0/twelvemonkeys-3.12.0.pom"
+      }
+    },
+    {
+      "path": "javazoom/jlayer/1.0.1/jlayer-1.0.1.jar",
+      "coordinate": "javazoom:jlayer:1.0.1",
+      "kind": "jar",
+      "bytes": 143624,
+      "sha256": "850508c837454a1b06017c32a36876fae516de1e89a829f725fee1e6dcc52000",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "GNU Lesser General Public License",
+            "url": "http://www.gnu.org/copyleft/lesser.html"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/javazoom/jlayer/1.0.1/jlayer-1.0.1.pom"
+      }
+    },
+    {
+      "path": "javazoom/jlayer/1.0.1/jlayer-1.0.1.pom",
+      "coordinate": "javazoom:jlayer:1.0.1",
+      "kind": "pom",
+      "bytes": 3981,
+      "sha256": "9446b97a9756af75e825cbc078c803e673a7c319ad7ca8b65f3aa9ef155d5c3a",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "GNU Lesser General Public License",
+            "url": "http://www.gnu.org/copyleft/lesser.html"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/javazoom/jlayer/1.0.1/jlayer-1.0.1.pom"
+      }
+    },
+    {
+      "path": "jline/jline/2.12/jline-2.12.jar",
+      "coordinate": "jline:jline:2.12",
+      "kind": "jar",
+      "bytes": 213854,
+      "sha256": "d34b45c8ca4359c65ae61e406339022e4731c739bc3448ce3999a60440baaa72",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The BSD License",
+            "url": "http://www.opensource.org/licenses/bsd-license.php"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/jline/jline/2.12/jline-2.12.pom"
+      }
+    },
+    {
+      "path": "jline/jline/2.12/jline-2.12.pom",
+      "coordinate": "jline:jline:2.12",
+      "kind": "pom",
+      "bytes": 16942,
+      "sha256": "49338c77a36bec898bfac24a82f6e5d2abd6b9751034d0db2dd45ae04c824ea5",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The BSD License",
+            "url": "http://www.opensource.org/licenses/bsd-license.php"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/jline/jline/2.12/jline-2.12.pom"
+      }
+    },
+    {
+      "path": "junit/junit/3.8.2/junit-3.8.2.jar",
+      "coordinate": "junit:junit:3.8.2",
+      "kind": "jar",
+      "bytes": 120640,
+      "sha256": "ecdcc08183708ea3f7b0ddc96f19678a0db8af1fb397791d484aed63200558b0",
+      "licenses": {
+        "licenses": [],
+        "sourcePom": ".local-tools/m2/junit/junit/3.8.2/junit-3.8.2.pom",
+        "note": "No license declared in cached POM"
+      }
+    },
+    {
+      "path": "junit/junit/3.8.2/junit-3.8.2.pom",
+      "coordinate": "junit:junit:3.8.2",
+      "kind": "pom",
+      "bytes": 747,
+      "sha256": "aede67999f02ac851c2a2ae8cec58f9d801f826ba20994df23a1d9fbecc47f0f",
+      "licenses": {
+        "licenses": [],
+        "sourcePom": ".local-tools/m2/junit/junit/3.8.2/junit-3.8.2.pom",
+        "note": "No license declared in cached POM"
+      }
+    },
+    {
+      "path": "net/bytebuddy/byte-buddy-agent/1.18.14/byte-buddy-agent-1.18.14.jar",
+      "coordinate": "net.bytebuddy:byte-buddy-agent:1.18.14",
+      "kind": "jar",
+      "bytes": 291381,
+      "sha256": "6f9159206c4c7950c7ce571b534dcc6457cc27b960146724fbe70c552dd55b97",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "Apache License, Version 2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/net/bytebuddy/byte-buddy-parent/1.18.14/byte-buddy-parent-1.18.14.pom",
+        "inheritedFrom": "net.bytebuddy:byte-buddy-parent:1.18.14"
+      }
+    },
+    {
+      "path": "net/bytebuddy/byte-buddy-agent/1.18.14/byte-buddy-agent-1.18.14.pom",
+      "coordinate": "net.bytebuddy:byte-buddy-agent:1.18.14",
+      "kind": "pom",
+      "bytes": 15539,
+      "sha256": "c8137c0744c2d26929b4be4b77c2e002d843372fd846eb7635bb27ed0217ada6",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "Apache License, Version 2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/net/bytebuddy/byte-buddy-parent/1.18.14/byte-buddy-parent-1.18.14.pom",
+        "inheritedFrom": "net.bytebuddy:byte-buddy-parent:1.18.14"
+      }
+    },
+    {
+      "path": "net/bytebuddy/byte-buddy-parent/1.18.14/byte-buddy-parent-1.18.14.pom",
+      "coordinate": "net.bytebuddy:byte-buddy-parent:1.18.14",
+      "kind": "pom",
+      "bytes": 82413,
+      "sha256": "49760cc69a72f350e8ff0b150a78e7e85c6bcb3bf8caba89d4322caed5330a53",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "Apache License, Version 2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/net/bytebuddy/byte-buddy-parent/1.18.14/byte-buddy-parent-1.18.14.pom"
+      }
+    },
+    {
+      "path": "net/bytebuddy/byte-buddy/1.18.14/byte-buddy-1.18.14.jar",
+      "coordinate": "net.bytebuddy:byte-buddy:1.18.14",
+      "kind": "jar",
+      "bytes": 4658001,
+      "sha256": "b7f2b2f111c6ddc09d3d9718ca5895dde16217bb4e5f2d2a6eb571f274909a82",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "Apache License, Version 2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/net/bytebuddy/byte-buddy-parent/1.18.14/byte-buddy-parent-1.18.14.pom",
+        "inheritedFrom": "net.bytebuddy:byte-buddy-parent:1.18.14"
+      }
+    },
+    {
+      "path": "net/bytebuddy/byte-buddy/1.18.14/byte-buddy-1.18.14.pom",
+      "coordinate": "net.bytebuddy:byte-buddy:1.18.14",
+      "kind": "pom",
+      "bytes": 21175,
+      "sha256": "b62c1fedb52a9b9aec6866b13c81b4ed6b7085ae6fe2a0d1c95e60b97a210bf9",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "Apache License, Version 2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/net/bytebuddy/byte-buddy-parent/1.18.14/byte-buddy-parent-1.18.14.pom",
+        "inheritedFrom": "net.bytebuddy:byte-buddy-parent:1.18.14"
+      }
+    },
+    {
+      "path": "org/apache/ant/ant-launcher/1.9.4/ant-launcher-1.9.4.jar",
+      "coordinate": "org.apache.ant:ant-launcher:1.9.4",
+      "kind": "jar",
+      "bytes": 18381,
+      "sha256": "7bccea20b41801ca17bcbc909a78c835d0f443f12d639c77bd6ae3d05861608d",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/apache/ant/ant-parent/1.9.4/ant-parent-1.9.4.pom",
+        "inheritedFrom": "org.apache.ant:ant-parent:1.9.4"
+      }
+    },
+    {
+      "path": "org/apache/ant/ant-launcher/1.9.4/ant-launcher-1.9.4.pom",
+      "coordinate": "org.apache.ant:ant-launcher:1.9.4",
+      "kind": "pom",
+      "bytes": 2335,
+      "sha256": "c9193ed600adc6c7943a6c6dc6bd952edcb5f10fb2cda594b7199766fdeef698",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/apache/ant/ant-parent/1.9.4/ant-parent-1.9.4.pom",
+        "inheritedFrom": "org.apache.ant:ant-parent:1.9.4"
+      }
+    },
+    {
+      "path": "org/apache/ant/ant-parent/1.9.4/ant-parent-1.9.4.pom",
+      "coordinate": "org.apache.ant:ant-parent:1.9.4",
+      "kind": "pom",
+      "bytes": 5603,
+      "sha256": "a93aa9c66665872b0e51360c15ae282971e36a8aa987b40ef4d82d9a5aa151c4",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/apache/ant/ant-parent/1.9.4/ant-parent-1.9.4.pom"
+      }
+    },
+    {
+      "path": "org/apache/ant/ant/1.9.4/ant-1.9.4.jar",
+      "coordinate": "org.apache.ant:ant:1.9.4",
+      "kind": "jar",
+      "bytes": 2019274,
+      "sha256": "649ae0730251de07b8913f49286d46bba7b92d47c5f332610aa426c4f02161d8",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/apache/ant/ant-parent/1.9.4/ant-parent-1.9.4.pom",
+        "inheritedFrom": "org.apache.ant:ant-parent:1.9.4"
+      }
+    },
+    {
+      "path": "org/apache/ant/ant/1.9.4/ant-1.9.4.pom",
+      "coordinate": "org.apache.ant:ant:1.9.4",
+      "kind": "pom",
+      "bytes": 9625,
+      "sha256": "5ce23a18f28d04be351f863020da0136214218aface05560516b97555a5077fd",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/apache/ant/ant-parent/1.9.4/ant-parent-1.9.4.pom",
+        "inheritedFrom": "org.apache.ant:ant-parent:1.9.4"
+      }
+    },
+    {
+      "path": "org/codehaus/gmaven/gmaven-adapter-api/2.1.1/gmaven-adapter-api-2.1.1.jar",
+      "coordinate": "org.codehaus.gmaven:gmaven-adapter-api:2.1.1",
+      "kind": "jar",
+      "bytes": 7279,
+      "sha256": "762dd461c9293b79f802728f360d385012ee0121d8d76a049849cc396801bc6c",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "ASLv2",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/codehaus/gmaven/gmaven/2.1.1/gmaven-2.1.1.pom",
+        "inheritedFrom": "org.codehaus.gmaven:gmaven:2.1.1"
+      }
+    },
+    {
+      "path": "org/codehaus/gmaven/gmaven-adapter-api/2.1.1/gmaven-adapter-api-2.1.1.pom",
+      "coordinate": "org.codehaus.gmaven:gmaven-adapter-api:2.1.1",
+      "kind": "pom",
+      "bytes": 1740,
+      "sha256": "dccc6bb8f4b145ec3e38545f9dd0699a6c978178b807759690a1f4f4a9fc0ed7",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "ASLv2",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/codehaus/gmaven/gmaven/2.1.1/gmaven-2.1.1.pom",
+        "inheritedFrom": "org.codehaus.gmaven:gmaven:2.1.1"
+      }
+    },
+    {
+      "path": "org/codehaus/gmaven/gmaven-adapter-impl/2.1.1/gmaven-adapter-impl-2.1.1.jar",
+      "coordinate": "org.codehaus.gmaven:gmaven-adapter-impl:2.1.1",
+      "kind": "jar",
+      "bytes": 16356,
+      "sha256": "0f6e0d7ff3d6f03db310d1058a4ea5208f0427c498b52b2ee6edf7af1ea27844",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "ASLv2",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/codehaus/gmaven/gmaven/2.1.1/gmaven-2.1.1.pom",
+        "inheritedFrom": "org.codehaus.gmaven:gmaven:2.1.1"
+      }
+    },
+    {
+      "path": "org/codehaus/gmaven/gmaven-adapter-impl/2.1.1/gmaven-adapter-impl-2.1.1.pom",
+      "coordinate": "org.codehaus.gmaven:gmaven-adapter-impl:2.1.1",
+      "kind": "pom",
+      "bytes": 2587,
+      "sha256": "d4082b5dea0219a1ee0534c1fef3589ed3a561509bec0bcd4cda4f1a4704c540",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "ASLv2",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/codehaus/gmaven/gmaven/2.1.1/gmaven-2.1.1.pom",
+        "inheritedFrom": "org.codehaus.gmaven:gmaven:2.1.1"
+      }
+    },
+    {
+      "path": "org/codehaus/gmaven/gmaven/2.1.1/gmaven-2.1.1.pom",
+      "coordinate": "org.codehaus.gmaven:gmaven:2.1.1",
+      "kind": "pom",
+      "bytes": 17054,
+      "sha256": "6bf1eabf7477b4292a6a06723e94580af65944d79754587160facca25ed6ffc2",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "ASLv2",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/codehaus/gmaven/gmaven/2.1.1/gmaven-2.1.1.pom"
+      }
+    },
+    {
+      "path": "org/codehaus/gmaven/groovy-maven-plugin/2.1.1/groovy-maven-plugin-2.1.1.jar",
+      "coordinate": "org.codehaus.gmaven:groovy-maven-plugin:2.1.1",
+      "kind": "jar",
+      "bytes": 38133,
+      "sha256": "db0d90051ffcd5f7e144be619a582ca4160249d507e83f9b90dce1632330fff5",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "ASLv2",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/codehaus/gmaven/gmaven/2.1.1/gmaven-2.1.1.pom",
+        "inheritedFrom": "org.codehaus.gmaven:gmaven:2.1.1"
+      }
+    },
+    {
+      "path": "org/codehaus/gmaven/groovy-maven-plugin/2.1.1/groovy-maven-plugin-2.1.1.pom",
+      "coordinate": "org.codehaus.gmaven:groovy-maven-plugin:2.1.1",
+      "kind": "pom",
+      "bytes": 4345,
+      "sha256": "4da13a7ce7c97a52bd6f7a03a6bb498ad7955211c15050c666992d1d5b656538",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "ASLv2",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/codehaus/gmaven/gmaven/2.1.1/gmaven-2.1.1.pom",
+        "inheritedFrom": "org.codehaus.gmaven:gmaven:2.1.1"
+      }
+    },
+    {
+      "path": "org/codehaus/groovy/groovy-all/2.4.9/groovy-all-2.4.9.jar",
+      "coordinate": "org.codehaus.groovy:groovy-all:2.4.9",
+      "kind": "jar",
+      "bytes": 7028505,
+      "sha256": "6a3341e085b2b96f6b16e079022859dc23e3ad8766e62f71637ebbc1e02bd013",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/codehaus/groovy/groovy-all/2.4.9/groovy-all-2.4.9.pom"
+      }
+    },
+    {
+      "path": "org/codehaus/groovy/groovy-all/2.4.9/groovy-all-2.4.9.pom",
+      "coordinate": "org.codehaus.groovy:groovy-all:2.4.9",
+      "kind": "pom",
+      "bytes": 21449,
+      "sha256": "7f2fad3aea415d68ce37d21d04a03281ea488659023e179adb104dbe805406a6",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/codehaus/groovy/groovy-all/2.4.9/groovy-all-2.4.9.pom"
+      }
+    },
+    {
+      "path": "org/codehaus/plexus/plexus-classworlds/2.4.2/plexus-classworlds-2.4.2.jar",
+      "coordinate": "org.codehaus.plexus:plexus-classworlds:2.4.2",
+      "kind": "jar",
+      "bytes": 46969,
+      "sha256": "c7cf8ef0b2d82fe1bb6e3fbcc2bab993118220f289548ce9b61a07ac47ec9826",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/codehaus/plexus/plexus/3.0.1/plexus-3.0.1.pom",
+        "inheritedFrom": "org.codehaus.plexus:plexus:3.0.1"
+      }
+    },
+    {
+      "path": "org/codehaus/plexus/plexus-classworlds/2.4.2/plexus-classworlds-2.4.2.pom",
+      "coordinate": "org.codehaus.plexus:plexus-classworlds:2.4.2",
+      "kind": "pom",
+      "bytes": 3509,
+      "sha256": "1954af19bf69eef14b81eac0b1a49907a67b1553f4f3803007abd940f42323f3",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/codehaus/plexus/plexus/3.0.1/plexus-3.0.1.pom",
+        "inheritedFrom": "org.codehaus.plexus:plexus:3.0.1"
+      }
+    },
+    {
+      "path": "org/codehaus/plexus/plexus-components/1.3/plexus-components-1.3.pom",
+      "coordinate": "org.codehaus.plexus:plexus-components:1.3",
+      "kind": "pom",
+      "bytes": 3058,
+      "sha256": "ca34c8d86394449ce46017d360954b270443ddaa7e62568db0cfce872315c830",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/codehaus/plexus/plexus/3.3/plexus-3.3.pom",
+        "inheritedFrom": "org.codehaus.plexus:plexus:3.3"
+      }
+    },
+    {
+      "path": "org/codehaus/plexus/plexus-interpolation/1.16/plexus-interpolation-1.16.jar",
+      "coordinate": "org.codehaus.plexus:plexus-interpolation:1.16",
+      "kind": "jar",
+      "bytes": 61308,
+      "sha256": "bc4053a078ec83523a010c321c0d6852b43ddc4e076a6500b8bc133b6c69e561",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/codehaus/plexus/plexus/3.3/plexus-3.3.pom",
+        "inheritedFrom": "org.codehaus.plexus:plexus-components:1.3"
+      }
+    },
+    {
+      "path": "org/codehaus/plexus/plexus-interpolation/1.16/plexus-interpolation-1.16.pom",
+      "coordinate": "org.codehaus.plexus:plexus-interpolation:1.16",
+      "kind": "pom",
+      "bytes": 1027,
+      "sha256": "c93bf498f6de3699d37321d1850bd36b5b3b2e3ead3d572622d1fa48b553b22e",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/codehaus/plexus/plexus/3.3/plexus-3.3.pom",
+        "inheritedFrom": "org.codehaus.plexus:plexus-components:1.3"
+      }
+    },
+    {
+      "path": "org/codehaus/plexus/plexus/3.0.1/plexus-3.0.1.pom",
+      "coordinate": "org.codehaus.plexus:plexus:3.0.1",
+      "kind": "pom",
+      "bytes": 18614,
+      "sha256": "1649f67caab553dd7e6b98002dcc670dab3f624c78f1259c8323e705b0c41e32",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/codehaus/plexus/plexus/3.0.1/plexus-3.0.1.pom"
+      }
+    },
+    {
+      "path": "org/eclipse/aether/aether-api/0.9.0.M2/aether-api-0.9.0.M2.jar",
+      "coordinate": "org.eclipse.aether:aether-api:0.9.0.M2",
+      "kind": "jar",
+      "bytes": 133957,
+      "sha256": "e220097cffad96c2963ab12652ff8833ec6f40143d509f0a2ea59d22209b6ecd",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "Eclipse Public License, Version 1.0",
+            "url": "http://www.eclipse.org/legal/epl-v10.html"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/eclipse/aether/aether/0.9.0.M2/aether-0.9.0.M2.pom",
+        "inheritedFrom": "org.eclipse.aether:aether:0.9.0.M2"
+      }
+    },
+    {
+      "path": "org/eclipse/aether/aether-api/0.9.0.M2/aether-api-0.9.0.M2.pom",
+      "coordinate": "org.eclipse.aether:aether-api:0.9.0.M2",
+      "kind": "pom",
+      "bytes": 1737,
+      "sha256": "579403170312127a59f7192cc61096ab17b7be7c3178db54a9c5bf713fbcf594",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "Eclipse Public License, Version 1.0",
+            "url": "http://www.eclipse.org/legal/epl-v10.html"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/eclipse/aether/aether/0.9.0.M2/aether-0.9.0.M2.pom",
+        "inheritedFrom": "org.eclipse.aether:aether:0.9.0.M2"
+      }
+    },
+    {
+      "path": "org/eclipse/aether/aether-util/0.9.0.M2/aether-util-0.9.0.M2.jar",
+      "coordinate": "org.eclipse.aether:aether-util:0.9.0.M2",
+      "kind": "jar",
+      "bytes": 133588,
+      "sha256": "7d62b0fdef90196ec4b2947f5973d750bfd3935785244e77cc06780131c404e9",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "Eclipse Public License, Version 1.0",
+            "url": "http://www.eclipse.org/legal/epl-v10.html"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/eclipse/aether/aether/0.9.0.M2/aether-0.9.0.M2.pom",
+        "inheritedFrom": "org.eclipse.aether:aether:0.9.0.M2"
+      }
+    },
+    {
+      "path": "org/eclipse/aether/aether-util/0.9.0.M2/aether-util-0.9.0.M2.pom",
+      "coordinate": "org.eclipse.aether:aether-util:0.9.0.M2",
+      "kind": "pom",
+      "bytes": 2035,
+      "sha256": "8e1f27e5463f12e4e1d7b242562239c42065e9bcdbf01629399e265035606986",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "Eclipse Public License, Version 1.0",
+            "url": "http://www.eclipse.org/legal/epl-v10.html"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/eclipse/aether/aether/0.9.0.M2/aether-0.9.0.M2.pom",
+        "inheritedFrom": "org.eclipse.aether:aether:0.9.0.M2"
+      }
+    },
+    {
+      "path": "org/eclipse/aether/aether/0.9.0.M2/aether-0.9.0.M2.pom",
+      "coordinate": "org.eclipse.aether:aether:0.9.0.M2",
+      "kind": "pom",
+      "bytes": 27870,
+      "sha256": "30bf8c64ccf77ebbf52b04ec576a0fa77b16b26eaf348519b1684263450d39ce",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "Eclipse Public License, Version 1.0",
+            "url": "http://www.eclipse.org/legal/epl-v10.html"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/eclipse/aether/aether/0.9.0.M2/aether-0.9.0.M2.pom"
+      }
+    },
+    {
+      "path": "org/freemarker/freemarker/2.3.33/freemarker-2.3.33.jar",
+      "coordinate": "org.freemarker:freemarker:2.3.33",
+      "kind": "jar",
+      "bytes": 1877365,
+      "sha256": "ab829182363e747a1530a368436242f4cca7ff309dd29bfca638a1fdc7b6771d",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "Apache License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/freemarker/freemarker/2.3.33/freemarker-2.3.33.pom"
+      }
+    },
+    {
+      "path": "org/freemarker/freemarker/2.3.33/freemarker-2.3.33.pom",
+      "coordinate": "org.freemarker:freemarker:2.3.33",
+      "kind": "pom",
+      "bytes": 3508,
+      "sha256": "f8d10620a17a0601e812f70faf5295d78adddb11433af472044271bc3c5e5856",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "Apache License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/freemarker/freemarker/2.3.33/freemarker-2.3.33.pom"
+      }
+    },
+    {
+      "path": "org/objenesis/objenesis-parent/3.4/objenesis-parent-3.4.pom",
+      "coordinate": "org.objenesis:objenesis-parent:3.4",
+      "kind": "pom",
+      "bytes": 19094,
+      "sha256": "cb1f43d298cc854bb55b993d330017db4a94c6609982da810f039373fc6254a6",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "Apache License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/objenesis/objenesis-parent/3.4/objenesis-parent-3.4.pom"
+      }
+    },
+    {
+      "path": "org/objenesis/objenesis/3.4/objenesis-3.4.jar",
+      "coordinate": "org.objenesis:objenesis:3.4",
+      "kind": "jar",
+      "bytes": 49076,
+      "sha256": "95488102feaf2e2858adf6b299353677dac6c15294006f8ed1c5556f8e3cd251",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "Apache License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/objenesis/objenesis-parent/3.4/objenesis-parent-3.4.pom",
+        "inheritedFrom": "org.objenesis:objenesis-parent:3.4"
+      }
+    },
+    {
+      "path": "org/objenesis/objenesis/3.4/objenesis-3.4.pom",
+      "coordinate": "org.objenesis:objenesis:3.4",
+      "kind": "pom",
+      "bytes": 3008,
+      "sha256": "6017ec0c1e81f73d9a12ebfc09c32823cd075e8709593714eb400e2f013d8a58",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "Apache License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/objenesis/objenesis-parent/3.4/objenesis-parent-3.4.pom",
+        "inheritedFrom": "org.objenesis:objenesis-parent:3.4"
+      }
+    },
+    {
+      "path": "org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar",
+      "coordinate": "org.slf4j:slf4j-api:1.7.5",
+      "kind": "jar",
+      "bytes": 26084,
+      "sha256": "fe30825245d2336c859dc38d60c0fc5f3668dbf29cd586828d2b5667ec355b91",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "MIT License",
+            "url": "http://www.opensource.org/licenses/mit-license.php"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/slf4j/slf4j-parent/1.7.5/slf4j-parent-1.7.5.pom",
+        "inheritedFrom": "org.slf4j:slf4j-parent:1.7.5"
+      }
+    },
+    {
+      "path": "org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.pom",
+      "coordinate": "org.slf4j:slf4j-api:1.7.5",
+      "kind": "pom",
+      "bytes": 2689,
+      "sha256": "afaf8e74019b230d3f56fdd7c93fb1070c0dca34f3d2d5ab5dea9fc616bd5ca4",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "MIT License",
+            "url": "http://www.opensource.org/licenses/mit-license.php"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/slf4j/slf4j-parent/1.7.5/slf4j-parent-1.7.5.pom",
+        "inheritedFrom": "org.slf4j:slf4j-parent:1.7.5"
+      }
+    },
+    {
+      "path": "org/slf4j/slf4j-parent/1.7.5/slf4j-parent-1.7.5.pom",
+      "coordinate": "org.slf4j:slf4j-parent:1.7.5",
+      "kind": "pom",
+      "bytes": 11804,
+      "sha256": "c43bc5a022dbfd9de82be232dffe46208cbc7de12c14385b5da824e331e535bb",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "MIT License",
+            "url": "http://www.opensource.org/licenses/mit-license.php"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/slf4j/slf4j-parent/1.7.5/slf4j-parent-1.7.5.pom"
+      }
+    },
+    {
+      "path": "org/sonatype/forge/forge-parent/9/forge-parent-9.pom",
+      "coordinate": "org.sonatype.forge:forge-parent:9",
+      "kind": "pom",
+      "bytes": 13142,
+      "sha256": "8a19cfb90b52258cc115b28c30cb0c06c55bd7aad37b13bbec0c4332faa58ae9",
+      "licenses": {
+        "licenses": [],
+        "sourcePom": ".local-tools/m2/org/sonatype/forge/forge-parent/9/forge-parent-9.pom",
+        "note": "No license declared in cached POM"
+      }
+    },
+    {
+      "path": "org/sonatype/gossip/gossip-bootstrap/1.8/gossip-bootstrap-1.8.jar",
+      "coordinate": "org.sonatype.gossip:gossip-bootstrap:1.8",
+      "kind": "jar",
+      "bytes": 19758,
+      "sha256": "a06739ec0affe3ae359dfa6812e63ddade8dacdd4476117ad52216c457873ce1",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/sonatype/gossip/gossip/1.8/gossip-1.8.pom",
+        "inheritedFrom": "org.sonatype.gossip:gossip:1.8"
+      }
+    },
+    {
+      "path": "org/sonatype/gossip/gossip-bootstrap/1.8/gossip-bootstrap-1.8.pom",
+      "coordinate": "org.sonatype.gossip:gossip-bootstrap:1.8",
+      "kind": "pom",
+      "bytes": 1611,
+      "sha256": "a118bd27bb7a6891fc35041ef6f6ab173ee4497b046f7a10a30fe2aca4872f0d",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/sonatype/gossip/gossip/1.8/gossip-1.8.pom",
+        "inheritedFrom": "org.sonatype.gossip:gossip:1.8"
+      }
+    },
+    {
+      "path": "org/sonatype/gossip/gossip-core/1.8/gossip-core-1.8.jar",
+      "coordinate": "org.sonatype.gossip:gossip-core:1.8",
+      "kind": "jar",
+      "bytes": 57814,
+      "sha256": "0bd87f4cf1fe5314c30f8ff92215577202f9aac50b5e66bd03ec90e3023dfe62",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/sonatype/gossip/gossip/1.8/gossip-1.8.pom",
+        "inheritedFrom": "org.sonatype.gossip:gossip:1.8"
+      }
+    },
+    {
+      "path": "org/sonatype/gossip/gossip-core/1.8/gossip-core-1.8.pom",
+      "coordinate": "org.sonatype.gossip:gossip-core:1.8",
+      "kind": "pom",
+      "bytes": 2225,
+      "sha256": "dc3a512f81bc3b6ae98aac66afb65b04afb9582df197c635d903676236767cb2",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/sonatype/gossip/gossip/1.8/gossip-1.8.pom",
+        "inheritedFrom": "org.sonatype.gossip:gossip:1.8"
+      }
+    },
+    {
+      "path": "org/sonatype/gossip/gossip-slf4j/1.8/gossip-slf4j-1.8.jar",
+      "coordinate": "org.sonatype.gossip:gossip-slf4j:1.8",
+      "kind": "jar",
+      "bytes": 4227,
+      "sha256": "55c9ed3eb9c62a3cb64dded5614c2701e60784029f32e4acf58b65acdd062460",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/sonatype/gossip/gossip/1.8/gossip-1.8.pom",
+        "inheritedFrom": "org.sonatype.gossip:gossip:1.8"
+      }
+    },
+    {
+      "path": "org/sonatype/gossip/gossip-slf4j/1.8/gossip-slf4j-1.8.pom",
+      "coordinate": "org.sonatype.gossip:gossip-slf4j:1.8",
+      "kind": "pom",
+      "bytes": 1482,
+      "sha256": "c9e7a504b73307f6dbb37e52413a64a0376b5a666325a6946cb71e4737dd1a0a",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/sonatype/gossip/gossip/1.8/gossip-1.8.pom",
+        "inheritedFrom": "org.sonatype.gossip:gossip:1.8"
+      }
+    },
+    {
+      "path": "org/sonatype/gossip/gossip/1.8/gossip-1.8.pom",
+      "coordinate": "org.sonatype.gossip:gossip:1.8",
+      "kind": "pom",
+      "bytes": 11526,
+      "sha256": "ddac85c5943f00d4c36af7304b0780c89933dc9a1180e58e0c41d64870d24789",
+      "licenses": {
+        "licenses": [
+          {
+            "name": "The Apache Software License, Version 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        ],
+        "sourcePom": ".local-tools/m2/org/sonatype/gossip/gossip/1.8/gossip-1.8.pom"
+      }
+    }
+  ],
+  "newArtifactBytes": 20991202,
+  "licenseRowsWithoutDeclaration": [
+    "junit:junit:3.8.2",
+    "junit:junit:3.8.2",
+    "org.sonatype.forge:forge-parent:9"
+  ]
+}

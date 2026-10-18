@@ -1,0 +1,20 @@
+{
+  "stage": "online-test-compile",
+  "startUtc": "2026-10-18T18:26:24.9806918Z",
+  "endUtc": "2026-10-18T18:27:38.5272377Z",
+  "elapsedSeconds": 73.5429612,
+  "nativeExitCode": 0,
+  "stopReason": null,
+  "environmentRestored": false,
+  "args": [
+    "-B",
+    "-ntp",
+    "-T1",
+    "-Dmaven.repo.local=<WORKSPACE>/.local-tools/m2",
+    "-pl",
+    "forge-gui-desktop",
+    "-am",
+    "-C",
+    "test-compile"
+  ]
+}
