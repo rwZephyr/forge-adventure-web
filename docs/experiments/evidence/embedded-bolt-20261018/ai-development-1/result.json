@@ -1,0 +1,22 @@
+{
+  "label": "ai-development-1",
+  "test": "forge.net.embedded.ProtocolGuiGameInProcessTest#aiBoltRunsThroughOriginalPhaseLoop",
+  "args": [
+    "-o",
+    "-B",
+    "-ntp",
+    "-T1",
+    "-Dmaven.repo.local=<WORKSPACE>/.local-tools/m2",
+    "-pl",
+    "forge-gui-desktop",
+    "-am",
+    "-Dtest=forge.net.embedded.ProtocolGuiGameInProcessTest#aiBoltRunsThroughOriginalPhaseLoop",
+    "-Dsurefire.failIfNoSpecifiedTests=false",
+    "-DfailIfNoTests=false",
+    "test"
+  ],
+  "nativeExitCode": 0,
+  "startUtc": "2026-10-18T19:25:23.2780543Z",
+  "endUtc": "2026-10-18T19:27:12.2883729Z",
+  "environmentRestored": true
+}

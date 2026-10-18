@@ -1,0 +1,21 @@
+{
+  "removedFiles": [
+    "test-output/bullet_point.png",
+    "test-output/collapseall.gif",
+    "test-output/emailable-report.html",
+    "test-output/failed.png",
+    "test-output/index.html",
+    "test-output/jquery-3.6.0.min.js",
+    "test-output/navigator-bullet.png",
+    "test-output/passed.png",
+    "test-output/skipped.png",
+    "test-output/testng-reports.css",
+    "test-output/testng-reports.js",
+    "test-output/testng-reports1.css",
+    "test-output/testng-reports2.js",
+    "test-output/testng-results.xml"
+  ],
+  "privateBackupRetained": true,
+  "remainingFiles": 0,
+  "defaultReportDirectoryRemoved": true
+}

@@ -1,0 +1,103 @@
+{
+  "origin": "Existing TestNG CLI -help probe at 2026-10-18T19:22:34Z; reported no test suite. Default zero-test report output was unexpected.",
+  "files": [
+    {
+      "path": "test-output/bullet_point.png",
+      "bytes": 356,
+      "sha256": "0da0e966511cc827d6995140d0be4b0873b984093391dafb807197b4e09251bd",
+      "createdUtc": "2026-10-18T19:22:34.805488+00:00",
+      "modifiedUtc": "2026-10-18T19:22:34.806489+00:00"
+    },
+    {
+      "path": "test-output/collapseall.gif",
+      "bytes": 157,
+      "sha256": "beb0bcad17d652fa4fc5cfdee883a4dd39d87734a3d61e0f0ea4be9710f79043",
+      "createdUtc": "2026-10-18T19:22:34.808491+00:00",
+      "modifiedUtc": "2026-10-18T19:22:34.809492+00:00"
+    },
+    {
+      "path": "test-output/emailable-report.html",
+      "bytes": 1266,
+      "sha256": "5d26b8bf49562f0d754aa024314a6f77fb799c89a2f95970bb1005e4e40a1a57",
+      "createdUtc": "2026-10-18T19:22:34.840029+00:00",
+      "modifiedUtc": "2026-10-18T19:22:34.863136+00:00"
+    },
+    {
+      "path": "test-output/failed.png",
+      "bytes": 977,
+      "sha256": "af41cabfe9d730d472d3d72a0fd7d886a92e1e3117327d2b7213fbb2d0c788e4",
+      "createdUtc": "2026-10-18T19:22:34.795967+00:00",
+      "modifiedUtc": "2026-10-18T19:22:34.796968+00:00"
+    },
+    {
+      "path": "test-output/index.html",
+      "bytes": 1809,
+      "sha256": "fb451802af00f619c1d3d3c8df6e590acbbe27c5445eafd352f55f1f49834ebd",
+      "createdUtc": "2026-10-18T19:22:34.814840+00:00",
+      "modifiedUtc": "2026-10-18T19:22:34.816988+00:00"
+    },
+    {
+      "path": "test-output/jquery-3.6.0.min.js",
+      "bytes": 89501,
+      "sha256": "ff1523fb7389539c84c65aba19260648793bb4f5e29329d2ee8804bc37a3fe6e",
+      "createdUtc": "2026-10-18T19:22:34.768136+00:00",
+      "modifiedUtc": "2026-10-18T19:22:34.776262+00:00"
+    },
+    {
+      "path": "test-output/navigator-bullet.png",
+      "bytes": 352,
+      "sha256": "bac4ed024a5681f426b1954c3cc248958f73a8d00768853f0550cfed09e50a09",
+      "createdUtc": "2026-10-18T19:22:34.802973+00:00",
+      "modifiedUtc": "2026-10-18T19:22:34.803492+00:00"
+    },
+    {
+      "path": "test-output/passed.png",
+      "bytes": 1019,
+      "sha256": "4b0a4eedfa818df168e625343c388a44599f87a139ed2fac49d3854b9162691d",
+      "createdUtc": "2026-10-18T19:22:34.792964+00:00",
+      "modifiedUtc": "2026-10-18T19:22:34.792964+00:00"
+    },
+    {
+      "path": "test-output/skipped.png",
+      "bytes": 967,
+      "sha256": "d4dd4922d8515f88d840f32d54d45960b739130eb492a97f8c6027d956d7f829",
+      "createdUtc": "2026-10-18T19:22:34.800004+00:00",
+      "modifiedUtc": "2026-10-18T19:22:34.800971+00:00"
+    },
+    {
+      "path": "test-output/testng-reports.css",
+      "bytes": 5355,
+      "sha256": "14b90a2415f8f32c849f75300dc68406eb1017971b0465ada7dcff341ce47079",
+      "createdUtc": "2026-10-18T19:22:34.779520+00:00",
+      "modifiedUtc": "2026-10-18T19:22:34.780060+00:00"
+    },
+    {
+      "path": "test-output/testng-reports.js",
+      "bytes": 3612,
+      "sha256": "88d2a0988765ed96e51e5b0c5c63d6b9d25169a12d3c49003c2e87d98d0bdee2",
+      "createdUtc": "2026-10-18T19:22:34.782758+00:00",
+      "modifiedUtc": "2026-10-18T19:22:34.783297+00:00"
+    },
+    {
+      "path": "test-output/testng-reports1.css",
+      "bytes": 7050,
+      "sha256": "fb091a8a0c0ff41d7df1e9cdf180cb4017cbaedb2abdc6fb0b3e638fabb90153",
+      "createdUtc": "2026-10-18T19:22:34.785969+00:00",
+      "modifiedUtc": "2026-10-18T19:22:34.785969+00:00"
+    },
+    {
+      "path": "test-output/testng-reports2.js",
+      "bytes": 3618,
+      "sha256": "0cd0609bd983faf69e9eec6091de6a6e45400292a4f182fb9aa35a12acb7e852",
+      "createdUtc": "2026-10-18T19:22:34.788960+00:00",
+      "modifiedUtc": "2026-10-18T19:22:34.788960+00:00"
+    },
+    {
+      "path": "test-output/testng-results.xml",
+      "bytes": 176,
+      "sha256": "aec8517bb2080f58b759a1e29973b15ce7b260fa358f74460edcc82a425df4e3",
+      "createdUtc": "2026-10-18T19:22:34.837025+00:00",
+      "modifiedUtc": "2026-10-18T19:22:34.838026+00:00"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-10-18T12:40:42 PDT" name="Command line suite" finished-at="2026-10-18T12:41:07 PDT" duration-ms="25153">
+    <groups>
+    </groups>
+    <test started-at="2026-10-18T12:40:42 PDT" name="Command line test" finished-at="2026-10-18T12:41:07 PDT" duration-ms="25153">
+      <class name="forge.net.embedded.ProtocolGuiGameInProcessTest">
+        <test-method signature="humanBoltTargetsOpponentWithManualMountainPayment()[pri:0, instance:forge.net.embedded.ProtocolGuiGameInProcessTest@7adda9cc]" started-at="2026-10-18T12:40:42 PDT" name="humanBoltTargetsOpponentWithManualMountainPayment" finished-at="2026-10-18T12:41:07 PDT" duration-ms="25092" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- humanBoltTargetsOpponentWithManualMountainPayment -->
+      </class> <!-- forge.net.embedded.ProtocolGuiGameInProcessTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

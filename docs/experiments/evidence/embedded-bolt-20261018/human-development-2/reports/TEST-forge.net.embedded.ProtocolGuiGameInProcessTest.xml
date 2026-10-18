@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="forge.net.embedded.ProtocolGuiGameInProcessTest" time="39.359" tests="1" errors="0" skipped="0" failures="1">
+  <testcase name="humanBoltTargetsOpponentWithManualMountainPayment" classname="forge.net.embedded.ProtocolGuiGameInProcessTest" time="30.646">
+    <failure message="Owner received atomic failure: FailureArtifact[action=assertion, input=InputPayManaOfCostPayment@1219473669, threadId=120, thread=AWT-EventQueue-0, reason=one manual Mountain action, never Auto/OK, error=java.lang.IllegalStateException: assertion: one manual Mountain action, never Auto/OK]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Owner received atomic failure: FailureArtifact[action=assertion, input=InputPayManaOfCostPayment@1219473669, threadId=120, thread=AWT-EventQueue-0, reason=one manual Mountain action, never Auto/OK, error=java.lang.IllegalStateException: assertion: one manual Mountain action, never Auto/OK]
+	at forge.net.embedded.ProtocolGuiGameInProcessTest$BoltScript.checkFailure(ProtocolGuiGameInProcessTest.java:354)
+	at forge.net.embedded.ProtocolGuiGameInProcessTest$BoltScript.run(ProtocolGuiGameInProcessTest.java:514)
+	at forge.net.embedded.ProtocolGuiGameInProcessTest.humanBoltTargetsOpponentWithManualMountainPayment(ProtocolGuiGameInProcessTest.java:540)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.IllegalStateException: assertion: one manual Mountain action, never Auto/OK
+	at forge.net.embedded.ProtocolGuiGameInProcessTest$BoltScript.fail(ProtocolGuiGameInProcessTest.java:347)
+	at forge.net.embedded.ProtocolGuiGameInProcessTest$BoltScript.require(ProtocolGuiGameInProcessTest.java:353)
+	at forge.net.embedded.ProtocolGuiGameInProcessTest$BoltScript.act(ProtocolGuiGameInProcessTest.java:495)
+	at forge.net.embedded.ProtocolGuiGameInProcessTest$BoltScript.lambda$run$1(ProtocolGuiGameInProcessTest.java:510)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:771)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:722)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:716)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:741)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+]]></failure>
+    <system-out><![CDATA[Language 'en-US' loaded successfully.
+(ThreadUtil first call): Running with priority 5
+Read cards: 34088 files in 4 ms (25 parts) using thread pool
+Read cards: 857 files in 0 ms (8 parts) using thread pool
+12:21:26 [INFO ] TestUtils: [TestConfig] checksum=stable, deltasync=on
+[bolt] ns=368368400 site=updateGameView-enter tid=62 thread=TestNG-method=humanBoltTargetsOpponentWithManualMountainPayment-1 edt=false input=none waiter=none
+[bolt] ns=427965800 site=updateGameView-return tid=62 thread=TestNG-method=humanBoltTargetsOpponentWithManualMountainPayment-1 edt=false input=none waiter=none
+[bolt] ns=428264400 site=updateGameView-enter tid=62 thread=TestNG-method=humanBoltTargetsOpponentWithManualMountainPayment-1 edt=false input=none waiter=none
+[bolt] ns=447226000 site=updateGameView-return tid=62 thread=TestNG-method=humanBoltTargetsOpponentWithManualMountainPayment-1 edt=false input=none waiter=none
+[bolt] ns=449530300 site=updateGameView-enter tid=62 thread=TestNG-method=humanBoltTargetsOpponentWithManualMountainPayment-1 edt=false input=none waiter=none
+[bolt] ns=449769700 site=updateGameView-return tid=62 thread=TestNG-method=humanBoltTargetsOpponentWithManualMountainPayment-1 edt=false input=none waiter=none
+[bolt] ns=742372000 site=handleGameEvents-enter tid=119 thread=Game-0 edt=false input=none waiter=none
+12:21:27 [INFO ] ProtocolGuiGame: Sending batch of 7: [GameEventZone x4, GameEventShuffle x2, GameEventFlipCoin]
+12:21:27 [INFO ] DeltaSyncManager: [DeltaSync] New objects: 163, Deltas: 0
+[bolt] ns=749814400 site=handleGameEvents-return tid=119 thread=Game-0 edt=false input=none waiter=none
+[bolt] ns=757069200 site=await-enter tid=119 thread=Game-0 edt=false input=InputConfirm@1851804683 count=1
+[bolt] ns=760071200 site=prompt-updateButtons tid=120 thread=AWT-EventQueue-0 edt=true input=InputConfirm@1851804683 waiter=119:Game-0:RUNNABLE:latch=1
+[bolt] ns=763304200 site=prompt-showPromptMessage tid=120 thread=AWT-EventQueue-0 edt=true input=InputConfirm@1851804683 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=781361300 site=action tid=120 thread=AWT-EventQueue-0 edt=true input=InputConfirm@1851804683 buttons=Play/Draw waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=783445100 site=await-return tid=119 thread=Game-0 edt=false input=InputLockUI@1260566321 count=0
+[bolt] ns=959782900 site=handleGameEvents-enter tid=119 thread=Game-0 edt=false input=InputLockUI@1260566321 waiter=119:Game-0:RUNNABLE:latch=0
+12:21:27 [INFO ] ProtocolGuiGame: Sending batch of 43: [GameEventGameStarted, GameEventZone x28, GameEventCardChangeZone x14]
+12:21:27 [INFO ] DeltaSyncManager: [DeltaSync] New objects: 28, Deltas: 2
+[bolt] ns=964951400 site=handleGameEvents-return tid=119 thread=Game-0 edt=false input=InputLockUI@1260566321 waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=965361700 site=await-enter tid=119 thread=Game-0 edt=false input=InputConfirmMulligan@468019992 count=1
+[bolt] ns=965528700 site=prompt-updateButtons tid=120 thread=AWT-EventQueue-0 edt=true input=InputConfirmMulligan@468019992 waiter=119:Game-0:RUNNABLE:latch=1
+[bolt] ns=965796600 site=prompt-showPromptMessage tid=120 thread=AWT-EventQueue-0 edt=true input=InputConfirmMulligan@468019992 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=966078000 site=action tid=120 thread=AWT-EventQueue-0 edt=true input=InputConfirmMulligan@468019992 buttons=Keep/Mulligan waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=966464600 site=await-return tid=119 thread=Game-0 edt=false input=InputLockUI@1855527543 count=0
+[bolt] ns=1205571500 site=fixture tid=119 thread=Game-0 edt=false input=InputLockUI@1855527543 human=0 ai=1 bolt=1 mountain=2 timeout=5
+[bolt] ns=1208507500 site=handleGameEvents-enter tid=119 thread=Game-0 edt=false input=InputLockUI@1855527543 waiter=119:Game-0:RUNNABLE:latch=0
+12:21:27 [INFO ] ProtocolGuiGame: Sending batch of 259: [GameEventAddLog x2, GameEventTurnBegan, GameEventTurnPhase x2, GameEventZone x170, GameEventCardChangeZone x83, GameEventPlayerPriority]
+12:21:27 [INFO ] DeltaSyncManager: [DeltaSync] New objects: 28, Deltas: 3
+[bolt] ns=1215533000 site=handleGameEvents-return tid=119 thread=Game-0 edt=false input=InputLockUI@1855527543 waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=1361917800 site=await-enter tid=119 thread=Game-0 edt=false input=InputPassPriority@647812188 count=1
+[bolt] ns=1362025800 site=updateGameView-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@647812188 waiter=119:Game-0:RUNNABLE:latch=1
+[bolt] ns=1363247600 site=updateGameView-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@647812188 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1368780900 site=prompt-showPromptMessage tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@647812188 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1369056600 site=prompt-updateButtons tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@647812188 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1369381800 site=action tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@647812188 buttons=OK/End Turn waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1375862100 site=visibility-initial tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@647812188 allowedFaceCount=2 hiddenFaceCount=78 rawGraphPrivate=true
+[bolt] ns=1387675400 site=updateGameView-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@647812188 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1388512000 site=updateGameView-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@647812188 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1388807400 site=reply-enter-getAbilityToPlay tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@647812188 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1389128700 site=reply-return-getAbilityToPlay tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@647812188 ability=214 answer=Lightning Bolt deals 3 damage to any target.
+[bolt] ns=1389269000 site=updateGameView-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@647812188 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1389845400 site=updateGameView-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@647812188 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1390140400 site=await-return tid=119 thread=Game-0 edt=false input=InputLockUI@210522394 count=0
+[bolt] ns=1393353400 site=updateGameView-enter tid=119 thread=Game-0 edt=false input=InputLockUI@210522394 waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=1394283500 site=updateGameView-return tid=119 thread=Game-0 edt=false input=InputLockUI@210522394 waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=1394431000 site=reply-enter-getAbilityToPlay tid=119 thread=Game-0 edt=false input=InputLockUI@210522394 waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=1394503700 site=reply-return-getAbilityToPlay tid=119 thread=Game-0 edt=false input=InputLockUI@210522394 ability=214 answer=Lightning Bolt deals 3 damage to any target.
+[bolt] ns=1416424000 site=handleGameEvents-enter tid=119 thread=Game-0 edt=false input=InputLockUI@210522394 waiter=119:Game-0:RUNNABLE:latch=0
+12:21:28 [INFO ] ProtocolGuiGame: Sending batch of 3: [GameEventZone x2, GameEventCardChangeZone]
+[bolt] ns=1417554800 site=handleGameEvents-return tid=119 thread=Game-0 edt=false input=InputLockUI@210522394 waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=1417769300 site=await-enter tid=119 thread=Game-0 edt=false input=InputSelectTargets@271890014 count=1
+[bolt] ns=1418459400 site=updateGameView-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@271890014 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1419052400 site=updateGameView-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@271890014 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1419722200 site=updateGameView-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@271890014 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1420422000 site=updateGameView-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@271890014 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1420589900 site=prompt-showPromptMessage tid=120 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@271890014 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1420792500 site=prompt-updateButtons tid=120 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@271890014 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1424189700 site=updateGameView-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@271890014 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1424840400 site=updateGameView-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@271890014 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1425035400 site=action tid=120 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@271890014 buttons=OK/Cancel waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1425402200 site=updateGameView-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@271890014 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1426017300 site=updateGameView-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@271890014 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1426235600 site=updateGameView-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@271890014 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1426784800 site=updateGameView-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@271890014 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1426971800 site=await-return tid=119 thread=Game-0 edt=false input=InputLockUI@906456937 count=0
+[bolt] ns=1427327100 site=updateGameView-enter tid=119 thread=Game-0 edt=false input=InputLockUI@906456937 waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=1427961700 site=updateGameView-return tid=119 thread=Game-0 edt=false input=InputLockUI@906456937 waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=1444003100 site=await-enter tid=119 thread=Game-0 edt=false input=InputPayManaOfCostPayment@1219473669 count=1
+[bolt] ns=1444077500 site=updateGameView-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@1219473669 waiter=119:Game-0:RUNNABLE:latch=1
+[bolt] ns=1444929000 site=updateGameView-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@1219473669 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1445162800 site=prompt-updateButtons tid=120 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@1219473669 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1482919300 site=prompt-updateButtons tid=120 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@1219473669 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1483088000 site=updateGameView-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@1219473669 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1483798700 site=updateGameView-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@1219473669 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1484220700 site=updateGameView-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@1219473669 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1484737100 site=updateGameView-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@1219473669 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1484852000 site=prompt-showPromptMessage tid=120 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@1219473669 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1485023000 site=action tid=120 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@1219473669 buttons=Auto/Cancel waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1486287800 site=action tid=120 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@1219473669 buttons=Auto/Cancel waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1486530600 site=updateGameView-enter tid=123 thread=Game-1 edt=false input=InputPayManaOfCostPayment@1219473669 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1487066400 site=updateGameView-return tid=123 thread=Game-1 edt=false input=InputPayManaOfCostPayment@1219473669 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1487153700 site=reply-enter-getAbilityToPlay tid=123 thread=Game-1 edt=false input=InputPayManaOfCostPayment@1219473669 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1496268100 site=ATOMIC-FAILURE tid=120 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@1219473669 FailureArtifact[action=assertion, input=InputPayManaOfCostPayment@1219473669, threadId=120, thread=AWT-EventQueue-0, reason=one manual Mountain action, never Auto/OK, error=java.lang.IllegalStateException: assertion: one manual Mountain action, never Auto/OK]
+[bolt] ns=1497941900 site=cleanup-concede tid=120 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@1219473669 failurePreserved=true
+[bolt] ns=1504855500 site=await-return tid=119 thread=Game-0 edt=false input=none count=0
+[bolt] ns=1510207300 site=updateGameView-enter tid=119 thread=Game-0 edt=false input=none waiter=119:Game-0:RUNNABLE:latch=0
+12:21:28 [INFO ] ProtocolGuiGame: Sending batch of 6: [GameEventPlayerControl x2, GameEventGameOutcome, GameEventZone x3]
+12:21:28 [INFO ] DeltaSyncManager: [DeltaSync] New objects: 2, Deltas: 2
+[bolt] ns=1511509900 site=updateGameView-return tid=119 thread=Game-0 edt=false input=none waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=1674065600 site=handleGameEvents-enter tid=119 thread=Game-0 edt=false input=none waiter=119:Game-0:RUNNABLE:latch=0
+12:21:28 [INFO ] ProtocolGuiGame: Sending batch of 3: [GameEventZone x2, GameEventGameFinished]
+12:21:28 [INFO ] DeltaSyncManager: [DeltaSync] Sampled checksum for seq=20: hash=59178995, props=[Flipped, Sprocket, Intensity, HasChangedColors, AvatarCardImageKey, MindSlaveMaster, Battlefield, Hand, HasLost, CanPlay, SourceTrigger, PlayerTurn, Phase, GameOver, NumGamesInMatch]
+12:21:28 [INFO ] DeltaSyncManager: [DeltaSync]   Turn: 1 (snapshot), Phase: MAIN1 (snapshot, current=MAIN1)
+12:21:28 [INFO ] DeltaSyncManager: [DeltaSync]   Player 0 ( Bolt): Life=20, Hand=1, GY=0, BF=1
+12:21:28 [INFO ] DeltaSyncManager: [DeltaSync]   Player 1 (AI): Life=20, Hand=1, GY=0, BF=0
+[bolt] ns=1678000800 site=handleGameEvents-return tid=119 thread=Game-0 edt=false input=none waiter=119:Game-0:RUNNABLE:latch=0
+]]></system-out>
+    <system-err><![CDATA[Upcoming set Marvel: Darkhold Destiny (MDD) dated in the future. All `upcoming` cards will be added to this set with unknown rarity.
+The card A-Alrund's Epiphany was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Baba Lysaga, Night Witch was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Divide by Zero was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Esika's Chariot was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Faceless Haven was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Fires of Invention was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Goldspan Dragon was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Hullbreaker Horror was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Kumano Faces Kakkazan was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Luminarch Aspirant was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Monster Manual was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Omnath, Locus of Creation was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-The Meathook Massacre was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Unholy Heat was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Blinding Radiance was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Goblin Bruiser was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Ogre Painbringer was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Titanic Pelagosaur was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Treetop Recluse was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+Upcoming set Marvel: Darkhold Destiny (MDD) dated in the future. All `upcoming` cards will be added to this set with unknown rarity.
+Unable to load music file: ..\forge-gui\res\music\match\Hitman.mp3
+[HeadlessGuiDesktop] Input: Personalize Forge Gameplay: By default, Forge will refer to you as the "Human" during gameplay.
+If you would prefer a different name please enter it now.
+Game-1 > java.lang.IllegalStateException: assertion: offered host is fixture Bolt
+	at forge.net.embedded.ProtocolGuiGameInProcessTest$BoltScript.fail(ProtocolGuiGameInProcessTest.java:347)
+	at forge.net.embedded.ProtocolGuiGameInProcessTest$BoltScript.require(ProtocolGuiGameInProcessTest.java:353)
+	at forge.net.embedded.ProtocolGuiGameInProcessTest$BoltScript.answer(ProtocolGuiGameInProcessTest.java:372)
+	at forge.net.embedded.ProtocolGuiGameInProcessTest$RecordingRemote.sendAndWait(ProtocolGuiGameInProcessTest.java:101)
+	at forge.gamemodes.net.GameProtocolSender.sendAndWait(GameProtocolSender.java:29)
+	at forge.gamemodes.net.ProtocolGuiGame.syncAndSendAndWait(ProtocolGuiGame.java:183)
+	at forge.gamemodes.net.ProtocolGuiGame.getAbilityToPlay(ProtocolGuiGame.java:384)
+	at forge.player.PlayerControllerHuman.getAbilityToPlay(PlayerControllerHuman.java:229)
+	at forge.game.player.PlayerController.getAbilityToPlay(PlayerController.java:99)
+	at forge.game.player.PlaySpellAbility.chooseOptionalAdditionalCosts(PlaySpellAbility.java:146)
+	at forge.game.player.PlaySpellAbility.playSpellAbility(PlaySpellAbility.java:98)
+	at forge.gamemodes.match.input.InputPayMana.lambda$activateManaAbility$0(InputPayMana.java:333)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+[HeadlessGuiDesktop] Bug Report - Report a crash:
+java.lang.IllegalStateException: assertion: offered host is fixture Bolt
+	at forge.net.embedded.ProtocolGuiGameInProcessTest$BoltScript.fail(ProtocolGuiGameInProcessTest.java:347)
+	at forge.net.embedded.ProtocolGuiGameInProcessTest$BoltScript.require(ProtocolGuiGameInProcessTest.java:353)
+	at forge.net.embedded.ProtocolGuiGameInProcessTest$BoltScript.answer(ProtocolGuiGameInProcessTest.java:372)
+	at forge.net.embedded.ProtocolGuiGameInProcessTest$RecordingRemote.sendAndWait(ProtocolGuiGameInProcessTest.java:101)
+	at forge.gamemodes.net.GameProtocolSender.sendAndWait(GameProtocolSender.java:29)
+	at forge.gamemodes.net.ProtocolGuiGame.syncAndSendAndWait(ProtocolGuiGame.java:183)
+	at forge.gamemodes.net.ProtocolGuiGame.getAbilityToPlay(ProtocolGuiGame.java:384)
+	at forge.player.PlayerControllerHuman.getAbilityToPlay(PlayerControllerHuman.java:229)
+	at forge.game.player.PlayerController.getAbilityToPlay(PlayerController.java:99)
+	at forge.game.player.PlaySpellAbility.chooseOptionalAdditionalCosts(PlaySpellAbility.java:146)
+	at forge.game.player.PlaySpellAbility.playSpellAbility(PlaySpellAbility.java:98)
+	at forge.gamemodes.match.input.InputPayMana.lambda$activateManaAbility$0(InputPayMana.java:333)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+
+]]></system-err>
+  </testcase>
+</testsuite>

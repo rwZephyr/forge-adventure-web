@@ -1,0 +1,40 @@
+{
+  "label": "empty-final",
+  "method": "forge.net.embedded.ProtocolGuiGameInProcessTest.aiEmptyHandDoesNotCastOrPay",
+  "nativeExitCode": 0,
+  "watchdogExpired": false,
+  "elapsedSeconds": 34.63395547866821,
+  "startUtc": "2026-10-18T19:35:44.232124+00:00",
+  "classpathSource": ".local-tools\\embedded-bolt-20261018\\human-development-2\\reports\\TEST-forge.net.embedded.ProtocolGuiGameInProcessTest.xml",
+  "opens": [
+    "--add-opens",
+    "java.base/java.lang=ALL-UNNAMED",
+    "--add-opens",
+    "java.base/java.time=ALL-UNNAMED",
+    "--add-opens",
+    "java.base/java.text=ALL-UNNAMED",
+    "--add-opens",
+    "java.base/java.util=ALL-UNNAMED",
+    "--add-opens",
+    "java.base/java.util.regex=ALL-UNNAMED",
+    "--add-opens",
+    "java.base/java.util.stream=ALL-UNNAMED",
+    "--add-opens",
+    "java.base/java.lang.reflect=ALL-UNNAMED",
+    "--add-opens",
+    "java.desktop/javax.imageio.spi=ALL-UNNAMED"
+  ],
+  "workingDirectory": "forge-gui-desktop",
+  "freshIsolatedJvm": true,
+  "testSourceSha256": "c3ca6b6a00b91755c5eb5d131d2f47ad99ecec72e673beed71c8e5cedaedbf16",
+  "classHashes": {
+    "ProtocolGuiGameInProcessTest$1.class": "9b65e64a864cfed6edd0b466bfde40a634dc4e47dd8f47ecde6580ea4a3aa28c",
+    "ProtocolGuiGameInProcessTest$BoltMode.class": "1b6c365d0001e5c28010a53e708f14be15575d4711ec23399e417657a5331d6e",
+    "ProtocolGuiGameInProcessTest$BoltScript.class": "ec4c10e5887e6c57203746e4a19e03ffdec88e0cae157fbfa73fba4eedaecab5",
+    "ProtocolGuiGameInProcessTest$FailureArtifact.class": "761a61c4005da13f8597ac9db23b4e572a6650441390ceb52c8e2f5f2b617a84",
+    "ProtocolGuiGameInProcessTest$ObservedGui.class": "ad552f2bf5cfb47c307c23044ae143fa1c1ff1f2448dcfd427134652dc08d08c",
+    "ProtocolGuiGameInProcessTest$Prompt.class": "1ad092f44570e97fd06a330aeb1de37570100294b88dcf2d8f5aeb28597d155e",
+    "ProtocolGuiGameInProcessTest$RecordingRemote.class": "4c58d8975919193b3a885b217c8f73f8fb29430d8d6e5578b018132929ab5196",
+    "ProtocolGuiGameInProcessTest.class": "41d6b4ea4c8626c8297be0dc5683d4248b4ec6107c1288019ef1e3ce41804719"
+  }
+}

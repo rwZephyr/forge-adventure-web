@@ -1,0 +1,8 @@
+{
+  "label": "witness-human",
+  "method": "forge.net.embedded.ProtocolGuiGameInProcessTest.humanBoltTargetsOpponentWithManualMountainPayment",
+  "observerExit": 0,
+  "elapsedSeconds": 36.0654091835022,
+  "workingDirectory": "forge-gui-desktop",
+  "sharedMemoryOnly": true
+}

@@ -135,6 +135,25 @@ compilation fails with 93 severe problems. Browser AI execution is blocked.**
   change. Independent reviews were read as assessments, not new executions.
 
 ## Next bounded step and handoff
+- **Approved authentic embedded Bolt test extension implemented on JVM.**
+  [Results and reproduction](experiments/embedded-bolt-results.md), separate
+  branch `codex/embedded-bolt-tests`, stacked on draft PR #18. Only the existing
+  embedded test and JdiWitness source files are extended; historical embedded
+  method/SingleThreadTest and original runtime/cards/POMs remain unchanged.
+  Human opposing-player Bolt 20→17 and AI lethal Bolt 3→0 each pass three fresh
+  unpaused JVM runs with genuine targeting, Mountain payment, stack and loop
+  resolution. Empty-hand and atomic unanswered-prompt controls pass; the TestNG
+  owner verifies receipt of the latter's exact recorded failure artifact.
+  Both unchanged regressions pass. Final dt_shmem-only witnesses pass human/AI
+  paths and empty-hand NORMAL null task; actual caller/EDT/evaluator IDs and
+  future/ability/card identity chains retained. No observed graph-operation
+  overlap or inconsistent checkpoint; no general synchronization guarantee.
+  Test-only hidden-face validation is not a browser payload projector. Creature
+  targeting/destruction, reconnect and production headless operation remain
+  unproven. Source/config/cache audit and complete sanitized evidence retained;
+  incidental CLI zero-test report output was detected and individually cleaned.
+  No new dependencies, server, network/service change or original runtime fix.
+  Stop for review after the new draft PR; existing PRs remain unmerged.
 - Baseline evidence prepared for a separate documentation-only draft PR on
   `codex/maven-baseline-results`, based directly on PR #17's unchanged head.
   Owner accepts the pass as author-reported pending evidence review. Complete
@@ -156,8 +175,9 @@ compilation fails with 93 severe problems. Browser AI execution is blocked.**
   generated outputs unchanged; reviewed plan/settings/source/POMs preserved.
   Full logs, actual artifact/license inventory and integrity/test results saved.
   No installations, servers, port/service changes or unrelated work modified.
-- Stopped after baseline success for review. PR #17 remains draft/unmerged;
-  extension implementation, additional tests and transport remain unapproved.
+- Historical stop after baseline success: PR #17 remains draft/unmerged.
+  The two-file test extension was subsequently approved and is recorded above;
+  transport and additional runtime/campaign work remain unapproved.
 - Separate read-only [Maven blocker investigation](research/results/maven-baseline-blocker.md)
   on `codex/maven-baseline-inventory`; PR #17's implementation plan is unchanged.
   GMaven is bound to initialize and its execute goal requests test dependency

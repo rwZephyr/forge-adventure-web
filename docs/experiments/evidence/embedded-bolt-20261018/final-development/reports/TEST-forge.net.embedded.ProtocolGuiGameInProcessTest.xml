@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="forge.net.embedded.ProtocolGuiGameInProcessTest" time="52.201" tests="1" errors="0" skipped="0" failures="0">
+  <testcase name="unansweredRequiredPromptIsReportedToTestOwner" classname="forge.net.embedded.ProtocolGuiGameInProcessTest" time="43.118">
+    <system-out><![CDATA[Language 'en-US' loaded successfully.
+(ThreadUtil first call): Running with priority 5
+Read cards: 34088 files in 4 ms (25 parts) using thread pool
+Read cards: 857 files in 0 ms (8 parts) using thread pool
+12:31:25 [INFO ] TestUtils: [TestConfig] checksum=stable, deltasync=on
+[bolt] bootstrapMs=37373.121 mode=UNANSWERED
+[bolt] ns=1551158400 site=UNANSWERED:updateGameView-enter tid=62 thread=TestNG-method=unansweredRequiredPromptIsReportedToTestOwner-1 edt=false input=none waiter=none
+[bolt] ns=1999999100 site=UNANSWERED:updateGameView-return tid=62 thread=TestNG-method=unansweredRequiredPromptIsReportedToTestOwner-1 edt=false input=none waiter=none
+[bolt] ns=2000250500 site=UNANSWERED:updateGameView-enter tid=62 thread=TestNG-method=unansweredRequiredPromptIsReportedToTestOwner-1 edt=false input=none waiter=none
+[bolt] ns=2051847600 site=UNANSWERED:updateGameView-return tid=62 thread=TestNG-method=unansweredRequiredPromptIsReportedToTestOwner-1 edt=false input=none waiter=none
+[bolt] ns=2054790000 site=UNANSWERED:updateGameView-enter tid=62 thread=TestNG-method=unansweredRequiredPromptIsReportedToTestOwner-1 edt=false input=none waiter=none
+[bolt] ns=2055089900 site=UNANSWERED:updateGameView-return tid=62 thread=TestNG-method=unansweredRequiredPromptIsReportedToTestOwner-1 edt=false input=none waiter=none
+[bolt] ns=4079969400 site=UNANSWERED:handleGameEvents-enter tid=119 thread=Game-0 edt=false input=none waiter=none
+12:31:29 [INFO ] ProtocolGuiGame: Sending batch of 7: [GameEventZone x4, GameEventShuffle x2, GameEventFlipCoin]
+12:31:29 [INFO ] DeltaSyncManager: [DeltaSync] New objects: 163, Deltas: 0
+[bolt] ns=4088812100 site=UNANSWERED:handleGameEvents-return tid=119 thread=Game-0 edt=false input=none waiter=none
+[bolt] ns=4101285600 site=UNANSWERED:await-enter tid=119 thread=Game-0 edt=false input=InputConfirm@1092544284 count=1
+[bolt] ns=4132533500 site=UNANSWERED:prompt-updateButtons tid=120 thread=AWT-EventQueue-0 edt=true input=InputConfirm@1092544284 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=4135992900 site=UNANSWERED:prompt-showPromptMessage tid=120 thread=AWT-EventQueue-0 edt=true input=InputConfirm@1092544284 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=4193589900 site=UNANSWERED:action tid=120 thread=AWT-EventQueue-0 edt=true input=InputConfirm@1092544284 buttons=Play/Draw waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=4195659300 site=UNANSWERED:await-return tid=119 thread=Game-0 edt=false input=InputLockUI@941074752 count=0
+[bolt] ns=4931747200 site=UNANSWERED:handleGameEvents-enter tid=119 thread=Game-0 edt=false input=InputLockUI@941074752 waiter=119:Game-0:RUNNABLE:latch=0
+12:31:30 [INFO ] ProtocolGuiGame: Sending batch of 43: [GameEventGameStarted, GameEventZone x28, GameEventCardChangeZone x14]
+12:31:30 [INFO ] DeltaSyncManager: [DeltaSync] New objects: 28, Deltas: 2
+[bolt] ns=4937232500 site=UNANSWERED:handleGameEvents-return tid=119 thread=Game-0 edt=false input=InputLockUI@941074752 waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=4937694700 site=UNANSWERED:await-enter tid=119 thread=Game-0 edt=false input=InputConfirmMulligan@1338932603 count=1
+[bolt] ns=4937824300 site=UNANSWERED:prompt-updateButtons tid=120 thread=AWT-EventQueue-0 edt=true input=InputConfirmMulligan@1338932603 waiter=119:Game-0:RUNNABLE:latch=1
+[bolt] ns=4938162800 site=UNANSWERED:prompt-showPromptMessage tid=120 thread=AWT-EventQueue-0 edt=true input=InputConfirmMulligan@1338932603 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=4938353500 site=UNANSWERED:action tid=120 thread=AWT-EventQueue-0 edt=true input=InputConfirmMulligan@1338932603 buttons=Keep/Mulligan waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=4938625300 site=UNANSWERED:await-return tid=119 thread=Game-0 edt=false input=InputLockUI@998003014 count=0
+[bolt] ns=5218436300 site=UNANSWERED:fixture tid=119 thread=Game-0 edt=false input=InputLockUI@998003014 human=0 ai=1 boltIds=[1] mountain=2 timeout=5
+[bolt] ns=5222643900 site=UNANSWERED:handleGameEvents-enter tid=119 thread=Game-0 edt=false input=InputLockUI@998003014 waiter=119:Game-0:RUNNABLE:latch=0
+12:31:30 [INFO ] ProtocolGuiGame: Sending batch of 259: [GameEventAddLog x2, GameEventTurnBegan, GameEventTurnPhase x2, GameEventZone x170, GameEventCardChangeZone x83, GameEventPlayerPriority]
+12:31:30 [INFO ] DeltaSyncManager: [DeltaSync] New objects: 28, Deltas: 3
+[bolt] ns=5229165200 site=UNANSWERED:handleGameEvents-return tid=119 thread=Game-0 edt=false input=InputLockUI@998003014 waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=5434874700 site=UNANSWERED:await-enter tid=119 thread=Game-0 edt=false input=InputPassPriority@1393993161 count=1
+[bolt] ns=5434970800 site=UNANSWERED:updateGameView-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1393993161 waiter=119:Game-0:RUNNABLE:latch=1
+[bolt] ns=5435960300 site=UNANSWERED:updateGameView-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1393993161 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=5440876000 site=UNANSWERED:prompt-showPromptMessage tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1393993161 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=5441108900 site=UNANSWERED:prompt-updateButtons tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1393993161 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=5441432600 site=UNANSWERED:action tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1393993161 buttons=OK/End Turn waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=5451085400 site=UNANSWERED:visibility-initial tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1393993161 allowedFaceCount=2 hiddenFaceCount=78 rawGraphPrivate=true
+[bolt] ns=5483011300 site=UNANSWERED:updateGameView-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1393993161 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=5483763200 site=UNANSWERED:updateGameView-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1393993161 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=5492944900 site=UNANSWERED:ATOMIC-FAILURE tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1393993161 FailureArtifact[action=required-question, input=InputPassPriority@1393993161, threadId=120, thread=AWT-EventQueue-0, reason=deliberately unanswered getAbilityToPlay, error=java.lang.IllegalStateException: required-question: deliberately unanswered getAbilityToPlay]
+[bolt] ns=5493965800 site=UNANSWERED:cleanup-concede tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1393993161 failurePreserved=true
+[bolt] ns=5507492000 site=UNANSWERED:await-return tid=119 thread=Game-0 edt=false input=none count=0
+Active player is no longer in the game...
+[bolt] ns=5690208600 site=UNANSWERED:handleGameEvents-enter tid=119 thread=Game-0 edt=false input=none waiter=119:Game-0:RUNNABLE:latch=0
+12:31:31 [INFO ] ProtocolGuiGame: Sending batch of 4: [GameEventPlayerControl x2, GameEventGameOutcome, GameEventGameFinished]
+[bolt] ns=5691666900 site=UNANSWERED:handleGameEvents-return tid=119 thread=Game-0 edt=false input=none waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=5695070400 site=UNANSWERED:negative-owner-received tid=62 thread=TestNG-method=unansweredRequiredPromptIsReportedToTestOwner-1 edt=false input=none artifactThread=120 sameAtomicArtifact=true noCastOrPayment=true
+]]></system-out>
+    <system-err><![CDATA[Upcoming set Marvel: Darkhold Destiny (MDD) dated in the future. All `upcoming` cards will be added to this set with unknown rarity.
+The card A-Alrund's Epiphany was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Baba Lysaga, Night Witch was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Divide by Zero was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Esika's Chariot was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Faceless Haven was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Fires of Invention was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Goldspan Dragon was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Hullbreaker Horror was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Kumano Faces Kakkazan was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Luminarch Aspirant was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Monster Manual was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Omnath, Locus of Creation was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-The Meathook Massacre was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Unholy Heat was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Blinding Radiance was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Goblin Bruiser was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Ogre Painbringer was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Titanic Pelagosaur was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Treetop Recluse was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+Upcoming set Marvel: Darkhold Destiny (MDD) dated in the future. All `upcoming` cards will be added to this set with unknown rarity.
+Unable to load music file: ..\forge-gui\res\music\match\Hitman.mp3
+]]></system-err>
+  </testcase>
+</testsuite>

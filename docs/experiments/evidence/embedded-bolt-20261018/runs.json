@@ -1,0 +1,440 @@
+[
+  {
+    "label": "human-development-1",
+    "test": "forge.net.embedded.ProtocolGuiGameInProcessTest#humanBoltTargetsOpponentWithManualMountainPayment",
+    "nativeExitCode": 1,
+    "startUtc": "2026-10-18T19:18:31.0907032Z",
+    "endUtc": "2026-10-18T19:19:28.5345640Z",
+    "environmentRestored": true,
+    "classification": "development/preliminary"
+  },
+  {
+    "label": "human-development-2",
+    "test": "forge.net.embedded.ProtocolGuiGameInProcessTest#humanBoltTargetsOpponentWithManualMountainPayment",
+    "nativeExitCode": 1,
+    "startUtc": "2026-10-18T19:19:40.7421307Z",
+    "endUtc": "2026-10-18T19:21:29.0745679Z",
+    "environmentRestored": true,
+    "testngCounts": {
+      "ignored": "0",
+      "total": "1",
+      "passed": "0",
+      "failed": "1",
+      "skipped": "0"
+    },
+    "classification": "development/preliminary"
+  },
+  {
+    "label": "human-development-3",
+    "test": "forge.net.embedded.ProtocolGuiGameInProcessTest#humanBoltTargetsOpponentWithManualMountainPayment",
+    "nativeExitCode": 0,
+    "startUtc": "2026-10-18T19:21:57.9750443Z",
+    "endUtc": "2026-10-18T19:24:01.0214789Z",
+    "environmentRestored": true,
+    "testngCounts": {
+      "ignored": "0",
+      "total": "1",
+      "passed": "1",
+      "failed": "0",
+      "skipped": "0"
+    },
+    "classification": "development/preliminary"
+  },
+  {
+    "label": "ai-development-1",
+    "test": "forge.net.embedded.ProtocolGuiGameInProcessTest#aiBoltRunsThroughOriginalPhaseLoop",
+    "nativeExitCode": 0,
+    "startUtc": "2026-10-18T19:25:23.2780543Z",
+    "endUtc": "2026-10-18T19:27:12.2883729Z",
+    "environmentRestored": true,
+    "testngCounts": {
+      "ignored": "0",
+      "total": "1",
+      "passed": "1",
+      "failed": "0",
+      "skipped": "0"
+    },
+    "classification": "development/preliminary"
+  },
+  {
+    "label": "empty-development-1",
+    "method": "forge.net.embedded.ProtocolGuiGameInProcessTest.aiEmptyHandDoesNotCastOrPay",
+    "nativeExitCode": 0,
+    "watchdogExpired": false,
+    "elapsedSeconds": 34.36300611495972,
+    "startUtc": "2026-10-18T19:28:17.840531+00:00",
+    "workingDirectory": "forge-gui-desktop",
+    "freshIsolatedJvm": true,
+    "testngCounts": {
+      "ignored": "0",
+      "total": "1",
+      "passed": "1",
+      "failed": "0",
+      "skipped": "0"
+    },
+    "classification": "development/preliminary"
+  },
+  {
+    "label": "final-development",
+    "test": "forge.net.embedded.ProtocolGuiGameInProcessTest#unansweredRequiredPromptIsReportedToTestOwner",
+    "nativeExitCode": 0,
+    "startUtc": "2026-10-18T19:29:16.4776947Z",
+    "endUtc": "2026-10-18T19:31:33.7200222Z",
+    "environmentRestored": true,
+    "testngCounts": {
+      "ignored": "0",
+      "total": "1",
+      "passed": "1",
+      "failed": "0",
+      "skipped": "0"
+    },
+    "classification": "final"
+  },
+  {
+    "label": "human-1",
+    "method": "forge.net.embedded.ProtocolGuiGameInProcessTest.humanBoltTargetsOpponentWithManualMountainPayment",
+    "nativeExitCode": 0,
+    "watchdogExpired": false,
+    "elapsedSeconds": 38.201348066329956,
+    "startUtc": "2026-10-18T19:32:05.852461+00:00",
+    "workingDirectory": "forge-gui-desktop",
+    "freshIsolatedJvm": true,
+    "testSourceSha256": "c3ca6b6a00b91755c5eb5d131d2f47ad99ecec72e673beed71c8e5cedaedbf16",
+    "testngCounts": {
+      "ignored": "0",
+      "total": "1",
+      "passed": "1",
+      "failed": "0",
+      "skipped": "0"
+    },
+    "classification": "final"
+  },
+  {
+    "label": "human-2",
+    "method": "forge.net.embedded.ProtocolGuiGameInProcessTest.humanBoltTargetsOpponentWithManualMountainPayment",
+    "nativeExitCode": 0,
+    "watchdogExpired": false,
+    "elapsedSeconds": 37.191112995147705,
+    "startUtc": "2026-10-18T19:32:44.220800+00:00",
+    "workingDirectory": "forge-gui-desktop",
+    "freshIsolatedJvm": true,
+    "testSourceSha256": "c3ca6b6a00b91755c5eb5d131d2f47ad99ecec72e673beed71c8e5cedaedbf16",
+    "testngCounts": {
+      "ignored": "0",
+      "total": "1",
+      "passed": "1",
+      "failed": "0",
+      "skipped": "0"
+    },
+    "classification": "final"
+  },
+  {
+    "label": "human-3",
+    "method": "forge.net.embedded.ProtocolGuiGameInProcessTest.humanBoltTargetsOpponentWithManualMountainPayment",
+    "nativeExitCode": 0,
+    "watchdogExpired": false,
+    "elapsedSeconds": 38.33611750602722,
+    "startUtc": "2026-10-18T19:33:21.569463+00:00",
+    "workingDirectory": "forge-gui-desktop",
+    "freshIsolatedJvm": true,
+    "testSourceSha256": "c3ca6b6a00b91755c5eb5d131d2f47ad99ecec72e673beed71c8e5cedaedbf16",
+    "testngCounts": {
+      "ignored": "0",
+      "total": "1",
+      "passed": "1",
+      "failed": "0",
+      "skipped": "0"
+    },
+    "classification": "final"
+  },
+  {
+    "label": "ai-1",
+    "method": "forge.net.embedded.ProtocolGuiGameInProcessTest.aiBoltRunsThroughOriginalPhaseLoop",
+    "nativeExitCode": 0,
+    "watchdogExpired": false,
+    "elapsedSeconds": 36.70254564285278,
+    "startUtc": "2026-10-18T19:34:00.083188+00:00",
+    "workingDirectory": "forge-gui-desktop",
+    "freshIsolatedJvm": true,
+    "testSourceSha256": "c3ca6b6a00b91755c5eb5d131d2f47ad99ecec72e673beed71c8e5cedaedbf16",
+    "testngCounts": {
+      "ignored": "0",
+      "total": "1",
+      "passed": "1",
+      "failed": "0",
+      "skipped": "0"
+    },
+    "classification": "final"
+  },
+  {
+    "label": "ai-2",
+    "method": "forge.net.embedded.ProtocolGuiGameInProcessTest.aiBoltRunsThroughOriginalPhaseLoop",
+    "nativeExitCode": 0,
+    "watchdogExpired": false,
+    "elapsedSeconds": 34.77166438102722,
+    "startUtc": "2026-10-18T19:34:36.958134+00:00",
+    "workingDirectory": "forge-gui-desktop",
+    "freshIsolatedJvm": true,
+    "testSourceSha256": "c3ca6b6a00b91755c5eb5d131d2f47ad99ecec72e673beed71c8e5cedaedbf16",
+    "testngCounts": {
+      "ignored": "0",
+      "total": "1",
+      "passed": "1",
+      "failed": "0",
+      "skipped": "0"
+    },
+    "classification": "final"
+  },
+  {
+    "label": "ai-3",
+    "method": "forge.net.embedded.ProtocolGuiGameInProcessTest.aiBoltRunsThroughOriginalPhaseLoop",
+    "nativeExitCode": 0,
+    "watchdogExpired": false,
+    "elapsedSeconds": 32.24190139770508,
+    "startUtc": "2026-10-18T19:35:11.857915+00:00",
+    "workingDirectory": "forge-gui-desktop",
+    "freshIsolatedJvm": true,
+    "testSourceSha256": "c3ca6b6a00b91755c5eb5d131d2f47ad99ecec72e673beed71c8e5cedaedbf16",
+    "testngCounts": {
+      "ignored": "0",
+      "total": "1",
+      "passed": "1",
+      "failed": "0",
+      "skipped": "0"
+    },
+    "classification": "final"
+  },
+  {
+    "label": "empty-final",
+    "method": "forge.net.embedded.ProtocolGuiGameInProcessTest.aiEmptyHandDoesNotCastOrPay",
+    "nativeExitCode": 0,
+    "watchdogExpired": false,
+    "elapsedSeconds": 34.63395547866821,
+    "startUtc": "2026-10-18T19:35:44.232124+00:00",
+    "workingDirectory": "forge-gui-desktop",
+    "freshIsolatedJvm": true,
+    "testSourceSha256": "c3ca6b6a00b91755c5eb5d131d2f47ad99ecec72e673beed71c8e5cedaedbf16",
+    "testngCounts": {
+      "ignored": "0",
+      "total": "1",
+      "passed": "1",
+      "failed": "0",
+      "skipped": "0"
+    },
+    "classification": "final"
+  },
+  {
+    "label": "legacy-baseline",
+    "method": "forge.net.embedded.ProtocolGuiGameInProcessTest.humanControllerRunsThroughInProcessRemote",
+    "nativeExitCode": 0,
+    "watchdogExpired": false,
+    "elapsedSeconds": 35.074622631073,
+    "startUtc": "2026-10-18T19:36:18.991404+00:00",
+    "workingDirectory": "forge-gui-desktop",
+    "freshIsolatedJvm": true,
+    "testSourceSha256": "c3ca6b6a00b91755c5eb5d131d2f47ad99ecec72e673beed71c8e5cedaedbf16",
+    "testngCounts": {
+      "ignored": "0",
+      "total": "1",
+      "passed": "1",
+      "failed": "0",
+      "skipped": "0"
+    },
+    "classification": "final"
+  },
+  {
+    "label": "legacy-single-thread",
+    "method": "forge.net.embedded.ProtocolGuiGameSingleThreadTest.inputsCanBeAnsweredOnTheWaitingThread",
+    "nativeExitCode": 0,
+    "watchdogExpired": false,
+    "elapsedSeconds": 35.148054122924805,
+    "startUtc": "2026-10-18T19:36:54.319897+00:00",
+    "workingDirectory": "forge-gui-desktop",
+    "freshIsolatedJvm": true,
+    "testSourceSha256": "c3ca6b6a00b91755c5eb5d131d2f47ad99ecec72e673beed71c8e5cedaedbf16",
+    "testngCounts": {
+      "ignored": "0",
+      "total": "1",
+      "passed": "1",
+      "failed": "0",
+      "skipped": "0"
+    },
+    "classification": "final"
+  },
+  {
+    "label": "witness-human",
+    "method": "forge.net.embedded.ProtocolGuiGameInProcessTest.humanBoltTargetsOpponentWithManualMountainPayment",
+    "observerExit": 0,
+    "elapsedSeconds": 36.0654091835022,
+    "workingDirectory": "forge-gui-desktop",
+    "sharedMemoryOnly": true,
+    "testngCounts": {
+      "ignored": "0",
+      "total": "1",
+      "passed": "1",
+      "failed": "0",
+      "skipped": "0"
+    },
+    "witness": {
+      "mode": "testng",
+      "method": "forge.net.embedded.ProtocolGuiGameInProcessTest.humanBoltTargetsOpponentWithManualMountainPayment",
+      "transport": "dt_shmem",
+      "networkListener": false,
+      "debuggerInvokedTargetMethods": false,
+      "watchdogSeconds": 210,
+      "watchdogExpired": false,
+      "observerError": null,
+      "childExit": 0,
+      "testPassed": true,
+      "pathWitnessPassed": true,
+      "controllerActionsOnEdt": true,
+      "originalInputLatchObserved": true,
+      "allObservedFuturesNormal": true,
+      "elapsedSeconds": 35.3740178
+    },
+    "observedRows": 59,
+    "classification": "development/preliminary"
+  },
+  {
+    "label": "witness-ai",
+    "method": "forge.net.embedded.ProtocolGuiGameInProcessTest.aiBoltRunsThroughOriginalPhaseLoop",
+    "observerExit": 0,
+    "elapsedSeconds": 35.16846990585327,
+    "workingDirectory": "forge-gui-desktop",
+    "sharedMemoryOnly": true,
+    "testngCounts": {
+      "ignored": "0",
+      "total": "1",
+      "passed": "1",
+      "failed": "0",
+      "skipped": "0"
+    },
+    "witness": {
+      "mode": "testng",
+      "method": "forge.net.embedded.ProtocolGuiGameInProcessTest.aiBoltRunsThroughOriginalPhaseLoop",
+      "transport": "dt_shmem",
+      "networkListener": false,
+      "debuggerInvokedTargetMethods": false,
+      "watchdogSeconds": 210,
+      "watchdogExpired": false,
+      "observerError": null,
+      "childExit": 0,
+      "testPassed": true,
+      "pathWitnessPassed": true,
+      "controllerActionsOnEdt": true,
+      "originalInputLatchObserved": true,
+      "allObservedFuturesNormal": true,
+      "elapsedSeconds": 34.6242107
+    },
+    "observedRows": 36,
+    "classification": "development/preliminary"
+  },
+  {
+    "label": "witness-human-final",
+    "method": "forge.net.embedded.ProtocolGuiGameInProcessTest.humanBoltTargetsOpponentWithManualMountainPayment",
+    "observerExit": 0,
+    "elapsedSeconds": 35.203930377960205,
+    "workingDirectory": "forge-gui-desktop",
+    "sharedMemoryOnly": true,
+    "testSourceSha256": "c3ca6b6a00b91755c5eb5d131d2f47ad99ecec72e673beed71c8e5cedaedbf16",
+    "observerSourceSha256": "6bcf4a3acc5038a380000c57276ad41b226bfe7044326293f1c31f3f7db4b9c5",
+    "testngCounts": {
+      "ignored": "0",
+      "total": "1",
+      "passed": "1",
+      "failed": "0",
+      "skipped": "0"
+    },
+    "witness": {
+      "mode": "testng",
+      "method": "forge.net.embedded.ProtocolGuiGameInProcessTest.humanBoltTargetsOpponentWithManualMountainPayment",
+      "transport": "dt_shmem",
+      "networkListener": false,
+      "debuggerInvokedTargetMethods": false,
+      "watchdogSeconds": 210,
+      "watchdogExpired": false,
+      "observerError": null,
+      "childExit": 0,
+      "testPassed": true,
+      "pathWitnessPassed": true,
+      "controllerActionsOnEdt": true,
+      "originalInputLatchObserved": true,
+      "allObservedFuturesNormal": true,
+      "elapsedSeconds": 34.5839813
+    },
+    "observedRows": 59,
+    "classification": "final"
+  },
+  {
+    "label": "witness-ai-final",
+    "method": "forge.net.embedded.ProtocolGuiGameInProcessTest.aiBoltRunsThroughOriginalPhaseLoop",
+    "observerExit": 0,
+    "elapsedSeconds": 35.748230934143066,
+    "workingDirectory": "forge-gui-desktop",
+    "sharedMemoryOnly": true,
+    "testSourceSha256": "c3ca6b6a00b91755c5eb5d131d2f47ad99ecec72e673beed71c8e5cedaedbf16",
+    "observerSourceSha256": "6bcf4a3acc5038a380000c57276ad41b226bfe7044326293f1c31f3f7db4b9c5",
+    "testngCounts": {
+      "ignored": "0",
+      "total": "1",
+      "passed": "1",
+      "failed": "0",
+      "skipped": "0"
+    },
+    "witness": {
+      "mode": "testng",
+      "method": "forge.net.embedded.ProtocolGuiGameInProcessTest.aiBoltRunsThroughOriginalPhaseLoop",
+      "transport": "dt_shmem",
+      "networkListener": false,
+      "debuggerInvokedTargetMethods": false,
+      "watchdogSeconds": 210,
+      "watchdogExpired": false,
+      "observerError": null,
+      "childExit": 0,
+      "testPassed": true,
+      "pathWitnessPassed": true,
+      "controllerActionsOnEdt": true,
+      "originalInputLatchObserved": true,
+      "allObservedFuturesNormal": true,
+      "elapsedSeconds": 35.1727463
+    },
+    "observedRows": 36,
+    "classification": "final"
+  },
+  {
+    "label": "witness-empty",
+    "method": "forge.net.embedded.ProtocolGuiGameInProcessTest.aiEmptyHandDoesNotCastOrPay",
+    "observerExit": 0,
+    "elapsedSeconds": 32.515968799591064,
+    "workingDirectory": "forge-gui-desktop",
+    "sharedMemoryOnly": true,
+    "testSourceSha256": "c3ca6b6a00b91755c5eb5d131d2f47ad99ecec72e673beed71c8e5cedaedbf16",
+    "observerSourceSha256": "6bcf4a3acc5038a380000c57276ad41b226bfe7044326293f1c31f3f7db4b9c5",
+    "testngCounts": {
+      "ignored": "0",
+      "total": "1",
+      "passed": "1",
+      "failed": "0",
+      "skipped": "0"
+    },
+    "witness": {
+      "mode": "testng",
+      "method": "forge.net.embedded.ProtocolGuiGameInProcessTest.aiEmptyHandDoesNotCastOrPay",
+      "transport": "dt_shmem",
+      "networkListener": false,
+      "debuggerInvokedTargetMethods": false,
+      "watchdogSeconds": 210,
+      "watchdogExpired": false,
+      "observerError": null,
+      "childExit": 0,
+      "testPassed": true,
+      "pathWitnessPassed": true,
+      "controllerActionsOnEdt": true,
+      "originalInputLatchObserved": true,
+      "allObservedFuturesNormal": true,
+      "elapsedSeconds": 31.7577346
+    },
+    "observedRows": 23,
+    "classification": "final"
+  }
+]

@@ -1,0 +1,59 @@
+12:35:52 [INFO ] Logger: [TestNG] Running:
+  Command line suite
+
+Language 'en-US' loaded successfully.
+(ThreadUtil first call): Running with priority 5
+Read cards: 34088 files in 4 ms (25 parts) using thread pool
+Read cards: 857 files in 0 ms (8 parts) using thread pool
+12:36:17 [INFO ] TestUtils: [TestConfig] checksum=stable, deltasync=on
+[bolt] bootstrapMs=24274.957 mode=EMPTY
+[bolt] ns=407993500 site=EMPTY:updateGameView-enter tid=58 thread=TestNG-method=aiEmptyHandDoesNotCastOrPay-1 edt=false input=none waiter=none
+[bolt] ns=431657700 site=EMPTY:updateGameView-return tid=58 thread=TestNG-method=aiEmptyHandDoesNotCastOrPay-1 edt=false input=none waiter=none
+[bolt] ns=432010400 site=EMPTY:updateGameView-enter tid=58 thread=TestNG-method=aiEmptyHandDoesNotCastOrPay-1 edt=false input=none waiter=none
+[bolt] ns=448076100 site=EMPTY:updateGameView-return tid=58 thread=TestNG-method=aiEmptyHandDoesNotCastOrPay-1 edt=false input=none waiter=none
+[bolt] ns=450334700 site=EMPTY:updateGameView-enter tid=58 thread=TestNG-method=aiEmptyHandDoesNotCastOrPay-1 edt=false input=none waiter=none
+[bolt] ns=450539000 site=EMPTY:updateGameView-return tid=58 thread=TestNG-method=aiEmptyHandDoesNotCastOrPay-1 edt=false input=none waiter=none
+[bolt] ns=708072700 site=EMPTY:handleGameEvents-enter tid=117 thread=Game-0 edt=false input=none waiter=none
+12:36:17 [INFO ] ProtocolGuiGame: Sending batch of 7: [GameEventZone x4, GameEventShuffle x2, GameEventFlipCoin]
+12:36:17 [INFO ] DeltaSyncManager: [DeltaSync] New objects: 163, Deltas: 0
+[bolt] ns=716081700 site=EMPTY:handleGameEvents-return tid=117 thread=Game-0 edt=false input=none waiter=none
+[bolt] ns=721059000 site=EMPTY:prompt-updateButtons tid=118 thread=AWT-EventQueue-0 edt=true input=InputConfirm@937027303 waiter=none
+[bolt] ns=721914100 site=EMPTY:await-enter tid=117 thread=Game-0 edt=false input=InputConfirm@937027303 count=1
+[bolt] ns=727127200 site=EMPTY:prompt-showPromptMessage tid=118 thread=AWT-EventQueue-0 edt=true input=InputConfirm@937027303 waiter=117:Game-0:WAITING:latch=1
+[bolt] ns=740672500 site=EMPTY:action tid=118 thread=AWT-EventQueue-0 edt=true input=InputConfirm@937027303 buttons=Play/Draw waiter=117:Game-0:WAITING:latch=1
+[bolt] ns=742781600 site=EMPTY:await-return tid=117 thread=Game-0 edt=false input=InputLockUI@1198408319 count=0
+[bolt] ns=891151100 site=EMPTY:handleGameEvents-enter tid=117 thread=Game-0 edt=false input=InputLockUI@1198408319 waiter=117:Game-0:RUNNABLE:latch=0
+12:36:18 [INFO ] ProtocolGuiGame: Sending batch of 43: [GameEventGameStarted, GameEventZone x28, GameEventCardChangeZone x14]
+12:36:18 [INFO ] DeltaSyncManager: [DeltaSync] New objects: 28, Deltas: 2
+[bolt] ns=894941400 site=EMPTY:handleGameEvents-return tid=117 thread=Game-0 edt=false input=InputLockUI@1198408319 waiter=117:Game-0:RUNNABLE:latch=0
+[bolt] ns=895362600 site=EMPTY:await-enter tid=117 thread=Game-0 edt=false input=InputConfirmMulligan@1723529037 count=1
+[bolt] ns=895461300 site=EMPTY:prompt-updateButtons tid=118 thread=AWT-EventQueue-0 edt=true input=InputConfirmMulligan@1723529037 waiter=117:Game-0:RUNNABLE:latch=1
+[bolt] ns=895916200 site=EMPTY:prompt-showPromptMessage tid=118 thread=AWT-EventQueue-0 edt=true input=InputConfirmMulligan@1723529037 waiter=117:Game-0:WAITING:latch=1
+[bolt] ns=896226800 site=EMPTY:action tid=118 thread=AWT-EventQueue-0 edt=true input=InputConfirmMulligan@1723529037 buttons=Keep/Mulligan waiter=117:Game-0:WAITING:latch=1
+[bolt] ns=896617100 site=EMPTY:await-return tid=117 thread=Game-0 edt=false input=InputLockUI@1343304282 count=0
+[bolt] ns=1048854000 site=EMPTY:fixture tid=117 thread=Game-0 edt=false input=InputLockUI@1343304282 human=0 ai=1 boltIds=[] mountain=52 timeout=5
+[bolt] ns=1050574700 site=EMPTY:handleGameEvents-enter tid=117 thread=Game-0 edt=false input=InputLockUI@1343304282 waiter=117:Game-0:RUNNABLE:latch=0
+12:36:18 [INFO ] ProtocolGuiGame: Sending batch of 260: [GameEventAddLog x2, GameEventTurnBegan, GameEventTurnPhase x2, GameEventZone x170, GameEventCardChangeZone x83, GameEventPlayerLivesChanged, GameEventPlayerPriority]
+12:36:18 [INFO ] DeltaSyncManager: [DeltaSync] New objects: 28, Deltas: 3
+[bolt] ns=1054897000 site=EMPTY:handleGameEvents-return tid=117 thread=Game-0 edt=false input=InputLockUI@1343304282 waiter=117:Game-0:RUNNABLE:latch=0
+[bolt] ns=1303771000 site=EMPTY:handleGameEvents-enter tid=117 thread=Game-0 edt=false input=InputLockUI@1343304282 waiter=117:Game-0:RUNNABLE:latch=0
+12:36:18 [INFO ] ProtocolGuiGame: Sending batch of 1: [GameEventPlayerPriority]
+[bolt] ns=1304914600 site=EMPTY:handleGameEvents-return tid=117 thread=Game-0 edt=false input=InputLockUI@1343304282 waiter=117:Game-0:RUNNABLE:latch=0
+[bolt] ns=1305167600 site=EMPTY:await-enter tid=117 thread=Game-0 edt=false input=InputPassPriority@1897037508 count=1
+[bolt] ns=1305297400 site=EMPTY:updateGameView-enter tid=118 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1897037508 waiter=117:Game-0:RUNNABLE:latch=1
+[bolt] ns=1305881300 site=EMPTY:updateGameView-return tid=118 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1897037508 waiter=117:Game-0:WAITING:latch=1
+[bolt] ns=1309685200 site=EMPTY:prompt-showPromptMessage tid=118 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1897037508 waiter=117:Game-0:WAITING:latch=1
+[bolt] ns=1309914500 site=EMPTY:prompt-updateButtons tid=118 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1897037508 waiter=117:Game-0:WAITING:latch=1
+[bolt] ns=1310208200 site=EMPTY:action tid=118 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1897037508 buttons=OK/End Turn waiter=117:Game-0:WAITING:latch=1
+[bolt] ns=1315953900 site=EMPTY:visibility-empty-control tid=118 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1897037508 allowedFaceCount=3 hiddenFaceCount=77 rawGraphPrivate=true
+[bolt] ns=1316149600 site=EMPTY:empty-control-success tid=118 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1897037508 first settled human priority after original AI loop
+[bolt] ns=1322445600 site=EMPTY:await-return tid=117 thread=Game-0 edt=false input=none count=0
+[bolt] ns=1323337600 site=EMPTY:handleGameEvents-enter tid=117 thread=Game-0 edt=false input=none waiter=117:Game-0:RUNNABLE:latch=0
+12:36:18 [INFO ] ProtocolGuiGame: Sending batch of 4: [GameEventPlayerControl x2, GameEventGameOutcome, GameEventGameFinished]
+[bolt] ns=1327215600 site=EMPTY:handleGameEvents-return tid=117 thread=Game-0 edt=false input=none waiter=117:Game-0:RUNNABLE:latch=0
+
+===============================================
+Command line suite
+Total tests run: 1, Passes: 1, Failures: 0, Skips: 0
+===============================================
+

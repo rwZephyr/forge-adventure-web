@@ -1,0 +1,311 @@
+Picked up JAVA_TOOL_OPTIONS: -Duser.home=<WORKSPACE>/.local-tools/embedded-bolt-20261018/final-development/home -Djava.io.tmpdir=<WORKSPACE>/.local-tools/embedded-bolt-20261018/final-development/tmp -Djava.awt.headless=true -Xmx1536m
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Forge Parent                                                       [pom]
+[INFO] Forge Core                                                         [jar]
+[INFO] Forge Game                                                         [jar]
+[INFO] Forge AI                                                           [jar]
+[INFO] Forge Gui                                                          [jar]
+[INFO] Forge                                                              [jar]
+[INFO] 
+[INFO] ----------------------------< forge:forge >-----------------------------
+[INFO] Building Forge Parent 2.0.16-SNAPSHOT                              [1/6]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-versions) @ forge ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] Rule 1: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] Rule 2: org.apache.maven.enforcer.rules.RequirePluginVersions passed
+[INFO] 
+[INFO] --- checkstyle:3.1.2:check (checkstyle-validation) @ forge ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --------------------------< forge:forge-core >--------------------------
+[INFO] Building Forge Core 2.0.16-SNAPSHOT                                [2/6]
+[INFO]   from forge-core\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-versions) @ forge-core ---
+[INFO] Rule 2: org.apache.maven.enforcer.rules.RequirePluginVersions passed
+[INFO] 
+[INFO] --- checkstyle:3.1.2:check (checkstyle-validation) @ forge-core ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ forge-core ---
+[INFO] skip non existing resourceDirectory <WORKSPACE>\forge-core\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ forge-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 154 source files to <WORKSPACE>\forge-core\target\classes
+[INFO] /<WORKSPACE>/forge-core/src/main/java/forge/card/CardRules.java: Some input files use or override a deprecated API.
+[INFO] /<WORKSPACE>/forge-core/src/main/java/forge/card/CardRules.java: Recompile with -Xlint:deprecation for details.
+[INFO] /<WORKSPACE>/forge-core/src/main/java/forge/util/BagRandomizer.java: Some input files use unchecked or unsafe operations.
+[INFO] /<WORKSPACE>/forge-core/src/main/java/forge/util/BagRandomizer.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ forge-core ---
+[INFO] skip non existing resourceDirectory <WORKSPACE>\forge-core\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ forge-core ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ forge-core ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --------------------------< forge:forge-game >--------------------------
+[INFO] Building Forge Game 2.0.16-SNAPSHOT                                [3/6]
+[INFO]   from forge-game\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-versions) @ forge-game ---
+[INFO] Rule 2: org.apache.maven.enforcer.rules.RequirePluginVersions passed
+[INFO] 
+[INFO] --- checkstyle:3.1.2:check (checkstyle-validation) @ forge-game ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ forge-game ---
+[INFO] skip non existing resourceDirectory <WORKSPACE>\forge-game\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ forge-game ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 822 source files to <WORKSPACE>\forge-game\target\classes
+[INFO] /<WORKSPACE>/forge-game/src/main/java/forge/game/GameLog.java: Some input files use or override a deprecated API.
+[INFO] /<WORKSPACE>/forge-game/src/main/java/forge/game/GameLog.java: Recompile with -Xlint:deprecation for details.
+[INFO] /<WORKSPACE>/forge-game/src/main/java/forge/trackable/TrackableObject.java: Some input files use unchecked or unsafe operations.
+[INFO] /<WORKSPACE>/forge-game/src/main/java/forge/trackable/TrackableObject.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ forge-game ---
+[INFO] skip non existing resourceDirectory <WORKSPACE>\forge-game\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ forge-game ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to <WORKSPACE>\forge-game\target\test-classes
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ forge-game ---
+[INFO] 
+[INFO] ---------------------------< forge:forge-ai >---------------------------
+[INFO] Building Forge AI 2.0.16-SNAPSHOT                                  [4/6]
+[INFO]   from forge-ai\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-versions) @ forge-ai ---
+[INFO] Rule 2: org.apache.maven.enforcer.rules.RequirePluginVersions passed
+[INFO] 
+[INFO] --- checkstyle:3.1.2:check (checkstyle-validation) @ forge-ai ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ forge-ai ---
+[INFO] skip non existing resourceDirectory <WORKSPACE>\forge-ai\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ forge-ai ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 192 source files to <WORKSPACE>\forge-ai\target\classes
+[INFO] /<WORKSPACE>/forge-ai/src/main/java/forge/ai/simulation/GameCopier.java: Some input files use or override a deprecated API.
+[INFO] /<WORKSPACE>/forge-ai/src/main/java/forge/ai/simulation/GameCopier.java: Recompile with -Xlint:deprecation for details.
+[INFO] /<WORKSPACE>/forge-ai/src/main/java/forge/ai/simulation/GameCopier.java: Some input files use unchecked or unsafe operations.
+[INFO] /<WORKSPACE>/forge-ai/src/main/java/forge/ai/simulation/GameCopier.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ forge-ai ---
+[INFO] skip non existing resourceDirectory <WORKSPACE>\forge-ai\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ forge-ai ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ forge-ai ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --------------------------< forge:forge-gui >---------------------------
+[INFO] Building Forge Gui 2.0.16-SNAPSHOT                                 [5/6]
+[INFO]   from forge-gui\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-versions) @ forge-gui ---
+[INFO] Rule 2: org.apache.maven.enforcer.rules.RequirePluginVersions passed
+[INFO] 
+[INFO] --- checkstyle:3.1.2:check (checkstyle-validation) @ forge-gui ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ forge-gui ---
+[INFO] Copying 3 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ forge-gui ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 464 source files to <WORKSPACE>\forge-gui\target\classes
+[INFO] /<WORKSPACE>/forge-gui/src/main/java/forge/gamemodes/quest/QuestUtilCards.java: Some input files use or override a deprecated API.
+[INFO] /<WORKSPACE>/forge-gui/src/main/java/forge/gamemodes/quest/QuestUtilCards.java: Recompile with -Xlint:deprecation for details.
+[INFO] /<WORKSPACE>/forge-gui/src/main/java/forge/gamemodes/match/input/InputSelectEntitiesFromList.java: Some input files use unchecked or unsafe operations.
+[INFO] /<WORKSPACE>/forge-gui/src/main/java/forge/gamemodes/match/input/InputSelectEntitiesFromList.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ forge-gui ---
+[INFO] Copying 1 resource from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ forge-gui ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to <WORKSPACE>\forge-gui\target\test-classes
+[INFO] /<WORKSPACE>/forge-gui/src/test/java/forge/gamemodes/replay/ReplayRecordingShould.java: <WORKSPACE>\forge-gui\src\test\java\forge\gamemodes\replay\ReplayRecordingShould.java uses or overrides a deprecated API.
+[INFO] /<WORKSPACE>/forge-gui/src/test/java/forge/gamemodes/replay/ReplayRecordingShould.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ forge-gui ---
+[INFO] 
+[INFO] ----------------------< forge:forge-gui-desktop >-----------------------
+[INFO] Building Forge 2.0.16-SNAPSHOT                                     [6/6]
+[INFO]   from forge-gui-desktop\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-versions) @ forge-gui-desktop ---
+[INFO] Rule 2: org.apache.maven.enforcer.rules.RequirePluginVersions passed
+[INFO] 
+[INFO] --- checkstyle:3.1.2:check (checkstyle-validation) @ forge-gui-desktop ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- build-helper:3.6.0:released-version (released-version) @ forge-gui-desktop ---
+[INFO] 
+[INFO] --- build-helper:3.6.0:parse-version (parse-version) @ forge-gui-desktop ---
+[INFO] 
+[INFO] --- build-helper:3.6.0:timestamp-property (timestamp-property) @ forge-gui-desktop ---
+[WARNING] Using platform locale (en_CA actually) to format date/time, i.e. build is platform dependent!
+[INFO] 
+[INFO] --- build-helper:3.6.0:regex-property (regex-property) @ forge-gui-desktop ---
+[INFO] 
+[INFO] --- groovy:2.1.1:execute (get-changelog-from-tag) @ forge-gui-desktop ---
+WARNING: No forge- tags found. CHANGES.txt will be empty.
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ forge-gui-desktop ---
+[INFO] Copying 2 resources from filters to target\classes
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ forge-gui-desktop ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 409 source files to <WORKSPACE>\forge-gui-desktop\target\classes
+[INFO] /<WORKSPACE>/forge-gui-desktop/src/main/java/forge/screens/match/controllers/CLog.java: Some input files use or override a deprecated API.
+[INFO] /<WORKSPACE>/forge-gui-desktop/src/main/java/forge/screens/match/controllers/CLog.java: Recompile with -Xlint:deprecation for details.
+[INFO] /<WORKSPACE>/forge-gui-desktop/src/main/java/forge/screens/match/CMatchUI.java: Some input files use unchecked or unsafe operations.
+[INFO] /<WORKSPACE>/forge-gui-desktop/src/main/java/forge/screens/match/CMatchUI.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ forge-gui-desktop ---
+[INFO] skip non existing resourceDirectory <WORKSPACE>\forge-gui-desktop\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ forge-gui-desktop ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 142 source files to <WORKSPACE>\forge-gui-desktop\target\test-classes
+[INFO] /<WORKSPACE>/forge-gui-desktop/src/test/java/forge/gamemodes/net/WireDeserializationTest.java: <WORKSPACE>\forge-gui-desktop\src\test\java\forge\gamemodes\net\WireDeserializationTest.java uses or overrides a deprecated API.
+[INFO] /<WORKSPACE>/forge-gui-desktop/src/test/java/forge/gamemodes/net/WireDeserializationTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] /<WORKSPACE>/forge-gui-desktop/src/test/java/forge/net/embedded/ProtocolGuiGameInProcessTest.java: Some input files use unchecked or unsafe operations.
+[INFO] /<WORKSPACE>/forge-gui-desktop/src/test/java/forge/net/embedded/ProtocolGuiGameInProcessTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ forge-gui-desktop ---
+[INFO] Using auto detected provider org.apache.maven.surefire.testng.TestNGProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+Picked up JAVA_TOOL_OPTIONS: -Duser.home=<WORKSPACE>/.local-tools/embedded-bolt-20261018/final-development/home -Djava.io.tmpdir=<WORKSPACE>/.local-tools/embedded-bolt-20261018/final-development/tmp -Djava.awt.headless=true -Xmx1536m
+[INFO] Running forge.net.embedded.ProtocolGuiGameInProcessTest
+Language 'en-US' loaded successfully.
+(ThreadUtil first call): Running with priority 5
+Read cards: 34088 files in 4 ms (25 parts) using thread pool
+Upcoming set Marvel: Darkhold Destiny (MDD) dated in the future. All `upcoming` cards will be added to this set with unknown rarity.
+The card A-Alrund's Epiphany was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Baba Lysaga, Night Witch was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Divide by Zero was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Esika's Chariot was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Faceless Haven was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Fires of Invention was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Goldspan Dragon was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Hullbreaker Horror was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Kumano Faces Kakkazan was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Luminarch Aspirant was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Monster Manual was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Omnath, Locus of Creation was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-The Meathook Massacre was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card A-Unholy Heat was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Blinding Radiance was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Goblin Bruiser was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Ogre Painbringer was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Titanic Pelagosaur was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+The card Treetop Recluse was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder. 
+Upcoming set Marvel: Darkhold Destiny (MDD) dated in the future. All `upcoming` cards will be added to this set with unknown rarity.
+Read cards: 857 files in 0 ms (8 parts) using thread pool
+12:31:25 [INFO ] TestUtils: [TestConfig] checksum=stable, deltasync=on
+[bolt] bootstrapMs=37373.121 mode=UNANSWERED
+Unable to load music file: ..\forge-gui\res\music\match\Hitman.mp3
+[bolt] ns=1551158400 site=UNANSWERED:updateGameView-enter tid=62 thread=TestNG-method=unansweredRequiredPromptIsReportedToTestOwner-1 edt=false input=none waiter=none
+[bolt] ns=1999999100 site=UNANSWERED:updateGameView-return tid=62 thread=TestNG-method=unansweredRequiredPromptIsReportedToTestOwner-1 edt=false input=none waiter=none
+[bolt] ns=2000250500 site=UNANSWERED:updateGameView-enter tid=62 thread=TestNG-method=unansweredRequiredPromptIsReportedToTestOwner-1 edt=false input=none waiter=none
+[bolt] ns=2051847600 site=UNANSWERED:updateGameView-return tid=62 thread=TestNG-method=unansweredRequiredPromptIsReportedToTestOwner-1 edt=false input=none waiter=none
+[bolt] ns=2054790000 site=UNANSWERED:updateGameView-enter tid=62 thread=TestNG-method=unansweredRequiredPromptIsReportedToTestOwner-1 edt=false input=none waiter=none
+[bolt] ns=2055089900 site=UNANSWERED:updateGameView-return tid=62 thread=TestNG-method=unansweredRequiredPromptIsReportedToTestOwner-1 edt=false input=none waiter=none
+[bolt] ns=4079969400 site=UNANSWERED:handleGameEvents-enter tid=119 thread=Game-0 edt=false input=none waiter=none
+12:31:29 [INFO ] ProtocolGuiGame: Sending batch of 7: [GameEventZone x4, GameEventShuffle x2, GameEventFlipCoin]
+12:31:29 [INFO ] DeltaSyncManager: [DeltaSync] New objects: 163, Deltas: 0
+[bolt] ns=4088812100 site=UNANSWERED:handleGameEvents-return tid=119 thread=Game-0 edt=false input=none waiter=none
+[bolt] ns=4101285600 site=UNANSWERED:await-enter tid=119 thread=Game-0 edt=false input=InputConfirm@1092544284 count=1
+[bolt] ns=4132533500 site=UNANSWERED:prompt-updateButtons tid=120 thread=AWT-EventQueue-0 edt=true input=InputConfirm@1092544284 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=4135992900 site=UNANSWERED:prompt-showPromptMessage tid=120 thread=AWT-EventQueue-0 edt=true input=InputConfirm@1092544284 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=4193589900 site=UNANSWERED:action tid=120 thread=AWT-EventQueue-0 edt=true input=InputConfirm@1092544284 buttons=Play/Draw waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=4195659300 site=UNANSWERED:await-return tid=119 thread=Game-0 edt=false input=InputLockUI@941074752 count=0
+[bolt] ns=4931747200 site=UNANSWERED:handleGameEvents-enter tid=119 thread=Game-0 edt=false input=InputLockUI@941074752 waiter=119:Game-0:RUNNABLE:latch=0
+12:31:30 [INFO ] ProtocolGuiGame: Sending batch of 43: [GameEventGameStarted, GameEventZone x28, GameEventCardChangeZone x14]
+12:31:30 [INFO ] DeltaSyncManager: [DeltaSync] New objects: 28, Deltas: 2
+[bolt] ns=4937232500 site=UNANSWERED:handleGameEvents-return tid=119 thread=Game-0 edt=false input=InputLockUI@941074752 waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=4937694700 site=UNANSWERED:await-enter tid=119 thread=Game-0 edt=false input=InputConfirmMulligan@1338932603 count=1
+[bolt] ns=4937824300 site=UNANSWERED:prompt-updateButtons tid=120 thread=AWT-EventQueue-0 edt=true input=InputConfirmMulligan@1338932603 waiter=119:Game-0:RUNNABLE:latch=1
+[bolt] ns=4938162800 site=UNANSWERED:prompt-showPromptMessage tid=120 thread=AWT-EventQueue-0 edt=true input=InputConfirmMulligan@1338932603 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=4938353500 site=UNANSWERED:action tid=120 thread=AWT-EventQueue-0 edt=true input=InputConfirmMulligan@1338932603 buttons=Keep/Mulligan waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=4938625300 site=UNANSWERED:await-return tid=119 thread=Game-0 edt=false input=InputLockUI@998003014 count=0
+[bolt] ns=5218436300 site=UNANSWERED:fixture tid=119 thread=Game-0 edt=false input=InputLockUI@998003014 human=0 ai=1 boltIds=[1] mountain=2 timeout=5
+[bolt] ns=5222643900 site=UNANSWERED:handleGameEvents-enter tid=119 thread=Game-0 edt=false input=InputLockUI@998003014 waiter=119:Game-0:RUNNABLE:latch=0
+12:31:30 [INFO ] ProtocolGuiGame: Sending batch of 259: [GameEventAddLog x2, GameEventTurnBegan, GameEventTurnPhase x2, GameEventZone x170, GameEventCardChangeZone x83, GameEventPlayerPriority]
+12:31:30 [INFO ] DeltaSyncManager: [DeltaSync] New objects: 28, Deltas: 3
+[bolt] ns=5229165200 site=UNANSWERED:handleGameEvents-return tid=119 thread=Game-0 edt=false input=InputLockUI@998003014 waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=5434874700 site=UNANSWERED:await-enter tid=119 thread=Game-0 edt=false input=InputPassPriority@1393993161 count=1
+[bolt] ns=5434970800 site=UNANSWERED:updateGameView-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1393993161 waiter=119:Game-0:RUNNABLE:latch=1
+[bolt] ns=5435960300 site=UNANSWERED:updateGameView-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1393993161 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=5440876000 site=UNANSWERED:prompt-showPromptMessage tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1393993161 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=5441108900 site=UNANSWERED:prompt-updateButtons tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1393993161 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=5441432600 site=UNANSWERED:action tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1393993161 buttons=OK/End Turn waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=5451085400 site=UNANSWERED:visibility-initial tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1393993161 allowedFaceCount=2 hiddenFaceCount=78 rawGraphPrivate=true
+[bolt] ns=5483011300 site=UNANSWERED:updateGameView-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1393993161 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=5483763200 site=UNANSWERED:updateGameView-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1393993161 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=5492944900 site=UNANSWERED:ATOMIC-FAILURE tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1393993161 FailureArtifact[action=required-question, input=InputPassPriority@1393993161, threadId=120, thread=AWT-EventQueue-0, reason=deliberately unanswered getAbilityToPlay, error=java.lang.IllegalStateException: required-question: deliberately unanswered getAbilityToPlay]
+[bolt] ns=5493965800 site=UNANSWERED:cleanup-concede tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1393993161 failurePreserved=true
+[bolt] ns=5507492000 site=UNANSWERED:await-return tid=119 thread=Game-0 edt=false input=none count=0
+Active player is no longer in the game...
+[bolt] ns=5690208600 site=UNANSWERED:handleGameEvents-enter tid=119 thread=Game-0 edt=false input=none waiter=119:Game-0:RUNNABLE:latch=0
+12:31:31 [INFO ] ProtocolGuiGame: Sending batch of 4: [GameEventPlayerControl x2, GameEventGameOutcome, GameEventGameFinished]
+[bolt] ns=5691666900 site=UNANSWERED:handleGameEvents-return tid=119 thread=Game-0 edt=false input=none waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=5695070400 site=UNANSWERED:negative-owner-received tid=62 thread=TestNG-method=unansweredRequiredPromptIsReportedToTestOwner-1 edt=false input=none artifactThread=120 sameAtomicArtifact=true noCastOrPayment=true
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 52.20 s -- in forge.net.embedded.ProtocolGuiGameInProcessTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Forge Parent 2.0.16-SNAPSHOT:
+[INFO] 
+[INFO] Forge Parent ....................................... SUCCESS [  2.320 s]
+[INFO] Forge Core ......................................... SUCCESS [  9.179 s]
+[INFO] Forge Game ......................................... SUCCESS [ 17.860 s]
+[INFO] Forge AI ........................................... SUCCESS [  6.020 s]
+[INFO] Forge Gui .......................................... SUCCESS [ 12.601 s]
+[INFO] Forge .............................................. SUCCESS [01:24 min]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:12 min
+[INFO] Finished at: 2026-10-18T12:31:31-07:00
+[INFO] ------------------------------------------------------------------------

@@ -1,0 +1,144 @@
+{
+  "date": "2026-10-18",
+  "baseCommit": "4e2d87d5418d7a21a8b7e67e4831c8566dcf73c2",
+  "protectedOriginalFileCount": 58903,
+  "approvedSourceChanges": [
+    "experiments/ai-teavm/src/observer/java/probe/JdiWitness.java",
+    "forge-gui-desktop/src/test/java/forge/net/embedded/ProtocolGuiGameInProcessTest.java"
+  ],
+  "changedOriginalTrackedFiles": [
+    "docs/STATUS.md",
+    "docs/research/results/evidence/maven-cache-inventory-20261018.json",
+    "docs/research/results/maven-baseline-blocker.md",
+    "experiments/ai-teavm/src/observer/java/probe/JdiWitness.java",
+    "forge-gui-desktop/src/test/java/forge/net/embedded/ProtocolGuiGameInProcessTest.java"
+  ],
+  "unexpectedNonDocumentationChanges": [],
+  "outsideGeneratedOutputs": {
+    "added": [
+      "docs/experiments/embedded-bolt-results.md",
+      "docs/experiments/evidence/embedded-baseline-approved-20261018/acquired-artifacts.json",
+      "docs/experiments/evidence/embedded-baseline-approved-20261018/after-offline-changes.json",
+      "docs/experiments/evidence/embedded-baseline-approved-20261018/evidence-manifest.json",
+      "docs/experiments/evidence/embedded-baseline-approved-20261018/forge.net.embedded.ProtocolGuiGameInProcessTest.txt",
+      "docs/experiments/evidence/embedded-baseline-approved-20261018/offline-test-result.json",
+      "docs/experiments/evidence/embedded-baseline-approved-20261018/offline-test.log",
+      "docs/experiments/evidence/embedded-baseline-approved-20261018/online-test-compile-result.json",
+      "docs/experiments/evidence/embedded-baseline-approved-20261018/online-test-compile.log",
+      "docs/experiments/evidence/embedded-baseline-approved-20261018/surefire-result-without-system-properties.xml",
+      "docs/experiments/evidence/embedded-baseline-approved-20261018/testng-results.xml",
+      "docs/experiments/evidence/embedded-baseline-approved-20261018/verification-summary.json",
+      "docs/research/results/maven-baseline-results.md",
+      "test-output/bullet_point.png",
+      "test-output/collapseall.gif",
+      "test-output/emailable-report.html",
+      "test-output/failed.png",
+      "test-output/index.html",
+      "test-output/jquery-3.6.0.min.js",
+      "test-output/navigator-bullet.png",
+      "test-output/passed.png",
+      "test-output/skipped.png",
+      "test-output/testng-reports.css",
+      "test-output/testng-reports.js",
+      "test-output/testng-reports1.css",
+      "test-output/testng-reports2.js",
+      "test-output/testng-results.xml"
+    ],
+    "removed": [],
+    "changed": [
+      "docs/STATUS.md",
+      "docs/research/results/evidence/maven-cache-inventory-20261018.json",
+      "docs/research/results/maven-baseline-blocker.md",
+      "experiments/ai-teavm/src/observer/java/probe/JdiWitness.java",
+      "forge-gui-desktop/src/test/java/forge/net/embedded/ProtocolGuiGameInProcessTest.java"
+    ]
+  },
+  "unexpectedOutsideChanges": [],
+  "cacheFileCountBefore": 2393,
+  "cacheFileCountAfter": 2393,
+  "cacheByteIdentical": true,
+  "toolProfileConfigurationUnchanged": true,
+  "originalRuntimeSourceUnchanged": true,
+  "testSourceHashes": {
+    "experiments/ai-teavm/src/observer/java/probe/JdiWitness.java": {
+      "bytes": 27639,
+      "sha256": "6bcf4a3acc5038a380000c57276ad41b226bfe7044326293f1c31f3f7db4b9c5"
+    },
+    "forge-gui-desktop/src/test/java/forge/net/embedded/ProtocolGuiGameInProcessTest.java": {
+      "bytes": 42756,
+      "sha256": "c3ca6b6a00b91755c5eb5d131d2f47ad99ecec72e673beed71c8e5cedaedbf16"
+    }
+  },
+  "criticalOriginalInputs": {
+    "pom.xml": {
+      "bytes": 16613,
+      "sha256": "8818d2be1bc10bbde37839ed7a350ce91a09bb02d7e8458296586eb72d8c27c1"
+    },
+    "forge-gui-desktop/pom.xml": {
+      "bytes": 36062,
+      "sha256": "c72f46fee22ee03e3f9a4e3c368b71cd8a7cd48583666ad9a4d057d42464e5d1"
+    },
+    "forge-gui-desktop/src/test/java/forge/net/embedded/ProtocolGuiGameSingleThreadTest.java": {
+      "bytes": 7131,
+      "sha256": "76f47d8eaa3a5909dc027aefc6e1c9870bfcff659b2e15704d39d47f0fadc3ef"
+    },
+    "forge-gui-desktop/src/test/java/forge/net/HeadlessGuiDesktop.java": {
+      "bytes": 5046,
+      "sha256": "e2f1687f7d8c92a459b308402f0d67e17f28ee15958546be8b7b350f6f3f9619"
+    },
+    "forge-gui-desktop/src/test/java/forge/net/TestUtils.java": {
+      "bytes": 3308,
+      "sha256": "5a6c7bc1d1f1ac14dee29c49eda058a348f423d235539a3bd866dc1c0fb271dd"
+    },
+    "forge-gui/src/main/java/forge/gamemodes/net/ProtocolGuiGame.java": {
+      "bytes": 26391,
+      "sha256": "e210baa815bdd329c4f4b91e290ff2e2318b3ff639811f6e2d59a26100bcff12"
+    },
+    "forge-ai/src/main/java/forge/ai/AiController.java": {
+      "bytes": 115555,
+      "sha256": "261960025e02984e32b6d6aa2072f101c9cb6e7c57d37db7f42c50dc0de0244a"
+    },
+    "forge-game/src/main/java/forge/game/phase/PhaseHandler.java": {
+      "bytes": 56458,
+      "sha256": "90cc448698c9bf90cb28c2a7c3a4435ad5f4af88baec5f94615ed4631a279317"
+    },
+    "forge-gui/res/cardsfolder/l/lightning_bolt.txt": {
+      "bytes": 202,
+      "sha256": "330ba48b8090d1b2312f9404d71612cd3bbf49b960974b99ebf5c0804bb4711e"
+    },
+    "forge-gui/res/cardsfolder/m/mountain.txt": {
+      "bytes": 80,
+      "sha256": "d421d9639d7b7f2a8c4ed04fa2fa8526cbc768733a92b0a1a453535ee99a3799"
+    }
+  },
+  "privateSettingsUnchanged": true,
+  "firstAuditExit": 1,
+  "firstAuditUnexpectedGeneratedFiles": 14,
+  "cleanup": {
+    "removedFiles": [
+      "test-output/bullet_point.png",
+      "test-output/collapseall.gif",
+      "test-output/emailable-report.html",
+      "test-output/failed.png",
+      "test-output/index.html",
+      "test-output/jquery-3.6.0.min.js",
+      "test-output/navigator-bullet.png",
+      "test-output/passed.png",
+      "test-output/skipped.png",
+      "test-output/testng-reports.css",
+      "test-output/testng-reports.js",
+      "test-output/testng-reports1.css",
+      "test-output/testng-reports2.js",
+      "test-output/testng-results.xml"
+    ],
+    "privateBackupRetained": true,
+    "remainingFiles": 0,
+    "defaultReportDirectoryRemoved": true
+  },
+  "postCleanupUnexpectedNonDocumentationAdded": [],
+  "postCleanupUnexpectedNonDocumentationRemoved": [],
+  "postCleanupCriticalAndApprovedSourceHashesVerified": true,
+  "sourceAuditCompletedUtc": "2026-10-18T19:44:51.324395+00:00",
+  "javaProcessesAfterAllTests": 0,
+  "finalIntegrityCheckPassed": true
+}
