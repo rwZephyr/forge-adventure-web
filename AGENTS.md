@@ -29,7 +29,7 @@ This repository is an experimental fork of [Card-Forge/forge](https://github.com
 - If a task uncovers a new architectural blocker, document it and stop for review rather than quietly expanding into a full port.
 
 ## Agent coordination
-- Codex: lead implementation, currently the approved **Gate 2 Stage B unchanged-runtime baseline** (JVM Lightning Bolt/Mountain control, dependency/metadata audit, unmodified TeaVM compiler attempt). Proposed browser or JVM adapters need separate review.
+- Codex: lead implementation. [PR #15](https://github.com/rwZephyr/forge-adventure-web/pull/15) completed the approved Stage B unchanged-runtime baseline: genuine Forge AI succeeds on JVM; pinned TeaVM compile fails with 93 severe diagnostics. **No next architecture implementation or compatibility adapter is approved.**
 - Muse/Marvin: Adventure asset scanner [draft PR #10](https://github.com/rwZephyr/forge-adventure-web/pull/10), plus independent bounded utility/review work. Avoid duplicating Codex's runtime implementation.
 - Claude: a *fresh account* may be assigned independent technical review. Read the provided onboarding task and cited source paths before starting; default is read-only until explicitly authorized to edit.
 - ChatGPT: coordination, evidence review and draft PR integration; owner decides approvals, network access and merges.
