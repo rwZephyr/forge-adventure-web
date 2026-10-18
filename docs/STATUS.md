@@ -2,6 +2,21 @@
 
 Last updated: 2026-10-18
 
+## Stage C design for review
+- Owner accepts PR #19's authentic human/AI JVM Bolt milestone following
+  independent adversarial review. Its source/evidence remains unchanged and draft.
+- [Browser/JVM interaction contract](architecture/browser-jvm-interaction-contract.md)
+  proposes a viewer-specific immutable projection, prompt-scoped action choices,
+  EDT revalidation, duplicate/stale-action handling and a DTO-only scripted peer
+  within the existing embedded test. No raw Java graph crosses the proposed boundary.
+- Blocking questions: coherent capture across original graph mutators and exact
+  authorization of synchronous ability questions (including EDT callers). Passing
+  #19 observations do not establish general synchronization safety.
+- Documentation/source inspection only; no new test/build execution, dependencies,
+  runtime changes, reconnect, browser transport or listeners. Next bounded step:
+  review this design before approving any DTO proof implementation. Existing PRs
+  remain unmerged.
+
 ## Current milestone
 **Gate 0 verified. Gate 1's bounded SpriteGroup checks pass on desktop Chromium
 and in the owner-guided actual iPhone Safari session. Gate 2 Stage A's expected
