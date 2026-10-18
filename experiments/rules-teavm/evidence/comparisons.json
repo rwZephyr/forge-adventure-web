@@ -1,0 +1,44 @@
+[
+  {
+    "variant": "explicit",
+    "comparisonPassed": true,
+    "cases": 15,
+    "negativeControlDemonstrated": false,
+    "run": 1
+  },
+  {
+    "variant": "explicit",
+    "comparisonPassed": true,
+    "cases": 15,
+    "negativeControlDemonstrated": false,
+    "run": 2
+  },
+  {
+    "variant": "explicit",
+    "comparisonPassed": true,
+    "cases": 15,
+    "negativeControlDemonstrated": false,
+    "run": 3
+  },
+  {
+    "variant": "missing-amount",
+    "comparisonPassed": true,
+    "cases": 15,
+    "negativeControlDemonstrated": true,
+    "run": 1
+  },
+  {
+    "variant": "missing-amount",
+    "comparisonPassed": true,
+    "cases": 15,
+    "negativeControlDemonstrated": true,
+    "run": 2
+  },
+  {
+    "variant": "missing-amount",
+    "comparisonPassed": true,
+    "cases": 15,
+    "negativeControlDemonstrated": true,
+    "run": 3
+  }
+]

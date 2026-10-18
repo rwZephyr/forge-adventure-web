@@ -1,0 +1,65 @@
+[
+  {
+    "variant": "explicit",
+    "run": 1,
+    "passed": true,
+    "passedCases": 15,
+    "totalCases": 15
+  },
+  {
+    "variant": "explicit",
+    "run": 2,
+    "passed": true,
+    "passedCases": 15,
+    "totalCases": 15
+  },
+  {
+    "variant": "explicit",
+    "run": 3,
+    "passed": true,
+    "passedCases": 15,
+    "totalCases": 15
+  },
+  {
+    "variant": "missing-amount",
+    "run": 1,
+    "passed": false,
+    "passedCases": 14,
+    "totalCases": 15
+  },
+  {
+    "variant": "missing-amount",
+    "run": 2,
+    "passed": false,
+    "passedCases": 14,
+    "totalCases": 15
+  },
+  {
+    "variant": "missing-amount",
+    "run": 3,
+    "passed": false,
+    "passedCases": 14,
+    "totalCases": 15
+  },
+  {
+    "variant": "default",
+    "run": 1,
+    "passed": false,
+    "passedCases": 5,
+    "totalCases": 15
+  },
+  {
+    "variant": "default",
+    "run": 2,
+    "passed": false,
+    "passedCases": 5,
+    "totalCases": 15
+  },
+  {
+    "variant": "default",
+    "run": 3,
+    "passed": false,
+    "passedCases": 5,
+    "totalCases": 15
+  }
+]

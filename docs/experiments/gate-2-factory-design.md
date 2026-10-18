@@ -1,6 +1,9 @@
 # Gate 2 proposal: original factories, then threaded spell AI
 
 Prepared by Codex, 2026-10-17. **Design only; not implemented or executed.**
+Stage A was subsequently approved and implemented on `codex/gate2-factories`;
+see [actual results](../../experiments/rules-teavm/RESULTS.md). The proposal below
+remains the reviewed scope, with counts/constants corrected from execution.
 Inspected source: `db893dcdb14fdd85a05437ad458dc70ef704ca2e`. Forge core/game/AI
 sources are identical at PR #8 head `57ed01d137e45ea2a304b64ef979402347cb0843`.
 
@@ -44,7 +47,7 @@ this stage. Full module inputs do not establish full-module browser compatibilit
 
 | Original source | Use and verified behavior |
 | --- | --- |
-| [TriggerType](https://github.com/rwZephyr/forge-adventure-web/blob/db893dcdb14fdd85a05437ad458dc70ef704ca2e/forge-game/src/main/java/forge/game/trigger/TriggerType.java#L164) | All enum entries call `findConstructor` during initialization: `getDeclaredConstructors`, parameter-type inspection and `(Map, Card, boolean)` invocation. Source has 148 entries referencing 136 distinct implementation classes. |
+| [TriggerType](https://github.com/rwZephyr/forge-adventure-web/blob/db893dcdb14fdd85a05437ad458dc70ef704ca2e/forge-game/src/main/java/forge/game/trigger/TriggerType.java#L164) | All enum entries call `findConstructor` during initialization: `getDeclaredConstructors`, parameter-type inspection and `(Map, Card, boolean)` invocation. Actual JVM inventory has 149 entries referencing 137 distinct implementation classes. Counts corrected during Stage A: the initial source pattern missed whitespace before DayTimeChanges' opening parenthesis. |
 | [ReplacementType](https://github.com/rwZephyr/forge-adventure-web/blob/db893dcdb14fdd85a05437ad458dc70ef704ca2e/forge-game/src/main/java/forge/game/replacement/ReplacementType.java#L56) | 40 entries store classes; scanning/invocation happens in `createReplacement`, not enum initialization. |
 | [Keyword](https://github.com/rwZephyr/forge-adventure-web/blob/db893dcdb14fdd85a05437ad458dc70ef704ca2e/forge-game/src/main/java/forge/game/keyword/Keyword.java#L264) | `getConstructor().newInstance()` exceptions are caught and replaced silently with `new SimpleKeyword()`. Initialization alone proves no reflection success. |
 | `forge.game.trigger.TriggerAlways`, `TriggerLifeGained` | Two exact trigger products. |
@@ -92,7 +95,7 @@ resolved dependencies. No new external implementation code or game assets here.
    initialization cannot hide a keyword fallback. Default failure is useful data.
 2. **Explicit metadata:** compiler-side `ReflectionPolicy`, loaded through
    `META-INF/services/org.teavm.extension.spi.reflection.ReflectionPolicy`.
-   Return only required constructors from `classAccessibleMembers`: all 136
+   Return only required constructors from `classAccessibleMembers`: all 137
    TriggerType implementation `(Map, Card, boolean)` constructors, the two
    selected replacement constructors, and five keyword public no-arg
    constructors. Derive/audit a manifest against original enum mappings and
@@ -135,7 +138,7 @@ may be disabled. Share cases between JVM and browser; isolate JS reporting.
 | K5 | `Keyword.getInstance("Kicker:1 R")` | Exact Kicker, KICKER, same cost assertions. `instanceof KeywordWithCost` would miss the wrong subclass. |
 
 For K4/K5 use `getCost().getCostMana().getMana()` and original `ManaCost.getCMC`,
-`getGenericCost`, `getShardCount(ManaCostShard.R)`; no harness mana parser.
+`getGenericCost`, `getShardCount(ManaCostShard.RED)`; no harness mana parser.
 For all cases assert independent objects on repeated calls, preserved input and
 original/copied parameters; repeat trigger/replacement calls with intrinsic
 true/false. Mutate input maps afterward and check copied product values remain.
@@ -261,7 +264,7 @@ fallback and AI thread/get path; POM dependencies; cached TeaVM 0.15.0 and
 gdx-TeaVM 1.6.1 source APIs. Original core/game/AI diff against baseline is empty.
 No Gate 2 build/execution, dependency install, phone test, server or service change.
 
-Next decision: approve/revise **Stage A only**, including constructor metadata
-and the intentionally failing fallback artifact. Stage B follows actual Stage A
-results and a separate review. Gate 1 phone testing waits for the agreed private
-arrangement. PR #8 remains separate and unmerged.
+Stage A approval was received after PR #9 review; actual results are recorded in
+the separate implementation experiment. Next decision: review those results and
+agree on private phone testing. Stage B still requires separate review/approval.
+PR #8 remains separate and unmerged.

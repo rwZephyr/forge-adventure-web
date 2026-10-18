@@ -1,0 +1,640 @@
+[
+  {
+    "coordinate": "com.apptasticsoftware:rssreader:3.8.2",
+    "licenses": [
+      {
+        "name": "MIT License",
+        "url": "https://raw.githubusercontent.com/w3stling/rssreader/master/LICENSE"
+      }
+    ],
+    "sourcePom": ".local-tools/m2/com/apptasticsoftware/rssreader/3.8.2/rssreader-3.8.2.pom"
+  },
+  {
+    "coordinate": "com.badlogicgames.gdx:gdx-jnigen-loader:2.5.2",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/m2/com/badlogicgames/gdx/gdx-jnigen-loader/2.5.2/gdx-jnigen-loader-2.5.2.pom"
+  },
+  {
+    "coordinate": "com.badlogicgames.gdx:gdx:1.14.2",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/m2/com/badlogicgames/gdx/gdx/1.14.2/gdx-1.14.2.pom"
+  },
+  {
+    "coordinate": "com.github.xpenatan.gdx-teavm:asset-loader:1.6.1",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/gradle-cache/caches/modules-2/files-2.1/com.github.xpenatan.gdx-teavm/asset-loader/1.6.1/679a141f8666478506e23ff61021a48ca2a645e2/asset-loader-1.6.1.pom"
+  },
+  {
+    "coordinate": "com.github.xpenatan.gdx-teavm:backend-shared:1.6.1",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/gradle-cache/caches/modules-2/files-2.1/com.github.xpenatan.gdx-teavm/backend-shared/1.6.1/67a156220fb9c873d4b72085cf64fd530b222abe/backend-shared-1.6.1.pom"
+  },
+  {
+    "coordinate": "com.github.xpenatan.gdx-teavm:backend-web:1.6.1",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/gradle-cache/caches/modules-2/files-2.1/com.github.xpenatan.gdx-teavm/backend-web/1.6.1/d5a4a5709993fa36b44570980a0c18641618ebaa/backend-web-1.6.1.pom"
+  },
+  {
+    "coordinate": "com.github.xpenatan:jMultiplatform:0.1.3",
+    "licenses": [
+      {
+        "name": "The Apache License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/gradle-cache/caches/modules-2/files-2.1/com.github.xpenatan/jMultiplatform/0.1.3/2172da524178a20f235a9fb1329b22d6a1bda7aa/jMultiplatform-0.1.3.pom"
+  },
+  {
+    "coordinate": "com.google.code.findbugs:jsr305:3.0.2",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/m2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom"
+  },
+  {
+    "coordinate": "com.google.errorprone:error_prone_annotations:2.28.0",
+    "licenses": [
+      {
+        "name": "Apache 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/m2/com/google/errorprone/error_prone_annotations/2.28.0/error_prone_annotations-2.28.0.pom"
+  },
+  {
+    "coordinate": "com.google.guava:failureaccess:1.0.2",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/m2/com/google/guava/guava-parent/26.0-android/guava-parent-26.0-android.pom",
+    "inheritedFrom": "com.google.guava:guava-parent:26.0-android"
+  },
+  {
+    "coordinate": "com.google.guava:guava:33.3.1-android",
+    "licenses": [
+      {
+        "name": "Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/m2/com/google/guava/guava-parent/33.3.1-android/guava-parent-33.3.1-android.pom",
+    "inheritedFrom": "com.google.guava:guava-parent:33.3.1-android"
+  },
+  {
+    "coordinate": "com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/m2/com/google/guava/guava-parent/26.0-android/guava-parent-26.0-android.pom",
+    "inheritedFrom": "com.google.guava:guava-parent:26.0-android"
+  },
+  {
+    "coordinate": "com.google.j2objc:j2objc-annotations:3.0.0",
+    "licenses": [
+      {
+        "name": "Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/m2/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.pom"
+  },
+  {
+    "coordinate": "com.jcraft:jzlib:1.1.3",
+    "licenses": [
+      {
+        "name": "BSD",
+        "url": "http://www.jcraft.com/jzlib/LICENSE.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/gradle-cache/caches/modules-2/files-2.1/com.jcraft/jzlib/1.1.3/6e6789004c70477a6e2ea92c066b757534e63a10/jzlib-1.1.3.pom"
+  },
+  {
+    "coordinate": "io.sentry:sentry:8.21.1",
+    "licenses": [
+      {
+        "name": "MIT",
+        "url": "http://www.opensource.org/licenses/mit-license.php"
+      }
+    ],
+    "sourcePom": ".local-tools/m2/io/sentry/sentry/8.21.1/sentry-8.21.1.pom"
+  },
+  {
+    "coordinate": "joda-time:joda-time:2.12.2",
+    "licenses": [
+      {
+        "name": "Apache License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/gradle-cache/caches/modules-2/files-2.1/joda-time/joda-time/2.12.2/778866d1d0aafc8a72d2dc43fb3087ba6c4daeb3/joda-time-2.12.2.pom"
+  },
+  {
+    "coordinate": "org.apache.commons:commons-lang3:3.18.0",
+    "licenses": [
+      {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/m2/org/apache/apache/35/apache-35.pom",
+    "inheritedFrom": "org.apache.commons:commons-parent:85"
+  },
+  {
+    "coordinate": "org.apache.commons:commons-text:1.12.0",
+    "licenses": [
+      {
+        "name": "Apache-2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/m2/org/apache/apache/31/apache-31.pom",
+    "inheritedFrom": "org.apache.commons:commons-parent:69"
+  },
+  {
+    "coordinate": "org.apfloat:apfloat:1.10.1",
+    "licenses": [
+      {
+        "name": "MIT License",
+        "url": "https://opensource.org/licenses/MIT"
+      }
+    ],
+    "sourcePom": ".local-tools/m2/org/apfloat/apfloat-parent/1.10.1/apfloat-parent-1.10.1.pom",
+    "inheritedFrom": "org.apfloat:apfloat-parent:1.10.1"
+  },
+  {
+    "coordinate": "org.checkerframework:checker-qual:3.43.0",
+    "licenses": [
+      {
+        "name": "The MIT License",
+        "url": "http://opensource.org/licenses/MIT"
+      }
+    ],
+    "sourcePom": ".local-tools/m2/org/checkerframework/checker-qual/3.43.0/checker-qual-3.43.0.pom"
+  },
+  {
+    "coordinate": "org.eclipse.jetty.toolchain:jetty-jakarta-servlet-api:5.0.2",
+    "licenses": [
+      {
+        "name": "Apache Software License - Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0"
+      },
+      {
+        "name": "Eclipse Public License - Version 1.0",
+        "url": "http://www.eclipse.org/org/documents/epl-v10.php"
+      }
+    ],
+    "sourcePom": ".local-tools/gradle-cache/caches/modules-2/files-2.1/org.eclipse.jetty.toolchain/jetty-toolchain/1.6/347bc6c72efd323614ebe9205130971ca1d7742a/jetty-toolchain-1.6.pom",
+    "inheritedFrom": "org.eclipse.jetty.toolchain:jetty-toolchain:1.6"
+  },
+  {
+    "coordinate": "org.eclipse.jetty:jetty-http:11.0.13",
+    "licenses": [
+      {
+        "name": "Eclipse Public License - Version 2.0",
+        "url": "https://www.eclipse.org/legal/epl-2.0"
+      },
+      {
+        "name": "Apache Software License - Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      }
+    ],
+    "sourcePom": ".local-tools/gradle-cache/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-project/11.0.13/6d6cdc7466ea1f8d1847889559618ac1c2f480f7/jetty-project-11.0.13.pom",
+    "inheritedFrom": "org.eclipse.jetty:jetty-project:11.0.13"
+  },
+  {
+    "coordinate": "org.eclipse.jetty:jetty-io:11.0.13",
+    "licenses": [
+      {
+        "name": "Eclipse Public License - Version 2.0",
+        "url": "https://www.eclipse.org/legal/epl-2.0"
+      },
+      {
+        "name": "Apache Software License - Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      }
+    ],
+    "sourcePom": ".local-tools/gradle-cache/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-project/11.0.13/6d6cdc7466ea1f8d1847889559618ac1c2f480f7/jetty-project-11.0.13.pom",
+    "inheritedFrom": "org.eclipse.jetty:jetty-project:11.0.13"
+  },
+  {
+    "coordinate": "org.eclipse.jetty:jetty-security:11.0.13",
+    "licenses": [
+      {
+        "name": "Eclipse Public License - Version 2.0",
+        "url": "https://www.eclipse.org/legal/epl-2.0"
+      },
+      {
+        "name": "Apache Software License - Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      }
+    ],
+    "sourcePom": ".local-tools/gradle-cache/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-project/11.0.13/6d6cdc7466ea1f8d1847889559618ac1c2f480f7/jetty-project-11.0.13.pom",
+    "inheritedFrom": "org.eclipse.jetty:jetty-project:11.0.13"
+  },
+  {
+    "coordinate": "org.eclipse.jetty:jetty-server:11.0.13",
+    "licenses": [
+      {
+        "name": "Eclipse Public License - Version 2.0",
+        "url": "https://www.eclipse.org/legal/epl-2.0"
+      },
+      {
+        "name": "Apache Software License - Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      }
+    ],
+    "sourcePom": ".local-tools/gradle-cache/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-project/11.0.13/6d6cdc7466ea1f8d1847889559618ac1c2f480f7/jetty-project-11.0.13.pom",
+    "inheritedFrom": "org.eclipse.jetty:jetty-project:11.0.13"
+  },
+  {
+    "coordinate": "org.eclipse.jetty:jetty-servlet:11.0.13",
+    "licenses": [
+      {
+        "name": "Eclipse Public License - Version 2.0",
+        "url": "https://www.eclipse.org/legal/epl-2.0"
+      },
+      {
+        "name": "Apache Software License - Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      }
+    ],
+    "sourcePom": ".local-tools/gradle-cache/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-project/11.0.13/6d6cdc7466ea1f8d1847889559618ac1c2f480f7/jetty-project-11.0.13.pom",
+    "inheritedFrom": "org.eclipse.jetty:jetty-project:11.0.13"
+  },
+  {
+    "coordinate": "org.eclipse.jetty:jetty-util:11.0.13",
+    "licenses": [
+      {
+        "name": "Eclipse Public License - Version 2.0",
+        "url": "https://www.eclipse.org/legal/epl-2.0"
+      },
+      {
+        "name": "Apache Software License - Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      }
+    ],
+    "sourcePom": ".local-tools/gradle-cache/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-project/11.0.13/6d6cdc7466ea1f8d1847889559618ac1c2f480f7/jetty-project-11.0.13.pom",
+    "inheritedFrom": "org.eclipse.jetty:jetty-project:11.0.13"
+  },
+  {
+    "coordinate": "org.eclipse.jetty:jetty-webapp:11.0.13",
+    "licenses": [
+      {
+        "name": "Eclipse Public License - Version 2.0",
+        "url": "https://www.eclipse.org/legal/epl-2.0"
+      },
+      {
+        "name": "Apache Software License - Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      }
+    ],
+    "sourcePom": ".local-tools/gradle-cache/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-project/11.0.13/6d6cdc7466ea1f8d1847889559618ac1c2f480f7/jetty-project-11.0.13.pom",
+    "inheritedFrom": "org.eclipse.jetty:jetty-project:11.0.13"
+  },
+  {
+    "coordinate": "org.eclipse.jetty:jetty-xml:11.0.13",
+    "licenses": [
+      {
+        "name": "Eclipse Public License - Version 2.0",
+        "url": "https://www.eclipse.org/legal/epl-2.0"
+      },
+      {
+        "name": "Apache Software License - Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0"
+      }
+    ],
+    "sourcePom": ".local-tools/gradle-cache/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-project/11.0.13/6d6cdc7466ea1f8d1847889559618ac1c2f480f7/jetty-project-11.0.13.pom",
+    "inheritedFrom": "org.eclipse.jetty:jetty-project:11.0.13"
+  },
+  {
+    "coordinate": "org.javassist:javassist:3.28.0-GA",
+    "licenses": [
+      {
+        "name": "MPL 1.1",
+        "url": "http://www.mozilla.org/MPL/MPL-1.1.html"
+      },
+      {
+        "name": "LGPL 2.1",
+        "url": "http://www.gnu.org/licenses/lgpl-2.1.html"
+      },
+      {
+        "name": "Apache License 2.0",
+        "url": "http://www.apache.org/licenses/"
+      }
+    ],
+    "sourcePom": ".local-tools/m2/org/javassist/javassist/3.28.0-GA/javassist-3.28.0-GA.pom"
+  },
+  {
+    "coordinate": "org.jgrapht:jgrapht-core:1.5.2",
+    "licenses": [
+      {
+        "name": "GNU Lesser General Public License Version 2.1, February 1999",
+        "url": "http://jgrapht.sourceforge.net/LGPL.html"
+      },
+      {
+        "name": "Eclipse Public License (EPL) 2.0",
+        "url": "http://www.eclipse.org/legal/epl-v20.html"
+      }
+    ],
+    "sourcePom": ".local-tools/m2/org/jgrapht/jgrapht-core/1.5.2/jgrapht-core-1.5.2.pom"
+  },
+  {
+    "coordinate": "org.jheaps:jheaps:0.14",
+    "licenses": [
+      {
+        "name": "Apache License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/m2/org/jheaps/jheaps/0.14/jheaps-0.14.pom"
+  },
+  {
+    "coordinate": "org.reflections:reflections:0.10.2",
+    "licenses": [
+      {
+        "name": "WTFPL",
+        "url": "http://www.wtfpl.net/"
+      },
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/m2/org/reflections/reflections/0.10.2/reflections-0.10.2.pom"
+  },
+  {
+    "coordinate": "org.slf4j:slf4j-api:2.0.16",
+    "licenses": [
+      {
+        "name": "MIT License",
+        "url": "http://www.opensource.org/licenses/mit-license.php"
+      }
+    ],
+    "sourcePom": ".local-tools/m2/org/slf4j/slf4j-bom/2.0.16/slf4j-bom-2.0.16.pom",
+    "inheritedFrom": "org.slf4j:slf4j-parent:2.0.16"
+  },
+  {
+    "coordinate": "org.teavm:teavm-classlib:0.15.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/gradle-cache/caches/modules-2/files-2.1/org.teavm/teavm-classlib/0.15.0/3a9d307ed6dad118fc2919d007172c652f6f6f6a/teavm-classlib-0.15.0.pom"
+  },
+  {
+    "coordinate": "org.teavm:teavm-core:0.15.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/gradle-cache/caches/modules-2/files-2.1/org.teavm/teavm-core/0.15.0/8bbe2af33205a7eb0a3799dfd6abdbfca00fefa9/teavm-core-0.15.0.pom"
+  },
+  {
+    "coordinate": "org.teavm:teavm-extension-apis:0.15.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/gradle-cache/caches/modules-2/files-2.1/org.teavm/teavm-extension-apis/0.15.0/47b6a4e5d269f188ec8297f84397a11e959487d8/teavm-extension-apis-0.15.0.pom"
+  },
+  {
+    "coordinate": "org.teavm:teavm-extension-spi-util:0.15.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/gradle-cache/caches/modules-2/files-2.1/org.teavm/teavm-extension-spi-util/0.15.0/1f6b4e9ddee5bbae1db7e04515d6f06cfed08929/teavm-extension-spi-util-0.15.0.pom"
+  },
+  {
+    "coordinate": "org.teavm:teavm-extension-spi:0.15.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/gradle-cache/caches/modules-2/files-2.1/org.teavm/teavm-extension-spi/0.15.0/9f4a85a9499ab107cbc9986aeed6b4b93c3c64e0/teavm-extension-spi-0.15.0.pom"
+  },
+  {
+    "coordinate": "org.teavm:teavm-interop:0.15.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/gradle-cache/caches/modules-2/files-2.1/org.teavm/teavm-interop/0.15.0/7e1a330dab410757716905347fdbb3a7327f449d/teavm-interop-0.15.0.pom"
+  },
+  {
+    "coordinate": "org.teavm:teavm-jso-apis:0.15.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/gradle-cache/caches/modules-2/files-2.1/org.teavm/teavm-jso-apis/0.15.0/aab8c1c52facd1b6b2ca82e603e8c6ad4d75e337/teavm-jso-apis-0.15.0.pom"
+  },
+  {
+    "coordinate": "org.teavm:teavm-jso-impl:0.15.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/gradle-cache/caches/modules-2/files-2.1/org.teavm/teavm-jso-impl/0.15.0/1bf0902eb5899df07b7a3d3c29b64a20f3942a25/teavm-jso-impl-0.15.0.pom"
+  },
+  {
+    "coordinate": "org.teavm:teavm-jso:0.15.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/gradle-cache/caches/modules-2/files-2.1/org.teavm/teavm-jso/0.15.0/1ecbfeed97be57ef530f05607fea0a4b1e5306b0/teavm-jso-0.15.0.pom"
+  },
+  {
+    "coordinate": "org.teavm:teavm-metaprogramming-api:0.15.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/gradle-cache/caches/modules-2/files-2.1/org.teavm/teavm-metaprogramming-api/0.15.0/4ed0f9e8b02bf044a7b08a59cdef23a342c372ce/teavm-metaprogramming-api-0.15.0.pom"
+  },
+  {
+    "coordinate": "org.teavm:teavm-metaprogramming-impl:0.15.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/gradle-cache/caches/modules-2/files-2.1/org.teavm/teavm-metaprogramming-impl/0.15.0/fe7314a5074a1f746a55fc67b9a2d92b3e5dea90/teavm-metaprogramming-impl-0.15.0.pom"
+  },
+  {
+    "coordinate": "org.teavm:teavm-platform:0.15.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/gradle-cache/caches/modules-2/files-2.1/org.teavm/teavm-platform/0.15.0/3ea385acaf665e5b700bdd32a75d2a951a308835/teavm-platform-0.15.0.pom"
+  },
+  {
+    "coordinate": "org.teavm:teavm-relocated-libs-asm-analysis:0.15.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/gradle-cache/caches/modules-2/files-2.1/org.teavm/teavm-relocated-libs-asm-analysis/0.15.0/1aeecec31d5601f82f610e135ec3b3529a5ad29/teavm-relocated-libs-asm-analysis-0.15.0.pom"
+  },
+  {
+    "coordinate": "org.teavm:teavm-relocated-libs-asm-commons:0.15.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/gradle-cache/caches/modules-2/files-2.1/org.teavm/teavm-relocated-libs-asm-commons/0.15.0/263e2a8b9ec579911ff0954e68c018429190d1e8/teavm-relocated-libs-asm-commons-0.15.0.pom"
+  },
+  {
+    "coordinate": "org.teavm:teavm-relocated-libs-asm-tree:0.15.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/gradle-cache/caches/modules-2/files-2.1/org.teavm/teavm-relocated-libs-asm-tree/0.15.0/de88dda5457c789b554c0b00851802fe4bb4067f/teavm-relocated-libs-asm-tree-0.15.0.pom"
+  },
+  {
+    "coordinate": "org.teavm:teavm-relocated-libs-asm-util:0.15.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/gradle-cache/caches/modules-2/files-2.1/org.teavm/teavm-relocated-libs-asm-util/0.15.0/d3fb731f769d2cdb2252365c8e240ef744ce61ee/teavm-relocated-libs-asm-util-0.15.0.pom"
+  },
+  {
+    "coordinate": "org.teavm:teavm-relocated-libs-asm:0.15.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/gradle-cache/caches/modules-2/files-2.1/org.teavm/teavm-relocated-libs-asm/0.15.0/57131cdc7e79df548fd05ccd8fa52b91fdbb279d/teavm-relocated-libs-asm-0.15.0.pom"
+  },
+  {
+    "coordinate": "org.teavm:teavm-relocated-libs-hppc:0.15.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/gradle-cache/caches/modules-2/files-2.1/org.teavm/teavm-relocated-libs-hppc/0.15.0/588e689380d8bf4f85875811913e1544d78a0952/teavm-relocated-libs-hppc-0.15.0.pom"
+  },
+  {
+    "coordinate": "org.teavm:teavm-relocated-libs-rhino:0.15.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/gradle-cache/caches/modules-2/files-2.1/org.teavm/teavm-relocated-libs-rhino/0.15.0/3aa30f77e8dac5df4a27c15f754f4d9802aeaa85/teavm-relocated-libs-rhino-0.15.0.pom"
+  },
+  {
+    "coordinate": "org.teavm:teavm-tooling:0.15.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/gradle-cache/caches/modules-2/files-2.1/org.teavm/teavm-tooling/0.15.0/5b00b3d0cecfefd620ba5070608471cdbc710413/teavm-tooling-0.15.0.pom"
+  },
+  {
+    "coordinate": "org.tinylog:slf4j-tinylog:2.7.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/m2/org/tinylog/slf4j-tinylog/2.7.0/slf4j-tinylog-2.7.0.pom"
+  },
+  {
+    "coordinate": "org.tinylog:tinylog-api:2.7.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/m2/org/tinylog/tinylog-api/2.7.0/tinylog-api-2.7.0.pom"
+  },
+  {
+    "coordinate": "org.tinylog:tinylog-impl:2.7.0",
+    "licenses": [
+      {
+        "name": "The Apache Software License, Version 2.0",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    ],
+    "sourcePom": ".local-tools/m2/org/tinylog/tinylog-impl/2.7.0/tinylog-impl-2.7.0.pom"
+  }
+]

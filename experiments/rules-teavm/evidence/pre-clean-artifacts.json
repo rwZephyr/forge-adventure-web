@@ -1,0 +1,2632 @@
+[
+  {
+    "path": "build/web/default/app.js",
+    "bytes": 1213511,
+    "sha256": "1be491b9e72dcc767599751c0adfa473d300586e58b9a2b9dcfc0df2d1bbe742"
+  },
+  {
+    "path": "build/web/default/app.js.map",
+    "bytes": 80815,
+    "sha256": "28ce4cc143929b6f2012dcaa32339ef7c0ce78b247ab12ff70fb0387fd85e9bf"
+  },
+  {
+    "path": "build/web/default/FORGE-LICENSE.txt",
+    "bytes": 35821,
+    "sha256": "81cbae84a29ce7e770bf2bc7b178e50bda0ce8de6067aba661b0bc7b05b562f8"
+  },
+  {
+    "path": "build/web/default/index.html",
+    "bytes": 2133,
+    "sha256": "e3719005d4ba0b7ee420d362d1503293825c65db13364e7abfc080897ba21e99"
+  },
+  {
+    "path": "build/web/default/src/forge/card/CardType.java",
+    "bytes": 36154,
+    "sha256": "6f3e9ebf82d0ecaca02cd7a4d90e80d65bccb546fa4095000688c3c3664ce57d"
+  },
+  {
+    "path": "build/web/default/src/forge/card/ColorSet.java",
+    "bytes": 10168,
+    "sha256": "5165a3c5c79c4e904d6adceeb591e938eb5b274276172f0257c8c0612cb682e2"
+  },
+  {
+    "path": "build/web/default/src/forge/card/MagicColor.java",
+    "bytes": 8117,
+    "sha256": "2df06e964daa4ab68fc5aedbd4025802c219fede96e8f59460ab890330fec3d2"
+  },
+  {
+    "path": "build/web/default/src/forge/card/mana/ManaCost.java",
+    "bytes": 12521,
+    "sha256": "44c31ee4c0c4cff4f29f255a37e0cdcdac0d17e5379f31ab230d07c386a7a691"
+  },
+  {
+    "path": "build/web/default/src/forge/card/mana/ManaCostShard.java",
+    "bytes": 11233,
+    "sha256": "ef5743f01e8a0075854d7ca2a0b0ee73231376e331d68512870bbc1ca218379b"
+  },
+  {
+    "path": "build/web/default/src/forge/game/ability/AbilityKey.java",
+    "bytes": 6987,
+    "sha256": "2461bfeb1c363671f39f0a1fa0942de086e5e7ce3aa88899fa030b54de525e2d"
+  },
+  {
+    "path": "build/web/default/src/forge/game/CardTraitBase.java",
+    "bytes": 27616,
+    "sha256": "f944aec2522e0a35b3cb493caf3ca2af5663829494c430fe968619c07d1c4cae"
+  },
+  {
+    "path": "build/web/default/src/forge/game/cost/Cost.java",
+    "bytes": 41678,
+    "sha256": "f9b3c74ee294c30235a6957525dffcb2a4863097845f73202df110d703fd9fc9"
+  },
+  {
+    "path": "build/web/default/src/forge/game/cost/CostPart.java",
+    "bytes": 6156,
+    "sha256": "c076385f642dd555e34f2ca115ee75d97c3268e816c576e37ecd04a6e9e5b836"
+  },
+  {
+    "path": "build/web/default/src/forge/game/cost/CostPartMana.java",
+    "bytes": 6140,
+    "sha256": "33bedda64cac7b2bdafd83abcc9fae273fe75ba4bb3c737b523fc43e3347d7dc"
+  },
+  {
+    "path": "build/web/default/src/forge/game/keyword/Keyword.java",
+    "bytes": 40513,
+    "sha256": "f706645b7917897114c093553071ab115f502dd1078bd69db41b6581b1510ab2"
+  },
+  {
+    "path": "build/web/default/src/forge/game/keyword/KeywordCollectionView.java",
+    "bytes": 1705,
+    "sha256": "69331af9d868f450a3c9a6fd05a75b6d629a96c45e602a0b6f903db9cd36d5f7"
+  },
+  {
+    "path": "build/web/default/src/forge/game/keyword/KeywordInstance.java",
+    "bytes": 13281,
+    "sha256": "ca3d899101571fb3be75f5a69b102c6259bbbfc9aef8b45a8a95511bc277479f"
+  },
+  {
+    "path": "build/web/default/src/forge/game/keyword/SimpleKeyword.java",
+    "bytes": 430,
+    "sha256": "1f19ca8d036706736c35014daf40dd2b8a0816af465fa4464851432724d53876"
+  },
+  {
+    "path": "build/web/default/src/forge/game/replacement/ReplacementEffect.java",
+    "bytes": 11246,
+    "sha256": "daf0d3eb547f88aa06b9095aeb43ef17bba1e0f0c95ee59b9b37f13789142a98"
+  },
+  {
+    "path": "build/web/default/src/forge/game/replacement/ReplacementType.java",
+    "bytes": 3719,
+    "sha256": "3a9c1652f599a08146250a5c24a31573dd4fc3d5d4176121f3fc4bdd02413e1e"
+  },
+  {
+    "path": "build/web/default/src/forge/game/spellability/SpellAbility.java",
+    "bytes": 93569,
+    "sha256": "c78edd7f8d77e100e3b2e763fa0a96d8f24a0303dd70d04ded5fc4b4c90e0b73"
+  },
+  {
+    "path": "build/web/default/src/forge/game/trigger/Trigger.java",
+    "bytes": 24351,
+    "sha256": "e7e143035b9b83acad1c4333332c528e048fc2451c4d9fbed4f04aab2a7cc528"
+  },
+  {
+    "path": "build/web/default/src/forge/game/trigger/TriggerAlways.java",
+    "bytes": 1929,
+    "sha256": "36018ff267e32ed325e7e75a8f5a1fd6af80b80e07d5bb1faaa5cdc11f33f9d4"
+  },
+  {
+    "path": "build/web/default/src/forge/game/trigger/TriggerLifeGained.java",
+    "bytes": 3109,
+    "sha256": "a03336ed9ca175978f197b74b24acfce4d5edf53ae667962543409f562dd5d80"
+  },
+  {
+    "path": "build/web/default/src/forge/game/trigger/TriggerType.java",
+    "bytes": 8851,
+    "sha256": "bea5e58ce9e526d477c11e618894fe675a71ec4795b5c87205c7f2a6bf716273"
+  },
+  {
+    "path": "build/web/default/src/forge/game/TriggerReplacementBase.java",
+    "bytes": 3195,
+    "sha256": "c9680744bd1a0f7fb163872eca052a6a3d38e2f25ee18819e86528c29644a38f"
+  },
+  {
+    "path": "build/web/default/src/forge/game/zone/ZoneType.java",
+    "bytes": 5230,
+    "sha256": "d27f1652456bc1abf72c65adfcfb26c8245551ac3c7d170fceb3782d04c4b359"
+  },
+  {
+    "path": "build/web/default/src/forge/trackable/TrackableProperty.java",
+    "bytes": 13296,
+    "sha256": "d056aed6ae0a742f460709d3962552c02c08ab53bc034c3a5d13f90d694648a9"
+  },
+  {
+    "path": "build/web/default/src/forge/trackable/TrackableTypes.java",
+    "bytes": 9304,
+    "sha256": "8f0a36ae8392038b3271fc79b1611d013d80d047e8d13eef318a7475ae9d614a"
+  },
+  {
+    "path": "build/web/default/src/forge/util/BinaryUtil.java",
+    "bytes": 1025,
+    "sha256": "eecd11438dbbe7c4a28043cc7f46240150883b8d840eb7a640ed4864339e8dd0"
+  },
+  {
+    "path": "build/web/default/src/probe/BrowserMain.java",
+    "bytes": 506,
+    "sha256": "55c6228f79d21b8b1988e7d7ad93d50af5df90c24fa823b521766c72cc961cdb"
+  },
+  {
+    "path": "build/web/default/src/probe/FactoryCases.java",
+    "bytes": 11891,
+    "sha256": "9c211068352c5ee7e8c35803143f44198d2f9a6fe54923f273512b1e026709ff"
+  },
+  {
+    "path": "build/web/default/src/probe/Json.java",
+    "bytes": 1818,
+    "sha256": "93f5bee49585caefcf1ea337ee8244f245d353e39a504bd7a8bb1ff23011ae9b"
+  },
+  {
+    "path": "build/web/explicit/app.js",
+    "bytes": 2346530,
+    "sha256": "eb088eeeff00c4d6ad8f75b8b9925bcf2e673937ebce12b1682819d5f8169fdf"
+  },
+  {
+    "path": "build/web/explicit/app.js.map",
+    "bytes": 159589,
+    "sha256": "3da6a90416d10ad71992d4573191f543f0988ba519ec0d02f53c409b64ae83f8"
+  },
+  {
+    "path": "build/web/explicit/FORGE-LICENSE.txt",
+    "bytes": 35821,
+    "sha256": "81cbae84a29ce7e770bf2bc7b178e50bda0ce8de6067aba661b0bc7b05b562f8"
+  },
+  {
+    "path": "build/web/explicit/index.html",
+    "bytes": 2133,
+    "sha256": "e3719005d4ba0b7ee420d362d1503293825c65db13364e7abfc080897ba21e99"
+  },
+  {
+    "path": "build/web/explicit/src/forge/card/CardRarity.java",
+    "bytes": 1894,
+    "sha256": "e3789aa5292dff6216aacf2abdd3421993ee6cf42e70dc1dfa3ad3c8a967f194"
+  },
+  {
+    "path": "build/web/explicit/src/forge/card/CardType.java",
+    "bytes": 36154,
+    "sha256": "6f3e9ebf82d0ecaca02cd7a4d90e80d65bccb546fa4095000688c3c3664ce57d"
+  },
+  {
+    "path": "build/web/explicit/src/forge/card/ColorSet.java",
+    "bytes": 10168,
+    "sha256": "5165a3c5c79c4e904d6adceeb591e938eb5b274276172f0257c8c0612cb682e2"
+  },
+  {
+    "path": "build/web/explicit/src/forge/card/GamePieceType.java",
+    "bytes": 1681,
+    "sha256": "30963162bb91cd13a0a3e475ab86277d7c2866d311a763caf7111c97c721e590"
+  },
+  {
+    "path": "build/web/explicit/src/forge/card/MagicColor.java",
+    "bytes": 8117,
+    "sha256": "2df06e964daa4ab68fc5aedbd4025802c219fede96e8f59460ab890330fec3d2"
+  },
+  {
+    "path": "build/web/explicit/src/forge/card/mana/ManaCost.java",
+    "bytes": 12521,
+    "sha256": "44c31ee4c0c4cff4f29f255a37e0cdcdac0d17e5379f31ab230d07c386a7a691"
+  },
+  {
+    "path": "build/web/explicit/src/forge/card/mana/ManaCostParser.java",
+    "bytes": 2068,
+    "sha256": "29dc1fd3fc74b8116d1fd6be162daa04bb63cb6a41572b240bc414a2124b7480"
+  },
+  {
+    "path": "build/web/explicit/src/forge/card/mana/ManaCostShard.java",
+    "bytes": 11233,
+    "sha256": "ef5743f01e8a0075854d7ca2a0b0ee73231376e331d68512870bbc1ca218379b"
+  },
+  {
+    "path": "build/web/explicit/src/forge/deck/DeckFormat.java",
+    "bytes": 33215,
+    "sha256": "02b9f2543a14e8fb333deb78a898ce673b52fd61b641e6df347c959b88f796d2"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/ability/AbilityKey.java",
+    "bytes": 6987,
+    "sha256": "2461bfeb1c363671f39f0a1fa0942de086e5e7ce3aa88899fa030b54de525e2d"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/card/Card.java",
+    "bytes": 321643,
+    "sha256": "e9e52ea1d7486c3e4fd39a48ae8ece96e51553df26894758a13f1d213ee609eb"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/card/CardCollection.java",
+    "bytes": 5134,
+    "sha256": "58d4c94285a1d7bc6d088262e158973958448162176546f02bc99feca4f01f51"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/card/CardState.java",
+    "bytes": 41344,
+    "sha256": "92cdedfa4b51fa7b750223a9d28adefd3c50c5d754dc15aa721386c48cf87f6f"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/card/CardZoneTable.java",
+    "bytes": 8940,
+    "sha256": "bed8c5bb6e81fde5a36b0d0d63eb5500bfdf5086d97671335e19781c81eeb6ab"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/card/CounterAiCategory.java",
+    "bytes": 108,
+    "sha256": "fa197c38874939595d6158488b9b32c45d429b7f2b718ba7348f00642e1756c6"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/card/CounterCustomType.java",
+    "bytes": 768,
+    "sha256": "eeb3abc49d826053f85db8d45216c93499e8da92a84ccb8fadf66e7e318fe043"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/card/CounterEnumType.java",
+    "bytes": 18598,
+    "sha256": "537d77113ad10d4ec72d0efabbd42c8f470478cd64243d0a582a64b840d84aca"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/card/CounterKeywordType.java",
+    "bytes": 2216,
+    "sha256": "e0bd5302622edda2e94ef698e5704aeaf0feef669ab23e1e55672db816cba911"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/card/CounterType.java",
+    "bytes": 1710,
+    "sha256": "26816ecedafda4932cb528390f62160ff69270012fcd9fd476ddb38ccf2a4f3d"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/CardTraitBase.java",
+    "bytes": 27616,
+    "sha256": "f944aec2522e0a35b3cb493caf3ca2af5663829494c430fe968619c07d1c4cae"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/Cost.java",
+    "bytes": 41678,
+    "sha256": "f9b3c74ee294c30235a6957525dffcb2a4863097845f73202df110d703fd9fc9"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostAddMana.java",
+    "bytes": 3471,
+    "sha256": "a32608ac2c86e8b45e57ed50f595b2403ec59bfe7b1449374efbd8f23789fb7b"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostBehold.java",
+    "bytes": 1715,
+    "sha256": "f0d8bcd01fc4418e10fc847c664af3f18c93a513e97e05969ceeff4f19d70392"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostBeholdExile.java",
+    "bytes": 1399,
+    "sha256": "079c7c89ca406b0153ae289dcaa0798e941c1b5b0300ae4b090f74e10e57effd"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostBlight.java",
+    "bytes": 468,
+    "sha256": "97f42d7756ca1ca31e815ba6ad94532d3f0935a7d9c6c96d4db41a886a102643"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostChooseColor.java",
+    "bytes": 2867,
+    "sha256": "82d1fe9990b276f1aa3a9b2148faa324a084883dba6956b19938016a2797492a"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostChooseCreatureType.java",
+    "bytes": 2374,
+    "sha256": "d7af077b95efbd0834c9506ba0be66834d97dc46f32bacf6363693515891a133"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostCollectEvidence.java",
+    "bytes": 2710,
+    "sha256": "02846c4511369a1ef62c8eed0267c621683112b40b1a8f8f2735a9edec1a9b7d"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostDamage.java",
+    "bytes": 2655,
+    "sha256": "c63f8a90ce1ac4db34cc7b9c4d4ededc87aeb5facb7ea3edc50b6d6aee57ad9a"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostDiscard.java",
+    "bytes": 9171,
+    "sha256": "c354b29b044a54332fdb611a1714c49cc2f2bb079025485768e991f2a6765005"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostDraw.java",
+    "bytes": 3638,
+    "sha256": "fc86d3ece6a381ffb749162ee1a5f3dc05a7138ea3de12d99555817400a157c1"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostEnlist.java",
+    "bytes": 3732,
+    "sha256": "2d47faf1a92812866541c44a0f15922c3efd6ad45a6660a7f576befc5290ed42"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostExert.java",
+    "bytes": 3785,
+    "sha256": "7f72e0ac69d08fa7c8f8771d0dfd2f36ceebe458061cd2eb7ae34ded97cdca9f"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostExile.java",
+    "bytes": 14081,
+    "sha256": "3f783a1fd692847710a9d56c3f9112d04fe5f64e8916508660db88e673f87b6e"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostExiledMoveToGrave.java",
+    "bytes": 3300,
+    "sha256": "b214b6ac65b1c8489793dc8aeae35f208b3e9234a143aa404e59567f1eabc8a2"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostExileFromStack.java",
+    "bytes": 4439,
+    "sha256": "31bf1b3d3511ee29ff6eddb84fe96654f453177015f896fcf983ab1de3f48d4e"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostFlipCoin.java",
+    "bytes": 2387,
+    "sha256": "dc1973e3449c77e2860cfa7d9f1cf732fee01d073bdf3e71a56833e81c26761b"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostForage.java",
+    "bytes": 3173,
+    "sha256": "0066b8c2a41db43f4babb6bae395843bc5356f3d8854cecd2623dae88f1cc8dd"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostGainControl.java",
+    "bytes": 3643,
+    "sha256": "20b1bb23513d09bd2630583b2938e239c91ce2033c7aa661e95f6c32add9d743"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostGainLife.java",
+    "bytes": 3463,
+    "sha256": "602ac366d23d145a5ba6f0d6a0768f1fbcff58903dd741f6d534657224173c97"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostMill.java",
+    "bytes": 3516,
+    "sha256": "39f6dd524af67a1fc593366a8455b3b290e71ecd23e35a92c2e98a35100c1d7e"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostPart.java",
+    "bytes": 6156,
+    "sha256": "c076385f642dd555e34f2ca115ee75d97c3268e816c576e37ecd04a6e9e5b836"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostPartMana.java",
+    "bytes": 6140,
+    "sha256": "33bedda64cac7b2bdafd83abcc9fae273fe75ba4bb3c737b523fc43e3347d7dc"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostPartWithList.java",
+    "bytes": 6969,
+    "sha256": "dbc7f8bba808da1eed7b6ac2cff6c4db89467450e72c5f72ffa4d83259ec7e82"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostPartWithTrigger.java",
+    "bytes": 1806,
+    "sha256": "50cb55907d9cc48ce4c62a3f13726f7d873c8974274e7bc3ed92f95d71759423"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostPayEnergy.java",
+    "bytes": 3107,
+    "sha256": "fc2a40d7fe76b6dd7b27337b4066af21e5dbbb1ad1fb6adbad4f42639a09a6b6"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostPayLife.java",
+    "bytes": 2639,
+    "sha256": "993d9aeec71055e2903259c8a4950d1e95749a2cddfe03fc9a8deab2ce7a1048"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostPayShards.java",
+    "bytes": 2922,
+    "sha256": "774233bae4af6f41b55869bdaec44c8c006370e6a89ccce52397a4b69d7a5e8e"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostPromiseGift.java",
+    "bytes": 1333,
+    "sha256": "fdf82fadf83cf08705e3de2346931151626b8900134a070f12b882432a10a81c"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostPutCardToLib.java",
+    "bytes": 5557,
+    "sha256": "590acbd5fe997884ed49ba55a7b86a65e77c94c16961b8ea9130a756bfe818e8"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostPutCounter.java",
+    "bytes": 8069,
+    "sha256": "f11e6946cdb29b75c3b2a2cbe4b78ec1c762a195fa41d54b15129d45f608b4d8"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostPutCounterYou.java",
+    "bytes": 2641,
+    "sha256": "35f25be69ab951ff6ba5ce8cf7a3bdaa456db48b33c431be5a7474f745c1020c"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostRemoveAnyCounter.java",
+    "bytes": 6465,
+    "sha256": "069f4a520b0cee2be68d06ad993c65d4d53fbab189dd3dadca91f7a948a40114"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostRemoveCounter.java",
+    "bytes": 7349,
+    "sha256": "7706b3da3fca97bc849a2e976451d4417dc901250a53671a78eda94a9390bbe6"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostReturn.java",
+    "bytes": 4506,
+    "sha256": "c3163cedfcaa85ea11ac3ed9897994bfad232fa6fd279c74b995095848b69564"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostReveal.java",
+    "bytes": 6537,
+    "sha256": "2eebe28e8bc2745ae0c1a4bdba5bcedb358b983b89f9788c33fac9ff3f1ce652"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostRevealChosen.java",
+    "bytes": 2929,
+    "sha256": "d7d1174152020a7c26bcba7b7cd193de97e9096773362a35d1da0ea92dd95493"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostRollDice.java",
+    "bytes": 1734,
+    "sha256": "5b04b729e4a89609ffbc53d44d2986b24628a31ff167e449c3953841c105ae14"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostSacrifice.java",
+    "bytes": 6588,
+    "sha256": "8932d399874a8c9ea3275320704f8cbce40dee38c81530b6b4faa7e3cb2502a2"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostTap.java",
+    "bytes": 2619,
+    "sha256": "a522c73b3daa3f29afd59633c9f8ca1c6f6d4aa95379ee840b2f0f2ce2ea744d"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostTapType.java",
+    "bytes": 7887,
+    "sha256": "f058a5db792d898e9d9fa2a20a1fadbd2a08a62a72324aa0dcfaa6657d0e1e31"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostTeamwork.java",
+    "bytes": 999,
+    "sha256": "abfdc19d157301c7b09f25aeaeb09f425ba484472521bc43356147a7891f7deb"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostUnattach.java",
+    "bytes": 3848,
+    "sha256": "350cb51674c13b2ad5348d10677544ee30df69f90989aaf3e92ec211495f3865"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostUntap.java",
+    "bytes": 3119,
+    "sha256": "03f43d89fc0eadf65506e46431762ccc67af4fae166de6a1289101ec7e178f5f"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostUntapType.java",
+    "bytes": 4505,
+    "sha256": "04ec9796acc53d573a3ecbc16cbe02b5de7904767b8e8d08ebc29f451eed069a"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/cost/CostWaterbend.java",
+    "bytes": 363,
+    "sha256": "d1595969d3b4677d0cbba406204dc6beabbdef974486dc75fe88436292c6a877"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/Direction.java",
+    "bytes": 2280,
+    "sha256": "79bc1dc2062bbab861c87d360472ce66adb691509e49a5df95b22caa6de5dc13"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/EvenOdd.java",
+    "bytes": 69,
+    "sha256": "3228387285e427a6c28ca734e20d518d5e640167b0eb8e2baa8db8057f3b2206"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/GameEntityCounterTable.java",
+    "bytes": 8227,
+    "sha256": "a3dd1bbed930691a603f9483624a1bab78bf8400fc6643e243d08f97e9cef79c"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/GameType.java",
+    "bytes": 9101,
+    "sha256": "2c4576973d76f6051663d4bb16152f1e49144c7f4e3e155806a6d9160fe434de"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/keyword/DefaultKeywordView.java",
+    "bytes": 255,
+    "sha256": "b4047c40fb9470f35438e679f187ba304df302c0b512ef5465545492949bded7"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/keyword/Keyword.java",
+    "bytes": 40513,
+    "sha256": "f706645b7917897114c093553071ab115f502dd1078bd69db41b6581b1510ab2"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/keyword/KeywordCollectionView.java",
+    "bytes": 1705,
+    "sha256": "69331af9d868f450a3c9a6fd05a75b6d629a96c45e602a0b6f903db9cd36d5f7"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/keyword/KeywordInstance.java",
+    "bytes": 13281,
+    "sha256": "ca3d899101571fb3be75f5a69b102c6259bbbfc9aef8b45a8a95511bc277479f"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/keyword/KeywordInterface.java",
+    "bytes": 2191,
+    "sha256": "5a453e0bd2a82a0a128aa76cc80d50b5505ba5107b52c2997eda17b73b0050bf"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/keyword/KeywordWithAmount.java",
+    "bytes": 1521,
+    "sha256": "de710ed3eb73f3e8bf03d9ae0b0c52cafbaa8c69dc95b15994304fa77a6c2fcb"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/keyword/KeywordWithCost.java",
+    "bytes": 1090,
+    "sha256": "7440a611422fe86438ba13f3e9c10e6e956659cbaec468cad05a7b4b0d98e95d"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/keyword/KeywordWithCostInterface.java",
+    "bytes": 935,
+    "sha256": "dc449fac6137279812242b65b18ae1b358c6c0bc87cac8641d986e154667fec4"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/keyword/KeywordWithType.java",
+    "bytes": 1574,
+    "sha256": "876e69ab17e79240aab5fc5e9544d942e6bb9af2d52ce20954a0f3fc86baf8ec"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/keyword/Kicker.java",
+    "bytes": 916,
+    "sha256": "06a61d93d16957ed884b57d2423022ebeae51b2ca91ba9feacf6fcb9127a0877"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/keyword/SimpleKeyword.java",
+    "bytes": 430,
+    "sha256": "1f19ca8d036706736c35014daf40dd2b8a0816af465fa4464851432724d53876"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/phase/PhaseType.java",
+    "bytes": 6256,
+    "sha256": "d27c5822d1b3888f57cbc3089a5f7a0ea19c252458580584ab1d182c8ce7a325"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/PlanarDice.java",
+    "bytes": 4065,
+    "sha256": "43a51cfde8b5bedac842094f10e8df1923e498553cda2588ddb8cfb372642312"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/player/GameLossReason.java",
+    "bytes": 1834,
+    "sha256": "ec3dbd2ec318f0c4bf44ba4ecb7bcd27226666869e135baa8f59cb3b1061e72a"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/player/PlayerCollection.java",
+    "bytes": 2495,
+    "sha256": "d03ceff81cbb0d4dd498e05c89594672c5ebdf983f15e66efa8f1be550d7e53c"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/replacement/ReplaceDraw.java",
+    "bytes": 3074,
+    "sha256": "fd08d285b1bd1946cd6723263dddc8035248ca46151183c930d8009974bebf37"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/replacement/ReplaceGainLife.java",
+    "bytes": 2639,
+    "sha256": "1327ad901684a3003f0cf3a2a0b0e5074542a2c9ffc30b794b6cd866551cad54"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/replacement/ReplacementEffect.java",
+    "bytes": 11246,
+    "sha256": "daf0d3eb547f88aa06b9095aeb43ef17bba1e0f0c95ee59b9b37f13789142a98"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/replacement/ReplacementLayer.java",
+    "bytes": 827,
+    "sha256": "848cf48b85c87950bbb801b5fca50908d715e166f6ae7f56a71b1dcd560c7cd8"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/replacement/ReplacementType.java",
+    "bytes": 3719,
+    "sha256": "3a9c1652f599a08146250a5c24a31573dd4fc3d5d4176121f3fc4bdd02413e1e"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/spellability/SpellAbility.java",
+    "bytes": 93569,
+    "sha256": "c78edd7f8d77e100e3b2e763fa0a96d8f24a0303dd70d04ded5fc4b4c90e0b73"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/Trigger.java",
+    "bytes": 24351,
+    "sha256": "e7e143035b9b83acad1c4333332c528e048fc2451c4d9fbed4f04aab2a7cc528"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerAbandoned.java",
+    "bytes": 2139,
+    "sha256": "52d0a4a59b9c8304a276638cd19a7c87b416ec21af84d89b628ec1d3c1e6abb6"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerAbilityResolves.java",
+    "bytes": 2534,
+    "sha256": "493fe31860ac5585089a48d565498e36850d55a1a2f093886ce02b03c008457e"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerAbilityTriggered.java",
+    "bytes": 5715,
+    "sha256": "bcf2166a3a9b068f082d94962d8fdfc00ae4d852a8a4f1260f126367ddc05f4b"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerAdapt.java",
+    "bytes": 2340,
+    "sha256": "c94b6dbc64c35a3783402d37af217a623eb012a5c175218d570a2dc22f435543"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerAlways.java",
+    "bytes": 1929,
+    "sha256": "36018ff267e32ed325e7e75a8f5a1fd6af80b80e07d5bb1faaa5cdc11f33f9d4"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerAttached.java",
+    "bytes": 2902,
+    "sha256": "5d3256de001ea87cd27ba7a26f99780198617f772eb464ebe752f2a0388a173d"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerAttackerBlocked.java",
+    "bytes": 3431,
+    "sha256": "56514920cdd3332d55c0f328ae0d02faf3fd97cc0ded01400c8c0aa5fd0498ce"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerAttackerBlockedByCreature.java",
+    "bytes": 3588,
+    "sha256": "24094aa6151ea54ece4321f46bd0b80db159c5a7fd56f626cc10dc93d9410e7c"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerAttackerBlockedOnce.java",
+    "bytes": 1246,
+    "sha256": "1dd0edf85eb8999098f4029241ec991f72cb648da0f73708dfbcd8874c5f22ed"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerAttackersDeclared.java",
+    "bytes": 4342,
+    "sha256": "95f57a2279358bd5c60c8c188ee48c7e2c59ad89adee1f93c60f573cc432edff"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerAttackerUnblocked.java",
+    "bytes": 2598,
+    "sha256": "3dd4d1395a153d6568b4ef8fb2acd20f70fae2230eb17107ad000a2988f5293c"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerAttackerUnblockedOnce.java",
+    "bytes": 2760,
+    "sha256": "d9e3e459d1c5ead5b6e05e916d8a5204c343129a247f3af7eeb12b5e8006b1b9"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerAttacks.java",
+    "bytes": 4577,
+    "sha256": "6e08c9aa8e5047db1089d13c850d52518446fe3b1430c12e0d182e2f0726becb"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerBecomeMonarch.java",
+    "bytes": 1399,
+    "sha256": "193ad1f33cfc459730b0a82c949d46878c994122cebaa7fc0ae26f61a31b5c6b"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerBecomeMonstrous.java",
+    "bytes": 2476,
+    "sha256": "dfcd7c89e5612257372ef5d1d31d3571029a75289e3c54e10abf8dc492d1cb40"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerBecomeRenowned.java",
+    "bytes": 2463,
+    "sha256": "2ca0a0a819e176c58cbb885cdb0b49a5967925c181f8b2579e465620568ec614"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerBecomesCrewed.java",
+    "bytes": 2181,
+    "sha256": "eab934ce6d62b8c9f035370cecbcd1f68540235834629431eede40b80684cad8"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerBecomesPlotted.java",
+    "bytes": 1161,
+    "sha256": "24e3dd2a7385d892b0323009e7a07713a515c8314af01d5256bd4c662b49def5"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerBecomesSaddled.java",
+    "bytes": 1640,
+    "sha256": "5cf9aa48ad8dfc83ceddd9ff2224576ad843d55b7e8298bd5ccdf689f0ecaf41"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerBecomesTarget.java",
+    "bytes": 3183,
+    "sha256": "bcb32f2772b5c76762aa4298f093c0bac5ee7eb32bbb10b18ea8ef67ae90e377"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerBecomesTargetOnce.java",
+    "bytes": 3171,
+    "sha256": "7c660ddaad4aaf15b3668f2ef7e25bb43b632db4317cc3ab440743f12eacf7f7"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerBlockersDeclared.java",
+    "bytes": 2191,
+    "sha256": "bf6fc553d877965b9d72a025b889e139fd7f3357b36c900b07b21b9abc22424a"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerBlocks.java",
+    "bytes": 2525,
+    "sha256": "5289d653630ace0ea3fd69c0aea3cbc6803e595446cb052b95d086fce4523cf6"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerCaseSolved.java",
+    "bytes": 1283,
+    "sha256": "9891ba385fba937bb7dd8b36c7710f6a0f8193fc9fd62c853773350b8c52d289"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerChampioned.java",
+    "bytes": 2560,
+    "sha256": "54033dde35c812b220897ced329c045fd4c415cda25f29b88e3baa10d5e6838c"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerChangesController.java",
+    "bytes": 2651,
+    "sha256": "d4b4c5cf2da61e8a8667c1ba215245febe4e6d54c647a2d0b7f37765cd3a8c57"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerChangesZone.java",
+    "bytes": 9026,
+    "sha256": "62a70e3dd5adc23097dfd35178a4e1f8d5086dbd7ca1027815bb9ca19f90889d"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerChangesZoneAll.java",
+    "bytes": 3418,
+    "sha256": "ad4488a5f82587b096c08dc5951c2de60fd022f720bb4e4c9d5424dd289ef0c5"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerChaosEnsues.java",
+    "bytes": 1953,
+    "sha256": "25db587e9ece17f812a91bc4a5e2185702257a2b64d57f81d11e15fcee6d42f5"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerClaimPrize.java",
+    "bytes": 1169,
+    "sha256": "80b772231bac1b767e879b109ee69f0cf74ff7012ed39ccd630049746cf569b1"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerClashed.java",
+    "bytes": 2293,
+    "sha256": "704aef3987888c8b6f3be48b596263210acea9baba1cc7acfc53b6373add908c"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerClassLevelGained.java",
+    "bytes": 1471,
+    "sha256": "f36af6d3c898b1c03ff2ad6a52f82e9db7cada47ccc63927ac448c7d8772c4c4"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerCollectEvidence.java",
+    "bytes": 1130,
+    "sha256": "d3186eafa61d27706a24b615b94627d369f0592272d399cbbf1310d31c1ecc44"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerCommitCrime.java",
+    "bytes": 1122,
+    "sha256": "9105002103fc07bf21139a9be6d0993e52df04673d25988f43a3ba5b85f4a3aa"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerCompletedDungeon.java",
+    "bytes": 1157,
+    "sha256": "46610bef37f4306f9f10980c8cdec899eb090b26041130c9a836079d844b2432"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerConjureAll.java",
+    "bytes": 1933,
+    "sha256": "961e09723014cb71181eeecc09e5a5db8af0ef64872a733b870ec24f6813b8cd"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerConnives.java",
+    "bytes": 2323,
+    "sha256": "c8aaf732bb45230d6b810a71c28d8317f7a512a8d2e0e137cd81ee8b03313cec"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerCounterAdded.java",
+    "bytes": 3836,
+    "sha256": "a3d98c188071740358289116175cf12639d344e9af81ce33ba7bf277a569f148"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerCounterAddedAll.java",
+    "bytes": 2018,
+    "sha256": "c30a59d536bdc9c3135bae15b05fe2b49d20b9c170a8eebe31184648537c8a06"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerCounterAddedOnce.java",
+    "bytes": 3870,
+    "sha256": "0bc5688f82d42a9f62096ed6831a3cc2f900d7c5dffa2f93e15ed66c5828bdb9"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerCountered.java",
+    "bytes": 2930,
+    "sha256": "3f4d4717cf31b120b1b38f076e6450044d818b381b1aac7890f84a6a1842c5e4"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerCounterPlayerAddedAll.java",
+    "bytes": 1967,
+    "sha256": "f495a7c45c70b799a943bfd576d9a94026d16f78be374f5c9b76ad6ceb63253a"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerCounterRemoved.java",
+    "bytes": 3304,
+    "sha256": "3b07779d59a79eecdecfde8a408b4f51cbbfb7776b9e4b1d5dcd7e9d846895fc"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerCounterRemovedOnce.java",
+    "bytes": 3327,
+    "sha256": "3d9370e9e44c9bcd149e27b6dc92dcff636a0e554b769d1b63026157e8ce09bc"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerCounterTypeAddedAll.java",
+    "bytes": 1318,
+    "sha256": "1ba1b2527dd6fe493a912754d145b1a837ac92e4e95ac0694cd2bf65b3d48f00"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerCrankContraption.java",
+    "bytes": 1183,
+    "sha256": "577df9dd7a283db17be93be94971d33b61eef594a037fe97edf9100415582ff7"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerCrewedSaddled.java",
+    "bytes": 1419,
+    "sha256": "c3ccd15615b962d595fedbfb43663d59bfe102e1fc665c26ac492068aad6041e"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerCycled.java",
+    "bytes": 2667,
+    "sha256": "10428c5065774a0d4321a9257d3320d9e1ac7fd79ad93d560ff641d3f8d175d9"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerDamageAll.java",
+    "bytes": 2094,
+    "sha256": "0a20236cab89e209935bf1a9b6cb02eba1177f144142657e9c8feddd7c5490aa"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerDamageDealtOnce.java",
+    "bytes": 4963,
+    "sha256": "e247932ab955a8279afd71848904e10c5a2eccf2705d1db5e7a189ffe9585876"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerDamageDone.java",
+    "bytes": 5052,
+    "sha256": "bae0e290e84ecf4007d70a9f9831d31be064fca78e7c7bef4d9c9e4058cd3b27"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerDamageDoneOnce.java",
+    "bytes": 3931,
+    "sha256": "20157563bef2a2126a47fbc8651c618262925f27cd919b28c03fe8d28cfe355e"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerDamageDoneOnceByController.java",
+    "bytes": 2071,
+    "sha256": "71286e4ed407b23c6d070b9b945ba2c12c8e1f895ccfed7152094dcea277984b"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerDamagePreventedOnce.java",
+    "bytes": 3444,
+    "sha256": "fe351a8f1f3f78ebd0cd9b6a495fb07b9b8fcb3ef48158090739349c830fdf45"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerDayTimeChanges.java",
+    "bytes": 714,
+    "sha256": "71384f3b3c0cd9409b8df0baede5560bb2e10b1fa6c44954abbba515707d44c2"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerDestroyed.java",
+    "bytes": 2726,
+    "sha256": "1792663598355f7bdc18f60c75acc92d053822da93347828643965396dbd770a"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerDevoured.java",
+    "bytes": 2451,
+    "sha256": "1189e87e8b5966b801f290086914abf1225d33d7b360477f19afd146dab8c98e"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerDiscarded.java",
+    "bytes": 2783,
+    "sha256": "9d2c550f4b03994ca4bec29d6c145690fb78141fa29b43c2da9d0b9e20f0b456"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerDiscardedAll.java",
+    "bytes": 2641,
+    "sha256": "f60d3a669bba541054daa17976f7b822e236cb44e4dd77f33c7b95a35b74a12d"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerDiscover.java",
+    "bytes": 1320,
+    "sha256": "78da6f8350ff357c97d95b3b3402a6cbc685e9de4476cd4821def7a5bac33713"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerDrawn.java",
+    "bytes": 4037,
+    "sha256": "b13acf40aaa07b5f372c27546a477ad094fbdd9934334a426b41f5ebf4553b65"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerElementalbend.java",
+    "bytes": 1146,
+    "sha256": "3aa1d54e6f15207782566ac2f62edebd29417e6520fe988cc15e03c88d813854"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerEnlisted.java",
+    "bytes": 1486,
+    "sha256": "c2ccd32271e3fb4a8b69a1b40d91c5d63625dc588e87ed656fa4e9bc65404ff7"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerEnteredRoom.java",
+    "bytes": 1293,
+    "sha256": "bfe34e1d221af53f33ef132ac22f2aab11b695674c731b3338a214213ff83a98"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerEvolved.java",
+    "bytes": 2350,
+    "sha256": "d3ece0f8f69c2ffb8b77ba8b605aab497406ab431acab840d5492d6327c55f52"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerExcessDamage.java",
+    "bytes": 2753,
+    "sha256": "aba7772ffdf8570e4a47fef22d2f8e136c9ec1c47f0667bf3aa64272a266be1f"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerExcessDamageAll.java",
+    "bytes": 1875,
+    "sha256": "fc4fdb0fb59a5da1f6e6526cb011f6ff3283b40bbe1c6b1ef7eb838172b01318"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerExerted.java",
+    "bytes": 1355,
+    "sha256": "8eeb0a781012c241e7b6a04fa452df5f05e51aca28d0f34736ec70e32260bcf9"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerExiled.java",
+    "bytes": 3432,
+    "sha256": "d1f7493e0dfe7c94e8af786515656476e5117b960a70147e0acf0d52827b0c4d"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerExploited.java",
+    "bytes": 2760,
+    "sha256": "ce785069eb2d3cbf3928eb1fd740560fc9f0d812c7e5022f47d12dc71b23a33f"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerExplores.java",
+    "bytes": 2853,
+    "sha256": "98247685abf609718acbd2f23009eb5df451186f30199b7c2d778255f2b8fdc2"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerFacesDilemma.java",
+    "bytes": 1332,
+    "sha256": "7b29149e1a97914950486929af0764e0d8f8b166904034053879b57a17360892"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerFight.java",
+    "bytes": 2455,
+    "sha256": "921ac372690a137fc86752ce3e76ef49119805e9923e7e6dc22be6d6da81c737"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerFightOnce.java",
+    "bytes": 2534,
+    "sha256": "e45741a9d8cff46b9da9e8bdbb9ffab452a5767b5e05456005ceafb81d521e75"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerFlippedCoin.java",
+    "bytes": 2728,
+    "sha256": "50dde87f06a47c45b710428eebd8148c783ad2444c33941fba0f808ca154eceb"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerFlippedCoinOnce.java",
+    "bytes": 1155,
+    "sha256": "058b0f11a32ec706602d311da5595f2e588ca61289f4cf6eed339043738d32f6"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerForage.java",
+    "bytes": 1112,
+    "sha256": "ebeac6cb296d63d4756bf0c33854d9fa01fd8d9df489a0e867154d453dfd15bd"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerForetell.java",
+    "bytes": 2401,
+    "sha256": "6ba7013e20bb54de54dab10cda5c41548fa7155fded2e1c44dd9565ad41b259b"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerFullyUnlock.java",
+    "bytes": 1416,
+    "sha256": "7d722c7cf0919ddf84182e4607d1091b805b9eb78191061bcc2fb2da645f599b"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerGiveGift.java",
+    "bytes": 2245,
+    "sha256": "1b8989015bdd5c064f310b58e1c7f787025d779abb0140b4744c55b1b990d717"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerImmediate.java",
+    "bytes": 1705,
+    "sha256": "da590c5f78fd8c4730d2cbea2d6c7b6b143abaf86cd40c7bed805d9cec39febb"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerInvestigated.java",
+    "bytes": 2624,
+    "sha256": "7004274a873cbbf0313b3d998f99713db30a358971c0cfec9e8be9d2a7d0c73f"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerLandPlayed.java",
+    "bytes": 3214,
+    "sha256": "ccfba6b2e2e2586ade7527be703c0d211d80028492dbdc9bb78973b280b17edd"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerLifeGained.java",
+    "bytes": 3109,
+    "sha256": "a03336ed9ca175978f197b74b24acfce4d5edf53ae667962543409f562dd5d80"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerLifeLost.java",
+    "bytes": 3611,
+    "sha256": "0c29eb0c0325d139e03fe6b735af78324a2c543de9e8d575d4521bf856ec1744"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerLifeLostAll.java",
+    "bytes": 3907,
+    "sha256": "7ac840bfc5f0af8bd8475095c6a55507e488cc68593fd7a7598fb7929f96b8d6"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerLosesGame.java",
+    "bytes": 1626,
+    "sha256": "c5d5d1c055b3a28364ebce2b15a81c6aef4295a945084acc9eed32b6afa40e32"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerManaAdded.java",
+    "bytes": 3348,
+    "sha256": "829531a363313386ef4f9ede69b29df15553772d70a30509c181c5aaee2ee472"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerManaExpend.java",
+    "bytes": 2137,
+    "sha256": "f05abd12c035419195ee9ded4e1d9440d76eced78d06854c2dab4315068009a4"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerManifestDread.java",
+    "bytes": 964,
+    "sha256": "3d2d2be2e91c4e21a3e08446cbd1c825300f5532dd5e99bd800bc8d771f62bac"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerMentored.java",
+    "bytes": 1398,
+    "sha256": "5c394f9cab494287daa4404945d44cfe6279419c5f9980af5ee5d62af6dfe9d0"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerMilled.java",
+    "bytes": 1733,
+    "sha256": "029788e81acc58727bde12ab3eb3125361e9a967e84299fb4ff801a31b58d82b"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerMilledAll.java",
+    "bytes": 2006,
+    "sha256": "204296331d855f62244a6a5910d5f83f9c843a023e517d77acaefb621f882afe"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerMilledOnce.java",
+    "bytes": 2212,
+    "sha256": "2ca8966f7275017b7d34767cb2de0fd2a3bf73f160a03fe673d4cfcd3be06625"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerMutates.java",
+    "bytes": 1070,
+    "sha256": "271e09a067cde53304410e919198de506a5e662f68f0e2ca7435ed9d1cc4e6ae"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerNewGame.java",
+    "bytes": 2018,
+    "sha256": "55f8954f5bc2ec13c0bee495ca218285e118b1a40423f1e1274a254a484e9b82"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerPayCumulativeUpkeep.java",
+    "bytes": 2721,
+    "sha256": "2ff32a72a3eb065c44a040c9043a8bb67f6388329912c02eff7b6e8c9ed58ea4"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerPayEcho.java",
+    "bytes": 2431,
+    "sha256": "e562a1ba892504782620c84c52ff390ec54de8cd6cc0fb91c04151e0d3307110"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerPayLife.java",
+    "bytes": 2533,
+    "sha256": "ea81735e7e30730f3675d4c41bfc9168f4db522b47be50f8e3ec2328a0477f0f"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerPhase.java",
+    "bytes": 2366,
+    "sha256": "9d134fc080318d172a98dbbee1e223539cf27ce779d4f3a5ba4942d703e2d846"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerPhaseIn.java",
+    "bytes": 1224,
+    "sha256": "b235924798a477b7f72508c596d187a9ca154272f0660c9b15190bd05e2b41d0"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerPhaseOut.java",
+    "bytes": 1227,
+    "sha256": "e92690467324eed7d233a74e87c95bb840648c1382a5d4ce92430ea18d785210"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerPhaseOutAll.java",
+    "bytes": 1533,
+    "sha256": "39606f9793b3db895035e75fd132aa6420750f2660a08ce8e743f291002facd3"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerPlanarDice.java",
+    "bytes": 1863,
+    "sha256": "2bca1dbe879aee270b8b347687d1f6c37e637f45f239a2fbd509ef423562dfcf"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerPlaneswalkedFrom.java",
+    "bytes": 1632,
+    "sha256": "b2b57c0968bd13b80a3859252b58b01f20f986af22f25693851a23d702360564"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerPlaneswalkedTo.java",
+    "bytes": 1616,
+    "sha256": "d17ab6d1da072c42a36349d9e848faf8a69132eeace4a48b922d002e4d29a6b4"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerProliferate.java",
+    "bytes": 1120,
+    "sha256": "519fc92116dd991b0b9af8f15ca4bc09c1893b2a8ab59579d2ea4ec1e6c3698f"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerRingTemptsYou.java",
+    "bytes": 1323,
+    "sha256": "2eb65001f04f378e481ccc988fcc4dcb072eab40a5361d1c85ec42338b8e58cc"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerRolledDie.java",
+    "bytes": 3421,
+    "sha256": "1d92df1b8cd56992aab0e43ae2bad85e6a45a3e33f6a9fe3c4e3328780eed563"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerRolledDieOnce.java",
+    "bytes": 1625,
+    "sha256": "0de45ce66e53763b702dc55ea88bcca7dc2e062f0d150bf4965983d204e14d1f"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerSacrificed.java",
+    "bytes": 2688,
+    "sha256": "4ed03ba90ec8989d4b2714c4d8e6a4be87d7569711e48d380ca2f717b559c277"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerSacrificedOnce.java",
+    "bytes": 1990,
+    "sha256": "690f4cfe57e07e3a8dd0091546296ae0ed53aa32817ca233d07bb6d1e860ff96"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerScry.java",
+    "bytes": 2764,
+    "sha256": "26143471e69d14dea26f8c6c47d2dfd162b3d33a209a7e8a6488a9e7d60c9ec2"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerSearchedLibrary.java",
+    "bytes": 2751,
+    "sha256": "42a2e31b5cd6d83cfe76c8fa9be506f6a081de9aea685c1bef85ae5bbbcc587a"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerSeekAll.java",
+    "bytes": 1190,
+    "sha256": "633485878ad5be8e3eaf87d82252c1ef811043d1ae5fd5cc674b13b5a6dff9ad"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerSetInMotion.java",
+    "bytes": 2227,
+    "sha256": "b369f0c9abef8e754c6fc5faae7ccd1777376fff5a089fad203add6618023325"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerShuffled.java",
+    "bytes": 2831,
+    "sha256": "8a5756993ded0ecb9749300fc151241a0ab1d7f0797d4c064ddb95b81bdf83ed"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerSpecializes.java",
+    "bytes": 2343,
+    "sha256": "ddfbbdb0c4347787a9faf7e71716b76700d623c82af67e685f0eb328d19b5a5c"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerSpellAbilityCastOrCopy.java",
+    "bytes": 10252,
+    "sha256": "1bcc7ae0844b8fe5126053ee3fb12bfefb00503db2a83336366bb3cf4d56df81"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerStickerPlaced.java",
+    "bytes": 2477,
+    "sha256": "03c65f265daf54678c76355ab2295238e0d58e877acba7761068f9dee4d2e3ea"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerSurveil.java",
+    "bytes": 2475,
+    "sha256": "71c7d68f807e0cb19604d3f5949026e3247ff6f90baaf77740b032f684fbb735"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerTakesInitiative.java",
+    "bytes": 1190,
+    "sha256": "87f7c68f4f26c481c57fb96735f07c8fd2ad450b040867b0f83021dad9673689"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerTapAll.java",
+    "bytes": 1349,
+    "sha256": "927f8078ec3e77247ba4ad17c03fdf5297e92f2ba5a8020ecf3a8b564b317c00"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerTaps.java",
+    "bytes": 3366,
+    "sha256": "bba8ca31019329f324af99cf51636577df16d544c4285efa4dc2cda02d4cf16b"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerTapsForMana.java",
+    "bytes": 3375,
+    "sha256": "598447a16c61a3bc36f500d1afc4d8a0d14d00e038f7d7534ffd3c306ec10f9d"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerTokenCreated.java",
+    "bytes": 2750,
+    "sha256": "98723e84304cab78e07efdff37e6625b6f669130c72c0777e7056dfea7a7d235"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerTokenCreatedOnce.java",
+    "bytes": 2561,
+    "sha256": "e31a84db84ce3fe1c5f7b64fb1ae7900bd5b5681ad7fec37b16d1dd9f45849da"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerTrains.java",
+    "bytes": 2342,
+    "sha256": "63f24ac0f491ca892cd57c43e2fb19cf989dd1603cbe0275830d08807e965d92"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerTransformed.java",
+    "bytes": 2210,
+    "sha256": "ff4c74f2c6c43462fb1060fcdff2725c39af160e7fc31082ebecec0bac94f5e5"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerTurnBegin.java",
+    "bytes": 1241,
+    "sha256": "e9a8e797e71f154f1663439fefd4c7ab77b7b4eb55a530a15f00e03db83586f1"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerTurnFaceUp.java",
+    "bytes": 2525,
+    "sha256": "c4bb914b9b453559897ba624ea9cb722abb3ba6ac3f3c9aba94e8052ff65d91f"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerType.java",
+    "bytes": 8851,
+    "sha256": "bea5e58ce9e526d477c11e618894fe675a71ec4795b5c87205c7f2a6bf716273"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerUnattached.java",
+    "bytes": 2680,
+    "sha256": "0d688a749639843dbe312a809c43a114d563c07981698d0611d0ad6e88a9ddfc"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerUnlockDoor.java",
+    "bytes": 1853,
+    "sha256": "54c96be5114035d0457725207c661ebf90419bf9abf274b5a9bac9a2e6135943"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerUntapAll.java",
+    "bytes": 2532,
+    "sha256": "b28048560ebabac17b62c64f93358b8c9d16572f0dfd249268a7c4d03328ccf6"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerUntaps.java",
+    "bytes": 2367,
+    "sha256": "64d0ce694c450bc3497551fd9dec6f0162bd9e4f449da14e18b5fa728265a371"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerVisitAttraction.java",
+    "bytes": 1263,
+    "sha256": "28723fbb0770ed611c2acc4cb46480f572517681ee0fb4fca6a57a3d70a90d0c"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/trigger/TriggerVote.java",
+    "bytes": 4584,
+    "sha256": "ab373bea761caa92bb1a912b827f720f71644bafaacf23225e0f841abfcfc82c"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/TriggerReplacementBase.java",
+    "bytes": 3195,
+    "sha256": "c9680744bd1a0f7fb163872eca052a6a3d38e2f25ee18819e86528c29644a38f"
+  },
+  {
+    "path": "build/web/explicit/src/forge/game/zone/ZoneType.java",
+    "bytes": 5230,
+    "sha256": "d27f1652456bc1abf72c65adfcfb26c8245551ac3c7d170fceb3782d04c4b359"
+  },
+  {
+    "path": "build/web/explicit/src/forge/trackable/TrackableProperty.java",
+    "bytes": 13296,
+    "sha256": "d056aed6ae0a742f460709d3962552c02c08ab53bc034c3a5d13f90d694648a9"
+  },
+  {
+    "path": "build/web/explicit/src/forge/trackable/TrackableTypes.java",
+    "bytes": 9304,
+    "sha256": "8f0a36ae8392038b3271fc79b1611d013d80d047e8d13eef318a7475ae9d614a"
+  },
+  {
+    "path": "build/web/explicit/src/forge/util/BinaryUtil.java",
+    "bytes": 1025,
+    "sha256": "eecd11438dbbe7c4a28043cc7f46240150883b8d840eb7a640ed4864339e8dd0"
+  },
+  {
+    "path": "build/web/explicit/src/forge/util/collect/FCollection.java",
+    "bytes": 21526,
+    "sha256": "560750cadef2555f757dac76ff276a31e8034316f68557b4968324189b1df94d"
+  },
+  {
+    "path": "build/web/explicit/src/forge/util/Lang.java",
+    "bytes": 8738,
+    "sha256": "af756d31c0cdc51c119403410cc8435745131d2515d69725a771900e110ee839"
+  },
+  {
+    "path": "build/web/explicit/src/forge/util/Localizer.java",
+    "bytes": 8730,
+    "sha256": "8a647abaa0d8fc04dfbe44a7869e3a81af0ef7fe44349d354d2fdd47f2a9fce3"
+  },
+  {
+    "path": "build/web/explicit/src/forge/util/Settable.java",
+    "bytes": 1006,
+    "sha256": "182a45985e2a4a62b0bf71285e06a898e189a0368ac512fa9212b9cb1d4457d5"
+  },
+  {
+    "path": "build/web/explicit/src/forge/util/TextUtil.java",
+    "bytes": 16598,
+    "sha256": "c683b1dd0e6823b9a3a10304f34c7808a80622675c5e80ba72c01310bc42028e"
+  },
+  {
+    "path": "build/web/explicit/src/probe/BrowserMain.java",
+    "bytes": 506,
+    "sha256": "55c6228f79d21b8b1988e7d7ad93d50af5df90c24fa823b521766c72cc961cdb"
+  },
+  {
+    "path": "build/web/explicit/src/probe/FactoryCases.java",
+    "bytes": 11891,
+    "sha256": "9c211068352c5ee7e8c35803143f44198d2f9a6fe54923f273512b1e026709ff"
+  },
+  {
+    "path": "build/web/explicit/src/probe/Json.java",
+    "bytes": 1818,
+    "sha256": "93f5bee49585caefcf1ea337ee8244f245d353e39a504bd7a8bb1ff23011ae9b"
+  },
+  {
+    "path": "build/web/missing-amount/app.js",
+    "bytes": 2342782,
+    "sha256": "5009a53fc36302e9139fe8905943a9593cd17c9b1c7200003d00c05b1b3f0a0b"
+  },
+  {
+    "path": "build/web/missing-amount/app.js.map",
+    "bytes": 159313,
+    "sha256": "41b1878d519a7cc28418e954179553488c97f73e4954acfe1bce33ceaa471eb3"
+  },
+  {
+    "path": "build/web/missing-amount/FORGE-LICENSE.txt",
+    "bytes": 35821,
+    "sha256": "81cbae84a29ce7e770bf2bc7b178e50bda0ce8de6067aba661b0bc7b05b562f8"
+  },
+  {
+    "path": "build/web/missing-amount/index.html",
+    "bytes": 2133,
+    "sha256": "e3719005d4ba0b7ee420d362d1503293825c65db13364e7abfc080897ba21e99"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/card/CardRarity.java",
+    "bytes": 1894,
+    "sha256": "e3789aa5292dff6216aacf2abdd3421993ee6cf42e70dc1dfa3ad3c8a967f194"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/card/CardType.java",
+    "bytes": 36154,
+    "sha256": "6f3e9ebf82d0ecaca02cd7a4d90e80d65bccb546fa4095000688c3c3664ce57d"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/card/ColorSet.java",
+    "bytes": 10168,
+    "sha256": "5165a3c5c79c4e904d6adceeb591e938eb5b274276172f0257c8c0612cb682e2"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/card/GamePieceType.java",
+    "bytes": 1681,
+    "sha256": "30963162bb91cd13a0a3e475ab86277d7c2866d311a763caf7111c97c721e590"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/card/MagicColor.java",
+    "bytes": 8117,
+    "sha256": "2df06e964daa4ab68fc5aedbd4025802c219fede96e8f59460ab890330fec3d2"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/card/mana/ManaCost.java",
+    "bytes": 12521,
+    "sha256": "44c31ee4c0c4cff4f29f255a37e0cdcdac0d17e5379f31ab230d07c386a7a691"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/card/mana/ManaCostParser.java",
+    "bytes": 2068,
+    "sha256": "29dc1fd3fc74b8116d1fd6be162daa04bb63cb6a41572b240bc414a2124b7480"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/card/mana/ManaCostShard.java",
+    "bytes": 11233,
+    "sha256": "ef5743f01e8a0075854d7ca2a0b0ee73231376e331d68512870bbc1ca218379b"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/deck/DeckFormat.java",
+    "bytes": 33215,
+    "sha256": "02b9f2543a14e8fb333deb78a898ce673b52fd61b641e6df347c959b88f796d2"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/ability/AbilityKey.java",
+    "bytes": 6987,
+    "sha256": "2461bfeb1c363671f39f0a1fa0942de086e5e7ce3aa88899fa030b54de525e2d"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/card/Card.java",
+    "bytes": 321643,
+    "sha256": "e9e52ea1d7486c3e4fd39a48ae8ece96e51553df26894758a13f1d213ee609eb"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/card/CardCollection.java",
+    "bytes": 5134,
+    "sha256": "58d4c94285a1d7bc6d088262e158973958448162176546f02bc99feca4f01f51"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/card/CardState.java",
+    "bytes": 41344,
+    "sha256": "92cdedfa4b51fa7b750223a9d28adefd3c50c5d754dc15aa721386c48cf87f6f"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/card/CardZoneTable.java",
+    "bytes": 8940,
+    "sha256": "bed8c5bb6e81fde5a36b0d0d63eb5500bfdf5086d97671335e19781c81eeb6ab"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/card/CounterAiCategory.java",
+    "bytes": 108,
+    "sha256": "fa197c38874939595d6158488b9b32c45d429b7f2b718ba7348f00642e1756c6"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/card/CounterCustomType.java",
+    "bytes": 768,
+    "sha256": "eeb3abc49d826053f85db8d45216c93499e8da92a84ccb8fadf66e7e318fe043"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/card/CounterEnumType.java",
+    "bytes": 18598,
+    "sha256": "537d77113ad10d4ec72d0efabbd42c8f470478cd64243d0a582a64b840d84aca"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/card/CounterKeywordType.java",
+    "bytes": 2216,
+    "sha256": "e0bd5302622edda2e94ef698e5704aeaf0feef669ab23e1e55672db816cba911"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/card/CounterType.java",
+    "bytes": 1710,
+    "sha256": "26816ecedafda4932cb528390f62160ff69270012fcd9fd476ddb38ccf2a4f3d"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/CardTraitBase.java",
+    "bytes": 27616,
+    "sha256": "f944aec2522e0a35b3cb493caf3ca2af5663829494c430fe968619c07d1c4cae"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/Cost.java",
+    "bytes": 41678,
+    "sha256": "f9b3c74ee294c30235a6957525dffcb2a4863097845f73202df110d703fd9fc9"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostAddMana.java",
+    "bytes": 3471,
+    "sha256": "a32608ac2c86e8b45e57ed50f595b2403ec59bfe7b1449374efbd8f23789fb7b"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostBehold.java",
+    "bytes": 1715,
+    "sha256": "f0d8bcd01fc4418e10fc847c664af3f18c93a513e97e05969ceeff4f19d70392"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostBeholdExile.java",
+    "bytes": 1399,
+    "sha256": "079c7c89ca406b0153ae289dcaa0798e941c1b5b0300ae4b090f74e10e57effd"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostBlight.java",
+    "bytes": 468,
+    "sha256": "97f42d7756ca1ca31e815ba6ad94532d3f0935a7d9c6c96d4db41a886a102643"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostChooseColor.java",
+    "bytes": 2867,
+    "sha256": "82d1fe9990b276f1aa3a9b2148faa324a084883dba6956b19938016a2797492a"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostChooseCreatureType.java",
+    "bytes": 2374,
+    "sha256": "d7af077b95efbd0834c9506ba0be66834d97dc46f32bacf6363693515891a133"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostCollectEvidence.java",
+    "bytes": 2710,
+    "sha256": "02846c4511369a1ef62c8eed0267c621683112b40b1a8f8f2735a9edec1a9b7d"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostDamage.java",
+    "bytes": 2655,
+    "sha256": "c63f8a90ce1ac4db34cc7b9c4d4ededc87aeb5facb7ea3edc50b6d6aee57ad9a"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostDiscard.java",
+    "bytes": 9171,
+    "sha256": "c354b29b044a54332fdb611a1714c49cc2f2bb079025485768e991f2a6765005"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostDraw.java",
+    "bytes": 3638,
+    "sha256": "fc86d3ece6a381ffb749162ee1a5f3dc05a7138ea3de12d99555817400a157c1"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostEnlist.java",
+    "bytes": 3732,
+    "sha256": "2d47faf1a92812866541c44a0f15922c3efd6ad45a6660a7f576befc5290ed42"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostExert.java",
+    "bytes": 3785,
+    "sha256": "7f72e0ac69d08fa7c8f8771d0dfd2f36ceebe458061cd2eb7ae34ded97cdca9f"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostExile.java",
+    "bytes": 14081,
+    "sha256": "3f783a1fd692847710a9d56c3f9112d04fe5f64e8916508660db88e673f87b6e"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostExiledMoveToGrave.java",
+    "bytes": 3300,
+    "sha256": "b214b6ac65b1c8489793dc8aeae35f208b3e9234a143aa404e59567f1eabc8a2"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostExileFromStack.java",
+    "bytes": 4439,
+    "sha256": "31bf1b3d3511ee29ff6eddb84fe96654f453177015f896fcf983ab1de3f48d4e"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostFlipCoin.java",
+    "bytes": 2387,
+    "sha256": "dc1973e3449c77e2860cfa7d9f1cf732fee01d073bdf3e71a56833e81c26761b"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostForage.java",
+    "bytes": 3173,
+    "sha256": "0066b8c2a41db43f4babb6bae395843bc5356f3d8854cecd2623dae88f1cc8dd"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostGainControl.java",
+    "bytes": 3643,
+    "sha256": "20b1bb23513d09bd2630583b2938e239c91ce2033c7aa661e95f6c32add9d743"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostGainLife.java",
+    "bytes": 3463,
+    "sha256": "602ac366d23d145a5ba6f0d6a0768f1fbcff58903dd741f6d534657224173c97"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostMill.java",
+    "bytes": 3516,
+    "sha256": "39f6dd524af67a1fc593366a8455b3b290e71ecd23e35a92c2e98a35100c1d7e"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostPart.java",
+    "bytes": 6156,
+    "sha256": "c076385f642dd555e34f2ca115ee75d97c3268e816c576e37ecd04a6e9e5b836"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostPartMana.java",
+    "bytes": 6140,
+    "sha256": "33bedda64cac7b2bdafd83abcc9fae273fe75ba4bb3c737b523fc43e3347d7dc"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostPartWithList.java",
+    "bytes": 6969,
+    "sha256": "dbc7f8bba808da1eed7b6ac2cff6c4db89467450e72c5f72ffa4d83259ec7e82"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostPartWithTrigger.java",
+    "bytes": 1806,
+    "sha256": "50cb55907d9cc48ce4c62a3f13726f7d873c8974274e7bc3ed92f95d71759423"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostPayEnergy.java",
+    "bytes": 3107,
+    "sha256": "fc2a40d7fe76b6dd7b27337b4066af21e5dbbb1ad1fb6adbad4f42639a09a6b6"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostPayLife.java",
+    "bytes": 2639,
+    "sha256": "993d9aeec71055e2903259c8a4950d1e95749a2cddfe03fc9a8deab2ce7a1048"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostPayShards.java",
+    "bytes": 2922,
+    "sha256": "774233bae4af6f41b55869bdaec44c8c006370e6a89ccce52397a4b69d7a5e8e"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostPromiseGift.java",
+    "bytes": 1333,
+    "sha256": "fdf82fadf83cf08705e3de2346931151626b8900134a070f12b882432a10a81c"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostPutCardToLib.java",
+    "bytes": 5557,
+    "sha256": "590acbd5fe997884ed49ba55a7b86a65e77c94c16961b8ea9130a756bfe818e8"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostPutCounter.java",
+    "bytes": 8069,
+    "sha256": "f11e6946cdb29b75c3b2a2cbe4b78ec1c762a195fa41d54b15129d45f608b4d8"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostPutCounterYou.java",
+    "bytes": 2641,
+    "sha256": "35f25be69ab951ff6ba5ce8cf7a3bdaa456db48b33c431be5a7474f745c1020c"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostRemoveAnyCounter.java",
+    "bytes": 6465,
+    "sha256": "069f4a520b0cee2be68d06ad993c65d4d53fbab189dd3dadca91f7a948a40114"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostRemoveCounter.java",
+    "bytes": 7349,
+    "sha256": "7706b3da3fca97bc849a2e976451d4417dc901250a53671a78eda94a9390bbe6"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostReturn.java",
+    "bytes": 4506,
+    "sha256": "c3163cedfcaa85ea11ac3ed9897994bfad232fa6fd279c74b995095848b69564"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostReveal.java",
+    "bytes": 6537,
+    "sha256": "2eebe28e8bc2745ae0c1a4bdba5bcedb358b983b89f9788c33fac9ff3f1ce652"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostRevealChosen.java",
+    "bytes": 2929,
+    "sha256": "d7d1174152020a7c26bcba7b7cd193de97e9096773362a35d1da0ea92dd95493"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostRollDice.java",
+    "bytes": 1734,
+    "sha256": "5b04b729e4a89609ffbc53d44d2986b24628a31ff167e449c3953841c105ae14"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostSacrifice.java",
+    "bytes": 6588,
+    "sha256": "8932d399874a8c9ea3275320704f8cbce40dee38c81530b6b4faa7e3cb2502a2"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostTap.java",
+    "bytes": 2619,
+    "sha256": "a522c73b3daa3f29afd59633c9f8ca1c6f6d4aa95379ee840b2f0f2ce2ea744d"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostTapType.java",
+    "bytes": 7887,
+    "sha256": "f058a5db792d898e9d9fa2a20a1fadbd2a08a62a72324aa0dcfaa6657d0e1e31"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostTeamwork.java",
+    "bytes": 999,
+    "sha256": "abfdc19d157301c7b09f25aeaeb09f425ba484472521bc43356147a7891f7deb"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostUnattach.java",
+    "bytes": 3848,
+    "sha256": "350cb51674c13b2ad5348d10677544ee30df69f90989aaf3e92ec211495f3865"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostUntap.java",
+    "bytes": 3119,
+    "sha256": "03f43d89fc0eadf65506e46431762ccc67af4fae166de6a1289101ec7e178f5f"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostUntapType.java",
+    "bytes": 4505,
+    "sha256": "04ec9796acc53d573a3ecbc16cbe02b5de7904767b8e8d08ebc29f451eed069a"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/cost/CostWaterbend.java",
+    "bytes": 363,
+    "sha256": "d1595969d3b4677d0cbba406204dc6beabbdef974486dc75fe88436292c6a877"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/Direction.java",
+    "bytes": 2280,
+    "sha256": "79bc1dc2062bbab861c87d360472ce66adb691509e49a5df95b22caa6de5dc13"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/EvenOdd.java",
+    "bytes": 69,
+    "sha256": "3228387285e427a6c28ca734e20d518d5e640167b0eb8e2baa8db8057f3b2206"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/GameEntityCounterTable.java",
+    "bytes": 8227,
+    "sha256": "a3dd1bbed930691a603f9483624a1bab78bf8400fc6643e243d08f97e9cef79c"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/GameType.java",
+    "bytes": 9101,
+    "sha256": "2c4576973d76f6051663d4bb16152f1e49144c7f4e3e155806a6d9160fe434de"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/keyword/DefaultKeywordView.java",
+    "bytes": 255,
+    "sha256": "b4047c40fb9470f35438e679f187ba304df302c0b512ef5465545492949bded7"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/keyword/Keyword.java",
+    "bytes": 40513,
+    "sha256": "f706645b7917897114c093553071ab115f502dd1078bd69db41b6581b1510ab2"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/keyword/KeywordCollectionView.java",
+    "bytes": 1705,
+    "sha256": "69331af9d868f450a3c9a6fd05a75b6d629a96c45e602a0b6f903db9cd36d5f7"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/keyword/KeywordInstance.java",
+    "bytes": 13281,
+    "sha256": "ca3d899101571fb3be75f5a69b102c6259bbbfc9aef8b45a8a95511bc277479f"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/keyword/KeywordInterface.java",
+    "bytes": 2191,
+    "sha256": "5a453e0bd2a82a0a128aa76cc80d50b5505ba5107b52c2997eda17b73b0050bf"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/keyword/KeywordWithCost.java",
+    "bytes": 1090,
+    "sha256": "7440a611422fe86438ba13f3e9c10e6e956659cbaec468cad05a7b4b0d98e95d"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/keyword/KeywordWithCostInterface.java",
+    "bytes": 935,
+    "sha256": "dc449fac6137279812242b65b18ae1b358c6c0bc87cac8641d986e154667fec4"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/keyword/KeywordWithType.java",
+    "bytes": 1574,
+    "sha256": "876e69ab17e79240aab5fc5e9544d942e6bb9af2d52ce20954a0f3fc86baf8ec"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/keyword/Kicker.java",
+    "bytes": 916,
+    "sha256": "06a61d93d16957ed884b57d2423022ebeae51b2ca91ba9feacf6fcb9127a0877"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/keyword/SimpleKeyword.java",
+    "bytes": 430,
+    "sha256": "1f19ca8d036706736c35014daf40dd2b8a0816af465fa4464851432724d53876"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/phase/PhaseType.java",
+    "bytes": 6256,
+    "sha256": "d27c5822d1b3888f57cbc3089a5f7a0ea19c252458580584ab1d182c8ce7a325"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/PlanarDice.java",
+    "bytes": 4065,
+    "sha256": "43a51cfde8b5bedac842094f10e8df1923e498553cda2588ddb8cfb372642312"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/player/GameLossReason.java",
+    "bytes": 1834,
+    "sha256": "ec3dbd2ec318f0c4bf44ba4ecb7bcd27226666869e135baa8f59cb3b1061e72a"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/player/PlayerCollection.java",
+    "bytes": 2495,
+    "sha256": "d03ceff81cbb0d4dd498e05c89594672c5ebdf983f15e66efa8f1be550d7e53c"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/replacement/ReplaceDraw.java",
+    "bytes": 3074,
+    "sha256": "fd08d285b1bd1946cd6723263dddc8035248ca46151183c930d8009974bebf37"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/replacement/ReplaceGainLife.java",
+    "bytes": 2639,
+    "sha256": "1327ad901684a3003f0cf3a2a0b0e5074542a2c9ffc30b794b6cd866551cad54"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/replacement/ReplacementEffect.java",
+    "bytes": 11246,
+    "sha256": "daf0d3eb547f88aa06b9095aeb43ef17bba1e0f0c95ee59b9b37f13789142a98"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/replacement/ReplacementLayer.java",
+    "bytes": 827,
+    "sha256": "848cf48b85c87950bbb801b5fca50908d715e166f6ae7f56a71b1dcd560c7cd8"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/replacement/ReplacementType.java",
+    "bytes": 3719,
+    "sha256": "3a9c1652f599a08146250a5c24a31573dd4fc3d5d4176121f3fc4bdd02413e1e"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/spellability/SpellAbility.java",
+    "bytes": 93569,
+    "sha256": "c78edd7f8d77e100e3b2e763fa0a96d8f24a0303dd70d04ded5fc4b4c90e0b73"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/Trigger.java",
+    "bytes": 24351,
+    "sha256": "e7e143035b9b83acad1c4333332c528e048fc2451c4d9fbed4f04aab2a7cc528"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerAbandoned.java",
+    "bytes": 2139,
+    "sha256": "52d0a4a59b9c8304a276638cd19a7c87b416ec21af84d89b628ec1d3c1e6abb6"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerAbilityResolves.java",
+    "bytes": 2534,
+    "sha256": "493fe31860ac5585089a48d565498e36850d55a1a2f093886ce02b03c008457e"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerAbilityTriggered.java",
+    "bytes": 5715,
+    "sha256": "bcf2166a3a9b068f082d94962d8fdfc00ae4d852a8a4f1260f126367ddc05f4b"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerAdapt.java",
+    "bytes": 2340,
+    "sha256": "c94b6dbc64c35a3783402d37af217a623eb012a5c175218d570a2dc22f435543"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerAlways.java",
+    "bytes": 1929,
+    "sha256": "36018ff267e32ed325e7e75a8f5a1fd6af80b80e07d5bb1faaa5cdc11f33f9d4"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerAttached.java",
+    "bytes": 2902,
+    "sha256": "5d3256de001ea87cd27ba7a26f99780198617f772eb464ebe752f2a0388a173d"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerAttackerBlocked.java",
+    "bytes": 3431,
+    "sha256": "56514920cdd3332d55c0f328ae0d02faf3fd97cc0ded01400c8c0aa5fd0498ce"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerAttackerBlockedByCreature.java",
+    "bytes": 3588,
+    "sha256": "24094aa6151ea54ece4321f46bd0b80db159c5a7fd56f626cc10dc93d9410e7c"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerAttackerBlockedOnce.java",
+    "bytes": 1246,
+    "sha256": "1dd0edf85eb8999098f4029241ec991f72cb648da0f73708dfbcd8874c5f22ed"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerAttackersDeclared.java",
+    "bytes": 4342,
+    "sha256": "95f57a2279358bd5c60c8c188ee48c7e2c59ad89adee1f93c60f573cc432edff"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerAttackerUnblocked.java",
+    "bytes": 2598,
+    "sha256": "3dd4d1395a153d6568b4ef8fb2acd20f70fae2230eb17107ad000a2988f5293c"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerAttackerUnblockedOnce.java",
+    "bytes": 2760,
+    "sha256": "d9e3e459d1c5ead5b6e05e916d8a5204c343129a247f3af7eeb12b5e8006b1b9"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerAttacks.java",
+    "bytes": 4577,
+    "sha256": "6e08c9aa8e5047db1089d13c850d52518446fe3b1430c12e0d182e2f0726becb"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerBecomeMonarch.java",
+    "bytes": 1399,
+    "sha256": "193ad1f33cfc459730b0a82c949d46878c994122cebaa7fc0ae26f61a31b5c6b"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerBecomeMonstrous.java",
+    "bytes": 2476,
+    "sha256": "dfcd7c89e5612257372ef5d1d31d3571029a75289e3c54e10abf8dc492d1cb40"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerBecomeRenowned.java",
+    "bytes": 2463,
+    "sha256": "2ca0a0a819e176c58cbb885cdb0b49a5967925c181f8b2579e465620568ec614"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerBecomesCrewed.java",
+    "bytes": 2181,
+    "sha256": "eab934ce6d62b8c9f035370cecbcd1f68540235834629431eede40b80684cad8"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerBecomesPlotted.java",
+    "bytes": 1161,
+    "sha256": "24e3dd2a7385d892b0323009e7a07713a515c8314af01d5256bd4c662b49def5"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerBecomesSaddled.java",
+    "bytes": 1640,
+    "sha256": "5cf9aa48ad8dfc83ceddd9ff2224576ad843d55b7e8298bd5ccdf689f0ecaf41"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerBecomesTarget.java",
+    "bytes": 3183,
+    "sha256": "bcb32f2772b5c76762aa4298f093c0bac5ee7eb32bbb10b18ea8ef67ae90e377"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerBecomesTargetOnce.java",
+    "bytes": 3171,
+    "sha256": "7c660ddaad4aaf15b3668f2ef7e25bb43b632db4317cc3ab440743f12eacf7f7"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerBlockersDeclared.java",
+    "bytes": 2191,
+    "sha256": "bf6fc553d877965b9d72a025b889e139fd7f3357b36c900b07b21b9abc22424a"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerBlocks.java",
+    "bytes": 2525,
+    "sha256": "5289d653630ace0ea3fd69c0aea3cbc6803e595446cb052b95d086fce4523cf6"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerCaseSolved.java",
+    "bytes": 1283,
+    "sha256": "9891ba385fba937bb7dd8b36c7710f6a0f8193fc9fd62c853773350b8c52d289"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerChampioned.java",
+    "bytes": 2560,
+    "sha256": "54033dde35c812b220897ced329c045fd4c415cda25f29b88e3baa10d5e6838c"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerChangesController.java",
+    "bytes": 2651,
+    "sha256": "d4b4c5cf2da61e8a8667c1ba215245febe4e6d54c647a2d0b7f37765cd3a8c57"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerChangesZone.java",
+    "bytes": 9026,
+    "sha256": "62a70e3dd5adc23097dfd35178a4e1f8d5086dbd7ca1027815bb9ca19f90889d"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerChangesZoneAll.java",
+    "bytes": 3418,
+    "sha256": "ad4488a5f82587b096c08dc5951c2de60fd022f720bb4e4c9d5424dd289ef0c5"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerChaosEnsues.java",
+    "bytes": 1953,
+    "sha256": "25db587e9ece17f812a91bc4a5e2185702257a2b64d57f81d11e15fcee6d42f5"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerClaimPrize.java",
+    "bytes": 1169,
+    "sha256": "80b772231bac1b767e879b109ee69f0cf74ff7012ed39ccd630049746cf569b1"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerClashed.java",
+    "bytes": 2293,
+    "sha256": "704aef3987888c8b6f3be48b596263210acea9baba1cc7acfc53b6373add908c"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerClassLevelGained.java",
+    "bytes": 1471,
+    "sha256": "f36af6d3c898b1c03ff2ad6a52f82e9db7cada47ccc63927ac448c7d8772c4c4"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerCollectEvidence.java",
+    "bytes": 1130,
+    "sha256": "d3186eafa61d27706a24b615b94627d369f0592272d399cbbf1310d31c1ecc44"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerCommitCrime.java",
+    "bytes": 1122,
+    "sha256": "9105002103fc07bf21139a9be6d0993e52df04673d25988f43a3ba5b85f4a3aa"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerCompletedDungeon.java",
+    "bytes": 1157,
+    "sha256": "46610bef37f4306f9f10980c8cdec899eb090b26041130c9a836079d844b2432"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerConjureAll.java",
+    "bytes": 1933,
+    "sha256": "961e09723014cb71181eeecc09e5a5db8af0ef64872a733b870ec24f6813b8cd"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerConnives.java",
+    "bytes": 2323,
+    "sha256": "c8aaf732bb45230d6b810a71c28d8317f7a512a8d2e0e137cd81ee8b03313cec"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerCounterAdded.java",
+    "bytes": 3836,
+    "sha256": "a3d98c188071740358289116175cf12639d344e9af81ce33ba7bf277a569f148"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerCounterAddedAll.java",
+    "bytes": 2018,
+    "sha256": "c30a59d536bdc9c3135bae15b05fe2b49d20b9c170a8eebe31184648537c8a06"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerCounterAddedOnce.java",
+    "bytes": 3870,
+    "sha256": "0bc5688f82d42a9f62096ed6831a3cc2f900d7c5dffa2f93e15ed66c5828bdb9"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerCountered.java",
+    "bytes": 2930,
+    "sha256": "3f4d4717cf31b120b1b38f076e6450044d818b381b1aac7890f84a6a1842c5e4"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerCounterPlayerAddedAll.java",
+    "bytes": 1967,
+    "sha256": "f495a7c45c70b799a943bfd576d9a94026d16f78be374f5c9b76ad6ceb63253a"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerCounterRemoved.java",
+    "bytes": 3304,
+    "sha256": "3b07779d59a79eecdecfde8a408b4f51cbbfb7776b9e4b1d5dcd7e9d846895fc"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerCounterRemovedOnce.java",
+    "bytes": 3327,
+    "sha256": "3d9370e9e44c9bcd149e27b6dc92dcff636a0e554b769d1b63026157e8ce09bc"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerCounterTypeAddedAll.java",
+    "bytes": 1318,
+    "sha256": "1ba1b2527dd6fe493a912754d145b1a837ac92e4e95ac0694cd2bf65b3d48f00"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerCrankContraption.java",
+    "bytes": 1183,
+    "sha256": "577df9dd7a283db17be93be94971d33b61eef594a037fe97edf9100415582ff7"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerCrewedSaddled.java",
+    "bytes": 1419,
+    "sha256": "c3ccd15615b962d595fedbfb43663d59bfe102e1fc665c26ac492068aad6041e"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerCycled.java",
+    "bytes": 2667,
+    "sha256": "10428c5065774a0d4321a9257d3320d9e1ac7fd79ad93d560ff641d3f8d175d9"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerDamageAll.java",
+    "bytes": 2094,
+    "sha256": "0a20236cab89e209935bf1a9b6cb02eba1177f144142657e9c8feddd7c5490aa"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerDamageDealtOnce.java",
+    "bytes": 4963,
+    "sha256": "e247932ab955a8279afd71848904e10c5a2eccf2705d1db5e7a189ffe9585876"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerDamageDone.java",
+    "bytes": 5052,
+    "sha256": "bae0e290e84ecf4007d70a9f9831d31be064fca78e7c7bef4d9c9e4058cd3b27"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerDamageDoneOnce.java",
+    "bytes": 3931,
+    "sha256": "20157563bef2a2126a47fbc8651c618262925f27cd919b28c03fe8d28cfe355e"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerDamageDoneOnceByController.java",
+    "bytes": 2071,
+    "sha256": "71286e4ed407b23c6d070b9b945ba2c12c8e1f895ccfed7152094dcea277984b"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerDamagePreventedOnce.java",
+    "bytes": 3444,
+    "sha256": "fe351a8f1f3f78ebd0cd9b6a495fb07b9b8fcb3ef48158090739349c830fdf45"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerDayTimeChanges.java",
+    "bytes": 714,
+    "sha256": "71384f3b3c0cd9409b8df0baede5560bb2e10b1fa6c44954abbba515707d44c2"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerDestroyed.java",
+    "bytes": 2726,
+    "sha256": "1792663598355f7bdc18f60c75acc92d053822da93347828643965396dbd770a"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerDevoured.java",
+    "bytes": 2451,
+    "sha256": "1189e87e8b5966b801f290086914abf1225d33d7b360477f19afd146dab8c98e"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerDiscarded.java",
+    "bytes": 2783,
+    "sha256": "9d2c550f4b03994ca4bec29d6c145690fb78141fa29b43c2da9d0b9e20f0b456"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerDiscardedAll.java",
+    "bytes": 2641,
+    "sha256": "f60d3a669bba541054daa17976f7b822e236cb44e4dd77f33c7b95a35b74a12d"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerDiscover.java",
+    "bytes": 1320,
+    "sha256": "78da6f8350ff357c97d95b3b3402a6cbc685e9de4476cd4821def7a5bac33713"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerDrawn.java",
+    "bytes": 4037,
+    "sha256": "b13acf40aaa07b5f372c27546a477ad094fbdd9934334a426b41f5ebf4553b65"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerElementalbend.java",
+    "bytes": 1146,
+    "sha256": "3aa1d54e6f15207782566ac2f62edebd29417e6520fe988cc15e03c88d813854"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerEnlisted.java",
+    "bytes": 1486,
+    "sha256": "c2ccd32271e3fb4a8b69a1b40d91c5d63625dc588e87ed656fa4e9bc65404ff7"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerEnteredRoom.java",
+    "bytes": 1293,
+    "sha256": "bfe34e1d221af53f33ef132ac22f2aab11b695674c731b3338a214213ff83a98"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerEvolved.java",
+    "bytes": 2350,
+    "sha256": "d3ece0f8f69c2ffb8b77ba8b605aab497406ab431acab840d5492d6327c55f52"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerExcessDamage.java",
+    "bytes": 2753,
+    "sha256": "aba7772ffdf8570e4a47fef22d2f8e136c9ec1c47f0667bf3aa64272a266be1f"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerExcessDamageAll.java",
+    "bytes": 1875,
+    "sha256": "fc4fdb0fb59a5da1f6e6526cb011f6ff3283b40bbe1c6b1ef7eb838172b01318"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerExerted.java",
+    "bytes": 1355,
+    "sha256": "8eeb0a781012c241e7b6a04fa452df5f05e51aca28d0f34736ec70e32260bcf9"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerExiled.java",
+    "bytes": 3432,
+    "sha256": "d1f7493e0dfe7c94e8af786515656476e5117b960a70147e0acf0d52827b0c4d"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerExploited.java",
+    "bytes": 2760,
+    "sha256": "ce785069eb2d3cbf3928eb1fd740560fc9f0d812c7e5022f47d12dc71b23a33f"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerExplores.java",
+    "bytes": 2853,
+    "sha256": "98247685abf609718acbd2f23009eb5df451186f30199b7c2d778255f2b8fdc2"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerFacesDilemma.java",
+    "bytes": 1332,
+    "sha256": "7b29149e1a97914950486929af0764e0d8f8b166904034053879b57a17360892"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerFight.java",
+    "bytes": 2455,
+    "sha256": "921ac372690a137fc86752ce3e76ef49119805e9923e7e6dc22be6d6da81c737"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerFightOnce.java",
+    "bytes": 2534,
+    "sha256": "e45741a9d8cff46b9da9e8bdbb9ffab452a5767b5e05456005ceafb81d521e75"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerFlippedCoin.java",
+    "bytes": 2728,
+    "sha256": "50dde87f06a47c45b710428eebd8148c783ad2444c33941fba0f808ca154eceb"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerFlippedCoinOnce.java",
+    "bytes": 1155,
+    "sha256": "058b0f11a32ec706602d311da5595f2e588ca61289f4cf6eed339043738d32f6"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerForage.java",
+    "bytes": 1112,
+    "sha256": "ebeac6cb296d63d4756bf0c33854d9fa01fd8d9df489a0e867154d453dfd15bd"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerForetell.java",
+    "bytes": 2401,
+    "sha256": "6ba7013e20bb54de54dab10cda5c41548fa7155fded2e1c44dd9565ad41b259b"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerFullyUnlock.java",
+    "bytes": 1416,
+    "sha256": "7d722c7cf0919ddf84182e4607d1091b805b9eb78191061bcc2fb2da645f599b"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerGiveGift.java",
+    "bytes": 2245,
+    "sha256": "1b8989015bdd5c064f310b58e1c7f787025d779abb0140b4744c55b1b990d717"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerImmediate.java",
+    "bytes": 1705,
+    "sha256": "da590c5f78fd8c4730d2cbea2d6c7b6b143abaf86cd40c7bed805d9cec39febb"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerInvestigated.java",
+    "bytes": 2624,
+    "sha256": "7004274a873cbbf0313b3d998f99713db30a358971c0cfec9e8be9d2a7d0c73f"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerLandPlayed.java",
+    "bytes": 3214,
+    "sha256": "ccfba6b2e2e2586ade7527be703c0d211d80028492dbdc9bb78973b280b17edd"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerLifeGained.java",
+    "bytes": 3109,
+    "sha256": "a03336ed9ca175978f197b74b24acfce4d5edf53ae667962543409f562dd5d80"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerLifeLost.java",
+    "bytes": 3611,
+    "sha256": "0c29eb0c0325d139e03fe6b735af78324a2c543de9e8d575d4521bf856ec1744"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerLifeLostAll.java",
+    "bytes": 3907,
+    "sha256": "7ac840bfc5f0af8bd8475095c6a55507e488cc68593fd7a7598fb7929f96b8d6"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerLosesGame.java",
+    "bytes": 1626,
+    "sha256": "c5d5d1c055b3a28364ebce2b15a81c6aef4295a945084acc9eed32b6afa40e32"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerManaAdded.java",
+    "bytes": 3348,
+    "sha256": "829531a363313386ef4f9ede69b29df15553772d70a30509c181c5aaee2ee472"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerManaExpend.java",
+    "bytes": 2137,
+    "sha256": "f05abd12c035419195ee9ded4e1d9440d76eced78d06854c2dab4315068009a4"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerManifestDread.java",
+    "bytes": 964,
+    "sha256": "3d2d2be2e91c4e21a3e08446cbd1c825300f5532dd5e99bd800bc8d771f62bac"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerMentored.java",
+    "bytes": 1398,
+    "sha256": "5c394f9cab494287daa4404945d44cfe6279419c5f9980af5ee5d62af6dfe9d0"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerMilled.java",
+    "bytes": 1733,
+    "sha256": "029788e81acc58727bde12ab3eb3125361e9a967e84299fb4ff801a31b58d82b"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerMilledAll.java",
+    "bytes": 2006,
+    "sha256": "204296331d855f62244a6a5910d5f83f9c843a023e517d77acaefb621f882afe"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerMilledOnce.java",
+    "bytes": 2212,
+    "sha256": "2ca8966f7275017b7d34767cb2de0fd2a3bf73f160a03fe673d4cfcd3be06625"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerMutates.java",
+    "bytes": 1070,
+    "sha256": "271e09a067cde53304410e919198de506a5e662f68f0e2ca7435ed9d1cc4e6ae"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerNewGame.java",
+    "bytes": 2018,
+    "sha256": "55f8954f5bc2ec13c0bee495ca218285e118b1a40423f1e1274a254a484e9b82"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerPayCumulativeUpkeep.java",
+    "bytes": 2721,
+    "sha256": "2ff32a72a3eb065c44a040c9043a8bb67f6388329912c02eff7b6e8c9ed58ea4"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerPayEcho.java",
+    "bytes": 2431,
+    "sha256": "e562a1ba892504782620c84c52ff390ec54de8cd6cc0fb91c04151e0d3307110"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerPayLife.java",
+    "bytes": 2533,
+    "sha256": "ea81735e7e30730f3675d4c41bfc9168f4db522b47be50f8e3ec2328a0477f0f"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerPhase.java",
+    "bytes": 2366,
+    "sha256": "9d134fc080318d172a98dbbee1e223539cf27ce779d4f3a5ba4942d703e2d846"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerPhaseIn.java",
+    "bytes": 1224,
+    "sha256": "b235924798a477b7f72508c596d187a9ca154272f0660c9b15190bd05e2b41d0"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerPhaseOut.java",
+    "bytes": 1227,
+    "sha256": "e92690467324eed7d233a74e87c95bb840648c1382a5d4ce92430ea18d785210"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerPhaseOutAll.java",
+    "bytes": 1533,
+    "sha256": "39606f9793b3db895035e75fd132aa6420750f2660a08ce8e743f291002facd3"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerPlanarDice.java",
+    "bytes": 1863,
+    "sha256": "2bca1dbe879aee270b8b347687d1f6c37e637f45f239a2fbd509ef423562dfcf"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerPlaneswalkedFrom.java",
+    "bytes": 1632,
+    "sha256": "b2b57c0968bd13b80a3859252b58b01f20f986af22f25693851a23d702360564"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerPlaneswalkedTo.java",
+    "bytes": 1616,
+    "sha256": "d17ab6d1da072c42a36349d9e848faf8a69132eeace4a48b922d002e4d29a6b4"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerProliferate.java",
+    "bytes": 1120,
+    "sha256": "519fc92116dd991b0b9af8f15ca4bc09c1893b2a8ab59579d2ea4ec1e6c3698f"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerRingTemptsYou.java",
+    "bytes": 1323,
+    "sha256": "2eb65001f04f378e481ccc988fcc4dcb072eab40a5361d1c85ec42338b8e58cc"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerRolledDie.java",
+    "bytes": 3421,
+    "sha256": "1d92df1b8cd56992aab0e43ae2bad85e6a45a3e33f6a9fe3c4e3328780eed563"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerRolledDieOnce.java",
+    "bytes": 1625,
+    "sha256": "0de45ce66e53763b702dc55ea88bcca7dc2e062f0d150bf4965983d204e14d1f"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerSacrificed.java",
+    "bytes": 2688,
+    "sha256": "4ed03ba90ec8989d4b2714c4d8e6a4be87d7569711e48d380ca2f717b559c277"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerSacrificedOnce.java",
+    "bytes": 1990,
+    "sha256": "690f4cfe57e07e3a8dd0091546296ae0ed53aa32817ca233d07bb6d1e860ff96"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerScry.java",
+    "bytes": 2764,
+    "sha256": "26143471e69d14dea26f8c6c47d2dfd162b3d33a209a7e8a6488a9e7d60c9ec2"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerSearchedLibrary.java",
+    "bytes": 2751,
+    "sha256": "42a2e31b5cd6d83cfe76c8fa9be506f6a081de9aea685c1bef85ae5bbbcc587a"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerSeekAll.java",
+    "bytes": 1190,
+    "sha256": "633485878ad5be8e3eaf87d82252c1ef811043d1ae5fd5cc674b13b5a6dff9ad"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerSetInMotion.java",
+    "bytes": 2227,
+    "sha256": "b369f0c9abef8e754c6fc5faae7ccd1777376fff5a089fad203add6618023325"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerShuffled.java",
+    "bytes": 2831,
+    "sha256": "8a5756993ded0ecb9749300fc151241a0ab1d7f0797d4c064ddb95b81bdf83ed"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerSpecializes.java",
+    "bytes": 2343,
+    "sha256": "ddfbbdb0c4347787a9faf7e71716b76700d623c82af67e685f0eb328d19b5a5c"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerSpellAbilityCastOrCopy.java",
+    "bytes": 10252,
+    "sha256": "1bcc7ae0844b8fe5126053ee3fb12bfefb00503db2a83336366bb3cf4d56df81"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerStickerPlaced.java",
+    "bytes": 2477,
+    "sha256": "03c65f265daf54678c76355ab2295238e0d58e877acba7761068f9dee4d2e3ea"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerSurveil.java",
+    "bytes": 2475,
+    "sha256": "71c7d68f807e0cb19604d3f5949026e3247ff6f90baaf77740b032f684fbb735"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerTakesInitiative.java",
+    "bytes": 1190,
+    "sha256": "87f7c68f4f26c481c57fb96735f07c8fd2ad450b040867b0f83021dad9673689"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerTapAll.java",
+    "bytes": 1349,
+    "sha256": "927f8078ec3e77247ba4ad17c03fdf5297e92f2ba5a8020ecf3a8b564b317c00"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerTaps.java",
+    "bytes": 3366,
+    "sha256": "bba8ca31019329f324af99cf51636577df16d544c4285efa4dc2cda02d4cf16b"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerTapsForMana.java",
+    "bytes": 3375,
+    "sha256": "598447a16c61a3bc36f500d1afc4d8a0d14d00e038f7d7534ffd3c306ec10f9d"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerTokenCreated.java",
+    "bytes": 2750,
+    "sha256": "98723e84304cab78e07efdff37e6625b6f669130c72c0777e7056dfea7a7d235"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerTokenCreatedOnce.java",
+    "bytes": 2561,
+    "sha256": "e31a84db84ce3fe1c5f7b64fb1ae7900bd5b5681ad7fec37b16d1dd9f45849da"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerTrains.java",
+    "bytes": 2342,
+    "sha256": "63f24ac0f491ca892cd57c43e2fb19cf989dd1603cbe0275830d08807e965d92"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerTransformed.java",
+    "bytes": 2210,
+    "sha256": "ff4c74f2c6c43462fb1060fcdff2725c39af160e7fc31082ebecec0bac94f5e5"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerTurnBegin.java",
+    "bytes": 1241,
+    "sha256": "e9a8e797e71f154f1663439fefd4c7ab77b7b4eb55a530a15f00e03db83586f1"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerTurnFaceUp.java",
+    "bytes": 2525,
+    "sha256": "c4bb914b9b453559897ba624ea9cb722abb3ba6ac3f3c9aba94e8052ff65d91f"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerType.java",
+    "bytes": 8851,
+    "sha256": "bea5e58ce9e526d477c11e618894fe675a71ec4795b5c87205c7f2a6bf716273"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerUnattached.java",
+    "bytes": 2680,
+    "sha256": "0d688a749639843dbe312a809c43a114d563c07981698d0611d0ad6e88a9ddfc"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerUnlockDoor.java",
+    "bytes": 1853,
+    "sha256": "54c96be5114035d0457725207c661ebf90419bf9abf274b5a9bac9a2e6135943"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerUntapAll.java",
+    "bytes": 2532,
+    "sha256": "b28048560ebabac17b62c64f93358b8c9d16572f0dfd249268a7c4d03328ccf6"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerUntaps.java",
+    "bytes": 2367,
+    "sha256": "64d0ce694c450bc3497551fd9dec6f0162bd9e4f449da14e18b5fa728265a371"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerVisitAttraction.java",
+    "bytes": 1263,
+    "sha256": "28723fbb0770ed611c2acc4cb46480f572517681ee0fb4fca6a57a3d70a90d0c"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/trigger/TriggerVote.java",
+    "bytes": 4584,
+    "sha256": "ab373bea761caa92bb1a912b827f720f71644bafaacf23225e0f841abfcfc82c"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/TriggerReplacementBase.java",
+    "bytes": 3195,
+    "sha256": "c9680744bd1a0f7fb163872eca052a6a3d38e2f25ee18819e86528c29644a38f"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/game/zone/ZoneType.java",
+    "bytes": 5230,
+    "sha256": "d27f1652456bc1abf72c65adfcfb26c8245551ac3c7d170fceb3782d04c4b359"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/trackable/TrackableProperty.java",
+    "bytes": 13296,
+    "sha256": "d056aed6ae0a742f460709d3962552c02c08ab53bc034c3a5d13f90d694648a9"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/trackable/TrackableTypes.java",
+    "bytes": 9304,
+    "sha256": "8f0a36ae8392038b3271fc79b1611d013d80d047e8d13eef318a7475ae9d614a"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/util/BinaryUtil.java",
+    "bytes": 1025,
+    "sha256": "eecd11438dbbe7c4a28043cc7f46240150883b8d840eb7a640ed4864339e8dd0"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/util/collect/FCollection.java",
+    "bytes": 21526,
+    "sha256": "560750cadef2555f757dac76ff276a31e8034316f68557b4968324189b1df94d"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/util/Lang.java",
+    "bytes": 8738,
+    "sha256": "af756d31c0cdc51c119403410cc8435745131d2515d69725a771900e110ee839"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/util/Localizer.java",
+    "bytes": 8730,
+    "sha256": "8a647abaa0d8fc04dfbe44a7869e3a81af0ef7fe44349d354d2fdd47f2a9fce3"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/util/Settable.java",
+    "bytes": 1006,
+    "sha256": "182a45985e2a4a62b0bf71285e06a898e189a0368ac512fa9212b9cb1d4457d5"
+  },
+  {
+    "path": "build/web/missing-amount/src/forge/util/TextUtil.java",
+    "bytes": 16598,
+    "sha256": "c683b1dd0e6823b9a3a10304f34c7808a80622675c5e80ba72c01310bc42028e"
+  },
+  {
+    "path": "build/web/missing-amount/src/probe/BrowserMain.java",
+    "bytes": 506,
+    "sha256": "55c6228f79d21b8b1988e7d7ad93d50af5df90c24fa823b521766c72cc961cdb"
+  },
+  {
+    "path": "build/web/missing-amount/src/probe/FactoryCases.java",
+    "bytes": 11891,
+    "sha256": "9c211068352c5ee7e8c35803143f44198d2f9a6fe54923f273512b1e026709ff"
+  },
+  {
+    "path": "build/web/missing-amount/src/probe/Json.java",
+    "bytes": 1818,
+    "sha256": "93f5bee49585caefcf1ea337ee8244f245d353e39a504bd7a8bb1ff23011ae9b"
+  }
+]

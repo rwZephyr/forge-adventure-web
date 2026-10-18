@@ -1,0 +1,116 @@
+plugins {
+    id 'java'
+    id 'com.github.xpenatan.gdx-teavm' version '1.6.1'
+}
+
+repositories {
+    // Reuse only the approved repository-local Maven cache, never ~/.m2.
+    maven { url = uri('../../.local-tools/m2') }
+    mavenCentral()
+}
+dependencyLocking { lockAllConfigurations() }
+java { sourceCompatibility = JavaVersion.VERSION_17; targetCompatibility = JavaVersion.VERSION_17 }
+tasks.withType(JavaCompile).configureEach { options.release = 17 }
+
+dependencies {
+    implementation files('../../forge-core/target/classes', '../../forge-game/target/classes')
+    implementation 'com.google.guava:guava:33.3.1-android'
+    implementation 'org.apache.commons:commons-lang3:3.18.0'
+    implementation 'org.apache.commons:commons-text:1.12.0'
+    implementation 'com.apptasticsoftware:rssreader:3.8.2'
+    implementation 'org.tinylog:slf4j-tinylog:2.7.0'
+    implementation 'org.tinylog:tinylog-impl:2.7.0'
+    implementation 'org.slf4j:slf4j-api:2.0.16'
+    implementation 'io.sentry:sentry:8.21.1'
+    implementation 'org.jgrapht:jgrapht-core:1.5.2'
+    implementation 'com.badlogicgames.gdx:gdx:1.14.2'
+    implementation 'org.teavm:teavm-jso:0.15.0'
+}
+configurations.all {
+    resolutionStrategy.force 'com.google.guava:guava:33.3.1-android', 'org.slf4j:slf4j-api:2.0.16'
+}
+
+sourceSets {
+    compiler {
+        java.setSrcDirs(['src/compiler/java'])
+        resources.setSrcDirs(['src/compiler/resources'])
+    }
+}
+dependencies {
+    compilerImplementation 'org.teavm:teavm-tooling:0.15.0'
+    compilerImplementation 'org.teavm:teavm-classlib:0.15.0'
+    compilerImplementation 'org.teavm:teavm-extension-spi:0.15.0'
+    compilerImplementation 'com.github.xpenatan.gdx-teavm:backend-web:1.6.1'
+}
+
+def originalRoots = ['../../forge-core/src/main/java', '../../forge-game/src/main/java']
+tasks.register('verifyOriginalInputs') {
+    doLast {
+        ['../../forge-core/target/classes/forge/card/CardRules.class',
+         '../../forge-game/target/classes/forge/game/trigger/TriggerType.class'].each {
+            if (!file(it).isFile()) throw new GradleException('Run Prepare-Forge.ps1 first: ' + it)
+        }
+        if (!file('build/input-manifest.json').isFile()) throw new GradleException('Missing input manifest; run Prepare-Forge.ps1')
+        def manifest = new groovy.json.JsonSlurper().parse(file('build/input-manifest.json'))
+        manifest.inputs.each { entry ->
+            def input = file('../../' + entry.path)
+            def hash = java.security.MessageDigest.getInstance('SHA-256').digest(input.bytes).encodeHex().toString()
+            if (hash != entry.sha256) throw new GradleException('Changed source/class input: ' + entry.path)
+        }
+    }
+}
+tasks.named('compileJava') { dependsOn 'verifyOriginalInputs' }
+
+tasks.register('jvmControl', JavaExec) {
+    dependsOn 'classes'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'probe.JvmMain'
+    maxHeapSize = '1536m'
+    jvmArgs '-Dfile.encoding=UTF-8'
+    args layout.buildDirectory.file('jvm-results.json').get().asFile.absolutePath
+    inputs.files(sourceSets.main.runtimeClasspath)
+    outputs.file(layout.buildDirectory.file('jvm-results.json'))
+}
+
+['Default': 'default', 'Explicit': 'explicit', 'MissingAmount': 'missing-amount'].each { suffix, variant ->
+    tasks.register('browser' + suffix, JavaExec) {
+        dependsOn 'jvmControl', 'compilerClasses'
+        // Compiler policy is host-side only; Forge inputs are the same for every variant.
+        classpath = sourceSets.compiler.runtimeClasspath + sourceSets.main.runtimeClasspath
+        mainClass = 'probe.compiler.CompilerMain'
+        maxHeapSize = '1536m'
+        systemProperty 'probe.variant', variant
+        doFirst {
+            // Failed compiler runs can leave debug sources. Clean only this known,
+            // disposable variant directory after validating its resolved location.
+            def allowedRoot = file('build/web').canonicalFile
+            def output = file('build/web/' + variant).canonicalFile
+            if (!allowedRoot.toPath().startsWith(projectDir.canonicalFile.toPath()) || output.parentFile != allowedRoot)
+                throw new GradleException('Refusing to clean output outside this experiment: ' + output)
+            project.delete(output)
+        }
+        args variant, layout.buildDirectory.dir('web/' + variant).get().asFile.absolutePath,
+             sourceSets.main.runtimeClasspath.asPath,
+             file('reflection-constructors.tsv').absolutePath,
+             originalRoots.collect { file(it).absolutePath }.join(File.pathSeparator)
+    }
+}
+
+tasks.register('dependencyInventory') {
+    doLast {
+        def rows = []
+        [configurations.runtimeClasspath, configurations.compilerRuntimeClasspath].each { conf ->
+            conf.resolvedConfiguration.resolvedArtifacts.each { artifact ->
+                def digest = java.security.MessageDigest.getInstance('SHA-256').digest(artifact.file.bytes).encodeHex().toString()
+                rows.add([configuration:conf.name, coordinate:artifact.moduleVersion.id.toString(),
+                          file:artifact.file.name, sha256:digest])
+            }
+        }
+        def output = file('build/dependencies.json'); output.parentFile.mkdirs()
+        output.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(rows)) + '\n'
+        println 'Dependency inventory: ' + rows.size() + ' artifacts'
+    }
+}
+
+// This experiment builds files only. No implicit plugin listener is permitted.
+tasks.matching { it.name.endsWith('_run') || it.name.toLowerCase().contains('devserver') }.configureEach { enabled = false }

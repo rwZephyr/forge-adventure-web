@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Original Forge factory probe</title>
+<style>body{font:16px system-ui;margin:1rem}pre{white-space:pre-wrap;overflow-wrap:anywhere}#errors{color:#b00}</style>
+<h1>Original Forge factory probe</h1><p id="status">WAITING — startup is not a pass</p>
+<p id="identity"></p><pre id="errors"></pre><pre id="summary"></pre>
+<details open><summary>Raw case JSON</summary><pre id="results"></pre></details>
+<details open><summary>Console warnings/errors</summary><pre id="console">[]</pre></details>
+<script>
+window.__factoryProbe = {completed:false, passed:false};
+window.__factoryErrors = [];
+window.__factoryConsole = [];
+for (const level of ['warn','error']) {
+  const original = console[level].bind(console);
+  console[level] = (...args) => {
+    window.__factoryConsole.push({level,message:args.map(String).join(' ')});
+    document.getElementById('console').textContent = JSON.stringify(window.__factoryConsole);
+    original(...args);
+  };
+}
+function recordFailure(message) {
+  window.__factoryErrors.push(String(message));
+  document.getElementById('errors').textContent = window.__factoryErrors.join('\n');
+  document.getElementById('status').textContent = 'ERROR';
+}
+addEventListener('error', e => recordFailure(e.message || 'script/resource error'));
+addEventListener('unhandledrejection', e => recordFailure(e.reason));
+document.getElementById('identity').textContent = location.pathname + ' | ' + navigator.userAgent;
+</script>
+<script src="app.js" onerror="recordFailure('app.js failed to load')"></script>
+<script>
+if(typeof main === 'function'){main([]);}else{recordFailure('TeaVM main entry point missing');}
+const result = window.__factoryProbe;
+if(result.completed) document.getElementById('summary').textContent =
+  result.passedCases + '/' + result.totalCases + ' result rows passed\n\n' +
+  result.cases.map(row => row.id + ': ' + (row.passed ? 'PASS' : 'FAIL') +
+    (row.actualClass ? ' — ' + row.actualClass : '') + (row.error ? '\n  ' + row.error : '')).join('\n');
+</script>
+</html>

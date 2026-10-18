@@ -4,8 +4,9 @@ Last updated: 2026-10-17
 
 ## Current milestone
 **Gate 0 verified; Gate 1 verified on desktop Chromium, pending actual iPhone
-Safari. Gate 2 factory experiment designed only.** No complete Adventure web port
-or browser rules/AI compatibility has been demonstrated.
+Safari. Gate 2 Stage A factory checks verified on desktop Chromium with explicit
+constructor metadata.** No complete Adventure port or full rules/AI compatibility
+has been demonstrated; Stage B remains unimplemented.
 
 ## Known setup
 - Repository: `rwZephyr/forge-adventure-web`, fork of `Card-Forge/forge`.
@@ -30,35 +31,45 @@ or browser rules/AI compatibility has been demonstrated.
   Physical touch and actual iPhone Safari remain unverified.
 - [Actual results and evidence at the tested commit](https://github.com/rwZephyr/forge-adventure-web/blob/57ed01d137e45ea2a304b64ef979402347cb0843/experiments/adventure-teavm/RESULTS.md).
 
-## Current design assignment
-- Branch `codex/gate2-factory-design`, based on master
-  `db893dcdb14fdd85a05437ad458dc70ef704ca2e` to keep PR #8 separate.
-- [Gate 2 design](experiments/gate-2-factory-design.md) records original classes,
-  dependencies, nine factory cases, constructor metadata variants, concrete-class
-  and parsed-value assertions, silent-fallback control, and pass/fail criteria.
-- Source verified: TriggerType eagerly scans every entry; ReplacementType scans
-  at factory invocation; Keyword silently falls back to SimpleKeyword. AI's
-  nonempty spell list reaches FutureTask, Game AI Eval and timed get. TeaVM
-  coroutine support makes execution necessary to resolve threading compatibility.
-- Stage B is separate: nonempty decks/libraries, original Bolt/Mountain scripts,
-  payable spell and lethal legal target, actual AiController path evidence and
-  genuine cast/payment/resolution, with an empty-hand negative control.
-- Documentation only. No Gate 2 implementation/build/test, dependency install,
-  phone test, server/network exposure or Tailscale/service changes.
+## Stage A implementation and actual results
+- Branch `codex/gate2-factories`, based on approved design PR #9, separate from
+  PR #8. Original Forge modules/POMs remain unchanged.
+- [Results](../experiments/rules-teavm/RESULTS.md) and
+  [reproduction](../experiments/rules-teavm/README.md): original offline core/game
+  compile passed; JVM control passed 15 rows (nine factories plus enum/name cases).
+- All three TeaVM variants compile with existing approved tools and isolated
+  caches. In Chromium 155, explicit constructor metadata passes all 15 rows on
+  three loads; missing-amount control fails only K2 with SimpleKeyword/amount 1
+  on three loads; default fails with missing constructors and silent fallbacks.
+- Six browser/JVM comparisons and seven comparator self-checks passed. Raw logs,
+  actual JSON, screenshots, input/artifact hashes, locks and dependency/license
+  inventories are committed with the experiment.
+- Corrected design counts: 149 TriggerType entries, 137 distinct trigger classes;
+  144 explicit constructor signatures, 143 negative. Initial generator missed
+  whitespace on DayTimeChanges; actual JVM enum inventory now audits completeness.
+- Initial broader predicate dispatch caused 47 severe TeaVM errors reaching
+  logging/platform/JDK behavior. Scoped concrete predicate calls compile; full
+  failures remain documented. No stub, source rewrite or broad workaround.
+- Separate loopback server approval was received; only build/web was served at
+  127.0.0.1:8765, and the test server was stopped. No listener remained. No LAN,
+  Tailscale, existing-service, save/account or system dependency changes.
+- Stage B (real Game/bootstrap/AI/threaded spell evaluation) is not implemented
+  or verified. Actual iPhone Safari remains pending its private arrangement.
 
 ## Next bounded assignment
 1. Agree on a private actual-iPhone Safari arrangement before enabling access.
    Do not modify Silent's Tailscale or existing services without specific approval.
-2. Review/approve Stage A before implementation in its own target and branch.
-   Record actual JVM/compiler/browser results, including failures.
-3. Review Stage B after Stage A results; unchanged localization/bootstrap and
-   threaded spell evaluation remain unproven prerequisites.
+2. Review Stage A's draft PR and its actual evidence; repeat the factory artifact
+   on actual Safari alongside PR #8's SpriteGroup artifact when arranged.
+3. Separately review/approve Stage B; localization/bootstrap, wider dependency
+   reachability and threaded spell evaluation remain unproven. Do not start it yet.
 4. Keep PR #8 draft and unmerged. No whole-game port, custom rules, accounts,
    saves or unrelated services are part of this assignment.
 
 ## Handoff
-- **Branch:** `codex/gate2-factory-design`; design only, separate from PR #8.
-- **Files changed:** this status and `docs/experiments/gate-2-factory-design.md`.
-- **Verification:** original sources/POMs and cached compiler source APIs inspected;
-  original core/game/AI diff against baseline empty. No new runtime results claimed.
-- **Next decision:** approve/revise Stage A; separately agree on private phone access.
+- **Branch:** `codex/gate2-factories`; draft Stage A implementation, no merges.
+- **Files:** experiments/rules-teavm, scoped ignore rules, this status and corrected
+  counts/constants in the approved design document.
+- **Verification:** original source preservation, offline compile, JVM comparator,
+  three TeaVM variants, actual Chromium results and deliberate fallback control.
+- **Next decision:** review results and agree on private phone access; Stage B waits.

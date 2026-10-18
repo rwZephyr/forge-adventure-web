@@ -1,0 +1,112 @@
+[
+  {
+    "variant": "explicit",
+    "source": "forge/game/trigger/TriggerType.java",
+    "newlineNormalizedMatch": true
+  },
+  {
+    "variant": "explicit",
+    "source": "forge/game/trigger/TriggerAlways.java",
+    "newlineNormalizedMatch": true
+  },
+  {
+    "variant": "explicit",
+    "source": "forge/game/trigger/TriggerLifeGained.java",
+    "newlineNormalizedMatch": true
+  },
+  {
+    "variant": "explicit",
+    "source": "forge/game/replacement/ReplacementType.java",
+    "newlineNormalizedMatch": true
+  },
+  {
+    "variant": "explicit",
+    "source": "forge/game/replacement/ReplaceDraw.java",
+    "newlineNormalizedMatch": true
+  },
+  {
+    "variant": "explicit",
+    "source": "forge/game/replacement/ReplaceGainLife.java",
+    "newlineNormalizedMatch": true
+  },
+  {
+    "variant": "explicit",
+    "source": "forge/game/keyword/Keyword.java",
+    "newlineNormalizedMatch": true
+  },
+  {
+    "variant": "explicit",
+    "source": "forge/game/keyword/SimpleKeyword.java",
+    "newlineNormalizedMatch": true
+  },
+  {
+    "variant": "explicit",
+    "source": "forge/game/keyword/KeywordWithCost.java",
+    "newlineNormalizedMatch": true
+  },
+  {
+    "variant": "explicit",
+    "source": "forge/game/keyword/KeywordWithType.java",
+    "newlineNormalizedMatch": true
+  },
+  {
+    "variant": "explicit",
+    "source": "forge/game/keyword/Kicker.java",
+    "newlineNormalizedMatch": true
+  },
+  {
+    "variant": "missing-amount",
+    "source": "forge/game/trigger/TriggerType.java",
+    "newlineNormalizedMatch": true
+  },
+  {
+    "variant": "missing-amount",
+    "source": "forge/game/trigger/TriggerAlways.java",
+    "newlineNormalizedMatch": true
+  },
+  {
+    "variant": "missing-amount",
+    "source": "forge/game/trigger/TriggerLifeGained.java",
+    "newlineNormalizedMatch": true
+  },
+  {
+    "variant": "missing-amount",
+    "source": "forge/game/replacement/ReplacementType.java",
+    "newlineNormalizedMatch": true
+  },
+  {
+    "variant": "missing-amount",
+    "source": "forge/game/replacement/ReplaceDraw.java",
+    "newlineNormalizedMatch": true
+  },
+  {
+    "variant": "missing-amount",
+    "source": "forge/game/replacement/ReplaceGainLife.java",
+    "newlineNormalizedMatch": true
+  },
+  {
+    "variant": "missing-amount",
+    "source": "forge/game/keyword/Keyword.java",
+    "newlineNormalizedMatch": true
+  },
+  {
+    "variant": "missing-amount",
+    "source": "forge/game/keyword/SimpleKeyword.java",
+    "newlineNormalizedMatch": true
+  },
+  {
+    "variant": "missing-amount",
+    "source": "forge/game/keyword/KeywordWithCost.java",
+    "newlineNormalizedMatch": true
+  },
+  {
+    "variant": "missing-amount",
+    "source": "forge/game/keyword/KeywordWithType.java",
+    "newlineNormalizedMatch": true
+  },
+  {
+    "variant": "missing-amount",
+    "source": "forge/game/keyword/Kicker.java",
+    "newlineNormalizedMatch": true
+  }
+]
