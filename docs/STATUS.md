@@ -135,6 +135,38 @@ compilation fails with 93 severe problems. Browser AI execution is blocked.**
   change. Independent reviews were read as assessments, not new executions.
 
 ## Next bounded step and handoff
+- Baseline evidence prepared for a separate documentation-only draft PR on
+  `codex/maven-baseline-results`, based directly on PR #17's unchanged head.
+  Owner accepts the pass as author-reported pending evidence review. Complete
+  logs retain all lines with documented workspace/JDK path substitutions;
+  credential/private-data review found no secrets. Public evidence hashes are
+  recorded; downloaded artifacts, build outputs and temporary profiles excluded.
+  Publication uses existing evidence only: no reruns, downloads, environment
+  changes or Bolt implementation. Return to standby after publication; PR #17
+  stays unchanged, draft and unmerged.
+- **Approved Maven acquisition and unchanged embedded baseline now pass.**
+  [Actual results/evidence](research/results/maven-baseline-results.md), on the
+  separate `codex/maven-baseline-inventory` branch. Original GMaven ran on JDK
+  17; normal desktop online test-compile succeeds. The original offline
+  ProtocolGuiGameInProcessTest executes: 1 test, 0 failures/errors/skips.
+  One human land, actual priority/turn progression and concession; no Bolt work.
+- Acquired 37 JARs/54 POMs (237 new cache files), all new resolver origins
+  central; one existing jsr305 resolver index updated, no artifact replacement.
+  Offline cache unchanged. All 58,903 tracked hashes and inspected files outside
+  generated outputs unchanged; reviewed plan/settings/source/POMs preserved.
+  Full logs, actual artifact/license inventory and integrity/test results saved.
+  No installations, servers, port/service changes or unrelated work modified.
+- Stopped after baseline success for review. PR #17 remains draft/unmerged;
+  extension implementation, additional tests and transport remain unapproved.
+- Separate read-only [Maven blocker investigation](research/results/maven-baseline-blocker.md)
+  on `codex/maven-baseline-inventory`; PR #17's implementation plan is unchanged.
+  GMaven is bound to initialize and its execute goal requests test dependency
+  resolution. Seventeen expected plugin JAR coordinates are absent from the
+  local Maven cache; nine direct desktop/test POM/JAR pairs are also absent.
+  Candidate transitive closure and cached build/provider markers are recorded.
+  That proposal's cache-miss inventory is historical; approved acquisition and
+  actual closure/results are now recorded above. No plugin/POM bypass or
+  extension implementation occurred.
 - The [embedded test extension plan](architecture/embedded-protocol-test-scope.md)
   now narrows the immediate proposal to the existing
   `ProtocolGuiGameInProcessTest`. No second gameplay harness or implementation.

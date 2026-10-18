@@ -1,0 +1,1218 @@
+{
+  "protected": {
+    "added": [],
+    "removed": [],
+    "changed": []
+  },
+  "outsideGeneratedOutputs": {
+    "added": [],
+    "removed": [],
+    "changed": []
+  },
+  "cache": {
+    "added": [
+      "com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.jar",
+      "com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.jar.sha1",
+      "com/google/guava/guava-parent/14.0.1/_remote.repositories",
+      "com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.pom",
+      "com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.pom.sha1",
+      "com/google/guava/guava/14.0.1/_remote.repositories",
+      "com/google/guava/guava/14.0.1/guava-14.0.1.jar",
+      "com/google/guava/guava/14.0.1/guava-14.0.1.jar.sha1",
+      "com/google/guava/guava/14.0.1/guava-14.0.1.pom",
+      "com/google/guava/guava/14.0.1/guava-14.0.1.pom.sha1",
+      "com/googlecode/soundlibs/jlayer/1.0.1.4/_remote.repositories",
+      "com/googlecode/soundlibs/jlayer/1.0.1.4/jlayer-1.0.1.4.jar",
+      "com/googlecode/soundlibs/jlayer/1.0.1.4/jlayer-1.0.1.4.jar.sha1",
+      "com/googlecode/soundlibs/jlayer/1.0.1.4/jlayer-1.0.1.4.pom",
+      "com/googlecode/soundlibs/jlayer/1.0.1.4/jlayer-1.0.1.4.pom.sha1",
+      "com/googlecode/soundlibs/mp3spi/1.9.5.4/_remote.repositories",
+      "com/googlecode/soundlibs/mp3spi/1.9.5.4/mp3spi-1.9.5.4.jar",
+      "com/googlecode/soundlibs/mp3spi/1.9.5.4/mp3spi-1.9.5.4.jar.sha1",
+      "com/googlecode/soundlibs/mp3spi/1.9.5.4/mp3spi-1.9.5.4.pom",
+      "com/googlecode/soundlibs/mp3spi/1.9.5.4/mp3spi-1.9.5.4.pom.sha1",
+      "com/googlecode/soundlibs/soundlibs/1.4/_remote.repositories",
+      "com/googlecode/soundlibs/soundlibs/1.4/soundlibs-1.4.pom",
+      "com/googlecode/soundlibs/soundlibs/1.4/soundlibs-1.4.pom.sha1",
+      "com/googlecode/soundlibs/tritonus-share/0.3.7.4/_remote.repositories",
+      "com/googlecode/soundlibs/tritonus-share/0.3.7.4/tritonus-share-0.3.7.4.jar",
+      "com/googlecode/soundlibs/tritonus-share/0.3.7.4/tritonus-share-0.3.7.4.jar.sha1",
+      "com/googlecode/soundlibs/tritonus-share/0.3.7.4/tritonus-share-0.3.7.4.pom",
+      "com/googlecode/soundlibs/tritonus-share/0.3.7.4/tritonus-share-0.3.7.4.pom.sha1",
+      "com/jhlabs/filters/2.0.235/_remote.repositories",
+      "com/jhlabs/filters/2.0.235/filters-2.0.235.jar",
+      "com/jhlabs/filters/2.0.235/filters-2.0.235.jar.sha1",
+      "com/jhlabs/filters/2.0.235/filters-2.0.235.pom",
+      "com/jhlabs/filters/2.0.235/filters-2.0.235.pom.sha1",
+      "com/miglayout/miglayout-core/4.2/_remote.repositories",
+      "com/miglayout/miglayout-core/4.2/miglayout-core-4.2.jar",
+      "com/miglayout/miglayout-core/4.2/miglayout-core-4.2.jar.sha1",
+      "com/miglayout/miglayout-core/4.2/miglayout-core-4.2.pom",
+      "com/miglayout/miglayout-core/4.2/miglayout-core-4.2.pom.sha1",
+      "com/miglayout/miglayout-parent/4.2/_remote.repositories",
+      "com/miglayout/miglayout-parent/4.2/miglayout-parent-4.2.pom",
+      "com/miglayout/miglayout-parent/4.2/miglayout-parent-4.2.pom.sha1",
+      "com/miglayout/miglayout-swing/4.2/_remote.repositories",
+      "com/miglayout/miglayout-swing/4.2/miglayout-swing-4.2.jar",
+      "com/miglayout/miglayout-swing/4.2/miglayout-swing-4.2.jar.sha1",
+      "com/miglayout/miglayout-swing/4.2/miglayout-swing-4.2.pom",
+      "com/miglayout/miglayout-swing/4.2/miglayout-swing-4.2.pom.sha1",
+      "com/mortennobel/java-image-scaling/0.8.6/_remote.repositories",
+      "com/mortennobel/java-image-scaling/0.8.6/java-image-scaling-0.8.6.jar",
+      "com/mortennobel/java-image-scaling/0.8.6/java-image-scaling-0.8.6.jar.sha1",
+      "com/mortennobel/java-image-scaling/0.8.6/java-image-scaling-0.8.6.pom",
+      "com/mortennobel/java-image-scaling/0.8.6/java-image-scaling-0.8.6.pom.sha1",
+      "com/planet57/buildsupport/buildsupport/2/_remote.repositories",
+      "com/planet57/buildsupport/buildsupport/2/buildsupport-2.pom",
+      "com/planet57/buildsupport/buildsupport/2/buildsupport-2.pom.sha1",
+      "com/planet57/buildsupport/public-parent/2/_remote.repositories",
+      "com/planet57/buildsupport/public-parent/2/public-parent-2.pom",
+      "com/planet57/buildsupport/public-parent/2/public-parent-2.pom.sha1",
+      "com/sipgate/mp3-wav/1.0.4/_remote.repositories",
+      "com/sipgate/mp3-wav/1.0.4/mp3-wav-1.0.4.jar",
+      "com/sipgate/mp3-wav/1.0.4/mp3-wav-1.0.4.jar.sha1",
+      "com/sipgate/mp3-wav/1.0.4/mp3-wav-1.0.4.pom",
+      "com/sipgate/mp3-wav/1.0.4/mp3-wav-1.0.4.pom.sha1",
+      "com/twelvemonkeys/common/common-image/3.12.0/_remote.repositories",
+      "com/twelvemonkeys/common/common-image/3.12.0/common-image-3.12.0.jar",
+      "com/twelvemonkeys/common/common-image/3.12.0/common-image-3.12.0.jar.sha1",
+      "com/twelvemonkeys/common/common-image/3.12.0/common-image-3.12.0.pom",
+      "com/twelvemonkeys/common/common-image/3.12.0/common-image-3.12.0.pom.sha1",
+      "com/twelvemonkeys/common/common-io/3.12.0/_remote.repositories",
+      "com/twelvemonkeys/common/common-io/3.12.0/common-io-3.12.0.jar",
+      "com/twelvemonkeys/common/common-io/3.12.0/common-io-3.12.0.jar.sha1",
+      "com/twelvemonkeys/common/common-io/3.12.0/common-io-3.12.0.pom",
+      "com/twelvemonkeys/common/common-io/3.12.0/common-io-3.12.0.pom.sha1",
+      "com/twelvemonkeys/common/common-lang/3.12.0/_remote.repositories",
+      "com/twelvemonkeys/common/common-lang/3.12.0/common-lang-3.12.0.jar",
+      "com/twelvemonkeys/common/common-lang/3.12.0/common-lang-3.12.0.jar.sha1",
+      "com/twelvemonkeys/common/common-lang/3.12.0/common-lang-3.12.0.pom",
+      "com/twelvemonkeys/common/common-lang/3.12.0/common-lang-3.12.0.pom.sha1",
+      "com/twelvemonkeys/common/common/3.12.0/_remote.repositories",
+      "com/twelvemonkeys/common/common/3.12.0/common-3.12.0.pom",
+      "com/twelvemonkeys/common/common/3.12.0/common-3.12.0.pom.sha1",
+      "com/twelvemonkeys/imageio/imageio-core/3.12.0/_remote.repositories",
+      "com/twelvemonkeys/imageio/imageio-core/3.12.0/imageio-core-3.12.0.jar",
+      "com/twelvemonkeys/imageio/imageio-core/3.12.0/imageio-core-3.12.0.jar.sha1",
+      "com/twelvemonkeys/imageio/imageio-core/3.12.0/imageio-core-3.12.0.pom",
+      "com/twelvemonkeys/imageio/imageio-core/3.12.0/imageio-core-3.12.0.pom.sha1",
+      "com/twelvemonkeys/imageio/imageio-jpeg/3.12.0/_remote.repositories",
+      "com/twelvemonkeys/imageio/imageio-jpeg/3.12.0/imageio-jpeg-3.12.0.jar",
+      "com/twelvemonkeys/imageio/imageio-jpeg/3.12.0/imageio-jpeg-3.12.0.jar.sha1",
+      "com/twelvemonkeys/imageio/imageio-jpeg/3.12.0/imageio-jpeg-3.12.0.pom",
+      "com/twelvemonkeys/imageio/imageio-jpeg/3.12.0/imageio-jpeg-3.12.0.pom.sha1",
+      "com/twelvemonkeys/imageio/imageio-metadata/3.12.0/_remote.repositories",
+      "com/twelvemonkeys/imageio/imageio-metadata/3.12.0/imageio-metadata-3.12.0.jar",
+      "com/twelvemonkeys/imageio/imageio-metadata/3.12.0/imageio-metadata-3.12.0.jar.sha1",
+      "com/twelvemonkeys/imageio/imageio-metadata/3.12.0/imageio-metadata-3.12.0.pom",
+      "com/twelvemonkeys/imageio/imageio-metadata/3.12.0/imageio-metadata-3.12.0.pom.sha1",
+      "com/twelvemonkeys/imageio/imageio/3.12.0/_remote.repositories",
+      "com/twelvemonkeys/imageio/imageio/3.12.0/imageio-3.12.0.pom",
+      "com/twelvemonkeys/imageio/imageio/3.12.0/imageio-3.12.0.pom.sha1",
+      "com/twelvemonkeys/twelvemonkeys/3.12.0/_remote.repositories",
+      "com/twelvemonkeys/twelvemonkeys/3.12.0/twelvemonkeys-3.12.0.pom",
+      "com/twelvemonkeys/twelvemonkeys/3.12.0/twelvemonkeys-3.12.0.pom.sha1",
+      "forge/forge-gui-desktop/resolver-status.properties",
+      "javazoom/jlayer/1.0.1/_remote.repositories",
+      "javazoom/jlayer/1.0.1/jlayer-1.0.1.jar",
+      "javazoom/jlayer/1.0.1/jlayer-1.0.1.jar.sha1",
+      "javazoom/jlayer/1.0.1/jlayer-1.0.1.pom",
+      "javazoom/jlayer/1.0.1/jlayer-1.0.1.pom.sha1",
+      "jline/jline/2.12/_remote.repositories",
+      "jline/jline/2.12/jline-2.12.jar",
+      "jline/jline/2.12/jline-2.12.jar.sha1",
+      "jline/jline/2.12/jline-2.12.pom",
+      "jline/jline/2.12/jline-2.12.pom.sha1",
+      "junit/junit/3.8.2/_remote.repositories",
+      "junit/junit/3.8.2/junit-3.8.2.jar",
+      "junit/junit/3.8.2/junit-3.8.2.jar.sha1",
+      "junit/junit/3.8.2/junit-3.8.2.pom",
+      "junit/junit/3.8.2/junit-3.8.2.pom.sha1",
+      "net/bytebuddy/byte-buddy-agent/1.18.14/_remote.repositories",
+      "net/bytebuddy/byte-buddy-agent/1.18.14/byte-buddy-agent-1.18.14.jar",
+      "net/bytebuddy/byte-buddy-agent/1.18.14/byte-buddy-agent-1.18.14.jar.sha1",
+      "net/bytebuddy/byte-buddy-agent/1.18.14/byte-buddy-agent-1.18.14.pom",
+      "net/bytebuddy/byte-buddy-agent/1.18.14/byte-buddy-agent-1.18.14.pom.sha1",
+      "net/bytebuddy/byte-buddy-parent/1.18.14/_remote.repositories",
+      "net/bytebuddy/byte-buddy-parent/1.18.14/byte-buddy-parent-1.18.14.pom",
+      "net/bytebuddy/byte-buddy-parent/1.18.14/byte-buddy-parent-1.18.14.pom.sha1",
+      "net/bytebuddy/byte-buddy/1.18.14/_remote.repositories",
+      "net/bytebuddy/byte-buddy/1.18.14/byte-buddy-1.18.14.jar",
+      "net/bytebuddy/byte-buddy/1.18.14/byte-buddy-1.18.14.jar.sha1",
+      "net/bytebuddy/byte-buddy/1.18.14/byte-buddy-1.18.14.pom",
+      "net/bytebuddy/byte-buddy/1.18.14/byte-buddy-1.18.14.pom.sha1",
+      "org/apache/ant/ant-launcher/1.9.4/_remote.repositories",
+      "org/apache/ant/ant-launcher/1.9.4/ant-launcher-1.9.4.jar",
+      "org/apache/ant/ant-launcher/1.9.4/ant-launcher-1.9.4.jar.sha1",
+      "org/apache/ant/ant-launcher/1.9.4/ant-launcher-1.9.4.pom",
+      "org/apache/ant/ant-launcher/1.9.4/ant-launcher-1.9.4.pom.sha1",
+      "org/apache/ant/ant-parent/1.9.4/_remote.repositories",
+      "org/apache/ant/ant-parent/1.9.4/ant-parent-1.9.4.pom",
+      "org/apache/ant/ant-parent/1.9.4/ant-parent-1.9.4.pom.sha1",
+      "org/apache/ant/ant/1.9.4/_remote.repositories",
+      "org/apache/ant/ant/1.9.4/ant-1.9.4.jar",
+      "org/apache/ant/ant/1.9.4/ant-1.9.4.jar.sha1",
+      "org/apache/ant/ant/1.9.4/ant-1.9.4.pom",
+      "org/apache/ant/ant/1.9.4/ant-1.9.4.pom.sha1",
+      "org/codehaus/gmaven/gmaven-adapter-api/2.1.1/_remote.repositories",
+      "org/codehaus/gmaven/gmaven-adapter-api/2.1.1/gmaven-adapter-api-2.1.1.jar",
+      "org/codehaus/gmaven/gmaven-adapter-api/2.1.1/gmaven-adapter-api-2.1.1.jar.sha1",
+      "org/codehaus/gmaven/gmaven-adapter-api/2.1.1/gmaven-adapter-api-2.1.1.pom",
+      "org/codehaus/gmaven/gmaven-adapter-api/2.1.1/gmaven-adapter-api-2.1.1.pom.sha1",
+      "org/codehaus/gmaven/gmaven-adapter-impl/2.1.1/_remote.repositories",
+      "org/codehaus/gmaven/gmaven-adapter-impl/2.1.1/gmaven-adapter-impl-2.1.1.jar",
+      "org/codehaus/gmaven/gmaven-adapter-impl/2.1.1/gmaven-adapter-impl-2.1.1.jar.sha1",
+      "org/codehaus/gmaven/gmaven-adapter-impl/2.1.1/gmaven-adapter-impl-2.1.1.pom",
+      "org/codehaus/gmaven/gmaven-adapter-impl/2.1.1/gmaven-adapter-impl-2.1.1.pom.sha1",
+      "org/codehaus/gmaven/gmaven/2.1.1/_remote.repositories",
+      "org/codehaus/gmaven/gmaven/2.1.1/gmaven-2.1.1.pom",
+      "org/codehaus/gmaven/gmaven/2.1.1/gmaven-2.1.1.pom.sha1",
+      "org/codehaus/gmaven/groovy-maven-plugin/2.1.1/_remote.repositories",
+      "org/codehaus/gmaven/groovy-maven-plugin/2.1.1/groovy-maven-plugin-2.1.1.jar",
+      "org/codehaus/gmaven/groovy-maven-plugin/2.1.1/groovy-maven-plugin-2.1.1.jar.sha1",
+      "org/codehaus/gmaven/groovy-maven-plugin/2.1.1/groovy-maven-plugin-2.1.1.pom",
+      "org/codehaus/gmaven/groovy-maven-plugin/2.1.1/groovy-maven-plugin-2.1.1.pom.sha1",
+      "org/codehaus/groovy/groovy-all/2.4.9/_remote.repositories",
+      "org/codehaus/groovy/groovy-all/2.4.9/groovy-all-2.4.9.jar",
+      "org/codehaus/groovy/groovy-all/2.4.9/groovy-all-2.4.9.jar.sha1",
+      "org/codehaus/groovy/groovy-all/2.4.9/groovy-all-2.4.9.pom",
+      "org/codehaus/groovy/groovy-all/2.4.9/groovy-all-2.4.9.pom.sha1",
+      "org/codehaus/plexus/plexus-classworlds/2.4.2/_remote.repositories",
+      "org/codehaus/plexus/plexus-classworlds/2.4.2/plexus-classworlds-2.4.2.jar",
+      "org/codehaus/plexus/plexus-classworlds/2.4.2/plexus-classworlds-2.4.2.jar.sha1",
+      "org/codehaus/plexus/plexus-classworlds/2.4.2/plexus-classworlds-2.4.2.pom",
+      "org/codehaus/plexus/plexus-classworlds/2.4.2/plexus-classworlds-2.4.2.pom.sha1",
+      "org/codehaus/plexus/plexus-components/1.3/_remote.repositories",
+      "org/codehaus/plexus/plexus-components/1.3/plexus-components-1.3.pom",
+      "org/codehaus/plexus/plexus-components/1.3/plexus-components-1.3.pom.sha1",
+      "org/codehaus/plexus/plexus-interpolation/1.16/_remote.repositories",
+      "org/codehaus/plexus/plexus-interpolation/1.16/plexus-interpolation-1.16.jar",
+      "org/codehaus/plexus/plexus-interpolation/1.16/plexus-interpolation-1.16.jar.sha1",
+      "org/codehaus/plexus/plexus-interpolation/1.16/plexus-interpolation-1.16.pom",
+      "org/codehaus/plexus/plexus-interpolation/1.16/plexus-interpolation-1.16.pom.sha1",
+      "org/codehaus/plexus/plexus/3.0.1/_remote.repositories",
+      "org/codehaus/plexus/plexus/3.0.1/plexus-3.0.1.pom",
+      "org/codehaus/plexus/plexus/3.0.1/plexus-3.0.1.pom.sha1",
+      "org/eclipse/aether/aether-api/0.9.0.M2/_remote.repositories",
+      "org/eclipse/aether/aether-api/0.9.0.M2/aether-api-0.9.0.M2.jar",
+      "org/eclipse/aether/aether-api/0.9.0.M2/aether-api-0.9.0.M2.jar.sha1",
+      "org/eclipse/aether/aether-api/0.9.0.M2/aether-api-0.9.0.M2.pom",
+      "org/eclipse/aether/aether-api/0.9.0.M2/aether-api-0.9.0.M2.pom.sha1",
+      "org/eclipse/aether/aether-util/0.9.0.M2/_remote.repositories",
+      "org/eclipse/aether/aether-util/0.9.0.M2/aether-util-0.9.0.M2.jar",
+      "org/eclipse/aether/aether-util/0.9.0.M2/aether-util-0.9.0.M2.jar.sha1",
+      "org/eclipse/aether/aether-util/0.9.0.M2/aether-util-0.9.0.M2.pom",
+      "org/eclipse/aether/aether-util/0.9.0.M2/aether-util-0.9.0.M2.pom.sha1",
+      "org/eclipse/aether/aether/0.9.0.M2/_remote.repositories",
+      "org/eclipse/aether/aether/0.9.0.M2/aether-0.9.0.M2.pom",
+      "org/eclipse/aether/aether/0.9.0.M2/aether-0.9.0.M2.pom.sha1",
+      "org/freemarker/freemarker/2.3.33/_remote.repositories",
+      "org/freemarker/freemarker/2.3.33/freemarker-2.3.33.jar",
+      "org/freemarker/freemarker/2.3.33/freemarker-2.3.33.jar.sha1",
+      "org/freemarker/freemarker/2.3.33/freemarker-2.3.33.pom",
+      "org/freemarker/freemarker/2.3.33/freemarker-2.3.33.pom.sha1",
+      "org/objenesis/objenesis-parent/3.4/_remote.repositories",
+      "org/objenesis/objenesis-parent/3.4/objenesis-parent-3.4.pom",
+      "org/objenesis/objenesis-parent/3.4/objenesis-parent-3.4.pom.sha1",
+      "org/objenesis/objenesis/3.4/_remote.repositories",
+      "org/objenesis/objenesis/3.4/objenesis-3.4.jar",
+      "org/objenesis/objenesis/3.4/objenesis-3.4.jar.sha1",
+      "org/objenesis/objenesis/3.4/objenesis-3.4.pom",
+      "org/objenesis/objenesis/3.4/objenesis-3.4.pom.sha1",
+      "org/slf4j/slf4j-api/1.7.5/_remote.repositories",
+      "org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar",
+      "org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar.sha1",
+      "org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.pom",
+      "org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.pom.sha1",
+      "org/slf4j/slf4j-parent/1.7.5/_remote.repositories",
+      "org/slf4j/slf4j-parent/1.7.5/slf4j-parent-1.7.5.pom",
+      "org/slf4j/slf4j-parent/1.7.5/slf4j-parent-1.7.5.pom.sha1",
+      "org/sonatype/forge/forge-parent/9/_remote.repositories",
+      "org/sonatype/forge/forge-parent/9/forge-parent-9.pom",
+      "org/sonatype/forge/forge-parent/9/forge-parent-9.pom.sha1",
+      "org/sonatype/gossip/gossip-bootstrap/1.8/_remote.repositories",
+      "org/sonatype/gossip/gossip-bootstrap/1.8/gossip-bootstrap-1.8.jar",
+      "org/sonatype/gossip/gossip-bootstrap/1.8/gossip-bootstrap-1.8.jar.sha1",
+      "org/sonatype/gossip/gossip-bootstrap/1.8/gossip-bootstrap-1.8.pom",
+      "org/sonatype/gossip/gossip-bootstrap/1.8/gossip-bootstrap-1.8.pom.sha1",
+      "org/sonatype/gossip/gossip-core/1.8/_remote.repositories",
+      "org/sonatype/gossip/gossip-core/1.8/gossip-core-1.8.jar",
+      "org/sonatype/gossip/gossip-core/1.8/gossip-core-1.8.jar.sha1",
+      "org/sonatype/gossip/gossip-core/1.8/gossip-core-1.8.pom",
+      "org/sonatype/gossip/gossip-core/1.8/gossip-core-1.8.pom.sha1",
+      "org/sonatype/gossip/gossip-slf4j/1.8/_remote.repositories",
+      "org/sonatype/gossip/gossip-slf4j/1.8/gossip-slf4j-1.8.jar",
+      "org/sonatype/gossip/gossip-slf4j/1.8/gossip-slf4j-1.8.jar.sha1",
+      "org/sonatype/gossip/gossip-slf4j/1.8/gossip-slf4j-1.8.pom",
+      "org/sonatype/gossip/gossip-slf4j/1.8/gossip-slf4j-1.8.pom.sha1",
+      "org/sonatype/gossip/gossip/1.8/_remote.repositories",
+      "org/sonatype/gossip/gossip/1.8/gossip-1.8.pom",
+      "org/sonatype/gossip/gossip/1.8/gossip-1.8.pom.sha1"
+    ],
+    "removed": [],
+    "changed": [
+      "com/google/code/findbugs/jsr305/2.0.1/_remote.repositories"
+    ]
+  },
+  "toolConfigs": {
+    "added": [],
+    "removed": [],
+    "changed": []
+  },
+  "newCacheFiles": {
+    "com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.jar": {
+      "bytes": 31866,
+      "sha256": "1e7f53fa5b8b5c807e986ba335665da03f18d660802d8bf061823089d1bee468"
+    },
+    "com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.jar.sha1": {
+      "bytes": 40,
+      "sha256": "6a93a9f41d02b2a521b985ba21a2f045fc35855636178f6ba39365df4755c06c"
+    },
+    "com/google/guava/guava-parent/14.0.1/_remote.repositories": {
+      "bytes": 176,
+      "sha256": "ceaf3d59e9aec430eb8341e1ff480ef0163d2a4a9c09c29c74cc1c825cca9a39"
+    },
+    "com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.pom": {
+      "bytes": 2555,
+      "sha256": "e5a525ed3b5d7fff2a8da9641e0cb985c7fdb847e3081e2a373daf2e70039b63"
+    },
+    "com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.pom.sha1": {
+      "bytes": 40,
+      "sha256": "70c7b29bfe9c3d68cd53794ea9433fc2e85b21555473ef4a696e66540da01641"
+    },
+    "com/google/guava/guava/14.0.1/_remote.repositories": {
+      "bytes": 196,
+      "sha256": "9e4ef1d3a83effce2d3c9516e8377b96030105bb5f29dfd4e899635600b166b5"
+    },
+    "com/google/guava/guava/14.0.1/guava-14.0.1.jar": {
+      "bytes": 2189117,
+      "sha256": "d69df3331840605ef0e5fe4add60f2d28e870e3820937ea29f713d2035d9ab97"
+    },
+    "com/google/guava/guava/14.0.1/guava-14.0.1.jar.sha1": {
+      "bytes": 40,
+      "sha256": "198bec26982edbb6b23e07af7f502a39987ef13c11fa670767658149ffdf01a2"
+    },
+    "com/google/guava/guava/14.0.1/guava-14.0.1.pom": {
+      "bytes": 5376,
+      "sha256": "3dd4a992d53eb524a1c6546a24b853b332b26520755e26b25d38100131424b7b"
+    },
+    "com/google/guava/guava/14.0.1/guava-14.0.1.pom.sha1": {
+      "bytes": 40,
+      "sha256": "652cd2e2ff26120be459aaf1da43a8ebcf142d0fe1162a98283cf3bccfab59de"
+    },
+    "com/googlecode/soundlibs/jlayer/1.0.1.4/_remote.repositories": {
+      "bytes": 200,
+      "sha256": "896fa0ecfd323029e86840ccd17659e986e2b7bd82737a34754d5ca2e491b8fc"
+    },
+    "com/googlecode/soundlibs/jlayer/1.0.1.4/jlayer-1.0.1.4.jar": {
+      "bytes": 140987,
+      "sha256": "863a51470ab4d581c6269dcd5a0471a226932ec5b2ef3f79fe86ab559387ac5c"
+    },
+    "com/googlecode/soundlibs/jlayer/1.0.1.4/jlayer-1.0.1.4.jar.sha1": {
+      "bytes": 40,
+      "sha256": "c1e3b276a5d2060e9bcac2df92aa7d5a8763b49cc491627a8528793263a58945"
+    },
+    "com/googlecode/soundlibs/jlayer/1.0.1.4/jlayer-1.0.1.4.pom": {
+      "bytes": 1756,
+      "sha256": "96f6c6e455123ccd15b4f85d6f0c6e036e667fd90d4d1ea4fb62ac16b1805244"
+    },
+    "com/googlecode/soundlibs/jlayer/1.0.1.4/jlayer-1.0.1.4.pom.sha1": {
+      "bytes": 40,
+      "sha256": "4c1ae6b29ff890a5afc8558b4c6a021181668f04c6bf45e481dee5f958af32e8"
+    },
+    "com/googlecode/soundlibs/mp3spi/1.9.5.4/_remote.repositories": {
+      "bytes": 200,
+      "sha256": "872e35fb3338819f6ac714701186d2543df321475b0629b76b54ff1227f3e634"
+    },
+    "com/googlecode/soundlibs/mp3spi/1.9.5.4/mp3spi-1.9.5.4.jar": {
+      "bytes": 34298,
+      "sha256": "f2bd4d0b63532b52eaf9c086528ed8379e5a8805af759c4dbdea5b7a40e4e87e"
+    },
+    "com/googlecode/soundlibs/mp3spi/1.9.5.4/mp3spi-1.9.5.4.jar.sha1": {
+      "bytes": 40,
+      "sha256": "ccc8e029e3610cb9f737d49656652138fee8d042e809d88e5992c63c9117435d"
+    },
+    "com/googlecode/soundlibs/mp3spi/1.9.5.4/mp3spi-1.9.5.4.pom": {
+      "bytes": 2422,
+      "sha256": "5bf1abbc17a660c27c091e9d0282ea25e6bf357ab432a052345024e3c9c23936"
+    },
+    "com/googlecode/soundlibs/mp3spi/1.9.5.4/mp3spi-1.9.5.4.pom.sha1": {
+      "bytes": 40,
+      "sha256": "95406a466d887fdf058059f6e3882623c9008550e142c5b992d34b815c0f3a91"
+    },
+    "com/googlecode/soundlibs/soundlibs/1.4/_remote.repositories": {
+      "bytes": 170,
+      "sha256": "5d9c938bb4c70d6d8711381a73bb469483236fffcef53b1615096431f1c0e4a3"
+    },
+    "com/googlecode/soundlibs/soundlibs/1.4/soundlibs-1.4.pom": {
+      "bytes": 4664,
+      "sha256": "c7226b52a222da4e16e90fe93e8a6b98ef13df04c103df1434c7b2a357e0bb99"
+    },
+    "com/googlecode/soundlibs/soundlibs/1.4/soundlibs-1.4.pom.sha1": {
+      "bytes": 40,
+      "sha256": "5e4ddeb0ba7bd0f7f58240f61712f292dc780ca4aeb2d43945c6440650be29c1"
+    },
+    "com/googlecode/soundlibs/tritonus-share/0.3.7.4/_remote.repositories": {
+      "bytes": 216,
+      "sha256": "86e328384fc0a2c60ffa47521fe35ff0de46fee5266ce471b1b3080ac08ef196"
+    },
+    "com/googlecode/soundlibs/tritonus-share/0.3.7.4/tritonus-share-0.3.7.4.jar": {
+      "bytes": 132760,
+      "sha256": "6f626b41dc72074656059de1a25bc6f1c5abb202b57d37c538f5714f54efdab4"
+    },
+    "com/googlecode/soundlibs/tritonus-share/0.3.7.4/tritonus-share-0.3.7.4.jar.sha1": {
+      "bytes": 40,
+      "sha256": "3c4672f52626ddc79154ca4ab22f016705f208d5ba1775c5ea6bf36469549150"
+    },
+    "com/googlecode/soundlibs/tritonus-share/0.3.7.4/tritonus-share-0.3.7.4.pom": {
+      "bytes": 1871,
+      "sha256": "9c3ab23a7f8dd3fc378dede09f5c3e91c5d17a727689591752a99eb09892c3a8"
+    },
+    "com/googlecode/soundlibs/tritonus-share/0.3.7.4/tritonus-share-0.3.7.4.pom.sha1": {
+      "bytes": 40,
+      "sha256": "9af98d27d3c6f1cebbbc3e88af13c20d5df05e3b3504bdbde803ae258a0ce358"
+    },
+    "com/jhlabs/filters/2.0.235/_remote.repositories": {
+      "bytes": 202,
+      "sha256": "4a937491bd3366d3407c92976c0ee820cbe9457c8ad2389e35114a79b467d93b"
+    },
+    "com/jhlabs/filters/2.0.235/filters-2.0.235.jar": {
+      "bytes": 340318,
+      "sha256": "be6a1d54ebb043495e31e25e72b440f69156a5624cdd7e1c55c47e30d4fae308"
+    },
+    "com/jhlabs/filters/2.0.235/filters-2.0.235.jar.sha1": {
+      "bytes": 40,
+      "sha256": "d22c139a7a8f74be96b8b25831e8821e6867ed05c3f9cc4754d355615429fae6"
+    },
+    "com/jhlabs/filters/2.0.235/filters-2.0.235.pom": {
+      "bytes": 1200,
+      "sha256": "b19a3da13f976143b4572f1ccf31cd13296c1f17e3abd1811855b5de5cf82569"
+    },
+    "com/jhlabs/filters/2.0.235/filters-2.0.235.pom.sha1": {
+      "bytes": 40,
+      "sha256": "76529e685544fc3b1b3d9605b1e1e52ffc336f26fb3f11e30676735e4c7c49c6"
+    },
+    "com/miglayout/miglayout-core/4.2/_remote.repositories": {
+      "bytes": 208,
+      "sha256": "3035b23a2a4887e6c1fa02479f9ec86398c2e46f1201e83ced27705eaf4f4d55"
+    },
+    "com/miglayout/miglayout-core/4.2/miglayout-core-4.2.jar": {
+      "bytes": 66663,
+      "sha256": "bf69005361e7c282ac7508ce9e5b6caad46d7ada9946cd9b317ddbd3ebf9b2a2"
+    },
+    "com/miglayout/miglayout-core/4.2/miglayout-core-4.2.jar.sha1": {
+      "bytes": 40,
+      "sha256": "3d46fe230642f6e3db6af79cc5af6ce0fc9786c47d7e2e7bd0a5b1c29e822abc"
+    },
+    "com/miglayout/miglayout-core/4.2/miglayout-core-4.2.pom": {
+      "bytes": 617,
+      "sha256": "d33b3028abd827d2137da41dedf0f20cfbcc9dcb90c9287f070262f36433671a"
+    },
+    "com/miglayout/miglayout-core/4.2/miglayout-core-4.2.pom.sha1": {
+      "bytes": 40,
+      "sha256": "650e23a8d0d6f829019ab1310035a8c684165f1452a19ca11315dd2a2f8204fc"
+    },
+    "com/miglayout/miglayout-parent/4.2/_remote.repositories": {
+      "bytes": 177,
+      "sha256": "ac84695c5b8c33a0eab649d257ebc090da559a36bbf1b5df44a14835740941ef"
+    },
+    "com/miglayout/miglayout-parent/4.2/miglayout-parent-4.2.pom": {
+      "bytes": 5690,
+      "sha256": "4718f26e03d73e41fb17d6e38e6f8ece6bb5a5f4c6d97f25fc37a99c941a2194"
+    },
+    "com/miglayout/miglayout-parent/4.2/miglayout-parent-4.2.pom.sha1": {
+      "bytes": 40,
+      "sha256": "2429c397f07b8027055c1b2d39fc94ba9182ce9959e1defe0451fd1e254bf658"
+    },
+    "com/miglayout/miglayout-swing/4.2/_remote.repositories": {
+      "bytes": 210,
+      "sha256": "d8e0739fda46ee088eac654edb6f0ed5e007ac745ccfb5e9a8a6dc9958e65461"
+    },
+    "com/miglayout/miglayout-swing/4.2/miglayout-swing-4.2.jar": {
+      "bytes": 14580,
+      "sha256": "7731416056d350b54ed5a5209d9a8728b5400080ccbd1f62b5b0d54d0d8435dd"
+    },
+    "com/miglayout/miglayout-swing/4.2/miglayout-swing-4.2.jar.sha1": {
+      "bytes": 40,
+      "sha256": "3ed3ccc80de98a827eb35c747a76886e4e438ec2c0c116720094f32842640614"
+    },
+    "com/miglayout/miglayout-swing/4.2/miglayout-swing-4.2.pom": {
+      "bytes": 835,
+      "sha256": "2c709c9aea114ecd22c5a1fb33872ecc447c20b262e0cd2855649dbf7c76d404"
+    },
+    "com/miglayout/miglayout-swing/4.2/miglayout-swing-4.2.pom.sha1": {
+      "bytes": 40,
+      "sha256": "be66c82c18b0740b5ab5adb104998ec11b7fef2fc248d8b9594b33a634021c5b"
+    },
+    "com/mortennobel/java-image-scaling/0.8.6/_remote.repositories": {
+      "bytes": 220,
+      "sha256": "b55bd9d01bae70b716d823ad0b6e4759f3c28f04a62412fd2b428a082b9fd51f"
+    },
+    "com/mortennobel/java-image-scaling/0.8.6/java-image-scaling-0.8.6.jar": {
+      "bytes": 43656,
+      "sha256": "fabd02916eed5cd1cd5881d94970ea3c74e140b4c21acc6b640ddf3ed1472b95"
+    },
+    "com/mortennobel/java-image-scaling/0.8.6/java-image-scaling-0.8.6.jar.sha1": {
+      "bytes": 40,
+      "sha256": "60a54fa958dd574562ba13abb21e5db1de2c067ef160e4c2e6470f0995fe234c"
+    },
+    "com/mortennobel/java-image-scaling/0.8.6/java-image-scaling-0.8.6.pom": {
+      "bytes": 11907,
+      "sha256": "b567fa2dae5a7ecbcb64d935a990727ca92236779b51ddfae96dbd45cb596f5e"
+    },
+    "com/mortennobel/java-image-scaling/0.8.6/java-image-scaling-0.8.6.pom.sha1": {
+      "bytes": 40,
+      "sha256": "f37746a530b4ef05c39fff233e2fa832086f1baee0a6956de16e476b92b96530"
+    },
+    "com/planet57/buildsupport/buildsupport/2/_remote.repositories": {
+      "bytes": 171,
+      "sha256": "48c06e3cc7e5e7f557c5a407c5eac9f77180e78177d63c97cbaba7fb8aaf7a03"
+    },
+    "com/planet57/buildsupport/buildsupport/2/buildsupport-2.pom": {
+      "bytes": 22505,
+      "sha256": "452963207a1536c8caf086555f5dde99cc4982c8eb6ac0ad1d0345258dc53406"
+    },
+    "com/planet57/buildsupport/buildsupport/2/buildsupport-2.pom.sha1": {
+      "bytes": 40,
+      "sha256": "87fc4761f3a0e4949a106747df3601d05269b7f562a89e15683a85892dd0fd8b"
+    },
+    "com/planet57/buildsupport/public-parent/2/_remote.repositories": {
+      "bytes": 172,
+      "sha256": "ae0dbe5f903dcaa6f8b945be914c5250e733ae44d851d772e0be045e278b8caf"
+    },
+    "com/planet57/buildsupport/public-parent/2/public-parent-2.pom": {
+      "bytes": 1390,
+      "sha256": "ca7177afb589433ff57fbc30992c42a8b565390d60f357da1bd6db692a57692c"
+    },
+    "com/planet57/buildsupport/public-parent/2/public-parent-2.pom.sha1": {
+      "bytes": 40,
+      "sha256": "1f05ff83a7b5204840753b1fce20c12f4f5fcc6ccbc353c24982b31e908b63fd"
+    },
+    "com/sipgate/mp3-wav/1.0.4/_remote.repositories": {
+      "bytes": 198,
+      "sha256": "bb972548a0309cffa3727f5fb2464be615041ab1ecda01876b77fd030b20fb2f"
+    },
+    "com/sipgate/mp3-wav/1.0.4/mp3-wav-1.0.4.jar": {
+      "bytes": 5729,
+      "sha256": "bb4b17520540873741fa08614ff5b92c14b140b325002f5e9318473c47d88eee"
+    },
+    "com/sipgate/mp3-wav/1.0.4/mp3-wav-1.0.4.jar.sha1": {
+      "bytes": 40,
+      "sha256": "8c071dce33da4ff833d6298c380c08681ee0a158d3dfc7f6faee6c91eba4995d"
+    },
+    "com/sipgate/mp3-wav/1.0.4/mp3-wav-1.0.4.pom": {
+      "bytes": 5661,
+      "sha256": "bcc1eb51d145136914b2db7e636c975663b84910f18650a276e4f0a61c742afc"
+    },
+    "com/sipgate/mp3-wav/1.0.4/mp3-wav-1.0.4.pom.sha1": {
+      "bytes": 40,
+      "sha256": "7db4f28b6c99330cdf9559e09b7427e7ad6f99b086ed22fb7330e40911948c39"
+    },
+    "com/twelvemonkeys/common/common-image/3.12.0/_remote.repositories": {
+      "bytes": 210,
+      "sha256": "ba1b3486afd781e4b40bd964272f339396b6b06a870a18c4b05369cf025bbbbf"
+    },
+    "com/twelvemonkeys/common/common-image/3.12.0/common-image-3.12.0.jar": {
+      "bytes": 79655,
+      "sha256": "62a3821c724fadfda346c1e2d83b0c506a0c4074be269a52bf4e3192c7dd92bc"
+    },
+    "com/twelvemonkeys/common/common-image/3.12.0/common-image-3.12.0.jar.sha1": {
+      "bytes": 40,
+      "sha256": "c3c3789572b2ab295c585fa0a920df106df9d6ef689a33741f7cb879017423e4"
+    },
+    "com/twelvemonkeys/common/common-image/3.12.0/common-image-3.12.0.pom": {
+      "bytes": 1310,
+      "sha256": "32fc63d184a5b14033ed9eae28f4c7f7570be8850c67ef34ab50c8a5bdea957f"
+    },
+    "com/twelvemonkeys/common/common-image/3.12.0/common-image-3.12.0.pom.sha1": {
+      "bytes": 40,
+      "sha256": "6dd60bf23280f0a1c76153cb1581e01e88b5db22191f61393b628401381e8acd"
+    },
+    "com/twelvemonkeys/common/common-io/3.12.0/_remote.repositories": {
+      "bytes": 204,
+      "sha256": "4f3931de09774c67ffc58a2cc706c29a53e8356faec5de96c4280006df79e95d"
+    },
+    "com/twelvemonkeys/common/common-io/3.12.0/common-io-3.12.0.jar": {
+      "bytes": 92346,
+      "sha256": "bfacfeb02acac47dbfd1fab0002eaeca65547d04249498b654320c9e0fdf6647"
+    },
+    "com/twelvemonkeys/common/common-io/3.12.0/common-io-3.12.0.jar.sha1": {
+      "bytes": 40,
+      "sha256": "7e41db278fa97491b8c04dba8e818cdff03ce92e47840d7c78b818227174973e"
+    },
+    "com/twelvemonkeys/common/common-io/3.12.0/common-io-3.12.0.pom": {
+      "bytes": 1366,
+      "sha256": "5fb1b7a60aed026bfe16c2bbbb43039547dedd0d4e613e80127b93b4a2c56359"
+    },
+    "com/twelvemonkeys/common/common-io/3.12.0/common-io-3.12.0.pom.sha1": {
+      "bytes": 40,
+      "sha256": "f94761a43c4af96786d2c1d90b8f0ec373beb22ea4a618a2785b3736285d848e"
+    },
+    "com/twelvemonkeys/common/common-lang/3.12.0/_remote.repositories": {
+      "bytes": 208,
+      "sha256": "11e36c94be3069cdc6f5d5b10e0f549bc41bf9f09a5f0b03cf608944b982f7fd"
+    },
+    "com/twelvemonkeys/common/common-lang/3.12.0/common-lang-3.12.0.jar": {
+      "bytes": 121817,
+      "sha256": "5c65e504b5b64d80683e0fa70a1dd154dd83d4de7da37f21e950f5a9c03bc66d"
+    },
+    "com/twelvemonkeys/common/common-lang/3.12.0/common-lang-3.12.0.jar.sha1": {
+      "bytes": 40,
+      "sha256": "fdc878218df22470517bdf18043fc303cd0caa1bb1d8c428630190de547e24ca"
+    },
+    "com/twelvemonkeys/common/common-lang/3.12.0/common-lang-3.12.0.pom": {
+      "bytes": 998,
+      "sha256": "9c515229cf4a4e5ef721da6347ffa19b9c027ad5de10799059405d7fa32d8d52"
+    },
+    "com/twelvemonkeys/common/common-lang/3.12.0/common-lang-3.12.0.pom.sha1": {
+      "bytes": 40,
+      "sha256": "5f71b692a8700379624fb7bbf2b52c38a9a2ae23a9675adf56eb60ea07514d0c"
+    },
+    "com/twelvemonkeys/common/common/3.12.0/_remote.repositories": {
+      "bytes": 170,
+      "sha256": "f38c0860300edb3dca803cbcaa5df19b5a196845983637c9d11fc9ca06f9c951"
+    },
+    "com/twelvemonkeys/common/common/3.12.0/common-3.12.0.pom": {
+      "bytes": 1880,
+      "sha256": "da9ac9958bb74efa47d0402e8631c0c38763874a9530370ff57f073132c956ff"
+    },
+    "com/twelvemonkeys/common/common/3.12.0/common-3.12.0.pom.sha1": {
+      "bytes": 40,
+      "sha256": "d74b00d4d3cbec6655406d582413faa47ff87cdf9c9f40d0c6cbe52ef7d4586f"
+    },
+    "com/twelvemonkeys/imageio/imageio-core/3.12.0/_remote.repositories": {
+      "bytes": 210,
+      "sha256": "433113afd9ebc45cd9e485b5b1aa5ab03c20357aa6477acad29835ff9f83150b"
+    },
+    "com/twelvemonkeys/imageio/imageio-core/3.12.0/imageio-core-3.12.0.jar": {
+      "bytes": 119909,
+      "sha256": "34c6f91bf3b217ed0115bce8283238fbd0264562aa682b4226a3960d0ede9815"
+    },
+    "com/twelvemonkeys/imageio/imageio-core/3.12.0/imageio-core-3.12.0.jar.sha1": {
+      "bytes": 40,
+      "sha256": "5c559662e5d387300e4e74182fcb276effa7e0707fcb696e8f87abc83945b59f"
+    },
+    "com/twelvemonkeys/imageio/imageio-core/3.12.0/imageio-core-3.12.0.pom": {
+      "bytes": 1800,
+      "sha256": "37d6adb7cd291e6f67f629f36bc6e91a257a5458e3ee581fec127f6992181b78"
+    },
+    "com/twelvemonkeys/imageio/imageio-core/3.12.0/imageio-core-3.12.0.pom.sha1": {
+      "bytes": 40,
+      "sha256": "db61d6bd196397da7c2c0e4d90c6de5e68e1a9c4523ffe027617f3bbbda72cc8"
+    },
+    "com/twelvemonkeys/imageio/imageio-jpeg/3.12.0/_remote.repositories": {
+      "bytes": 210,
+      "sha256": "68f6a79fff859c84b913bb7f56875861853aef18440baf74988e2491ff91d7f8"
+    },
+    "com/twelvemonkeys/imageio/imageio-jpeg/3.12.0/imageio-jpeg-3.12.0.jar": {
+      "bytes": 94514,
+      "sha256": "fc62f5d7df04d1af27dc7e5b74ea5f93c23b1013064ddd4e74879d709a9d859e"
+    },
+    "com/twelvemonkeys/imageio/imageio-jpeg/3.12.0/imageio-jpeg-3.12.0.jar.sha1": {
+      "bytes": 40,
+      "sha256": "c93f8896d8a76d24674717040708cdc2a0b7c85b6a63076821f716a27e11d705"
+    },
+    "com/twelvemonkeys/imageio/imageio-jpeg/3.12.0/imageio-jpeg-3.12.0.pom": {
+      "bytes": 2035,
+      "sha256": "c2f529afb4414f992c372ec89d4c11b9c62a96ec3a8de811805a2cd72d643ffe"
+    },
+    "com/twelvemonkeys/imageio/imageio-jpeg/3.12.0/imageio-jpeg-3.12.0.pom.sha1": {
+      "bytes": 40,
+      "sha256": "1f3a32e83f49ba7d901e396d9d04c2627efea9d9a75bf13ca16e2f89e4b408cb"
+    },
+    "com/twelvemonkeys/imageio/imageio-metadata/3.12.0/_remote.repositories": {
+      "bytes": 218,
+      "sha256": "a37dbe95071818dd6d9c368a9ef0b5fdbfe0b8e073cf2cc9606087f52446d94e"
+    },
+    "com/twelvemonkeys/imageio/imageio-metadata/3.12.0/imageio-metadata-3.12.0.jar": {
+      "bytes": 83615,
+      "sha256": "797d026b67d07e6d5eb00a1ab53a55acaab6f80a71c5ee325572093eb90c0caa"
+    },
+    "com/twelvemonkeys/imageio/imageio-metadata/3.12.0/imageio-metadata-3.12.0.jar.sha1": {
+      "bytes": 40,
+      "sha256": "17199d791c77ffb20c06169857faa6ff628b285a3c173c464c47a452f65cf026"
+    },
+    "com/twelvemonkeys/imageio/imageio-metadata/3.12.0/imageio-metadata-3.12.0.pom": {
+      "bytes": 1373,
+      "sha256": "90852a8f3cf891906a8d28700bcfc443f1197758846e6ee5651d691c1342ae9c"
+    },
+    "com/twelvemonkeys/imageio/imageio-metadata/3.12.0/imageio-metadata-3.12.0.pom.sha1": {
+      "bytes": 40,
+      "sha256": "adeb6006e05b12d734b1e23fd79720f18bf5974d32058ea6cc671a92e432a7dd"
+    },
+    "com/twelvemonkeys/imageio/imageio/3.12.0/_remote.repositories": {
+      "bytes": 171,
+      "sha256": "41a6b4c5e9333a50130babde87b3972bc7920adde41f041a701d327634e344cc"
+    },
+    "com/twelvemonkeys/imageio/imageio/3.12.0/imageio-3.12.0.pom": {
+      "bytes": 6671,
+      "sha256": "648eb6abdae996e5e1d248eacb51a4dcb603e2ec271cae8c8e1f0f9cba4af8f9"
+    },
+    "com/twelvemonkeys/imageio/imageio/3.12.0/imageio-3.12.0.pom.sha1": {
+      "bytes": 40,
+      "sha256": "b945a477cb1d5ab69027c4ff9c147917c173d0cda059b37c6236fac57bdb67f9"
+    },
+    "com/twelvemonkeys/twelvemonkeys/3.12.0/_remote.repositories": {
+      "bytes": 177,
+      "sha256": "fdc025342f98aa7f4437708bdc9ee885531d050ed0c64141261cc29fbd193d4c"
+    },
+    "com/twelvemonkeys/twelvemonkeys/3.12.0/twelvemonkeys-3.12.0.pom": {
+      "bytes": 14442,
+      "sha256": "b6d09874fbddd9bb250d17817a931ef8e093bc18e74286ff06b040541980c730"
+    },
+    "com/twelvemonkeys/twelvemonkeys/3.12.0/twelvemonkeys-3.12.0.pom.sha1": {
+      "bytes": 40,
+      "sha256": "d118c1ec5ab5bf6988a84946b06d4ea2c9dafcabecb910c3279d6c454caebb74"
+    },
+    "forge/forge-gui-desktop/resolver-status.properties": {
+      "bytes": 231,
+      "sha256": "f60e97f6cfe65767c0bb23d21e3716387fd2d68d955bf7c53177ba9bde954739"
+    },
+    "javazoom/jlayer/1.0.1/_remote.repositories": {
+      "bytes": 196,
+      "sha256": "2446567cc2c08f5801cb13f71761975f5a569f3ce8ede95ce1cf8eda14542ee9"
+    },
+    "javazoom/jlayer/1.0.1/jlayer-1.0.1.jar": {
+      "bytes": 143624,
+      "sha256": "850508c837454a1b06017c32a36876fae516de1e89a829f725fee1e6dcc52000"
+    },
+    "javazoom/jlayer/1.0.1/jlayer-1.0.1.jar.sha1": {
+      "bytes": 40,
+      "sha256": "db07c98d4246ffc95b3e57137518ee9aadd0ca43941ceb9bf7fcdc31497026d3"
+    },
+    "javazoom/jlayer/1.0.1/jlayer-1.0.1.pom": {
+      "bytes": 3981,
+      "sha256": "9446b97a9756af75e825cbc078c803e673a7c319ad7ca8b65f3aa9ef155d5c3a"
+    },
+    "javazoom/jlayer/1.0.1/jlayer-1.0.1.pom.sha1": {
+      "bytes": 40,
+      "sha256": "ef799924a0a4772fce4b7efdc1e489389274285575514db2f4fb0efec5030b04"
+    },
+    "jline/jline/2.12/_remote.repositories": {
+      "bytes": 192,
+      "sha256": "7aa0ae51c1fb1610a0028ae94ddd53a8200238cdb91135c5bec66eb2e5be0d03"
+    },
+    "jline/jline/2.12/jline-2.12.jar": {
+      "bytes": 213854,
+      "sha256": "d34b45c8ca4359c65ae61e406339022e4731c739bc3448ce3999a60440baaa72"
+    },
+    "jline/jline/2.12/jline-2.12.jar.sha1": {
+      "bytes": 40,
+      "sha256": "46b546fba5c6684d2471fb511b4d30788dee161f942864c1ed7f155856de93f4"
+    },
+    "jline/jline/2.12/jline-2.12.pom": {
+      "bytes": 16942,
+      "sha256": "49338c77a36bec898bfac24a82f6e5d2abd6b9751034d0db2dd45ae04c824ea5"
+    },
+    "jline/jline/2.12/jline-2.12.pom.sha1": {
+      "bytes": 40,
+      "sha256": "379b2d290ed34a1257babc94c960daf14659be5aa8cdaf9959eb0e4e894acc71"
+    },
+    "junit/junit/3.8.2/_remote.repositories": {
+      "bytes": 194,
+      "sha256": "35180443469fd91427fa1d909f9cc050c200da19d480ee900d3de3ea91d71972"
+    },
+    "junit/junit/3.8.2/junit-3.8.2.jar": {
+      "bytes": 120640,
+      "sha256": "ecdcc08183708ea3f7b0ddc96f19678a0db8af1fb397791d484aed63200558b0"
+    },
+    "junit/junit/3.8.2/junit-3.8.2.jar.sha1": {
+      "bytes": 40,
+      "sha256": "c62ff00a0cae9335a0043ac82db6a7c25adc0c5fb073b270d85f6c1b5713e53f"
+    },
+    "junit/junit/3.8.2/junit-3.8.2.pom": {
+      "bytes": 747,
+      "sha256": "aede67999f02ac851c2a2ae8cec58f9d801f826ba20994df23a1d9fbecc47f0f"
+    },
+    "junit/junit/3.8.2/junit-3.8.2.pom.sha1": {
+      "bytes": 40,
+      "sha256": "64de87edbedc37f86d99b95cf51e8e0587f9518107c66e7a7c7aab1b271807ac"
+    },
+    "net/bytebuddy/byte-buddy-agent/1.18.14/_remote.repositories": {
+      "bytes": 220,
+      "sha256": "1930db5d3e8768d7373746351de55b1e9009326e825e05f6469d08451fb8acb4"
+    },
+    "net/bytebuddy/byte-buddy-agent/1.18.14/byte-buddy-agent-1.18.14.jar": {
+      "bytes": 291381,
+      "sha256": "6f9159206c4c7950c7ce571b534dcc6457cc27b960146724fbe70c552dd55b97"
+    },
+    "net/bytebuddy/byte-buddy-agent/1.18.14/byte-buddy-agent-1.18.14.jar.sha1": {
+      "bytes": 40,
+      "sha256": "8b79135ed247c30795b52d887469790cd647250e4c2fbdd4b574f613624e68b7"
+    },
+    "net/bytebuddy/byte-buddy-agent/1.18.14/byte-buddy-agent-1.18.14.pom": {
+      "bytes": 15539,
+      "sha256": "c8137c0744c2d26929b4be4b77c2e002d843372fd846eb7635bb27ed0217ada6"
+    },
+    "net/bytebuddy/byte-buddy-agent/1.18.14/byte-buddy-agent-1.18.14.pom.sha1": {
+      "bytes": 40,
+      "sha256": "700995845b00b0281eef41aafd720921dcd5f262f36076a8e17f1ff9d1eaf238"
+    },
+    "net/bytebuddy/byte-buddy-parent/1.18.14/_remote.repositories": {
+      "bytes": 182,
+      "sha256": "2812e9e7755f6c174712c4e4e2576c44e8b49614ed1c39483b85e5652c9f7fbf"
+    },
+    "net/bytebuddy/byte-buddy-parent/1.18.14/byte-buddy-parent-1.18.14.pom": {
+      "bytes": 82413,
+      "sha256": "49760cc69a72f350e8ff0b150a78e7e85c6bcb3bf8caba89d4322caed5330a53"
+    },
+    "net/bytebuddy/byte-buddy-parent/1.18.14/byte-buddy-parent-1.18.14.pom.sha1": {
+      "bytes": 40,
+      "sha256": "50b0d1be2c552e46c8cc62c67c1e1ff68ab2c9ce78bea184c07708cb6c33318e"
+    },
+    "net/bytebuddy/byte-buddy/1.18.14/_remote.repositories": {
+      "bytes": 208,
+      "sha256": "760b7904c25f0f631b8c87cada64a971b2c91b94b9ea45a85ea89981f68a6d6f"
+    },
+    "net/bytebuddy/byte-buddy/1.18.14/byte-buddy-1.18.14.jar": {
+      "bytes": 4658001,
+      "sha256": "b7f2b2f111c6ddc09d3d9718ca5895dde16217bb4e5f2d2a6eb571f274909a82"
+    },
+    "net/bytebuddy/byte-buddy/1.18.14/byte-buddy-1.18.14.jar.sha1": {
+      "bytes": 40,
+      "sha256": "f23bb93991373ff8be1b449434f8bf52b1fba7407bc6e779712b631e85b30423"
+    },
+    "net/bytebuddy/byte-buddy/1.18.14/byte-buddy-1.18.14.pom": {
+      "bytes": 21175,
+      "sha256": "b62c1fedb52a9b9aec6866b13c81b4ed6b7085ae6fe2a0d1c95e60b97a210bf9"
+    },
+    "net/bytebuddy/byte-buddy/1.18.14/byte-buddy-1.18.14.pom.sha1": {
+      "bytes": 40,
+      "sha256": "5203fe876315c48c82e180b598bea1deb2900cd9b279da7d26792fd1beedc776"
+    },
+    "org/apache/ant/ant-launcher/1.9.4/_remote.repositories": {
+      "bytes": 208,
+      "sha256": "fdb180e8af272c0ad71870bdae4ac64308c8e03161b423f121825e1d5f8d66c8"
+    },
+    "org/apache/ant/ant-launcher/1.9.4/ant-launcher-1.9.4.jar": {
+      "bytes": 18381,
+      "sha256": "7bccea20b41801ca17bcbc909a78c835d0f443f12d639c77bd6ae3d05861608d"
+    },
+    "org/apache/ant/ant-launcher/1.9.4/ant-launcher-1.9.4.jar.sha1": {
+      "bytes": 40,
+      "sha256": "e11da4b7a05f58b76aba44377c3bf4245fb855906f1b41f16ef4870598c4af21"
+    },
+    "org/apache/ant/ant-launcher/1.9.4/ant-launcher-1.9.4.pom": {
+      "bytes": 2335,
+      "sha256": "c9193ed600adc6c7943a6c6dc6bd952edcb5f10fb2cda594b7199766fdeef698"
+    },
+    "org/apache/ant/ant-launcher/1.9.4/ant-launcher-1.9.4.pom.sha1": {
+      "bytes": 40,
+      "sha256": "2ea1120533b07a54bd26757674f2ba11b355509ecb3906a1e7e34684286cc759"
+    },
+    "org/apache/ant/ant-parent/1.9.4/_remote.repositories": {
+      "bytes": 173,
+      "sha256": "8963b5c3c6d9995806c10ef391fb8ea291788eb614c952045a7bf289e345d021"
+    },
+    "org/apache/ant/ant-parent/1.9.4/ant-parent-1.9.4.pom": {
+      "bytes": 5603,
+      "sha256": "a93aa9c66665872b0e51360c15ae282971e36a8aa987b40ef4d82d9a5aa151c4"
+    },
+    "org/apache/ant/ant-parent/1.9.4/ant-parent-1.9.4.pom.sha1": {
+      "bytes": 40,
+      "sha256": "532e7ac62c5405eaf553c8a1e5c83e421dfb007077e45eacfd3fb5a56e9da08d"
+    },
+    "org/apache/ant/ant/1.9.4/_remote.repositories": {
+      "bytes": 190,
+      "sha256": "c44ba6fd07372d1a1587f65f8dfd72dd7be396f4feb25f3a3540cbaf123b46e3"
+    },
+    "org/apache/ant/ant/1.9.4/ant-1.9.4.jar": {
+      "bytes": 2019274,
+      "sha256": "649ae0730251de07b8913f49286d46bba7b92d47c5f332610aa426c4f02161d8"
+    },
+    "org/apache/ant/ant/1.9.4/ant-1.9.4.jar.sha1": {
+      "bytes": 40,
+      "sha256": "6e62a157f9bf5d3101e27b575a7f19979ea86fe297e08e8fc6e5313263474884"
+    },
+    "org/apache/ant/ant/1.9.4/ant-1.9.4.pom": {
+      "bytes": 9625,
+      "sha256": "5ce23a18f28d04be351f863020da0136214218aface05560516b97555a5077fd"
+    },
+    "org/apache/ant/ant/1.9.4/ant-1.9.4.pom.sha1": {
+      "bytes": 40,
+      "sha256": "23740f80d506dd1eb21a44fa32303b58c17a3e589dfd56621af4494097d4c820"
+    },
+    "org/codehaus/gmaven/gmaven-adapter-api/2.1.1/_remote.repositories": {
+      "bytes": 220,
+      "sha256": "f66d8c6fbd316319ea521416e7b859bca0a677f8aa89963671b3e2ec06d480ed"
+    },
+    "org/codehaus/gmaven/gmaven-adapter-api/2.1.1/gmaven-adapter-api-2.1.1.jar": {
+      "bytes": 7279,
+      "sha256": "762dd461c9293b79f802728f360d385012ee0121d8d76a049849cc396801bc6c"
+    },
+    "org/codehaus/gmaven/gmaven-adapter-api/2.1.1/gmaven-adapter-api-2.1.1.jar.sha1": {
+      "bytes": 40,
+      "sha256": "61927d4e7374d68e507adc97369db9e22bc0ac7ff27f162a0f4c2cd17f96aabc"
+    },
+    "org/codehaus/gmaven/gmaven-adapter-api/2.1.1/gmaven-adapter-api-2.1.1.pom": {
+      "bytes": 1740,
+      "sha256": "dccc6bb8f4b145ec3e38545f9dd0699a6c978178b807759690a1f4f4a9fc0ed7"
+    },
+    "org/codehaus/gmaven/gmaven-adapter-api/2.1.1/gmaven-adapter-api-2.1.1.pom.sha1": {
+      "bytes": 40,
+      "sha256": "6ffc6a2b8f69d51de6895140605b3b43d1bb4b1d582a49fb0d42b0fe162f960b"
+    },
+    "org/codehaus/gmaven/gmaven-adapter-impl/2.1.1/_remote.repositories": {
+      "bytes": 222,
+      "sha256": "4abee5442d8ec941cd7e852c26798271d91883347c85b34cc5f1356d451c41a2"
+    },
+    "org/codehaus/gmaven/gmaven-adapter-impl/2.1.1/gmaven-adapter-impl-2.1.1.jar": {
+      "bytes": 16356,
+      "sha256": "0f6e0d7ff3d6f03db310d1058a4ea5208f0427c498b52b2ee6edf7af1ea27844"
+    },
+    "org/codehaus/gmaven/gmaven-adapter-impl/2.1.1/gmaven-adapter-impl-2.1.1.jar.sha1": {
+      "bytes": 40,
+      "sha256": "0df37f8b8ddb367ea6db729a5cd2d07d53beb76024255046f8b43bc1cf450f60"
+    },
+    "org/codehaus/gmaven/gmaven-adapter-impl/2.1.1/gmaven-adapter-impl-2.1.1.pom": {
+      "bytes": 2587,
+      "sha256": "d4082b5dea0219a1ee0534c1fef3589ed3a561509bec0bcd4cda4f1a4704c540"
+    },
+    "org/codehaus/gmaven/gmaven-adapter-impl/2.1.1/gmaven-adapter-impl-2.1.1.pom.sha1": {
+      "bytes": 40,
+      "sha256": "d610eb8628626d93950bd2ede6310a12384f9ca2d6b42ca0b1247b32440336d2"
+    },
+    "org/codehaus/gmaven/gmaven/2.1.1/_remote.repositories": {
+      "bytes": 169,
+      "sha256": "83fe9b0b916790581efa8d01ddfedac07fcbd73a37936a3582f2ab9661543f06"
+    },
+    "org/codehaus/gmaven/gmaven/2.1.1/gmaven-2.1.1.pom": {
+      "bytes": 17054,
+      "sha256": "6bf1eabf7477b4292a6a06723e94580af65944d79754587160facca25ed6ffc2"
+    },
+    "org/codehaus/gmaven/gmaven/2.1.1/gmaven-2.1.1.pom.sha1": {
+      "bytes": 40,
+      "sha256": "2ae90261cf322d8045f6de432c9c2d51e624c3789fbe8cd22958eae01a59b08c"
+    },
+    "org/codehaus/gmaven/groovy-maven-plugin/2.1.1/_remote.repositories": {
+      "bytes": 222,
+      "sha256": "e0849f9f63d6f4b4eee667540b7d08ce023ed5baed5e70d9b03ed17a990badc7"
+    },
+    "org/codehaus/gmaven/groovy-maven-plugin/2.1.1/groovy-maven-plugin-2.1.1.jar": {
+      "bytes": 38133,
+      "sha256": "db0d90051ffcd5f7e144be619a582ca4160249d507e83f9b90dce1632330fff5"
+    },
+    "org/codehaus/gmaven/groovy-maven-plugin/2.1.1/groovy-maven-plugin-2.1.1.jar.sha1": {
+      "bytes": 40,
+      "sha256": "b4e12accbaf76ef0d16ccd8bbac64555500df37197b970906b6ddefe866cbf76"
+    },
+    "org/codehaus/gmaven/groovy-maven-plugin/2.1.1/groovy-maven-plugin-2.1.1.pom": {
+      "bytes": 4345,
+      "sha256": "4da13a7ce7c97a52bd6f7a03a6bb498ad7955211c15050c666992d1d5b656538"
+    },
+    "org/codehaus/gmaven/groovy-maven-plugin/2.1.1/groovy-maven-plugin-2.1.1.pom.sha1": {
+      "bytes": 40,
+      "sha256": "ed1fb4dc9c28ec1b8d87dfe84d014cd1b12e45ffcf81c673db555f1ce71b3542"
+    },
+    "org/codehaus/groovy/groovy-all/2.4.9/_remote.repositories": {
+      "bytes": 204,
+      "sha256": "e0547c8d3f98c5082a7de3e9d998de141ee3c2750dfd14748abddcd2fb914048"
+    },
+    "org/codehaus/groovy/groovy-all/2.4.9/groovy-all-2.4.9.jar": {
+      "bytes": 7028505,
+      "sha256": "6a3341e085b2b96f6b16e079022859dc23e3ad8766e62f71637ebbc1e02bd013"
+    },
+    "org/codehaus/groovy/groovy-all/2.4.9/groovy-all-2.4.9.jar.sha1": {
+      "bytes": 40,
+      "sha256": "9de91082343e34923e9e05363cd9956ea32e2a3871e32f3c0ea891590cfbd9b4"
+    },
+    "org/codehaus/groovy/groovy-all/2.4.9/groovy-all-2.4.9.pom": {
+      "bytes": 21449,
+      "sha256": "7f2fad3aea415d68ce37d21d04a03281ea488659023e179adb104dbe805406a6"
+    },
+    "org/codehaus/groovy/groovy-all/2.4.9/groovy-all-2.4.9.pom.sha1": {
+      "bytes": 40,
+      "sha256": "ea8b913f009c8a26f3f731598db872b15dea5f0c919fe57233c979fb28484570"
+    },
+    "org/codehaus/plexus/plexus-classworlds/2.4.2/_remote.repositories": {
+      "bytes": 220,
+      "sha256": "ecc45e3df0f4b09fde59c71d80427bfc934141cfe689ccac3c44e0c7465497ad"
+    },
+    "org/codehaus/plexus/plexus-classworlds/2.4.2/plexus-classworlds-2.4.2.jar": {
+      "bytes": 46969,
+      "sha256": "c7cf8ef0b2d82fe1bb6e3fbcc2bab993118220f289548ce9b61a07ac47ec9826"
+    },
+    "org/codehaus/plexus/plexus-classworlds/2.4.2/plexus-classworlds-2.4.2.jar.sha1": {
+      "bytes": 40,
+      "sha256": "caf993b53dd516dbd0f8974b60c79f16e78b091c1c2f64c6d825e235d924cde5"
+    },
+    "org/codehaus/plexus/plexus-classworlds/2.4.2/plexus-classworlds-2.4.2.pom": {
+      "bytes": 3509,
+      "sha256": "1954af19bf69eef14b81eac0b1a49907a67b1553f4f3803007abd940f42323f3"
+    },
+    "org/codehaus/plexus/plexus-classworlds/2.4.2/plexus-classworlds-2.4.2.pom.sha1": {
+      "bytes": 40,
+      "sha256": "96f8168f7ea5d5e78ac46d6d773483e9c7e4cf0f74466d7ddb6ebe338501dc67"
+    },
+    "org/codehaus/plexus/plexus-components/1.3/_remote.repositories": {
+      "bytes": 178,
+      "sha256": "65f943a3b998e3b111e6bb696f1b0c1bfa88f97b585e4cf80077af1dea1cf461"
+    },
+    "org/codehaus/plexus/plexus-components/1.3/plexus-components-1.3.pom": {
+      "bytes": 3058,
+      "sha256": "ca34c8d86394449ce46017d360954b270443ddaa7e62568db0cfce872315c830"
+    },
+    "org/codehaus/plexus/plexus-components/1.3/plexus-components-1.3.pom.sha1": {
+      "bytes": 40,
+      "sha256": "6fb4ae938a04f5105de9caf4aaf2036974ad4e9cec73d251d0f1e815ab00d37f"
+    },
+    "org/codehaus/plexus/plexus-interpolation/1.16/_remote.repositories": {
+      "bytes": 222,
+      "sha256": "632ec8423bf284077303c5e4f2a26a351e6cd5dff638e2b01cf2032695159e03"
+    },
+    "org/codehaus/plexus/plexus-interpolation/1.16/plexus-interpolation-1.16.jar": {
+      "bytes": 61308,
+      "sha256": "bc4053a078ec83523a010c321c0d6852b43ddc4e076a6500b8bc133b6c69e561"
+    },
+    "org/codehaus/plexus/plexus-interpolation/1.16/plexus-interpolation-1.16.jar.sha1": {
+      "bytes": 40,
+      "sha256": "5186010fc41e9035c5efc4365f377961da563c838d4b026d98e55503debb0805"
+    },
+    "org/codehaus/plexus/plexus-interpolation/1.16/plexus-interpolation-1.16.pom": {
+      "bytes": 1027,
+      "sha256": "c93bf498f6de3699d37321d1850bd36b5b3b2e3ead3d572622d1fa48b553b22e"
+    },
+    "org/codehaus/plexus/plexus-interpolation/1.16/plexus-interpolation-1.16.pom.sha1": {
+      "bytes": 40,
+      "sha256": "dd209221a34ab921aa07248ba720db7b19e96696379380fee2e4aaf4b215590b"
+    },
+    "org/codehaus/plexus/plexus/3.0.1/_remote.repositories": {
+      "bytes": 169,
+      "sha256": "8de6ba9f161b00ea33e2d688a184a2c80c72cfbb6d8e91100d5f589940e2e12b"
+    },
+    "org/codehaus/plexus/plexus/3.0.1/plexus-3.0.1.pom": {
+      "bytes": 18614,
+      "sha256": "1649f67caab553dd7e6b98002dcc670dab3f624c78f1259c8323e705b0c41e32"
+    },
+    "org/codehaus/plexus/plexus/3.0.1/plexus-3.0.1.pom.sha1": {
+      "bytes": 40,
+      "sha256": "ef3121dcc616b306a657a1b6ccd6b79fbec30ff5be5a397038a195e31338942f"
+    },
+    "org/eclipse/aether/aether-api/0.9.0.M2/_remote.repositories": {
+      "bytes": 210,
+      "sha256": "96d03f47555ec3f8971e06cf133785e91999a9d661e01e90f7609b4fed4e99e8"
+    },
+    "org/eclipse/aether/aether-api/0.9.0.M2/aether-api-0.9.0.M2.jar": {
+      "bytes": 133957,
+      "sha256": "e220097cffad96c2963ab12652ff8833ec6f40143d509f0a2ea59d22209b6ecd"
+    },
+    "org/eclipse/aether/aether-api/0.9.0.M2/aether-api-0.9.0.M2.jar.sha1": {
+      "bytes": 40,
+      "sha256": "5858471c782804904be6c4da7a00f91e8d2ce2d56b47afbd11f178231ec363d5"
+    },
+    "org/eclipse/aether/aether-api/0.9.0.M2/aether-api-0.9.0.M2.pom": {
+      "bytes": 1737,
+      "sha256": "579403170312127a59f7192cc61096ab17b7be7c3178db54a9c5bf713fbcf594"
+    },
+    "org/eclipse/aether/aether-api/0.9.0.M2/aether-api-0.9.0.M2.pom.sha1": {
+      "bytes": 40,
+      "sha256": "175ffb5f10c8e0c4f6b9a14e2017cfac43b6ef86f32719a8a5197e5813eba7c1"
+    },
+    "org/eclipse/aether/aether-util/0.9.0.M2/_remote.repositories": {
+      "bytes": 212,
+      "sha256": "102adfcc8c3470bd19329ded7d45eb0c8825ce60a0bb21b082ad3a9c6e34d003"
+    },
+    "org/eclipse/aether/aether-util/0.9.0.M2/aether-util-0.9.0.M2.jar": {
+      "bytes": 133588,
+      "sha256": "7d62b0fdef90196ec4b2947f5973d750bfd3935785244e77cc06780131c404e9"
+    },
+    "org/eclipse/aether/aether-util/0.9.0.M2/aether-util-0.9.0.M2.jar.sha1": {
+      "bytes": 40,
+      "sha256": "6217405a859445d8d9474ffcf866eb564ef2e5e7389cf0b480dcdd6e591fe77f"
+    },
+    "org/eclipse/aether/aether-util/0.9.0.M2/aether-util-0.9.0.M2.pom": {
+      "bytes": 2035,
+      "sha256": "8e1f27e5463f12e4e1d7b242562239c42065e9bcdbf01629399e265035606986"
+    },
+    "org/eclipse/aether/aether-util/0.9.0.M2/aether-util-0.9.0.M2.pom.sha1": {
+      "bytes": 40,
+      "sha256": "b3207b0536c903fb0b1264d100a5b03f9bc30fe1c7b6d0d3a88cfae48bcbb8fa"
+    },
+    "org/eclipse/aether/aether/0.9.0.M2/_remote.repositories": {
+      "bytes": 172,
+      "sha256": "e966113707ad9f521f65c757fa50efa4bdd4c1b9d4ea8231fd047086e2d2584c"
+    },
+    "org/eclipse/aether/aether/0.9.0.M2/aether-0.9.0.M2.pom": {
+      "bytes": 27870,
+      "sha256": "30bf8c64ccf77ebbf52b04ec576a0fa77b16b26eaf348519b1684263450d39ce"
+    },
+    "org/eclipse/aether/aether/0.9.0.M2/aether-0.9.0.M2.pom.sha1": {
+      "bytes": 40,
+      "sha256": "c9e66785008ae1f4057ec71e0133d169124958590806aa9e2f915959d4a7f81c"
+    },
+    "org/freemarker/freemarker/2.3.33/_remote.repositories": {
+      "bytes": 206,
+      "sha256": "975583b1db320d927f8d40df6d7391182464abb4da42619374261f26a2362122"
+    },
+    "org/freemarker/freemarker/2.3.33/freemarker-2.3.33.jar": {
+      "bytes": 1877365,
+      "sha256": "ab829182363e747a1530a368436242f4cca7ff309dd29bfca638a1fdc7b6771d"
+    },
+    "org/freemarker/freemarker/2.3.33/freemarker-2.3.33.jar.sha1": {
+      "bytes": 40,
+      "sha256": "3a3738ceb73248a205d81e22461be29b833b7bf5633bb40fc9aed0b666697efc"
+    },
+    "org/freemarker/freemarker/2.3.33/freemarker-2.3.33.pom": {
+      "bytes": 3508,
+      "sha256": "f8d10620a17a0601e812f70faf5295d78adddb11433af472044271bc3c5e5856"
+    },
+    "org/freemarker/freemarker/2.3.33/freemarker-2.3.33.pom.sha1": {
+      "bytes": 40,
+      "sha256": "37b5a56c337e0e6c1afde4b8320df496f64dfe7db594b96d2d3550172db3da30"
+    },
+    "org/objenesis/objenesis-parent/3.4/_remote.repositories": {
+      "bytes": 177,
+      "sha256": "fbd39dd0c1762bcd2022eb49c7de06abb641d39b0260ab092150e47dfcbff516"
+    },
+    "org/objenesis/objenesis-parent/3.4/objenesis-parent-3.4.pom": {
+      "bytes": 19094,
+      "sha256": "cb1f43d298cc854bb55b993d330017db4a94c6609982da810f039373fc6254a6"
+    },
+    "org/objenesis/objenesis-parent/3.4/objenesis-parent-3.4.pom.sha1": {
+      "bytes": 40,
+      "sha256": "79ca891a67387009ff577e676b478871e03c0bf217ef83f0018b4550e491b984"
+    },
+    "org/objenesis/objenesis/3.4/_remote.repositories": {
+      "bytes": 198,
+      "sha256": "e6c8ee6a2ed9651f0a58e4f612952f682ac1901f0d697e5afb6fceb967bf72e7"
+    },
+    "org/objenesis/objenesis/3.4/objenesis-3.4.jar": {
+      "bytes": 49076,
+      "sha256": "95488102feaf2e2858adf6b299353677dac6c15294006f8ed1c5556f8e3cd251"
+    },
+    "org/objenesis/objenesis/3.4/objenesis-3.4.jar.sha1": {
+      "bytes": 40,
+      "sha256": "8baa93e69c37c4fe1cc31a62707724301a79de8f1f6bf9cce3702b6c99368c19"
+    },
+    "org/objenesis/objenesis/3.4/objenesis-3.4.pom": {
+      "bytes": 3008,
+      "sha256": "6017ec0c1e81f73d9a12ebfc09c32823cd075e8709593714eb400e2f013d8a58"
+    },
+    "org/objenesis/objenesis/3.4/objenesis-3.4.pom.sha1": {
+      "bytes": 40,
+      "sha256": "d2d77a9b5dae51a4a28f3979768ff5d69d82d628c0e70c6304621c79d378de52"
+    },
+    "org/slf4j/slf4j-api/1.7.5/_remote.repositories": {
+      "bytes": 202,
+      "sha256": "ea803fa4dbfdcb6f52e9aa2b421d8a56627a0f4995542311abe8c651c8e4e912"
+    },
+    "org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar": {
+      "bytes": 26084,
+      "sha256": "fe30825245d2336c859dc38d60c0fc5f3668dbf29cd586828d2b5667ec355b91"
+    },
+    "org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar.sha1": {
+      "bytes": 40,
+      "sha256": "b0669b2bcda0e8def98c722b443fbeac33c41369f19b5b562c5824d0d7e3771c"
+    },
+    "org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.pom": {
+      "bytes": 2689,
+      "sha256": "afaf8e74019b230d3f56fdd7c93fb1070c0dca34f3d2d5ab5dea9fc616bd5ca4"
+    },
+    "org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.pom.sha1": {
+      "bytes": 40,
+      "sha256": "abdbc2cd10657daa7da1f26bd7dc6fc563b5acdb44ea5a021f454b3f2055ea83"
+    },
+    "org/slf4j/slf4j-parent/1.7.5/_remote.repositories": {
+      "bytes": 175,
+      "sha256": "ec33d8e4a62f21f0fe0d3fa8b4e897b4d279912352aeda8e93017ce630dc6802"
+    },
+    "org/slf4j/slf4j-parent/1.7.5/slf4j-parent-1.7.5.pom": {
+      "bytes": 11804,
+      "sha256": "c43bc5a022dbfd9de82be232dffe46208cbc7de12c14385b5da824e331e535bb"
+    },
+    "org/slf4j/slf4j-parent/1.7.5/slf4j-parent-1.7.5.pom.sha1": {
+      "bytes": 40,
+      "sha256": "e1f864a1cac74c619620f155c1217a705bc20dd3aa27d27bdf21d3cfa6f3f498"
+    },
+    "org/sonatype/forge/forge-parent/9/_remote.repositories": {
+      "bytes": 171,
+      "sha256": "cb75be30792d5b4dcb4a8d2da6407445ee308c158bc6793855e733dc004cb3d2"
+    },
+    "org/sonatype/forge/forge-parent/9/forge-parent-9.pom": {
+      "bytes": 13142,
+      "sha256": "8a19cfb90b52258cc115b28c30cb0c06c55bd7aad37b13bbec0c4332faa58ae9"
+    },
+    "org/sonatype/forge/forge-parent/9/forge-parent-9.pom.sha1": {
+      "bytes": 40,
+      "sha256": "5d8cf7a0492462a5a77c914a49e84ac484f7400f7e2c9727a8b405b20543586a"
+    },
+    "org/sonatype/gossip/gossip-bootstrap/1.8/_remote.repositories": {
+      "bytes": 212,
+      "sha256": "a72faeaa9174ff7b8f49cd9abc7fbfe620a6a6730f2d560ea2a171e1c31f9b3d"
+    },
+    "org/sonatype/gossip/gossip-bootstrap/1.8/gossip-bootstrap-1.8.jar": {
+      "bytes": 19758,
+      "sha256": "a06739ec0affe3ae359dfa6812e63ddade8dacdd4476117ad52216c457873ce1"
+    },
+    "org/sonatype/gossip/gossip-bootstrap/1.8/gossip-bootstrap-1.8.jar.sha1": {
+      "bytes": 40,
+      "sha256": "b33f81fe46e57d9ed4c894904dd0c84f030e6ee106709d6773148118ec100d62"
+    },
+    "org/sonatype/gossip/gossip-bootstrap/1.8/gossip-bootstrap-1.8.pom": {
+      "bytes": 1611,
+      "sha256": "a118bd27bb7a6891fc35041ef6f6ab173ee4497b046f7a10a30fe2aca4872f0d"
+    },
+    "org/sonatype/gossip/gossip-bootstrap/1.8/gossip-bootstrap-1.8.pom.sha1": {
+      "bytes": 40,
+      "sha256": "2be44ca2ad1bd8a4a8e5cbe3d5c08a9cdabb8b22186abe444f5673ab471d6b42"
+    },
+    "org/sonatype/gossip/gossip-core/1.8/_remote.repositories": {
+      "bytes": 202,
+      "sha256": "5e3e3c88bf7b4f49d09e581f60e9de0a69ec7831438914d3ac3989f9ade3c46f"
+    },
+    "org/sonatype/gossip/gossip-core/1.8/gossip-core-1.8.jar": {
+      "bytes": 57814,
+      "sha256": "0bd87f4cf1fe5314c30f8ff92215577202f9aac50b5e66bd03ec90e3023dfe62"
+    },
+    "org/sonatype/gossip/gossip-core/1.8/gossip-core-1.8.jar.sha1": {
+      "bytes": 40,
+      "sha256": "2f082f2630c2f0b45af757f662bb96c0016cd3a85bb917f524fcc314b75ddb5e"
+    },
+    "org/sonatype/gossip/gossip-core/1.8/gossip-core-1.8.pom": {
+      "bytes": 2225,
+      "sha256": "dc3a512f81bc3b6ae98aac66afb65b04afb9582df197c635d903676236767cb2"
+    },
+    "org/sonatype/gossip/gossip-core/1.8/gossip-core-1.8.pom.sha1": {
+      "bytes": 40,
+      "sha256": "753155db223efce4ebccade52b376be4ddfac604519a93f2576cb278b46c5f83"
+    },
+    "org/sonatype/gossip/gossip-slf4j/1.8/_remote.repositories": {
+      "bytes": 204,
+      "sha256": "d6e366387e24b72e3be8cb02c73756b1211b15f37489816914e565e03af94349"
+    },
+    "org/sonatype/gossip/gossip-slf4j/1.8/gossip-slf4j-1.8.jar": {
+      "bytes": 4227,
+      "sha256": "55c9ed3eb9c62a3cb64dded5614c2701e60784029f32e4acf58b65acdd062460"
+    },
+    "org/sonatype/gossip/gossip-slf4j/1.8/gossip-slf4j-1.8.jar.sha1": {
+      "bytes": 40,
+      "sha256": "49ce7c6570571017f64190f7a7f8551028534a1ec11f1a45f01fd118e7fbd3f9"
+    },
+    "org/sonatype/gossip/gossip-slf4j/1.8/gossip-slf4j-1.8.pom": {
+      "bytes": 1482,
+      "sha256": "c9e7a504b73307f6dbb37e52413a64a0376b5a666325a6946cb71e4737dd1a0a"
+    },
+    "org/sonatype/gossip/gossip-slf4j/1.8/gossip-slf4j-1.8.pom.sha1": {
+      "bytes": 40,
+      "sha256": "6afa48eb0dd23a8eacce507565f29ffefd4624c6e6466faea0d05bb66de2d1ad"
+    },
+    "org/sonatype/gossip/gossip/1.8/_remote.repositories": {
+      "bytes": 167,
+      "sha256": "9e50aade0df09908629aee6ec7840f7c5afc21b235a27dd5523237f0118a2685"
+    },
+    "org/sonatype/gossip/gossip/1.8/gossip-1.8.pom": {
+      "bytes": 11526,
+      "sha256": "ddac85c5943f00d4c36af7304b0780c89933dc9a1180e58e0c41d64870d24789"
+    },
+    "org/sonatype/gossip/gossip/1.8/gossip-1.8.pom.sha1": {
+      "bytes": 40,
+      "sha256": "f9887bd97e6b7c7f27d702f7e14e99a8ca008914377433fe6f5d590f7c04b00d"
+    }
+  },
+  "changedCacheFiles": {
+    "com/google/code/findbugs/jsr305/2.0.1/_remote.repositories": {
+      "bytes": 196,
+      "sha256": "e558052fa9119aaac89f1ad66f5eea83fc17f8a1426c67c12eceee105f725fd5"
+    }
+  }
+}

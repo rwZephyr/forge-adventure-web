@@ -1,0 +1,23 @@
+{
+  "stage": "offline-test",
+  "startUtc": "2026-10-18T18:28:52.0364678Z",
+  "endUtc": "2026-10-18T18:30:21.1453298Z",
+  "elapsedSeconds": 89.1063516,
+  "nativeExitCode": 0,
+  "stopReason": null,
+  "environmentRestored": true,
+  "args": [
+    "-o",
+    "-B",
+    "-ntp",
+    "-T1",
+    "-Dmaven.repo.local=<WORKSPACE>/.local-tools/m2",
+    "-pl",
+    "forge-gui-desktop",
+    "-am",
+    "-Dtest=forge.net.embedded.ProtocolGuiGameInProcessTest",
+    "-Dsurefire.failIfNoSpecifiedTests=false",
+    "-DfailIfNoTests=false",
+    "test"
+  ]
+}
