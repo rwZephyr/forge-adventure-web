@@ -285,6 +285,44 @@ class ScanCase(unittest.TestCase):
         self.assertEqual(code, 2)
         self.assertIsNone(m)
 
+    # -- probe directory confinement -------------------------------------------
+    def test_probe_dir_outside_root_rejected(self):
+        mappath = self.build_basic()
+        other = tempfile.TemporaryDirectory()
+        self.addCleanup(other.cleanup)
+        for flag in ("--plane", "--common"):
+            code, m, err = self.run_scan(flag, other.name, mappath)
+            self.assertEqual(code, 2, flag)
+            self.assertIsNone(m, flag)
+            self.assertIn("outside --root", err, flag)
+
+    def test_probe_dir_symlink_escape_rejected(self):
+        mappath = self.build_basic()
+        other = tempfile.TemporaryDirectory()
+        self.addCleanup(other.cleanup)
+        link = self.p("evil-plane")
+        try:
+            os.symlink(other.name, link)
+        except OSError:
+            self.skipTest("cannot create symlinks here")
+        code, m, err = self.run_scan("--plane", link, mappath)
+        self.assertEqual(code, 2)
+        self.assertIsNone(m)
+        self.assertIn("outside --root", err)
+
+    def test_probe_dir_inside_root_allowed(self):
+        # --plane/--common inside root keep working (sprite probing intact).
+        mappath = self.build_basic()
+        w(self.p("planeX/sprites/chest.atlas"), ATLAS)
+        w(self.p("planeX/sprites/chest.png"), b"CHESTPNG")
+        code, m, _ = self.run_scan("--plane", self.p("planeX"), mappath)
+        self.assertEqual(code, 0)
+        sprites = [r for r in m["runtime_discovery"]
+                   if r["kind"] == "sprite-atlas"]
+        self.assertEqual(len(sprites), 1)
+        self.assertIsNotNone(sprites[0]["resolved"])
+        self.assertTrue(sprites[0]["resolved"]["path"].startswith("planeX/"))
+
     # -- reproducibility -------------------------------------------------------
     def test_deterministic_output(self):
         mappath = self.build_basic()
