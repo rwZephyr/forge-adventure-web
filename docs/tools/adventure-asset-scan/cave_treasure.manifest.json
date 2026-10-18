@@ -1,11 +1,9 @@
 {
   "tool": "adventure-asset-scan",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "map": "forge-gui/res/adventure/common/maps/map/cave/cave_treasure.tmx",
-  "root": "/home/hatch/workspace/forge-adventure-web",
   "plane_dir": "forge-gui/res/adventure/Shandalar",
   "common_dir": "forge-gui/res/adventure/common",
-  "generated_utc": "2026-10-18T06:07:31.000142+00:00",
   "files": [
     {
       "path": "forge-gui/res/adventure/common/maps/map/cave/cave_treasure.tmx",
@@ -97,6 +95,7 @@
     }
   ],
   "missing": [],
+  "rejected": [],
   "cycles": [],
   "runtime_discovery": [
     {
@@ -145,7 +144,9 @@
     "runtime_probed_bytes": 19081,
     "total_bytes": 1793286,
     "missing": 0,
+    "rejected": 0,
     "duplicate_references": 2,
-    "cycles": 0
+    "cycles": 0,
+    "errors": 0
   }
 }
