@@ -1,0 +1,32 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.6.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :verifyOriginalInputs
+
+> Task :compileJava
+warning: Supported source version 'RELEASE_11' from annotation processor 'org.gradle.api.internal.tasks.compile.processing.TimeTrackingProcessor' less than -source '17'
+1 warning
+
+> Task :processResources NO-SOURCE
+> Task :classes
+
+> Task :jvmControl FAILED
+{"run":"positive-1","pid":54228,"completed":true,"exitCode":1,"elapsedMs":3045.4611}
+Exception in thread "main" java.lang.IllegalStateException: Original fixture failed: positive-1; see C:\Users\Silent\Projects\forge-adventure-web\experiments\ai-teavm\build\jvm
+	at probe.JvmRunner.main(JvmRunner.java:21)
+
+[Incubating] Problems report is available at: file:///C:/Users/Silent/Projects/forge-adventure-web/experiments/ai-teavm/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':jvmControl' (registered in build file 'build.gradle').
+> Process 'command 'C:\Program Files\Java\jdk-17\bin\java.exe'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 28s
+3 actionable tasks: 3 executed

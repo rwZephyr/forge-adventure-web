@@ -1,0 +1,24 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.6.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :verifyOriginalInputs
+
+> Task :compileJava
+warning: Supported source version 'RELEASE_11' from annotation processor 'org.gradle.api.internal.tasks.compile.processing.TimeTrackingProcessor' less than -source '17'
+1 warning
+
+> Task :processResources NO-SOURCE
+> Task :classes
+
+> Task :jvmControl
+{"run":"positive-1","pid":57096,"completed":true,"exitCode":0,"elapsedMs":9212.5164}
+{"run":"positive-2","pid":55336,"completed":true,"exitCode":0,"elapsedMs":9264.8274}
+{"run":"positive-3","pid":61364,"completed":true,"exitCode":0,"elapsedMs":9116.0125}
+{"run":"negative-1","pid":59596,"completed":true,"exitCode":0,"elapsedMs":9011.6043}
+Persisted dependency lock state for buildscript of root project 'forge-original-ai-teavm-probe'
+Persisted dependency lock state for root project 'forge-original-ai-teavm-probe'
+
+[Incubating] Problems report is available at: file:///C:/Users/Silent/Projects/forge-adventure-web/experiments/ai-teavm/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 1m 2s
+3 actionable tasks: 3 executed
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.6.1/userguide/configuration_cache_enabling.html

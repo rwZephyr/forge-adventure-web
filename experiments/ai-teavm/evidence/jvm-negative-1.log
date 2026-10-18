@@ -1,0 +1,2 @@
+Language 'en-US' loaded successfully.
+{"schemaVersion":1,"emptyHand":true,"passed":true,"originalRandomInitializationMs":8020.4353,"manaAbilityCounts":[1,1],"priorityPlayerIsAi":true,"gameId":1,"aiPlayerId":0,"registeredDeckCards":[12,10],"libraryCounts":[10,10],"candidateCount":2,"boltCandidateCount":0,"manaCandidateCount":2,"decisionMs":79.2681,"decision":null,"stage":"complete","elapsedMs":8885.4715,"survivingEvalThreads":0}

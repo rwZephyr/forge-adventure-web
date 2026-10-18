@@ -1,0 +1,23 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.6.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :verifyOriginalInputs
+
+> Task :compileJava
+
+> Task :processResources NO-SOURCE
+> Task :classes
+warning: Supported source version 'RELEASE_11' from annotation processor 'org.gradle.api.internal.tasks.compile.processing.TimeTrackingProcessor' less than -source '17'
+1 warning
+
+> Task :metadataInventory
+Language 'en-US' loaded successfully.
+Original constructors audited=491; ApiType=203; AI mappings=193
+Fixture compiler policy constructor signatures=346
+Persisted dependency lock state for buildscript of root project 'forge-original-ai-teavm-probe'
+Persisted dependency lock state for root project 'forge-original-ai-teavm-probe'
+
+[Incubating] Problems report is available at: file:///C:/Users/Silent/Projects/forge-adventure-web/experiments/ai-teavm/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 26s
+3 actionable tasks: 3 executed
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.6.1/userguide/configuration_cache_enabling.html

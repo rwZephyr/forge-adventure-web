@@ -1,0 +1,467 @@
+[
+  {
+    "ordinal": 1,
+    "headline": "ERROR: Method java.io.File.toPath()Ljava/nio/file/Path; was not found",
+    "diagnostic": "ERROR: Method java.io.File.toPath()Ljava/nio/file/Path; was not found\n    at forge.util.FileUtil.readAllLines(FileUtil.java:256)\n    at forge.util.FileUtil.readFile(FileUtil.java:205)\n    at forge.util.FileUtil.readFile(FileUtil.java:185)\n    at probe.OriginalAiFixture.bootstrap(OriginalAiFixture.java:39)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:61)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 2,
+    "headline": "ERROR: Class io.sentry.util.AutoClosableReentrantLock extends java.util.concurrent.locks.ReentrantLock, which is missing in the classpath",
+    "diagnostic": "ERROR: Class io.sentry.util.AutoClosableReentrantLock extends java.util.concurrent.locks.ReentrantLock, which is missing in the classpath"
+  },
+  {
+    "ordinal": 3,
+    "headline": "ERROR: Class java.util.concurrent.locks.ReentrantReadWriteLock was not found",
+    "diagnostic": "ERROR: Class java.util.concurrent.locks.ReentrantReadWriteLock was not found\n    at org.tinylog.configuration.Configuration.<clinit>(Configuration.java:70)\n    at org.tinylog.Logger.<clinit>(Logger.java:36)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 4,
+    "headline": "ERROR: Class java.util.concurrent.locks.ReadWriteLock was not found",
+    "diagnostic": "ERROR: Class java.util.concurrent.locks.ReadWriteLock was not found\n    at org.tinylog.configuration.Configuration.get(Configuration.java:193)\n    at org.tinylog.configuration.Configuration.getLocale(Configuration.java:159)\n    at org.tinylog.Logger.<clinit>(Logger.java:36)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 5,
+    "headline": "ERROR: Class java.util.concurrent.locks.ReadWriteLock was not found",
+    "diagnostic": "ERROR: Class java.util.concurrent.locks.ReadWriteLock was not found\n    at org.tinylog.configuration.Configuration.get(Configuration.java:197)\n    at org.tinylog.configuration.Configuration.getLocale(Configuration.java:159)\n    at org.tinylog.Logger.<clinit>(Logger.java:36)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 6,
+    "headline": "ERROR: Class java.util.concurrent.locks.ReadWriteLock was not found",
+    "diagnostic": "ERROR: Class java.util.concurrent.locks.ReadWriteLock was not found\n    at org.tinylog.configuration.Configuration.get(Configuration.java:197)\n    at org.tinylog.configuration.Configuration.getLocale(Configuration.java:159)\n    at org.tinylog.Logger.<clinit>(Logger.java:36)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 7,
+    "headline": "ERROR: Class java.util.concurrent.locks.ReentrantLock was not found",
+    "diagnostic": "ERROR: Class java.util.concurrent.locks.ReentrantLock was not found\n    at io.sentry.util.AutoClosableReentrantLock.<init>(AutoClosableReentrantLock.java:7)\n    at io.sentry.Sentry.<clinit>(Sentry.java:85)\n    at forge.game.ability.AbilityUtils.resolveApiAbility(AbilityUtils.java:1388)\n    at forge.game.ability.AbilityUtils.resolve(AbilityUtils.java:1333)\n    at forge.game.zone.MagicStack.resolveStack(MagicStack.java:630)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:157)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 8,
+    "headline": "ERROR: Class java.util.concurrent.CopyOnWriteArraySet was not found",
+    "diagnostic": "ERROR: Class java.util.concurrent.CopyOnWriteArraySet was not found\n    at io.sentry.SentryOptions.<init>(SentryOptions.java:71)\n    at io.sentry.SentryOptions.empty(SentryOptions.java:3085)\n    at io.sentry.Sentry.<clinit>(Sentry.java:67)\n    at forge.game.ability.AbilityUtils.resolveApiAbility(AbilityUtils.java:1388)\n    at forge.game.ability.AbilityUtils.resolve(AbilityUtils.java:1333)\n    at forge.game.zone.MagicStack.resolveStack(MagicStack.java:630)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:157)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 9,
+    "headline": "ERROR: Class java.util.concurrent.ConcurrentLinkedQueue was not found",
+    "diagnostic": "ERROR: Class java.util.concurrent.ConcurrentLinkedQueue was not found\n    at com.google.common.cache.LocalCache.<init>(LocalCache.java:259)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.<init>(LocalCache.java:4799)\n    at com.google.common.cache.CacheBuilder.build(CacheBuilder.java:1045)\n    at com.google.common.eventbus.SubscriberRegistry.<clinit>(SubscriberRegistry.java:153)\n    at com.google.common.eventbus.EventBus.<init>(EventBus.java:159)\n    at com.google.common.eventbus.EventBus.<init>(EventBus.java:174)\n    at forge.game.Match.<init>(Match.java:38)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 10,
+    "headline": "ERROR: Class java.security.InvalidParameterException was not found",
+    "diagnostic": "ERROR: Class java.security.InvalidParameterException was not found\n    at forge.ai.SpellApiToAi.get(SpellApiToAi.java:221)\n    at forge.ai.ComputerUtilMana.groupSourcesByManaColor(ComputerUtilMana.java:1688)\n    at forge.ai.ComputerUtilMana.getSourcesForShards(ComputerUtilMana.java:997)\n    at forge.ai.ComputerUtilMana.payManaCost(ComputerUtilMana.java:661)\n    at forge.ai.ComputerUtilMana.payManaCost(ComputerUtilMana.java:75)\n    at forge.ai.ComputerUtilMana.canPayManaCost(ComputerUtilMana.java:64)\n    at forge.ai.ComputerUtilCost.canPayCost(ComputerUtilCost.java:645)\n    at forge.ai.ComputerUtilCost.canPayCost(ComputerUtilCost.java:541)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:115)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 11,
+    "headline": "ERROR: Method java.lang.reflect.Constructor.canAccess(Ljava/lang/Object;)Z was not found",
+    "diagnostic": "ERROR: Method java.lang.reflect.Constructor.canAccess(Ljava/lang/Object;)Z was not found\n    at org.jgrapht.util.SupplierUtil.createSupplier(SupplierUtil.java:79)\n    at org.jgrapht.graph.DefaultDirectedGraph.<init>(DefaultDirectedGraph.java:46)\n    at forge.game.GameAction.findStaticAbilityToApply(GameAction.java:1311)\n    at forge.game.GameAction.checkStaticAbilities(GameAction.java:1156)\n    at forge.game.GameAction.checkStaticAbilities(GameAction.java:1097)\n    at forge.game.GameAction.checkStaticAbilities(GameAction.java:1094)\n    at forge.game.GameActionUtil.addExtraKeywordCost(GameActionUtil.java:627)\n    at forge.ai.ComputerUtil.playStack(ComputerUtil.java:236)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:144)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 12,
+    "headline": "ERROR: Method java.lang.ClassLoader.getResources(Ljava/lang/String;)Ljava/util/Enumeration; was not found",
+    "diagnostic": "ERROR: Method java.lang.ClassLoader.getResources(Ljava/lang/String;)Ljava/util/Enumeration; was not found\n    at org.tinylog.configuration.ServiceLoader.fetchServiceFiles(ServiceLoader.java:161)\n    at org.tinylog.configuration.ServiceLoader.<init>(ServiceLoader.java:62)\n    at org.tinylog.provider.ProviderRegistry.loadLoggingProvider(ProviderRegistry.java:86)\n    at org.tinylog.provider.ProviderRegistry.<clinit>(ProviderRegistry.java:39)\n    at org.tinylog.Logger.<clinit>(Logger.java:40)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 13,
+    "headline": "ERROR: Method java.lang.ClassLoader.getResources(Ljava/lang/String;)Ljava/util/Enumeration; was not found",
+    "diagnostic": "ERROR: Method java.lang.ClassLoader.getResources(Ljava/lang/String;)Ljava/util/Enumeration; was not found\n    at org.tinylog.configuration.ServiceLoader.loadClasses(ServiceLoader.java:183)\n    at org.tinylog.configuration.ServiceLoader.<init>(ServiceLoader.java:65)\n    at org.tinylog.provider.ProviderRegistry.loadLoggingProvider(ProviderRegistry.java:86)\n    at org.tinylog.provider.ProviderRegistry.<clinit>(ProviderRegistry.java:39)\n    at org.tinylog.Logger.<clinit>(Logger.java:40)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 14,
+    "headline": "ERROR: Class java.lang.ProcessHandle was not found",
+    "diagnostic": "ERROR: Class java.lang.ProcessHandle was not found\n    at org.tinylog.runtime.ModernJavaRuntime.getCurrentProcess(ModernJavaRuntime.java:117)\n    at org.tinylog.runtime.ModernJavaRuntime.<init>(ModernJavaRuntime.java:40)\n    at org.tinylog.runtime.RuntimeProvider.resolveDialect(RuntimeProvider.java:182)\n    at org.tinylog.runtime.RuntimeProvider.<clinit>(RuntimeProvider.java:32)\n    at org.tinylog.provider.ProviderRegistry.loadLoggingProvider(ProviderRegistry.java:82)\n    at org.tinylog.provider.ProviderRegistry.<clinit>(ProviderRegistry.java:39)\n    at org.tinylog.Logger.<clinit>(Logger.java:40)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 15,
+    "headline": "ERROR: Class java.lang.management.ManagementFactory was not found",
+    "diagnostic": "ERROR: Class java.lang.management.ManagementFactory was not found\n    at org.tinylog.runtime.ModernJavaRuntime.<clinit>(ModernJavaRuntime.java:36)\n    at org.tinylog.runtime.RuntimeProvider.resolveDialect(RuntimeProvider.java:182)\n    at org.tinylog.runtime.RuntimeProvider.<clinit>(RuntimeProvider.java:32)\n    at org.tinylog.provider.ProviderRegistry.loadLoggingProvider(ProviderRegistry.java:82)\n    at org.tinylog.provider.ProviderRegistry.<clinit>(ProviderRegistry.java:39)\n    at org.tinylog.Logger.<clinit>(Logger.java:40)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 16,
+    "headline": "ERROR: Class sun.reflect.Reflection was not found",
+    "diagnostic": "ERROR: Class sun.reflect.Reflection was not found\n    at org.tinylog.runtime.LegacyJavaRuntime.verifySunReflection(LegacyJavaRuntime.java:136)\n    at org.tinylog.runtime.LegacyJavaRuntime.<init>(LegacyJavaRuntime.java:37)\n    at org.tinylog.runtime.RuntimeProvider.resolveDialect(RuntimeProvider.java:186)\n    at org.tinylog.runtime.RuntimeProvider.<clinit>(RuntimeProvider.java:32)\n    at org.tinylog.provider.ProviderRegistry.loadLoggingProvider(ProviderRegistry.java:82)\n    at org.tinylog.provider.ProviderRegistry.<clinit>(ProviderRegistry.java:39)\n    at org.tinylog.Logger.<clinit>(Logger.java:40)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 17,
+    "headline": "ERROR: Class java.lang.management.ManagementFactory was not found",
+    "diagnostic": "ERROR: Class java.lang.management.ManagementFactory was not found\n    at org.tinylog.runtime.LegacyJavaRuntime.<clinit>(LegacyJavaRuntime.java:30)\n    at org.tinylog.runtime.RuntimeProvider.resolveDialect(RuntimeProvider.java:186)\n    at org.tinylog.runtime.RuntimeProvider.<clinit>(RuntimeProvider.java:32)\n    at org.tinylog.provider.ProviderRegistry.loadLoggingProvider(ProviderRegistry.java:82)\n    at org.tinylog.provider.ProviderRegistry.<clinit>(ProviderRegistry.java:39)\n    at org.tinylog.Logger.<clinit>(Logger.java:40)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 18,
+    "headline": "ERROR: Class dalvik.system.VMStack was not found",
+    "diagnostic": "ERROR: Class dalvik.system.VMStack was not found\n    at org.tinylog.runtime.AndroidRuntime.getStackTraceElementsFiller(AndroidRuntime.java:114)\n    at org.tinylog.runtime.AndroidRuntime.<init>(AndroidRuntime.java:41)\n    at org.tinylog.runtime.RuntimeProvider.resolveDialect(RuntimeProvider.java:184)\n    at org.tinylog.runtime.RuntimeProvider.<clinit>(RuntimeProvider.java:32)\n    at org.tinylog.provider.ProviderRegistry.loadLoggingProvider(ProviderRegistry.java:82)\n    at org.tinylog.provider.ProviderRegistry.<clinit>(ProviderRegistry.java:39)\n    at org.tinylog.Logger.<clinit>(Logger.java:40)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 19,
+    "headline": "ERROR: Class java.lang.ProcessHandle was not found",
+    "diagnostic": "ERROR: Class java.lang.ProcessHandle was not found\n    at org.tinylog.runtime.ModernJavaRuntime.getProcessId(ModernJavaRuntime.java:53)\n    at org.tinylog.runtime.RuntimeProvider.getProcessId(RuntimeProvider.java:81)\n    at org.tinylog.provider.ProviderRegistry.loadLoggingProvider(ProviderRegistry.java:82)\n    at org.tinylog.provider.ProviderRegistry.<clinit>(ProviderRegistry.java:39)\n    at org.tinylog.Logger.<clinit>(Logger.java:40)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 20,
+    "headline": "ERROR: Class java.lang.management.ManagementFactory was not found",
+    "diagnostic": "ERROR: Class java.lang.management.ManagementFactory was not found\n    at org.tinylog.runtime.LegacyJavaRuntime.getProcessId(LegacyJavaRuntime.java:48)\n    at org.tinylog.runtime.RuntimeProvider.getProcessId(RuntimeProvider.java:81)\n    at org.tinylog.provider.ProviderRegistry.loadLoggingProvider(ProviderRegistry.java:82)\n    at org.tinylog.provider.ProviderRegistry.<clinit>(ProviderRegistry.java:39)\n    at org.tinylog.Logger.<clinit>(Logger.java:40)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 21,
+    "headline": "ERROR: Class android.os.Process was not found",
+    "diagnostic": "ERROR: Class android.os.Process was not found\n    at org.tinylog.runtime.AndroidRuntime.getProcessId(AndroidRuntime.java:58)\n    at org.tinylog.runtime.RuntimeProvider.getProcessId(RuntimeProvider.java:81)\n    at org.tinylog.provider.ProviderRegistry.loadLoggingProvider(ProviderRegistry.java:82)\n    at org.tinylog.provider.ProviderRegistry.<clinit>(ProviderRegistry.java:39)\n    at org.tinylog.Logger.<clinit>(Logger.java:40)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 22,
+    "headline": "ERROR: Field java.text.Normalizer$Form.NFKD was not found",
+    "diagnostic": "ERROR: Field java.text.Normalizer$Form.NFKD was not found\n    at org.apache.commons.lang3.StringUtils.stripAccents(StringUtils.java:7923)\n    at forge.item.PaperCard.getImageKey(PaperCard.java:482)\n    at forge.game.card.CardFactory.getCard(CardFactory.java:182)\n    at forge.game.card.CardFactory.getCard(CardFactory.java:171)\n    at probe.OriginalAiFixture.card(OriginalAiFixture.java:49)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:86)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 23,
+    "headline": "ERROR: Class java.util.concurrent.locks.ReentrantLock was not found",
+    "diagnostic": "ERROR: Class java.util.concurrent.locks.ReentrantLock was not found\n    at com.google.common.cache.LocalCache$Segment.<init>(LocalCache.java:1974)\n    at com.google.common.cache.LocalCache.createSegment(LocalCache.java:1769)\n    at com.google.common.cache.LocalCache.<init>(LocalCache.java:307)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.<init>(LocalCache.java:4799)\n    at com.google.common.cache.CacheBuilder.build(CacheBuilder.java:1045)\n    at com.google.common.eventbus.SubscriberRegistry.<clinit>(SubscriberRegistry.java:153)\n    at com.google.common.eventbus.EventBus.<init>(EventBus.java:159)\n    at com.google.common.eventbus.EventBus.<init>(EventBus.java:174)\n    at forge.game.Match.<init>(Match.java:38)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 24,
+    "headline": "ERROR: Class java.util.concurrent.ConcurrentLinkedQueue was not found",
+    "diagnostic": "ERROR: Class java.util.concurrent.ConcurrentLinkedQueue was not found\n    at com.google.common.cache.LocalCache$Segment.<init>(LocalCache.java:1985)\n    at com.google.common.cache.LocalCache.createSegment(LocalCache.java:1769)\n    at com.google.common.cache.LocalCache.<init>(LocalCache.java:307)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.<init>(LocalCache.java:4799)\n    at com.google.common.cache.CacheBuilder.build(CacheBuilder.java:1045)\n    at com.google.common.eventbus.SubscriberRegistry.<clinit>(SubscriberRegistry.java:153)\n    at com.google.common.eventbus.EventBus.<init>(EventBus.java:159)\n    at com.google.common.eventbus.EventBus.<init>(EventBus.java:174)\n    at forge.game.Match.<init>(Match.java:38)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 25,
+    "headline": "ERROR: Method java.lang.Runtime.addShutdownHook(Ljava/lang/Thread;)V was not found",
+    "diagnostic": "ERROR: Method java.lang.Runtime.addShutdownHook(Ljava/lang/Thread;)V was not found\n    at org.tinylog.core.TinylogLoggingProvider.<init>(TinylogLoggingProvider.java:69)\n    at org.tinylog.core.TinylogLoggingProvider.<init>(TinylogLoggingProvider.java:47)\n    at java.util.ServiceLoader.load\n    at org.tinylog.provider.ProviderRegistry.loadLoggingProvider(ProviderRegistry.java:83)\n    at org.tinylog.provider.ProviderRegistry.<clinit>(ProviderRegistry.java:39)\n    at org.tinylog.Logger.<clinit>(Logger.java:40)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 26,
+    "headline": "ERROR: Class java.util.concurrent.locks.ReadWriteLock was not found",
+    "diagnostic": "ERROR: Class java.util.concurrent.locks.ReadWriteLock was not found\n    at org.tinylog.configuration.Configuration.getSiblings(Configuration.java:220)\n    at org.tinylog.core.ConfigurationParser.getCustomLevels(ConfigurationParser.java:54)\n    at org.tinylog.core.TinylogLoggingProvider.<init>(TinylogLoggingProvider.java:57)\n    at org.tinylog.core.TinylogLoggingProvider.<init>(TinylogLoggingProvider.java:47)\n    at java.util.ServiceLoader.load\n    at org.tinylog.provider.ProviderRegistry.loadLoggingProvider(ProviderRegistry.java:83)\n    at org.tinylog.provider.ProviderRegistry.<clinit>(ProviderRegistry.java:39)\n    at org.tinylog.Logger.<clinit>(Logger.java:40)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 27,
+    "headline": "ERROR: Class java.util.concurrent.locks.ReadWriteLock was not found",
+    "diagnostic": "ERROR: Class java.util.concurrent.locks.ReadWriteLock was not found\n    at org.tinylog.configuration.Configuration.getSiblings(Configuration.java:232)\n    at org.tinylog.core.ConfigurationParser.getCustomLevels(ConfigurationParser.java:54)\n    at org.tinylog.core.TinylogLoggingProvider.<init>(TinylogLoggingProvider.java:57)\n    at org.tinylog.core.TinylogLoggingProvider.<init>(TinylogLoggingProvider.java:47)\n    at java.util.ServiceLoader.load\n    at org.tinylog.provider.ProviderRegistry.loadLoggingProvider(ProviderRegistry.java:83)\n    at org.tinylog.provider.ProviderRegistry.<clinit>(ProviderRegistry.java:39)\n    at org.tinylog.Logger.<clinit>(Logger.java:40)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 28,
+    "headline": "ERROR: Class java.util.concurrent.locks.ReadWriteLock was not found",
+    "diagnostic": "ERROR: Class java.util.concurrent.locks.ReadWriteLock was not found\n    at org.tinylog.configuration.Configuration.getSiblings(Configuration.java:232)\n    at org.tinylog.core.ConfigurationParser.getCustomLevels(ConfigurationParser.java:54)\n    at org.tinylog.core.TinylogLoggingProvider.<init>(TinylogLoggingProvider.java:57)\n    at org.tinylog.core.TinylogLoggingProvider.<init>(TinylogLoggingProvider.java:47)\n    at java.util.ServiceLoader.load\n    at org.tinylog.provider.ProviderRegistry.loadLoggingProvider(ProviderRegistry.java:83)\n    at org.tinylog.provider.ProviderRegistry.<clinit>(ProviderRegistry.java:39)\n    at org.tinylog.Logger.<clinit>(Logger.java:40)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 29,
+    "headline": "ERROR: Class java.net.URLClassLoader was not found",
+    "diagnostic": "ERROR: Class java.net.URLClassLoader was not found\n    at forge.util.Localizer.setLanguage(Localizer.java:164)\n    at forge.util.Localizer.initialize(Localizer.java:44)\n    at probe.OriginalAiFixture.bootstrap(OriginalAiFixture.java:35)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:61)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 30,
+    "headline": "ERROR: Class java.util.concurrent.CopyOnWriteArraySet was not found",
+    "diagnostic": "ERROR: Class java.util.concurrent.CopyOnWriteArraySet was not found\n    at com.google.common.eventbus.SubscriberRegistry.getSubscribers(SubscriberRegistry.java:137)\n    at com.google.common.eventbus.EventBus.post(EventBus.java:265)\n    at forge.game.Game.fireEvent(Game.java:1037)\n    at forge.game.zone.MagicStack.resolveStack(MagicStack.java:629)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:157)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 31,
+    "headline": "ERROR: Class java.util.concurrent.CopyOnWriteArraySet was not found",
+    "diagnostic": "ERROR: Class java.util.concurrent.CopyOnWriteArraySet was not found\n    at com.google.common.eventbus.SubscriberRegistry.register(SubscriberRegistry.java:91)\n    at com.google.common.eventbus.EventBus.register(EventBus.java:241)\n    at forge.game.Game.subscribeToEvents(Game.java:1040)\n    at forge.game.Game.<init>(Game.java:389)\n    at forge.game.Game.<init>(Game.java:323)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 32,
+    "headline": "ERROR: Class java.util.concurrent.CopyOnWriteArraySet was not found",
+    "diagnostic": "ERROR: Class java.util.concurrent.CopyOnWriteArraySet was not found\n    at com.google.common.eventbus.SubscriberRegistry.register(SubscriberRegistry.java:86)\n    at com.google.common.eventbus.EventBus.register(EventBus.java:241)\n    at forge.game.Game.subscribeToEvents(Game.java:1040)\n    at forge.game.Game.<init>(Game.java:389)\n    at forge.game.Game.<init>(Game.java:323)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 33,
+    "headline": "ERROR: Class java.util.concurrent.locks.ReadWriteLock was not found",
+    "diagnostic": "ERROR: Class java.util.concurrent.locks.ReadWriteLock was not found\n    at org.tinylog.configuration.Configuration.getChildren(Configuration.java:250)\n    at org.tinylog.core.TinylogLoggingConfiguration.createWriters(TinylogLoggingConfiguration.java:76)\n    at org.tinylog.core.TinylogLoggingProvider.<init>(TinylogLoggingProvider.java:63)\n    at org.tinylog.core.TinylogLoggingProvider.<init>(TinylogLoggingProvider.java:47)\n    at java.util.ServiceLoader.load\n    at org.tinylog.provider.ProviderRegistry.loadLoggingProvider(ProviderRegistry.java:83)\n    at org.tinylog.provider.ProviderRegistry.<clinit>(ProviderRegistry.java:39)\n    at org.tinylog.Logger.<clinit>(Logger.java:40)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 34,
+    "headline": "ERROR: Class java.util.concurrent.locks.ReadWriteLock was not found",
+    "diagnostic": "ERROR: Class java.util.concurrent.locks.ReadWriteLock was not found\n    at org.tinylog.configuration.Configuration.getChildren(Configuration.java:264)\n    at org.tinylog.core.TinylogLoggingConfiguration.createWriters(TinylogLoggingConfiguration.java:76)\n    at org.tinylog.core.TinylogLoggingProvider.<init>(TinylogLoggingProvider.java:63)\n    at org.tinylog.core.TinylogLoggingProvider.<init>(TinylogLoggingProvider.java:47)\n    at java.util.ServiceLoader.load\n    at org.tinylog.provider.ProviderRegistry.loadLoggingProvider(ProviderRegistry.java:83)\n    at org.tinylog.provider.ProviderRegistry.<clinit>(ProviderRegistry.java:39)\n    at org.tinylog.Logger.<clinit>(Logger.java:40)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 35,
+    "headline": "ERROR: Class java.util.concurrent.locks.ReadWriteLock was not found",
+    "diagnostic": "ERROR: Class java.util.concurrent.locks.ReadWriteLock was not found\n    at org.tinylog.configuration.Configuration.getChildren(Configuration.java:264)\n    at org.tinylog.core.TinylogLoggingConfiguration.createWriters(TinylogLoggingConfiguration.java:76)\n    at org.tinylog.core.TinylogLoggingProvider.<init>(TinylogLoggingProvider.java:63)\n    at org.tinylog.core.TinylogLoggingProvider.<init>(TinylogLoggingProvider.java:47)\n    at java.util.ServiceLoader.load\n    at org.tinylog.provider.ProviderRegistry.loadLoggingProvider(ProviderRegistry.java:83)\n    at org.tinylog.provider.ProviderRegistry.<clinit>(ProviderRegistry.java:39)\n    at org.tinylog.Logger.<clinit>(Logger.java:40)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 36,
+    "headline": "ERROR: Class java.sql.Connection was not found",
+    "diagnostic": "ERROR: Class java.sql.Connection was not found\n    at org.tinylog.writers.JdbcWriter.<init>(JdbcWriter.java:97)\n    at org.tinylog.writers.JdbcWriter.<init>(JdbcWriter.java:72)\n    at java.util.ServiceLoader.load\n    at org.tinylog.provider.ProviderRegistry.loadLoggingProvider(ProviderRegistry.java:83)\n    at org.tinylog.provider.ProviderRegistry.<clinit>(ProviderRegistry.java:39)\n    at org.tinylog.Logger.<clinit>(Logger.java:40)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 37,
+    "headline": "ERROR: Method java.io.RandomAccessFile.getChannel()Ljava/nio/channels/FileChannel; was not found",
+    "diagnostic": "ERROR: Method java.io.RandomAccessFile.getChannel()Ljava/nio/channels/FileChannel; was not found\n    at org.tinylog.writers.SharedFileWriter.<init>(SharedFileWriter.java:74)\n    at org.tinylog.writers.SharedFileWriter.<init>(SharedFileWriter.java:49)\n    at java.util.ServiceLoader.load\n    at org.tinylog.provider.ProviderRegistry.loadLoggingProvider(ProviderRegistry.java:83)\n    at org.tinylog.provider.ProviderRegistry.<clinit>(ProviderRegistry.java:39)\n    at org.tinylog.Logger.<clinit>(Logger.java:40)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 38,
+    "headline": "ERROR: Class java.nio.channels.FileLock was not found",
+    "diagnostic": "ERROR: Class java.nio.channels.FileLock was not found\n    at org.tinylog.writers.SharedFileWriter.<init>(SharedFileWriter.java:78)\n    at org.tinylog.writers.SharedFileWriter.<init>(SharedFileWriter.java:49)\n    at java.util.ServiceLoader.load\n    at org.tinylog.provider.ProviderRegistry.loadLoggingProvider(ProviderRegistry.java:83)\n    at org.tinylog.provider.ProviderRegistry.<clinit>(ProviderRegistry.java:39)\n    at org.tinylog.Logger.<clinit>(Logger.java:40)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 39,
+    "headline": "ERROR: Method java.io.RandomAccessFile.getChannel()Ljava/nio/channels/FileChannel; was not found",
+    "diagnostic": "ERROR: Method java.io.RandomAccessFile.getChannel()Ljava/nio/channels/FileChannel; was not found\n    at org.tinylog.writers.SharedFileWriter.<init>(SharedFileWriter.java:81)\n    at org.tinylog.writers.SharedFileWriter.<init>(SharedFileWriter.java:49)\n    at java.util.ServiceLoader.load\n    at org.tinylog.provider.ProviderRegistry.loadLoggingProvider(ProviderRegistry.java:83)\n    at org.tinylog.provider.ProviderRegistry.<clinit>(ProviderRegistry.java:39)\n    at org.tinylog.Logger.<clinit>(Logger.java:40)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 40,
+    "headline": "ERROR: Class java.nio.channels.FileLock was not found",
+    "diagnostic": "ERROR: Class java.nio.channels.FileLock was not found\n    at org.tinylog.writers.SharedFileWriter.<init>(SharedFileWriter.java:84)\n    at org.tinylog.writers.SharedFileWriter.<init>(SharedFileWriter.java:49)\n    at java.util.ServiceLoader.load\n    at org.tinylog.provider.ProviderRegistry.loadLoggingProvider(ProviderRegistry.java:83)\n    at org.tinylog.provider.ProviderRegistry.<clinit>(ProviderRegistry.java:39)\n    at org.tinylog.Logger.<clinit>(Logger.java:40)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 41,
+    "headline": "ERROR: Class java.util.StringJoiner was not found",
+    "diagnostic": "ERROR: Class java.util.StringJoiner was not found\n    at org.apache.commons.lang3.stream.LangCollectors.lambda$joining$0(LangCollectors.java:210)\n    at org.apache.commons.lang3.stream.LangCollectors$joining$lambda$_4_0.get(LangCollectors.java:210)\n    at org.apache.commons.lang3.stream.LangCollectors$joining$lambda$_4_0.get(LangCollectors.java:210)\n    at java.util.stream.impl.SimpleStreamImpl.collect(TSimpleStreamImpl.java:223)\n    at forge.game.card.CardLists.getDifferentNamesCount(CardLists.java:500)\n    at forge.game.ability.AbilityUtils.handlePaid(AbilityUtils.java:3762)\n    at forge.game.ability.AbilityUtils.calculateAmount(AbilityUtils.java:504)\n    at forge.game.ability.AbilityUtils.calculateAmount(AbilityUtils.java:368)\n    at forge.game.cost.CostAdjustment.adjust(CostAdjustment.java:86)\n    at forge.game.cost.CostPayment.payComputerCosts(CostPayment.java:187)\n    at forge.ai.ComputerUtil.playStack(ComputerUtil.java:248)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:144)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 42,
+    "headline": "ERROR: Method java.io.RandomAccessFile.getChannel()Ljava/nio/channels/FileChannel; was not found",
+    "diagnostic": "ERROR: Method java.io.RandomAccessFile.getChannel()Ljava/nio/channels/FileChannel; was not found\n    at org.tinylog.writers.AbstractFileBasedWriter.createByteArrayWriter(AbstractFileBasedWriter.java:108)\n    at org.tinylog.writers.FileWriter.<init>(FileWriter.java:61)\n    at org.tinylog.writers.FileWriter.<init>(FileWriter.java:40)\n    at java.util.ServiceLoader.load\n    at org.tinylog.provider.ProviderRegistry.loadLoggingProvider(ProviderRegistry.java:83)\n    at org.tinylog.provider.ProviderRegistry.<clinit>(ProviderRegistry.java:39)\n    at org.tinylog.Logger.<clinit>(Logger.java:40)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 43,
+    "headline": "ERROR: Class java.nio.channels.FileLock was not found",
+    "diagnostic": "ERROR: Class java.nio.channels.FileLock was not found\n    at org.tinylog.writers.AbstractFileBasedWriter.createByteArrayWriter(AbstractFileBasedWriter.java:112)\n    at org.tinylog.writers.FileWriter.<init>(FileWriter.java:61)\n    at org.tinylog.writers.FileWriter.<init>(FileWriter.java:40)\n    at java.util.ServiceLoader.load\n    at org.tinylog.provider.ProviderRegistry.loadLoggingProvider(ProviderRegistry.java:83)\n    at org.tinylog.provider.ProviderRegistry.<clinit>(ProviderRegistry.java:39)\n    at org.tinylog.Logger.<clinit>(Logger.java:40)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 44,
+    "headline": "ERROR: Class java.nio.channels.FileLock was not found",
+    "diagnostic": "ERROR: Class java.nio.channels.FileLock was not found\n    at org.tinylog.writers.AbstractFileBasedWriter.createByteArrayWriter(AbstractFileBasedWriter.java:112)\n    at org.tinylog.writers.FileWriter.<init>(FileWriter.java:61)\n    at org.tinylog.writers.FileWriter.<init>(FileWriter.java:40)\n    at java.util.ServiceLoader.load\n    at org.tinylog.provider.ProviderRegistry.loadLoggingProvider(ProviderRegistry.java:83)\n    at org.tinylog.provider.ProviderRegistry.<clinit>(ProviderRegistry.java:39)\n    at org.tinylog.Logger.<clinit>(Logger.java:40)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 45,
+    "headline": "ERROR: Class javax.naming.InitialContext was not found",
+    "diagnostic": "ERROR: Class javax.naming.InitialContext was not found\n    at org.tinylog.writers.JdbcWriter.connect(JdbcWriter.java:339)\n    at org.tinylog.writers.JdbcWriter.<init>(JdbcWriter.java:96)\n    at org.tinylog.writers.JdbcWriter.<init>(JdbcWriter.java:72)\n    at java.util.ServiceLoader.load\n    at org.tinylog.provider.ProviderRegistry.loadLoggingProvider(ProviderRegistry.java:83)\n    at org.tinylog.provider.ProviderRegistry.<clinit>(ProviderRegistry.java:39)\n    at org.tinylog.Logger.<clinit>(Logger.java:40)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 46,
+    "headline": "ERROR: Class javax.sql.DataSource was not found",
+    "diagnostic": "ERROR: Class javax.sql.DataSource was not found\n    at org.tinylog.writers.JdbcWriter.connect(JdbcWriter.java:343)\n    at org.tinylog.writers.JdbcWriter.<init>(JdbcWriter.java:96)\n    at org.tinylog.writers.JdbcWriter.<init>(JdbcWriter.java:72)\n    at java.util.ServiceLoader.load\n    at org.tinylog.provider.ProviderRegistry.loadLoggingProvider(ProviderRegistry.java:83)\n    at org.tinylog.provider.ProviderRegistry.<clinit>(ProviderRegistry.java:39)\n    at org.tinylog.Logger.<clinit>(Logger.java:40)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 47,
+    "headline": "ERROR: Class javax.sql.DataSource was not found",
+    "diagnostic": "ERROR: Class javax.sql.DataSource was not found\n    at org.tinylog.writers.JdbcWriter.connect(JdbcWriter.java:341)\n    at org.tinylog.writers.JdbcWriter.<init>(JdbcWriter.java:96)\n    at org.tinylog.writers.JdbcWriter.<init>(JdbcWriter.java:72)\n    at java.util.ServiceLoader.load\n    at org.tinylog.provider.ProviderRegistry.loadLoggingProvider(ProviderRegistry.java:83)\n    at org.tinylog.provider.ProviderRegistry.<clinit>(ProviderRegistry.java:39)\n    at org.tinylog.Logger.<clinit>(Logger.java:40)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 48,
+    "headline": "ERROR: Class java.sql.DriverManager was not found",
+    "diagnostic": "ERROR: Class java.sql.DriverManager was not found\n    at org.tinylog.writers.JdbcWriter.connect(JdbcWriter.java:349)\n    at org.tinylog.writers.JdbcWriter.<init>(JdbcWriter.java:96)\n    at org.tinylog.writers.JdbcWriter.<init>(JdbcWriter.java:72)\n    at java.util.ServiceLoader.load\n    at org.tinylog.provider.ProviderRegistry.loadLoggingProvider(ProviderRegistry.java:83)\n    at org.tinylog.provider.ProviderRegistry.<clinit>(ProviderRegistry.java:39)\n    at org.tinylog.Logger.<clinit>(Logger.java:40)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 49,
+    "headline": "ERROR: Class java.sql.DriverManager was not found",
+    "diagnostic": "ERROR: Class java.sql.DriverManager was not found\n    at org.tinylog.writers.JdbcWriter.connect(JdbcWriter.java:347)\n    at org.tinylog.writers.JdbcWriter.<init>(JdbcWriter.java:96)\n    at org.tinylog.writers.JdbcWriter.<init>(JdbcWriter.java:72)\n    at java.util.ServiceLoader.load\n    at org.tinylog.provider.ProviderRegistry.loadLoggingProvider(ProviderRegistry.java:83)\n    at org.tinylog.provider.ProviderRegistry.<clinit>(ProviderRegistry.java:39)\n    at org.tinylog.Logger.<clinit>(Logger.java:40)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 50,
+    "headline": "ERROR: Method java.io.File.toPath()Ljava/nio/file/Path; was not found",
+    "diagnostic": "ERROR: Method java.io.File.toPath()Ljava/nio/file/Path; was not found\n    at org.tinylog.writers.RollingFileWriter.createByteArrayWriterAndLinkLatest(RollingFileWriter.java:250)\n    at org.tinylog.writers.RollingFileWriter.<init>(RollingFileWriter.java:112)\n    at org.tinylog.writers.RollingFileWriter.<init>(RollingFileWriter.java:65)\n    at java.util.ServiceLoader.load\n    at org.tinylog.provider.ProviderRegistry.loadLoggingProvider(ProviderRegistry.java:83)\n    at org.tinylog.provider.ProviderRegistry.<clinit>(ProviderRegistry.java:39)\n    at org.tinylog.Logger.<clinit>(Logger.java:40)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 51,
+    "headline": "ERROR: Class java.util.concurrent.ConcurrentLinkedQueue was not found",
+    "diagnostic": "ERROR: Class java.util.concurrent.ConcurrentLinkedQueue was not found\n    at forge.ai.AiAttackController.declareAttackers(AiAttackController.java:888)\n    at forge.ai.ComputerUtilCard.useRemovalNow(ComputerUtilCard.java:1250)\n    at forge.ai.ability.DamageDealAi.damageChoosingTargets(DamageDealAi.java:625)\n    at forge.ai.ability.DamageDealAi.damageTargetAI(DamageDealAi.java:470)\n    at forge.ai.ability.DamageDealAi.chkDrawback(DamageDealAi.java:91)\n    at forge.ai.SpellAbilityAi.chkDrawbackWithSubs(SpellAbilityAi.java:271)\n    at forge.ai.ComputerUtilMana.groupSourcesByManaColor(ComputerUtilMana.java:1688)\n    at forge.ai.ComputerUtilMana.getSourcesForShards(ComputerUtilMana.java:997)\n    at forge.ai.ComputerUtilMana.payManaCost(ComputerUtilMana.java:661)\n    at forge.ai.ComputerUtilMana.payManaCost(ComputerUtilMana.java:75)\n    at forge.ai.ComputerUtilMana.canPayManaCost(ComputerUtilMana.java:64)\n    at forge.ai.ComputerUtilCost.canPayCost(ComputerUtilCost.java:645)\n    at forge.ai.ComputerUtilCost.canPayCost(ComputerUtilCost.java:541)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:115)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 52,
+    "headline": "ERROR: Class java.util.concurrent.ExecutorService was not found",
+    "diagnostic": "ERROR: Class java.util.concurrent.ExecutorService was not found\n    at forge.ai.AiAttackController.declareAttackers(AiAttackController.java:973)\n    at forge.ai.ComputerUtilCard.useRemovalNow(ComputerUtilCard.java:1250)\n    at forge.ai.ability.DamageDealAi.damageChoosingTargets(DamageDealAi.java:625)\n    at forge.ai.ability.DamageDealAi.damageTargetAI(DamageDealAi.java:470)\n    at forge.ai.ability.DamageDealAi.chkDrawback(DamageDealAi.java:91)\n    at forge.ai.SpellAbilityAi.chkDrawbackWithSubs(SpellAbilityAi.java:271)\n    at forge.ai.ComputerUtilMana.groupSourcesByManaColor(ComputerUtilMana.java:1688)\n    at forge.ai.ComputerUtilMana.getSourcesForShards(ComputerUtilMana.java:997)\n    at forge.ai.ComputerUtilMana.payManaCost(ComputerUtilMana.java:661)\n    at forge.ai.ComputerUtilMana.payManaCost(ComputerUtilMana.java:75)\n    at forge.ai.ComputerUtilMana.canPayManaCost(ComputerUtilMana.java:64)\n    at forge.ai.ComputerUtilCost.canPayCost(ComputerUtilCost.java:645)\n    at forge.ai.ComputerUtilCost.canPayCost(ComputerUtilCost.java:541)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:115)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 53,
+    "headline": "ERROR: Class java.util.concurrent.ExecutorService was not found",
+    "diagnostic": "ERROR: Class java.util.concurrent.ExecutorService was not found\n    at forge.ai.AiAttackController.declareAttackers(AiAttackController.java:980)\n    at forge.ai.ComputerUtilCard.useRemovalNow(ComputerUtilCard.java:1250)\n    at forge.ai.ability.DamageDealAi.damageChoosingTargets(DamageDealAi.java:625)\n    at forge.ai.ability.DamageDealAi.damageTargetAI(DamageDealAi.java:470)\n    at forge.ai.ability.DamageDealAi.chkDrawback(DamageDealAi.java:91)\n    at forge.ai.SpellAbilityAi.chkDrawbackWithSubs(SpellAbilityAi.java:271)\n    at forge.ai.ComputerUtilMana.groupSourcesByManaColor(ComputerUtilMana.java:1688)\n    at forge.ai.ComputerUtilMana.getSourcesForShards(ComputerUtilMana.java:997)\n    at forge.ai.ComputerUtilMana.payManaCost(ComputerUtilMana.java:661)\n    at forge.ai.ComputerUtilMana.payManaCost(ComputerUtilMana.java:75)\n    at forge.ai.ComputerUtilMana.canPayManaCost(ComputerUtilMana.java:64)\n    at forge.ai.ComputerUtilCost.canPayCost(ComputerUtilCost.java:645)\n    at forge.ai.ComputerUtilCost.canPayCost(ComputerUtilCost.java:541)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:115)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 54,
+    "headline": "ERROR: Class java.util.concurrent.ExecutorService was not found",
+    "diagnostic": "ERROR: Class java.util.concurrent.ExecutorService was not found\n    at forge.ai.AiAttackController.declareAttackers(AiAttackController.java:980)\n    at forge.ai.ComputerUtilCard.useRemovalNow(ComputerUtilCard.java:1250)\n    at forge.ai.ability.DamageDealAi.damageChoosingTargets(DamageDealAi.java:625)\n    at forge.ai.ability.DamageDealAi.damageTargetAI(DamageDealAi.java:470)\n    at forge.ai.ability.DamageDealAi.chkDrawback(DamageDealAi.java:91)\n    at forge.ai.SpellAbilityAi.chkDrawbackWithSubs(SpellAbilityAi.java:271)\n    at forge.ai.ComputerUtilMana.groupSourcesByManaColor(ComputerUtilMana.java:1688)\n    at forge.ai.ComputerUtilMana.getSourcesForShards(ComputerUtilMana.java:997)\n    at forge.ai.ComputerUtilMana.payManaCost(ComputerUtilMana.java:661)\n    at forge.ai.ComputerUtilMana.payManaCost(ComputerUtilMana.java:75)\n    at forge.ai.ComputerUtilMana.canPayManaCost(ComputerUtilMana.java:64)\n    at forge.ai.ComputerUtilCost.canPayCost(ComputerUtilCost.java:645)\n    at forge.ai.ComputerUtilCost.canPayCost(ComputerUtilCost.java:541)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:115)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 55,
+    "headline": "ERROR: Class java.util.concurrent.ExecutorService was not found",
+    "diagnostic": "ERROR: Class java.util.concurrent.ExecutorService was not found\n    at forge.ai.AiAttackController.declareAttackers(AiAttackController.java:980)\n    at forge.ai.ComputerUtilCard.useRemovalNow(ComputerUtilCard.java:1250)\n    at forge.ai.ability.DamageDealAi.damageChoosingTargets(DamageDealAi.java:625)\n    at forge.ai.ability.DamageDealAi.damageTargetAI(DamageDealAi.java:470)\n    at forge.ai.ability.DamageDealAi.chkDrawback(DamageDealAi.java:91)\n    at forge.ai.SpellAbilityAi.chkDrawbackWithSubs(SpellAbilityAi.java:271)\n    at forge.ai.ComputerUtilMana.groupSourcesByManaColor(ComputerUtilMana.java:1688)\n    at forge.ai.ComputerUtilMana.getSourcesForShards(ComputerUtilMana.java:997)\n    at forge.ai.ComputerUtilMana.payManaCost(ComputerUtilMana.java:661)\n    at forge.ai.ComputerUtilMana.payManaCost(ComputerUtilMana.java:75)\n    at forge.ai.ComputerUtilMana.canPayManaCost(ComputerUtilMana.java:64)\n    at forge.ai.ComputerUtilCost.canPayCost(ComputerUtilCost.java:645)\n    at forge.ai.ComputerUtilCost.canPayCost(ComputerUtilCost.java:541)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:115)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 56,
+    "headline": "ERROR: Class java.util.concurrent.Executors was not found",
+    "diagnostic": "ERROR: Class java.util.concurrent.Executors was not found\n    at forge.ai.AiAttackController.declareAttackers(AiAttackController.java:895)\n    at forge.ai.ComputerUtilCard.useRemovalNow(ComputerUtilCard.java:1250)\n    at forge.ai.ability.DamageDealAi.damageChoosingTargets(DamageDealAi.java:625)\n    at forge.ai.ability.DamageDealAi.damageTargetAI(DamageDealAi.java:470)\n    at forge.ai.ability.DamageDealAi.chkDrawback(DamageDealAi.java:91)\n    at forge.ai.SpellAbilityAi.chkDrawbackWithSubs(SpellAbilityAi.java:271)\n    at forge.ai.ComputerUtilMana.groupSourcesByManaColor(ComputerUtilMana.java:1688)\n    at forge.ai.ComputerUtilMana.getSourcesForShards(ComputerUtilMana.java:997)\n    at forge.ai.ComputerUtilMana.payManaCost(ComputerUtilMana.java:661)\n    at forge.ai.ComputerUtilMana.payManaCost(ComputerUtilMana.java:75)\n    at forge.ai.ComputerUtilMana.canPayManaCost(ComputerUtilMana.java:64)\n    at forge.ai.ComputerUtilCost.canPayCost(ComputerUtilCost.java:645)\n    at forge.ai.ComputerUtilCost.canPayCost(ComputerUtilCost.java:541)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:115)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 57,
+    "headline": "ERROR: Class java.util.concurrent.ScheduledExecutorService was not found",
+    "diagnostic": "ERROR: Class java.util.concurrent.ScheduledExecutorService was not found\n    at forge.util.ThreadUtil.delay(ThreadUtil.java:48)\n    at forge.util.AITimeoutTracker.begin(AITimeoutTracker.java:110)\n    at forge.ai.AiAttackController.declareAttackers(AiAttackController.java:817)\n    at forge.ai.ComputerUtilCard.useRemovalNow(ComputerUtilCard.java:1250)\n    at forge.ai.ability.DamageDealAi.damageChoosingTargets(DamageDealAi.java:625)\n    at forge.ai.ability.DamageDealAi.damageTargetAI(DamageDealAi.java:470)\n    at forge.ai.ability.DamageDealAi.chkDrawback(DamageDealAi.java:91)\n    at forge.ai.SpellAbilityAi.chkDrawbackWithSubs(SpellAbilityAi.java:271)\n    at forge.ai.ComputerUtilMana.groupSourcesByManaColor(ComputerUtilMana.java:1688)\n    at forge.ai.ComputerUtilMana.getSourcesForShards(ComputerUtilMana.java:997)\n    at forge.ai.ComputerUtilMana.payManaCost(ComputerUtilMana.java:661)\n    at forge.ai.ComputerUtilMana.payManaCost(ComputerUtilMana.java:75)\n    at forge.ai.ComputerUtilMana.canPayManaCost(ComputerUtilMana.java:64)\n    at forge.ai.ComputerUtilCost.canPayCost(ComputerUtilCost.java:645)\n    at forge.ai.ComputerUtilCost.canPayCost(ComputerUtilCost.java:541)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:115)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 58,
+    "headline": "ERROR: Class java.util.concurrent.Executors was not found",
+    "diagnostic": "ERROR: Class java.util.concurrent.Executors was not found\n    at forge.util.ThreadUtil.<clinit>(ThreadUtil.java:25)\n    at forge.util.AITimeoutTracker.begin(AITimeoutTracker.java:110)\n    at forge.ai.AiAttackController.declareAttackers(AiAttackController.java:817)\n    at forge.ai.ComputerUtilCard.useRemovalNow(ComputerUtilCard.java:1250)\n    at forge.ai.ability.DamageDealAi.damageChoosingTargets(DamageDealAi.java:625)\n    at forge.ai.ability.DamageDealAi.damageTargetAI(DamageDealAi.java:470)\n    at forge.ai.ability.DamageDealAi.chkDrawback(DamageDealAi.java:91)\n    at forge.ai.SpellAbilityAi.chkDrawbackWithSubs(SpellAbilityAi.java:271)\n    at forge.ai.ComputerUtilMana.groupSourcesByManaColor(ComputerUtilMana.java:1688)\n    at forge.ai.ComputerUtilMana.getSourcesForShards(ComputerUtilMana.java:997)\n    at forge.ai.ComputerUtilMana.payManaCost(ComputerUtilMana.java:661)\n    at forge.ai.ComputerUtilMana.payManaCost(ComputerUtilMana.java:75)\n    at forge.ai.ComputerUtilMana.canPayManaCost(ComputerUtilMana.java:64)\n    at forge.ai.ComputerUtilCost.canPayCost(ComputerUtilCost.java:645)\n    at forge.ai.ComputerUtilCost.canPayCost(ComputerUtilCost.java:541)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:115)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 59,
+    "headline": "ERROR: Class forge.util.ThreadUtil$WorkerThreadFactory implements java.util.concurrent.ThreadFactory, which is missing in the classpath",
+    "diagnostic": "ERROR: Class forge.util.ThreadUtil$WorkerThreadFactory implements java.util.concurrent.ThreadFactory, which is missing in the classpath"
+  },
+  {
+    "ordinal": 60,
+    "headline": "ERROR: Class java.util.concurrent.Executors was not found",
+    "diagnostic": "ERROR: Class java.util.concurrent.Executors was not found\n    at org.tinylog.converters.GzipFileConverter.<init>(GzipFileConverter.java:29)\n    at java.util.ServiceLoader.load\n    at org.tinylog.provider.ProviderRegistry.loadLoggingProvider(ProviderRegistry.java:83)\n    at org.tinylog.provider.ProviderRegistry.<clinit>(ProviderRegistry.java:39)\n    at org.tinylog.Logger.<clinit>(Logger.java:40)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 61,
+    "headline": "ERROR: Method java.util.Date.toInstant()Ljava/time/Instant; was not found",
+    "diagnostic": "ERROR: Method java.util.Date.toInstant()Ljava/time/Instant; was not found\n    at org.tinylog.runtime.LegacyTimestamp.toInstant(LegacyTimestamp.java:51)\n    at org.tinylog.runtime.PreciseTimestampFormatter.format(PreciseTimestampFormatter.java:75)\n    at org.tinylog.path.DateSegment.createToken(DateSegment.java:52)\n    at org.tinylog.path.DynamicPath.resolve(DynamicPath.java:117)\n    at org.tinylog.writers.RollingFileWriter.<init>(RollingFileWriter.java:105)\n    at org.tinylog.writers.RollingFileWriter.<init>(RollingFileWriter.java:65)\n    at java.util.ServiceLoader.load\n    at org.tinylog.provider.ProviderRegistry.loadLoggingProvider(ProviderRegistry.java:83)\n    at org.tinylog.provider.ProviderRegistry.<clinit>(ProviderRegistry.java:39)\n    at org.tinylog.Logger.<clinit>(Logger.java:40)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 62,
+    "headline": "ERROR: Method java.util.Date.from(Ljava/time/Instant;)Ljava/util/Date; was not found",
+    "diagnostic": "ERROR: Method java.util.Date.from(Ljava/time/Instant;)Ljava/util/Date; was not found\n    at org.tinylog.runtime.PreciseTimestamp.toDate(PreciseTimestamp.java:51)\n    at org.tinylog.runtime.LegacyTimestampFormatter.format(LegacyTimestampFormatter.java:61)\n    at org.tinylog.path.DateSegment.createToken(DateSegment.java:52)\n    at org.tinylog.path.DynamicPath.resolve(DynamicPath.java:117)\n    at org.tinylog.writers.RollingFileWriter.<init>(RollingFileWriter.java:105)\n    at org.tinylog.writers.RollingFileWriter.<init>(RollingFileWriter.java:65)\n    at java.util.ServiceLoader.load\n    at org.tinylog.provider.ProviderRegistry.loadLoggingProvider(ProviderRegistry.java:83)\n    at org.tinylog.provider.ProviderRegistry.<clinit>(ProviderRegistry.java:39)\n    at org.tinylog.Logger.<clinit>(Logger.java:40)\n    at forge.game.Game.<clinit>(Game.java:66)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:77)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 63,
+    "headline": "ERROR: Method java.util.Collections.unmodifiableSortedSet(Ljava/util/SortedSet;)Ljava/util/SortedSet; was not found",
+    "diagnostic": "ERROR: Method java.util.Collections.unmodifiableSortedSet(Ljava/util/SortedSet;)Ljava/util/SortedSet; was not found\n    at com.google.common.collect.Multimaps$CustomSetMultimap.unmodifiableCollectionSubclass(Multimaps.java:451)\n    at com.google.common.collect.AbstractMapBasedMultimap.removeAll(AbstractMapBasedMultimap.java:262)\n    at com.google.common.collect.AbstractSetMultimap.removeAll(AbstractSetMultimap.java:101)\n    at com.google.common.collect.AbstractSetMultimap.removeAll(AbstractSetMultimap.java:36)\n    at forge.game.keyword.KeywordCollection.removeAll(KeywordCollection.java:101)\n    at forge.game.card.Card.updateKeywordsCache(Card.java:5316)\n    at forge.game.card.Card.updateKeywordsCache(Card.java:5296)\n    at forge.game.card.CardFactory.buildAbilities(CardFactory.java:262)\n    at forge.game.card.CardFactory.getCard(CardFactory.java:176)\n    at forge.game.card.CardFactory.getCard(CardFactory.java:171)\n    at probe.OriginalAiFixture.card(OriginalAiFixture.java:49)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:86)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 64,
+    "headline": "ERROR: Class java.util.concurrent.FutureTask was not found",
+    "diagnostic": "ERROR: Class java.util.concurrent.FutureTask was not found\n    at forge.ai.AiController.chooseSpellAbilityToPlayFromList(AiController.java:1685)\n    at forge.ai.AiController.chooseSpellAbilityToPlayImpl(AiController.java:1453)\n    at forge.ai.AiController.chooseSpellAbilityToPlay(AiController.java:1425)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:127)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 65,
+    "headline": "ERROR: Method java.lang.Thread.stop()V was not found",
+    "diagnostic": "ERROR: Method java.lang.Thread.stop()V was not found\n    at forge.ai.AiController.chooseSpellAbilityToPlayFromList(AiController.java:1811)\n    at forge.ai.AiController.chooseSpellAbilityToPlayImpl(AiController.java:1453)\n    at forge.ai.AiController.chooseSpellAbilityToPlay(AiController.java:1425)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:127)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 66,
+    "headline": "ERROR: Class java.util.concurrent.FutureTask was not found",
+    "diagnostic": "ERROR: Class java.util.concurrent.FutureTask was not found\n    at forge.ai.AiController.chooseSpellAbilityToPlayFromList(AiController.java:1797)\n    at forge.ai.AiController.chooseSpellAbilityToPlayImpl(AiController.java:1453)\n    at forge.ai.AiController.chooseSpellAbilityToPlay(AiController.java:1425)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:127)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 67,
+    "headline": "ERROR: Class java.util.concurrent.FutureTask was not found",
+    "diagnostic": "ERROR: Class java.util.concurrent.FutureTask was not found\n    at forge.ai.AiController.chooseSpellAbilityToPlayFromList(AiController.java:1782)\n    at forge.ai.AiController.chooseSpellAbilityToPlayImpl(AiController.java:1453)\n    at forge.ai.AiController.chooseSpellAbilityToPlay(AiController.java:1425)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:127)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 68,
+    "headline": "ERROR: Method java.util.Collections.unmodifiableSortedSet(Ljava/util/SortedSet;)Ljava/util/SortedSet; was not found",
+    "diagnostic": "ERROR: Method java.util.Collections.unmodifiableSortedSet(Ljava/util/SortedSet;)Ljava/util/SortedSet; was not found\n    at com.google.common.collect.Sets$UnmodifiableNavigableSet.<init>(Sets.java:1815)\n    at com.google.common.collect.Sets.unmodifiableNavigableSet(Sets.java:1805)\n    at com.google.common.collect.Multimaps$CustomSetMultimap.unmodifiableCollectionSubclass(Multimaps.java:449)\n    at com.google.common.collect.AbstractMapBasedMultimap.removeAll(AbstractMapBasedMultimap.java:262)\n    at com.google.common.collect.AbstractSetMultimap.removeAll(AbstractSetMultimap.java:101)\n    at com.google.common.collect.AbstractSetMultimap.removeAll(AbstractSetMultimap.java:36)\n    at forge.game.keyword.KeywordCollection.removeAll(KeywordCollection.java:101)\n    at forge.game.card.Card.updateKeywordsCache(Card.java:5316)\n    at forge.game.card.Card.updateKeywordsCache(Card.java:5296)\n    at forge.game.card.CardFactory.buildAbilities(CardFactory.java:262)\n    at forge.game.card.CardFactory.getCard(CardFactory.java:176)\n    at forge.game.card.CardFactory.getCard(CardFactory.java:171)\n    at probe.OriginalAiFixture.card(OriginalAiFixture.java:49)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:86)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 69,
+    "headline": "ERROR: Method com.google.common.cache.LocalCache$Segment.lock()V was not found",
+    "diagnostic": "ERROR: Method com.google.common.cache.LocalCache$Segment.lock()V was not found\n    at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2118)\n    at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2075)\n    at com.google.common.cache.LocalCache.get(LocalCache.java:3900)\n    at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3923)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4806)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4813)\n    at com.google.common.eventbus.SubscriberRegistry.flattenHierarchy(SubscriberRegistry.java:240)\n    at com.google.common.eventbus.SubscriberRegistry.getSubscribers(SubscriberRegistry.java:128)\n    at com.google.common.eventbus.EventBus.post(EventBus.java:265)\n    at forge.game.Game.fireEvent(Game.java:1037)\n    at forge.game.zone.MagicStack.resolveStack(MagicStack.java:629)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:157)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 70,
+    "headline": "ERROR: Method com.google.common.cache.LocalCache$Segment.unlock()V was not found",
+    "diagnostic": "ERROR: Method com.google.common.cache.LocalCache$Segment.unlock()V was not found\n    at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2175)\n    at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2075)\n    at com.google.common.cache.LocalCache.get(LocalCache.java:3900)\n    at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3923)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4806)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4813)\n    at com.google.common.eventbus.SubscriberRegistry.flattenHierarchy(SubscriberRegistry.java:240)\n    at com.google.common.eventbus.SubscriberRegistry.getSubscribers(SubscriberRegistry.java:128)\n    at com.google.common.eventbus.EventBus.post(EventBus.java:265)\n    at forge.game.Game.fireEvent(Game.java:1037)\n    at forge.game.zone.MagicStack.resolveStack(MagicStack.java:629)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:157)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 71,
+    "headline": "ERROR: Class java.util.concurrent.atomic.AtomicReferenceArray was not found",
+    "diagnostic": "ERROR: Class java.util.concurrent.atomic.AtomicReferenceArray was not found\n    at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2169)\n    at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2075)\n    at com.google.common.cache.LocalCache.get(LocalCache.java:3900)\n    at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3923)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4806)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4813)\n    at com.google.common.eventbus.SubscriberRegistry.flattenHierarchy(SubscriberRegistry.java:240)\n    at com.google.common.eventbus.SubscriberRegistry.getSubscribers(SubscriberRegistry.java:128)\n    at com.google.common.eventbus.EventBus.post(EventBus.java:265)\n    at forge.game.Game.fireEvent(Game.java:1037)\n    at forge.game.zone.MagicStack.resolveStack(MagicStack.java:629)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:157)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 72,
+    "headline": "ERROR: Class java.util.concurrent.atomic.AtomicReferenceArray was not found",
+    "diagnostic": "ERROR: Class java.util.concurrent.atomic.AtomicReferenceArray was not found\n    at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2126)\n    at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2075)\n    at com.google.common.cache.LocalCache.get(LocalCache.java:3900)\n    at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3923)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4806)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4813)\n    at com.google.common.eventbus.SubscriberRegistry.flattenHierarchy(SubscriberRegistry.java:240)\n    at com.google.common.eventbus.SubscriberRegistry.getSubscribers(SubscriberRegistry.java:128)\n    at com.google.common.eventbus.EventBus.post(EventBus.java:265)\n    at forge.game.Game.fireEvent(Game.java:1037)\n    at forge.game.zone.MagicStack.resolveStack(MagicStack.java:629)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:157)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 73,
+    "headline": "ERROR: Method com.google.common.cache.LocalCache$Segment.unlock()V was not found",
+    "diagnostic": "ERROR: Method com.google.common.cache.LocalCache$Segment.unlock()V was not found\n    at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2175)\n    at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2075)\n    at com.google.common.cache.LocalCache.get(LocalCache.java:3900)\n    at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3923)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4806)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4813)\n    at com.google.common.eventbus.SubscriberRegistry.flattenHierarchy(SubscriberRegistry.java:240)\n    at com.google.common.eventbus.SubscriberRegistry.getSubscribers(SubscriberRegistry.java:128)\n    at com.google.common.eventbus.EventBus.post(EventBus.java:265)\n    at forge.game.Game.fireEvent(Game.java:1037)\n    at forge.game.zone.MagicStack.resolveStack(MagicStack.java:629)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:157)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 74,
+    "headline": "ERROR: Method com.google.common.cache.LocalCache$Segment.unlock()V was not found",
+    "diagnostic": "ERROR: Method com.google.common.cache.LocalCache$Segment.unlock()V was not found\n    at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2175)\n    at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2075)\n    at com.google.common.cache.LocalCache.get(LocalCache.java:3900)\n    at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3923)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4806)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4813)\n    at com.google.common.eventbus.SubscriberRegistry.flattenHierarchy(SubscriberRegistry.java:240)\n    at com.google.common.eventbus.SubscriberRegistry.getSubscribers(SubscriberRegistry.java:128)\n    at com.google.common.eventbus.EventBus.post(EventBus.java:265)\n    at forge.game.Game.fireEvent(Game.java:1037)\n    at forge.game.zone.MagicStack.resolveStack(MagicStack.java:629)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:157)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 75,
+    "headline": "ERROR: Class java.util.concurrent.atomic.AtomicReferenceArray was not found",
+    "diagnostic": "ERROR: Class java.util.concurrent.atomic.AtomicReferenceArray was not found\n    at com.google.common.cache.LocalCache$Segment.getFirst(LocalCache.java:2609)\n    at com.google.common.cache.LocalCache$Segment.getEntry(LocalCache.java:2616)\n    at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2058)\n    at com.google.common.cache.LocalCache.get(LocalCache.java:3900)\n    at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3923)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4806)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4813)\n    at com.google.common.eventbus.SubscriberRegistry.flattenHierarchy(SubscriberRegistry.java:240)\n    at com.google.common.eventbus.SubscriberRegistry.getSubscribers(SubscriberRegistry.java:128)\n    at com.google.common.eventbus.EventBus.post(EventBus.java:265)\n    at forge.game.Game.fireEvent(Game.java:1037)\n    at forge.game.zone.MagicStack.resolveStack(MagicStack.java:629)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:157)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 76,
+    "headline": "ERROR: Method com.google.common.cache.LocalCache$Segment.tryLock()Z was not found",
+    "diagnostic": "ERROR: Method com.google.common.cache.LocalCache$Segment.tryLock()Z was not found\n    at com.google.common.cache.LocalCache$Segment.tryDrainReferenceQueues(LocalCache.java:2377)\n    at com.google.common.cache.LocalCache$Segment.getEntry(LocalCache.java:2623)\n    at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2058)\n    at com.google.common.cache.LocalCache.get(LocalCache.java:3900)\n    at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3923)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4806)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4813)\n    at com.google.common.eventbus.SubscriberRegistry.flattenHierarchy(SubscriberRegistry.java:240)\n    at com.google.common.eventbus.SubscriberRegistry.getSubscribers(SubscriberRegistry.java:128)\n    at com.google.common.eventbus.EventBus.post(EventBus.java:265)\n    at forge.game.Game.fireEvent(Game.java:1037)\n    at forge.game.zone.MagicStack.resolveStack(MagicStack.java:629)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:157)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 77,
+    "headline": "ERROR: Method com.google.common.cache.LocalCache$Segment.unlock()V was not found",
+    "diagnostic": "ERROR: Method com.google.common.cache.LocalCache$Segment.unlock()V was not found\n    at com.google.common.cache.LocalCache$Segment.tryDrainReferenceQueues(LocalCache.java:2381)\n    at com.google.common.cache.LocalCache$Segment.getEntry(LocalCache.java:2623)\n    at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2058)\n    at com.google.common.cache.LocalCache.get(LocalCache.java:3900)\n    at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3923)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4806)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4813)\n    at com.google.common.eventbus.SubscriberRegistry.flattenHierarchy(SubscriberRegistry.java:240)\n    at com.google.common.eventbus.SubscriberRegistry.getSubscribers(SubscriberRegistry.java:128)\n    at com.google.common.eventbus.EventBus.post(EventBus.java:265)\n    at forge.game.Game.fireEvent(Game.java:1037)\n    at forge.game.zone.MagicStack.resolveStack(MagicStack.java:629)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:157)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 78,
+    "headline": "ERROR: Method com.google.common.cache.LocalCache$Segment.unlock()V was not found",
+    "diagnostic": "ERROR: Method com.google.common.cache.LocalCache$Segment.unlock()V was not found\n    at com.google.common.cache.LocalCache$Segment.tryDrainReferenceQueues(LocalCache.java:2381)\n    at com.google.common.cache.LocalCache$Segment.getEntry(LocalCache.java:2623)\n    at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2058)\n    at com.google.common.cache.LocalCache.get(LocalCache.java:3900)\n    at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3923)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4806)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4813)\n    at com.google.common.eventbus.SubscriberRegistry.flattenHierarchy(SubscriberRegistry.java:240)\n    at com.google.common.eventbus.SubscriberRegistry.getSubscribers(SubscriberRegistry.java:128)\n    at com.google.common.eventbus.EventBus.post(EventBus.java:265)\n    at forge.game.Game.fireEvent(Game.java:1037)\n    at forge.game.zone.MagicStack.resolveStack(MagicStack.java:629)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:157)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 79,
+    "headline": "ERROR: Method com.google.common.cache.LocalCache$Segment.tryLock()Z was not found",
+    "diagnostic": "ERROR: Method com.google.common.cache.LocalCache$Segment.tryLock()Z was not found\n    at com.google.common.cache.LocalCache$Segment.tryExpireEntries(LocalCache.java:2521)\n    at com.google.common.cache.LocalCache$Segment.getLiveValue(LocalCache.java:2663)\n    at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2061)\n    at com.google.common.cache.LocalCache.get(LocalCache.java:3900)\n    at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3923)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4806)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4813)\n    at com.google.common.eventbus.SubscriberRegistry.flattenHierarchy(SubscriberRegistry.java:240)\n    at com.google.common.eventbus.SubscriberRegistry.getSubscribers(SubscriberRegistry.java:128)\n    at com.google.common.eventbus.EventBus.post(EventBus.java:265)\n    at forge.game.Game.fireEvent(Game.java:1037)\n    at forge.game.zone.MagicStack.resolveStack(MagicStack.java:629)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:157)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 80,
+    "headline": "ERROR: Method com.google.common.cache.LocalCache$Segment.unlock()V was not found",
+    "diagnostic": "ERROR: Method com.google.common.cache.LocalCache$Segment.unlock()V was not found\n    at com.google.common.cache.LocalCache$Segment.tryExpireEntries(LocalCache.java:2525)\n    at com.google.common.cache.LocalCache$Segment.getLiveValue(LocalCache.java:2663)\n    at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2061)\n    at com.google.common.cache.LocalCache.get(LocalCache.java:3900)\n    at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3923)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4806)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4813)\n    at com.google.common.eventbus.SubscriberRegistry.flattenHierarchy(SubscriberRegistry.java:240)\n    at com.google.common.eventbus.SubscriberRegistry.getSubscribers(SubscriberRegistry.java:128)\n    at com.google.common.eventbus.EventBus.post(EventBus.java:265)\n    at forge.game.Game.fireEvent(Game.java:1037)\n    at forge.game.zone.MagicStack.resolveStack(MagicStack.java:629)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:157)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 81,
+    "headline": "ERROR: Method com.google.common.cache.LocalCache$Segment.unlock()V was not found",
+    "diagnostic": "ERROR: Method com.google.common.cache.LocalCache$Segment.unlock()V was not found\n    at com.google.common.cache.LocalCache$Segment.tryExpireEntries(LocalCache.java:2525)\n    at com.google.common.cache.LocalCache$Segment.getLiveValue(LocalCache.java:2663)\n    at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2061)\n    at com.google.common.cache.LocalCache.get(LocalCache.java:3900)\n    at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3923)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4806)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4813)\n    at com.google.common.eventbus.SubscriberRegistry.flattenHierarchy(SubscriberRegistry.java:240)\n    at com.google.common.eventbus.SubscriberRegistry.getSubscribers(SubscriberRegistry.java:128)\n    at com.google.common.eventbus.EventBus.post(EventBus.java:265)\n    at forge.game.Game.fireEvent(Game.java:1037)\n    at forge.game.zone.MagicStack.resolveStack(MagicStack.java:629)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:157)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 82,
+    "headline": "ERROR: Method com.google.common.util.concurrent.ListenableFuture.isDone()Z was not found",
+    "diagnostic": "ERROR: Method com.google.common.util.concurrent.ListenableFuture.isDone()Z was not found\n    at com.google.common.cache.LocalCache$Segment.refresh(LocalCache.java:2308)\n    at com.google.common.cache.LocalCache$Segment.scheduleRefresh(LocalCache.java:2284)\n    at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2065)\n    at com.google.common.cache.LocalCache.get(LocalCache.java:3900)\n    at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3923)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4806)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4813)\n    at com.google.common.eventbus.SubscriberRegistry.flattenHierarchy(SubscriberRegistry.java:240)\n    at com.google.common.eventbus.SubscriberRegistry.getSubscribers(SubscriberRegistry.java:128)\n    at com.google.common.eventbus.EventBus.post(EventBus.java:265)\n    at forge.game.Game.fireEvent(Game.java:1037)\n    at forge.game.zone.MagicStack.resolveStack(MagicStack.java:629)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:157)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 83,
+    "headline": "ERROR: Method com.google.common.cache.LocalCache$Segment.lock()V was not found",
+    "diagnostic": "ERROR: Method com.google.common.cache.LocalCache$Segment.lock()V was not found\n    at com.google.common.cache.LocalCache$Segment.insertLoadingValueReference(LocalCache.java:2326)\n    at com.google.common.cache.LocalCache$Segment.refresh(LocalCache.java:2302)\n    at com.google.common.cache.LocalCache$Segment.scheduleRefresh(LocalCache.java:2284)\n    at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2065)\n    at com.google.common.cache.LocalCache.get(LocalCache.java:3900)\n    at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3923)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4806)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4813)\n    at com.google.common.eventbus.SubscriberRegistry.flattenHierarchy(SubscriberRegistry.java:240)\n    at com.google.common.eventbus.SubscriberRegistry.getSubscribers(SubscriberRegistry.java:128)\n    at com.google.common.eventbus.EventBus.post(EventBus.java:265)\n    at forge.game.Game.fireEvent(Game.java:1037)\n    at forge.game.zone.MagicStack.resolveStack(MagicStack.java:629)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:157)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 84,
+    "headline": "ERROR: Class java.util.concurrent.atomic.AtomicReferenceArray was not found",
+    "diagnostic": "ERROR: Class java.util.concurrent.atomic.AtomicReferenceArray was not found\n    at com.google.common.cache.LocalCache$Segment.insertLoadingValueReference(LocalCache.java:2365)\n    at com.google.common.cache.LocalCache$Segment.refresh(LocalCache.java:2302)\n    at com.google.common.cache.LocalCache$Segment.scheduleRefresh(LocalCache.java:2284)\n    at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2065)\n    at com.google.common.cache.LocalCache.get(LocalCache.java:3900)\n    at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3923)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4806)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4813)\n    at com.google.common.eventbus.SubscriberRegistry.flattenHierarchy(SubscriberRegistry.java:240)\n    at com.google.common.eventbus.SubscriberRegistry.getSubscribers(SubscriberRegistry.java:128)\n    at com.google.common.eventbus.EventBus.post(EventBus.java:265)\n    at forge.game.Game.fireEvent(Game.java:1037)\n    at forge.game.zone.MagicStack.resolveStack(MagicStack.java:629)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:157)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 85,
+    "headline": "ERROR: Class java.util.concurrent.atomic.AtomicReferenceArray was not found",
+    "diagnostic": "ERROR: Class java.util.concurrent.atomic.AtomicReferenceArray was not found\n    at com.google.common.cache.LocalCache$Segment.insertLoadingValueReference(LocalCache.java:2332)\n    at com.google.common.cache.LocalCache$Segment.refresh(LocalCache.java:2302)\n    at com.google.common.cache.LocalCache$Segment.scheduleRefresh(LocalCache.java:2284)\n    at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2065)\n    at com.google.common.cache.LocalCache.get(LocalCache.java:3900)\n    at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3923)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4806)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4813)\n    at com.google.common.eventbus.SubscriberRegistry.flattenHierarchy(SubscriberRegistry.java:240)\n    at com.google.common.eventbus.SubscriberRegistry.getSubscribers(SubscriberRegistry.java:128)\n    at com.google.common.eventbus.EventBus.post(EventBus.java:265)\n    at forge.game.Game.fireEvent(Game.java:1037)\n    at forge.game.zone.MagicStack.resolveStack(MagicStack.java:629)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:157)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 86,
+    "headline": "ERROR: Method com.google.common.cache.LocalCache$Segment.unlock()V was not found",
+    "diagnostic": "ERROR: Method com.google.common.cache.LocalCache$Segment.unlock()V was not found\n    at com.google.common.cache.LocalCache$Segment.insertLoadingValueReference(LocalCache.java:2368)\n    at com.google.common.cache.LocalCache$Segment.refresh(LocalCache.java:2302)\n    at com.google.common.cache.LocalCache$Segment.scheduleRefresh(LocalCache.java:2284)\n    at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2065)\n    at com.google.common.cache.LocalCache.get(LocalCache.java:3900)\n    at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3923)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4806)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4813)\n    at com.google.common.eventbus.SubscriberRegistry.flattenHierarchy(SubscriberRegistry.java:240)\n    at com.google.common.eventbus.SubscriberRegistry.getSubscribers(SubscriberRegistry.java:128)\n    at com.google.common.eventbus.EventBus.post(EventBus.java:265)\n    at forge.game.Game.fireEvent(Game.java:1037)\n    at forge.game.zone.MagicStack.resolveStack(MagicStack.java:629)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:157)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 87,
+    "headline": "ERROR: Method com.google.common.cache.LocalCache$Segment.unlock()V was not found",
+    "diagnostic": "ERROR: Method com.google.common.cache.LocalCache$Segment.unlock()V was not found\n    at com.google.common.cache.LocalCache$Segment.insertLoadingValueReference(LocalCache.java:2368)\n    at com.google.common.cache.LocalCache$Segment.refresh(LocalCache.java:2302)\n    at com.google.common.cache.LocalCache$Segment.scheduleRefresh(LocalCache.java:2284)\n    at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2065)\n    at com.google.common.cache.LocalCache.get(LocalCache.java:3900)\n    at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3923)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4806)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4813)\n    at com.google.common.eventbus.SubscriberRegistry.flattenHierarchy(SubscriberRegistry.java:240)\n    at com.google.common.eventbus.SubscriberRegistry.getSubscribers(SubscriberRegistry.java:128)\n    at com.google.common.eventbus.EventBus.post(EventBus.java:265)\n    at forge.game.Game.fireEvent(Game.java:1037)\n    at forge.game.zone.MagicStack.resolveStack(MagicStack.java:629)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:157)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 88,
+    "headline": "ERROR: Method com.google.common.cache.LocalCache$Segment.unlock()V was not found",
+    "diagnostic": "ERROR: Method com.google.common.cache.LocalCache$Segment.unlock()V was not found\n    at com.google.common.cache.LocalCache$Segment.insertLoadingValueReference(LocalCache.java:2368)\n    at com.google.common.cache.LocalCache$Segment.refresh(LocalCache.java:2302)\n    at com.google.common.cache.LocalCache$Segment.scheduleRefresh(LocalCache.java:2284)\n    at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2065)\n    at com.google.common.cache.LocalCache.get(LocalCache.java:3900)\n    at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3923)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4806)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4813)\n    at com.google.common.eventbus.SubscriberRegistry.flattenHierarchy(SubscriberRegistry.java:240)\n    at com.google.common.eventbus.SubscriberRegistry.getSubscribers(SubscriberRegistry.java:128)\n    at com.google.common.eventbus.EventBus.post(EventBus.java:265)\n    at forge.game.Game.fireEvent(Game.java:1037)\n    at forge.game.zone.MagicStack.resolveStack(MagicStack.java:629)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:157)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 89,
+    "headline": "ERROR: Method com.google.common.cache.LocalCache$Segment.unlock()V was not found",
+    "diagnostic": "ERROR: Method com.google.common.cache.LocalCache$Segment.unlock()V was not found\n    at com.google.common.cache.LocalCache$Segment.insertLoadingValueReference(LocalCache.java:2368)\n    at com.google.common.cache.LocalCache$Segment.refresh(LocalCache.java:2302)\n    at com.google.common.cache.LocalCache$Segment.scheduleRefresh(LocalCache.java:2284)\n    at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2065)\n    at com.google.common.cache.LocalCache.get(LocalCache.java:3900)\n    at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3923)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4806)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4813)\n    at com.google.common.eventbus.SubscriberRegistry.flattenHierarchy(SubscriberRegistry.java:240)\n    at com.google.common.eventbus.SubscriberRegistry.getSubscribers(SubscriberRegistry.java:128)\n    at com.google.common.eventbus.EventBus.post(EventBus.java:265)\n    at forge.game.Game.fireEvent(Game.java:1037)\nException in thread \"main\" java.lang.IllegalStateException: TeaVM failed; no runnable artifact for original\n\tat probe.compiler.CompilerMain.main(CompilerMain.java:64)\n    at forge.game.zone.MagicStack.resolveStack(MagicStack.java:629)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:157)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 90,
+    "headline": "ERROR: Method com.google.common.cache.LocalCache$Segment.tryLock()Z was not found",
+    "diagnostic": "ERROR: Method com.google.common.cache.LocalCache$Segment.tryLock()Z was not found\n    at com.google.common.cache.LocalCache$Segment.runLockedCleanup(LocalCache.java:3402)\n    at com.google.common.cache.LocalCache$Segment.cleanUp(LocalCache.java:3397)\n    at com.google.common.cache.LocalCache$Segment.postReadCleanup(LocalCache.java:3375)\n    at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2085)\n    at com.google.common.cache.LocalCache.get(LocalCache.java:3900)\n    at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3923)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4806)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4813)\n    at com.google.common.eventbus.SubscriberRegistry.flattenHierarchy(SubscriberRegistry.java:240)\n    at com.google.common.eventbus.SubscriberRegistry.getSubscribers(SubscriberRegistry.java:128)\n    at com.google.common.eventbus.EventBus.post(EventBus.java:265)\n    at forge.game.Game.fireEvent(Game.java:1037)\n    at forge.game.zone.MagicStack.resolveStack(MagicStack.java:629)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:157)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 91,
+    "headline": "ERROR: Method com.google.common.cache.LocalCache$Segment.unlock()V was not found",
+    "diagnostic": "ERROR: Method com.google.common.cache.LocalCache$Segment.unlock()V was not found\n    at com.google.common.cache.LocalCache$Segment.runLockedCleanup(LocalCache.java:3408)\n    at com.google.common.cache.LocalCache$Segment.cleanUp(LocalCache.java:3397)\n    at com.google.common.cache.LocalCache$Segment.postReadCleanup(LocalCache.java:3375)\n    at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2085)\n    at com.google.common.cache.LocalCache.get(LocalCache.java:3900)\n    at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3923)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4806)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4813)\n    at com.google.common.eventbus.SubscriberRegistry.flattenHierarchy(SubscriberRegistry.java:240)\n    at com.google.common.eventbus.SubscriberRegistry.getSubscribers(SubscriberRegistry.java:128)\n    at com.google.common.eventbus.EventBus.post(EventBus.java:265)\n    at forge.game.Game.fireEvent(Game.java:1037)\n    at forge.game.zone.MagicStack.resolveStack(MagicStack.java:629)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:157)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 92,
+    "headline": "ERROR: Method com.google.common.cache.LocalCache$Segment.unlock()V was not found",
+    "diagnostic": "ERROR: Method com.google.common.cache.LocalCache$Segment.unlock()V was not found\n    at com.google.common.cache.LocalCache$Segment.runLockedCleanup(LocalCache.java:3408)\n    at com.google.common.cache.LocalCache$Segment.cleanUp(LocalCache.java:3397)\n    at com.google.common.cache.LocalCache$Segment.postReadCleanup(LocalCache.java:3375)\n    at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2085)\n    at com.google.common.cache.LocalCache.get(LocalCache.java:3900)\n    at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3923)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4806)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4813)\n    at com.google.common.eventbus.SubscriberRegistry.flattenHierarchy(SubscriberRegistry.java:240)\n    at com.google.common.eventbus.SubscriberRegistry.getSubscribers(SubscriberRegistry.java:128)\n    at com.google.common.eventbus.EventBus.post(EventBus.java:265)\n    at forge.game.Game.fireEvent(Game.java:1037)\n    at forge.game.zone.MagicStack.resolveStack(MagicStack.java:629)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:157)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  {
+    "ordinal": 93,
+    "headline": "ERROR: Method com.google.common.cache.LocalCache$Segment.isHeldByCurrentThread()Z was not found",
+    "diagnostic": "ERROR: Method com.google.common.cache.LocalCache$Segment.isHeldByCurrentThread()Z was not found\n    at com.google.common.cache.LocalCache$Segment.runUnlockedCleanup(LocalCache.java:3415)\n    at com.google.common.cache.LocalCache$Segment.cleanUp(LocalCache.java:3398)\n    at com.google.common.cache.LocalCache$Segment.postReadCleanup(LocalCache.java:3375)\n    at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2085)\n    at com.google.common.cache.LocalCache.get(LocalCache.java:3900)\n    at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3923)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4806)\n    at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4813)\n    at com.google.common.eventbus.SubscriberRegistry.flattenHierarchy(SubscriberRegistry.java:240)\n    at com.google.common.eventbus.SubscriberRegistry.getSubscribers(SubscriberRegistry.java:128)\n    at com.google.common.eventbus.EventBus.post(EventBus.java:265)\n    at forge.game.Game.fireEvent(Game.java:1037)\n    at forge.game.zone.MagicStack.resolveStack(MagicStack.java:629)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:157)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  }
+]

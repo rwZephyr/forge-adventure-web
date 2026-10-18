@@ -1,0 +1,347 @@
+# Audited original JVM constructor signatures; compiler-only access policy.
+forge.ai.ability.DamageDealAi	
+forge.ai.ability.ManaAi	
+forge.game.ability.effects.AbandonEffect	
+forge.game.ability.effects.ActivateAbilityEffect	
+forge.game.ability.effects.AddPhaseEffect	
+forge.game.ability.effects.AddTurnEffect	
+forge.game.ability.effects.AdvanceCrankEffect	
+forge.game.ability.effects.AirbendEffect	
+forge.game.ability.effects.AlterAttributeEffect	
+forge.game.ability.effects.AmassEffect	
+forge.game.ability.effects.AnimateAllEffect	
+forge.game.ability.effects.AnimateEffect	
+forge.game.ability.effects.AssembleContraptionEffect	
+forge.game.ability.effects.AssignGroupEffect	
+forge.game.ability.effects.AttachEffect	
+forge.game.ability.effects.BalanceEffect	
+forge.game.ability.effects.BecomeMonarchEffect	
+forge.game.ability.effects.BecomesBlockedEffect	
+forge.game.ability.effects.BidLifeEffect	
+forge.game.ability.effects.BlankLineEffect	
+forge.game.ability.effects.BlightEffect	
+forge.game.ability.effects.BlockEffect	
+forge.game.ability.effects.BondEffect	
+forge.game.ability.effects.BranchEffect	
+forge.game.ability.effects.CamouflageEffect	
+forge.game.ability.effects.ChangeCombatantsEffect	
+forge.game.ability.effects.ChangeSpeedEffect	
+forge.game.ability.effects.ChangeTargetsEffect	
+forge.game.ability.effects.ChangeTextEffect	
+forge.game.ability.effects.ChangeXEffect	
+forge.game.ability.effects.ChangeZoneAllEffect	
+forge.game.ability.effects.ChangeZoneEffect	
+forge.game.ability.effects.ChangeZoneResolveEffect	
+forge.game.ability.effects.ChaosEnsuesEffect	
+forge.game.ability.effects.CharmEffect	
+forge.game.ability.effects.ChooseCardEffect	
+forge.game.ability.effects.ChooseCardNameEffect	
+forge.game.ability.effects.ChooseColorEffect	
+forge.game.ability.effects.ChooseDirectionEffect	
+forge.game.ability.effects.ChooseEvenOddEffect	
+forge.game.ability.effects.ChooseGenericEffect	
+forge.game.ability.effects.ChooseNumberEffect	
+forge.game.ability.effects.ChoosePlayerEffect	
+forge.game.ability.effects.ChooseSectorEffect	
+forge.game.ability.effects.ChooseSourceEffect	
+forge.game.ability.effects.ChooseTypeEffect	
+forge.game.ability.effects.ClaimThePrizeEffect	
+forge.game.ability.effects.ClashEffect	
+forge.game.ability.effects.ClassLevelUpEffect	
+forge.game.ability.effects.CleanUpEffect	
+forge.game.ability.effects.CloakEffect	
+forge.game.ability.effects.CloneEffect	
+forge.game.ability.effects.ConniveEffect	
+forge.game.ability.effects.ControlExchangeEffect	
+forge.game.ability.effects.ControlExchangeVariantEffect	
+forge.game.ability.effects.ControlGainEffect	
+forge.game.ability.effects.ControlGainVariantEffect	
+forge.game.ability.effects.ControlPlayerEffect	
+forge.game.ability.effects.ControlSpellEffect	
+forge.game.ability.effects.CopyPermanentEffect	
+forge.game.ability.effects.CopySpellAbilityEffect	
+forge.game.ability.effects.CounterEffect	
+forge.game.ability.effects.CountersMoveEffect	
+forge.game.ability.effects.CountersMultiplyEffect	
+forge.game.ability.effects.CountersProliferateEffect	
+forge.game.ability.effects.CountersPutAllEffect	
+forge.game.ability.effects.CountersPutEffect	
+forge.game.ability.effects.CountersPutOrRemoveEffect	
+forge.game.ability.effects.CountersRemoveAllEffect	
+forge.game.ability.effects.CountersRemoveEffect	
+forge.game.ability.effects.DamageAllEffect	
+forge.game.ability.effects.DamageDealEffect	
+forge.game.ability.effects.DamageEachEffect	
+forge.game.ability.effects.DamagePreventEffect	
+forge.game.ability.effects.DamageResolveEffect	
+forge.game.ability.effects.DayTimeEffect	
+forge.game.ability.effects.DebuffEffect	
+forge.game.ability.effects.DelayedTriggerEffect	
+forge.game.ability.effects.DestroyAllEffect	
+forge.game.ability.effects.DestroyEffect	
+forge.game.ability.effects.DetainEffect	
+forge.game.ability.effects.DigEffect	
+forge.game.ability.effects.DigMultipleEffect	
+forge.game.ability.effects.DigUntilEffect	
+forge.game.ability.effects.DiscardEffect	
+forge.game.ability.effects.DiscoverEffect	
+forge.game.ability.effects.DraftEffect	
+forge.game.ability.effects.DrainManaEffect	
+forge.game.ability.effects.DrawEffect	
+forge.game.ability.effects.EarthbendEffect	
+forge.game.ability.effects.EffectEffect	
+forge.game.ability.effects.EmpowerEffect	
+forge.game.ability.effects.EncodeEffect	
+forge.game.ability.effects.EndCombatPhaseEffect	
+forge.game.ability.effects.EndTurnEffect	
+forge.game.ability.effects.EndureEffect	
+forge.game.ability.effects.ExploreEffect	
+forge.game.ability.effects.FightEffect	
+forge.game.ability.effects.FlipCoinEffect	
+forge.game.ability.effects.FlipOntoBattlefieldEffect	
+forge.game.ability.effects.FogEffect	
+forge.game.ability.effects.GameDrawEffect	
+forge.game.ability.effects.GameLossEffect	
+forge.game.ability.effects.GameWinEffect	
+forge.game.ability.effects.GoadEffect	
+forge.game.ability.effects.HauntEffect	
+forge.game.ability.effects.HealDamageEffect	
+forge.game.ability.effects.HeistEffect	
+forge.game.ability.effects.ImmediateTriggerEffect	
+forge.game.ability.effects.IncubateEffect	
+forge.game.ability.effects.IntensifyEffect	
+forge.game.ability.effects.InternalRadiationEffect	
+forge.game.ability.effects.InvestigateEffect	
+forge.game.ability.effects.LearnEffect	
+forge.game.ability.effects.LifeExchangeEffect	
+forge.game.ability.effects.LifeExchangeVariantEffect	
+forge.game.ability.effects.LifeGainEffect	
+forge.game.ability.effects.LifeLoseEffect	
+forge.game.ability.effects.LifeSetEffect	
+forge.game.ability.effects.LookAtEffect	
+forge.game.ability.effects.LosePerpetualEffect	
+forge.game.ability.effects.MakeCardEffect	
+forge.game.ability.effects.ManaEffect	
+forge.game.ability.effects.ManaReflectedEffect	
+forge.game.ability.effects.ManifestDreadEffect	
+forge.game.ability.effects.ManifestEffect	
+forge.game.ability.effects.MeldEffect	
+forge.game.ability.effects.MillEffect	
+forge.game.ability.effects.MultiplePilesEffect	
+forge.game.ability.effects.MustBlockEffect	
+forge.game.ability.effects.MutateEffect	
+forge.game.ability.effects.OpenAttractionEffect	
+forge.game.ability.effects.OwnershipGainEffect	
+forge.game.ability.effects.PeekAndRevealEffect	
+forge.game.ability.effects.PermanentCreatureEffect	
+forge.game.ability.effects.PermanentNoncreatureEffect	
+forge.game.ability.effects.PhasesEffect	
+forge.game.ability.effects.PlaneswalkEffect	
+forge.game.ability.effects.PlayEffect	
+forge.game.ability.effects.PlayLandVariantEffect	
+forge.game.ability.effects.PoisonEffect	
+forge.game.ability.effects.PowerExchangeEffect	
+forge.game.ability.effects.ProtectAllEffect	
+forge.game.ability.effects.ProtectEffect	
+forge.game.ability.effects.PumpAllEffect	
+forge.game.ability.effects.PumpEffect	
+forge.game.ability.effects.PutStickerEffect	
+forge.game.ability.effects.RadiationEffect	
+forge.game.ability.effects.RearrangeTopOfLibraryEffect	
+forge.game.ability.effects.RecruitEffect	
+forge.game.ability.effects.RegenerateEffect	
+forge.game.ability.effects.RegenerationEffect	
+forge.game.ability.effects.RemoveFromCombatEffect	
+forge.game.ability.effects.RemoveFromGameEffect	
+forge.game.ability.effects.RemoveFromMatchEffect	
+forge.game.ability.effects.ReorderZoneEffect	
+forge.game.ability.effects.RepeatEachEffect	
+forge.game.ability.effects.RepeatEffect	
+forge.game.ability.effects.ReplaceCounterEffect	
+forge.game.ability.effects.ReplaceDamageEffect	
+forge.game.ability.effects.ReplaceEffect	
+forge.game.ability.effects.ReplaceManaEffect	
+forge.game.ability.effects.ReplaceSplitDamageEffect	
+forge.game.ability.effects.ReplaceTokenEffect	
+forge.game.ability.effects.RestartGameEffect	
+forge.game.ability.effects.RevealEffect	
+forge.game.ability.effects.RevealHandEffect	
+forge.game.ability.effects.ReverseTurnOrderEffect	
+forge.game.ability.effects.RingTemptsYouEffect	
+forge.game.ability.effects.RollDiceEffect	
+forge.game.ability.effects.RollPlanarDiceEffect	
+forge.game.ability.effects.RunChaosEffect	
+forge.game.ability.effects.SacrificeAllEffect	
+forge.game.ability.effects.SacrificeEffect	
+forge.game.ability.effects.ScryEffect	
+forge.game.ability.effects.SeekEffect	
+forge.game.ability.effects.SetInMotionEffect	
+forge.game.ability.effects.SetStateEffect	
+forge.game.ability.effects.ShuffleEffect	
+forge.game.ability.effects.SkipPhaseEffect	
+forge.game.ability.effects.SkipTurnEffect	
+forge.game.ability.effects.StoreSVarEffect	
+forge.game.ability.effects.SubgameEffect	
+forge.game.ability.effects.SurveilEffect	
+forge.game.ability.effects.SwitchBlockEffect	
+forge.game.ability.effects.TakeInitiativeEffect	
+forge.game.ability.effects.TapAllEffect	
+forge.game.ability.effects.TapEffect	
+forge.game.ability.effects.TapOrUntapAllEffect	
+forge.game.ability.effects.TapOrUntapEffect	
+forge.game.ability.effects.TextBoxExchangeEffect	
+forge.game.ability.effects.TimeTravelEffect	
+forge.game.ability.effects.TokenEffect	
+forge.game.ability.effects.TwoPilesEffect	
+forge.game.ability.effects.UnattachEffect	
+forge.game.ability.effects.UnlockDoorEffect	
+forge.game.ability.effects.UntapAllEffect	
+forge.game.ability.effects.UntapEffect	
+forge.game.ability.effects.VentureEffect	
+forge.game.ability.effects.VillainousChoiceEffect	
+forge.game.ability.effects.VoteEffect	
+forge.game.ability.effects.ZoneExchangeEffect	
+forge.game.keyword.KeywordWithAmount	
+forge.game.keyword.KeywordWithCost	
+forge.game.keyword.KeywordWithType	
+forge.game.keyword.Kicker	
+forge.game.keyword.SimpleKeyword	
+forge.game.replacement.ReplaceDraw	java.util.Map,forge.game.card.Card,boolean
+forge.game.replacement.ReplaceGainLife	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerAbandoned	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerAbilityResolves	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerAbilityTriggered	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerAdapt	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerAlways	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerAttached	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerAttackerBlocked	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerAttackerBlockedByCreature	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerAttackerBlockedOnce	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerAttackerUnblocked	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerAttackerUnblockedOnce	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerAttackersDeclared	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerAttacks	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerBecomeMonarch	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerBecomeMonstrous	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerBecomeRenowned	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerBecomesCrewed	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerBecomesPlotted	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerBecomesSaddled	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerBecomesTarget	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerBecomesTargetOnce	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerBlockersDeclared	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerBlocks	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerCaseSolved	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerChampioned	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerChangesController	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerChangesZone	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerChangesZoneAll	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerChaosEnsues	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerClaimPrize	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerClashed	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerClassLevelGained	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerCollectEvidence	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerCommitCrime	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerCompletedDungeon	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerConjureAll	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerConnives	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerCounterAdded	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerCounterAddedAll	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerCounterAddedOnce	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerCounterPlayerAddedAll	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerCounterRemoved	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerCounterRemovedOnce	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerCounterTypeAddedAll	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerCountered	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerCrankContraption	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerCrewedSaddled	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerCycled	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerDamageAll	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerDamageDealtOnce	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerDamageDone	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerDamageDoneOnce	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerDamageDoneOnceByController	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerDamagePreventedOnce	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerDayTimeChanges	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerDestroyed	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerDevoured	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerDiscarded	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerDiscardedAll	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerDiscover	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerDrawn	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerElementalbend	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerEnlisted	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerEnteredRoom	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerEvolved	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerExcessDamage	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerExcessDamageAll	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerExerted	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerExiled	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerExploited	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerExplores	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerFacesDilemma	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerFight	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerFightOnce	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerFlippedCoin	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerFlippedCoinOnce	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerForage	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerForetell	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerFullyUnlock	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerGiveGift	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerImmediate	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerInvestigated	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerLandPlayed	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerLifeGained	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerLifeLost	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerLifeLostAll	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerLosesGame	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerManaAdded	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerManaExpend	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerManifestDread	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerMentored	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerMilled	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerMilledAll	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerMilledOnce	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerMutates	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerNewGame	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerPayCumulativeUpkeep	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerPayEcho	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerPayLife	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerPhase	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerPhaseIn	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerPhaseOut	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerPhaseOutAll	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerPlanarDice	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerPlaneswalkedFrom	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerPlaneswalkedTo	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerProliferate	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerRingTemptsYou	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerRolledDie	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerRolledDieOnce	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerSacrificed	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerSacrificedOnce	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerScry	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerSearchedLibrary	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerSeekAll	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerSetInMotion	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerShuffled	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerSpecializes	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerSpellAbilityCastOrCopy	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerStickerPlaced	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerSurveil	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerTakesInitiative	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerTapAll	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerTaps	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerTapsForMana	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerTokenCreated	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerTokenCreatedOnce	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerTrains	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerTransformed	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerTurnBegin	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerTurnFaceUp	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerUnattached	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerUnlockDoor	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerUntapAll	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerUntaps	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerVisitAttraction	java.util.Map,forge.game.card.Card,boolean
+forge.game.trigger.TriggerVote	java.util.Map,forge.game.card.Card,boolean

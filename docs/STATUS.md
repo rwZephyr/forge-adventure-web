@@ -7,7 +7,9 @@ Last updated: 2026-10-18
 and in the owner-guided actual iPhone Safari session. Gate 2 Stage A's expected
 factory outcomes are reproduced on Safari: explicit 15/15, missing-amount 14/15
 with only K2 falling back, default 5/15.** No complete Adventure port or full
-rules/AI compatibility is demonstrated. Stage B remains unimplemented.
+rules/AI compatibility is demonstrated. **Stage B's approved first slice now
+passes the genuine JVM fixture and path witnesses; unchanged-runtime TeaVM
+compilation fails with 93 severe problems. Browser AI execution is blocked.**
 
 ## Known setup
 - Repository: `rwZephyr/forge-adventure-web`, fork of `Card-Forge/forge`; upstream
@@ -80,24 +82,51 @@ rules/AI compatibility is demonstrated. Stage B remains unimplemented.
 - HTTP over Tailscale does not establish HTTPS secure-context/PWA/storage support
   or a working full Adventure port.
 
+## Stage B first implementation slice (2026-10-18)
+- Separate branch `codex/gate2-ai-baseline`, based on reviewed draft PR #13;
+  [actual results](../experiments/ai-teavm/RESULTS.md) and
+  [exact reproduction](../experiments/ai-teavm/README.md).
+- Original offline core/game/AI Maven build passes (four modules, 18.165 s,
+  zero Checkstyle violations). Three fresh JVM positive processes pass genuine
+  Bolt choice/opponent targeting, real R payment from Mountain, stack casting,
+  three damage, graveyard movement and game-end state; empty-hand control passes.
+- Installed JDK shared-memory JDI (`dt_shmem`, no debug TCP listener) witnesses
+  nonempty original candidates, FutureTask, distinct Game AI Eval thread,
+  canPlayAndPayFor for Bolt, and timed-get NORMAL result with the same ability.
+  Separate positive/negative witnessed fixtures also pass without Forge edits.
+- Corrections to scope assumptions: original TypeLists bootstrap is needed for
+  Mountain's mana ability; original SecureRandom cold entropy takes about eight
+  seconds and is initialized before the unchanged two-second AI deadline.
+  No seed/provider/timeout rewrite. Empty hand retains two original mana
+  candidates and runs the task; it returns null without payment/damage. The
+  earlier zero-task prediction was disproved, not forced by filtering the engine.
+- Audited 491 public constructors, 203 ApiType entries / 200 effect classes,
+  193 AI mappings / 147 classes. Fixture compiler policy: 346 signatures;
+  dependency inventory: 63 configuration entries / 58 unique coordinates,
+  all cached-POM license declarations resolved. 2,610 original inputs rechecked.
+- One unchanged-runtime TeaVM attempt fails (exit 1, 93 severe diagnostics).
+  First reported chain: File.toPath → FileUtil.readAllLines/readFile → genuine
+  type bootstrap → fixture → browser entry. Independent failures confirm missing
+  FutureTask (construction/get/cancel), Thread.stop, URLClassLoader, logging locks
+  and Guava event/cache platform APIs. Full logs/chains are committed with results.
+- **Stopped at compiler failure.** No runnable browser artifact, browser test,
+  compatibility adapter, thread/localization replacement or dependency stub.
+  Original Forge sources/POMs and successful experiments remain unchanged; no
+  server, additional installation or network/service/save changes.
+
 ## Next bounded step and handoff
 - Review the completed actual-phone evidence; keep PRs #8 and #11 draft/unmerged.
-- [Stage B implementation scope](experiments/gate-2-stage-b-scope.md), on separate
-  branch `codex/gate2-ai-scope`, refines PR #9 with genuine Bolt/Mountain fixtures,
-  original Thread/FutureTask/timed-get witnesses, mana payment, stack resolution,
-  independent watchdog and explicit failure criteria. Design/inspection only.
-- Verified cached TeaVM 0.15.0 source/binary classlib archives have no
-  Future/FutureTask/LockSupport/ReentrantLock entries; TThread has no declared
-  stop and returns empty stack traces. Actual Stage B compiler/runtime blockers
-  remain untested. ApiType eagerly constructs stateless effects across its enum;
-  Stage A constructor metadata alone is insufficient for this broader path.
-- Review the proposed unchanged JVM/TeaVM baseline slice before implementation.
-  Localization/resource, concurrency/timeout cleanup, diagnostics/platform and
-  observability adaptations need a concrete failure and separate boundary review.
-  Do not bypass the threaded path or substitute game logic to obtain a pass.
+- Review first-slice actual results and the documented negative-control correction.
+  The [reviewed scope](experiments/gate-2-stage-b-scope.md) is historical design;
+  its zero-task negative assumption and predicted blockers now have actual evidence.
+- Smallest proposed next step: separately review a compile-only canary for the
+  original FutureTask/Thread/timed-get contract, isolating that hard runtime
+  boundary before Game/resource/logging adaptations. It cannot count as an AI
+  success and has not been implemented. Any class-library or resource/timeout
+  boundary contribution needs exact semantics/licensing review before changes.
 - No additional server, network or deployment authorization persists from this
   completed single session. Whole-game porting, accounts, saves and unrelated
   services remain outside scope.
-- Current branch adds Stage B scope and read-only pinned-input inspection to the
-  published Safari evidence. No Stage B implementation/build, Forge class,
-  experiment runtime, POM or original asset changed.
+- Current branch adds only the independent ai-teavm target, evidence, scoped
+  evidence attributes/ignore rules and this status. Earlier draft PRs are
+  unchanged and unmerged; no original Forge class/POM or asset changed.

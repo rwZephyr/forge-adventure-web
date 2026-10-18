@@ -1,0 +1,380 @@
+[
+    {
+        "configuration": "runtimeClasspath",
+        "coordinate": "com.google.guava:guava:33.3.1-android",
+        "file": "guava-33.3.1-android.jar",
+        "sha256": "2c3e41d1b380f2044d257947a3aa82dabf3ae4b978622745254aa18b6cf89ab0"
+    },
+    {
+        "configuration": "runtimeClasspath",
+        "coordinate": "org.apache.commons:commons-text:1.12.0",
+        "file": "commons-text-1.12.0.jar",
+        "sha256": "de023257ff166044a56bd1aa9124e843cd05dac5806cc705a9311f3556d5a15f"
+    },
+    {
+        "configuration": "runtimeClasspath",
+        "coordinate": "org.apache.commons:commons-lang3:3.18.0",
+        "file": "commons-lang3-3.18.0.jar",
+        "sha256": "4eeeae8d20c078abb64b015ec158add383ac581571cddc45c68f0c9ae0230720"
+    },
+    {
+        "configuration": "runtimeClasspath",
+        "coordinate": "org.apache.commons:commons-math3:3.6.1",
+        "file": "commons-math3-3.6.1.jar",
+        "sha256": "1e56d7b058d28b65abd256b8458e3885b674c1d588fa43cd7d1cbb9c7ef2b308"
+    },
+    {
+        "configuration": "runtimeClasspath",
+        "coordinate": "com.apptasticsoftware:rssreader:3.8.2",
+        "file": "rssreader-3.8.2.jar",
+        "sha256": "23fceecaf0fb11cd9e28068bc66c38651f85ebd11b4a9315e01df7c372be49da"
+    },
+    {
+        "configuration": "runtimeClasspath",
+        "coordinate": "org.tinylog:slf4j-tinylog:2.7.0",
+        "file": "slf4j-tinylog-2.7.0.jar",
+        "sha256": "51d3aa73a986bfc9853eea91cd71877b97891f01c85f69b42a27b5bb96295de2"
+    },
+    {
+        "configuration": "runtimeClasspath",
+        "coordinate": "org.tinylog:tinylog-impl:2.7.0",
+        "file": "tinylog-impl-2.7.0.jar",
+        "sha256": "37e532f706a01bb76a98454ccd71d1ffa2e83f2befe1c309e5c67e3c474bedba"
+    },
+    {
+        "configuration": "runtimeClasspath",
+        "coordinate": "org.slf4j:slf4j-api:2.0.16",
+        "file": "slf4j-api-2.0.16.jar",
+        "sha256": "a12578dde1ba00bd9b816d388a0b879928d00bab3c83c240f7013bf4196c579a"
+    },
+    {
+        "configuration": "runtimeClasspath",
+        "coordinate": "io.sentry:sentry:8.21.1",
+        "file": "sentry-8.21.1.jar",
+        "sha256": "31932885c77c693a23dd9d77486e5b0a8a73633099aae54f8c4f8250dea875c8"
+    },
+    {
+        "configuration": "runtimeClasspath",
+        "coordinate": "org.jgrapht:jgrapht-core:1.5.2",
+        "file": "jgrapht-core-1.5.2.jar",
+        "sha256": "dfa596e9f0d0838f1b5e81dd0cd60e3a76c2c290ac25a0a029ffde58cf5e4c14"
+    },
+    {
+        "configuration": "runtimeClasspath",
+        "coordinate": "com.badlogicgames.gdx:gdx:1.14.2",
+        "file": "gdx-1.14.2.jar",
+        "sha256": "a835710bb135c2c687723b9474d5620f8158af90a96e07ce492f6169d7eee8cc"
+    },
+    {
+        "configuration": "runtimeClasspath",
+        "coordinate": "org.teavm:teavm-jso:0.15.0",
+        "file": "teavm-jso-0.15.0.jar",
+        "sha256": "58b337b93924106bf819c45890c7c231a0c740145afe77795f1e0f099f621d71"
+    },
+    {
+        "configuration": "runtimeClasspath",
+        "coordinate": "com.google.guava:failureaccess:1.0.2",
+        "file": "failureaccess-1.0.2.jar",
+        "sha256": "8a8f81cf9b359e3f6dfa691a1e776985c061ef2f223c9b2c80753e1b458e8064"
+    },
+    {
+        "configuration": "runtimeClasspath",
+        "coordinate": "com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava",
+        "file": "listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
+        "sha256": "b372a037d4230aa57fbeffdef30fd6123f9c0c2db85d0aced00c91b974f33f99"
+    },
+    {
+        "configuration": "runtimeClasspath",
+        "coordinate": "com.google.code.findbugs:jsr305:3.0.2",
+        "file": "jsr305-3.0.2.jar",
+        "sha256": "766ad2a0783f2687962c8ad74ceecc38a28b9f72a2d085ee438b7813e928d0c7"
+    },
+    {
+        "configuration": "runtimeClasspath",
+        "coordinate": "org.checkerframework:checker-qual:3.43.0",
+        "file": "checker-qual-3.43.0.jar",
+        "sha256": "3fbc2e98f05854c3df16df9abaa955b91b15b3ecac33623208ed6424640ef0f6"
+    },
+    {
+        "configuration": "runtimeClasspath",
+        "coordinate": "com.google.errorprone:error_prone_annotations:2.28.0",
+        "file": "error_prone_annotations-2.28.0.jar",
+        "sha256": "f3fc8a3a0a4020706a373b00e7f57c2512dd26d1f83d28c7d38768f8682b231e"
+    },
+    {
+        "configuration": "runtimeClasspath",
+        "coordinate": "com.google.j2objc:j2objc-annotations:3.0.0",
+        "file": "j2objc-annotations-3.0.0.jar",
+        "sha256": "88241573467ddca44ffd4d74aa04c2bbfd11bf7c17e0c342c94c9de7a70a7c64"
+    },
+    {
+        "configuration": "runtimeClasspath",
+        "coordinate": "org.tinylog:tinylog-api:2.7.0",
+        "file": "tinylog-api-2.7.0.jar",
+        "sha256": "eb5111e02a6b5324b5fd4e434cbe6b93119be05ad2dba3d21cf0045b3a97540c"
+    },
+    {
+        "configuration": "runtimeClasspath",
+        "coordinate": "org.jheaps:jheaps:0.14",
+        "file": "jheaps-0.14.jar",
+        "sha256": "49a9898da3758659388f1333c53ccadb6fbd142a7d18aa7b1a33577090684279"
+    },
+    {
+        "configuration": "runtimeClasspath",
+        "coordinate": "org.apfloat:apfloat:1.10.1",
+        "file": "apfloat-1.10.1.jar",
+        "sha256": "a1480f560f37355f6c0458c523bda46658da4cd3e23cc64e309fedcd7b0782ba"
+    },
+    {
+        "configuration": "runtimeClasspath",
+        "coordinate": "com.badlogicgames.gdx:gdx-jnigen-loader:2.5.2",
+        "file": "gdx-jnigen-loader-2.5.2.jar",
+        "sha256": "df81f23cfd6785c52d35e108eeaa3930f559d4d2770a6102e75ca7bfa6f9f27a"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "com.github.xpenatan.gdx-teavm:backend-web:1.6.1",
+        "file": "backend-web-1.6.1.jar",
+        "sha256": "b1870593c305c7072056aa8a9574bef1a27b369fd67a12618c523170863a3924"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "com.github.xpenatan.gdx-teavm:backend-shared:1.6.1",
+        "file": "backend-shared-1.6.1.jar",
+        "sha256": "74eeb4559d03a4994fbec5ab0173f15f89af658037df17a680a581aae7aed0ae"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "org.teavm:teavm-tooling:0.15.0",
+        "file": "teavm-tooling-0.15.0.jar",
+        "sha256": "51123d78dc48404aa2e7cb0c04a0a6d75309decf604ffafda1c64564e7c9c6f3"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "com.github.xpenatan.gdx-teavm:asset-loader:1.6.1",
+        "file": "asset-loader-1.6.1.jar",
+        "sha256": "a20c4177867b877b48154ba56214f71e37cdebb73b4c85b6adf0f4de4bdf4e80"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "org.teavm:teavm-classlib:0.15.0",
+        "file": "teavm-classlib-0.15.0.jar",
+        "sha256": "7d805be4670a892a34c89d9d750a8afd65e2f8201b7b3a10343634ea19d1c410"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "org.teavm:teavm-core:0.15.0",
+        "file": "teavm-core-0.15.0.jar",
+        "sha256": "501ca5eae7a835cd6278c822685f32800fa0818e3f42204afc9b558408c943df"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "org.teavm:teavm-extension-spi:0.15.0",
+        "file": "teavm-extension-spi-0.15.0.jar",
+        "sha256": "d30bc018e3d857d585c4887e8863fe40f4d20293b3286293eda5af2b97266b49"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "org.teavm:teavm-platform:0.15.0",
+        "file": "teavm-platform-0.15.0.jar",
+        "sha256": "999d369ab15aa83c17987d048ba59560759169891de7e13a5a1c2bd93dd060a8"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "org.teavm:teavm-jso-impl:0.15.0",
+        "file": "teavm-jso-impl-0.15.0.jar",
+        "sha256": "9a8d15205807b70d7efdfbd4c1356304954e20146e464aec3830dbc6616ef57c"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "org.teavm:teavm-jso-apis:0.15.0",
+        "file": "teavm-jso-apis-0.15.0.jar",
+        "sha256": "171abaff01d9c029218df911470184ed8e30e6b511be6bb03381a924ec4a8c3c"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "org.teavm:teavm-metaprogramming-impl:0.15.0",
+        "file": "teavm-metaprogramming-impl-0.15.0.jar",
+        "sha256": "616d30aa28f7b0180a61c2289b11c77bf84c715bd79f255e1e42400edb5b6d70"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "com.jcraft:jzlib:1.1.3",
+        "file": "jzlib-1.1.3.jar",
+        "sha256": "89b1360f407381bf61fde411019d8cbd009ebb10cff715f3669017a031027560"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "joda-time:joda-time:2.12.2",
+        "file": "joda-time-2.12.2.jar",
+        "sha256": "8d4d807adc8e92a83913d9ccd61e634b4907c78d88f3016d06b3b3d2b4795a02"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "org.teavm:teavm-extension-spi-util:0.15.0",
+        "file": "teavm-extension-spi-util-0.15.0.jar",
+        "sha256": "d94e8d4478c4186d18b657cb67654851d38b9f51d372dc7e7e54e0f3a24347c9"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "org.teavm:teavm-metaprogramming-api:0.15.0",
+        "file": "teavm-metaprogramming-api-0.15.0.jar",
+        "sha256": "00f053ad35ff78312e48eebbf4e1c6cf5f7a1e759b2432ba0b60d6f111bb3bdd"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "org.teavm:teavm-extension-apis:0.15.0",
+        "file": "teavm-extension-apis-0.15.0.jar",
+        "sha256": "9e867f3760b1c8d86cdb18ec70e429c23fd933021c8c3bb0cc0b727eac3202c0"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "com.badlogicgames.gdx:gdx:1.14.2",
+        "file": "gdx-1.14.2.jar",
+        "sha256": "a835710bb135c2c687723b9474d5620f8158af90a96e07ce492f6169d7eee8cc"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "com.github.xpenatan:jMultiplatform:0.1.3",
+        "file": "jMultiplatform-0.1.3.jar",
+        "sha256": "f655f3a051893f9aaafc181503c96f381b89a5d56dea550ec5f5852b7bee856a"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "org.eclipse.jetty:jetty-webapp:11.0.13",
+        "file": "jetty-webapp-11.0.13.jar",
+        "sha256": "6329451895ae173b2f5d6114e312e36300a626db003c255e263cbc0d66bafdcd"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "org.eclipse.jetty:jetty-servlet:11.0.13",
+        "file": "jetty-servlet-11.0.13.jar",
+        "sha256": "643e3b30bd5f393c0cfc943dcebc7e0a6231e52f24b598b57cb91663905968ee"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "org.eclipse.jetty:jetty-security:11.0.13",
+        "file": "jetty-security-11.0.13.jar",
+        "sha256": "5f8f00f90d269346d3aa09ab7748bfec44e95e695718c0afd782da6322dd5a67"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "org.eclipse.jetty:jetty-server:11.0.13",
+        "file": "jetty-server-11.0.13.jar",
+        "sha256": "994c7b95c228ad7faf348708127a5394bd417a62ffc3bf9ddce6ac248c76703a"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "org.teavm:teavm-interop:0.15.0",
+        "file": "teavm-interop-0.15.0.jar",
+        "sha256": "5c8511d71ae6f6d2ca913130393b64a959303e521727b2d9c1a9b1e14519216f"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "org.teavm:teavm-relocated-libs-asm-commons:0.15.0",
+        "file": "teavm-relocated-libs-asm-commons-0.15.0.jar",
+        "sha256": "d49685681db5039075f2fde01568f2bb6df14a99ef88d39b29df8e701e12e140"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "org.teavm:teavm-relocated-libs-asm-util:0.15.0",
+        "file": "teavm-relocated-libs-asm-util-0.15.0.jar",
+        "sha256": "a41247ca7f023959712be0e713d3f2f5687b4dfeda6b112b2d976494d52cdc57"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "org.teavm:teavm-relocated-libs-hppc:0.15.0",
+        "file": "teavm-relocated-libs-hppc-0.15.0.jar",
+        "sha256": "7b82fedf747e0bf5d7a50acece86a8a684901e469165a3c5621c653128df4cd6"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "org.teavm:teavm-relocated-libs-rhino:0.15.0",
+        "file": "teavm-relocated-libs-rhino-0.15.0.jar",
+        "sha256": "49cedc9bfcdd44d30b8bc8d1d46d78fb7f8f2044b8c85c9c3f1ece33e94ee7e9"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "org.teavm:teavm-jso:0.15.0",
+        "file": "teavm-jso-0.15.0.jar",
+        "sha256": "58b337b93924106bf819c45890c7c231a0c740145afe77795f1e0f099f621d71"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "org.teavm:teavm-relocated-libs-asm-analysis:0.15.0",
+        "file": "teavm-relocated-libs-asm-analysis-0.15.0.jar",
+        "sha256": "6bb5ef62ab00d557061d9b04dc4571f711fbe11d339783e55029b37b75d5159c"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "org.teavm:teavm-relocated-libs-asm-tree:0.15.0",
+        "file": "teavm-relocated-libs-asm-tree-0.15.0.jar",
+        "sha256": "6b475fd62b8ddedfa0808c0c412c311f000a80a13123b6ba07f5da531164fd5b"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "org.teavm:teavm-relocated-libs-asm:0.15.0",
+        "file": "teavm-relocated-libs-asm-0.15.0.jar",
+        "sha256": "400496e463dddd878fed2b9b25a66deca2126f71bb68e41f82244b4315006018"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "com.badlogicgames.gdx:gdx-jnigen-loader:2.5.2",
+        "file": "gdx-jnigen-loader-2.5.2.jar",
+        "sha256": "df81f23cfd6785c52d35e108eeaa3930f559d4d2770a6102e75ca7bfa6f9f27a"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "org.eclipse.jetty.toolchain:jetty-jakarta-servlet-api:5.0.2",
+        "file": "jetty-jakarta-servlet-api-5.0.2.jar",
+        "sha256": "efb20997729f32bfa6c8a8319037c353f7ad460d5d49f336bf232998ea2358db"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "org.eclipse.jetty:jetty-http:11.0.13",
+        "file": "jetty-http-11.0.13.jar",
+        "sha256": "a0ad715f7ca9f6f6e0c073475d84b727e68fd0a7a8a501520129338c0471ce48"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "org.eclipse.jetty:jetty-io:11.0.13",
+        "file": "jetty-io-11.0.13.jar",
+        "sha256": "7e69c824edc4e12a21da56226a144fb649950922d0c67ef9146b868db26429bf"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "org.eclipse.jetty:jetty-xml:11.0.13",
+        "file": "jetty-xml-11.0.13.jar",
+        "sha256": "8785e36b6143d7b026751431ec5325aa2f871383de28f7b49c439ad21ad8bd5b"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "org.reflections:reflections:0.10.2",
+        "file": "reflections-0.10.2.jar",
+        "sha256": "938a2d08fe54050d7610b944d8ddc3a09355710d9e6be0aac838dbc04e9a2825"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "org.eclipse.jetty:jetty-util:11.0.13",
+        "file": "jetty-util-11.0.13.jar",
+        "sha256": "e21af95f5369680b6c63314f89742fc606831f533f443b573980e07c832436ae"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "org.slf4j:slf4j-api:2.0.16",
+        "file": "slf4j-api-2.0.16.jar",
+        "sha256": "a12578dde1ba00bd9b816d388a0b879928d00bab3c83c240f7013bf4196c579a"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "org.javassist:javassist:3.28.0-GA",
+        "file": "javassist-3.28.0-GA.jar",
+        "sha256": "57d0a9e9286f82f4eaa851125186997f811befce0e2060ff0a15a77f5a9dd9a7"
+    },
+    {
+        "configuration": "compilerRuntimeClasspath",
+        "coordinate": "com.google.code.findbugs:jsr305:3.0.2",
+        "file": "jsr305-3.0.2.jar",
+        "sha256": "766ad2a0783f2687962c8ad74ceecc38a28b9f72a2d085ee438b7813e928d0c7"
+    }
+]
