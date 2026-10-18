@@ -12,6 +12,11 @@ browser-safe serialization nor general synchronization safety. This document
 proposes one in-process human Bolt DTO proof before any Safari transport work.
 No builds/tests were rerun for this design; no source/runtime changes were made.
 
+**C1 review hold:** the [existing-evidence identity audit](bolt-ability-identity-audit.md)
+verifies singleton offers but cannot recover per-call view/cache Java identities.
+DTO implementation remains unauthorized pending that evidence and review. C2–C6
+below are design requirements, not implemented guarantees.
+
 ## Private Java boundary and viewer projection
 
 Keep HostedMatch, Game, cards, rules, AI, PhaseHandler, PlayerControllerHuman,
@@ -112,9 +117,13 @@ Auto, cancellation or concession endpoint is included.
 
 Admission serializes submissions per session. Verify trusted match/session,
 revision, prompt, operation/input class, visibility and current choice membership;
-reserve one action and recheck the same conditions immediately on the EDT before
-calling the original [controller][controller]. If superseded, reject with **zero
-controller calls**. Consume that generation before dispatch and admit no other
+reserve one action, then perform live handle→entity lookup, visibility and
+capability/generation checks and the original [controller][controller] call in
+the **same non-suspending EDT runnable**, with no intervening queue hop or wait.
+The live registry is EDT-confined; off-thread admission uses immutable published
+metadata and must never cache a resolved entity for later dispatch. Revocation
+or retirement before this runnable makes lookup fail. If superseded, reject with
+**zero controller calls**. Consume that generation before dispatch and admit no other
 action until a new settled frame is published. Forge still performs targeting,
 playability and payment validation; capabilities cannot override it. Never mutate
 SpellAbility targets, mana, life, phase or stack from the adapter.
@@ -125,10 +134,16 @@ return or unexpected question becomes a recorded contract failure; do not report
 successful gameplay. The next original-game frame supplies the actual outcome.
 An action may produce no gameplay change; no speculative browser state is trusted.
 
-Keep an action ledger for the session: identical `actionId` + identical canonical
-payload returns its pending/terminal receipt without dispatch, **before** stale
-checks; same ID with another payload is rejected. Reserve atomically, including
-while dispatch is in flight. For this bounded test cap the ledger at 256 actions,
+Keep an action ledger under the **trusted server-side session binding**, keyed
+by `actionId`. Its canonical payload is the typed allowlisted record
+`(type, v, matchId, sessionId, revision, promptId, choiceId)`; compare every field
+by value, independently of JSON member order, with no unexpected fields or
+coercions. `actionId` is the ledger key, not an omitted decision field. An exact
+retry returns its pending/terminal receipt without dispatch, **before** stale
+checks; the same ID with any changed field returns **`actionIdConflict`**, distinct
+from `staleDecision`. A payload claiming another session cannot select that
+session's ledger. Reserve atomically, including while dispatch is in flight.
+For this bounded test cap the ledger at 256 actions,
 reject new IDs when full and never evict/re-execute an old ID. A controller
 exception after possible mutation is indeterminate: retain the failure receipt,
 disable further actions and require investigation; never retry automatically.
@@ -144,7 +159,8 @@ run on Game-1 through [GameAction.invoke][invoke] while Game-0 waits. The origin
 [AI FutureTask, Game AI Eval worker and timed get][ai] remain untouched.
 
 **Synchronous questions cannot simply become network waits.** In #19,
-`getAbilityToPlay` executes on EDT, Game-0 and the payment worker. Waiting for a
+Bolt selection executes on EDT, the further Bolt additional-cost choice on
+Game-0, and Mountain's additional-cost mana-ability choice on Game-1. Waiting for a
 new browser reply on EDT would block prompt/action dispatch. For this fixture,
 the explicit `cast` / `activateManaSource` choice authorizes the unique original
 ability and the bounded follow-up ability confirmations for that same attempt.
@@ -153,15 +169,23 @@ the exact offered SpellAbilityView, checked against the authorization's host,
 ability kind and original offered ability relation. Never return a fabricated
 view, choose a generic first item, return null or answer an unrelated prompt.
 
-During implementation first audit the relation between the two Bolt ability
-offers and the Mountain offer, including any original copies/cache mapping in
-[PlayerControllerHuman.getAbilityToPlay][ability]. Publish that identity evidence.
+C1 is a **pre-implementation** gate: audit the relation between the two Bolt
+ability offers and the Mountain offer, including original copies/cache mapping
+in [PlayerControllerHuman.getAbilityToPlay][ability]. The current
+[audit](bolt-ability-identity-audit.md) leaves the actual cross-call mapping
+unverified; no authorization allowlist may be inferred from equal numeric IDs.
 If the second offer cannot be tied unambiguously to the authorized cast, or a
 non-singleton/unrecognized question occurs, record atomic failure before throwing
 and prove owner receipt as in #19; stop for review. General asynchronous dialogs
 and multi-ability cards need a separate design; no threading adapter is implicit.
-Publish authorization safely before dispatch so Game-0/Game-1 can consume it;
-bound its question sequence and retire it at completion/failure.
+After that gate closes, publish a fully initialized **immutable** authorization
+record through `AtomicReference<Authorization>.set` **before queuing** the EDT
+controller runnable. Game-0/Game-1 consumers read that same holder with `get`;
+the volatile write/read supplies the happens-before edge. Include only audited
+binding/sequence data; no unchecked mutable fields become authorization. Keep
+question-consumption state in a separate atomic state machine, bound to the
+attempt/generation; retire with compare-and-set at completion/failure. This
+publication edge does not make referenced Forge objects or graph capture safe.
 
 **Capture safety remains a gate, not a guarantee from #19.** ProtocolGuiGame's
 [sync helper contract][protocol] calls for the game thread, yet accepted traces
@@ -221,8 +245,9 @@ Keep the Java assertion oracle and malicious-input injector separate from it.
 
 Implement incrementally after approval:
 
-1. Audit safe capture and the exact ability authorization sequence first. Publish
-   private thread/object-identity evidence; stop on an unsupported boundary.
+1. Close C1 in a separately approved passive observation/review if existing
+   evidence is insufficient; only then seek DTO implementation approval. Audit
+   safe capture before any projection; stop on an unsupported boundary.
 2. At settled checkpoints project initial state, targeting, payment, stack and
    post-resolution. Validate the DTO type graph recursively: only declared DTOs,
    primitives, bounded strings and immutable lists; no maps of arbitrary objects
@@ -240,8 +265,9 @@ Implement incrementally after approval:
    calls and preserve phase, life, stack, tap/pool/target state, input and latch at
    that parked checkpoint; they do not advance revision or wake the game.
 5. Repeat a valid action before and after completion, and reuse its ID with a
-   changed payload; require one dispatch only. Delay an admitted EDT runnable,
-   supersede its generation in a controlled test of the admission helper, and
+   changed canonical field; require `actionIdConflict` and one dispatch only.
+   Delay an admitted EDT runnable, revoke its handle/choice or supersede its
+   generation on EDT in a controlled test of the admission helper, and
    prove the EDT recheck rejects it without calling Forge. Do not manufacture a
    gameplay phase change to test staleness. Resync must preserve the current
    prompt/ledger; an unanswered prompt must remain pending with no synthetic action.
@@ -253,7 +279,10 @@ Implement incrementally after approval:
 
 **Acceptance:** original target is the opponent; before resolution exactly one
 original Bolt is on stack with opponent life 20; one red mana is paid from the
-manually selected tapped Mountain; original resolution produces life 17, Bolt in
+manually selected tapped Mountain, proved from the original
+`SpellAbility.getPayingMana()` list (size 1, RED, source card ID equal to that
+actual Mountain) and `mountain.isTapped()` as in #19. DTO mana/pool counts are
+secondary display evidence, never the payment oracle. Original resolution produces life 17, Bolt in
 graveyard and empty stack. DTOs show that sequence and safe target/payment state.
 Hidden identities cannot be discovered or selected. Invalid/stale actions cannot
 advance the game, duplicates cannot dispatch twice, and required-prompt failures

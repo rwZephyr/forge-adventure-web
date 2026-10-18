@@ -3,6 +3,16 @@
 Last updated: 2026-10-18
 
 ## Stage C design for review
+- PR #20 is conditionally accepted under coordinator C1–C6, with DTO implementation
+  **not authorized**. [C1 identity audit](architecture/bolt-ability-identity-audit.md)
+  confirms three singleton offered views and original caller paths from existing
+  #19 evidence. Per-call view object IDs/cache pairs were not recorded; matching
+  ability IDs and downstream JDI objects cannot close the cross-call identity gate.
+- Revised design names atomic immutable authorization publication, EDT-confined
+  live handle resolution and a single recheck/dispatch runnable, original mana
+  provenance, and typed canonical payload/`actionIdConflict` handling. These are
+  requirements only. Next: review the audit gap and narrowly proposed passive
+  observation; no instrumentation or run has been performed for this follow-up.
 - Owner accepts PR #19's authentic human/AI JVM Bolt milestone following
   independent adversarial review. Its source/evidence remains unchanged and draft.
 - [Browser/JVM interaction contract](architecture/browser-jvm-interaction-contract.md)
