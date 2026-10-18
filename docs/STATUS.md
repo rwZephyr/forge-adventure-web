@@ -2,6 +2,23 @@
 
 Last updated: 2026-10-18
 
+## C1 observation submitted for review
+- [One passive identity run](experiments/c1-identity-results.md) extends only
+  JdiWitness with opt-in `--c1`. Unchanged human Bolt TestNG case: 1 pass, observer
+  and child exit 0. Initial and Game-0 Bolt questions use the same actual view
+  4161 / ability 4154 through distinct caches; Game-1 Mountain uses view 4294 /
+  ability 4287 and pays for that same Bolt. Candidate and offered-view counts
+  are each exactly one; selected/optional-cost/worker/return/resolution references
+  correlate. Full sanitized evidence is published with the report.
+- No selected-ability copy or cache change within a question was observed.
+  Source/classes/cache hashes checked unchanged. Launcher reported a failed
+  in-process environment-restoration comparison; original values were not kept,
+  so cause is unresolved. Disposable process exited; no system/user environment
+  settings written and no Java process remains. No rerun was attempted.
+- C1's bounded identity relationship is demonstrated for review; this does not
+  establish safe state capture. DTO implementation remains on hold. Existing
+  tests/runtime and PRs #17–#20 are unchanged; no new dependencies or listeners.
+
 ## Stage C design for review
 - PR #20 is conditionally accepted under coordinator C1–C6, with DTO implementation
   **not authorized**. [C1 identity audit](architecture/bolt-ability-identity-audit.md)

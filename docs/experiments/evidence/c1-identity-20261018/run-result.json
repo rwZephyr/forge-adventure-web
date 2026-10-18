@@ -1,0 +1,14 @@
+{
+  "mode": "c1",
+  "maximumRuns": 1,
+  "observerExit": 0,
+  "startedUtc": "2026-10-18T23:24:56.7425886Z",
+  "endedUtc": "2026-10-18T23:25:35.3690621Z",
+  "environmentRestored": false,
+  "protectedFileCount": 3345,
+  "cacheFileCount": 2393,
+  "changedInputs": [],
+  "offlineClasspathReused": true,
+  "testSourceSha256": "c3ca6b6a00b91755c5eb5d131d2f47ad99ecec72e673beed71c8e5cedaedbf16",
+  "observerSourceSha256": "785f6951330b723cac88b392046170a330709fcfa2e0d11540e632cdf1b0dc0f"
+}

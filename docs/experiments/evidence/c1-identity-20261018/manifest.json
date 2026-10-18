@@ -1,0 +1,88 @@
+{
+  "baseCommit": "34ca03ece65fca0dce92dab832a0911554a07524",
+  "files": [
+    {
+      "sha256": "4140e9152f60222605567ce8309a9bd08f8aa07242d9b56ad4244b0a45cb67f6",
+      "path": "integrity.json",
+      "bytes": 3285
+    },
+    {
+      "sha256": "2cf1ab9fdbaf47f1231a3a7acee3d7225cc4fc1208f3ad65228e3a7ff1cf9c49",
+      "path": "observer-console.log",
+      "bytes": 284
+    },
+    {
+      "sha256": "0345879cc43622c19dc09e700f817e4a42803713415525867c0eb79f75da74f4",
+      "path": "run-result.json",
+      "bytes": 483
+    },
+    {
+      "sha256": "e717bf748d27a1d17e93bf34e10b557ecd2a8e030ac88ca1e6f8cbdddaa17920",
+      "path": "stderr.log",
+      "bytes": 2796
+    },
+    {
+      "sha256": "d65cb2aa3b77820206e8b578cba5661804c4b64d6aae65614a4382ec4f7a6fb8",
+      "path": "stdout.log",
+      "bytes": 19541
+    },
+    {
+      "sha256": "b3a7e15b3b6d4b5a5ea6fa1da3d009580a250da5d87e7ef3c295dc87029d91b3",
+      "path": "witness.json",
+      "bytes": 114577
+    },
+    {
+      "sha256": "7d333c1697be09ff0a63d099eea170e3b5fb1d9fa015ce3bb7f0d0576b647879",
+      "path": "reports/TEST-forge.net.embedded.ProtocolGuiGameInProcessTest.xml",
+      "bytes": 507
+    },
+    {
+      "sha256": "bca6575cd4ad1aa2c322c3fb02e6d5d345178d4cdea1b63f5ae6aabb5c9d95e2",
+      "path": "reports/testng-results.xml",
+      "bytes": 1144
+    }
+  ],
+  "originalSnapshots": {
+    "before": "1e90fa09951be713cdd0a90b4342e7fbf22a86728b5e20c06b95090064110ee9",
+    "after": "1e90fa09951be713cdd0a90b4342e7fbf22a86728b5e20c06b95090064110ee9"
+  },
+  "transforms": {
+    "observer-console.log": {
+      "originalSha256": "6fdfa6d599be43fbd79eb9703e3491bc1d0e39efacac167379ee93dc0d407184",
+      "publishedSha256": "2cf1ab9fdbaf47f1231a3a7acee3d7225cc4fc1208f3ad65228e3a7ff1cf9c49",
+      "bytes": 284
+    },
+    "reports/TEST-forge.net.embedded.ProtocolGuiGameInProcessTest.xml": {
+      "originalSha256": "d6fb9b64eb0c7dd64eabd9fe72492c792774da0e91515ae1bc7d1612e76da99f",
+      "publishedSha256": "7d333c1697be09ff0a63d099eea170e3b5fb1d9fa015ce3bb7f0d0576b647879",
+      "bytes": 507
+    },
+    "reports/testng-results.xml": {
+      "originalSha256": "1facada295dbdc6c7153d5d6f47f214361fc3964bc85c3702a63a02170bce5b0",
+      "publishedSha256": "bca6575cd4ad1aa2c322c3fb02e6d5d345178d4cdea1b63f5ae6aabb5c9d95e2",
+      "bytes": 1144
+    },
+    "run-result.json": {
+      "originalSha256": "110ef11b73ab6d0c8ed0f0d69f55fc6b3300863f61874af0206ce1037f8e2960",
+      "publishedSha256": "0345879cc43622c19dc09e700f817e4a42803713415525867c0eb79f75da74f4",
+      "bytes": 483
+    },
+    "stderr.log": {
+      "originalSha256": "fdf3668de7e0858d91e007e9c5f085b4f68fc2a9d116b7b16e3b0db95d32dabe",
+      "publishedSha256": "e717bf748d27a1d17e93bf34e10b557ecd2a8e030ac88ca1e6f8cbdddaa17920",
+      "bytes": 2796
+    },
+    "stdout.log": {
+      "originalSha256": "880994df32377c224f1b5fcebf82647e8c18463fe9c0c14488140af71bccfa64",
+      "publishedSha256": "d65cb2aa3b77820206e8b578cba5661804c4b64d6aae65614a4382ec4f7a6fb8",
+      "bytes": 19541
+    },
+    "witness.json": {
+      "originalSha256": "4ce8f08fe08667dc09c190a4c86348d4d725c25f5f907425827ec48f3e07115b",
+      "publishedSha256": "b3a7e15b3b6d4b5a5ea6fa1da3d009580a250da5d87e7ef3c295dc87029d91b3",
+      "bytes": 114577
+    }
+  },
+  "date": "2026-10-18",
+  "normalization": "UTF-8/LF; trailing horizontal whitespace and terminal blank lines removed. Workspace/JDK absolute paths substituted; VM-generated /0x lambda address suffixes normalized. JDI object IDs and all event rows/counts retained. No generated HTML/assets, profiles, binaries or classpath/system-property exports included."
+}
