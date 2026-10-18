@@ -3,3 +3,4 @@
 # Keep recorded evidence byte-exact for its hashes; empty TSV fields are data.
 experiments/rules-teavm/evidence/** -text whitespace=-blank-at-eol,cr-at-eol
 experiments/rules-teavm/reflection-constructors.tsv whitespace=-blank-at-eol
+docs/experiments/evidence/safari-20261018/** text eol=lf

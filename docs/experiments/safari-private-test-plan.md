@@ -1,7 +1,10 @@
 # Temporary actual-iPhone Safari test — approval proposal
 
-Prepared 2026-10-18 on `codex/safari-test-plan`. **Listener startup is not
-approved or performed.** This is an access/test plan, not a game change.
+Prepared 2026-10-18 on `codex/safari-test-plan` before listener approval. The
+owner subsequently approved one coordinated session, which is now completed
+and stopped; see [actual results](safari-session-results.md). The original
+proposal below is retained for reproduction, not standing startup permission.
+This is an access/test plan, not a game change.
 
 ## Verified preparation
 

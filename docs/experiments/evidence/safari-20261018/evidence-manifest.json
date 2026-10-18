@@ -1,0 +1,92 @@
+{
+  "publicEvidence": [
+    {
+      "path": "compare_default_phone.py",
+      "bytes": 1994,
+      "sha256": "1c6d1c2f3a176bcabaf56bffbb6f7126c410dfb435f4f883d72a98205ae89a98"
+    },
+    {
+      "path": "iphone-factory-default-01-comparison.json",
+      "bytes": 1722,
+      "sha256": "d4f5a91b9e559182833ebcd0e2022fc9c16269bc31c7031237afb55f94c0947c"
+    },
+    {
+      "path": "iphone-factory-default-01.json",
+      "bytes": 6246,
+      "sha256": "99e90d99d104b4120ccfda95bc95d3f20cb1550ffe6ba6377fe2797d28086fa8"
+    },
+    {
+      "path": "iphone-factory-explicit-01-comparison.json",
+      "bytes": 111,
+      "sha256": "dd05d05cbb5b2baff333270b48eb918ba47c12af59128c42d59629759d8237ca"
+    },
+    {
+      "path": "iphone-factory-explicit-01.json",
+      "bytes": 7822,
+      "sha256": "36a7b46e9cf5a2a63b56f2bc0d3a3bf0d0e94ffd70a4ac82e81e9a87b0cf1e4b"
+    },
+    {
+      "path": "iphone-factory-missing-amount-01-comparison.json",
+      "bytes": 116,
+      "sha256": "6598e29094e05dcc069bf269f769c8ea82d1bee5ca7ebfcdb6d5fc445c6c6bc9"
+    },
+    {
+      "path": "iphone-factory-missing-amount-01.json",
+      "bytes": 7908,
+      "sha256": "40deb7c35b709f47d69bc374cfe2244d5a4dd7d5a2b9ea95fbc9e7038e2c99ca"
+    },
+    {
+      "path": "session-summary.json",
+      "bytes": 3273,
+      "sha256": "83ac03b5eb1bdfaff75916c2801267a91dfca363b0956a396b2726155fad14a1"
+    }
+  ],
+  "referenceInputs": [
+    {
+      "path": "experiments/rules-teavm/evidence/jvm-results.json",
+      "sha256": "36a7b46e9cf5a2a63b56f2bc0d3a3bf0d0e94ffd70a4ac82e81e9a87b0cf1e4b"
+    },
+    {
+      "path": "experiments/rules-teavm/evidence/browser-default-1.json",
+      "sha256": "f1a436c63ff79e60ec9876ebdfd06b57f19364252df26e1876cdf65572832f62"
+    }
+  ],
+  "privatelyRetainedScreenshots": [
+    {
+      "privateFile": "iphone-spritegroup-01.jpg",
+      "bytes": 66160,
+      "sha256": "b158e2c3295ee8bfae51134ccae79d6630c4c1608d61c4f635fc4dadbbf5d8d0"
+    },
+    {
+      "privateFile": "iphone-spritegroup-02.jpg",
+      "bytes": 65713,
+      "sha256": "4087b8277521391e787b2e52d5cf8365c3f42d6017391aac7b254985e1bb8a93"
+    },
+    {
+      "privateFile": "iphone-spritegroup-03-landscape.jpg",
+      "bytes": 93795,
+      "sha256": "1bf17e8472eeeb1249b8c6cdb553a6a57e33a992a06346d69d8bf835d38fb91c"
+    },
+    {
+      "privateFile": "iphone-spritegroup-03-portrait.jpg",
+      "bytes": 80827,
+      "sha256": "b24083840ce0de57b0ba858b077ed85131b6bc80be6615c7e5a7e1ca4d26c9da"
+    },
+    {
+      "privateFile": "iphone-spritegroup-04-reset.jpg",
+      "bytes": 63769,
+      "sha256": "c44ca8e4aec6bbc11a41e97bb9661e9aaed68249f92e0ed62f863f1a251b83d8"
+    },
+    {
+      "privateFile": "iphone-tailnet-off-11-relay-warning.jpg",
+      "bytes": 69351,
+      "sha256": "be28545183f58b8046eaf10c5399c7e989a9e3658af88567bb52c6942ace6ede"
+    },
+    {
+      "privateFile": "iphone-tailnet-off-11-timeout.jpg",
+      "bytes": 31027,
+      "sha256": "4e111de9a4fb3419b6b30aadda5db3017fb5bbfa37004964d5a56aab89614e8a"
+    }
+  ],
+  "normalization": "Public text files use LF UTF-8; case values preserved from owner-pasted JSON. Original JPEGs retained privately without byte changes."
+}
