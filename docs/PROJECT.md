@@ -22,6 +22,8 @@ Source baseline: this repository is a fork of [Card-Forge/forge](https://github.
 - Prefer reuse of Forge Adventure logic and rendering where workable. Do not replace the Forge rules engine.
 - Kasm/desktop streaming is a possible temporary workaround, **not** the intended community-distributed architecture.
 - Browser-only execution of the entire rules engine is aspirational until proven. A Java backend is an acceptable fallback if it enables a genuinely native portrait browser interface.
+- Following Stage B's verified JVM decisions and 93 unchanged-runtime TeaVM diagnostics, the [source-based architecture comparison](architecture/browser-runtime-comparison.md) recommends testing the existing JVM `IGuiGame` / `IGameController` boundary with a native browser interface. This is a conditional design recommendation, not approval or implementation; human-input transport, headless bootstrap and Adventure return/save boundaries remain unproven. Compatibility shims are paused pending architecture review.
+- The immediate proposed slice is the [existing embedded test extension](architecture/embedded-protocol-test-scope.md): genuine human/AI Bolt decisions, thread/path assertions, a Java-side visibility contract and explicit unanswered-prompt failure. It reuses test-only HeadlessGuiDesktop; browser transport and reconnect are excluded. Its unchanged local execution attempt is blocked by an uncached desktop Maven plugin, not an observed game failure.
 
 ## Environment
 - The owner's Codex Desktop runs on **Silent**, a Windows 11 machine (Ryzen 7 3700X, RTX 3060 Ti, 16 GB RAM) with other existing home services. Avoid assuming spare resources or changing those services.
