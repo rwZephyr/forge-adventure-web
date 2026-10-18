@@ -114,19 +114,40 @@ compilation fails with 93 severe problems. Browser AI execution is blocked.**
   Original Forge sources/POMs and successful experiments remain unchanged; no
   server, additional installation or network/service/save changes.
 
+## Architecture comparison — documentation only
+- [Source-based comparison](architecture/browser-runtime-comparison.md) traces
+  original encounter assembly, duel state, human input/targeting/payment, AI
+  turns, return/rewards and campaign saves against pinned original sources.
+- Conditional recommendation: native browser interface with authoritative JVM
+  Forge, using the existing IGuiGame / IGameController boundary and an additive
+  ProtocolGuiGame / IRemote browser bridge. No bridge has been implemented.
+- First proposed proof: genuine human Bolt selection/target/payment/resolution
+  and a fresh original AI Bolt scenario through the real match/phase loop, with
+  path witnesses, browser projections, negative/reconnect/stale-action checks.
+- Headless bootstrap and Adventure scene/reward/save separation are distinct
+  review gates. Original campaign code still depends on libGDX actors, timers,
+  global singletons and Pixmap-backed persistence; no ready headless service is
+  claimed. Browser-only compatibility work is paused for architecture review.
+- Actual checks this task: source/evidence inspection, source-reference and
+  documentation-link checks, git diff whitespace and documentation-only scope;
+  all five inspected original module trees match the pinned baseline. No new
+  build/runtime/browser test, source adaptation, listener, install or network
+  change. Independent reviews were read as assessments, not new executions.
+
 ## Next bounded step and handoff
 - Review the completed actual-phone evidence; keep PRs #8 and #11 draft/unmerged.
 - Review first-slice actual results and the documented negative-control correction.
   The [reviewed scope](experiments/gate-2-stage-b-scope.md) is historical design;
   its zero-task negative assumption and predicted blockers now have actual evidence.
-- Smallest proposed next step: separately review a compile-only canary for the
-  original FutureTask/Thread/timed-get contract, isolating that hard runtime
-  boundary before Game/resource/logging adaptations. It cannot count as an AI
-  success and has not been implemented. Any class-library or resource/timeout
-  boundary contribution needs exact semantics/licensing review before changes.
+- Review the architecture recommendation and proposed native browser/JVM duel
+  proof before implementation. The previous FutureTask canary recommendation
+  remains historical and unimplemented; it is superseded as the immediate next
+  step by the owner's architecture-review request. Any runtime/campaign boundary
+  adaptation needs a separate concrete source diff and approval.
 - No additional server, network or deployment authorization persists from this
   completed single session. Whole-game porting, accounts, saves and unrelated
   services remain outside scope.
-- Current branch adds only the independent ai-teavm target, evidence, scoped
-  evidence attributes/ignore rules and this status. Earlier draft PRs are
-  unchanged and unmerged; no original Forge class/POM or asset changed.
+- Current branch `codex/architecture-comparison` adds only the architecture
+  design and PROJECT/STATUS documentation updates, stacked on draft PR #15.
+  Earlier draft PRs and successful experiments are unchanged and unmerged;
+  no original Forge class/POM or asset changed.
