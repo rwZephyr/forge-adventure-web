@@ -24,7 +24,7 @@ python3 adventure_asset_scan.py \
 Expected result: exit 0, `9 files (7 static + 2 runtime-probed), 1793286 bytes
 total`, zero missing, zero rejected, zero cycles, zero errors. The sample
 `cave_treasure.manifest.json` next to this README is that exact run's output
-(regenerated with v1.1.0; see "Intentional differences" below).
+(regenerated with v1.1.1; see "Intentional differences" below).
 
 ### Discovered files for `cave_treasure.tmx`
 
@@ -74,9 +74,11 @@ python3 adventure_asset_scan.py [--root DIR] [--plane DIR] [--common DIR]
 - `--root`: designated repository root. Manifest paths are relative to it,
   the input map must lie inside it, and no reference may escape it (see
   "Path safety"). Default: current directory.
-- `--plane` / `--common`: adventure plane/common dirs used to probe `sprite`
-  property values the way `Config.getFile()` does. Omit them and sprite values
-  are reported as unresolvable (still listed under `runtime_discovery`).
+- `--plane` / `--common`: adventure plane/common dirs **inside `--root`**,
+  used to probe `sprite` property values the way `Config.getFile()` does.
+  Directories outside `--root` (including via symlinks) are rejected with
+  exit 2 before any asset file is read. Omit them and sprite values are
+  reported as unresolvable (still listed under `runtime_discovery`).
 - `--timestamp`: include a `generated_utc` timestamp in the manifest. Off by
   default so identical inputs produce byte-identical JSON.
 - `--allow-missing`: tolerate missing files and dependency cycles (exit 0).
@@ -96,15 +98,16 @@ references escaping `--root` **always** fail, in both modes.
 python3 -m unittest test_adventure_asset_scan -v
 ```
 
-18 tests, standard library only (`unittest`, `tempfile`). They cover: valid
+21 tests, standard library only (`unittest`, `tempfile`). They cover: valid
 dependency graphs (both tileset kinds, image layers, templates), duplicate
 references, missing files in strict/lenient modes, malformed XML in both
 modes, unreadable files in both modes, cycle detection with the complete
 closed path (strict fail / lenient pass), diamond graphs (not cycles),
 absolute-path / `../`-traversal / symlink-escape rejection (always fatal),
-in-root symlinks (allowed, deduplicated), map-outside-root rejection,
-byte-identical output across runs, timestamp opt-in, and runtime-discovery
-separation from static dependencies.
+probe directories outside `--root` and probe-dir symlink escapes (exit 2
+before any read), in-root symlinks (allowed, deduplicated),
+map-outside-root rejection, byte-identical output across runs, timestamp
+opt-in, and runtime-discovery separation from static dependencies.
 
 ## Manifest schema
 
@@ -138,7 +141,10 @@ symlink resolution and checked for containment in `--root`. Absolute paths,
 `..` sequences escaping the root, and symlinks pointing outside the root are
 rejected, recorded, and never traversed. In-root symlinks are followed and
 deduplicated by canonical path. Sprite-probe candidates must likewise stay
-inside their `--plane`/`--common` directory.
+inside their `--plane`/`--common` directory, and **both probe directories
+must themselves live inside `--root`** (after symlink resolution) — an
+out-of-root probe dir is rejected with exit 2 before any asset file is read,
+so a hostile atlas can never be pulled in through runtime probing.
 
 ## Intentional differences from v1.0.0
 
@@ -154,6 +160,8 @@ inside their `--plane`/`--common` directory.
 6. Exit code `2` is now also used when the input map lies outside `--root`.
 7. File identity is by canonical (symlink-resolved) path, so in-root symlinks
    deduplicate instead of double-counting.
+8. (v1.1.1) `--plane`/`--common` must be inside `--root` after symlink
+   resolution; violations exit 2 before any asset file is read.
 
 ## Limitations
 
