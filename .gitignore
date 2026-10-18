@@ -109,3 +109,4 @@ forge-gui-ios/robovm.properties
 /experiments/*/.gradle/
 /experiments/*/build/
 !/experiments/rules-teavm/evidence/*.log
+!/experiments/ai-teavm/evidence/*.log

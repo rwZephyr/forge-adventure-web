@@ -1,0 +1,30 @@
+[
+  {
+    "run": "positive-1",
+    "pid": 57096,
+    "completed": true,
+    "exitCode": 0,
+    "elapsedMs": 9212.5164
+  },
+  {
+    "run": "positive-2",
+    "pid": 55336,
+    "completed": true,
+    "exitCode": 0,
+    "elapsedMs": 9264.8274
+  },
+  {
+    "run": "positive-3",
+    "pid": 61364,
+    "completed": true,
+    "exitCode": 0,
+    "elapsedMs": 9116.0125
+  },
+  {
+    "run": "negative-1",
+    "pid": 59596,
+    "completed": true,
+    "exitCode": 0,
+    "elapsedMs": 9011.6043
+  }
+]

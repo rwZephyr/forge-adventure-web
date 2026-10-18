@@ -1,0 +1,19 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.6.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :verifyOriginalInputs
+> Task :compileJava UP-TO-DATE
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+> Task :compileObserverJava
+> Task :processObserverResources NO-SOURCE
+> Task :observerClasses
+
+> Task :jvmTrace
+JDI positive: path=true, childExit=0, events=9
+JDI negative: path=true, childExit=0, events=11
+Persisted dependency lock state for buildscript of root project 'forge-original-ai-teavm-probe'
+Persisted dependency lock state for root project 'forge-original-ai-teavm-probe'
+
+BUILD SUCCESSFUL in 44s
+4 actionable tasks: 3 executed, 1 up-to-date
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.6.1/userguide/configuration_cache_enabling.html

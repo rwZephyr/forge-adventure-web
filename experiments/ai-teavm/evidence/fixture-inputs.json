@@ -1,0 +1,26 @@
+[
+  {
+    "path": "forge-gui/res/cardsfolder/l/lightning_bolt.txt",
+    "bytes": 202,
+    "sha256": "330ba48b8090d1b2312f9404d71612cd3bbf49b960974b99ebf5c0804bb4711e",
+    "lfSha256": "330ba48b8090d1b2312f9404d71612cd3bbf49b960974b99ebf5c0804bb4711e"
+  },
+  {
+    "path": "forge-gui/res/cardsfolder/m/mountain.txt",
+    "bytes": 80,
+    "sha256": "d421d9639d7b7f2a8c4ed04fa2fa8526cbc768733a92b0a1a453535ee99a3799",
+    "lfSha256": "d421d9639d7b7f2a8c4ed04fa2fa8526cbc768733a92b0a1a453535ee99a3799"
+  },
+  {
+    "path": "forge-gui/res/languages/en-US.properties",
+    "bytes": 183250,
+    "sha256": "4c9e40f974c076389e13a809223bbd32bc7e1c031ca9d9691205a4e981b6db43",
+    "lfSha256": "bf5171b9708aec99336673d684fa5b2687cfd53c347f7d068ffd6bdbcaf107c7"
+  },
+  {
+    "path": "forge-gui/res/lists/TypeLists.txt",
+    "bytes": 8078,
+    "sha256": "508088255077cab6405770332150be9b77d5d2c28f82de6b37de40b0a6a78eea",
+    "lfSha256": "c3bb3dc738dbc0128c4eb5f06bdf6d483680e19fa57fefb9729f0b0e8b8d7fff"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "task": "browserOriginal",
+  "arguments": [
+    "-p",
+    "C:\\Users\\Silent\\Projects\\forge-adventure-web/experiments/ai-teavm",
+    "--offline",
+    "--no-daemon",
+    "--max-workers=1",
+    "--console=plain",
+    "browserOriginal",
+    "--write-locks"
+  ],
+  "jdk": "C:/Program Files/Java/jdk-17",
+  "startedUtc": "2026-10-18T16:19:49.5765367Z",
+  "finishedUtc": "2026-10-18T16:20:45.2459136Z",
+  "elapsedSeconds": 55.6714072,
+  "exitCode": 1
+}

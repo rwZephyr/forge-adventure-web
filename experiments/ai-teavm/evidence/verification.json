@@ -1,0 +1,59 @@
+{
+  "checks": [
+    {
+      "run": "positive-1",
+      "verified": true,
+      "decisionMs": 39.3413,
+      "elapsedMs": 9071.5623
+    },
+    {
+      "run": "positive-2",
+      "verified": true,
+      "decisionMs": 46.6425,
+      "elapsedMs": 9125.8368
+    },
+    {
+      "run": "positive-3",
+      "verified": true,
+      "decisionMs": 35.1511,
+      "elapsedMs": 8989.0615
+    },
+    {
+      "run": "negative-1",
+      "verified": true,
+      "decisionMs": 79.2681,
+      "elapsedMs": 8885.4715
+    },
+    {
+      "run": "jdi-positive",
+      "verified": true,
+      "transport": "dt_shmem",
+      "events": 9
+    },
+    {
+      "run": "jdi-negative",
+      "verified": true,
+      "transport": "dt_shmem",
+      "events": 11
+    }
+  ],
+  "originalSourceAndPomsUnchanged": true,
+  "successfulExperimentsUnchanged": true,
+  "originalInputFilesVerified": 2610,
+  "originalInputManifestSha256": "70a66df433d9b853ad60dc231ecda0c85d921df6c4df46c30f7827588786f4f2",
+  "auditedConstructors": 491,
+  "policyConstructors": 346,
+  "dependencyEntries": 63,
+  "uniqueDependencies": 58,
+  "allLicenseDeclarationsResolved": true,
+  "compilerExit": 1,
+  "compilerErrorCount": 93,
+  "firstReportedDiagnostic": {
+    "ordinal": 1,
+    "headline": "ERROR: Method java.io.File.toPath()Ljava/nio/file/Path; was not found",
+    "diagnostic": "ERROR: Method java.io.File.toPath()Ljava/nio/file/Path; was not found\n    at forge.util.FileUtil.readAllLines(FileUtil.java:256)\n    at forge.util.FileUtil.readFile(FileUtil.java:205)\n    at forge.util.FileUtil.readFile(FileUtil.java:185)\n    at probe.OriginalAiFixture.bootstrap(OriginalAiFixture.java:39)\n    at probe.OriginalAiFixture.run(OriginalAiFixture.java:61)\n    at probe.BrowserMain.main(BrowserMain.java:4)"
+  },
+  "runnableBrowserArtifact": false,
+  "serversStarted": false,
+  "negativeControlCorrection": "Empty hand retains original Mountain mana candidates and threaded evaluation; null choice/no payment/no damage verified. Zero-task assumption disproved."
+}

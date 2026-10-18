@@ -1,0 +1,102 @@
+plugins {
+    id 'java'
+    id 'com.github.xpenatan.gdx-teavm' version '1.6.1'
+}
+repositories {
+    maven { url = uri('../../.local-tools/m2') }
+    mavenCentral()
+}
+dependencyLocking { lockAllConfigurations() }
+java { sourceCompatibility = JavaVersion.VERSION_17; targetCompatibility = JavaVersion.VERSION_17 }
+tasks.withType(JavaCompile).configureEach { options.release = 17; options.debug = true }
+dependencies {
+    implementation files('../../forge-core/target/classes','../../forge-game/target/classes','../../forge-ai/target/classes')
+    implementation 'com.google.guava:guava:33.3.1-android'
+    implementation 'org.apache.commons:commons-lang3:3.18.0'
+    implementation 'org.apache.commons:commons-text:1.12.0'
+    implementation 'org.apache.commons:commons-math3:3.6.1'
+    implementation 'com.apptasticsoftware:rssreader:3.8.2'
+    implementation 'org.tinylog:slf4j-tinylog:2.7.0'
+    implementation 'org.tinylog:tinylog-impl:2.7.0'
+    implementation 'org.slf4j:slf4j-api:2.0.16'
+    implementation 'io.sentry:sentry:8.21.1'
+    implementation 'org.jgrapht:jgrapht-core:1.5.2'
+    implementation 'com.badlogicgames.gdx:gdx:1.14.2'
+    implementation 'org.teavm:teavm-jso:0.15.0'
+}
+configurations.all { resolutionStrategy.force 'com.google.guava:guava:33.3.1-android', 'org.slf4j:slf4j-api:2.0.16' }
+sourceSets {
+    main.java.srcDir 'build/generated'
+    compiler { java.setSrcDirs(['src/compiler/java']); resources.setSrcDirs(['src/compiler/resources']) }
+    observer { java.setSrcDirs(['src/observer/java']); compileClasspath += sourceSets.main.runtimeClasspath; runtimeClasspath += sourceSets.main.runtimeClasspath }
+}
+dependencies {
+    compilerImplementation 'org.teavm:teavm-tooling:0.15.0'
+    compilerImplementation 'org.teavm:teavm-classlib:0.15.0'
+    compilerImplementation 'org.teavm:teavm-extension-spi:0.15.0'
+    compilerImplementation 'com.github.xpenatan.gdx-teavm:backend-web:1.6.1'
+}
+tasks.register('verifyOriginalInputs') {
+    doLast {
+        def manifest = file('build/input-manifest.json')
+        if (!manifest.isFile()) throw new GradleException('Run Prepare-Forge.ps1')
+        new groovy.json.JsonSlurper().parse(manifest).inputs.each { entry ->
+            def input = file('../../' + entry.path)
+            if (!input.isFile() || java.security.MessageDigest.getInstance('SHA-256').digest(input.bytes).encodeHex().toString() != entry.sha256)
+                throw new GradleException('Original source/class input changed: ' + entry.path)
+        }
+    }
+}
+tasks.named('compileJava') { dependsOn 'verifyOriginalInputs' }
+def isolatedHome = file('../../.local-tools/ai-test-home')
+def configureJvm = { task ->
+    task.dependsOn 'classes'
+    task.classpath = sourceSets.main.runtimeClasspath
+    task.maxHeapSize = '1536m'
+    task.jvmArgs '-Dfile.encoding=UTF-8', '-Duser.home=' + isolatedHome, '-Djava.io.tmpdir=' + new File(isolatedHome,'tmp')
+    task.environment 'APPDATA', new File(isolatedHome,'AppData/Roaming').absolutePath
+    task.environment 'LOCALAPPDATA', new File(isolatedHome,'AppData/Local').absolutePath
+    task.doFirst { [isolatedHome, new File(isolatedHome,'tmp'),new File(isolatedHome,'AppData/Roaming'),new File(isolatedHome,'AppData/Local')].each { it.mkdirs() } }
+}
+tasks.register('jvmControl', JavaExec) {
+    configureJvm(delegate)
+    mainClass = 'probe.JvmRunner'
+    args file('build/jvm').absolutePath
+}
+tasks.register('metadataInventory', JavaExec) {
+    configureJvm(delegate)
+    mainClass = 'probe.MetadataMain'
+    args file('build/constructors.tsv').absolutePath, file('build/metadata.json').absolutePath
+}
+tasks.register('jvmTrace', JavaExec) {
+    configureJvm(delegate)
+    dependsOn 'observerClasses'
+    classpath = sourceSets.observer.runtimeClasspath
+    jvmArgs '--add-modules=jdk.jdi'
+    mainClass = 'probe.JdiWitness'
+    args file('build/traces').absolutePath
+}
+tasks.register('browserOriginal', JavaExec) {
+    dependsOn 'classes','compilerClasses'
+    classpath = sourceSets.compiler.runtimeClasspath + sourceSets.main.runtimeClasspath
+    mainClass = 'probe.compiler.CompilerMain'
+    maxHeapSize = '1536m'
+    args 'original', file('build/web/original').absolutePath, sourceSets.main.runtimeClasspath.asPath,
+         file('build/constructors.tsv').absolutePath,
+         ['../../forge-core/src/main/java','../../forge-game/src/main/java','../../forge-ai/src/main/java'].collect { file(it).absolutePath }.join(File.pathSeparator)
+}
+tasks.register('dependencyInventory') {
+    doLast {
+        def rows=[]
+        [configurations.runtimeClasspath,configurations.compilerRuntimeClasspath].each { conf ->
+            conf.resolvedConfiguration.resolvedArtifacts.each { artifact ->
+                rows.add([configuration:conf.name,coordinate:artifact.moduleVersion.id.toString(),file:artifact.file.name,
+                          sha256:java.security.MessageDigest.getInstance('SHA-256').digest(artifact.file.bytes).encodeHex().toString()])
+            }
+        }
+        def output=file('build/dependencies.json'); output.parentFile.mkdirs()
+        output.text=groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(rows))+'\n'
+        println 'Resolved dependency entries: '+rows.size()
+    }
+}
+tasks.matching { it.name.endsWith('_run') || it.name.toLowerCase().contains('devserver') }.configureEach { enabled=false }

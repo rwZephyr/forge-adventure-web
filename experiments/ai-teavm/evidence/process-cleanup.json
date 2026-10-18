@@ -1,0 +1,11 @@
+{
+  "verifiedUtc": "2026-10-18T16:25:36.0086843Z",
+  "knownFixturePidsStillPresent": [],
+  "activeProbeJavaProcesses": 0,
+  "port8765ListenerCount": 0,
+  "debugTransport": "dt_shmem",
+  "debugTcpServerStarted": false,
+  "httpServerStarted": false,
+  "networkOrServiceConfigurationChanged": false,
+  "observerChildrenExitedZero": true
+}
