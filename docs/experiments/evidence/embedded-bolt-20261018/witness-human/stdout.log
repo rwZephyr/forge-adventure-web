@@ -1,0 +1,142 @@
+12:38:03 [INFO ] Logger: [TestNG] Running:
+  Command line suite
+
+Language 'en-US' loaded successfully.
+(ThreadUtil first call): Running with priority 5
+Read cards: 34088 files in 3 ms (25 parts) using thread pool
+Read cards: 857 files in 0 ms (8 parts) using thread pool
+12:38:27 [INFO ] TestUtils: [TestConfig] checksum=stable, deltasync=on
+[bolt] bootstrapMs=23737.300 mode=HUMAN
+[bolt] ns=547074800 site=HUMAN:updateGameView-enter tid=62 thread=TestNG-method=humanBoltTargetsOpponentWithManualMountainPayment-1 edt=false input=none waiter=none
+[bolt] ns=583007000 site=HUMAN:updateGameView-return tid=62 thread=TestNG-method=humanBoltTargetsOpponentWithManualMountainPayment-1 edt=false input=none waiter=none
+[bolt] ns=583229600 site=HUMAN:updateGameView-enter tid=62 thread=TestNG-method=humanBoltTargetsOpponentWithManualMountainPayment-1 edt=false input=none waiter=none
+[bolt] ns=606889400 site=HUMAN:updateGameView-return tid=62 thread=TestNG-method=humanBoltTargetsOpponentWithManualMountainPayment-1 edt=false input=none waiter=none
+[bolt] ns=610098400 site=HUMAN:updateGameView-enter tid=62 thread=TestNG-method=humanBoltTargetsOpponentWithManualMountainPayment-1 edt=false input=none waiter=none
+[bolt] ns=610354500 site=HUMAN:updateGameView-return tid=62 thread=TestNG-method=humanBoltTargetsOpponentWithManualMountainPayment-1 edt=false input=none waiter=none
+[bolt] ns=940408200 site=HUMAN:handleGameEvents-enter tid=119 thread=Game-0 edt=false input=none waiter=none
+12:38:28 [INFO ] ProtocolGuiGame: Sending batch of 7: [GameEventZone x4, GameEventShuffle x2, GameEventFlipCoin]
+12:38:28 [INFO ] DeltaSyncManager: [DeltaSync] New objects: 163, Deltas: 0
+[bolt] ns=965915300 site=HUMAN:handleGameEvents-return tid=119 thread=Game-0 edt=false input=none waiter=none
+[bolt] ns=971828100 site=HUMAN:prompt-updateButtons tid=120 thread=AWT-EventQueue-0 edt=true input=InputConfirm@1731359725 waiter=none
+[bolt] ns=975131600 site=HUMAN:prompt-showPromptMessage tid=120 thread=AWT-EventQueue-0 edt=true input=InputConfirm@1731359725 waiter=none
+[bolt] ns=983536800 site=HUMAN:await-enter tid=119 thread=Game-0 edt=false input=InputConfirm@1731359725 count=1
+[bolt] ns=996737200 site=HUMAN:action tid=120 thread=AWT-EventQueue-0 edt=true input=InputConfirm@1731359725 buttons=Play/Draw waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1008425800 site=HUMAN:await-return tid=119 thread=Game-0 edt=false input=InputLockUI@1903796683 count=0
+[bolt] ns=1158274700 site=HUMAN:handleGameEvents-enter tid=119 thread=Game-0 edt=false input=InputLockUI@1903796683 waiter=119:Game-0:RUNNABLE:latch=0
+12:38:28 [INFO ] ProtocolGuiGame: Sending batch of 43: [GameEventGameStarted, GameEventZone x28, GameEventCardChangeZone x14]
+12:38:28 [INFO ] DeltaSyncManager: [DeltaSync] New objects: 28, Deltas: 2
+[bolt] ns=1166160100 site=HUMAN:handleGameEvents-return tid=119 thread=Game-0 edt=false input=InputLockUI@1903796683 waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=1166561400 site=HUMAN:prompt-updateButtons tid=120 thread=AWT-EventQueue-0 edt=true input=InputConfirmMulligan@165174623 waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=1166738700 site=HUMAN:prompt-showPromptMessage tid=120 thread=AWT-EventQueue-0 edt=true input=InputConfirmMulligan@165174623 waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=1166876500 site=HUMAN:action tid=120 thread=AWT-EventQueue-0 edt=true input=InputConfirmMulligan@165174623 buttons=Keep/Mulligan waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=1171627000 site=HUMAN:await-enter tid=119 thread=Game-0 edt=false input=InputConfirmMulligan@165174623 count=1
+[bolt] ns=1176183300 site=HUMAN:await-return tid=119 thread=Game-0 edt=false input=InputLockUI@1367153803 count=0
+[bolt] ns=1323067400 site=HUMAN:fixture tid=119 thread=Game-0 edt=false input=InputLockUI@1367153803 human=0 ai=1 boltIds=[1] mountain=2 timeout=5
+[bolt] ns=1325090700 site=HUMAN:handleGameEvents-enter tid=119 thread=Game-0 edt=false input=InputLockUI@1367153803 waiter=119:Game-0:RUNNABLE:latch=0
+12:38:28 [INFO ] ProtocolGuiGame: Sending batch of 259: [GameEventAddLog x2, GameEventTurnBegan, GameEventTurnPhase x2, GameEventZone x170, GameEventCardChangeZone x83, GameEventPlayerPriority]
+12:38:28 [INFO ] DeltaSyncManager: [DeltaSync] New objects: 28, Deltas: 3
+[bolt] ns=1340299900 site=HUMAN:handleGameEvents-return tid=119 thread=Game-0 edt=false input=InputLockUI@1367153803 waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=1439162700 site=HUMAN:updateGameView-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@65483669 waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=1448366200 site=HUMAN:await-enter tid=119 thread=Game-0 edt=false input=InputPassPriority@65483669 count=1
+[bolt] ns=1455349700 site=HUMAN:updateGameView-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@65483669 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1460687900 site=HUMAN:prompt-showPromptMessage tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@65483669 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1461066500 site=HUMAN:prompt-updateButtons tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@65483669 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1461423600 site=HUMAN:action tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@65483669 buttons=OK/End Turn waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1470014200 site=HUMAN:visibility-initial tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@65483669 allowedFaceCount=2 hiddenFaceCount=78 rawGraphPrivate=true
+[bolt] ns=1495721100 site=HUMAN:updateGameView-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@65483669 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1501575400 site=HUMAN:updateGameView-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@65483669 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1502022500 site=HUMAN:reply-enter-getAbilityToPlay tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@65483669 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1502390900 site=HUMAN:reply-return-getAbilityToPlay tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@65483669 ability=214 answer=Lightning Bolt deals 3 damage to any target.
+[bolt] ns=1502556600 site=HUMAN:updateGameView-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@65483669 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1507585500 site=HUMAN:updateGameView-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@65483669 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1507969900 site=HUMAN:await-return tid=119 thread=Game-0 edt=false input=InputLockUI@1934433171 count=0
+[bolt] ns=1524651000 site=HUMAN:updateGameView-enter tid=119 thread=Game-0 edt=false input=InputLockUI@1934433171 waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=1530061000 site=HUMAN:updateGameView-return tid=119 thread=Game-0 edt=false input=InputLockUI@1934433171 waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=1530238200 site=HUMAN:reply-enter-getAbilityToPlay tid=119 thread=Game-0 edt=false input=InputLockUI@1934433171 waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=1530312700 site=HUMAN:reply-return-getAbilityToPlay tid=119 thread=Game-0 edt=false input=InputLockUI@1934433171 ability=214 answer=Lightning Bolt deals 3 damage to any target.
+[bolt] ns=1556217700 site=HUMAN:handleGameEvents-enter tid=119 thread=Game-0 edt=false input=InputLockUI@1934433171 waiter=119:Game-0:RUNNABLE:latch=0
+12:38:29 [INFO ] ProtocolGuiGame: Sending batch of 3: [GameEventZone x2, GameEventCardChangeZone]
+[bolt] ns=1563020200 site=HUMAN:handleGameEvents-return tid=119 thread=Game-0 edt=false input=InputLockUI@1934433171 waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=1564011800 site=HUMAN:updateGameView-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@148434332 waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=1573214100 site=HUMAN:await-enter tid=119 thread=Game-0 edt=false input=InputSelectTargets@148434332 count=1
+[bolt] ns=1577353600 site=HUMAN:updateGameView-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@148434332 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1578117000 site=HUMAN:updateGameView-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@148434332 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1582780000 site=HUMAN:updateGameView-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@148434332 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1582934200 site=HUMAN:prompt-showPromptMessage tid=120 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@148434332 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1583152200 site=HUMAN:prompt-updateButtons tid=120 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@148434332 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1586615300 site=HUMAN:updateGameView-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@148434332 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1591341600 site=HUMAN:updateGameView-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@148434332 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1591588000 site=HUMAN:action tid=120 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@148434332 buttons=OK/Cancel waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1609175200 site=HUMAN:updateGameView-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@148434332 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1613423900 site=HUMAN:updateGameView-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@148434332 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1613622000 site=HUMAN:updateGameView-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@148434332 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1618202200 site=HUMAN:updateGameView-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@148434332 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1618530400 site=HUMAN:await-return tid=119 thread=Game-0 edt=false input=InputLockUI@835590318 count=0
+[bolt] ns=1619004200 site=HUMAN:updateGameView-enter tid=119 thread=Game-0 edt=false input=InputLockUI@835590318 waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=1623041200 site=HUMAN:updateGameView-return tid=119 thread=Game-0 edt=false input=InputLockUI@835590318 waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=1668539300 site=HUMAN:updateGameView-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@653941627 waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=1678004400 site=HUMAN:await-enter tid=119 thread=Game-0 edt=false input=InputPayManaOfCostPayment@653941627 count=1
+[bolt] ns=1682733700 site=HUMAN:updateGameView-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@653941627 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1683065100 site=HUMAN:prompt-updateButtons tid=120 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@653941627 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1719695300 site=HUMAN:prompt-updateButtons tid=120 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@653941627 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1719913600 site=HUMAN:updateGameView-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@653941627 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1725743500 site=HUMAN:updateGameView-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@653941627 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1726293600 site=HUMAN:updateGameView-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@653941627 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1730188400 site=HUMAN:updateGameView-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@653941627 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1730353500 site=HUMAN:prompt-showPromptMessage tid=120 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@653941627 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1730580800 site=HUMAN:action tid=120 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@653941627 buttons=Auto/Cancel waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1745817300 site=HUMAN:action tid=120 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@653941627 buttons=Auto/Cancel waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1745926200 site=HUMAN:duplicate-payment-button-refresh tid=120 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@653941627 no second click
+[bolt] ns=1746083700 site=HUMAN:updateGameView-enter tid=123 thread=Game-1 edt=false input=InputPayManaOfCostPayment@653941627 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1750537400 site=HUMAN:updateGameView-return tid=123 thread=Game-1 edt=false input=InputPayManaOfCostPayment@653941627 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1750699400 site=HUMAN:reply-enter-getAbilityToPlay tid=123 thread=Game-1 edt=false input=InputPayManaOfCostPayment@653941627 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1751375000 site=HUMAN:reply-return-getAbilityToPlay tid=123 thread=Game-1 edt=false input=InputPayManaOfCostPayment@653941627 ability=199 answer={T}: Add {R}.
+[bolt] ns=1796486400 site=HUMAN:updateGameView-enter tid=123 thread=Game-1 edt=false input=InputPayManaOfCostPayment@653941627 waiter=119:Game-0:WAITING:latch=1
+12:38:29 [INFO ] ProtocolGuiGame: Sending batch of 4: [GameEventCardTapped, GameEventManaPool x2, GameEventAddLog]
+[bolt] ns=1801150900 site=HUMAN:updateGameView-return tid=123 thread=Game-1 edt=false input=InputPayManaOfCostPayment@653941627 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1801518600 site=HUMAN:await-return tid=119 thread=Game-0 edt=false input=InputLockUI@1158835509 count=0
+[bolt] ns=1835621100 site=HUMAN:updateGameView-enter tid=119 thread=Game-0 edt=false input=InputLockUI@1158835509 waiter=119:Game-0:RUNNABLE:latch=0
+12:38:29 [INFO ] ProtocolGuiGame: Sending batch of 2: [GameEventSpellAbilityCast, GameEventZone]
+12:38:29 [INFO ] DeltaSyncManager: [DeltaSync] New objects: 3, Deltas: 1
+12:38:29 [INFO ] DeltaSyncManager: [DeltaSync] Sampled checksum for seq=20: hash=-254126388, props=[PaperFoil, Blocking, Tapped, NeedsTapAnimation, FunctionalVariant, CantHaveKeyword, Commander, MindSlaveMaster, Battlefield, Flashback, AttractionDeck, CanPlay, Turn, PlayerTurn, StormCount]
+12:38:29 [INFO ] DeltaSyncManager: [DeltaSync]   Turn: 1 (snapshot), Phase: MAIN1 (snapshot, current=MAIN1)
+12:38:29 [INFO ] DeltaSyncManager: [DeltaSync]   Player 0 (Bolt Fixture Bolt): Life=20, Hand=0, GY=0, BF=1
+12:38:29 [INFO ] DeltaSyncManager: [DeltaSync]   Player 1 (AI): Life=20, Hand=1, GY=0, BF=0
+[bolt] ns=1841742600 site=HUMAN:updateGameView-return tid=119 thread=Game-0 edt=false input=InputLockUI@1158835509 waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=1870997500 site=HUMAN:handleGameEvents-enter tid=119 thread=Game-0 edt=false input=InputLockUI@1158835509 waiter=119:Game-0:RUNNABLE:latch=0
+12:38:29 [INFO ] ProtocolGuiGame: Sending batch of 5: [GameEventZone x4, GameEventPlayerPriority]
+[bolt] ns=1875640700 site=HUMAN:handleGameEvents-return tid=119 thread=Game-0 edt=false input=InputLockUI@1158835509 waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=1875991600 site=HUMAN:updateGameView-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1308510931 waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=1882727300 site=HUMAN:await-enter tid=119 thread=Game-0 edt=false input=InputPassPriority@1308510931 count=1
+[bolt] ns=1886565200 site=HUMAN:updateGameView-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1308510931 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1886836100 site=HUMAN:prompt-showPromptMessage tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1308510931 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1887123300 site=HUMAN:prompt-updateButtons tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1308510931 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1887538200 site=HUMAN:action tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1308510931 buttons=OK/Undo waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1891382400 site=HUMAN:stack-before-resolution tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1308510931 bolt=1 target=1 life=20 paid=R source=2
+[bolt] ns=1892026100 site=HUMAN:visibility-stack tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1308510931 allowedFaceCount=2 hiddenFaceCount=78 rawGraphPrivate=true
+[bolt] ns=1898749100 site=HUMAN:updateGameView-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1308510931 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1904205000 site=HUMAN:updateGameView-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@1308510931 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1904575400 site=HUMAN:await-return tid=119 thread=Game-0 edt=false input=InputLockUI@631899888 count=0
+[bolt] ns=1968864400 site=HUMAN:handleGameEvents-enter tid=119 thread=Game-0 edt=false input=InputLockUI@631899888 waiter=119:Game-0:RUNNABLE:latch=0
+12:38:29 [INFO ] ProtocolGuiGame: Sending batch of 17: [GameEventPlayerPriority x2, GameEventZone x10, GameEventPlayerDamaged, GameEventPlayerLivesChanged, GameEventSpellResolved, GameEventCardChangeZone, GameEventSpellRemovedFromStack]
+12:38:29 [INFO ] DeltaSyncManager: [DeltaSync] New objects: 2, Deltas: 3
+[bolt] ns=1974745600 site=HUMAN:handleGameEvents-return tid=119 thread=Game-0 edt=false input=InputLockUI@631899888 waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=1993781700 site=HUMAN:updateGameView-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@934699358 waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=2001089500 site=HUMAN:await-enter tid=119 thread=Game-0 edt=false input=InputPassPriority@934699358 count=1
+[bolt] ns=2005949500 site=HUMAN:updateGameView-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@934699358 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=2006204700 site=HUMAN:prompt-showPromptMessage tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@934699358 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=2006361700 site=HUMAN:prompt-updateButtons tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@934699358 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=2006646100 site=HUMAN:action tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@934699358 buttons=OK/Undo waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=2007772400 site=HUMAN:visibility-resolved tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@934699358 allowedFaceCount=2 hiddenFaceCount=78 rawGraphPrivate=true
+[bolt] ns=2008033000 site=HUMAN:human-success tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@934699358 aiLife=20->17 stack=0 graveyardBolt=1
+[bolt] ns=2022425000 site=HUMAN:await-return tid=119 thread=Game-0 edt=false input=none count=0
+Active player is no longer in the game...
+[bolt] ns=2168336200 site=HUMAN:handleGameEvents-enter tid=119 thread=Game-0 edt=false input=none waiter=119:Game-0:RUNNABLE:latch=0
+12:38:29 [INFO ] ProtocolGuiGame: Sending batch of 4: [GameEventPlayerControl x2, GameEventGameOutcome, GameEventGameFinished]
+[bolt] ns=2175516200 site=HUMAN:handleGameEvents-return tid=119 thread=Game-0 edt=false input=none waiter=119:Game-0:RUNNABLE:latch=0
+
+===============================================
+Command line suite
+Total tests run: 1, Passes: 1, Failures: 0, Skips: 0
+===============================================
+

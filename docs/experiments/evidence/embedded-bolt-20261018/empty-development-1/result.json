@@ -1,0 +1,29 @@
+{
+  "label": "empty-development-1",
+  "method": "forge.net.embedded.ProtocolGuiGameInProcessTest.aiEmptyHandDoesNotCastOrPay",
+  "nativeExitCode": 0,
+  "watchdogExpired": false,
+  "elapsedSeconds": 34.36300611495972,
+  "startUtc": "2026-10-18T19:28:17.840531+00:00",
+  "classpathSource": ".local-tools\\embedded-bolt-20261018\\human-development-2\\reports\\TEST-forge.net.embedded.ProtocolGuiGameInProcessTest.xml",
+  "opens": [
+    "--add-opens",
+    "java.base/java.lang=ALL-UNNAMED",
+    "--add-opens",
+    "java.base/java.time=ALL-UNNAMED",
+    "--add-opens",
+    "java.base/java.text=ALL-UNNAMED",
+    "--add-opens",
+    "java.base/java.util=ALL-UNNAMED",
+    "--add-opens",
+    "java.base/java.util.regex=ALL-UNNAMED",
+    "--add-opens",
+    "java.base/java.util.stream=ALL-UNNAMED",
+    "--add-opens",
+    "java.base/java.lang.reflect=ALL-UNNAMED",
+    "--add-opens",
+    "java.desktop/javax.imageio.spi=ALL-UNNAMED"
+  ],
+  "workingDirectory": "forge-gui-desktop",
+  "freshIsolatedJvm": true
+}

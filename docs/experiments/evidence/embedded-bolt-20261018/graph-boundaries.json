@@ -1,0 +1,1595 @@
+{
+  "human-1": {
+    "operationEntries": [
+      {
+        "ns": 541602900,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 59,
+        "thread": "TestNG-method=humanBoltTargetsOpponentWithManualMountainPayment-1",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 577742500,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 59,
+        "thread": "TestNG-method=humanBoltTargetsOpponentWithManualMountainPayment-1",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 604425800,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 59,
+        "thread": "TestNG-method=humanBoltTargetsOpponentWithManualMountainPayment-1",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 919221700,
+        "site": "HUMAN:handleGameEvents-enter",
+        "javaThreadId": 116,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 1108560100,
+        "site": "HUMAN:handleGameEvents-enter",
+        "javaThreadId": 116,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@1800711705",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1282831900,
+        "site": "HUMAN:handleGameEvents-enter",
+        "javaThreadId": 116,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@1206612136",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1399548100,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 117,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPassPriority@237684457",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=1"
+      },
+      {
+        "ns": 1425930000,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 117,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPassPriority@237684457",
+        "detail": "waiter=116:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1427921700,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 117,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPassPriority@237684457",
+        "detail": "waiter=116:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1432978100,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 116,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@1090125605",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1459430600,
+        "site": "HUMAN:handleGameEvents-enter",
+        "javaThreadId": 116,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@1090125605",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1461843400,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 117,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputSelectTargets@1409428768",
+        "detail": "waiter=116:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1463423300,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 117,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputSelectTargets@1409428768",
+        "detail": "waiter=116:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1467493200,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 117,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputSelectTargets@1409428768",
+        "detail": "waiter=116:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1468968200,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 117,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputSelectTargets@1409428768",
+        "detail": "waiter=116:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1469896400,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 117,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputSelectTargets@1409428768",
+        "detail": "waiter=116:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1471380700,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 116,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@1584811575",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1488538400,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 117,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPayManaOfCostPayment@1305153622",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=1"
+      },
+      {
+        "ns": 1531477800,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 117,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPayManaOfCostPayment@1305153622",
+        "detail": "waiter=116:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1532986700,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 117,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPayManaOfCostPayment@1305153622",
+        "detail": "waiter=116:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1536438200,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 120,
+        "thread": "Game-1",
+        "edt": false,
+        "input": "InputPayManaOfCostPayment@1305153622",
+        "detail": "waiter=116:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1561263800,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 120,
+        "thread": "Game-1",
+        "edt": false,
+        "input": "InputPayManaOfCostPayment@1305153622",
+        "detail": "waiter=116:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1567687000,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 116,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@593934029",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1607998600,
+        "site": "HUMAN:handleGameEvents-enter",
+        "javaThreadId": 116,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@593934029",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1609711100,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 117,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPassPriority@932845918",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=1"
+      },
+      {
+        "ns": 1616547800,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 117,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPassPriority@932845918",
+        "detail": "waiter=116:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1651443100,
+        "site": "HUMAN:handleGameEvents-enter",
+        "javaThreadId": 116,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@1864567907",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1672864600,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 117,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPassPriority@1158227010",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=1"
+      },
+      {
+        "ns": 1693416800,
+        "site": "HUMAN:handleGameEvents-enter",
+        "javaThreadId": 116,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=0"
+      }
+    ],
+    "pairedBoundaryCount": 29,
+    "minimumBoundaryNs": 340200,
+    "maximumBoundaryNs": 35666300,
+    "meaning": "Original update/event graph-operation boundaries including test logging and (for witness runs) debugger pause overhead; not pure walk cost or performance measurement."
+  },
+  "human-2": {
+    "operationEntries": [
+      {
+        "ns": 503954300,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 58,
+        "thread": "TestNG-method=humanBoltTargetsOpponentWithManualMountainPayment-1",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 541615400,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 58,
+        "thread": "TestNG-method=humanBoltTargetsOpponentWithManualMountainPayment-1",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 573359100,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 58,
+        "thread": "TestNG-method=humanBoltTargetsOpponentWithManualMountainPayment-1",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 898030000,
+        "site": "HUMAN:handleGameEvents-enter",
+        "javaThreadId": 116,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 1087913800,
+        "site": "HUMAN:handleGameEvents-enter",
+        "javaThreadId": 116,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@378478751",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1242724700,
+        "site": "HUMAN:handleGameEvents-enter",
+        "javaThreadId": 116,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@1778147331",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1342099400,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 117,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPassPriority@1488935040",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=1"
+      },
+      {
+        "ns": 1367308300,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 117,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPassPriority@1488935040",
+        "detail": "waiter=116:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1369057200,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 117,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPassPriority@1488935040",
+        "detail": "waiter=116:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1373547100,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 116,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@1755874621",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1397586800,
+        "site": "HUMAN:handleGameEvents-enter",
+        "javaThreadId": 116,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@1755874621",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1399741200,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 117,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputSelectTargets@1379356150",
+        "detail": "waiter=116:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1401404700,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 117,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputSelectTargets@1379356150",
+        "detail": "waiter=116:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1405714900,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 117,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputSelectTargets@1379356150",
+        "detail": "waiter=116:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1407014800,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 117,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputSelectTargets@1379356150",
+        "detail": "waiter=116:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1407956400,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 117,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputSelectTargets@1379356150",
+        "detail": "waiter=116:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1409376700,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 116,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@1266949340",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1425700200,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 117,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPayManaOfCostPayment@1934916523",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=1"
+      },
+      {
+        "ns": 1465567200,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 117,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPayManaOfCostPayment@1934916523",
+        "detail": "waiter=116:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1466863600,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 117,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPayManaOfCostPayment@1934916523",
+        "detail": "waiter=116:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1469588900,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 120,
+        "thread": "Game-1",
+        "edt": false,
+        "input": "InputPayManaOfCostPayment@1934916523",
+        "detail": "waiter=116:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1493310700,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 120,
+        "thread": "Game-1",
+        "edt": false,
+        "input": "InputPayManaOfCostPayment@1934916523",
+        "detail": "waiter=116:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1499942500,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 116,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@1354200018",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1539838700,
+        "site": "HUMAN:handleGameEvents-enter",
+        "javaThreadId": 116,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@1354200018",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1541161500,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 117,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPassPriority@1197270522",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=1"
+      },
+      {
+        "ns": 1548467700,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 117,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPassPriority@1197270522",
+        "detail": "waiter=116:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1584877300,
+        "site": "HUMAN:handleGameEvents-enter",
+        "javaThreadId": 116,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@1259369339",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1608071100,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 117,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPassPriority@1947039487",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=1"
+      },
+      {
+        "ns": 1632847100,
+        "site": "HUMAN:handleGameEvents-enter",
+        "javaThreadId": 116,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=0"
+      }
+    ],
+    "pairedBoundaryCount": 29,
+    "minimumBoundaryNs": 302900,
+    "maximumBoundaryNs": 37143000,
+    "meaning": "Original update/event graph-operation boundaries including test logging and (for witness runs) debugger pause overhead; not pure walk cost or performance measurement."
+  },
+  "human-3": {
+    "operationEntries": [
+      {
+        "ns": 469721900,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 58,
+        "thread": "TestNG-method=humanBoltTargetsOpponentWithManualMountainPayment-1",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 502940300,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 58,
+        "thread": "TestNG-method=humanBoltTargetsOpponentWithManualMountainPayment-1",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 527436000,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 58,
+        "thread": "TestNG-method=humanBoltTargetsOpponentWithManualMountainPayment-1",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 830774700,
+        "site": "HUMAN:handleGameEvents-enter",
+        "javaThreadId": 118,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 1007013200,
+        "site": "HUMAN:handleGameEvents-enter",
+        "javaThreadId": 118,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@1341351286",
+        "detail": "waiter=118:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1153074300,
+        "site": "HUMAN:handleGameEvents-enter",
+        "javaThreadId": 118,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@1798816708",
+        "detail": "waiter=118:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1265500500,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 119,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPassPriority@1894046760",
+        "detail": "waiter=118:Game-0:RUNNABLE:latch=1"
+      },
+      {
+        "ns": 1292823200,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 119,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPassPriority@1894046760",
+        "detail": "waiter=118:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1294691400,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 119,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPassPriority@1894046760",
+        "detail": "waiter=118:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1299583200,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 118,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@1044604758",
+        "detail": "waiter=118:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1323925200,
+        "site": "HUMAN:handleGameEvents-enter",
+        "javaThreadId": 118,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@1044604758",
+        "detail": "waiter=118:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1326255200,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 119,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputSelectTargets@1719769396",
+        "detail": "waiter=118:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1328046300,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 119,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputSelectTargets@1719769396",
+        "detail": "waiter=118:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1332436600,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 119,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputSelectTargets@1719769396",
+        "detail": "waiter=118:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1333786100,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 119,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputSelectTargets@1719769396",
+        "detail": "waiter=118:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1334545100,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 119,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputSelectTargets@1719769396",
+        "detail": "waiter=118:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1335999200,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 118,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@1527672250",
+        "detail": "waiter=118:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1353072900,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 119,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPayManaOfCostPayment@1092955332",
+        "detail": "waiter=118:Game-0:RUNNABLE:latch=1"
+      },
+      {
+        "ns": 1393866100,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 119,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPayManaOfCostPayment@1092955332",
+        "detail": "waiter=118:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1395381100,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 119,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPayManaOfCostPayment@1092955332",
+        "detail": "waiter=118:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1398626800,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 122,
+        "thread": "Game-1",
+        "edt": false,
+        "input": "InputPayManaOfCostPayment@1092955332",
+        "detail": "waiter=118:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1423055900,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 122,
+        "thread": "Game-1",
+        "edt": false,
+        "input": "InputPayManaOfCostPayment@1092955332",
+        "detail": "waiter=118:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1430134200,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 118,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@466212872",
+        "detail": "waiter=118:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1475347800,
+        "site": "HUMAN:handleGameEvents-enter",
+        "javaThreadId": 118,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@466212872",
+        "detail": "waiter=118:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1476775900,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 119,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPassPriority@760622567",
+        "detail": "waiter=118:Game-0:RUNNABLE:latch=1"
+      },
+      {
+        "ns": 1484601600,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 119,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPassPriority@760622567",
+        "detail": "waiter=118:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1525647400,
+        "site": "HUMAN:handleGameEvents-enter",
+        "javaThreadId": 118,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@1990048016",
+        "detail": "waiter=118:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1551616100,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 119,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPassPriority@1044187803",
+        "detail": "waiter=118:Game-0:RUNNABLE:latch=1"
+      },
+      {
+        "ns": 1708173100,
+        "site": "HUMAN:handleGameEvents-enter",
+        "javaThreadId": 118,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=118:Game-0:RUNNABLE:latch=0"
+      }
+    ],
+    "pairedBoundaryCount": 29,
+    "minimumBoundaryNs": 284100,
+    "maximumBoundaryNs": 32753600,
+    "meaning": "Original update/event graph-operation boundaries including test logging and (for witness runs) debugger pause overhead; not pure walk cost or performance measurement."
+  },
+  "ai-1": {
+    "operationEntries": [
+      {
+        "ns": 489048900,
+        "site": "AI:updateGameView-enter",
+        "javaThreadId": 58,
+        "thread": "TestNG-method=aiBoltRunsThroughOriginalPhaseLoop-1",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 526071700,
+        "site": "AI:updateGameView-enter",
+        "javaThreadId": 58,
+        "thread": "TestNG-method=aiBoltRunsThroughOriginalPhaseLoop-1",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 554004400,
+        "site": "AI:updateGameView-enter",
+        "javaThreadId": 58,
+        "thread": "TestNG-method=aiBoltRunsThroughOriginalPhaseLoop-1",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 880614600,
+        "site": "AI:handleGameEvents-enter",
+        "javaThreadId": 116,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 1062854700,
+        "site": "AI:handleGameEvents-enter",
+        "javaThreadId": 116,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@1054166988",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1221266200,
+        "site": "AI:handleGameEvents-enter",
+        "javaThreadId": 116,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@559357519",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1542709800,
+        "site": "AI:handleGameEvents-enter",
+        "javaThreadId": 116,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@559357519",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1631909500,
+        "site": "AI:handleGameEvents-enter",
+        "javaThreadId": 116,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@559357519",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1633391400,
+        "site": "AI:updateGameView-enter",
+        "javaThreadId": 117,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPassPriority@1069859005",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=1"
+      },
+      {
+        "ns": 1655521000,
+        "site": "AI:updateGameView-enter",
+        "javaThreadId": 117,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPassPriority@1069859005",
+        "detail": "waiter=116:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1824275300,
+        "site": "AI:handleGameEvents-enter",
+        "javaThreadId": 116,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=0"
+      }
+    ],
+    "pairedBoundaryCount": 11,
+    "minimumBoundaryNs": 347700,
+    "maximumBoundaryNs": 36543300,
+    "meaning": "Original update/event graph-operation boundaries including test logging and (for witness runs) debugger pause overhead; not pure walk cost or performance measurement."
+  },
+  "ai-2": {
+    "operationEntries": [
+      {
+        "ns": 394138000,
+        "site": "AI:updateGameView-enter",
+        "javaThreadId": 58,
+        "thread": "TestNG-method=aiBoltRunsThroughOriginalPhaseLoop-1",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 424342000,
+        "site": "AI:updateGameView-enter",
+        "javaThreadId": 58,
+        "thread": "TestNG-method=aiBoltRunsThroughOriginalPhaseLoop-1",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 447401800,
+        "site": "AI:updateGameView-enter",
+        "javaThreadId": 58,
+        "thread": "TestNG-method=aiBoltRunsThroughOriginalPhaseLoop-1",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 730864200,
+        "site": "AI:handleGameEvents-enter",
+        "javaThreadId": 117,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 887961600,
+        "site": "AI:handleGameEvents-enter",
+        "javaThreadId": 117,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@1889069721",
+        "detail": "waiter=117:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1035541100,
+        "site": "AI:handleGameEvents-enter",
+        "javaThreadId": 117,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@888411138",
+        "detail": "waiter=117:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1283123900,
+        "site": "AI:handleGameEvents-enter",
+        "javaThreadId": 117,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@888411138",
+        "detail": "waiter=117:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1353297800,
+        "site": "AI:handleGameEvents-enter",
+        "javaThreadId": 117,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@888411138",
+        "detail": "waiter=117:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1354556900,
+        "site": "AI:updateGameView-enter",
+        "javaThreadId": 118,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPassPriority@43653595",
+        "detail": "waiter=117:Game-0:RUNNABLE:latch=1"
+      },
+      {
+        "ns": 1371702600,
+        "site": "AI:updateGameView-enter",
+        "javaThreadId": 118,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPassPriority@43653595",
+        "detail": "waiter=117:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1525760000,
+        "site": "AI:handleGameEvents-enter",
+        "javaThreadId": 117,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=117:Game-0:RUNNABLE:latch=0"
+      }
+    ],
+    "pairedBoundaryCount": 11,
+    "minimumBoundaryNs": 246100,
+    "maximumBoundaryNs": 29783500,
+    "meaning": "Original update/event graph-operation boundaries including test logging and (for witness runs) debugger pause overhead; not pure walk cost or performance measurement."
+  },
+  "ai-3": {
+    "operationEntries": [
+      {
+        "ns": 402688000,
+        "site": "AI:updateGameView-enter",
+        "javaThreadId": 58,
+        "thread": "TestNG-method=aiBoltRunsThroughOriginalPhaseLoop-1",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 432885900,
+        "site": "AI:updateGameView-enter",
+        "javaThreadId": 58,
+        "thread": "TestNG-method=aiBoltRunsThroughOriginalPhaseLoop-1",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 457525500,
+        "site": "AI:updateGameView-enter",
+        "javaThreadId": 58,
+        "thread": "TestNG-method=aiBoltRunsThroughOriginalPhaseLoop-1",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 760281400,
+        "site": "AI:handleGameEvents-enter",
+        "javaThreadId": 116,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 919763700,
+        "site": "AI:handleGameEvents-enter",
+        "javaThreadId": 116,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@1049846699",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1051317400,
+        "site": "AI:handleGameEvents-enter",
+        "javaThreadId": 116,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@1964983174",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1275645500,
+        "site": "AI:handleGameEvents-enter",
+        "javaThreadId": 116,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@1964983174",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1332317300,
+        "site": "AI:handleGameEvents-enter",
+        "javaThreadId": 116,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@1964983174",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1333383600,
+        "site": "AI:updateGameView-enter",
+        "javaThreadId": 117,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPassPriority@417125378",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=1"
+      },
+      {
+        "ns": 1349864500,
+        "site": "AI:updateGameView-enter",
+        "javaThreadId": 117,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPassPriority@417125378",
+        "detail": "waiter=116:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1479564100,
+        "site": "AI:handleGameEvents-enter",
+        "javaThreadId": 116,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=116:Game-0:RUNNABLE:latch=0"
+      }
+    ],
+    "pairedBoundaryCount": 11,
+    "minimumBoundaryNs": 280500,
+    "maximumBoundaryNs": 29763000,
+    "meaning": "Original update/event graph-operation boundaries including test logging and (for witness runs) debugger pause overhead; not pure walk cost or performance measurement."
+  },
+  "witness-human-final": {
+    "operationEntries": [
+      {
+        "ns": 559954200,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 62,
+        "thread": "TestNG-method=humanBoltTargetsOpponentWithManualMountainPayment-1",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 591851700,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 62,
+        "thread": "TestNG-method=humanBoltTargetsOpponentWithManualMountainPayment-1",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 615587200,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 62,
+        "thread": "TestNG-method=humanBoltTargetsOpponentWithManualMountainPayment-1",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 937198800,
+        "site": "HUMAN:handleGameEvents-enter",
+        "javaThreadId": 121,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 1138805200,
+        "site": "HUMAN:handleGameEvents-enter",
+        "javaThreadId": 121,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@1903796683",
+        "detail": "waiter=121:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1304748000,
+        "site": "HUMAN:handleGameEvents-enter",
+        "javaThreadId": 121,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@1367153803",
+        "detail": "waiter=121:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1436921100,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 122,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPassPriority@1343645292",
+        "detail": "waiter=121:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1497721100,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 122,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPassPriority@1343645292",
+        "detail": "waiter=121:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1505243900,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 122,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPassPriority@1343645292",
+        "detail": "waiter=121:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1527647200,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 121,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@1934433171",
+        "detail": "waiter=121:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1562030600,
+        "site": "HUMAN:handleGameEvents-enter",
+        "javaThreadId": 121,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@1934433171",
+        "detail": "waiter=121:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1570232500,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 122,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputSelectTargets@1490416768",
+        "detail": "waiter=121:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1587161100,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 122,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputSelectTargets@1490416768",
+        "detail": "waiter=121:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1596395300,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 122,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputSelectTargets@1490416768",
+        "detail": "waiter=121:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1620379500,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 122,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputSelectTargets@1490416768",
+        "detail": "waiter=121:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1625057200,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 122,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputSelectTargets@1490416768",
+        "detail": "waiter=121:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1632238300,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 121,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@835590318",
+        "detail": "waiter=121:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1681612400,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 122,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPayManaOfCostPayment@122634064",
+        "detail": "waiter=121:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1732909900,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 122,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPayManaOfCostPayment@122634064",
+        "detail": "waiter=121:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1739211000,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 122,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPayManaOfCostPayment@122634064",
+        "detail": "waiter=121:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1765189100,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 125,
+        "thread": "Game-1",
+        "edt": false,
+        "input": "InputPayManaOfCostPayment@122634064",
+        "detail": "waiter=121:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1826355100,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 125,
+        "thread": "Game-1",
+        "edt": false,
+        "input": "InputPayManaOfCostPayment@122634064",
+        "detail": "waiter=121:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 1874408400,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 121,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@1158835509",
+        "detail": "waiter=121:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1920869600,
+        "site": "HUMAN:handleGameEvents-enter",
+        "javaThreadId": 121,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@1158835509",
+        "detail": "waiter=121:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1927486400,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 122,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPassPriority@1097464769",
+        "detail": "waiter=121:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1954641700,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 122,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPassPriority@1097464769",
+        "detail": "waiter=121:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 2031899500,
+        "site": "HUMAN:handleGameEvents-enter",
+        "javaThreadId": 121,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@631899888",
+        "detail": "waiter=121:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 2059552500,
+        "site": "HUMAN:updateGameView-enter",
+        "javaThreadId": 122,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPassPriority@1217519240",
+        "detail": "waiter=121:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 2226488000,
+        "site": "HUMAN:handleGameEvents-enter",
+        "javaThreadId": 121,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=121:Game-0:RUNNABLE:latch=0"
+      }
+    ],
+    "pairedBoundaryCount": 29,
+    "minimumBoundaryNs": 207500,
+    "maximumBoundaryNs": 31659000,
+    "meaning": "Original update/event graph-operation boundaries including test logging and (for witness runs) debugger pause overhead; not pure walk cost or performance measurement."
+  },
+  "witness-ai-final": {
+    "operationEntries": [
+      {
+        "ns": 627128800,
+        "site": "AI:updateGameView-enter",
+        "javaThreadId": 62,
+        "thread": "TestNG-method=aiBoltRunsThroughOriginalPhaseLoop-1",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 662310100,
+        "site": "AI:updateGameView-enter",
+        "javaThreadId": 62,
+        "thread": "TestNG-method=aiBoltRunsThroughOriginalPhaseLoop-1",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 688663300,
+        "site": "AI:updateGameView-enter",
+        "javaThreadId": 62,
+        "thread": "TestNG-method=aiBoltRunsThroughOriginalPhaseLoop-1",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 1023064800,
+        "site": "AI:handleGameEvents-enter",
+        "javaThreadId": 119,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 1225219500,
+        "site": "AI:handleGameEvents-enter",
+        "javaThreadId": 119,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@1248533451",
+        "detail": "waiter=119:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1382589900,
+        "site": "AI:handleGameEvents-enter",
+        "javaThreadId": 119,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@1948935762",
+        "detail": "waiter=119:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1786704400,
+        "site": "AI:handleGameEvents-enter",
+        "javaThreadId": 119,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@1948935762",
+        "detail": "waiter=119:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1857889100,
+        "site": "AI:handleGameEvents-enter",
+        "javaThreadId": 119,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@1948935762",
+        "detail": "waiter=119:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1862632000,
+        "site": "AI:updateGameView-enter",
+        "javaThreadId": 120,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPassPriority@1570740768",
+        "detail": "waiter=119:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1895536400,
+        "site": "AI:updateGameView-enter",
+        "javaThreadId": 120,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPassPriority@1570740768",
+        "detail": "waiter=119:Game-0:WAITING:latch=1"
+      },
+      {
+        "ns": 2082417000,
+        "site": "AI:handleGameEvents-enter",
+        "javaThreadId": 119,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=119:Game-0:RUNNABLE:latch=0"
+      }
+    ],
+    "pairedBoundaryCount": 11,
+    "minimumBoundaryNs": 250200,
+    "maximumBoundaryNs": 34959300,
+    "meaning": "Original update/event graph-operation boundaries including test logging and (for witness runs) debugger pause overhead; not pure walk cost or performance measurement."
+  },
+  "witness-empty": {
+    "operationEntries": [
+      {
+        "ns": 474841000,
+        "site": "EMPTY:updateGameView-enter",
+        "javaThreadId": 62,
+        "thread": "TestNG-method=aiEmptyHandDoesNotCastOrPay-1",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 502996400,
+        "site": "EMPTY:updateGameView-enter",
+        "javaThreadId": 62,
+        "thread": "TestNG-method=aiEmptyHandDoesNotCastOrPay-1",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 524345600,
+        "site": "EMPTY:updateGameView-enter",
+        "javaThreadId": 62,
+        "thread": "TestNG-method=aiEmptyHandDoesNotCastOrPay-1",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 827257100,
+        "site": "EMPTY:handleGameEvents-enter",
+        "javaThreadId": 121,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=none"
+      },
+      {
+        "ns": 1043414100,
+        "site": "EMPTY:handleGameEvents-enter",
+        "javaThreadId": 121,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@235418518",
+        "detail": "waiter=121:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1227396200,
+        "site": "EMPTY:handleGameEvents-enter",
+        "javaThreadId": 121,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@492447718",
+        "detail": "waiter=121:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1508382100,
+        "site": "EMPTY:handleGameEvents-enter",
+        "javaThreadId": 121,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "InputLockUI@492447718",
+        "detail": "waiter=121:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1512457200,
+        "site": "EMPTY:updateGameView-enter",
+        "javaThreadId": 122,
+        "thread": "AWT-EventQueue-0",
+        "edt": true,
+        "input": "InputPassPriority@160451806",
+        "detail": "waiter=121:Game-0:RUNNABLE:latch=0"
+      },
+      {
+        "ns": 1637195100,
+        "site": "EMPTY:handleGameEvents-enter",
+        "javaThreadId": 121,
+        "thread": "Game-0",
+        "edt": false,
+        "input": "none",
+        "detail": "waiter=121:Game-0:RUNNABLE:latch=0"
+      }
+    ],
+    "pairedBoundaryCount": 9,
+    "minimumBoundaryNs": 189900,
+    "maximumBoundaryNs": 27883800,
+    "meaning": "Original update/event graph-operation boundaries including test logging and (for witness runs) debugger pause overhead; not pure walk cost or performance measurement."
+  }
+}

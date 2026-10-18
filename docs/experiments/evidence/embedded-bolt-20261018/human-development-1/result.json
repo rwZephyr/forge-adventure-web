@@ -1,0 +1,22 @@
+{
+  "label": "human-development-1",
+  "test": "forge.net.embedded.ProtocolGuiGameInProcessTest#humanBoltTargetsOpponentWithManualMountainPayment",
+  "args": [
+    "-o",
+    "-B",
+    "-ntp",
+    "-T1",
+    "-Dmaven.repo.local=<WORKSPACE>/.local-tools/m2",
+    "-pl",
+    "forge-gui-desktop",
+    "-am",
+    "-Dtest=forge.net.embedded.ProtocolGuiGameInProcessTest#humanBoltTargetsOpponentWithManualMountainPayment",
+    "-Dsurefire.failIfNoSpecifiedTests=false",
+    "-DfailIfNoTests=false",
+    "test"
+  ],
+  "nativeExitCode": 1,
+  "startUtc": "2026-10-18T19:18:31.0907032Z",
+  "endUtc": "2026-10-18T19:19:28.5345640Z",
+  "environmentRestored": true
+}

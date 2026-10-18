@@ -1,0 +1,8 @@
+{
+  "label": "witness-ai",
+  "method": "forge.net.embedded.ProtocolGuiGameInProcessTest.aiBoltRunsThroughOriginalPhaseLoop",
+  "observerExit": 0,
+  "elapsedSeconds": 35.16846990585327,
+  "workingDirectory": "forge-gui-desktop",
+  "sharedMemoryOnly": true
+}

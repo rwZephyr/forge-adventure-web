@@ -1,0 +1,64 @@
+12:37:03 [INFO ] Logger: [TestNG] Running:
+  Command line suite
+
+Language 'en-US' loaded successfully.
+(ThreadUtil first call): Running with priority 5
+Read cards: 34088 files in 2 ms (25 parts) using thread pool
+Read cards: 857 files in 0 ms (8 parts) using thread pool
+12:37:27 [INFO ] TestUtils: [TestConfig] checksum=stable, deltasync=on
+12:37:28 [INFO ] ProtocolGuiGame: Sending batch of 7: [GameEventZone x4, GameEventShuffle x2, GameEventFlipCoin]
+12:37:28 [INFO ] DeltaSyncManager: [DeltaSync] New objects: 163, Deltas: 0
+12:37:28 [INFO ] ProtocolGuiGame: Sending batch of 43: [GameEventGameStarted, GameEventZone x28, GameEventCardChangeZone x14]
+12:37:28 [INFO ] DeltaSyncManager: [DeltaSync] New objects: 28, Deltas: 2
+12:37:28 [INFO ] ProtocolGuiGame: Sending batch of 6: [GameEventAddLog x2, GameEventTurnBegan, GameEventTurnPhase x2, GameEventPlayerPriority]
+12:37:28 [INFO ] ProtocolGuiGame: Sending batch of 4: [GameEventPlayerPriority x2, GameEventTurnPhase x2]
+12:37:28 [INFO ] ProtocolGuiGame: Sending batch of 14: [GameEventZone x10, GameEventAddLog, GameEventCardChangeZone, GameEventLandPlayed, GameEventPlayerPriority]
+12:37:28 [INFO ] ProtocolGuiGame: Sending batch of 3: [GameEventPlayerPriority x2, GameEventTurnPhase]
+12:37:28 [INFO ] ProtocolGuiGame: Sending batch of 5: [GameEventPlayerPriority x2, GameEventTurnPhase, GameEventAttackersDeclared, GameEventCombatChanged]
+12:37:28 [INFO ] ProtocolGuiGame: Sending batch of 6: [GameEventPlayerPriority x2, GameEventTurnPhase x4]
+12:37:28 [INFO ] DeltaSyncManager: [DeltaSync] Sampled checksum for seq=20: hash=-1710059755, props=[SplitCard, MarkerText, Remembered, PairedWith, Colors, OriginalManaCost, Loyalty, Defense, Battlefield, Library, IsExtraTurn, HasPriority, OptionalTrigger, Turn, PlayerTurn]
+12:37:28 [INFO ] DeltaSyncManager: [DeltaSync]   Turn: 1 (snapshot), Phase: COMBAT_END (snapshot, current=COMBAT_END)
+12:37:28 [INFO ] DeltaSyncManager: [DeltaSync]   Player 0 (Embedded): Life=20, Hand=6, GY=0, BF=1
+12:37:28 [INFO ] DeltaSyncManager: [DeltaSync]   Player 1 (AI): Life=20, Hand=7, GY=0, BF=0
+12:37:28 [INFO ] ProtocolGuiGame: Sending batch of 4: [GameEventPlayerPriority x2, GameEventCombatEnded, GameEventTurnPhase]
+12:37:28 [INFO ] ProtocolGuiGame: Sending batch of 3: [GameEventPlayerPriority x2, GameEventTurnPhase]
+12:37:28 [INFO ] ProtocolGuiGame: Sending batch of 2: [GameEventPlayerPriority, GameEventTurnPhase]
+12:37:28 [INFO ] ProtocolGuiGame: Sending batch of 5: [GameEventTurnEnded, GameEventTurnBegan, GameEventTurnPhase x2, GameEventPlayerPriority]
+12:37:28 [INFO ] ProtocolGuiGame: Sending batch of 1: [GameEventPlayerPriority]
+12:37:28 [INFO ] ProtocolGuiGame: Sending batch of 5: [GameEventTurnPhase, GameEventZone x2, GameEventCardChangeZone, GameEventPlayerPriority]
+12:37:28 [INFO ] DeltaSyncManager: [DeltaSync] New objects: 2, Deltas: 3
+12:37:28 [INFO ] ProtocolGuiGame: Sending batch of 1: [GameEventPlayerPriority]
+12:37:28 [INFO ] ProtocolGuiGame: Sending batch of 2: [GameEventTurnPhase, GameEventPlayerPriority]
+12:37:28 [INFO ] ProtocolGuiGame: Sending batch of 13: [GameEventZone x10, GameEventCardChangeZone, GameEventLandPlayed, GameEventPlayerPriority]
+12:37:29 [INFO ] ProtocolGuiGame: Sending batch of 1: [GameEventPlayerPriority]
+12:37:29 [INFO ] DeltaSyncManager: [DeltaSync] Sampled checksum for seq=40: hash=550098586, props=[Remembered, Name, Defense, IsAI, LobbyPlayerName, SleeveArtKey, NumLandThisTurn, NumDrawnThisTurn, Battlefield, Command, Hand, HasPriority, SourceTrigger, Turn, PlayerTurn]
+12:37:29 [INFO ] DeltaSyncManager: [DeltaSync]   Turn: 2 (snapshot), Phase: MAIN1 (snapshot, current=MAIN1)
+12:37:29 [INFO ] DeltaSyncManager: [DeltaSync]   Player 0 (Embedded): Life=20, Hand=6, GY=0, BF=1
+12:37:29 [INFO ] DeltaSyncManager: [DeltaSync]   Player 1 (AI): Life=20, Hand=7, GY=0, BF=1
+12:37:29 [INFO ] ProtocolGuiGame: Sending batch of 2: [GameEventTurnPhase, GameEventPlayerPriority]
+12:37:29 [INFO ] ProtocolGuiGame: Sending batch of 1: [GameEventPlayerPriority]
+12:37:29 [INFO ] ProtocolGuiGame: Sending batch of 4: [GameEventTurnPhase, GameEventAttackersDeclared, GameEventCombatChanged, GameEventPlayerPriority]
+12:37:29 [INFO ] ProtocolGuiGame: Sending batch of 1: [GameEventPlayerPriority]
+12:37:29 [INFO ] ProtocolGuiGame: Sending batch of 5: [GameEventTurnPhase x4, GameEventPlayerPriority]
+12:37:29 [INFO ] ProtocolGuiGame: Sending batch of 1: [GameEventPlayerPriority]
+12:37:29 [INFO ] ProtocolGuiGame: Sending batch of 3: [GameEventCombatEnded, GameEventTurnPhase, GameEventPlayerPriority]
+12:37:29 [INFO ] ProtocolGuiGame: Sending batch of 1: [GameEventPlayerPriority]
+12:37:29 [INFO ] ProtocolGuiGame: Sending batch of 2: [GameEventTurnPhase, GameEventPlayerPriority]
+12:37:29 [INFO ] ProtocolGuiGame: Sending batch of 1: [GameEventPlayerPriority]
+12:37:29 [INFO ] DeltaSyncManager: [DeltaSync] Sampled checksum for seq=60: hash=-2050281822, props=[FlipCard, ChosenNumber, ProtectingPlayer, ChosenEvenOdd, Sector, ExiledWith, HasPrintedPT, Toughness, BlockAdditional, Battlefield, HasPriority, AttackersWithDefenders, Phase, WinningPlayerName, MatchOver]
+12:37:29 [INFO ] DeltaSyncManager: [DeltaSync]   Turn: 2 (snapshot), Phase: END_OF_TURN (snapshot, current=END_OF_TURN)
+12:37:29 [INFO ] DeltaSyncManager: [DeltaSync]   Player 0 (Embedded): Life=20, Hand=6, GY=0, BF=1
+12:37:29 [INFO ] DeltaSyncManager: [DeltaSync]   Player 1 (AI): Life=20, Hand=7, GY=0, BF=1
+12:37:29 [INFO ] ProtocolGuiGame: Sending batch of 1: [GameEventTurnPhase]
+12:37:29 [INFO ] ProtocolGuiGame: Sending batch of 6: [GameEventTurnEnded, GameEventTurnBegan, GameEventTurnPhase x2, GameEventCardTapped, GameEventPlayerPriority]
+Active player is no longer in the game...
+12:37:29 [INFO ] ProtocolGuiGame: Sending batch of 4: [GameEventPlayerControl x2, GameEventGameOutcome, GameEventGameFinished]
+[single-thread] answers pumped: 19 on [Game-0]
+[single-thread] blocking calls: [getAbilityToPlay -> Play land] on [Game-0]
+[single-thread] fullStates=3 deltasWithState=31 rawEvents=157 battlefield=1 gameOver=true
+
+===============================================
+Command line suite
+Total tests run: 1, Passes: 1, Failures: 0, Skips: 0
+===============================================
+
