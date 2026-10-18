@@ -1,0 +1,82 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Forge Parent                                                       [pom]
+[INFO] Forge Core                                                         [jar]
+[INFO] Forge Game                                                         [jar]
+[INFO] 
+[INFO] ----------------------------< forge:forge >-----------------------------
+[INFO] Building Forge Parent 2.0.16-SNAPSHOT                              [1/3]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-versions) @ forge ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] Rule 1: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] Rule 2: org.apache.maven.enforcer.rules.RequirePluginVersions passed
+[INFO] 
+[INFO] --- checkstyle:3.1.2:check (checkstyle-validation) @ forge ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --------------------------< forge:forge-core >--------------------------
+[INFO] Building Forge Core 2.0.16-SNAPSHOT                                [2/3]
+[INFO]   from forge-core\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-versions) @ forge-core ---
+[INFO] Rule 2: org.apache.maven.enforcer.rules.RequirePluginVersions passed
+[INFO] 
+[INFO] --- checkstyle:3.1.2:check (checkstyle-validation) @ forge-core ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ forge-core ---
+[INFO] skip non existing resourceDirectory C:\Users\Silent\Projects\forge-adventure-web\forge-core\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ forge-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 154 source files to C:\Users\Silent\Projects\forge-adventure-web\forge-core\target\classes
+[INFO] /C:/Users/Silent/Projects/forge-adventure-web/forge-core/src/main/java/forge/card/CardRules.java: Some input files use or override a deprecated API.
+[INFO] /C:/Users/Silent/Projects/forge-adventure-web/forge-core/src/main/java/forge/card/CardRules.java: Recompile with -Xlint:deprecation for details.
+[INFO] /C:/Users/Silent/Projects/forge-adventure-web/forge-core/src/main/java/forge/util/BagRandomizer.java: Some input files use unchecked or unsafe operations.
+[INFO] /C:/Users/Silent/Projects/forge-adventure-web/forge-core/src/main/java/forge/util/BagRandomizer.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --------------------------< forge:forge-game >--------------------------
+[INFO] Building Forge Game 2.0.16-SNAPSHOT                                [3/3]
+[INFO]   from forge-game\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-versions) @ forge-game ---
+[INFO] Rule 2: org.apache.maven.enforcer.rules.RequirePluginVersions passed
+[INFO] 
+[INFO] --- checkstyle:3.1.2:check (checkstyle-validation) @ forge-game ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ forge-game ---
+[INFO] skip non existing resourceDirectory C:\Users\Silent\Projects\forge-adventure-web\forge-game\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ forge-game ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 822 source files to C:\Users\Silent\Projects\forge-adventure-web\forge-game\target\classes
+[INFO] /C:/Users/Silent/Projects/forge-adventure-web/forge-game/src/main/java/forge/game/GameLog.java: Some input files use or override a deprecated API.
+[INFO] /C:/Users/Silent/Projects/forge-adventure-web/forge-game/src/main/java/forge/game/GameLog.java: Recompile with -Xlint:deprecation for details.
+[INFO] /C:/Users/Silent/Projects/forge-adventure-web/forge-game/src/main/java/forge/trackable/TrackableObject.java: Some input files use unchecked or unsafe operations.
+[INFO] /C:/Users/Silent/Projects/forge-adventure-web/forge-game/src/main/java/forge/trackable/TrackableObject.java: Recompile with -Xlint:unchecked for details.
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Forge Parent 2.0.16-SNAPSHOT:
+[INFO] 
+[INFO] Forge Parent ....................................... SUCCESS [  1.434 s]
+[INFO] Forge Core ......................................... SUCCESS [  4.731 s]
+[INFO] Forge Game ......................................... SUCCESS [  8.315 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  14.845 s
+[INFO] Finished at: 2026-10-17T23:15:12-07:00
+[INFO] ------------------------------------------------------------------------

@@ -1,0 +1,9 @@
+127.0.0.1 - - [17/Oct/2026 23:28:48] "GET /explicit/ HTTP/1.1" 304 -
+127.0.0.1 - - [17/Oct/2026 23:28:48] "GET /explicit/app.js HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 23:29:02] "GET /explicit/ HTTP/1.1" 304 -
+127.0.0.1 - - [17/Oct/2026 23:29:02] "GET /explicit/app.js HTTP/1.1" 304 -
+127.0.0.1 - - [17/Oct/2026 23:29:02] "GET /explicit/ HTTP/1.1" 304 -
+127.0.0.1 - - [17/Oct/2026 23:29:23] "GET /missing-amount/ HTTP/1.1" 304 -
+127.0.0.1 - - [17/Oct/2026 23:29:24] "GET /missing-amount/app.js HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 23:29:24] "GET /missing-amount/ HTTP/1.1" 304 -
+127.0.0.1 - - [17/Oct/2026 23:29:24] "GET /missing-amount/ HTTP/1.1" 304 -

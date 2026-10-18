@@ -1,0 +1,33 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.6.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :verifyOriginalInputs
+> Task :compileJava UP-TO-DATE
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+> Task :compileCompilerJava UP-TO-DATE
+> Task :processCompilerResources UP-TO-DATE
+> Task :compilerClasses UP-TO-DATE
+> Task :jvmControl UP-TO-DATE
+
+> Task :browserDefault
+ORIGINAL_CONSTRUCTORS_AUDITED=144 (no Forge class initialization)
+FACTORY_COMPILER variant=default runtimeClasspath=C:\Users\Silent\Projects\forge-adventure-web\experiments\rules-teavm\build\classes\java\main;C:\Users\Silent\Projects\forge-adventure-web\experiments\rules-teavm\build\resources\main;C:\Users\Silent\Projects\forge-adventure-web\forge-core\target\classes;C:\Users\Silent\Projects\forge-adventure-web\forge-game\target\classes;C:\Users\Silent\Projects\forge-adventure-web\.local-tools\m2\com\google\guava\guava\33.3.1-android\guava-33.3.1-android.jar;C:\Users\Silent\Projects\forge-adventure-web\.local-tools\m2\org\apache\commons\commons-text\1.12.0\commons-text-1.12.0.jar;C:\Users\Silent\Projects\forge-adventure-web\.local-tools\m2\org\apache\commons\commons-lang3\3.18.0\commons-lang3-3.18.0.jar;C:\Users\Silent\Projects\forge-adventure-web\.local-tools\m2\com\apptasticsoftware\rssreader\3.8.2\rssreader-3.8.2.jar;C:\Users\Silent\Projects\forge-adventure-web\.local-tools\m2\org\tinylog\slf4j-tinylog\2.7.0\slf4j-tinylog-2.7.0.jar;C:\Users\Silent\Projects\forge-adventure-web\.local-tools\m2\org\tinylog\tinylog-impl\2.7.0\tinylog-impl-2.7.0.jar;C:\Users\Silent\Projects\forge-adventure-web\.local-tools\m2\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\Silent\Projects\forge-adventure-web\.local-tools\m2\io\sentry\sentry\8.21.1\sentry-8.21.1.jar;C:\Users\Silent\Projects\forge-adventure-web\.local-tools\m2\org\jgrapht\jgrapht-core\1.5.2\jgrapht-core-1.5.2.jar;C:\Users\Silent\Projects\forge-adventure-web\.local-tools\m2\com\badlogicgames\gdx\gdx\1.14.2\gdx-1.14.2.jar;C:\Users\Silent\Projects\forge-adventure-web\.local-tools\gradle-cache\caches\modules-2\files-2.1\org.teavm\teavm-jso\0.15.0\bf36e3b6121090baf24ed30a4a1e6a794882da87\teavm-jso-0.15.0.jar;C:\Users\Silent\Projects\forge-adventure-web\.local-tools\m2\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\Silent\Projects\forge-adventure-web\.local-tools\m2\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\Silent\Projects\forge-adventure-web\.local-tools\m2\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Silent\Projects\forge-adventure-web\.local-tools\m2\com\google\errorprone\error_prone_annotations\2.28.0\error_prone_annotations-2.28.0.jar;C:\Users\Silent\Projects\forge-adventure-web\.local-tools\m2\org\tinylog\tinylog-api\2.7.0\tinylog-api-2.7.0.jar;C:\Users\Silent\Projects\forge-adventure-web\.local-tools\m2\org\apfloat\apfloat\1.10.1\apfloat-1.10.1.jar;C:\Users\Silent\Projects\forge-adventure-web\.local-tools\m2\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Silent\Projects\forge-adventure-web\.local-tools\m2\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\Silent\Projects\forge-adventure-web\.local-tools\m2\com\badlogicgames\gdx\gdx-jnigen-loader\2.5.2\gdx-jnigen-loader-2.5.2.jar;C:\Users\Silent\Projects\forge-adventure-web\.local-tools\m2\org\jheaps\jheaps\0.14\jheaps-0.14.jar
+INFO: Running TeaVM
+2026-10-17 23:31:38 [main] org.reflections.Reflections.scan()
+INFO: Reflections took 852 ms to scan 52 urls, producing 2528 keys and 14347 values
+INFO: Output file successfully built
+INFO: Source maps successfully written
+INFO: Classes compiled: 993
+INFO: Methods compiled: 9049
+FACTORY_COMPILER severeProblems=0
+
+[Incubating] Problems report is available at: file:///C:/Users/Silent/Projects/forge-adventure-web/experiments/rules-teavm/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.6.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 47s
+6 actionable tasks: 2 executed, 4 up-to-date

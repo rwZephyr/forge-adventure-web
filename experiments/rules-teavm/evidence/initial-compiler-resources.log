@@ -1,0 +1,29 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.6.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :verifyOriginalInputs
+> Task :compileJava UP-TO-DATE
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+
+> Task :compileCompilerJava
+Note: C:\Users\Silent\Projects\forge-adventure-web\experiments\rules-teavm\src\compiler\java\probe\compiler\CompilerMain.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :processCompilerResources FAILED
+
+[Incubating] Problems report is available at: file:///C:/Users/Silent/Projects/forge-adventure-web/experiments/rules-teavm/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':processCompilerResources' (registered by plugin class 'org.gradle.api.plugins.JavaBasePlugin').
+> Entry META-INF/services/org.teavm.extension.spi.reflection.ReflectionPolicy is a duplicate but no duplicate handling strategy has been set. Please refer to https://docs.gradle.org/9.6.1/dsl/org.gradle.api.tasks.Copy.html#org.gradle.api.tasks.Copy:duplicatesStrategy for details.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 24s
+4 actionable tasks: 3 executed, 1 up-to-date

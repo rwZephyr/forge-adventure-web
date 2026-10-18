@@ -103,3 +103,9 @@ __pycache__
 # EDHREC commander matrix tool intermediates
 forge-gui/tools/build
 forge-gui-ios/robovm.properties
+
+# Approved portable tools and isolated experiment build outputs
+/.local-tools/
+/experiments/*/.gradle/
+/experiments/*/build/
+!/experiments/rules-teavm/evidence/*.log

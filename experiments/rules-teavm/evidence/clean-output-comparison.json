@@ -1,0 +1,32 @@
+[
+  {
+    "path": "build/web/default/app.js",
+    "testedBytesUnchanged": true,
+    "sha256": "1be491b9e72dcc767599751c0adfa473d300586e58b9a2b9dcfc0df2d1bbe742"
+  },
+  {
+    "path": "build/web/default/index.html",
+    "testedBytesUnchanged": true,
+    "sha256": "e3719005d4ba0b7ee420d362d1503293825c65db13364e7abfc080897ba21e99"
+  },
+  {
+    "path": "build/web/explicit/app.js",
+    "testedBytesUnchanged": true,
+    "sha256": "eb088eeeff00c4d6ad8f75b8b9925bcf2e673937ebce12b1682819d5f8169fdf"
+  },
+  {
+    "path": "build/web/explicit/index.html",
+    "testedBytesUnchanged": true,
+    "sha256": "e3719005d4ba0b7ee420d362d1503293825c65db13364e7abfc080897ba21e99"
+  },
+  {
+    "path": "build/web/missing-amount/app.js",
+    "testedBytesUnchanged": true,
+    "sha256": "5009a53fc36302e9139fe8905943a9593cd17c9b1c7200003d00c05b1b3f0a0b"
+  },
+  {
+    "path": "build/web/missing-amount/index.html",
+    "testedBytesUnchanged": true,
+    "sha256": "e3719005d4ba0b7ee420d362d1503293825c65db13364e7abfc080897ba21e99"
+  }
+]
