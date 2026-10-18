@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Forge Adventure · SpriteGroup probe</title>
+  <link rel="icon" href="data:,">
   <style>
     * { box-sizing: border-box; }
     html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: #0a0f19; color: #e4ebf5; font: 15px/1.4 system-ui, sans-serif; }
@@ -29,6 +30,7 @@
     <p>Original Forge component experiment. Adventure gameplay is not loaded.</p>
     <p id="errors" role="alert"></p>
   </footer>
+  <script id="diagnostics" type="application/json">{ "ready": false }</script>
   <script>
     window.__spriteGroupProbe = { started: performance.now(), ready: false, errors: [], intervals: [], orderChanges: 0 };
     function recordError(message) {
@@ -39,6 +41,19 @@
     window.addEventListener('unhandledrejection', event => recordError(event.reason));
     document.getElementById('canvas').addEventListener('webglcontextlost', () => recordError('WebGL context lost'));
     document.addEventListener('visibilitychange', () => { window.__spriteGroupProbe.lastFrame = null; });
+    function snapshotProbe() {
+      const p = window.__spriteGroupProbe;
+      const samples = p.intervals.slice().sort((a, b) => a - b);
+      const data = Object.assign({}, p, { intervals: undefined,
+        userAgent: navigator.userAgent,
+        viewport: { width: innerWidth, height: innerHeight, dpr: devicePixelRatio },
+        timing: { samples: samples.length, medianMs: samples[Math.floor(samples.length * 0.5)],
+          p95Ms: samples[Math.floor(samples.length * 0.95)], maxMs: samples[samples.length - 1] },
+        resources: performance.getEntriesByType('resource').map(r => ({ name: r.name, durationMs: r.duration, transferBytes: r.transferSize }))
+      });
+      document.getElementById('diagnostics').textContent = JSON.stringify(data);
+    }
+    setInterval(snapshotProbe, 1000);
   </script>
   <script src="app.js" onerror="recordError('Failed to load app.js')"></script>
   <script>if (typeof main === 'function') main([]); else recordError('TeaVM entry point unavailable');</script>

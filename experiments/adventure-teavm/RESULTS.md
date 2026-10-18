@@ -23,6 +23,7 @@ and summaries for review.
 | `./experiments/adventure-teavm/scripts/Build-Browser.ps1 -Offline` | Exit 0, `BUILD SUCCESSFUL in 1m 5s`, including another TeaVM generation from cached dependencies. |
 | `./experiments/adventure-teavm/scripts/Invoke-ForgeBaseline.ps1 -Phase Compile -Offline` | Exit 0, seven-module `BUILD SUCCESS`, 1:11, from the isolated local cache. |
 | `./experiments/adventure-teavm/scripts/Verify-Fixture.ps1` | Passed: exact original treasure bytes; only SpriteGroup and comparator under the compiled Forge package; source-map class matches original source after newline normalization. |
+| `./experiments/adventure-teavm/scripts/Build-Browser.ps1 -Offline` after the preload correction | Exit 0, `BUILD SUCCESSFUL in 36s`. Corrected browser launcher compiled and transpiled; fixture checks passed again. |
 
 Baseline compile expands to portable `mvn.cmd -B -ntp -T1
 -Dmaven.repo.local=<repo>/.local-tools/m2 -pl forge-gui-mobile-dev -am
@@ -39,9 +40,10 @@ Maven POMs/reactor and all Forge engine source are unchanged.
 
 ## Artifact and authenticity
 
-Entry point: `build/dist/js/webapp/index.html`. In both recorded builds,
-`app.js` is **1,526,119 bytes** uncompressed and the source map is **193,294
-bytes**. These are debug/instrumented sizes, not production budgets. The
+Entry point: `build/dist/js/webapp/index.html`. The initial two builds had
+`app.js` at 1,526,119 bytes and a 193,294-byte source map. After the tested preload
+correction, they are **1,528,796 bytes** and **193,620 bytes**, respectively.
+These are debug/instrumented sizes, not production budgets. The
 artifact includes original treasure content, bundled libGDX classpath assets,
 backend runtime scripts, debugging source references and the Forge license.
 The evidence manifest records file totals and hashes. A ZIP is retained under
@@ -63,18 +65,59 @@ Treasure content totals **19,110 bytes**. Original/generated SHA-256 values:
 
 ## Browser behavior and remaining gates
 
-**Pending separate loopback-server approval.** Rendering, mouse/touch input,
-resize, load time and frame timing have not yet been observed in a browser.
-The owner was asked to approve a temporary `127.0.0.1:8765` listener serving
-only the artifact, to be stopped after testing. No server was started while
-that request was pending; tool-installation approval does not authorize it.
+**Desktop rendering/input/resize verified after explicit local-test approval.**
+The temporary server used `Serve-Loopback.ps1 -Approved` and served only the
+generated directory. `netstat` confirmed `127.0.0.1:8765` as its listener. It was
+stopped after testing, and a final check found **zero** remaining test listeners.
+No other service, firewall rule or network exposure was changed.
+
+The first browser run failed: the custom preload listener only cleared the
+screen, never called the backend asset loader and never signaled preload
+completion. The page remained on its loading message with no sprites and no
+treasure requests. This was a launcher/harness bug, not a Forge/TeaVM compiler
+failure. The correction calls `AssetInstance.getLoaderInstance().preload(...)`,
+waits for downloads and required files, then calls `WebApplication.setPreloadReady()`.
+The original Forge class and assets were unchanged. An empty favicon was also
+declared to remove an incidental missing-favicon request.
+
+Tests used Codex's in-app **Chromium 155 desktop browser on Windows**, automated
+desktop pointer drags, explicit viewport overrides and the default high-DPI
+viewport. This did **not** enable touch or emulate an iPhone. Actual draw callback
+order and child order matched on every recorded observation:
+
+| Check | Observed result |
+| --- | --- |
+| Portrait 390×844, DPR ≈1 | Both original treasure sprites visible; 8 atlas regions, 1 texture; initial draw/child order `BA`, A.y=200, B.y=220. |
+| Drag `(180,430) → (180,330)` | A.y=282.1, order `AB`, 10 pointer events. Visual overlap changed correspondingly. |
+| Drag `(180,320) → (180,430)` | A.y=191.8, order restored to `BA`, 20 pointer events. |
+| Resize to 844×390 landscape | Both sprites remained visible with letterboxing; coordinates/order preserved. |
+| Landscape drag `(420,200) → (420,130)` | A.y=277.9, order `AB`, 30 pointer events; input mapping remained correct after resize. |
+| Restore default 319×572, DPR 1.5, then drag `(160,200) → (160,270)` | Canvas 478×858; A.y=207.7, order `BA`, 40 pointer events. Four order reversals total; no active pointer left after release. |
+| Reload | A/B reset to original positions, `BA`, zero pointer events. Ready again in about 1.43 seconds with HTTP 304/cache validation. |
+
+On the first corrected localhost reload, readiness was **1469.2 ms**. Across
+the first **3600** sampled render intervals (idle, tool activity, resize and four
+drags), median was **18 ms**, p95 **18.5 ms**, maximum **33.4 ms**. This is an
+instrumented desktop observation, not a sustained drag benchmark, mobile budget
+or cold-profile startup guarantee. No page diagnostic errors or console
+warnings/errors were recorded in the corrected run; the debug GL wrapper was
+enabled. Backend assets returned HTTP 200, followed by 304 on reload.
+
+Evidence: [diagnostics and checks](evidence/browser-results.json),
+[server requests](evidence/server-requests.txt),
+[initial failed preload](evidence/initial-preload-failure.png),
+[portrait before drag](evidence/portrait-initial.png),
+[portrait after drag](evidence/portrait-after-drag.png),
+[landscape after drag](evidence/landscape-after-drag.png), and
+[high-DPI after drag](evidence/high-dpi-after-drag.png).
 
 **Actual iPhone Safari remains unverified.** Silent's loopback listener cannot
 serve a phone on the LAN. No LAN/public serving, tunnel, hosting or firewall
 change has been performed. Desktop device emulation would be recorded as such.
 
-Gate 0 compilation/tests is verified. Gate 1 compilation and genuine source/
-asset selection are verified, with visual/input/device criteria still open.
+Gate 0 compilation/tests is verified. Gate 1 compilation, genuine source/asset
+selection and desktop visual/pointer/resize checks are verified. Real touch and
+actual portrait iPhone Safari remain open.
 The rules/AI, actual scene, full duel and save gates have not been attempted.
 This does not establish a playable Forge Adventure port.
 
@@ -83,6 +126,8 @@ This does not establish a playable Forge Adventure port.
 - No compilation or test failure occurred. The first browser build warned that
   TeaVM's annotation processor declares `RELEASE_11`, less than source `17`;
   compilation still succeeded.
+- The initial browser preload failure and its bounded launcher correction are
+  recorded above. A blank loading canvas was not counted as a successful run.
 - Gradle reported deprecated features incompatible with Gradle 10. Version
   9.6.1 is pinned; no unrelated library/plugin upgrade was attempted.
 - Forge emitted existing deprecated/unchecked Java warnings. Its mobile-dev

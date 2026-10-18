@@ -3,9 +3,10 @@
 Last updated: 2026-10-17
 
 ## Current milestone
-**Gate 0 verified; Gate 1 component experiment compiled.** The Forge mobile-development
+**Gate 0 verified; Gate 1 desktop component experiment verified.** The Forge mobile-development
 reactor compiles and its existing tests pass on Silent. The original SpriteGroup
-browser artifact is built; browser rendering/input and iPhone Safari remain pending.
+browser artifact renders, sorts during pointer dragging, and survives portrait/
+landscape resize in desktop Chromium. Actual touch/iPhone Safari remain unverified.
 This is not a functional Adventure port.
 
 ## Known setup
@@ -26,24 +27,28 @@ This is not a functional Adventure port.
 - `Build-Browser.ps1 -WriteLocks`, then `-Offline`: Java compilation and TeaVM
   JavaScript generation succeeded. Fixture verification confirms original source
   selection, exact treasure bytes, and no other compiled Forge classes.
+- After local-test approval, desktop Chromium 155 displayed the original sprites
+  and verified four `BA`/`AB` order reversals, pointer coordinates, portrait/landscape
+  resizing, high-DPI input and reload reset. An initial preload harness bug was
+  fixed without changing Forge. Screenshots and diagnostics are in the experiment.
+- The temporary server was bound only to `127.0.0.1:8765`, then stopped; no remaining
+  listener. Observed readiness ~1.47 s and p95 frame interval ~18.5 ms on desktop;
+  no mobile performance or full gameplay claim.
 - Exact commands, warnings and limits: [results](../experiments/adventure-teavm/RESULTS.md)
   and [reproduction instructions](../experiments/adventure-teavm/README.md).
 
 ## Next bounded assignment
-1. After separate approval, temporarily serve only the built artifact on
-   `127.0.0.1:8765`; verify visible sprites, actual draw-order flips, pointer
-   coordinates, resize and diagnostics. Stop the listener after testing.
-2. Arrange an approved actual portrait iPhone Safari test. Desktop emulation is
+1. Arrange an approved actual portrait iPhone Safari test. Desktop Chromium is
    not device verification; LAN/public access is not currently approved.
-3. Review the bounded experiment draft PR. Original rules/AI reachability remains
+2. Review the bounded experiment draft PR #8. Original rules/AI reachability remains
    a separate future gate; do not begin a whole-game port, accounts or saves.
 
 ## Handoff
 - **Branch:** `codex/spritegroup-teavm`; bounded experiment draft PR.
 - **Files changed:** `.gitignore`, this status, and `experiments/adventure-teavm/`.
 - **What works (verified):** baseline compile/test and isolated TeaVM compilation;
-  offline builds and original source/asset checks pass.
+  offline builds, original source/asset checks and desktop rendering/input/resize pass.
 - **Commands and test results:** recorded in experiment `RESULTS.md` and evidence manifest.
-- **Blockers:** separate loopback-server approval pending; actual iPhone Safari untested.
-- **Next bounded task:** browser rendering/input/resize checks on this artifact,
-  followed by a separately approved phone test. No additional game implementation.
+- **Blockers:** real touch and actual iPhone Safari untested; no LAN/public serving approval.
+- **Next bounded task:** separately approved phone test on this artifact.
+  No additional game implementation or expansion of network access.

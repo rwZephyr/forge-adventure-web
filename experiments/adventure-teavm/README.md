@@ -94,6 +94,11 @@ order-change count, error events and up to 3600 measured frame intervals. Timing
 includes this diagnostic instrumentation and browser/tool scheduling; it is not
 a game benchmark. GL errors throw with `useDebugGL`; uncaught errors are shown
 on the page. Console `probe` messages log readiness and each order change.
+The same measurements, browser/version and resource timings are serialized into
+the `#diagnostics` JSON element once per second for read-only inspection. After
+a resize, allow a render frame and the next diagnostic sample to settle before
+recording geometry. The custom preload launcher must load the backend manifest
+and signal completion; a plain clear-screen listener leaves the app loading.
 
 An actual portrait iPhone Safari pass remains a distinct required Gate 1 check.
 Desktop Chromium or device emulation cannot establish Safari compatibility.

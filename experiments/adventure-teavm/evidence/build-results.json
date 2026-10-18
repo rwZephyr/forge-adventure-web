@@ -78,22 +78,30 @@
       "summary": [
         "BUILD SUCCESSFUL in 1m 5s"
       ]
+    },
+    {
+      "path": ".local-tools/logs/browser-build-20261017-224723.log",
+      "sha256": "c7ca9e2666460a5c00c92fb3599a72e212cc5baf88e3f9a6eadb1b6d4c5e7bfd",
+      "success": true,
+      "summary": [
+        "BUILD SUCCESSFUL in 36s"
+      ]
     }
   ],
   "artifact": {
     "directory": "experiments/adventure-teavm/build/dist/js/webapp",
     "fileCount": 398,
-    "totalBytes": 5283901,
+    "totalBytes": 5287819,
     "files": [
       {
         "path": "app.js",
-        "bytes": 1526119,
-        "sha256": "be2aad672aafddb9cd62a3b93be22f6ad7ba408f1136544c1764e0fa48d46ebf"
+        "bytes": 1528796,
+        "sha256": "6bd1708da6a1259475bdbc2363f31fa2df8f4bf81923565eb0ac5bd1e0ef4e53"
       },
       {
         "path": "app.js.map",
-        "bytes": 193294,
-        "sha256": "e0e3603de04e342e0f07f2e61059f8b3f208e3fac081f85c7a408f292abc4ef7"
+        "bytes": 193620,
+        "sha256": "8fe1b86dfdf925c05aa313f68d5fc39552ae0565bc5d9785085f47b95453b063"
       },
       {
         "path": "FORGE-LICENSE.txt",
@@ -102,8 +110,8 @@
       },
       {
         "path": "index.html",
-        "bytes": 2464,
-        "sha256": "eed617fd1fde5a0e45a533af2b700a4a78f9e3d9cbab3391220e6a887b93b9b5"
+        "bytes": 3379,
+        "sha256": "b0456899824b93279d48f24600f65cef27a6404c78ca921782a4808742272260"
       },
       {
         "path": "assets/sprites/treasure.atlas",
@@ -118,20 +126,21 @@
     ],
     "zip": {
       "path": "experiments/adventure-teavm/build/spritegroup-web.zip",
-      "bytes": 1229431,
-      "sha256": "404876ea7d1a2f867ef513f414e2b46d84506632bb9e18a15148a459e92149ac"
+      "bytes": 1229973,
+      "sha256": "439fb344a328b88843ef2698146ee0963e7861d9dcce1522ce26561a897530e7"
     }
   },
   "compiledApplicationClasses": [
     "probe/SpriteGroupProbe$RecordingImage$1.class",
     "probe/SpriteGroupProbe$RecordingImage.class",
     "probe/SpriteGroupProbe.class",
+    "probe/WebLauncher$1$1.class",
     "probe/WebLauncher$1.class",
     "probe/WebLauncher.class",
     "forge/adventure/stage/SpriteGroup$1.class",
     "forge/adventure/stage/SpriteGroup.class"
   ],
-  "browserExecution": "pending separate server approval; no runtime claim",
+  "browserExecution": "desktop Chromium 155 verified: original sprites, four pointer-driven sort reversals, portrait/landscape/high-DPI resize and reload; real touch/iPhone Safari unverified; test server stopped",
   "originalSource": {
     "path": "forge-gui-mobile/src/forge/adventure/stage/SpriteGroup.java",
     "sha256": "60efe27b2d204d46e9f3a386f21cfdd4782f502fd4b6a5ecce0440be5c143582",

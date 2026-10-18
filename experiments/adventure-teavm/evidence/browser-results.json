@@ -1,0 +1,589 @@
+{
+  "baseCommit": "fecf4c19e767009d0eca005d3bd93f099b6d87b4",
+  "launcherFix": "manifest preload and setPreloadReady; original SpriteGroup unchanged",
+  "testMethod": "Codex in-app Chromium desktop pointer drag and viewport override; no touch/device emulation",
+  "browserUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+  "server": {
+    "bind": "127.0.0.1",
+    "port": 8765,
+    "stoppedAfterTest": true
+  },
+  "rawDiagnostics": {
+    "path": ".local-tools/logs/browser-runtime-20261017.json",
+    "sha256": "437e002fe031732a2dd3dfcb584fe61e1076adc42af2ca72c487f19c5caf98cd"
+  },
+  "checks": [
+    {
+      "check": "portrait_initial",
+      "status": null,
+      "actors": {
+        "A": {
+          "size": 96,
+          "x": 112,
+          "y": 200
+        },
+        "B": {
+          "size": 96,
+          "x": 136,
+          "y": 220
+        }
+      },
+      "canvasSize": {
+        "height": 844,
+        "width": 390
+      },
+      "childOrder": "BA",
+      "drawOrder": "BA",
+      "errors": [],
+      "frames": 809,
+      "orderChanges": 0,
+      "pointer": {
+        "active": "",
+        "events": 0,
+        "x": 0,
+        "y": 0
+      },
+      "ready": true,
+      "readyMs": 1469.1999999284744,
+      "regions": 8,
+      "textures": 1,
+      "timing": {
+        "maxMs": 24.199999928474423,
+        "medianMs": 18,
+        "p95Ms": 18.40000009536743,
+        "samples": 808
+      },
+      "viewport": {
+        "dpr": 1.0000000298023224,
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "check": "portrait_drag_up",
+      "status": "Draw: AB \u00b7 children: AB \u00b7 A.y 282.1 \u00b7 B.y 220.0 \u00b7 pointer events 10",
+      "actors": {
+        "A": {
+          "size": 96,
+          "x": 112,
+          "y": 282.0512869419199
+        },
+        "B": {
+          "size": 96,
+          "x": 136,
+          "y": 220
+        }
+      },
+      "canvasSize": {
+        "height": 844,
+        "width": 390
+      },
+      "childOrder": "AB",
+      "drawOrder": "AB",
+      "errors": [],
+      "frames": 1199,
+      "orderChanges": 1,
+      "pointer": {
+        "active": "",
+        "events": 10,
+        "x": 147.69230241041885,
+        "y": 315.89745472639146
+      },
+      "ready": true,
+      "readyMs": 1469.1999999284744,
+      "regions": 8,
+      "textures": 1,
+      "timing": {
+        "maxMs": 24.199999928474423,
+        "medianMs": 18,
+        "p95Ms": 18.5,
+        "samples": 1198
+      },
+      "viewport": {
+        "dpr": 1.0000000298023224,
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "check": "portrait_drag_down",
+      "status": "Draw: BA \u00b7 children: BA \u00b7 A.y 191.8 \u00b7 B.y 220.0 \u00b7 pointer events 20",
+      "actors": {
+        "A": {
+          "size": 96,
+          "x": 112,
+          "y": 191.794871305808
+        },
+        "B": {
+          "size": 96,
+          "x": 136,
+          "y": 220
+        }
+      },
+      "canvasSize": {
+        "height": 844,
+        "width": 390
+      },
+      "childOrder": "BA",
+      "drawOrder": "BA",
+      "errors": [],
+      "frames": 1479,
+      "orderChanges": 2,
+      "pointer": {
+        "active": "",
+        "events": 20,
+        "x": 147.69230241041885,
+        "y": 233.8461677844716
+      },
+      "ready": true,
+      "readyMs": 1469.1999999284744,
+      "regions": 8,
+      "textures": 1,
+      "timing": {
+        "maxMs": 24.199999928474423,
+        "medianMs": 18,
+        "p95Ms": 18.5,
+        "samples": 1478
+      },
+      "viewport": {
+        "dpr": 1.0000000298023224,
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "check": "landscape_resize",
+      "status": "Draw: BA \u00b7 children: BA \u00b7 A.y 191.8 \u00b7 B.y 220.0 \u00b7 pointer events 20",
+      "actors": {
+        "A": {
+          "size": 96,
+          "x": 112,
+          "y": 191.794871305808
+        },
+        "B": {
+          "size": 96,
+          "x": 136,
+          "y": 220
+        }
+      },
+      "canvasSize": {
+        "height": 390,
+        "width": 844
+      },
+      "childOrder": "BA",
+      "drawOrder": "BA",
+      "errors": [],
+      "frames": 2152,
+      "orderChanges": 2,
+      "pointer": {
+        "active": "",
+        "events": 20,
+        "x": 147.69230241041885,
+        "y": 233.8461677844716
+      },
+      "ready": true,
+      "readyMs": 1469.1999999284744,
+      "regions": 8,
+      "textures": 1,
+      "timing": {
+        "maxMs": 28.5,
+        "medianMs": 18,
+        "p95Ms": 18.5,
+        "samples": 2151
+      },
+      "viewport": {
+        "dpr": 1.0000000298023224,
+        "height": 390,
+        "width": 844
+      }
+    },
+    {
+      "check": "landscape_drag_up",
+      "status": "Draw: AB \u00b7 children: AB \u00b7 A.y 277.9 \u00b7 B.y 220.0 \u00b7 pointer events 30",
+      "actors": {
+        "A": {
+          "size": 96,
+          "x": 112,
+          "y": 277.9487225948239
+        },
+        "B": {
+          "size": 96,
+          "x": 136,
+          "y": 220
+        }
+      },
+      "canvasSize": {
+        "height": 390,
+        "width": 844
+      },
+      "childOrder": "AB",
+      "drawOrder": "AB",
+      "errors": [],
+      "frames": 2880,
+      "orderChanges": 3,
+      "pointer": {
+        "active": "",
+        "events": 30,
+        "x": 157.53845590444678,
+        "y": 320.00001907348746
+      },
+      "ready": true,
+      "readyMs": 1469.1999999284744,
+      "regions": 8,
+      "textures": 1,
+      "timing": {
+        "maxMs": 28.5,
+        "medianMs": 18,
+        "p95Ms": 18.5,
+        "samples": 2879
+      },
+      "viewport": {
+        "dpr": 1.0000000298023224,
+        "height": 390,
+        "width": 844
+      }
+    },
+    {
+      "check": "high_dpi_resize_back",
+      "status": null,
+      "actors": {
+        "A": {
+          "size": 96,
+          "x": 112,
+          "y": 277.9487225948239
+        },
+        "B": {
+          "size": 96,
+          "x": 136,
+          "y": 220
+        }
+      },
+      "canvasSize": {
+        "height": 858,
+        "width": 478
+      },
+      "childOrder": "AB",
+      "drawOrder": "AB",
+      "errors": [],
+      "frames": 3385,
+      "orderChanges": 3,
+      "pointer": {
+        "active": "",
+        "events": 30,
+        "x": 157.53845590444678,
+        "y": 320.00001907348746
+      },
+      "ready": true,
+      "readyMs": 1469.1999999284744,
+      "regions": 8,
+      "textures": 1,
+      "timing": {
+        "maxMs": 33.39999997615814,
+        "medianMs": 18,
+        "p95Ms": 18.5,
+        "samples": 3384
+      },
+      "viewport": {
+        "dpr": 1.5,
+        "height": 572,
+        "width": 319
+      }
+    },
+    {
+      "check": "high_dpi_drag_down",
+      "status": "Draw: BA \u00b7 children: BA \u00b7 A.y 207.7 \u00b7 B.y 220.0 \u00b7 pointer events 40",
+      "actors": {
+        "A": {
+          "size": 96,
+          "x": 112,
+          "y": 207.65583137575237
+        },
+        "B": {
+          "size": 96,
+          "x": 136,
+          "y": 220
+        }
+      },
+      "canvasSize": {
+        "height": 858,
+        "width": 478
+      },
+      "childOrder": "BA",
+      "drawOrder": "BA",
+      "errors": [],
+      "frames": 4224,
+      "orderChanges": 4,
+      "pointer": {
+        "active": "",
+        "events": 40,
+        "x": 160.66945032095774,
+        "y": 256.4016889228989
+      },
+      "ready": true,
+      "readyMs": 1469.1999999284744,
+      "regions": 8,
+      "textures": 1,
+      "timing": {
+        "maxMs": 33.39999997615814,
+        "medianMs": 18,
+        "p95Ms": 18.5,
+        "samples": 3600
+      },
+      "viewport": {
+        "dpr": 1.5,
+        "height": 572,
+        "width": 319
+      }
+    },
+    {
+      "check": "reload_resets_state",
+      "status": "Draw: BA \u00b7 children: BA \u00b7 A.y 200.0 \u00b7 B.y 220.0 \u00b7 pointer events 0",
+      "actors": {
+        "A": {
+          "size": 96,
+          "x": 112,
+          "y": 200
+        },
+        "B": {
+          "size": 96,
+          "x": 136,
+          "y": 220
+        }
+      },
+      "canvasSize": {
+        "height": 858,
+        "width": 478
+      },
+      "childOrder": "BA",
+      "drawOrder": "BA",
+      "errors": [],
+      "frames": 1146,
+      "orderChanges": 0,
+      "pointer": {
+        "active": "",
+        "events": 0,
+        "x": 0,
+        "y": 0
+      },
+      "ready": true,
+      "readyMs": 1430.2000000476835,
+      "regions": 8,
+      "textures": 1,
+      "timing": {
+        "maxMs": 19.100000023841854,
+        "medianMs": 18,
+        "p95Ms": 18.5,
+        "samples": 1145
+      },
+      "viewport": {
+        "dpr": 1.5,
+        "height": 572,
+        "width": 319
+      }
+    }
+  ],
+  "firstLoadResourceRequests": [
+    {
+      "durationMs": 228,
+      "name": "http://127.0.0.1:8765/app.js",
+      "transferBytes": 1529096
+    },
+    {
+      "durationMs": 52.89999997615814,
+      "name": "http://127.0.0.1:8765/scripts/gdx.wasm.js",
+      "transferBytes": 190849
+    },
+    {
+      "durationMs": 36.300000071525574,
+      "name": "http://127.0.0.1:8765/scripts/howler.js",
+      "transferBytes": 36473
+    },
+    {
+      "durationMs": 6.300000071525574,
+      "name": "http://127.0.0.1:8765/assets/sprites/treasure.atlas",
+      "transferBytes": 716
+    },
+    {
+      "durationMs": 11.200000047683716,
+      "name": "http://127.0.0.1:8765/assets/sprites/treasure.png",
+      "transferBytes": 18994
+    },
+    {
+      "durationMs": 11.299999952316284,
+      "name": "http://127.0.0.1:8765/assets/com/badlogic/gdx/utils/lsans-15.png",
+      "transferBytes": 10570
+    },
+    {
+      "durationMs": 22.799999952316284,
+      "name": "http://127.0.0.1:8765/assets/com/badlogic/gdx/utils/lsans-15.fnt",
+      "transferBytes": 18011
+    },
+    {
+      "durationMs": 7.399999976158142,
+      "name": "http://127.0.0.1:8765/assets/com/badlogic/gdx/graphics/g3d/particles/particles.fragment.glsl",
+      "transferBytes": 1120
+    },
+    {
+      "durationMs": 12.099999904632568,
+      "name": "http://127.0.0.1:8765/assets/com/badlogic/gdx/graphics/g3d/particles/particles.vertex.glsl",
+      "transferBytes": 3186
+    },
+    {
+      "durationMs": 10.299999952316284,
+      "name": "http://127.0.0.1:8765/assets/com/badlogic/gdx/graphics/g3d/shaders/default.fragment.glsl",
+      "transferBytes": 6174
+    },
+    {
+      "durationMs": 16.90000009536743,
+      "name": "http://127.0.0.1:8765/assets/com/badlogic/gdx/graphics/g3d/shaders/default.vertex.glsl",
+      "transferBytes": 9396
+    },
+    {
+      "durationMs": 10,
+      "name": "http://127.0.0.1:8765/assets/com/badlogic/gdx/graphics/g3d/shaders/depth.fragment.glsl",
+      "transferBytes": 1169
+    },
+    {
+      "durationMs": 4.699999928474426,
+      "name": "http://127.0.0.1:8765/assets/com/badlogic/gdx/graphics/g3d/shaders/depth.vertex.glsl",
+      "transferBytes": 3231
+    }
+  ],
+  "reloadResourceRequests": [
+    {
+      "durationMs": 212.60000002384183,
+      "name": "http://127.0.0.1:8765/app.js",
+      "transferBytes": 300
+    },
+    {
+      "durationMs": 70.29999995231628,
+      "name": "http://127.0.0.1:8765/scripts/gdx.wasm.js",
+      "transferBytes": 300
+    },
+    {
+      "durationMs": 69.70000004768372,
+      "name": "http://127.0.0.1:8765/scripts/howler.js",
+      "transferBytes": 300
+    },
+    {
+      "durationMs": 5.399999976158142,
+      "name": "http://127.0.0.1:8765/assets/sprites/treasure.atlas",
+      "transferBytes": 300
+    },
+    {
+      "durationMs": 13.600000023841858,
+      "name": "http://127.0.0.1:8765/assets/sprites/treasure.png",
+      "transferBytes": 300
+    },
+    {
+      "durationMs": 22.399999976158146,
+      "name": "http://127.0.0.1:8765/assets/com/badlogic/gdx/utils/lsans-15.fnt",
+      "transferBytes": 300
+    },
+    {
+      "durationMs": 23.700000047683716,
+      "name": "http://127.0.0.1:8765/assets/com/badlogic/gdx/utils/lsans-15.png",
+      "transferBytes": 300
+    },
+    {
+      "durationMs": 23.600000023841854,
+      "name": "http://127.0.0.1:8765/assets/com/badlogic/gdx/graphics/g3d/particles/particles.fragment.glsl",
+      "transferBytes": 300
+    },
+    {
+      "durationMs": 16.200000047683716,
+      "name": "http://127.0.0.1:8765/assets/com/badlogic/gdx/graphics/g3d/particles/particles.vertex.glsl",
+      "transferBytes": 300
+    },
+    {
+      "durationMs": 8.399999976158142,
+      "name": "http://127.0.0.1:8765/assets/com/badlogic/gdx/graphics/g3d/shaders/default.fragment.glsl",
+      "transferBytes": 300
+    },
+    {
+      "durationMs": 5.099999904632568,
+      "name": "http://127.0.0.1:8765/assets/com/badlogic/gdx/graphics/g3d/shaders/default.vertex.glsl",
+      "transferBytes": 300
+    },
+    {
+      "durationMs": 4.800000071525574,
+      "name": "http://127.0.0.1:8765/assets/com/badlogic/gdx/graphics/g3d/shaders/depth.fragment.glsl",
+      "transferBytes": 300
+    },
+    {
+      "durationMs": 3.700000047683716,
+      "name": "http://127.0.0.1:8765/assets/com/badlogic/gdx/graphics/g3d/shaders/depth.vertex.glsl",
+      "transferBytes": 300
+    }
+  ],
+  "consoleOrderMessages": [
+    {
+      "level": "info",
+      "message": "probe: READY: unchanged Forge SpriteGroup; original treasure atlas and PNG",
+      "timestamp": "2026-10-18T05:48:11.677Z",
+      "url": "http://127.0.0.1:8765/app.js"
+    },
+    {
+      "level": "info",
+      "message": "probe: DRAW_ORDER=BA A.y=200.0 B.y=220.0",
+      "timestamp": "2026-10-18T05:48:12.740Z",
+      "url": "http://127.0.0.1:8765/app.js"
+    },
+    {
+      "level": "info",
+      "message": "probe: DRAW_ORDER=AB A.y=220.51282 B.y=220.0",
+      "timestamp": "2026-10-18T05:48:27.972Z",
+      "url": "http://127.0.0.1:8765/app.js"
+    },
+    {
+      "level": "info",
+      "message": "probe: DRAW_ORDER=BA A.y=213.94872 B.y=220.0",
+      "timestamp": "2026-10-18T05:48:34.896Z",
+      "url": "http://127.0.0.1:8765/app.js"
+    },
+    {
+      "level": "info",
+      "message": "probe: DRAW_ORDER=AB A.y=223.79488 B.y=220.0",
+      "timestamp": "2026-10-18T05:48:51.996Z",
+      "url": "http://127.0.0.1:8765/app.js"
+    },
+    {
+      "level": "info",
+      "message": "probe: DRAW_ORDER=BA A.y=216.35876 B.y=220.0",
+      "timestamp": "2026-10-18T05:49:13.701Z",
+      "url": "http://127.0.0.1:8765/app.js"
+    },
+    {
+      "level": "info",
+      "message": "probe: READY: unchanged Forge SpriteGroup; original treasure atlas and PNG",
+      "timestamp": "2026-10-18T05:49:42.345Z",
+      "url": "http://127.0.0.1:8765/app.js"
+    },
+    {
+      "level": "info",
+      "message": "probe: DRAW_ORDER=BA A.y=200.0 B.y=220.0",
+      "timestamp": "2026-10-18T05:49:43.416Z",
+      "url": "http://127.0.0.1:8765/app.js"
+    }
+  ],
+  "consoleErrorsOrWarnings": [],
+  "testedSources": [
+    {
+      "path": "forge-gui-mobile/src/forge/adventure/stage/SpriteGroup.java",
+      "sha256WithLFNewlines": "462ce28f1e1e6490b0ed7b5f6d237110dc1bd72f71ec691d0486e7d1c52973fc"
+    },
+    {
+      "path": "experiments/adventure-teavm/src/main/java/probe/WebLauncher.java",
+      "sha256WithLFNewlines": "a19c134fdc92e45282a560d430e7f45bf2b40b56bc23507b80ead1bf7e54602b"
+    },
+    {
+      "path": "experiments/adventure-teavm/src/main/java/probe/SpriteGroupProbe.java",
+      "sha256WithLFNewlines": "87480129d306f7394c229e1e3841221b13248e33d749330783c8fddf63af71ee"
+    },
+    {
+      "path": "experiments/adventure-teavm/src/main/web/index.html",
+      "sha256WithLFNewlines": "b0456899824b93279d48f24600f65cef27a6404c78ca921782a4808742272260"
+    }
+  ],
+  "generatedAppSha256": "6bd1708da6a1259475bdbc2363f31fa2df8f4bf81923565eb0ac5bd1e0ef4e53"
+}
