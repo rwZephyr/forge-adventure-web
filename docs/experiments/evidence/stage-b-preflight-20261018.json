@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-18",
+  "type": "Read-only pinned source/archive inspection; no Stage B compilation or execution",
+  "sourceBaseline": "db893dcdb14fdd85a05437ad458dc70ef704ca2e",
+  "teavmClasslibVersion": "0.15.0",
+  "archives": [
+    {
+      "file": "teavm-classlib-0.15.0-sources.jar",
+      "sha256": "e3a36f2a8cbd8cc0b1b8614f845b8e4923507311006d38ca6e9681ce04632df3",
+      "matchingFutureLockAndTimeUnitEntries": [
+        "org/teavm/classlib/java/util/concurrent/TTimeUnit.java"
+      ],
+      "sourceEntriesPresent": {
+        "org/teavm/classlib/java/lang/TThread.java": true,
+        "org/teavm/classlib/java/lang/TThreadLocal.java": true,
+        "org/teavm/classlib/java/util/concurrent/TConcurrentHashMap.java": true
+      },
+      "threadSourceInspection": {
+        "startSchedulesPlatformThread": true,
+        "interruptDeclared": true,
+        "timedJoinDeclared": true,
+        "stopDeclared": false,
+        "stackTraceReturnsEmptyArray": true
+      }
+    },
+    {
+      "file": "teavm-classlib-0.15.0.jar",
+      "sha256": "7d805be4670a892a34c89d9d750a8afd65e2f8201b7b3a10343634ea19d1c410",
+      "matchingFutureLockAndTimeUnitEntries": [
+        "org/teavm/classlib/java/util/concurrent/TTimeUnit.class"
+      ]
+    }
+  ],
+  "originalInputs": [
+    {
+      "path": "forge-gui/res/cardsfolder/l/lightning_bolt.txt",
+      "rawSha256": "330ba48b8090d1b2312f9404d71612cd3bbf49b960974b99ebf5c0804bb4711e",
+      "lfNormalizedSha256": "330ba48b8090d1b2312f9404d71612cd3bbf49b960974b99ebf5c0804bb4711e"
+    },
+    {
+      "path": "forge-gui/res/cardsfolder/m/mountain.txt",
+      "rawSha256": "d421d9639d7b7f2a8c4ed04fa2fa8526cbc768733a92b0a1a453535ee99a3799",
+      "lfNormalizedSha256": "d421d9639d7b7f2a8c4ed04fa2fa8526cbc768733a92b0a1a453535ee99a3799"
+    },
+    {
+      "path": "forge-gui/res/languages/en-US.properties",
+      "rawSha256": "4c9e40f974c076389e13a809223bbd32bc7e1c031ca9d9691205a4e981b6db43",
+      "lfNormalizedSha256": "bf5171b9708aec99336673d684fa5b2687cfd53c347f7d068ffd6bdbcaf107c7"
+    },
+    {
+      "path": "forge-ai/pom.xml",
+      "rawSha256": "36b39c76948ece880ef70609d6e7966ffd503788c38992bd3a7e161bca35c4e7",
+      "lfNormalizedSha256": "deca2f41baa708c63f2d8de7cb41274892843faa3037e6e597a3cda6aea6a2ea"
+    }
+  ],
+  "existingAiDependency": {
+    "coordinate": "org.apache.commons:commons-math3:3.6.1",
+    "sha256": "1e56d7b058d28b65abd256b8458e3885b674c1d588fa43cd7d1cbb9c7ef2b308"
+  },
+  "limitations": [
+    "Archive absence is not an executed compiler/link failure.",
+    "Other compiler inputs may affect symbol resolution.",
+    "Thread coroutine support does not establish FutureTask/timed-get or full Forge AI compatibility."
+  ]
+}
