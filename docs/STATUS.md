@@ -59,7 +59,10 @@ rules/AI compatibility is demonstrated. Stage B remains unimplemented.
 
 ## Completed private Safari session
 - [Results, evidence and reproduction](experiments/safari-session-results.md),
-  separate local branch `codex/safari-test-plan`, based on PR #11.
+  published as documentation/evidence-only draft
+  [PR #12](https://github.com/rwZephyr/forge-adventure-web/pull/12), branch
+  `codex/safari-test-plan`, targeting PR #11's branch so runtime changes are not
+  duplicated in its diff. PRs #8/#11 remain unchanged, draft and unmerged.
 - Preflight verified six SpriteGroup and 526 factory recorded hashes and all
   924 staged copies; no links or extra files. No rebuild or new dependency.
 - One explicitly approved temporary HTTP listener bound only to Silent's exact
@@ -79,11 +82,22 @@ rules/AI compatibility is demonstrated. Stage B remains unimplemented.
 
 ## Next bounded step and handoff
 - Review the completed actual-phone evidence; keep PRs #8 and #11 draft/unmerged.
-- Separately review/approve Stage B's genuine Game/bootstrap/AI experiment and a
-  fixture that exercises AiController's threaded spell evaluation. Do not
-  implement it until approved; an empty-deck turn-advancing game is insufficient.
+- [Stage B implementation scope](experiments/gate-2-stage-b-scope.md), on separate
+  branch `codex/gate2-ai-scope`, refines PR #9 with genuine Bolt/Mountain fixtures,
+  original Thread/FutureTask/timed-get witnesses, mana payment, stack resolution,
+  independent watchdog and explicit failure criteria. Design/inspection only.
+- Verified cached TeaVM 0.15.0 source/binary classlib archives have no
+  Future/FutureTask/LockSupport/ReentrantLock entries; TThread has no declared
+  stop and returns empty stack traces. Actual Stage B compiler/runtime blockers
+  remain untested. ApiType eagerly constructs stateless effects across its enum;
+  Stage A constructor metadata alone is insufficient for this broader path.
+- Review the proposed unchanged JVM/TeaVM baseline slice before implementation.
+  Localization/resource, concurrency/timeout cleanup, diagnostics/platform and
+  observability adaptations need a concrete failure and separate boundary review.
+  Do not bypass the threaded path or substitute game logic to obtain a pass.
 - No additional server, network or deployment authorization persists from this
   completed single session. Whole-game porting, accounts, saves and unrelated
   services remain outside scope.
-- Current branch contains the access plan, session report, sanitized evidence and
-  this status. No Forge class, experiment runtime, POM or original asset changed.
+- Current branch adds Stage B scope and read-only pinned-input inspection to the
+  published Safari evidence. No Stage B implementation/build, Forge class,
+  experiment runtime, POM or original asset changed.
