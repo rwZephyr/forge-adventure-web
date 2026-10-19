@@ -1,0 +1,10 @@
+Supplemental transcription of the execution-tool failure (not a redirected raw launcher stream).
+Command: ./experiments/standalone-bolt/Run-Lifecycle.ps1 -Label d3c-first-1 -ApprovedSingleRun
+Tool-reported command exit: 1
+Launcher emitted result.json content before this exception.
+Exception: <REPO>\experiments\standalone-bolt\Run-Lifecycle.ps1:89
+Unexpected owned child executable/entry point
+
+The launcher did not persist the observed CIM ExecutablePath or CommandLine values.
+The failed disjunction cannot be separated from the retained evidence.
+No second attempt was made to recover those values.

@@ -1,7 +1,11 @@
 # D3c — original Bolt lifecycle witness, submitted before execution
 
-**Implementation for review; Java is not compiled and the new witness has not
-executed.** This PR is stacked on #26 at
+**Execution update:** the [single approved attempt](bolt-lifecycle-witness-results.md)
+compiled successfully, then stopped at the launcher child executable/entry-point
+guard with an empty trace. No retry or implementation change followed. The plan
+below preserves the pre-execution scope at reviewed head `f7e9e1fd`; statements
+about proposed/unexecuted work below describe that submission, not a runtime pass.
+This PR is stacked on #26 at
 `bfeb88083db7346cbc108a3df602b9b7ccb4062f`. It follows the
 [reconciled review conditions](https://github.com/rwZephyr/forge-adventure-web/pull/26#issuecomment-6274427257).
 It tests the narrow original Bolt sequence, not general game-graph ownership.

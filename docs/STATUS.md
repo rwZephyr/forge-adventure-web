@@ -2,20 +2,22 @@
 
 Last updated: 2026-10-19
 
-## Stage D3c witness submitted before execution
-- [Implementation and bounded one-run plan](experiments/bolt-lifecycle-witness-plan.md),
-  stacked on #26, extend the standalone approach with original Bolt/target/manual
-  Mountain/pass actions and passive Windows shared-memory JDI lifecycle tracing.
-- Tracks publication, actual prompt receiver, await, consumption and refreshes
-  separately; tolerates published inputs pending await. Planned assertions check
-  the original payment latch before a new Game-0 generation, without claiming
-  Game-1 worker death. C1 exact reference/cache authorization is retained.
-- **Not compiled or executed.** Only static source review, PowerShell syntax
-  parsing and repository checks have been performed. No new runtime results.
-  Original Forge/older experiments/evidence remain unchanged; no projector,
-  await-entry hold, listener, new dependency or service/network change.
-- Next: independent implementation/one-run-plan review and explicit owner run
-  approval. Up to ten fresh runs require separate authorization after a first pass.
+## Stage D3c single attempt blocked at launch supervision
+- [Actual results and evidence](experiments/bolt-lifecycle-witness-results.md)
+  record the one owner-authorized attempt of #27 head `f7e9e1fd`, using the
+  exact documented command and fresh `d3c-first-1` label. Offline compilation
+  passed; the launcher then failed its child executable/entry-point guard.
+- Both owned Java processes were force-terminated and observed exited. The
+  lifecycle trace is empty; target logs/results were not produced. Actual CIM
+  comparison values were not retained, so the failing comparison/reason remains
+  unknown. No lifecycle, C1, payment or original-game result is claimed.
+- Six environment checks passed; 2,087 protected files and 2,393 cache files
+  unchanged. Sanitized retained logs, inventories, process results and explicit
+  missing-output/provenance notes are published. No source fix or retry occurred.
+- Next: independent review of this blocker and supervision diagnostics. Any
+  correction or fresh run requires separate approval. Witness source, original
+  Forge and historical evidence are unchanged; no projector, await-entry hold,
+  listener, dependency or service/network change. Stop for review.
 
 ## Stage D3b stopped at capture-ownership gate
 - [Phase 1 source audit](architecture/d3b-capture-ordering.md), stacked on #25,
