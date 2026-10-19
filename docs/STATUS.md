@@ -2,6 +2,20 @@
 
 Last updated: 2026-10-19
 
+## Stage D3b stopped at capture-ownership gate
+- [Phase 1 source audit](architecture/d3b-capture-ordering.md), stacked on #25,
+  did not establish a reusable capture permit covering Game-0, EDT prompt work
+  and asynchronous Game-1 payment. Button callbacks can precede the original
+  wait and recur on a consumed input. Existing publication edges/diagnostic
+  checks do not establish exclusive graph access.
+- No adapter, projector or runtime changes; no new compilation/test/JVM run.
+  Original sources, PR #25 bootstrap and historical evidence are unchanged.
+  The source/evidence hash inventory and a qualified 50-generation strategy
+  are documented. No listeners, dependencies or service/network changes.
+- Next: review the specific ownership gap and proposed await-entry handoff
+  obligation before implementation. This is not a claim that an adapter-side
+  protocol is impossible; C1 and prior accepted fixture results remain intact.
+
 ## Stage D3a standalone bootstrap submitted for review
 - Owner accepted Stage C and PR #24's static battlefield. The new
   [isolated standalone probe](../experiments/standalone-bolt/README.md), stacked on

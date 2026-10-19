@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-19",
+  "mode": "read-only source and prior-evidence audit; no new execution",
+  "basePr": 25,
+  "baseCommit": "8503d76ef93ac94ec2d2e2cc3375f1b62b569f1d",
+  "productionCommit": "db893dcdb14fdd85a05437ad458dc70ef704ca2e",
+  "sourceCount": 20,
+  "sources": [
+    {
+      "path": "forge-core/src/main/java/forge/util/ThreadUtil.java",
+      "sha256": "4c9bb0c0eb708e8f9386f4bd64a66eefb942c551f59c5d3c2dc573220d8538d9",
+      "bytes": 3598,
+      "pinnedGitBlob": "e06359ea4ffb20c6b92b3fc5cec06bc641f5c075",
+      "matchesPr25GitBlob": true,
+      "matchesD3aWorkingHash": true,
+      "anchors": [
+        {
+          "line": 25,
+          "text": "private final static ExecutorService gameThreadPool = Executors.newCachedThreadPool(new WorkerThreadFactory(\"Game\"));"
+        }
+      ]
+    },
+    {
+      "path": "forge-game/src/main/java/forge/game/GameAction.java",
+      "sha256": "dae4ec1c7d9b9a264210f53113f870691355de6c1de30d0dc9396ccebfafb1f6",
+      "bytes": 131136,
+      "pinnedGitBlob": "afc37904aeb499512a02ed4189822138ec1060bb",
+      "matchesPr25GitBlob": true,
+      "matchesD3aWorkingHash": true,
+      "anchors": [
+        {
+          "line": 2554,
+          "text": "public void invoke(final Runnable proc) {"
+        }
+      ]
+    },
+    {
+      "path": "forge-game/src/main/java/forge/game/player/PlaySpellAbility.java",
+      "sha256": "4cc01a9475baca414f5dc8c2a4fefcaad01cd0ef283e4fcc6ec8c87ce39ae1cc",
+      "bytes": 39989,
+      "pinnedGitBlob": "9f68857d8f97323095f5d9025b788f9a4478ff38",
+      "matchesPr25GitBlob": true,
+      "matchesD3aWorkingHash": true,
+      "anchors": [
+        {
+          "line": 140,
+          "text": "static SpellAbility chooseOptionalAdditionalCosts(Player p, final SpellAbility original) {"
+        }
+      ]
+    },
+    {
+      "path": "forge-game/src/main/java/forge/trackable/Tracker.java",
+      "sha256": "4caa95297d9259c59cb835a68a0addeeb4d902efcf5de941741e7e54853b5bf6",
+      "bytes": 4420,
+      "pinnedGitBlob": "aa74570154ff1a6eecf46339af4ceb3d7a078d2d",
+      "matchesPr25GitBlob": true,
+      "matchesD3aWorkingHash": true,
+      "anchors": [
+        {
+          "line": 29,
+          "text": "* <p><b>Thread safety.</b> Not thread-safe — game thread only. The {@code unfreeze}"
+        }
+      ]
+    },
+    {
+      "path": "forge-gui-desktop/src/main/java/forge/GuiDesktop.java",
+      "sha256": "bbdd816ca0c2eed5c22f46e0e5eab528ea137c59c5f2cb42afa0c877acd5f30c",
+      "bytes": 18777,
+      "pinnedGitBlob": "1183672a270525404f8607c5b75293dcbd20067a",
+      "matchesPr25GitBlob": true,
+      "matchesD3aWorkingHash": true,
+      "anchors": [
+        {
+          "line": 104,
+          "text": "public void invokeInEdtLater(final Runnable proc) {"
+        }
+      ]
+    },
+    {
+      "path": "forge-gui/src/main/java/forge/gamemodes/match/HostedMatch.java",
+      "sha256": "4129276ae4e9e6e5f6e3a7ee599fb5472cbe0defbd20b5b71c795143deaa22a1",
+      "bytes": 26262,
+      "pinnedGitBlob": "37342f0f4de5019d3bfbc45ebad377ff782cd7ae",
+      "matchesPr25GitBlob": true,
+      "matchesD3aWorkingHash": true,
+      "anchors": [
+        {
+          "line": 215,
+          "text": "if (p.getController() instanceof PlayerControllerHuman humanController) {"
+        }
+      ]
+    },
+    {
+      "path": "forge-gui/src/main/java/forge/gamemodes/match/input/InputBase.java",
+      "sha256": "c27538152b1200c12feec9dced3de378d011b884e0d4f0608bd3f7b0a832acf4",
+      "bytes": 6837,
+      "pinnedGitBlob": "8da2621c1da1ec03c08c58fadd9437b7a7742ce7",
+      "matchesPr25GitBlob": true,
+      "matchesD3aWorkingHash": true,
+      "anchors": [
+        {
+          "line": 77,
+          "text": "public final void showMessageInitial() {"
+        }
+      ]
+    },
+    {
+      "path": "forge-gui/src/main/java/forge/gamemodes/match/input/InputPassPriority.java",
+      "sha256": "9c888ba6f2b82410e791690ef0c8f06f3ebc0f7400d477739e08f3c5cfb1b0b6",
+      "bytes": 17340,
+      "pinnedGitBlob": "0a6ce90383290e6b50481dece2422d8a738be0e1",
+      "matchesPr25GitBlob": true,
+      "matchesD3aWorkingHash": true,
+      "anchors": [
+        {
+          "line": 342,
+          "text": "@Override"
+        }
+      ]
+    },
+    {
+      "path": "forge-gui/src/main/java/forge/gamemodes/match/input/InputPayMana.java",
+      "sha256": "b8456dce4d63882be37da6fa4197d8b483932b5ec7d7cf16e0d1f548db029248",
+      "bytes": 18793,
+      "pinnedGitBlob": "7350155fab629d2bb38a71c032599258a2c53c5b",
+      "matchesPr25GitBlob": true,
+      "matchesD3aWorkingHash": true,
+      "anchors": [
+        {
+          "line": 331,
+          "text": "locked = true;"
+        }
+      ]
+    },
+    {
+      "path": "forge-gui/src/main/java/forge/gamemodes/match/input/InputPayManaOfCostPayment.java",
+      "sha256": "7c0f90b604bd9051c962a37b4e27fbe99c04f3035514d414374761d34ea2b738",
+      "bytes": 4860,
+      "pinnedGitBlob": "73926b484fe4aaf3905348a945d9c67cacc37fe1",
+      "matchesPr25GitBlob": true,
+      "matchesD3aWorkingHash": true,
+      "anchors": [
+        {
+          "line": 24,
+          "text": "extraMatrix = matrix;"
+        }
+      ]
+    },
+    {
+      "path": "forge-gui/src/main/java/forge/gamemodes/match/input/InputProxy.java",
+      "sha256": "0114e90c60e752732857524d0210e92f26706f552525af4bc1ac83937c689f67",
+      "bytes": 5984,
+      "pinnedGitBlob": "1c425796625ce4a346ff782ce1a4ad32951b06fd",
+      "matchesPr25GitBlob": true,
+      "matchesD3aWorkingHash": true,
+      "anchors": [
+        {
+          "line": 56,
+          "text": "public final void update(final Observable observable, final Object obj) {"
+        }
+      ]
+    },
+    {
+      "path": "forge-gui/src/main/java/forge/gamemodes/match/input/InputQueue.java",
+      "sha256": "8c760bdf30723186b6ed29da70e16f9e99418398db7f2cae757743de2afe30bb",
+      "bytes": 4280,
+      "pinnedGitBlob": "bc62b2fbc94b3daeaaf797b163bc2fba8636dbe1",
+      "matchesPr25GitBlob": true,
+      "matchesD3aWorkingHash": true,
+      "anchors": [
+        {
+          "line": 95,
+          "text": "public void setInput(final InputSynchronized input) {"
+        }
+      ]
+    },
+    {
+      "path": "forge-gui/src/main/java/forge/gamemodes/match/input/InputSelectTargets.java",
+      "sha256": "08d8ae1cd7b4f590589d5d8487c4a37c0e46cd75c341389a83d3f77419c0999c",
+      "bytes": 19021,
+      "pinnedGitBlob": "4f0f50265311ab8d4e9385de1bf30c0a7057d665",
+      "matchesPr25GitBlob": true,
+      "matchesD3aWorkingHash": true,
+      "anchors": [
+        {
+          "line": 337,
+          "text": "protected void onPlayerSelected(final Player player, final ITriggerEvent triggerEvent) {"
+        }
+      ]
+    },
+    {
+      "path": "forge-gui/src/main/java/forge/gamemodes/match/input/InputSyncronizedBase.java",
+      "sha256": "9c8dc102185b42b6e7ae16f51b8b493dc6ec6a3665367c43199a867bab310537",
+      "bytes": 2014,
+      "pinnedGitBlob": "3bf1132fd70eb7dc72db11f23e4538d35a34b210",
+      "matchesPr25GitBlob": true,
+      "matchesD3aWorkingHash": true,
+      "anchors": [
+        {
+          "line": 22,
+          "text": "public void awaitLatchRelease() {"
+        }
+      ]
+    },
+    {
+      "path": "forge-gui/src/main/java/forge/gamemodes/net/GameProtocolSender.java",
+      "sha256": "92b1fe99aa6e4ce43ffde15573031deaba7d8850178f5a6678ad5e724b9fa660",
+      "bytes": 1115,
+      "pinnedGitBlob": "333339795d1b48f6fc294e75af9adb2f034fdcaa",
+      "matchesPr25GitBlob": true,
+      "matchesD3aWorkingHash": true,
+      "anchors": [
+        {
+          "line": 12,
+          "text": "public void send(final ProtocolMethod method, final Object... args) {"
+        }
+      ]
+    },
+    {
+      "path": "forge-gui/src/main/java/forge/gamemodes/net/ProtocolGuiGame.java",
+      "sha256": "e210baa815bdd329c4f4b91e290ff2e2318b3ff639811f6e2d59a26100bcff12",
+      "bytes": 26391,
+      "pinnedGitBlob": "d8a865aa5c90c4f551982f566b52dce3f10e3d0b",
+      "matchesPr25GitBlob": true,
+      "matchesD3aWorkingHash": true,
+      "anchors": [
+        {
+          "line": 156,
+          "text": "private void syncAndSend(final ProtocolMethod method, final Object... args) {"
+        }
+      ]
+    },
+    {
+      "path": "forge-gui/src/main/java/forge/gamemodes/net/server/DeltaSyncManager.java",
+      "sha256": "e0c667ffcc2b8829e25a52ccf550c25cdb80882b79a74f5d007d906341227d93",
+      "bytes": 29870,
+      "pinnedGitBlob": "b847bf8adca61cd1325182fcdd0ae8e8c520eec8",
+      "matchesPr25GitBlob": true,
+      "matchesD3aWorkingHash": true,
+      "anchors": [
+        {
+          "line": 106,
+          "text": "* Existing objects only send properties dirty for THIS consumer."
+        }
+      ]
+    },
+    {
+      "path": "forge-gui/src/main/java/forge/gui/control/GameEventForwarder.java",
+      "sha256": "e2e675cafc47ebdc85715274faa8eaed0427de0abe4ec97002574f19b61acc35",
+      "bytes": 3691,
+      "pinnedGitBlob": "fba3fa2d3e8c58c46a171057f3c40af5e1fd693f",
+      "matchesPr25GitBlob": true,
+      "matchesD3aWorkingHash": true,
+      "anchors": [
+        {
+          "line": 45,
+          "text": "public void receiveGameEvent(GameEvent ev) {"
+        }
+      ]
+    },
+    {
+      "path": "forge-gui/src/main/java/forge/gui/interfaces/IGuiGame.java",
+      "sha256": "c13f18bff007bff4b57dd7ae2f5a22b530c8bf3be6577b906ec70602cc0ba016",
+      "bytes": 15071,
+      "pinnedGitBlob": "f862faf203d000312a8dcfe37de474fe6432d9b1",
+      "matchesPr25GitBlob": true,
+      "matchesD3aWorkingHash": true,
+      "anchors": [
+        {
+          "line": 327,
+          "text": "default void awaitInput(final CountDownLatch done) throws InterruptedException {"
+        }
+      ]
+    },
+    {
+      "path": "forge-gui/src/main/java/forge/player/PlayerControllerHuman.java",
+      "sha256": "21c7cfcb3006332e313cdb6ec8747ee75521ad4bf3f68edbf8b89ab3060e1c4d",
+      "bytes": 187444,
+      "pinnedGitBlob": "8daeeabb6f22d619c9c50dea01dff41f48496122",
+      "matchesPr25GitBlob": true,
+      "matchesD3aWorkingHash": true,
+      "anchors": [
+        {
+          "line": 1771,
+          "text": "final InputPassPriority defaultInput = new InputPassPriority(this);"
+        },
+        {
+          "line": 2715,
+          "text": "public boolean applyManaToCost(ManaCostBeingPaid toPay, SpellAbility ability, String prompt, ManaConversionMatrix matrix, boolean effect) {"
+        }
+      ]
+    }
+  ],
+  "priorEvidence": [
+    {
+      "path": "experiments/standalone-bolt/evidence/bootstrap-1/standalone.stdout.log",
+      "sha256": "8997e9a2117edab89bb61f964d931c6876aaab51008aee76554074c571dc27d0",
+      "bytes": 6489
+    },
+    {
+      "path": "docs/experiments/evidence/stage-c-dto-20261018/capture-gate/console.log",
+      "sha256": "e5425b6a831d2de889ec16293a3af021c6365a38360efe9d850c406680c6af4d",
+      "bytes": 40568
+    },
+    {
+      "path": "docs/experiments/evidence/stage-c-dto-20261018/dto-final-2/console.log",
+      "sha256": "9006a572f55f4a14eef4271b9601f1b2186dd4447c8d17613cb1889f8d0565d6",
+      "bytes": 59232
+    },
+    {
+      "path": "docs/experiments/c1-identity-results.md",
+      "sha256": "2a442d2b5fe128a808fd422123682f1750b9fd7eff39885612f4a23d91917992",
+      "bytes": 12245
+    }
+  ],
+  "distinctNonBootstrapInputObjects": {
+    "source": "docs/experiments/evidence/stage-c-dto-20261018/dto-final-2/console.log",
+    "count": 5,
+    "objects": [
+      {
+        "inputDiagnosticIdentity": "InputPassPriority@1695996832",
+        "firstButtonLogLine": 278
+      },
+      {
+        "inputDiagnosticIdentity": "InputSelectTargets@1402520531",
+        "firstButtonLogLine": 363
+      },
+      {
+        "inputDiagnosticIdentity": "InputPayManaOfCostPayment@234994460",
+        "firstButtonLogLine": 388
+      },
+      {
+        "inputDiagnosticIdentity": "InputPassPriority@607956239",
+        "firstButtonLogLine": 429
+      },
+      {
+        "inputDiagnosticIdentity": "InputPassPriority@360404112",
+        "firstButtonLogLine": 455
+      }
+    ],
+    "limitation": "Within-run identityHashCode labels in historical logs; not new JDI identities, capture permits, or independent runtime evidence"
+  }
+}
