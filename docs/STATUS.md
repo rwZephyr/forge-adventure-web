@@ -2,6 +2,21 @@
 
 Last updated: 2026-10-19
 
+## Stage D3c witness submitted before execution
+- [Implementation and bounded one-run plan](experiments/bolt-lifecycle-witness-plan.md),
+  stacked on #26, extend the standalone approach with original Bolt/target/manual
+  Mountain/pass actions and passive Windows shared-memory JDI lifecycle tracing.
+- Tracks publication, actual prompt receiver, await, consumption and refreshes
+  separately; tolerates published inputs pending await. Planned assertions check
+  the original payment latch before a new Game-0 generation, without claiming
+  Game-1 worker death. C1 exact reference/cache authorization is retained.
+- **Not compiled or executed.** Only static source review, PowerShell syntax
+  parsing and repository checks have been performed. No new runtime results.
+  Original Forge/older experiments/evidence remain unchanged; no projector,
+  await-entry hold, listener, new dependency or service/network change.
+- Next: independent implementation/one-run-plan review and explicit owner run
+  approval. Up to ten fresh runs require separate authorization after a first pass.
+
 ## Stage D3b stopped at capture-ownership gate
 - [Phase 1 source audit](architecture/d3b-capture-ordering.md), stacked on #25,
   did not establish a reusable capture permit covering Game-0, EDT prompt work
