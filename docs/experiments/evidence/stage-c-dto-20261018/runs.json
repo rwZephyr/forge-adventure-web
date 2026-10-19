@@ -1,0 +1,192 @@
+[
+  {
+    "note": "Capture hook preceded consumed-payment filter and failed before fingerprint/projection. Existing cleanup then overlapped Game-0/Game-1 graph callbacks; unresolved review blocker. Discovered in full publication review after final runs; no further implementation/tests.",
+    "testResults": {
+      "skipped": 0,
+      "total": 1,
+      "failed": 1,
+      "passed": 0
+    },
+    "compileFailure": false,
+    "environmentRestored": true,
+    "nativeExit": 1,
+    "methods": [
+      {
+        "status": "FAIL",
+        "name": "humanBoltCaptureCheckpoint"
+      }
+    ],
+    "label": "capture-gate",
+    "testSourceSha256": null
+  },
+  {
+    "note": "",
+    "testResults": {
+      "skipped": 0,
+      "total": 1,
+      "failed": 0,
+      "passed": 1
+    },
+    "compileFailure": false,
+    "environmentRestored": true,
+    "nativeExit": 0,
+    "methods": [
+      {
+        "status": "PASS",
+        "name": "humanBoltCaptureCheckpoint"
+      }
+    ],
+    "label": "capture-gate-2",
+    "testSourceSha256": null
+  },
+  {
+    "note": "Earlier DTO shape, not counted as a final source run.",
+    "testResults": {
+      "skipped": 0,
+      "total": 1,
+      "failed": 0,
+      "passed": 1
+    },
+    "compileFailure": false,
+    "environmentRestored": true,
+    "nativeExit": 0,
+    "methods": [
+      {
+        "status": "PASS",
+        "name": "humanBoltThroughBrowserDtos"
+      }
+    ],
+    "label": "dto-development",
+    "testSourceSha256": null
+  },
+  {
+    "note": "No test ran; stale copied prior reports intentionally excluded.",
+    "testResults": null,
+    "compileFailure": true,
+    "environmentRestored": true,
+    "nativeExit": 1,
+    "methods": [],
+    "label": "dto-final-1",
+    "testSourceSha256": "13d377dbc71f64bd773141bf78ba7d0878ec0add8f582edf6d15f6f6179bef60"
+  },
+  {
+    "note": "",
+    "testResults": {
+      "skipped": 0,
+      "total": 1,
+      "failed": 0,
+      "passed": 1
+    },
+    "compileFailure": false,
+    "environmentRestored": true,
+    "nativeExit": 0,
+    "methods": [
+      {
+        "status": "PASS",
+        "name": "humanBoltThroughBrowserDtos"
+      }
+    ],
+    "label": "dto-final-2",
+    "testSourceSha256": "4a98d6d6dcdbed15f50206065ce54200cab92e530b8d9d1630b3e89f741daf16"
+  },
+  {
+    "note": "",
+    "testResults": {
+      "skipped": 0,
+      "total": 1,
+      "failed": 0,
+      "passed": 1
+    },
+    "compileFailure": false,
+    "environmentRestored": true,
+    "nativeExit": 0,
+    "methods": [
+      {
+        "status": "PASS",
+        "name": "humanBoltThroughBrowserDtos"
+      }
+    ],
+    "label": "dto-final-3",
+    "testSourceSha256": "4a98d6d6dcdbed15f50206065ce54200cab92e530b8d9d1630b3e89f741daf16"
+  },
+  {
+    "note": "",
+    "testResults": {
+      "skipped": 0,
+      "total": 1,
+      "failed": 0,
+      "passed": 1
+    },
+    "compileFailure": false,
+    "environmentRestored": true,
+    "nativeExit": 0,
+    "methods": [
+      {
+        "status": "PASS",
+        "name": "humanBoltThroughBrowserDtos"
+      }
+    ],
+    "label": "dto-final-4",
+    "testSourceSha256": "4a98d6d6dcdbed15f50206065ce54200cab92e530b8d9d1630b3e89f741daf16"
+  },
+  {
+    "note": "",
+    "testResults": {
+      "skipped": 0,
+      "total": 6,
+      "failed": 0,
+      "passed": 6
+    },
+    "compileFailure": false,
+    "environmentRestored": true,
+    "nativeExit": 0,
+    "methods": [
+      {
+        "status": "PASS",
+        "name": "aiBoltRunsThroughOriginalPhaseLoop"
+      },
+      {
+        "status": "PASS",
+        "name": "aiEmptyHandDoesNotCastOrPay"
+      },
+      {
+        "status": "PASS",
+        "name": "humanBoltTargetsOpponentWithManualMountainPayment"
+      },
+      {
+        "status": "PASS",
+        "name": "humanControllerRunsThroughInProcessRemote"
+      },
+      {
+        "status": "PASS",
+        "name": "unansweredRequiredPromptIsReportedToTestOwner"
+      },
+      {
+        "status": "PASS",
+        "name": "inputsCanBeAnsweredOnTheWaitingThread"
+      }
+    ],
+    "label": "regressions-final",
+    "testSourceSha256": "4a98d6d6dcdbed15f50206065ce54200cab92e530b8d9d1630b3e89f741daf16"
+  },
+  {
+    "note": "",
+    "testResults": {
+      "skipped": 0,
+      "total": 1,
+      "failed": 0,
+      "passed": 1
+    },
+    "compileFailure": false,
+    "environmentRestored": true,
+    "nativeExit": 0,
+    "methods": [
+      {
+        "status": "PASS",
+        "name": "browserDtoUnansweredPromptIsReported"
+      }
+    ],
+    "label": "unanswered-final",
+    "testSourceSha256": "4a98d6d6dcdbed15f50206065ce54200cab92e530b8d9d1630b3e89f741daf16"
+  }
+]

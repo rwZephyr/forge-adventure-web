@@ -1,0 +1,32 @@
+{
+  "historicalC1RunRecordSha256": "0345879cc43622c19dc09e700f817e4a42803713415525867c0eb79f75da74f4",
+  "remainingJavaProcesses": 0,
+  "testSourceSha256": "4a98d6d6dcdbed15f50206065ce54200cab92e530b8d9d1630b3e89f741daf16",
+  "launcherSha256": "416cd2e6d7c72c8d07fa26a6d09eb339c6024cd6add3a6aa18dfe8a6d055c1a6",
+  "cacheChanges": [],
+  "historicalC1EnvironmentRestored": false,
+  "cacheFiles": 2393,
+  "changedProtectedSources": [
+    "forge-gui-desktop/src/test/java/forge/net/embedded/ProtocolGuiGameInProcessTest.java"
+  ],
+  "criticalSourceHashes": {
+    "forge-gui-desktop/pom.xml": "c72f46fee22ee03e3f9a4e3c368b71cd8a7cd48583666ad9a4d057d42464e5d1",
+    "forge-gui/res/cardsfolder/m/mountain.txt": "d421d9639d7b7f2a8c4ed04fa2fa8526cbc768733a92b0a1a453535ee99a3799",
+    "forge-gui-desktop/src/test/java/forge/net/TestUtils.java": "5a6c7bc1d1f1ac14dee29c49eda058a348f423d235539a3bd866dc1c0fb271dd",
+    "forge-ai/src/main/java/forge/ai/AiController.java": "261960025e02984e32b6d6aa2072f101c9cb6e7c57d37db7f42c50dc0de0244a",
+    "forge-game/src/main/java/forge/game/spellability/SpellAbilityView.java": "ebb74b55b87ec118ba50951ab5ffbe47d17dad5f0f4612aeda47db4945af9300",
+    "forge-gui/src/main/java/forge/gamemodes/match/input/InputPayMana.java": "b8456dce4d63882be37da6fa4197d8b483932b5ec7d7cf16e0d1f548db029248",
+    "forge-game/src/main/java/forge/game/GameActionUtil.java": "8a841f36c9557b2123b00127cf52e95144cdf7c8d93001411462bcd5d45e5ff5",
+    "forge-game/src/main/java/forge/game/spellability/SpellAbility.java": "c78edd7f8d77e100e3b2e763fa0a96d8f24a0303dd70d04ded5fc4b4c90e0b73",
+    "forge-game/src/main/java/forge/game/phase/PhaseHandler.java": "90cc448698c9bf90cb28c2a7c3a4435ad5f4af88baec5f94615ed4631a279317",
+    "pom.xml": "8818d2be1bc10bbde37839ed7a350ce91a09bb02d7e8458296586eb72d8c27c1",
+    "forge-gui/res/cardsfolder/l/lightning_bolt.txt": "330ba48b8090d1b2312f9404d71612cd3bbf49b960974b99ebf5c0804bb4711e",
+    "forge-game/src/main/java/forge/game/player/PlaySpellAbility.java": "4cc01a9475baca414f5dc8c2a4fefcaad01cd0ef283e4fcc6ec8c87ce39ae1cc",
+    "forge-gui/src/main/java/forge/player/PlayerControllerHuman.java": "21c7cfcb3006332e313cdb6ec8747ee75521ad4bf3f68edbf8b89ab3060e1c4d",
+    "forge-gui-desktop/src/test/java/forge/net/embedded/ProtocolGuiGameInProcessTest.java": "4a98d6d6dcdbed15f50206065ce54200cab92e530b8d9d1630b3e89f741daf16",
+    "forge-gui-desktop/src/test/java/forge/net/HeadlessGuiDesktop.java": "e2f1687f7d8c92a459b308402f0d67e17f28ee15958546be8b7b350f6f3f9619",
+    "forge-gui-desktop/src/test/java/forge/net/embedded/ProtocolGuiGameSingleThreadTest.java": "76f47d8eaa3a5909dc027aefc6e1c9870bfcff659b2e15704d39d47f0fadc3ef",
+    "forge-gui/src/main/java/forge/gamemodes/net/ProtocolGuiGame.java": "e210baa815bdd329c4f4b91e290ff2e2318b3ff639811f6e2d59a26100bcff12"
+  },
+  "observerSha256": "785f6951330b723cac88b392046170a330709fcfa2e0d11540e632cdf1b0dc0f"
+}

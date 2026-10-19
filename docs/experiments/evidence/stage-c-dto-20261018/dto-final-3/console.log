@@ -1,0 +1,263 @@
+Picked up JAVA_TOOL_OPTIONS: -Duser.home=<WORKSPACE>/.local-tools/stage-c-dto-20261018/dto-final-3/home -Djava.io.tmpdir=<WORKSPACE>/.local-tools/stage-c-dto-20261018/dto-final-3/tmp -Djava.awt.headless=true -Xmx1536m
+19:25:25 [INFO ] Logger: [TestNG] Running:
+  Command line suite
+
+Language 'en-US' loaded successfully.
+(ThreadUtil first call): Running with priority 5
+Read cards: 34088 files in 5 ms (25 parts) using thread pool
+Upcoming set Marvel: Darkhold Destiny (MDD) dated in the future. All `upcoming` cards will be added to this set with unknown rarity.
+The card A-Alrund's Epiphany was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card A-Baba Lysaga, Night Witch was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card A-Divide by Zero was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card A-Esika's Chariot was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card A-Faceless Haven was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card A-Fires of Invention was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card A-Goldspan Dragon was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card A-Hullbreaker Horror was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card A-Kumano Faces Kakkazan was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card A-Luminarch Aspirant was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card A-Monster Manual was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card A-Omnath, Locus of Creation was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card A-The Meathook Massacre was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card A-Unholy Heat was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card Blinding Radiance was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card Goblin Bruiser was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card Ogre Painbringer was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card Titanic Pelagosaur was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card Treetop Recluse was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+Upcoming set Marvel: Darkhold Destiny (MDD) dated in the future. All `upcoming` cards will be added to this set with unknown rarity.
+Read cards: 857 files in 0 ms (8 parts) using thread pool
+19:25:51 [INFO ] TestUtils: [TestConfig] checksum=stable, deltasync=on
+[bolt] bootstrapMs=25971.064 mode=DTO
+Unable to load music file: ..\forge-gui\res\music\match\Hitman.mp3
+[bolt] ns=577488900 site=DTO:updateGameView-enter tid=59 thread=TestNG-method=humanBoltThroughBrowserDtos-1 edt=false input=none waiter=none
+[bolt] ns=641487100 site=DTO:updateGameView-return tid=59 thread=TestNG-method=humanBoltThroughBrowserDtos-1 edt=false input=none waiter=none
+[bolt] ns=642140800 site=DTO:updateGameView-enter tid=59 thread=TestNG-method=humanBoltThroughBrowserDtos-1 edt=false input=none waiter=none
+[bolt] ns=691987200 site=DTO:updateGameView-return tid=59 thread=TestNG-method=humanBoltThroughBrowserDtos-1 edt=false input=none waiter=none
+[bolt] ns=697611800 site=DTO:updateGameView-enter tid=59 thread=TestNG-method=humanBoltThroughBrowserDtos-1 edt=false input=none waiter=none
+[bolt] ns=698320200 site=DTO:updateGameView-return tid=59 thread=TestNG-method=humanBoltThroughBrowserDtos-1 edt=false input=none waiter=none
+[bolt] ns=1313627300 site=DTO:handleGameEvents-enter tid=118 thread=Game-0 edt=false input=none waiter=none
+19:25:52 [INFO ] ProtocolGuiGame: Sending batch of 7: [GameEventZone x4, GameEventShuffle x2, GameEventFlipCoin]
+19:25:52 [INFO ] DeltaSyncManager: [DeltaSync] New objects: 163, Deltas: 0
+[bolt] ns=1338498900 site=DTO:handleGameEvents-return tid=118 thread=Game-0 edt=false input=none waiter=none
+[bolt] ns=1348776300 site=DTO:prompt-updateButtons tid=119 thread=AWT-EventQueue-0 edt=true input=InputConfirm@1241349208 waiter=none
+[bolt] ns=1350854600 site=DTO:await-enter tid=118 thread=Game-0 edt=false input=InputConfirm@1241349208 count=1
+[bolt] ns=1360786400 site=DTO:prompt-showPromptMessage tid=119 thread=AWT-EventQueue-0 edt=true input=InputConfirm@1241349208 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=1395484500 site=DTO:action tid=119 thread=AWT-EventQueue-0 edt=true input=InputConfirm@1241349208 buttons=Play/Draw waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=1402041700 site=DTO:await-return tid=118 thread=Game-0 edt=false input=InputLockUI@1580861276 count=0
+[bolt] ns=1639130000 site=DTO:handleGameEvents-enter tid=118 thread=Game-0 edt=false input=InputLockUI@1580861276 waiter=118:Game-0:RUNNABLE:latch=0
+19:25:53 [INFO ] ProtocolGuiGame: Sending batch of 43: [GameEventGameStarted, GameEventZone x28, GameEventCardChangeZone x14]
+19:25:53 [INFO ] DeltaSyncManager: [DeltaSync] New objects: 28, Deltas: 2
+[bolt] ns=1643687200 site=DTO:handleGameEvents-return tid=118 thread=Game-0 edt=false input=InputLockUI@1580861276 waiter=118:Game-0:RUNNABLE:latch=0
+[bolt] ns=1644116200 site=DTO:await-enter tid=118 thread=Game-0 edt=false input=InputConfirmMulligan@785917495 count=1
+[bolt] ns=1644240800 site=DTO:prompt-updateButtons tid=119 thread=AWT-EventQueue-0 edt=true input=InputConfirmMulligan@785917495 waiter=118:Game-0:RUNNABLE:latch=1
+[bolt] ns=1644721900 site=DTO:prompt-showPromptMessage tid=119 thread=AWT-EventQueue-0 edt=true input=InputConfirmMulligan@785917495 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=1645048300 site=DTO:action tid=119 thread=AWT-EventQueue-0 edt=true input=InputConfirmMulligan@785917495 buttons=Keep/Mulligan waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=1645421000 site=DTO:await-return tid=118 thread=Game-0 edt=false input=InputLockUI@148940620 count=0
+[bolt] ns=1815121300 site=DTO:fixture tid=118 thread=Game-0 edt=false input=InputLockUI@148940620 human=0 ai=1 boltIds=[1] mountain=2 timeout=5
+[bolt] ns=1817177700 site=DTO:handleGameEvents-enter tid=118 thread=Game-0 edt=false input=InputLockUI@148940620 waiter=118:Game-0:RUNNABLE:latch=0
+19:25:53 [INFO ] ProtocolGuiGame: Sending batch of 259: [GameEventAddLog x2, GameEventTurnBegan, GameEventTurnPhase x2, GameEventZone x170, GameEventCardChangeZone x83, GameEventPlayerPriority]
+19:25:53 [INFO ] DeltaSyncManager: [DeltaSync] New objects: 28, Deltas: 3
+[bolt] ns=1820770200 site=DTO:handleGameEvents-return tid=118 thread=Game-0 edt=false input=InputLockUI@148940620 waiter=118:Game-0:RUNNABLE:latch=0
+[bolt] ns=1938260100 site=DTO:await-enter tid=118 thread=Game-0 edt=false input=InputPassPriority@2006888893 count=1
+[bolt] ns=1938342100 site=DTO:updateGameView-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:RUNNABLE:latch=1
+[bolt] ns=1939603300 site=DTO:updateGameView-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=1944650900 site=DTO:prompt-showPromptMessage tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=1944972300 site=DTO:prompt-updateButtons tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=1950601200 site=DTO:capture-workers tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 submitted=1 completed=0 active=1 queued=0
+[bolt] ns=1951531900 site=DTO:capture-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=1956960100 site=DTO:capture-coherent tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 submitted=1 completed=0 active=1 fingerprint=1:MAIN1|0:20/pool:0/Hand:1:false/Battlefield:2:false|1:20/pool:0/Hand:52:false
+[bolt] ns=1957136100 site=DTO:capture-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=1962724700 site=DTO:visibility-initial tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 allowedFaceCount=2 hiddenFaceCount=78 rawGraphPrivate=true
+[bolt] ns=1962914000 site=DTO:dto-project-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[browser-frame] Frame[match=d60bc4fa-d310-4547-9de6-7168ba22d07b, session=ae112210-61fb-4e68-a23e-4d5b0249a1e2, revision=1, turn=1, phase=MAIN1, players=[Seat[handle=31c5e5d3-ebcf-47fc-8424-06703f764dd1, self=true, life=20], Seat[handle=d2ee23a4-1c60-4e5f-88c3-558504efdcb9, self=false, life=20]], cards=[Face[handle=e4ff3951-2d85-4a9e-b8d1-c2e37a68b956, name=Mountain, zone=Battlefield, controller=31c5e5d3-ebcf-47fc-8424-06703f764dd1, tapped=false], Face[handle=887930e1-667f-4326-b440-21642cba9ace, name=Lightning Bolt, zone=Hand, controller=31c5e5d3-ebcf-47fc-8424-06703f764dd1, tapped=false]], stack=[], payment=null, prompt=Decision[id=d668d09a-60bd-4d07-aa75-d7e12c3734ec, kind=priority, source=, selected=[], min=1, max=1, choices=[Choice[id=9593dd78-9aa2-4de0-bd0f-a74556a15425, operation=cast, entity=887930e1-667f-4326-b440-21642cba9ace], Choice[id=8f2a43e3-be84-493e-891f-10f763de01d2, operation=pass, entity=]]]]
+[bolt] ns=2000881600 site=DTO:dto-project-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2006848800 site=DTO:capture-workers tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 submitted=1 completed=0 active=1 queued=0
+[bolt] ns=2008375400 site=DTO:capture-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2008593600 site=DTO:capture-coherent tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 submitted=1 completed=0 active=1 fingerprint=1:MAIN1|0:20/pool:0/Hand:1:false/Battlefield:2:false|1:20/pool:0/Hand:52:false
+[bolt] ns=2008704800 site=DTO:capture-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2010080300 site=DTO:capture-workers tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 submitted=1 completed=0 active=1 queued=0
+[bolt] ns=2011413300 site=DTO:capture-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2011663300 site=DTO:capture-coherent tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 submitted=1 completed=0 active=1 fingerprint=1:MAIN1|0:20/pool:0/Hand:1:false/Battlefield:2:false|1:20/pool:0/Hand:52:false
+[bolt] ns=2011765400 site=DTO:capture-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2012586300 site=DTO:capture-workers tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 submitted=1 completed=0 active=1 queued=0
+[bolt] ns=2013466200 site=DTO:capture-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2013700500 site=DTO:capture-coherent tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 submitted=1 completed=0 active=1 fingerprint=1:MAIN1|0:20/pool:0/Hand:1:false/Battlefield:2:false|1:20/pool:0/Hand:52:false
+[bolt] ns=2013824900 site=DTO:capture-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2014637400 site=DTO:capture-workers tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 submitted=1 completed=0 active=1 queued=0
+[bolt] ns=2015766700 site=DTO:capture-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2016011800 site=DTO:capture-coherent tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 submitted=1 completed=0 active=1 fingerprint=1:MAIN1|0:20/pool:0/Hand:1:false/Battlefield:2:false|1:20/pool:0/Hand:52:false
+[bolt] ns=2016131300 site=DTO:capture-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2016864500 site=DTO:capture-workers tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 submitted=1 completed=0 active=1 queued=0
+[bolt] ns=2017681600 site=DTO:capture-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2017919100 site=DTO:capture-coherent tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 submitted=1 completed=0 active=1 fingerprint=1:MAIN1|0:20/pool:0/Hand:1:false/Battlefield:2:false|1:20/pool:0/Hand:52:false
+[bolt] ns=2018038300 site=DTO:capture-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2019473600 site=DTO:capture-workers tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 submitted=1 completed=0 active=1 queued=0
+[bolt] ns=2020220200 site=DTO:capture-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2020526700 site=DTO:capture-coherent tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 submitted=1 completed=0 active=1 fingerprint=1:MAIN1|0:20/pool:0/Hand:1:false/Battlefield:2:false|1:20/pool:0/Hand:52:false
+[bolt] ns=2020649600 site=DTO:capture-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2022183200 site=DTO:capture-workers tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 submitted=1 completed=0 active=1 queued=0
+[bolt] ns=2023111900 site=DTO:capture-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2023363100 site=DTO:capture-coherent tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 submitted=1 completed=0 active=1 fingerprint=1:MAIN1|0:20/pool:0/Hand:1:false/Battlefield:2:false|1:20/pool:0/Hand:52:false
+[bolt] ns=2023494200 site=DTO:capture-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2024360700 site=DTO:capture-workers tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 submitted=1 completed=0 active=1 queued=0
+[bolt] ns=2025489600 site=DTO:capture-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2025686600 site=DTO:capture-coherent tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 submitted=1 completed=0 active=1 fingerprint=1:MAIN1|0:20/pool:0/Hand:1:false/Battlefield:2:false|1:20/pool:0/Hand:52:false
+[bolt] ns=2025785900 site=DTO:capture-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2029841400 site=DTO:capture-workers tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 submitted=1 completed=0 active=1 queued=0
+[bolt] ns=2030945500 site=DTO:capture-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2031233700 site=DTO:capture-coherent tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 submitted=1 completed=0 active=1 fingerprint=1:MAIN1|0:20/pool:0/Hand:1:false/Battlefield:2:false|1:20/pool:0/Hand:52:false
+[bolt] ns=2031359200 site=DTO:capture-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2032017300 site=DTO:visibility-initial tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 allowedFaceCount=2 hiddenFaceCount=78 rawGraphPrivate=true
+[bolt] ns=2032163300 site=DTO:dto-project-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[browser-frame] Frame[match=d60bc4fa-d310-4547-9de6-7168ba22d07b, session=ae112210-61fb-4e68-a23e-4d5b0249a1e2, revision=2, turn=1, phase=MAIN1, players=[Seat[handle=8cb3d097-8ed5-4733-aaeb-894fd1f44b82, self=true, life=20], Seat[handle=8683e51e-f50e-47ed-b1d0-2d7f31dafe2b, self=false, life=20]], cards=[Face[handle=55154ca9-0c2a-4597-9e15-539eff2d813d, name=Mountain, zone=Battlefield, controller=8cb3d097-8ed5-4733-aaeb-894fd1f44b82, tapped=false], Face[handle=3e6271a1-7db3-4240-9e56-abb0a32cfb21, name=Lightning Bolt, zone=Hand, controller=8cb3d097-8ed5-4733-aaeb-894fd1f44b82, tapped=false]], stack=[], payment=null, prompt=Decision[id=5ba2a3de-0afb-4d49-9071-a8d496b85c3b, kind=priority, source=, selected=[], min=1, max=1, choices=[Choice[id=7a3d47c3-72b4-4fde-9827-5c19101cac7f, operation=cast, entity=3e6271a1-7db3-4240-9e56-abb0a32cfb21], Choice[id=8b693705-1114-44e4-9f32-f04472759480, operation=pass, entity=]]]]
+[bolt] ns=2034805300 site=DTO:dto-project-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2036262700 site=DTO:capture-workers tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 submitted=1 completed=0 active=1 queued=0
+[bolt] ns=2037229600 site=DTO:capture-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2037544800 site=DTO:capture-coherent tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 submitted=1 completed=0 active=1 fingerprint=1:MAIN1|0:20/pool:0/Hand:1:false/Battlefield:2:false|1:20/pool:0/Hand:52:false
+[bolt] ns=2037664600 site=DTO:capture-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2038402500 site=DTO:visibility-initial tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 allowedFaceCount=2 hiddenFaceCount=78 rawGraphPrivate=true
+[bolt] ns=2038590500 site=DTO:dto-project-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[browser-frame] Frame[match=d60bc4fa-d310-4547-9de6-7168ba22d07b, session=ae112210-61fb-4e68-a23e-4d5b0249a1e2, revision=3, turn=1, phase=MAIN1, players=[Seat[handle=ba5c293c-97da-4fcd-9669-2b662031556e, self=true, life=20], Seat[handle=5a37bcfa-e8e1-411f-99c3-224a17987471, self=false, life=20]], cards=[Face[handle=c27d43d3-4ee1-434f-9035-424af9627d6b, name=Mountain, zone=Battlefield, controller=ba5c293c-97da-4fcd-9669-2b662031556e, tapped=false], Face[handle=f0d54496-c186-4229-8d9b-d0155000f617, name=Lightning Bolt, zone=Hand, controller=ba5c293c-97da-4fcd-9669-2b662031556e, tapped=false]], stack=[], payment=null, prompt=Decision[id=6ffc8a46-67f3-4bf2-a430-d2bea4ab3ee5, kind=priority, source=, selected=[], min=1, max=1, choices=[Choice[id=bc9be51b-3c19-4542-ad26-f81795b01c0c, operation=cast, entity=f0d54496-c186-4229-8d9b-d0155000f617], Choice[id=0dbfd769-87a5-4360-bedb-5f8f2336f0f7, operation=pass, entity=]]]]
+[bolt] ns=2041293600 site=DTO:dto-project-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2043069800 site=DTO:capture-workers tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 submitted=1 completed=0 active=1 queued=0
+[bolt] ns=2044174400 site=DTO:capture-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2044395400 site=DTO:capture-coherent tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 submitted=1 completed=0 active=1 fingerprint=1:MAIN1|0:20/pool:0/Hand:1:false/Battlefield:2:false|1:20/pool:0/Hand:52:false
+[bolt] ns=2044547700 site=DTO:capture-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2044710300 site=DTO:dto-negative-controls tid=59 thread=TestNG-method=humanBoltThroughBrowserDtos-1 edt=false input=InputPassPriority@2006888893 unauthorized hidden stale revoked superseded invalidOperation all rejected without controller calls
+[bolt] ns=2049220000 site=DTO:capture-workers tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 submitted=1 completed=0 active=1 queued=0
+[bolt] ns=2050416900 site=DTO:capture-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2050652500 site=DTO:capture-coherent tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 submitted=1 completed=0 active=1 fingerprint=1:MAIN1|0:20/pool:0/Hand:1:false/Battlefield:2:false|1:20/pool:0/Hand:52:false
+[bolt] ns=2050764400 site=DTO:capture-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2052897200 site=DTO:updateGameView-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2053614900 site=DTO:updateGameView-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2054474500 site=DTO:dto-authorized-reply tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 step=0 exactReferences=true
+[bolt] ns=2054628900 site=DTO:updateGameView-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2055208100 site=DTO:updateGameView-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@2006888893 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2055585400 site=DTO:await-return tid=118 thread=Game-0 edt=false input=InputLockUI@635410997 count=0
+[bolt] ns=2056313700 site=DTO:dto-action tid=59 thread=TestNG-method=humanBoltThroughBrowserDtos-1 edt=false input=InputLockUI@635410997 id=client-1 accepted oneDispatch=true duplicatePendingAndTerminal=true actionIdConflict=true
+[bolt] ns=2060345300 site=DTO:updateGameView-enter tid=118 thread=Game-0 edt=false input=InputLockUI@635410997 waiter=118:Game-0:RUNNABLE:latch=0
+[bolt] ns=2061172100 site=DTO:updateGameView-return tid=118 thread=Game-0 edt=false input=InputLockUI@635410997 waiter=118:Game-0:RUNNABLE:latch=0
+[bolt] ns=2061401400 site=DTO:dto-authorized-reply tid=118 thread=Game-0 edt=false input=InputLockUI@635410997 step=1 exactReferences=true
+[bolt] ns=2090101700 site=DTO:handleGameEvents-enter tid=118 thread=Game-0 edt=false input=InputLockUI@635410997 waiter=118:Game-0:RUNNABLE:latch=0
+19:25:53 [INFO ] ProtocolGuiGame: Sending batch of 3: [GameEventZone x2, GameEventCardChangeZone]
+[bolt] ns=2091778900 site=DTO:handleGameEvents-return tid=118 thread=Game-0 edt=false input=InputLockUI@635410997 waiter=118:Game-0:RUNNABLE:latch=0
+[bolt] ns=2092162900 site=DTO:await-enter tid=118 thread=Game-0 edt=false input=InputSelectTargets@683506291 count=1
+[bolt] ns=2093097600 site=DTO:updateGameView-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@683506291 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2094189400 site=DTO:updateGameView-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@683506291 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2095096200 site=DTO:updateGameView-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@683506291 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2095963400 site=DTO:updateGameView-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@683506291 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2096162600 site=DTO:prompt-showPromptMessage tid=119 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@683506291 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2096622200 site=DTO:prompt-updateButtons tid=119 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@683506291 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2100952700 site=DTO:updateGameView-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@683506291 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2101781800 site=DTO:updateGameView-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@683506291 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2102536800 site=DTO:capture-workers tid=119 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@683506291 submitted=1 completed=0 active=1 queued=0
+[bolt] ns=2103579000 site=DTO:capture-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@683506291 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2103844400 site=DTO:capture-coherent tid=119 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@683506291 submitted=1 completed=0 active=1 fingerprint=1:MAIN1|0:20/pool:0/Battlefield:2:false|1:20/pool:0/Hand:52:false
+[bolt] ns=2103968600 site=DTO:capture-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@683506291 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2104131100 site=DTO:dto-project-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@683506291 waiter=118:Game-0:WAITING:latch=1
+[browser-frame] Frame[match=d60bc4fa-d310-4547-9de6-7168ba22d07b, session=ae112210-61fb-4e68-a23e-4d5b0249a1e2, revision=4, turn=1, phase=MAIN1, players=[Seat[handle=2f49faf3-b0eb-4c7e-a6f5-1845f33692f6, self=true, life=20], Seat[handle=b3239c77-6cd1-40e3-b9c6-acae9deec774, self=false, life=20]], cards=[Face[handle=ec73528d-c7cf-450f-9ae6-754f61da36e8, name=Mountain, zone=Battlefield, controller=2f49faf3-b0eb-4c7e-a6f5-1845f33692f6, tapped=false], Face[handle=c3850b58-5646-4ab3-a298-9aac8178c43a, name=Lightning Bolt, zone=Stack, controller=2f49faf3-b0eb-4c7e-a6f5-1845f33692f6, tapped=false]], stack=[], payment=null, prompt=Decision[id=0d773a4d-3062-43ed-94cb-9634a5ecc0fb, kind=target, source=c3850b58-5646-4ab3-a298-9aac8178c43a, selected=[], min=1, max=1, choices=[Choice[id=03435710-ac95-4e88-ae0b-9c44721f5487, operation=target, entity=2f49faf3-b0eb-4c7e-a6f5-1845f33692f6], Choice[id=3fb36f4a-05e9-4f4f-961e-9a0c655adc79, operation=target, entity=b3239c77-6cd1-40e3-b9c6-acae9deec774]]]]
+[bolt] ns=2106083900 site=DTO:dto-project-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@683506291 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2107538700 site=DTO:capture-workers tid=119 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@683506291 submitted=1 completed=0 active=1 queued=0
+[bolt] ns=2108335400 site=DTO:capture-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@683506291 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2108632800 site=DTO:capture-coherent tid=119 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@683506291 submitted=1 completed=0 active=1 fingerprint=1:MAIN1|0:20/pool:0/Battlefield:2:false|1:20/pool:0/Hand:52:false
+[bolt] ns=2108768000 site=DTO:capture-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@683506291 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2109351000 site=DTO:updateGameView-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@683506291 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2110049500 site=DTO:updateGameView-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@683506291 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2110301100 site=DTO:updateGameView-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@683506291 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2110856500 site=DTO:updateGameView-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputSelectTargets@683506291 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2111108800 site=DTO:await-return tid=118 thread=Game-0 edt=false input=InputLockUI@794391314 count=0
+[bolt] ns=2111326400 site=DTO:dto-action tid=59 thread=TestNG-method=humanBoltThroughBrowserDtos-1 edt=false input=InputLockUI@794391314 id=client-2 accepted oneDispatch=true duplicatePendingAndTerminal=true actionIdConflict=true
+[bolt] ns=2111566700 site=DTO:updateGameView-enter tid=118 thread=Game-0 edt=false input=InputLockUI@794391314 waiter=118:Game-0:RUNNABLE:latch=0
+[bolt] ns=2112099500 site=DTO:updateGameView-return tid=118 thread=Game-0 edt=false input=InputLockUI@794391314 waiter=118:Game-0:RUNNABLE:latch=0
+[bolt] ns=2129279700 site=DTO:await-enter tid=118 thread=Game-0 edt=false input=InputPayManaOfCostPayment@582886553 count=1
+[bolt] ns=2129331600 site=DTO:updateGameView-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@582886553 waiter=118:Game-0:RUNNABLE:latch=1
+[bolt] ns=2130347700 site=DTO:updateGameView-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@582886553 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2130660400 site=DTO:prompt-updateButtons tid=119 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@582886553 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2169558600 site=DTO:prompt-updateButtons tid=119 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@582886553 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2169752700 site=DTO:updateGameView-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@582886553 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2170467400 site=DTO:updateGameView-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@582886553 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2170865700 site=DTO:updateGameView-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@582886553 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2171296200 site=DTO:updateGameView-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@582886553 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2171553800 site=DTO:prompt-showPromptMessage tid=119 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@582886553 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2172233600 site=DTO:capture-workers tid=119 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@582886553 submitted=1 completed=0 active=1 queued=0
+[bolt] ns=2172925900 site=DTO:capture-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@582886553 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2173651000 site=DTO:capture-coherent tid=119 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@582886553 submitted=1 completed=0 active=1 fingerprint=1:MAIN1|0:20/pool:0/Battlefield:2:false|1:20/pool:0/Hand:52:false/pay:214:{R}:[1]
+[bolt] ns=2173758100 site=DTO:capture-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@582886553 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2173854000 site=DTO:dto-project-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@582886553 waiter=118:Game-0:WAITING:latch=1
+[browser-frame] Frame[match=d60bc4fa-d310-4547-9de6-7168ba22d07b, session=ae112210-61fb-4e68-a23e-4d5b0249a1e2, revision=5, turn=1, phase=MAIN1, players=[Seat[handle=a11a3484-bdb4-47e9-bb29-49c785818bbc, self=true, life=20], Seat[handle=b8ddaea1-bb30-4100-9fe5-1c5e7dc9dac6, self=false, life=20]], cards=[Face[handle=77f890a6-5171-4212-9b6d-bd5713526d06, name=Mountain, zone=Battlefield, controller=a11a3484-bdb4-47e9-bb29-49c785818bbc, tapped=false], Face[handle=1272855d-e5fb-4c92-a166-de9d71ebc66a, name=Lightning Bolt, zone=Stack, controller=a11a3484-bdb4-47e9-bb29-49c785818bbc, tapped=false]], stack=[], payment=Payment[remaining=[RED], redPool=0], prompt=Decision[id=8f0af7b9-8188-4fdd-b834-34ff20a7c5c7, kind=payment, source=1272855d-e5fb-4c92-a166-de9d71ebc66a, selected=[b8ddaea1-bb30-4100-9fe5-1c5e7dc9dac6], min=1, max=1, choices=[Choice[id=6d4a0954-d372-48be-bf2b-cd570d82cfc8, operation=mana, entity=77f890a6-5171-4212-9b6d-bd5713526d06]]]]
+[bolt] ns=2180453700 site=DTO:dto-project-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@582886553 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2181615000 site=DTO:capture-workers tid=119 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@582886553 submitted=1 completed=0 active=1 queued=0
+[bolt] ns=2182268400 site=DTO:capture-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@582886553 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2182701600 site=DTO:capture-coherent tid=119 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@582886553 submitted=1 completed=0 active=1 fingerprint=1:MAIN1|0:20/pool:0/Battlefield:2:false|1:20/pool:0/Hand:52:false/pay:214:{R}:[1]
+[bolt] ns=2182858000 site=DTO:capture-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputPayManaOfCostPayment@582886553 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2184280400 site=DTO:dto-action tid=59 thread=TestNG-method=humanBoltThroughBrowserDtos-1 edt=false input=InputPayManaOfCostPayment@582886553 id=client-3 accepted oneDispatch=true duplicatePendingAndTerminal=true actionIdConflict=true
+[bolt] ns=2184558300 site=DTO:updateGameView-enter tid=122 thread=Game-1 edt=false input=InputPayManaOfCostPayment@582886553 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2185338900 site=DTO:updateGameView-return tid=122 thread=Game-1 edt=false input=InputPayManaOfCostPayment@582886553 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2185579000 site=DTO:dto-authorized-reply tid=122 thread=Game-1 edt=false input=InputPayManaOfCostPayment@582886553 step=2 exactReferences=true
+[bolt] ns=2202877900 site=DTO:updateGameView-enter tid=122 thread=Game-1 edt=false input=InputPayManaOfCostPayment@582886553 waiter=118:Game-0:WAITING:latch=1
+19:25:53 [INFO ] ProtocolGuiGame: Sending batch of 4: [GameEventCardTapped, GameEventManaPool x2, GameEventAddLog]
+[bolt] ns=2203896000 site=DTO:updateGameView-return tid=122 thread=Game-1 edt=false input=InputPayManaOfCostPayment@582886553 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2204239700 site=DTO:await-return tid=118 thread=Game-0 edt=false input=InputLockUI@1237398903 count=0
+[bolt] ns=2209699900 site=DTO:updateGameView-enter tid=118 thread=Game-0 edt=false input=InputLockUI@1237398903 waiter=118:Game-0:RUNNABLE:latch=0
+19:25:53 [INFO ] ProtocolGuiGame: Sending batch of 2: [GameEventSpellAbilityCast, GameEventZone]
+19:25:53 [INFO ] DeltaSyncManager: [DeltaSync] New objects: 3, Deltas: 1
+19:25:53 [INFO ] DeltaSyncManager: [DeltaSync] Sampled checksum for seq=20: hash=-254126388, props=[GamePieceType, Tapped, CommanderAltType, ChosenType2, ChosenDirection, AttractionLights, SleeveArtOffset, MaxLandPlay, Battlefield, Hand, Library, Junkyard, Mana, PlayerTurn, Phase]
+19:25:53 [INFO ] DeltaSyncManager: [DeltaSync]   Turn: 1 (snapshot), Phase: MAIN1 (snapshot, current=MAIN1)
+19:25:53 [INFO ] DeltaSyncManager: [DeltaSync]   Player 0 (Bolt Fixture Bolt): Life=20, Hand=0, GY=0, BF=1
+19:25:53 [INFO ] DeltaSyncManager: [DeltaSync]   Player 1 (AI): Life=20, Hand=1, GY=0, BF=0
+[bolt] ns=2213032800 site=DTO:updateGameView-return tid=118 thread=Game-0 edt=false input=InputLockUI@1237398903 waiter=118:Game-0:RUNNABLE:latch=0
+[bolt] ns=2246900000 site=DTO:handleGameEvents-enter tid=118 thread=Game-0 edt=false input=InputLockUI@1237398903 waiter=118:Game-0:RUNNABLE:latch=0
+19:25:53 [INFO ] ProtocolGuiGame: Sending batch of 5: [GameEventZone x4, GameEventPlayerPriority]
+[bolt] ns=2248031100 site=DTO:handleGameEvents-return tid=118 thread=Game-0 edt=false input=InputLockUI@1237398903 waiter=118:Game-0:RUNNABLE:latch=0
+[bolt] ns=2248333300 site=DTO:await-enter tid=118 thread=Game-0 edt=false input=InputPassPriority@712189079 count=1
+[bolt] ns=2248454300 site=DTO:updateGameView-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@712189079 waiter=118:Game-0:RUNNABLE:latch=1
+[bolt] ns=2249224100 site=DTO:updateGameView-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@712189079 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2249462200 site=DTO:prompt-showPromptMessage tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@712189079 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2250010900 site=DTO:prompt-updateButtons tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@712189079 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2250792100 site=DTO:capture-workers tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@712189079 submitted=2 completed=1 active=1 queued=0
+[bolt] ns=2252059900 site=DTO:capture-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@712189079 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2253300900 site=DTO:capture-coherent tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@712189079 submitted=2 completed=1 active=1 fingerprint=1:MAIN1|0:20/pool:0/Battlefield:2:true|1:20/pool:0/Hand:52:false/stack:214:[1]:[8:2]
+[bolt] ns=2253428900 site=DTO:capture-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@712189079 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2256985800 site=DTO:stack-before-resolution tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@712189079 bolt=1 target=1 life=20 paid=R source=2
+[bolt] ns=2257509000 site=DTO:visibility-stack tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@712189079 allowedFaceCount=2 hiddenFaceCount=78 rawGraphPrivate=true
+[bolt] ns=2257629000 site=DTO:dto-project-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@712189079 waiter=118:Game-0:WAITING:latch=1
+[browser-frame] Frame[match=d60bc4fa-d310-4547-9de6-7168ba22d07b, session=ae112210-61fb-4e68-a23e-4d5b0249a1e2, revision=6, turn=1, phase=MAIN1, players=[Seat[handle=80f34f64-d074-4f05-9aa8-15887dad8e26, self=true, life=20], Seat[handle=3de22dac-2dce-4872-b580-72cfea362abc, self=false, life=20]], cards=[Face[handle=def94f1b-50c3-4e44-8fd7-d531d3fd5357, name=Mountain, zone=Battlefield, controller=80f34f64-d074-4f05-9aa8-15887dad8e26, tapped=true], Face[handle=78042d2d-e2e1-48fa-a2bb-9239fd41e2d1, name=Lightning Bolt, zone=Stack, controller=80f34f64-d074-4f05-9aa8-15887dad8e26, tapped=false]], stack=[StackFace[source=78042d2d-e2e1-48fa-a2bb-9239fd41e2d1, targets=[3de22dac-2dce-4872-b580-72cfea362abc]]], payment=null, prompt=Decision[id=9dc9b5c1-1dba-43a4-b5be-50ac268a8085, kind=priority, source=, selected=[], min=1, max=1, choices=[Choice[id=a943491f-7f16-4f9f-ae84-60b7c7709e4c, operation=pass, entity=]]]]
+[bolt] ns=2259782000 site=DTO:dto-project-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@712189079 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2260964600 site=DTO:capture-workers tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@712189079 submitted=2 completed=1 active=1 queued=0
+[bolt] ns=2261876200 site=DTO:capture-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@712189079 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2262255600 site=DTO:capture-coherent tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@712189079 submitted=2 completed=1 active=1 fingerprint=1:MAIN1|0:20/pool:0/Battlefield:2:true|1:20/pool:0/Hand:52:false/stack:214:[1]:[8:2]
+[bolt] ns=2262370900 site=DTO:capture-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@712189079 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2263135100 site=DTO:updateGameView-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@712189079 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2263913800 site=DTO:updateGameView-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@712189079 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2264277300 site=DTO:await-return tid=118 thread=Game-0 edt=false input=InputLockUI@1254870115 count=0
+[bolt] ns=2264456900 site=DTO:dto-action tid=59 thread=TestNG-method=humanBoltThroughBrowserDtos-1 edt=false input=InputLockUI@1254870115 id=client-4 accepted oneDispatch=true duplicatePendingAndTerminal=true actionIdConflict=true
+[bolt] ns=2305224000 site=DTO:handleGameEvents-enter tid=118 thread=Game-0 edt=false input=InputLockUI@1254870115 waiter=118:Game-0:RUNNABLE:latch=0
+19:25:53 [INFO ] ProtocolGuiGame: Sending batch of 17: [GameEventPlayerPriority x2, GameEventZone x10, GameEventPlayerDamaged, GameEventPlayerLivesChanged, GameEventSpellResolved, GameEventCardChangeZone, GameEventSpellRemovedFromStack]
+19:25:53 [INFO ] DeltaSyncManager: [DeltaSync] New objects: 2, Deltas: 3
+[bolt] ns=2306388000 site=DTO:handleGameEvents-return tid=118 thread=Game-0 edt=false input=InputLockUI@1254870115 waiter=118:Game-0:RUNNABLE:latch=0
+[bolt] ns=2330190100 site=DTO:await-enter tid=118 thread=Game-0 edt=false input=InputPassPriority@762787275 count=1
+[bolt] ns=2330246400 site=DTO:updateGameView-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@762787275 waiter=118:Game-0:RUNNABLE:latch=1
+[bolt] ns=2331054300 site=DTO:updateGameView-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@762787275 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2331250900 site=DTO:prompt-showPromptMessage tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@762787275 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2331410800 site=DTO:prompt-updateButtons tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@762787275 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2331916000 site=DTO:capture-workers tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@762787275 submitted=2 completed=1 active=1 queued=0
+[bolt] ns=2332560800 site=DTO:capture-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@762787275 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2332753300 site=DTO:capture-coherent tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@762787275 submitted=2 completed=1 active=1 fingerprint=1:MAIN1|0:20/pool:0/Battlefield:2:true/Graveyard:1:false|1:17/pool:0/Hand:52:false
+[bolt] ns=2332867100 site=DTO:capture-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@762787275 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2333642100 site=DTO:visibility-resolved tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@762787275 allowedFaceCount=2 hiddenFaceCount=78 rawGraphPrivate=true
+[bolt] ns=2333887200 site=DTO:human-success tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@762787275 aiLife=20->17 stack=0 graveyardBolt=1
+[bolt] ns=2333991400 site=DTO:dto-project-enter tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@762787275 waiter=118:Game-0:WAITING:latch=1
+[browser-frame] Frame[match=d60bc4fa-d310-4547-9de6-7168ba22d07b, session=ae112210-61fb-4e68-a23e-4d5b0249a1e2, revision=7, turn=1, phase=MAIN1, players=[Seat[handle=83d4deae-69f1-4440-a0d1-6f6c65643b5c, self=true, life=20], Seat[handle=d84b53df-6402-43eb-b18b-e3e09ce5b25d, self=false, life=17]], cards=[Face[handle=6dc370e9-4b98-4139-a06d-0c91efe9d61f, name=Mountain, zone=Battlefield, controller=83d4deae-69f1-4440-a0d1-6f6c65643b5c, tapped=true], Face[handle=cb0967af-ccc8-41f1-9e37-4ea76056a2b8, name=Lightning Bolt, zone=Graveyard, controller=83d4deae-69f1-4440-a0d1-6f6c65643b5c, tapped=false]], stack=[], payment=null, prompt=Decision[id=38f225a3-c003-4ae7-9713-e25a88ea2595, kind=priority, source=, selected=[], min=1, max=1, choices=[Choice[id=b8c23c51-3df4-4442-ac20-39b6bb190edc, operation=pass, entity=]]]]
+[bolt] ns=2335190600 site=DTO:dto-project-return tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@762787275 waiter=118:Game-0:WAITING:latch=1
+[bolt] ns=2336203600 site=DTO:cleanup-concede tid=119 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@762787275 failurePreserved=false
+[bolt] ns=2345242900 site=DTO:await-return tid=118 thread=Game-0 edt=false input=none count=0
+Active player is no longer in the game...
+[bolt] ns=2489429300 site=DTO:handleGameEvents-enter tid=118 thread=Game-0 edt=false input=none waiter=118:Game-0:RUNNABLE:latch=0
+19:25:54 [INFO ] ProtocolGuiGame: Sending batch of 4: [GameEventPlayerControl x2, GameEventGameOutcome, GameEventGameFinished]
+[bolt] ns=2490870500 site=DTO:handleGameEvents-return tid=118 thread=Game-0 edt=false input=none waiter=118:Game-0:RUNNABLE:latch=0
+
+===============================================
+Command line suite
+Total tests run: 1, Passes: 1, Failures: 0, Skips: 0
+===============================================

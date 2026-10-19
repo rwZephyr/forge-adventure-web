@@ -1,0 +1,448 @@
+{
+  "files": [
+    {
+      "path": "integrity.json",
+      "sha256": "9d17a01a8f8941542c2e2632d7e7fc8d7295d66504722c86853f858b0fb224ec",
+      "bytes": 2909
+    },
+    {
+      "path": "runs.json",
+      "sha256": "9735180b3b905c6689f7ddcc3e42b66cc4d8bdad4445f3b3dc329b05627d8461",
+      "bytes": 4548
+    },
+    {
+      "path": "capture-gate/console.log",
+      "sha256": "e5425b6a831d2de889ec16293a3af021c6365a38360efe9d850c406680c6af4d",
+      "bytes": 40568
+    },
+    {
+      "path": "capture-gate/result.json",
+      "sha256": "aab6b1cc508130180a4e2c81a55629b3b3cc8cc8436cf24d0433d2027a6b6c57",
+      "bytes": 1001
+    },
+    {
+      "path": "capture-gate/reports/forge.net.embedded.ProtocolGuiGameInProcessTest.txt",
+      "sha256": "51d0eff51b18e3b8d26381db40ba991e1ad8ce5d5e7d3d9c9cdb6871b1fb1949",
+      "bytes": 4031
+    },
+    {
+      "path": "capture-gate/reports/TEST-forge.net.embedded.ProtocolGuiGameInProcessTest.xml",
+      "sha256": "bacb748964d15c40fdfae0c39624443a97068d00cab4408ea61fac4658d7fa84",
+      "bytes": 25538
+    },
+    {
+      "path": "capture-gate/reports/testng-results.xml",
+      "sha256": "1dc52f03eaa35e801f331178e259df829580f1154333a4d9d01ac487575d4338",
+      "bytes": 5147
+    },
+    {
+      "path": "capture-gate-2/console.log",
+      "sha256": "2e644fcb58901983fdc1cfc32e82103f41b5bc2b56a45b1f995471a6be8a26a9",
+      "bytes": 40099
+    },
+    {
+      "path": "capture-gate-2/result.json",
+      "sha256": "aeb04e6896b199e8d5c44abf252e9fc21279b71508bcbeb6fd539ada6fe92d3f",
+      "bytes": 1003
+    },
+    {
+      "path": "capture-gate-2/reports/forge.net.embedded.ProtocolGuiGameInProcessTest.txt",
+      "sha256": "2bb8d91fd8a5a657ba1580650738abeb5cee2a0b356dbb694d24165cee9272a4",
+      "bytes": 344
+    },
+    {
+      "path": "capture-gate-2/reports/TEST-forge.net.embedded.ProtocolGuiGameInProcessTest.xml",
+      "sha256": "1166e3546487d550176b2d0a50ec1c79ac5b490e0694df41f86a25102500a9df",
+      "bytes": 26134
+    },
+    {
+      "path": "capture-gate-2/reports/testng-results.xml",
+      "sha256": "dbd26c9f5f2b53c05b1aee115ca4570f0625734dc22fd44cb2ab7a2bff28aca4",
+      "bytes": 1059
+    },
+    {
+      "path": "dto-development/console.log",
+      "sha256": "948e75073e3db3d5a3d658227dd442f859300b30ae5d24a9f439586f2add6c3c",
+      "bytes": 58225
+    },
+    {
+      "path": "dto-development/result.json",
+      "sha256": "3f2145c2ed325e2aee0fa1f764f68ec55bc412f04b06c179e6830675b7301cf5",
+      "bytes": 1000
+    },
+    {
+      "path": "dto-development/reports/forge.net.embedded.ProtocolGuiGameInProcessTest.txt",
+      "sha256": "d4ce1c472536591ab6b904a0b1bc334a30e070940a7b941a2f76d9e502ef1ca9",
+      "bytes": 344
+    },
+    {
+      "path": "dto-development/reports/TEST-forge.net.embedded.ProtocolGuiGameInProcessTest.xml",
+      "sha256": "f4bf4f6c320ae737dcaa0a3fcc7e607fc16a518afb6e87bc6feb9057039f559c",
+      "bytes": 44259
+    },
+    {
+      "path": "dto-development/reports/testng-results.xml",
+      "sha256": "66bc46e59952b231ca2a2a51cd5da75a37a2b9b392af3874dd25bb0dd833bbd5",
+      "bytes": 1062
+    },
+    {
+      "path": "dto-final-1/console.log",
+      "sha256": "2a5d2ff0587f8268c95a2b40bc435b39b2cb4cbbd5747d55f57e01000920c34e",
+      "bytes": 15626
+    },
+    {
+      "path": "dto-final-1/result.json",
+      "sha256": "e645f805262f48907e2d634faa62775cd7760218e72f583491d39a91391cae6c",
+      "bytes": 1122
+    },
+    {
+      "path": "dto-final-2/console.log",
+      "sha256": "9006a572f55f4a14eef4271b9601f1b2186dd4447c8d17613cb1889f8d0565d6",
+      "bytes": 59232
+    },
+    {
+      "path": "dto-final-2/result.json",
+      "sha256": "7e19c5a775b50183a067beb72d1e513203dec905f450e73dee70213f2e5f10d7",
+      "bytes": 1122
+    },
+    {
+      "path": "dto-final-2/reports/forge.net.embedded.ProtocolGuiGameInProcessTest.txt",
+      "sha256": "bb5411ab20f7d631da00332acc303ce8774aef03c7d3d246577d9dcb151378e2",
+      "bytes": 344
+    },
+    {
+      "path": "dto-final-2/reports/TEST-forge.net.embedded.ProtocolGuiGameInProcessTest.xml",
+      "sha256": "3e8bc41d89f2e3f3aab39e989794a80d54ff8534ec40ded9665402b1670009da",
+      "bytes": 45282
+    },
+    {
+      "path": "dto-final-2/reports/testng-results.xml",
+      "sha256": "1fc5299152d8fabea29448d9e21d283df856fc0144ea45db4004d24bfc1db9e2",
+      "bytes": 1062
+    },
+    {
+      "path": "dto-final-3/console.log",
+      "sha256": "42e7c4dbcff0761cfe635f3bed854fbb616d3db4b95ce9188f17ea05b23f76b2",
+      "bytes": 45116
+    },
+    {
+      "path": "dto-final-3/result.json",
+      "sha256": "b0677954603d2e7a8e6e544e6049c163ec3db0cb646c999a187aa57f13c2bcd0",
+      "bytes": 1123
+    },
+    {
+      "path": "dto-final-3/reports/testng-results.xml",
+      "sha256": "ba138ef1bb4c30783b46b8299fa8a174787e007faabc4b1a6cb11855689d2967",
+      "bytes": 1078
+    },
+    {
+      "path": "dto-final-3/reports/junitreports/TEST-forge.net.embedded.ProtocolGuiGameInProcessTest.xml",
+      "sha256": "e1965350d7bdb6fcee4ab37760a3dedee9b9efa8c5d83c535edf47f3dfc80626",
+      "bytes": 483
+    },
+    {
+      "path": "dto-final-4/console.log",
+      "sha256": "47b9337866896bd5fa4ddba453b5d672dfa7d6f3dfccd8292a8c077716448f58",
+      "bytes": 45100
+    },
+    {
+      "path": "dto-final-4/result.json",
+      "sha256": "ba3977272fa2666098573346613807172f3e27579ad1ccaaa9fa67f6c7be3f36",
+      "bytes": 1123
+    },
+    {
+      "path": "dto-final-4/reports/testng-results.xml",
+      "sha256": "c835e03290710d6fac0262fa93178df34317237e129dc3d0e574066086047d26",
+      "bytes": 1078
+    },
+    {
+      "path": "dto-final-4/reports/junitreports/TEST-forge.net.embedded.ProtocolGuiGameInProcessTest.xml",
+      "sha256": "807a6801b2fb149011944cbe99c93fcb6f6870d9bf353c2a8b91f0efac5a4758",
+      "bytes": 483
+    },
+    {
+      "path": "regressions-final/console.log",
+      "sha256": "f289850b3a16de29fc701d5150b557e0317aebb180d0f31df5d290b57016aa8d",
+      "bytes": 67905
+    },
+    {
+      "path": "regressions-final/result.json",
+      "sha256": "133b0778afb990ca126b8d8814bde69ed28eb6b7271b95edb89c3d2687496e9d",
+      "bytes": 1136
+    },
+    {
+      "path": "regressions-final/reports/TEST-TestSuite.xml",
+      "sha256": "915acbbfb20bb306d1d1723191ddc1d3030ed65ed8ac73f72e81cf4fe10583b7",
+      "bytes": 54968
+    },
+    {
+      "path": "regressions-final/reports/testng-results.xml",
+      "sha256": "2c0b4e0c3f931a13712e7b269a89389add50bc2023255d960d4c7349eb75501a",
+      "bytes": 3409
+    },
+    {
+      "path": "regressions-final/reports/TestSuite.txt",
+      "sha256": "83701df05e67e6a264c7c9963bb42ec6d9a0cde893d5583be12a47e71071133e",
+      "bytes": 268
+    },
+    {
+      "path": "unanswered-final/console.log",
+      "sha256": "8d76daaf7aea00ca2c64e1742b32709139a4f51ca18fdcab88d96c7ef363cfe5",
+      "bytes": 24550
+    },
+    {
+      "path": "unanswered-final/result.json",
+      "sha256": "2083276d7c0cbab6869a8bb9860383501a185f8bac3832378a585e1dd91c1c7d",
+      "bytes": 1135
+    },
+    {
+      "path": "unanswered-final/reports/testng-results.xml",
+      "sha256": "5bd5f1e68e66747f1385c815beff9dad6d616e84a0dde5b0c0c53108c7a29641",
+      "bytes": 1105
+    },
+    {
+      "path": "unanswered-final/reports/junitreports/TEST-forge.net.embedded.ProtocolGuiGameInProcessTest.xml",
+      "sha256": "fc812d094eeef4c36117b70cccff889e97409528dff681db79410a4d7ec81d45",
+      "bytes": 492
+    }
+  ],
+  "date": "2026-10-18",
+  "transforms": {
+    "regressions-final/result.json": {
+      "publishedSha256": "133b0778afb990ca126b8d8814bde69ed28eb6b7271b95edb89c3d2687496e9d",
+      "systemPropertiesOmitted": false,
+      "originalSha256": "dace883cc20e039c3c22e8ae86f5153d4f628723e0baf6fda51c28c27d103e94",
+      "bytes": 1136
+    },
+    "capture-gate-2/console.log": {
+      "publishedSha256": "2e644fcb58901983fdc1cfc32e82103f41b5bc2b56a45b1f995471a6be8a26a9",
+      "systemPropertiesOmitted": false,
+      "originalSha256": "507fa6c4d13696b40d8417a594284f554cebdfbd328f86170acedbb9a48e4d75",
+      "bytes": 40099
+    },
+    "capture-gate-2/reports/TEST-forge.net.embedded.ProtocolGuiGameInProcessTest.xml": {
+      "publishedSha256": "1166e3546487d550176b2d0a50ec1c79ac5b490e0694df41f86a25102500a9df",
+      "systemPropertiesOmitted": true,
+      "originalSha256": "cd697f7862eded9d91e2db95274d0af41fed29400e1622afc26ad03582517d2b",
+      "bytes": 26134
+    },
+    "unanswered-final/reports/testng-results.xml": {
+      "publishedSha256": "5bd5f1e68e66747f1385c815beff9dad6d616e84a0dde5b0c0c53108c7a29641",
+      "systemPropertiesOmitted": false,
+      "originalSha256": "c78ab9aced3987c0a111db5aaad629b4c90103efc31b64cb1e74914cd363a8c4",
+      "bytes": 1105
+    },
+    "dto-final-2/console.log": {
+      "publishedSha256": "9006a572f55f4a14eef4271b9601f1b2186dd4447c8d17613cb1889f8d0565d6",
+      "systemPropertiesOmitted": false,
+      "originalSha256": "38bda77bdb2a1e8912965439ae66b96effba2d8b9249bb0fb0d3ace9806432ec",
+      "bytes": 59232
+    },
+    "unanswered-final/result.json": {
+      "publishedSha256": "2083276d7c0cbab6869a8bb9860383501a185f8bac3832378a585e1dd91c1c7d",
+      "systemPropertiesOmitted": false,
+      "originalSha256": "d8d94711022acaa2c39f3c8c22f51b34c6f52e14d9c27e323c8f55c7ccc73757",
+      "bytes": 1135
+    },
+    "regressions-final/console.log": {
+      "publishedSha256": "f289850b3a16de29fc701d5150b557e0317aebb180d0f31df5d290b57016aa8d",
+      "systemPropertiesOmitted": false,
+      "originalSha256": "6696f0b36777b1f27acb38db9b4cd47c9c52b3c401168d36cab99a8a2da4296c",
+      "bytes": 67905
+    },
+    "capture-gate/reports/testng-results.xml": {
+      "publishedSha256": "1dc52f03eaa35e801f331178e259df829580f1154333a4d9d01ac487575d4338",
+      "systemPropertiesOmitted": false,
+      "originalSha256": "a14c399d64db2b46718aba6d2d97694d8da354b41224db02349bae1deaee0ab2",
+      "bytes": 5147
+    },
+    "unanswered-final/console.log": {
+      "publishedSha256": "8d76daaf7aea00ca2c64e1742b32709139a4f51ca18fdcab88d96c7ef363cfe5",
+      "systemPropertiesOmitted": false,
+      "originalSha256": "2ef069b98a07e46a710bbda1dd0752315fde5d74704886725bd6f55871bcb024",
+      "bytes": 24550
+    },
+    "dto-final-2/reports/forge.net.embedded.ProtocolGuiGameInProcessTest.txt": {
+      "publishedSha256": "bb5411ab20f7d631da00332acc303ce8774aef03c7d3d246577d9dcb151378e2",
+      "systemPropertiesOmitted": false,
+      "originalSha256": "01d2d0660367cdf7eaee930926aa9168b2b56801f2d64a17f6da1b485331e151",
+      "bytes": 344
+    },
+    "dto-development/reports/forge.net.embedded.ProtocolGuiGameInProcessTest.txt": {
+      "publishedSha256": "d4ce1c472536591ab6b904a0b1bc334a30e070940a7b941a2f76d9e502ef1ca9",
+      "systemPropertiesOmitted": false,
+      "originalSha256": "cf71d109b3c66f6db07302edfc12f437719159b1efd5bb7571b66a89f639c9f8",
+      "bytes": 344
+    },
+    "regressions-final/reports/testng-results.xml": {
+      "publishedSha256": "2c0b4e0c3f931a13712e7b269a89389add50bc2023255d960d4c7349eb75501a",
+      "systemPropertiesOmitted": false,
+      "originalSha256": "9cf16335967b6204c948ab6cf8ecac946990008049c2e712b1c07ffdc11d937f",
+      "bytes": 3409
+    },
+    "capture-gate-2/reports/forge.net.embedded.ProtocolGuiGameInProcessTest.txt": {
+      "publishedSha256": "2bb8d91fd8a5a657ba1580650738abeb5cee2a0b356dbb694d24165cee9272a4",
+      "systemPropertiesOmitted": false,
+      "originalSha256": "9b5d7e07c8089da51231cb858f8d186fa6d56a9ca8a54695197c8388f58d1f62",
+      "bytes": 344
+    },
+    "dto-final-3/console.log": {
+      "publishedSha256": "42e7c4dbcff0761cfe635f3bed854fbb616d3db4b95ce9188f17ea05b23f76b2",
+      "systemPropertiesOmitted": false,
+      "originalSha256": "6b3f39908a9245a3de45c76c7402c0f824f861de9981e9d89ce39c8f7b93b23f",
+      "bytes": 45116
+    },
+    "regressions-final/reports/TEST-TestSuite.xml": {
+      "publishedSha256": "915acbbfb20bb306d1d1723191ddc1d3030ed65ed8ac73f72e81cf4fe10583b7",
+      "systemPropertiesOmitted": true,
+      "originalSha256": "325a78de6417289ccaf0edd611cc3482f3fbdf51ab31625f4e8c5fa6244261e3",
+      "bytes": 54968
+    },
+    "dto-final-4/result.json": {
+      "publishedSha256": "ba3977272fa2666098573346613807172f3e27579ad1ccaaa9fa67f6c7be3f36",
+      "systemPropertiesOmitted": false,
+      "originalSha256": "1b23e349cd6800f814a2e7969a0985ff48942bbcf738b44692181ece52e969c3",
+      "bytes": 1123
+    },
+    "capture-gate/reports/forge.net.embedded.ProtocolGuiGameInProcessTest.txt": {
+      "publishedSha256": "51d0eff51b18e3b8d26381db40ba991e1ad8ce5d5e7d3d9c9cdb6871b1fb1949",
+      "systemPropertiesOmitted": false,
+      "originalSha256": "673c2976fa57e0d65fa178dce4b916877f0e0b0f79f9e4071b84d488ec285109",
+      "bytes": 4031
+    },
+    "dto-final-1/result.json": {
+      "publishedSha256": "e645f805262f48907e2d634faa62775cd7760218e72f583491d39a91391cae6c",
+      "systemPropertiesOmitted": false,
+      "originalSha256": "099721192135e56f5d088925245aa694a1d8e246a46dacb5edeb6ed89c277c4a",
+      "bytes": 1122
+    },
+    "regressions-final/reports/TestSuite.txt": {
+      "publishedSha256": "83701df05e67e6a264c7c9963bb42ec6d9a0cde893d5583be12a47e71071133e",
+      "systemPropertiesOmitted": false,
+      "originalSha256": "483c7e8b92c8d2854e35a9d6173ee7741a9b7608e98993f9a376636cec165f87",
+      "bytes": 268
+    },
+    "capture-gate-2/reports/testng-results.xml": {
+      "publishedSha256": "dbd26c9f5f2b53c05b1aee115ca4570f0625734dc22fd44cb2ab7a2bff28aca4",
+      "systemPropertiesOmitted": false,
+      "originalSha256": "3c116c259ee57a844b0a383620b48d70e8dbadbe984f33a7b0e73a307f120ad5",
+      "bytes": 1059
+    },
+    "dto-final-1/console.log": {
+      "publishedSha256": "2a5d2ff0587f8268c95a2b40bc435b39b2cb4cbbd5747d55f57e01000920c34e",
+      "systemPropertiesOmitted": false,
+      "originalSha256": "3ecf40ad686391df13c603daddb98d1ec964a9e975a9f2bad5ac4d2ab1cf7667",
+      "bytes": 15626
+    },
+    "unanswered-final/reports/junitreports/TEST-forge.net.embedded.ProtocolGuiGameInProcessTest.xml": {
+      "publishedSha256": "fc812d094eeef4c36117b70cccff889e97409528dff681db79410a4d7ec81d45",
+      "systemPropertiesOmitted": false,
+      "originalSha256": "3e4b75cb0dcbd743e46cc757a687d792da4b2cbb91cf5fecaf43f1dc33d2adae",
+      "bytes": 492
+    },
+    "dto-final-2/reports/TEST-forge.net.embedded.ProtocolGuiGameInProcessTest.xml": {
+      "publishedSha256": "3e8bc41d89f2e3f3aab39e989794a80d54ff8534ec40ded9665402b1670009da",
+      "systemPropertiesOmitted": true,
+      "originalSha256": "0e9c26bce8f91eafeeee1d68178abd65be6ae0bb5b8ecba40d04c4811b5ce087",
+      "bytes": 45282
+    },
+    "dto-development/console.log": {
+      "publishedSha256": "948e75073e3db3d5a3d658227dd442f859300b30ae5d24a9f439586f2add6c3c",
+      "systemPropertiesOmitted": false,
+      "originalSha256": "af73bcf93ef7c700602ed25a7081b2a89ff5b3bf7ce7be8e9f5c3a74d24f6030",
+      "bytes": 58225
+    },
+    "dto-final-3/reports/testng-results.xml": {
+      "publishedSha256": "ba138ef1bb4c30783b46b8299fa8a174787e007faabc4b1a6cb11855689d2967",
+      "systemPropertiesOmitted": false,
+      "originalSha256": "7eb75a785817d2f73475918aed04970140c326f2123f4d8a29de0dc157da55f1",
+      "bytes": 1078
+    },
+    "dto-final-4/console.log": {
+      "publishedSha256": "47b9337866896bd5fa4ddba453b5d672dfa7d6f3dfccd8292a8c077716448f58",
+      "systemPropertiesOmitted": false,
+      "originalSha256": "e9b4a8d4b94812ab19ec305fa5bd64acedec3e5249c21e0eb3624dcc5963fa33",
+      "bytes": 45100
+    },
+    "capture-gate/result.json": {
+      "publishedSha256": "aab6b1cc508130180a4e2c81a55629b3b3cc8cc8436cf24d0433d2027a6b6c57",
+      "systemPropertiesOmitted": false,
+      "originalSha256": "64917d17552cb259b4c0726efa1dc1844251dfa543fa4ff5e6f5a8cc9865de03",
+      "bytes": 1001
+    },
+    "dto-final-3/result.json": {
+      "publishedSha256": "b0677954603d2e7a8e6e544e6049c163ec3db0cb646c999a187aa57f13c2bcd0",
+      "systemPropertiesOmitted": false,
+      "originalSha256": "0ac0c554bf22a30ea799a2ec2c7dbe9ca6644925d3fb072dee7e5126d7a404bc",
+      "bytes": 1123
+    },
+    "dto-development/result.json": {
+      "publishedSha256": "3f2145c2ed325e2aee0fa1f764f68ec55bc412f04b06c179e6830675b7301cf5",
+      "systemPropertiesOmitted": false,
+      "originalSha256": "02a030892b587e257641ffd0a857de15ca6e695aa7fd370d31d9817dceae6be1",
+      "bytes": 1000
+    },
+    "dto-development/reports/TEST-forge.net.embedded.ProtocolGuiGameInProcessTest.xml": {
+      "publishedSha256": "f4bf4f6c320ae737dcaa0a3fcc7e607fc16a518afb6e87bc6feb9057039f559c",
+      "systemPropertiesOmitted": true,
+      "originalSha256": "3bdc5927dc8020dd8bd74f5d630f741a1c140ff9b69c8e323e4ae9c4b977120c",
+      "bytes": 44259
+    },
+    "capture-gate-2/result.json": {
+      "publishedSha256": "aeb04e6896b199e8d5c44abf252e9fc21279b71508bcbeb6fd539ada6fe92d3f",
+      "systemPropertiesOmitted": false,
+      "originalSha256": "4d564b1744285fd7ce409a78f86f970b08fd93e5179e13bbf090d68d557c2a39",
+      "bytes": 1003
+    },
+    "dto-final-4/reports/testng-results.xml": {
+      "publishedSha256": "c835e03290710d6fac0262fa93178df34317237e129dc3d0e574066086047d26",
+      "systemPropertiesOmitted": false,
+      "originalSha256": "e6cc9d20623e19d09ff758aeff26782f715ccb66e152c01379b32e8234617861",
+      "bytes": 1078
+    },
+    "dto-final-2/result.json": {
+      "publishedSha256": "7e19c5a775b50183a067beb72d1e513203dec905f450e73dee70213f2e5f10d7",
+      "systemPropertiesOmitted": false,
+      "originalSha256": "a0ceb61b07c36c326af72034473b32585d423562975a680dfc58111e75aeac62",
+      "bytes": 1122
+    },
+    "capture-gate/console.log": {
+      "publishedSha256": "e5425b6a831d2de889ec16293a3af021c6365a38360efe9d850c406680c6af4d",
+      "systemPropertiesOmitted": false,
+      "originalSha256": "f874ed8d13c7e79d3abc360e97e2a70c4026a09e31b67443af76c8ec0fa32f50",
+      "bytes": 40568
+    },
+    "capture-gate/reports/TEST-forge.net.embedded.ProtocolGuiGameInProcessTest.xml": {
+      "publishedSha256": "bacb748964d15c40fdfae0c39624443a97068d00cab4408ea61fac4658d7fa84",
+      "systemPropertiesOmitted": true,
+      "originalSha256": "56a093c3953c0acbdb14de9c68c6ada1b8a3b830ab6c957bee8858eddc3cf07b",
+      "bytes": 25538
+    },
+    "dto-final-4/reports/junitreports/TEST-forge.net.embedded.ProtocolGuiGameInProcessTest.xml": {
+      "publishedSha256": "807a6801b2fb149011944cbe99c93fcb6f6870d9bf353c2a8b91f0efac5a4758",
+      "systemPropertiesOmitted": false,
+      "originalSha256": "246754311bdbd7e3bb1c65042dd2511e4728928c8ace164aaed25d4851312204",
+      "bytes": 483
+    },
+    "dto-final-2/reports/testng-results.xml": {
+      "publishedSha256": "1fc5299152d8fabea29448d9e21d283df856fc0144ea45db4004d24bfc1db9e2",
+      "systemPropertiesOmitted": false,
+      "originalSha256": "a929508715ea0048b6ed4f15fc475c4b1e8f622a39dfb8a89cfb75c651843ac0",
+      "bytes": 1062
+    },
+    "dto-final-3/reports/junitreports/TEST-forge.net.embedded.ProtocolGuiGameInProcessTest.xml": {
+      "publishedSha256": "e1965350d7bdb6fcee4ab37760a3dedee9b9efa8c5d83c535edf47f3dfc80626",
+      "systemPropertiesOmitted": false,
+      "originalSha256": "1c4a51d31c956008272805db1ee5ef0213a9411d19d4af5588051abb2fef7217",
+      "bytes": 483
+    },
+    "dto-development/reports/testng-results.xml": {
+      "publishedSha256": "66bc46e59952b231ca2a2a51cd5da75a37a2b9b392af3874dd25bb0dd833bbd5",
+      "systemPropertiesOmitted": false,
+      "originalSha256": "95004197cd7cce7df1127c5a2d36a702394a61b74b9c6768c2631c21da75ee86",
+      "bytes": 1062
+    }
+  },
+  "baseCommit": "3c3aa18df2f160dc2b6dce2279d73e2bb7fb1aa8",
+  "normalization": "UTF-8/LF, trailing whitespace/terminal blank lines removed. Workspace/JDK paths and hostname substituted with <WORKSPACE>, <JDK17>, HOST-REDACTED. VM lambda address suffixes normalized. Surefire system-properties blocks omitted. Logs/events and test results otherwise retained; original bytes remain private. Stale XML from the compilation-only failure is excluded, not credited as a test."
+}

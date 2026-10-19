@@ -1,0 +1,48 @@
+{
+  "case": "capture",
+  "label": "capture-gate",
+  "maven": true,
+  "nativeExit": 1,
+  "startedUtc": "2026-10-19T02:10:49.1283229Z",
+  "endedUtc": "2026-10-19T02:12:09.8751378Z",
+  "restorationPreflightPassed": true,
+  "environmentRestored": true,
+  "environmentChecks": [
+    {
+      "name": "JAVA_HOME",
+      "beforeExists": false,
+      "afterExists": false,
+      "exactMatch": true
+    },
+    {
+      "name": "JAVA_TOOL_OPTIONS",
+      "beforeExists": false,
+      "afterExists": false,
+      "exactMatch": true
+    },
+    {
+      "name": "APPDATA",
+      "beforeExists": true,
+      "afterExists": true,
+      "exactMatch": true
+    },
+    {
+      "name": "LOCALAPPDATA",
+      "beforeExists": true,
+      "afterExists": true,
+      "exactMatch": true
+    },
+    {
+      "name": "TEMP",
+      "beforeExists": true,
+      "afterExists": true,
+      "exactMatch": true
+    },
+    {
+      "name": "TMP",
+      "beforeExists": true,
+      "afterExists": true,
+      "exactMatch": true
+    }
+  ]
+}

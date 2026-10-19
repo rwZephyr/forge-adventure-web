@@ -1,0 +1,50 @@
+{
+  "case": "dto",
+  "label": "dto-final-1",
+  "maven": true,
+  "nativeExit": 1,
+  "startedUtc": "2026-10-19T02:22:16.1682649Z",
+  "endedUtc": "2026-10-19T02:23:01.2779034Z",
+  "testSourceSha256": "13d377dbc71f64bd773141bf78ba7d0878ec0add8f582edf6d15f6f6179bef60",
+  "sourceUnchangedDuringRun": true,
+  "restorationPreflightPassed": true,
+  "environmentRestored": true,
+  "environmentChecks": [
+    {
+      "name": "JAVA_HOME",
+      "beforeExists": false,
+      "afterExists": false,
+      "exactMatch": true
+    },
+    {
+      "name": "JAVA_TOOL_OPTIONS",
+      "beforeExists": false,
+      "afterExists": false,
+      "exactMatch": true
+    },
+    {
+      "name": "APPDATA",
+      "beforeExists": true,
+      "afterExists": true,
+      "exactMatch": true
+    },
+    {
+      "name": "LOCALAPPDATA",
+      "beforeExists": true,
+      "afterExists": true,
+      "exactMatch": true
+    },
+    {
+      "name": "TEMP",
+      "beforeExists": true,
+      "afterExists": true,
+      "exactMatch": true
+    },
+    {
+      "name": "TMP",
+      "beforeExists": true,
+      "afterExists": true,
+      "exactMatch": true
+    }
+  ]
+}
