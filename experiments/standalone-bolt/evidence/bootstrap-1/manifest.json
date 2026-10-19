@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "label": "bootstrap-1",
+  "privateOriginalsPreserved": true,
+  "normalization": [
+    "Repository absolute path -> <REPO>",
+    "Generated lambda /0x address -> /<runtime-lambda-address>; identityHashCode diagnostic labels retained",
+    "CRLF/CR -> LF; UTF-8 without BOM",
+    "No other content removed; original private files unchanged"
+  ],
+  "credentialScan": "Host/user/profile and credential-pattern checks passed; complete logs manually reviewed",
+  "sourceSha256": {
+    "src/experiment/StandaloneBolt.java": "ee47349b01ebaac208de871226c99cd5cf74205f92601bd6ba8d1a8c4c111dd7",
+    "Run-Standalone.ps1": "6efcdc1f2678d275738aead072df8fc183c694860632a602ea492da8071a2ee8",
+    "Publish-Evidence.ps1": "1a18007ae13109902d39e1ba216208f8165ca3d220d5e8fd48842802108b755a"
+  },
+  "files": [
+    {
+      "file": "compile.stdout.log",
+      "privateBytes": 2,
+      "privateSha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "publicBytes": 1,
+      "publicSha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "file": "compile.stderr.log",
+      "privateBytes": 276,
+      "privateSha256": "4624c2820f649bf53a8974eb7ea9627d4356925674cba39ef4b6de20971d322c",
+      "publicBytes": 199,
+      "publicSha256": "92867f113001250ab7587732ffa47d304f6548b7deb8fb7e82283fa24db2b846"
+    },
+    {
+      "file": "standalone.stdout.log",
+      "privateBytes": 6546,
+      "privateSha256": "cda4caa8520287019ac1e6dfbf7b843644cb82a43c11c42022d1a47f6cd34c34",
+      "publicBytes": 6489,
+      "publicSha256": "8997e9a2117edab89bb61f964d931c6876aaab51008aee76554074c571dc27d0"
+    },
+    {
+      "file": "standalone.stderr.log",
+      "privateBytes": 2903,
+      "privateSha256": "4b68d74adedd608c36d89f6aa4391c52b0d6be3124af63d43ffacaff63d21ff3",
+      "publicBytes": 2804,
+      "publicSha256": "ffc5ec813db204d3777ff5cf3468f08ec47b115b37fc696518318ba0c106befd"
+    },
+    {
+      "file": "diagnostic.json",
+      "privateBytes": 112,
+      "privateSha256": "48abd437debf89abf6eccdcbdfecdf96e4886efeaa2fb91e4203be144d6bc67b",
+      "publicBytes": 112,
+      "publicSha256": "48abd437debf89abf6eccdcbdfecdf96e4886efeaa2fb91e4203be144d6bc67b"
+    },
+    {
+      "file": "inputs.json",
+      "privateBytes": 9759,
+      "privateSha256": "3d9762ac7c248fbe520262ecc4d1fd1ca2556302754c5007c87099b038de1eb9",
+      "publicBytes": 9648,
+      "publicSha256": "4fd633b369ce14fe30c38bc0eb13532aa2b29861bbbfb69b3ed0bcde79670759"
+    },
+    {
+      "file": "result.json",
+      "privateBytes": 1437,
+      "privateSha256": "c0ed752527ee85c2cb991d3fbf2a3b1cab310ad3f35b4de04a241b00b331b219",
+      "publicBytes": 1374,
+      "publicSha256": "8e5b438badd1693b7fa1d12cb4fdf0772510245c4598c70582bf4bbb472bcd92"
+    },
+    {
+      "file": "integrity-before.json",
+      "privateBytes": 672623,
+      "privateSha256": "9e002bb61f7e0deebc68cd565bee7e6c523fc01db07cc4fe20100fa94a366c90",
+      "publicBytes": 668158,
+      "publicSha256": "deb67c7e504c1ea501fe4579655170f5ba859676d764c47819fd07675277bd3f"
+    },
+    {
+      "file": "integrity-after.json",
+      "privateBytes": 672623,
+      "privateSha256": "9e002bb61f7e0deebc68cd565bee7e6c523fc01db07cc4fe20100fa94a366c90",
+      "publicBytes": 668158,
+      "publicSha256": "deb67c7e504c1ea501fe4579655170f5ba859676d764c47819fd07675277bd3f"
+    }
+  ]
+}

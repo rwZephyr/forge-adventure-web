@@ -1,0 +1,2 @@
+Picked up JAVA_TOOL_OPTIONS: -Duser.home=<REPO>/.local-tools/standalone-bolt/bootstrap-1/home -Djava.io.tmpdir=<REPO>/.local-tools/standalone-bolt/bootstrap-1/tmp -Djava.awt.headless=true -Xmx1536m
+

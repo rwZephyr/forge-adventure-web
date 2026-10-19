@@ -1,6 +1,23 @@
 # Project status
 
-Last updated: 2026-10-18
+Last updated: 2026-10-19
+
+## Stage D3a standalone bootstrap submitted for review
+- Owner accepted Stage C and PR #24's static battlefield. The new
+  [isolated standalone probe](../experiments/standalone-bolt/README.md), stacked on
+  #24, initializes original Forge outside TestNG and reaches original human
+  `InputPassPriority` with the Bolt/Mountain fixture.
+- [One fresh offline compile/run](experiments/standalone-bolt-results.md) passed:
+  JDK 17 compilation exit 0; direct JVM exit 0; original Game-0 waits in the
+  original latch path, distinct from the Swing EDT. Same controller/input
+  references were checked without a post-setup game/view graph traversal.
+- No concession/input release/game cleanup was used; the disposable JVM owns
+  explicit exit and deadlines. Six environment variables restored exactly;
+  2,066 protected files and 2,393 cache files unchanged. Complete sanitized
+  evidence is included. Historical tests and evidence are untouched.
+- Production capture ownership remains unresolved. No DTO projector, transport,
+  listener, installation or service/network change. Next: independent D3a review;
+  do not begin D3b capture extraction.
 
 ## Stage D1 portrait battlefield submitted for review
 - Stage C is accepted within its bounded scope by the owner. The new

@@ -1,0 +1,3 @@
+* text eol=lf
+# Preserve normalized evidence bytes and upstream log whitespace for manifest hashes.
+evidence/** -text whitespace=-blank-at-eol,-blank-at-eof
