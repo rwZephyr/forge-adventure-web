@@ -1,0 +1,63 @@
+Language 'en-US' loaded successfully.
+(ThreadUtil first call): Running with priority 5
+Read cards: 34088 files in 2 ms (25 parts) using thread pool
+Read cards: 857 files in 0 ms (8 parts) using thread pool
+09:40:24 [INFO ] TestUtils: [TestConfig] checksum=stable, deltasync=on
+[standalone] controller-bound thread=main#1 controller=forge.player.PlayerControllerHuman@63eea8c4
+09:40:25 [INFO ] ProtocolGuiGame: Sending batch of 7: [GameEventZone x4, GameEventShuffle x2, GameEventFlipCoin]
+09:40:25 [INFO ] DeltaSyncManager: [DeltaSync] New objects: 163, Deltas: 0
+[standalone] prompt thread=AWT-EventQueue-0#64 input=forge.gamemodes.match.input.InputConfirm@74f6eca2 buttons=Play/Draw
+[standalone] await-enter thread=Game-0#59 input=forge.gamemodes.match.input.InputConfirm@74f6eca2 latch=java.util.concurrent.CountDownLatch@7421b72a count=1
+[standalone] bootstrap-reply thread=AWT-EventQueue-0#64 input=forge.gamemodes.match.input.InputConfirm@74f6eca2 choice=Play
+[standalone] await-return thread=Game-0#59 input=forge.gamemodes.match.input.InputConfirm@74f6eca2 count=0
+09:40:25 [INFO ] ProtocolGuiGame: Sending batch of 43: [GameEventGameStarted, GameEventZone x28, GameEventCardChangeZone x14]
+09:40:25 [INFO ] DeltaSyncManager: [DeltaSync] New objects: 28, Deltas: 2
+[standalone] await-enter thread=Game-0#59 input=forge.gamemodes.match.input.InputConfirmMulligan@71e83853 latch=java.util.concurrent.CountDownLatch@22ebb248 count=1
+[standalone] prompt thread=AWT-EventQueue-0#64 input=forge.gamemodes.match.input.InputConfirmMulligan@71e83853 buttons=Keep/Mulligan
+[standalone] bootstrap-reply thread=AWT-EventQueue-0#64 input=forge.gamemodes.match.input.InputConfirmMulligan@71e83853 choice=Keep
+[standalone] await-return thread=Game-0#59 input=forge.gamemodes.match.input.InputConfirmMulligan@71e83853 count=0
+[standalone] fixture-arranged thread=Game-0#59 humanController=forge.player.PlayerControllerHuman@63eea8c4 aiController=forge.ai.PlayerControllerAi@5ec40d58 humanLife=20 aiLife=20 humanHandBolt=1 untappedMountain=1 phase=MAIN1 turn=1 observationTime=setup-only
+09:40:25 [INFO ] ProtocolGuiGame: Sending batch of 259: [GameEventAddLog x2, GameEventTurnBegan, GameEventTurnPhase x2, GameEventZone x170, GameEventCardChangeZone x83, GameEventPlayerPriority]
+09:40:25 [INFO ] DeltaSyncManager: [DeltaSync] New objects: 28, Deltas: 3
+[standalone] await-enter thread=Game-0#59 input=forge.gamemodes.match.input.InputPassPriority@44c0537 latch=java.util.concurrent.CountDownLatch@5eb6ce4f count=1
+[standalone] prompt thread=AWT-EventQueue-0#64 input=forge.gamemodes.match.input.InputPassPriority@44c0537 buttons=OK/End Turn
+[standalone] edt-lifecycle-check thread=AWT-EventQueue-0#64 input=forge.gamemodes.match.input.InputPassPriority@44c0537 noActionDispatched=true
+[standalone] parked-human-input thread=main#1 controller=forge.player.PlayerControllerHuman@63eea8c4 input=forge.gamemodes.match.input.InputPassPriority@44c0537 latch=java.util.concurrent.CountDownLatch@5eb6ce4f count=1 owner=Game-0#59 state=WAITING sameReferenceChecks=true graphCapture=false
+[standalone] worker thread=main#1 name=Game-0 id=59 daemon=true state=WAITING
+  at java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+  at java.base@17.0.12/java.util.concurrent.locks.LockSupport.park(LockSupport.java:211)
+  at java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquire(AbstractQueuedSynchronizer.java:715)
+  at java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1047)
+  at java.base@17.0.12/java.util.concurrent.CountDownLatch.await(CountDownLatch.java:230)
+  at app//forge.gui.interfaces.IGuiGame.awaitInput(IGuiGame.java:328)
+  at app//experiment.StandaloneBolt$ProbeGui.awaitInput(StandaloneBolt.java:109)
+  at app//forge.gamemodes.match.input.InputSyncronizedBase.awaitLatchRelease(InputSyncronizedBase.java:26)
+  at app//forge.gamemodes.match.input.InputSyncronizedBase.showAndWait(InputSyncronizedBase.java:40)
+  at app//forge.gamemodes.match.input.InputPassPriority.showAndWait(InputPassPriority.java:78)
+  at app//forge.player.PlayerControllerHuman.chooseSpellAbilityToPlay(PlayerControllerHuman.java:1772)
+  at app//forge.game.phase.PhaseHandler.mainLoopStep(PhaseHandler.java:1065)
+  at app//forge.game.phase.PhaseHandler.mainGameLoop(PhaseHandler.java:1043)
+  at app//forge.game.phase.PhaseHandler.startFirstTurn(PhaseHandler.java:1037)
+  at app//forge.game.GameAction.startGame(GameAction.java:2396)
+  at app//forge.game.Match.startGame(Match.java:92)
+  at app//forge.gamemodes.match.HostedMatch.lambda$startGame$2(HostedMatch.java:295)
+  at app//forge.gamemodes.match.HostedMatch$$Lambda$397/<runtime-lambda-address>.run(Unknown Source)
+  at java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+  at java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+  at java.base@17.0.12/java.lang.Thread.run(Thread.java:842)
+[standalone] worker thread=main#1 name=AWT-EventQueue-0 id=64 daemon=false state=WAITING
+  at java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+  at java.base@17.0.12/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+  at java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+  at java.base@17.0.12/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+  at java.base@17.0.12/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+  at java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+  at java.desktop@17.0.12/java.awt.EventQueue.getNextEvent(EventQueue.java:567)
+  at java.desktop@17.0.12/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:190)
+  at java.desktop@17.0.12/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+  at java.desktop@17.0.12/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+  at java.desktop@17.0.12/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+  at java.desktop@17.0.12/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+  at java.desktop@17.0.12/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+[standalone] process-exit thread=main#1 status=0 noGameMutationForCleanup=true
+

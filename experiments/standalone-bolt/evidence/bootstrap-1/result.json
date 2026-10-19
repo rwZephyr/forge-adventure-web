@@ -1,0 +1,63 @@
+{
+  "label": "bootstrap-1",
+  "startedUtc": "2026-10-19T16:40:01.0595853Z",
+  "endedUtc": "2026-10-19T16:40:27.3289096Z",
+  "passed": true,
+  "restorationPreflightPassed": true,
+  "environmentRestored": true,
+  "environmentChecks": [
+    {
+      "name": "JAVA_HOME",
+      "exactMatch": true
+    },
+    {
+      "name": "JAVA_TOOL_OPTIONS",
+      "exactMatch": true
+    },
+    {
+      "name": "APPDATA",
+      "exactMatch": true
+    },
+    {
+      "name": "LOCALAPPDATA",
+      "exactMatch": true
+    },
+    {
+      "name": "TEMP",
+      "exactMatch": true
+    },
+    {
+      "name": "TMP",
+      "exactMatch": true
+    }
+  ],
+  "protectedFileCount": 2066,
+  "sourceChanges": null,
+  "cacheFileCount": 2393,
+  "cacheChanges": null,
+  "processes": [
+    {
+      "role": "compile",
+      "pid": 88676,
+      "parentPid": 92112,
+      "startedUtc": "2026-10-19T16:40:01.0970869Z",
+      "exitUtc": "2026-10-19T16:40:03.0509460Z",
+      "exitCode": 0,
+      "supervisorTimeout": false,
+      "hasExited": true,
+      "elapsedMs": 1982.4317
+    },
+    {
+      "role": "standalone",
+      "pid": 89344,
+      "parentPid": 92112,
+      "startedUtc": "2026-10-19T16:40:03.1071775Z",
+      "exitUtc": "2026-10-19T16:40:26.1231349Z",
+      "exitCode": 0,
+      "supervisorTimeout": false,
+      "hasExited": true,
+      "elapsedMs": 23059.4134
+    }
+  ],
+  "noGameplayCleanup": true
+}
