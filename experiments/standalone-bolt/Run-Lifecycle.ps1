@@ -62,6 +62,31 @@ $before=Snapshot;$before|ConvertTo-Json -Depth 6|Set-Content "$run/integrity-bef
 $keys=@('JAVA_HOME','JAVA_TOOL_OPTIONS','APPDATA','LOCALAPPDATA','TEMP','TMP')
 $saved=@{};foreach($key in $keys){$saved[$key]=Read-Env $key}
 $processes=[Collections.Generic.List[object]]::new();$start=[DateTime]::UtcNow;$ok=$false;$primary=$null
+function Record-ChildValidation($Observed,[string]$Stage,[int]$ExpectedParentId,$CreationTimeMatches,$StartedUtc){
+ # Never persist arbitrary paths or arguments: unexpected children may contain secrets.
+ $executable=[string]$Observed.ExecutablePath;$commandLine=[string]$Observed.CommandLine
+ $expectedEntry='experiment.BoltLifecycleMain'
+ $executableMatches=[string]::Equals($executable,"$jdk/bin/java.exe".Replace('/','\'),[StringComparison]::OrdinalIgnoreCase)
+ $entryMatches=$commandLine -match [regex]::Escape($expectedEntry)
+ $markers=@(foreach($marker in @('java.exe','-agentlib:jdwp','transport=dt_shmem',$expectedEntry)){
+  if($commandLine.IndexOf($marker,[StringComparison]::OrdinalIgnoreCase) -ge 0){$marker}
+ })
+ $row=[ordered]@{
+  observedUtc=[DateTime]::UtcNow.ToString('o');stage=$Stage;recordAvailable=($null -ne $Observed)
+  pid=$(if($null -ne $Observed){$Observed.ProcessId}else{$null});expectedParentPid=$ExpectedParentId
+  parentPid=$(if($null -ne $Observed){$Observed.ParentProcessId}else{$null})
+  parentPidMatches=($null -ne $Observed -and $Observed.ParentProcessId -eq $ExpectedParentId)
+  handleStartedUtc=$StartedUtc;creationTimeMatches=$CreationTimeMatches
+  executablePathPresent=(-not [string]::IsNullOrEmpty($executable));executablePathLength=$executable.Length
+  executablePathMatches=$executableMatches
+  executablePathSummary=$(if($executableMatches){'<JDK>/bin/java.exe'}else{'<redacted-unrecognized-path>'})
+  commandLinePresent=(-not [string]::IsNullOrEmpty($commandLine));commandLineLength=$commandLine.Length
+  entryPointMatches=$entryMatches;commandLineObservedMarkers=$markers
+  otherObservedData='<redacted: no raw executable path or command-line arguments retained>'
+ }
+ $row|ConvertTo-Json -Depth 5 -Compress|Add-Content "$run/child-validation.jsonl" -Encoding utf8
+ return $row
+}
 function Run-Owned([string]$Tool,[string[]]$Arguments,[string]$Role,[int]$Seconds,[bool]$TrackTarget){
  $info=[Diagnostics.ProcessStartInfo]::new()
  $info.FileName="$jdk/bin/$Tool";$info.WorkingDirectory="$repo/forge-gui-desktop"
@@ -77,16 +102,27 @@ function Run-Owned([string]$Tool,[string[]]$Arguments,[string]$Role,[int]$Second
     # Retain a handle while the debugger target is alive, including a connector-launch stall.
     foreach($candidate in @(Get-CimInstance Win32_Process -Filter "ParentProcessId = $($p.Id)" -ErrorAction Stop)){
      if($targets.ContainsKey([int]$candidate.ProcessId)){continue}
+     [void](Record-ChildValidation $candidate 'candidate' $p.Id $null $null)
      $owned=[Diagnostics.Process]::GetProcessById([int]$candidate.ProcessId)
      [void]$owned.Handle
      if($owned.HasExited){$owned.Dispose();continue}
-     if($owned.StartTime.ToUniversalTime() -lt $launched.AddSeconds(-1)){$owned.Dispose();throw 'Child creation time does not match this launch'}
+     $childStarted=$owned.StartTime.ToUniversalTime()
+     $creationMatches=$childStarted -ge $launched.AddSeconds(-1)
+     if(-not $creationMatches){
+      try{[void](Record-ChildValidation $candidate 'creation-rejected' $p.Id $false $childStarted.ToString('o'))}
+      finally{$owned.Dispose()}
+      throw 'Child creation time does not match this launch'
+     }
      $confirm=Get-CimInstance Win32_Process -Filter "ProcessId = $($owned.Id)" -ErrorAction Stop
      if($owned.HasExited){$owned.Dispose();continue}
-     if($null -eq $confirm -or $confirm.ParentProcessId -ne $p.Id){$owned.Dispose();throw 'Child ownership changed before handle retention'}
+     if($null -eq $confirm -or $confirm.ParentProcessId -ne $p.Id){
+      try{[void](Record-ChildValidation $confirm 'parent-rejected' $p.Id $creationMatches $childStarted.ToString('o'))}
+      finally{$owned.Dispose()}
+      throw 'Child ownership changed before handle retention'
+     }
      $targets[[int]$candidate.ProcessId]=$owned
-     if(-not [string]::Equals($confirm.ExecutablePath,"$jdk/bin/java.exe".Replace('/','\'),[StringComparison]::OrdinalIgnoreCase) -or
-        $confirm.CommandLine -notmatch 'experiment\.BoltLifecycleMain') {throw 'Unexpected owned child executable/entry point'}
+     $validation=Record-ChildValidation $confirm 'retained-child' $p.Id $creationMatches $childStarted.ToString('o')
+     if(-not $validation.executablePathMatches -or -not $validation.entryPointMatches){throw 'Unexpected owned child executable/entry point'}
     }
    }
    if($p.WaitForExit(250)){break}

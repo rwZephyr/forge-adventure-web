@@ -2,6 +2,19 @@
 
 Last updated: 2026-10-19
 
+## Stage D3c launcher amendment submitted without execution
+- [Source-only amendment](experiments/bolt-lifecycle-launcher-correction.md)
+  uses `[regex]::Escape` and records separate child executable/entry-point,
+  parent and creation-time diagnostics with bounded allowlisted summaries.
+  Ownership checks, deadlines and process cleanup remain fail-closed.
+- Actual historical source has one backslash before the dot and already matches
+  the dotted class in isolation, contrary to the review's two-backslash premise.
+  The original run's cause remains unresolved; no runtime fix is claimed.
+- Static PowerShell parsing and isolated regex expressions passed; no launcher
+  body, helper, Java process, compilation or witness run was executed. Historical
+  failure evidence and private originals are unchanged. Next: independent source
+  review; any fresh run needs separate explicit owner approval.
+
 ## Stage D3c single attempt blocked at launch supervision
 - [Actual results and evidence](experiments/bolt-lifecycle-witness-results.md)
   record the one owner-authorized attempt of #27 head `f7e9e1fd`, using the
