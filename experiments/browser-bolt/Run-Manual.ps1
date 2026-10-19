@@ -80,8 +80,9 @@ try{
  $stdout=$p.StandardOutput.ReadToEndAsync();$stderr=$p.StandardError.ReadToEndAsync()
  Write-Host "Mode: $(if($VerifyOnly){'listener-free verification'}else{'separately approved listener'}). Private progress: .local-tools/browser-bolt/$Label/console.log"
  if($ApproveListener){Write-Host "Open http://${BindAddress}:$Port/experiments/battlefield-static/live.html ; paste capability.txt privately into its password field. Never share or publish that file."}
+ $runBudgetMinutes=if($ApproveListener){40}else{20}
  $clock=[Diagnostics.Stopwatch]::StartNew()
- while(-not $p.WaitForExit(1000)){if($clock.Elapsed.TotalMinutes -ge 20){$timedOut=$true;throw 'Owned session elapsed-time budget exceeded'}}
+ while(-not $p.WaitForExit(1000)){if($clock.Elapsed.TotalMinutes -ge $runBudgetMinutes){$timedOut=$true;throw 'Owned session elapsed-time budget exceeded'}}
  $exitCode=$p.ExitCode
  if($exitCode -ne 0){throw 'Offline Maven/test failure; inspect isolated logs'}
 }catch{$primary=$_}

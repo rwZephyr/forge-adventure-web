@@ -1,0 +1,24 @@
+{
+  "baseInventory": "../inventory.json",
+  "basePublishedSha256": "83d86d6a3e0d7b2dbf461d0f42a242d3627ac51669749bae40bee162707fc9ba",
+  "sourceHashChangesBeforeVerification": {
+    "experiments/browser-bolt/Run-Manual.ps1": {
+      "before": "db5044c0e0b2d5dc8e8ea8391e871e2336bb09b49a314c3e0d7e865b945c4eec",
+      "after": "4ee4615422bdceb97d50aac7cf196a6c5cbd02dc48685fce7dfb6b32fa939c15"
+    },
+    "forge-gui-desktop/src/test/java/forge/net/embedded/ProtocolGuiGameInProcessTest.java": {
+      "before": "d2bd03571e28f019a4f72bc05e284f5b84554101b03193305d1e7b23e4012cef",
+      "after": "032548760a906216ed59bde82b7e1f3aa61293ea69c4bc0a5264225029297769"
+    }
+  },
+  "cacheChanges": [],
+  "protectedFileCount": 2086,
+  "cacheFileCount": 2393,
+  "originalBeforeAfterSha256": "eef20236bda2972ad22995a88b7592b3243d8390517fcfb77230c639821e2275",
+  "originalBeforeAfterBytes": 675223,
+  "duringRunInventoriesByteIdentical": true,
+  "originalFullInventoryPaths": [
+    ".local-tools/browser-bolt/safari-prep-policy-1/integrity-before.json",
+    ".local-tools/browser-bolt/safari-prep-policy-1/integrity-after.json"
+  ]
+}

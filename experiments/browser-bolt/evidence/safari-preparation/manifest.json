@@ -1,0 +1,108 @@
+{
+  "preparationBase": "87a063749d67c2585ebd3431f0187f60b273cdd0",
+  "authorization": "https://github.com/rwZephyr/forge-adventure-web/pull/28#issuecomment-6279227053",
+  "listenerStarted": false,
+  "safariExecutionStarted": false,
+  "normalization": "UTF-8/LF; trim trailing whitespace/terminal blank lines; omit Surefire system-properties blocks; replace workspace/JDK/user paths and hostname; normalize VM lambda suffixes. Private originals/full inventories preserved. Previous full inventory plus the published two-file delta reconstructs this check inventory. No capability or generated profile included.",
+  "files": [
+    {
+      "path": "policy/console.log",
+      "sha256": "6f430212692949360d60c426080511a640afe3fadc297e5817c10f8ef0a88021",
+      "bytes": 14538,
+      "originalPath": ".local-tools/browser-bolt/safari-prep-policy-1/console.log",
+      "originalSha256": "1c4f2cbfe69982e7a0af43f76697d227f27def7a8ca8d56ad87fd4e0c90df342",
+      "originalBytes": 16380,
+      "systemPropertiesOmitted": false
+    },
+    {
+      "path": "policy/driver.stdout.log",
+      "sha256": "6f430212692949360d60c426080511a640afe3fadc297e5817c10f8ef0a88021",
+      "bytes": 14538,
+      "originalPath": ".local-tools/browser-bolt/safari-prep-policy-1/driver.stdout.log",
+      "originalSha256": "3756eef6ebec1fea690c7a291ea310adbd5556cd90401fbd26a7fb027f451575",
+      "originalBytes": 16382,
+      "systemPropertiesOmitted": false
+    },
+    {
+      "path": "policy/driver.stderr.log",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "bytes": 1,
+      "originalPath": ".local-tools/browser-bolt/safari-prep-policy-1/driver.stderr.log",
+      "originalSha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "originalBytes": 2,
+      "systemPropertiesOmitted": false
+    },
+    {
+      "path": "policy/result.json",
+      "sha256": "bcec0a97876ef5abb4fc754ed7878b175d2789a13c22306ca42c6803596dfe1c",
+      "bytes": 1082,
+      "originalPath": ".local-tools/browser-bolt/safari-prep-policy-1/result.json",
+      "originalSha256": "6a059566f657000e8ab39062db97224a1a2d304a6e7ea7a4fc88ac8155702e70",
+      "originalBytes": 1132,
+      "systemPropertiesOmitted": false
+    },
+    {
+      "path": "policy/reports/forge.net.embedded.ManualBrowserBoltHostTest.txt",
+      "sha256": "030a674af1156535730a8564b800ec796a8e2f9e6d8b7c5f6d2e5f9da0edc9fc",
+      "bytes": 339,
+      "originalPath": ".local-tools/browser-bolt/safari-prep-policy-1/reports/forge.net.embedded.ManualBrowserBoltHostTest.txt",
+      "originalSha256": "fc45874c37db7197f0e9218c0716520948bef44670dceaed7e6b90f7ff9533ed",
+      "originalBytes": 343,
+      "systemPropertiesOmitted": false
+    },
+    {
+      "path": "policy/reports/TEST-forge.net.embedded.ManualBrowserBoltHostTest.xml",
+      "sha256": "20b5206f959f9b694eb7bb0b81e8289ca8cd835abf73b0932d04359b972d5589",
+      "bytes": 4604,
+      "originalPath": ".local-tools/browser-bolt/safari-prep-policy-1/reports/TEST-forge.net.embedded.ManualBrowserBoltHostTest.xml",
+      "originalSha256": "6257a7fb440462ccebabe00030f2db3038ff4168cfd318c61db44d2194a5362e",
+      "originalBytes": 36775,
+      "systemPropertiesOmitted": true
+    },
+    {
+      "path": "policy/reports/testng-results.xml",
+      "sha256": "0ed506a1b9735f27e44829b6a91e84840385b27ab136e20081d463e1a176f0dc",
+      "bytes": 10493,
+      "originalPath": ".local-tools/browser-bolt/safari-prep-policy-1/reports/testng-results.xml",
+      "originalSha256": "e68934306de2c6b478a44a4a8627f9829d2fa35b9b0faf58e88e5c952b173b48",
+      "originalBytes": 10640,
+      "systemPropertiesOmitted": false
+    },
+    {
+      "path": "preflight.json",
+      "sha256": "1bdc825af68666923310dc3e361a1d0a4f865b09ed012f2a124a849d441c5150",
+      "bytes": 558,
+      "originalPath": ".local-tools/browser-bolt/safari-prep-1/preflight.json",
+      "originalSha256": "089b270681cfda0fb567f19b2ee4b7097ac744f3e3a0aeeb39fac5456e6762fd",
+      "originalBytes": 578,
+      "systemPropertiesOmitted": false
+    },
+    {
+      "path": "postflight.json",
+      "sha256": "5444962998f04346be03e4da0fe76a5761c7d122e62b78b20375ea8d435ed309",
+      "bytes": 178,
+      "originalPath": ".local-tools/browser-bolt/safari-prep-1/postflight.json",
+      "originalSha256": "dcf503e2bdcc22d710918834684f681224f05c61bc077d5096f1742e0c23bd83",
+      "originalBytes": 185,
+      "systemPropertiesOmitted": false
+    },
+    {
+      "path": "timing-scope-check.json",
+      "sha256": "c69413ae8ad764dade24969efb573dec0ec9ee5bc936fe94240ec39189cdecc1",
+      "bytes": 949,
+      "originalPath": ".local-tools/browser-bolt/safari-prep-1/timing-scope-check.json",
+      "originalSha256": "350ea9b0d8822ffd9c413e84f0749009758d3cbbf09041f7ba183445b3b5e0d7",
+      "originalBytes": 970,
+      "systemPropertiesOmitted": false
+    },
+    {
+      "path": "inventory-delta.json",
+      "sha256": "d3aab5cc063381df5a083d17c5849b4a3d2bd0109d502696166fd1d459fb627d",
+      "bytes": 1121,
+      "originalPath": ".local-tools/browser-bolt/safari-prep-1/inventory-delta.json",
+      "originalSha256": "11ed3d8c114ed282576f286ca525cc1a34012d424f6c2b27b346d43eea4f2c0c",
+      "originalBytes": 1145,
+      "systemPropertiesOmitted": false
+    }
+  ]
+}

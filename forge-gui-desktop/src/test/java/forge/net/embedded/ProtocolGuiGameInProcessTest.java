@@ -1096,7 +1096,7 @@ public class ProtocolGuiGameInProcessTest {
     public void browserDtoUnansweredPromptIsReported() throws Exception { runBoltCase(BoltMode.DTO_UNANSWERED); }
 
     /** Explicitly selected only; no listener or FModel initialization on ordinary test discovery. */
-    @Test(timeOut = 900_000)
+    @Test(timeOut = 2_100_000)
     public void manualBrowserBoltSession() throws Exception {
         if (!Boolean.getBoolean("forge.browser.listenerApproved")) throw new org.testng.SkipException("Manual listener requires separate owner approval");
         runBoltCase(BoltMode.MANUAL_BROWSER);
@@ -1121,7 +1121,7 @@ public class ProtocolGuiGameInProcessTest {
             host.start();
             s.match.setStartGameHook(s::setup); s.match.setEndGameHook(s::ended);
             s.match.startMatch(GameType.Constructed, null, List.of(s.humanRegistration, s.aiRegistration), s.humanRegistration, s.gui);
-            long deadline = System.nanoTime() + TimeUnit.MINUTES.toNanos(10);
+            long deadline = System.nanoTime() + TimeUnit.MINUTES.toNanos(25);
             final Object[] publishedInput = {null};
             while (!s.resolved) {
                 s.checkFailure();
@@ -1152,7 +1152,7 @@ public class ProtocolGuiGameInProcessTest {
                     && s.port.dispatches == 4 && s.abilityReplies == 2 && s.manaReplies == 1,
                     "manual browser sequence confirmed by original Forge oracle and C1 replies");
             host.outcome("TERMINAL");
-            long inspection = System.nanoTime() + TimeUnit.MINUTES.toNanos(2);
+            long inspection = System.nanoTime() + TimeUnit.MINUTES.toNanos(5);
             while (!host.finishRequested()) {
                 s.checkFailure();
                 if (host.abortRequested()) { host.outcome(host.transportFailed() ? "FAILED" : "ABORTED"); throw new IllegalStateException("Terminal inspection aborted or transport failed"); }

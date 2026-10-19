@@ -2,6 +2,21 @@
 
 Last updated: 2026-10-19
 
+## Safari preparation complete; listener OFF, waiting for START
+- [Conditional Safari preparation](experiments/browser-bolt-safari-preparation.md)
+  extends manual timing only: interaction 25 minutes, terminal inspection 5,
+  manual TestNG 35 and listener-mode launcher 40. Scripted checks stay unchanged;
+  capture/C1/authorization/cleanup/security and PR #27 are untouched.
+- Actual focused offline check: compilation and 16 policy cases PASS, Maven 0;
+  exact timing-only source comparison and PowerShell AST parse PASS. Protected
+  hashes/cache and six parent environment values unchanged during verification.
+  No Safari listener, capability or countdown started; no new gameplay run.
+- Verified Tailscale adapter Up with `100.122.229.121`, port 8765 free and
+  `safari-1` unused; recheck on START. Owner confirmed private manual entry from
+  Silent's screen into Safari. READY handoff includes URL/code-file path and
+  timer semantics. Codex will announce LIVE only after actual readiness and
+  supervise the exact command. Stop now for the owner's explicit START.
+
 ## First approved browser-controlled Bolt session passed
 - [One loopback run](experiments/browser-bolt-loopback-results.md) at reviewed
   PR #28 head `bc0d5257` passed: observed browser UI actions cast original Bolt,

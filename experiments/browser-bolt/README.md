@@ -2,8 +2,10 @@
 
 **Execution update:** the one separately approved `loopback-1` session passed
 at reviewed head `bc0d5257`; see [actual results and limits](../../docs/experiments/browser-bolt-loopback-results.md).
-That label/authorization is spent. The command below is historical reproduction
-documentation, not permission for another run. No Safari session is authorized.
+That label/authorization is spent. The loopback command below is historical
+reproduction documentation, not permission for another run. A separate
+[Safari preparation / READY–START protocol](../../docs/experiments/browser-bolt-safari-preparation.md)
+is now authorized conditionally: listener remains OFF until the owner says START.
 
 This opt-in test host connects the accepted Stage C DTO boundary to the portrait
 battlefield. It uses the original Forge JVM, controller, targeting, manual
@@ -72,7 +74,7 @@ admitted. A receipt means controller dispatch, not successful spell resolution.
 Forge's original oracle must confirm the target, one red mana from the tapped
 Mountain, stack, opposing life 20→17 and Bolt in the human graveyard.
 
-The terminal frame has no actionable prompt and remains visible for up to two
+The terminal frame has no actionable prompt and remains visible for up to five
 minutes. **Finish test inspection** is a harness acknowledgement, not gameplay.
 The host closes before the unchanged PR #23 success-only cleanup concession.
 That concession is never counted as a browser decision or damage evidence.
@@ -80,8 +82,9 @@ That concession is never counted as a browser decision or damage evidence.
 **Abort test**, expiry or a recorded failure supplies no gameplay answer,
 concession or latch release. The owner continues observing failures while the
 human thinks; no EDT wait is extended to a human-sized timeout. The interaction
-budget is ten minutes, terminal inspection two minutes, TestNG fifteen minutes
-and launcher twenty minutes. These are operational budgets, not unconditional
+budget is 25 minutes, terminal inspection five minutes, manual TestNG 35 minutes
+and listener-mode launcher 40 minutes (listener-free verification remains 20).
+These are operational budgets, not unconditional
 OS/native-I/O deadlines. Request body reads and platform process operations
 can block; this disposable private host is not hardened against slow clients.
 
