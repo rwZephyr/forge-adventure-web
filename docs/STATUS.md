@@ -2,6 +2,19 @@
 
 Last updated: 2026-10-18
 
+## Failure-cleanup correction awaiting code review
+- [Test-only policy](experiments/failure-cleanup-policy.md) removes the mutating
+  failure `finally`, preserves the actual owner Throwable and gates clean
+  termination on all success assertions plus the existing settled checkpoint.
+  Atomic abort/termination arbitration revokes queued cleanup on prior failure;
+  preference restoration cannot replace an unwinding primary.
+- **Uncompiled and untested by instruction.** PR #22's original failure, three
+  successful DTO runs and regressions are preserved unchanged. Existing runner
+  exit behavior was inspected without executing tests; no external watchdog is
+  added or claimed. Next: Marvin's review before any separately approved run.
+- Only the existing embedded test and documentation change. No production,
+  observer, launcher, dependency, browser, service or network changes or merges.
+
 ## Stage C DTO proof submitted with a cleanup blocker
 - [Implementation and evidence](experiments/stage-c-dto-results.md): coherent
   fixture checkpoint gate passed, followed by 3/3 fresh final-source DTO Bolt

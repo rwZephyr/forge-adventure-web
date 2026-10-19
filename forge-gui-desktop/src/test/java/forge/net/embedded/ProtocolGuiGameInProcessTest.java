@@ -319,7 +319,14 @@ public class ProtocolGuiGameInProcessTest {
         volatile boolean failurePositionUntouched;
         volatile boolean receivedFailureByOwner;
         final BlockingQueue<Prompt> prompts = new LinkedBlockingQueue<>();
-        final java.util.concurrent.atomic.AtomicReference<FailureArtifact> failure = new java.util.concurrent.atomic.AtomicReference<>();
+        // Test-policy arbitration only; never a lock claiming ownership of Forge's graph.
+        private record CleanupState(boolean committed, Throwable cause, FailureArtifact artifact) { }
+        final java.util.concurrent.atomic.AtomicReference<CleanupState> cleanupState =
+                new java.util.concurrent.atomic.AtomicReference<>(new CleanupState(false, null, null));
+        // The artifact and cleanup veto are published together, before any failure diagnostic.
+        final java.util.function.Supplier<FailureArtifact> failure = () -> cleanupState.get().artifact();
+        final java.util.concurrent.ConcurrentLinkedQueue<Throwable> secondaryFailures = new java.util.concurrent.ConcurrentLinkedQueue<>();
+        volatile String lastObservedInput = "not-observed";
         final HostedMatch match = new HostedMatch();
         final RegisteredPlayer humanRegistration;
         final RegisteredPlayer aiRegistration;
@@ -359,18 +366,43 @@ public class ProtocolGuiGameInProcessTest {
         String inputId() { Object i = input(); return i == null ? "none" : i.getClass().getSimpleName() + "@" + System.identityHashCode(i); }
         void trace(String site, String detail) {
             Thread t = Thread.currentThread();
+            String observedInput = cleanupState.get().cause() == null ? inputId() : lastObservedInput;
+            lastObservedInput = observedInput;
             System.out.printf("[bolt] ns=%d site=%s tid=%d thread=%s edt=%b input=%s %s%n",
-                    System.nanoTime() - started, mode + ":" + site, t.getId(), t.getName(), javax.swing.SwingUtilities.isEventDispatchThread(), inputId(), detail);
+                    System.nanoTime() - started, mode + ":" + site, t.getId(), t.getName(), javax.swing.SwingUtilities.isEventDispatchThread(), observedInput, detail);
+        }
+        void abort(Throwable cause) {
+            abort(cause, null);
+        }
+        void abort(Throwable cause, FailureArtifact artifact) {
+            // Never wait for EDT, a graph walk, or a controller call to finish before owner delivery.
+            while (true) {
+                var previous = cleanupState.get();
+                if (previous.cause() != null) {
+                    if (previous.cause() != cause) secondaryFailures.add(cause);
+                    return;
+                }
+                if (cleanupState.compareAndSet(previous, new CleanupState(previous.committed(), cause, artifact))) return;
+            }
         }
         IllegalStateException fail(String action, String reason, Throwable cause) {
             var error = new IllegalStateException(action + ": " + reason, cause);
             var t = Thread.currentThread();
-            var artifact = new FailureArtifact(action, inputId(), t.getId(), t.getName(), reason, error);
-            if (failure.compareAndSet(null, artifact)) trace("ATOMIC-FAILURE", artifact.toString());
+            // Publish before diagnostics. Failure reporting must not traverse an unsettled graph.
+            var artifact = new FailureArtifact(action, lastObservedInput, t.getId(), t.getName(), reason, error);
+            abort(error, artifact);
+            try { System.out.println("[bolt] " + mode + (failure.get() == artifact ? ":ATOMIC-FAILURE" : ":SECONDARY-FAILURE") + " cachedInput=true " + artifact); }
+            catch (Throwable diagnostic) { error.addSuppressed(diagnostic); }
             return error;
         }
         void require(boolean condition, String message) { if (!condition) throw fail("assertion", message, null); }
-        void checkFailure() { var f = failure.get(); if (f != null) throw new AssertionError("Owner received atomic failure: " + f, f.error()); }
+        void checkFailure() {
+            var state = cleanupState.get();
+            var f = state.artifact();
+            if (f != null) throw new AssertionError("Owner received atomic failure: " + f, f.error());
+            var cause = state.cause();
+            if (cause != null) throw new AssertionError("Fixture aborted without an atomic assertion artifact", cause);
+        }
         void sent(GuiGameEvent event) {
             require(!gui.isPaused(), "GUI never paused");
             if (event.getMethod() == ProtocolMethod.showPromptMessage || event.getMethod() == ProtocolMethod.updateButtons) {
@@ -385,6 +417,7 @@ public class ProtocolGuiGameInProcessTest {
             }
         }
         Object answer(GuiGameEvent event) {
+            checkFailure();
             long caller = Thread.currentThread().getId();
             if ((mode == BoltMode.UNANSWERED || mode == BoltMode.DTO_UNANSWERED) && event.getMethod() == ProtocolMethod.getAbilityToPlay) {
                 failurePositionUntouched = match.getGame().getStack().isEmpty() && ai.getLife() == 20
@@ -630,6 +663,7 @@ public class ProtocolGuiGameInProcessTest {
             } catch (Throwable t) { fail("end-game", t.toString(), t); }
         }
         void act(Prompt prompt) throws Exception {
+            checkFailure();
             Object current = input();
             if (current != prompt.input()) { trace("discard-obsolete-button-event", ""); return; }
             require(javax.swing.SwingUtilities.isEventDispatchThread(), "controller action on EDT");
@@ -652,7 +686,7 @@ public class ProtocolGuiGameInProcessTest {
             } else if (ready && current instanceof forge.gamemodes.match.input.InputPassPriority) {
                 require(Thread.currentThread().getId() != loopThreadId, "EDT differs from waiting game loop");
                 if (humanCase()) observePriority(); else observeAiPriority();
-                if (resolved) c.concede();
+                if (resolved) return; // Only finishCleanly may concede, after owner-side success assertions.
                 else if (humanCase() && !castRequested) { castRequested = true; c.selectCard(bolt.getView(), null, null); }
                 else { require(Boolean.TRUE.equals(b[3]), "priority OK enabled"); c.selectButtonOk(); }
             } else if (ready && current instanceof forge.gamemodes.match.input.InputSelectTargets) {
@@ -670,11 +704,11 @@ public class ProtocolGuiGameInProcessTest {
             } else throw fail("required-input", "unsupported input/buttons " + inputId() + " " + b[1] + "/" + b[2], null);
         }
         void run() throws Exception {
-            match.setStartGameHook(this::setup);
-            match.setEndGameHook(this::ended);
-            match.startMatch(GameType.Constructed, null, List.of(humanRegistration, aiRegistration), humanRegistration, gui);
-            long deadline = System.nanoTime() + TimeUnit.SECONDS.toNanos(120);
             try {
+                match.setStartGameHook(this::setup);
+                match.setEndGameHook(this::ended);
+                match.startMatch(GameType.Constructed, null, List.of(humanRegistration, aiRegistration), humanRegistration, gui);
+                long deadline = System.nanoTime() + TimeUnit.SECONDS.toNanos(120);
                 while (!resolved && System.nanoTime() < deadline) {
                     checkFailure();
                     Prompt prompt = prompts.poll(100, TimeUnit.MILLISECONDS);
@@ -685,7 +719,7 @@ public class ProtocolGuiGameInProcessTest {
                     }
                     var done = new java.util.concurrent.CountDownLatch(1);
                     FThreads.invokeInEdtLater(() -> {
-                        try { act(prompt); } catch (Throwable t) { fail("EDT-action", t.toString(), t); }
+                        try { act(prompt); } catch (Throwable t) { abort(t); }
                         finally { done.countDown(); }
                     });
                     while (!done.await(100, TimeUnit.MILLISECONDS)) { checkFailure(); require(System.nanoTime() < deadline, "action deadline"); }
@@ -696,14 +730,82 @@ public class ProtocolGuiGameInProcessTest {
                 if (port != null) port.completed();
                 if (humanCase()) require(abilityReplies == 2 && manaReplies == 1, "human Bolt exact original ability replies");
                 else require(abilityReplies == 0 && manaReplies == 0 && (mode == BoltMode.EMPTY || naturalOutcome), "AI scenario without scripted spell/payment decision");
-            } finally {
-                if (match.getGame() != null && !match.getGame().isGameOver()) {
-                    FThreads.invokeInEdtLater(() -> { trace("cleanup-concede", "failurePreserved=" + (failure.get() != null)); controller().concede(); });
+                finishCleanly();
+                checkFailure();
+            } catch (Exception | Error primary) {
+                // Keep the actual unwinding Throwable, even if another thread won the artifact CAS.
+                // No graph reads, trace(), replies, input release, queued cleanup or game-over wait.
+                abort(primary);
+                Throwable recorded = cleanupState.get().cause();
+                if (recorded != primary && recorded != primary.getCause()) primary.addSuppressed(recorded);
+                for (Throwable secondary : secondaryFailures) {
+                    if (secondary != primary && secondary != primary.getCause()
+                            && secondary.getCause() != primary) primary.addSuppressed(secondary);
                 }
-                long cleanup = System.nanoTime() + TimeUnit.SECONDS.toNanos(10);
-                while (match.getGame() != null && !match.getGame().isGameOver() && System.nanoTime() < cleanup) Thread.sleep(50);
-                require(match.getGame() == null || match.getGame().isGameOver(), "bounded game cleanup");
+                throw primary;
             }
+        }
+        void finishCleanly() throws Exception {
+            checkFailure();
+            var finish = new java.util.concurrent.FutureTask<Void>(() -> {
+                try {
+                    // Revoke a queued success action if failure was published before execution.
+                    checkFailure();
+                    require(resolved, "cleanup only after completed scenario and owner assertions");
+                    if (!match.getGame().isGameOver()) {
+                        Object expected = input();
+                        require(expected instanceof forge.gamemodes.match.input.InputPassPriority, "clean terminal priority input");
+                        captureCheckpoint(expected); // Original latch, idle workers and repeat graph checks; no weaker cleanup predicate.
+                        checkFailure();
+                        var terminalController = controller();
+                        require(terminalController != null, "original terminal controller available");
+                        trace("cleanup-concede", "success-only settled checkpoint");
+                        var permit = cleanupState.get();
+                        if (permit.cause() != null) { checkFailure(); }
+                        require(!permit.committed(), "one clean termination attempt");
+                        // Linearize admission against abort(), including failure after this action was queued.
+                        if (!cleanupState.compareAndSet(permit, new CleanupState(true, null, null))) {
+                            checkFailure();
+                            throw fail("cleanup", "termination permit changed", null);
+                        }
+                        terminalController.concede();
+                    }
+                    return null;
+                } catch (Exception | Error primary) { abort(primary); throw primary; }
+            });
+            FThreads.invokeInEdtLater(finish);
+            long finishDeadline = System.nanoTime() + TimeUnit.SECONDS.toNanos(10);
+            while (!finish.isDone()) {
+                checkFailure();
+                // Publish cancellation before throwing: no interruptible wait may start unwinding
+                // while an unrevoked success-only action is still queued on EDT.
+                if (Thread.currentThread().isInterrupted()) {
+                    var interrupted = new InterruptedException("Interrupted awaiting clean termination");
+                    abort(interrupted);
+                    throw interrupted;
+                }
+                if (System.nanoTime() >= finishDeadline) {
+                    var timeout = new java.util.concurrent.TimeoutException("Clean termination EDT deadline");
+                    abort(timeout);
+                    throw timeout;
+                }
+                java.util.concurrent.locks.LockSupport.parkNanos(TimeUnit.MILLISECONDS.toNanos(10));
+            }
+            try { finish.get(); } // Already completed: no unbounded waiter here.
+            catch (java.util.concurrent.ExecutionException wrapped) {
+                Throwable cause = wrapped.getCause();
+                if (cause instanceof Exception e) throw e;
+                if (cause instanceof Error e) throw e;
+                throw new AssertionError(cause);
+            }
+            long cleanup = System.nanoTime() + TimeUnit.SECONDS.toNanos(10);
+            while (System.nanoTime() < cleanup) {
+                checkFailure();
+                if (match.getGame().isGameOver()) return;
+                Thread.sleep(50);
+            }
+            checkFailure();
+            require(false, "bounded game cleanup");
         }
     }
 
@@ -773,6 +875,7 @@ public class ProtocolGuiGameInProcessTest {
                     forge.game.zone.ZoneType.Stack, forge.game.zone.ZoneType.Graveyard).contains(card.getZone());
         }
         Frame prepare(Prompt prompt) throws Exception {
+            s.checkFailure();
             if (s.input() != prompt.input() || s.manualMana && s.input() == s.paymentInput) return null;
             s.captureCheckpoint(prompt.input());
             if (s.input() instanceof forge.gamemodes.match.input.InputPassPriority) s.observePriority();
@@ -884,6 +987,7 @@ public class ProtocolGuiGameInProcessTest {
         }
         void dispatch(Action action, java.util.concurrent.CompletableFuture<Receipt> result) {
             try {
+                s.checkFailure();
                 s.require(javax.swing.SwingUtilities.isEventDispatchThread(), "same-runnable EDT recheck and dispatch");
                 var f = published.get(); var p = action.payload();
                 if (f == null || f.prompt() == null || f.revision() != p.revision() || !f.prompt().id().equals(p.prompt())) { result.complete(new Receipt("rejected", "staleDecision")); return; }
@@ -903,7 +1007,7 @@ public class ProtocolGuiGameInProcessTest {
                 }
                 result.complete(new Receipt("accepted", "controllerDispatched"));
             } catch (Throwable t) {
-                s.fail("dto-dispatch", "original dispatch failure", t); result.completeExceptionally(t);
+                s.abort(t); result.completeExceptionally(t);
             } finally { synchronized (this) { inFlight = false; } }
         }
         <T> T edt(java.util.concurrent.Callable<T> task) throws Exception {
@@ -1008,6 +1112,7 @@ public class ProtocolGuiGameInProcessTest {
         String replays = prefs.getPref(FPref.UI_RECORD_REPLAYS);
         String playerName = prefs.getPref(FPref.PLAYER_NAME);
         Random previousRandom = MyRandom.getRandom();
+        Throwable primary = null;
         try {
             prefs.setPref(FPref.UI_SHOW_ACTIONABLE_HIGHLIGHTS, false);
             prefs.setPref(FPref.UI_RECORD_REPLAYS, false);
@@ -1033,11 +1138,27 @@ public class ProtocolGuiGameInProcessTest {
                 assertTrue(script.failure.get() == null && !script.gui.isPaused(), "zero unanswered failures or paused GUI");
             }
             assertTrue(Thread.getAllStackTraces().keySet().stream().noneMatch(t -> t.isAlive() && t.getName().equals("Game AI Eval")), "no evaluator survives scenario cleanup");
+        } catch (Exception | Error original) {
+            primary = original;
+            throw original;
         } finally {
-            prefs.setPref(FPref.UI_SHOW_ACTIONABLE_HIGHLIGHTS, highlights);
-            prefs.setPref(FPref.UI_RECORD_REPLAYS, replays);
-            prefs.setPref(FPref.PLAYER_NAME, playerName);
-            MyRandom.setRandom(previousRandom);
+            // Local configuration restoration only; attempt every item, never replace an unwinding failure.
+            Throwable restoration = primary;
+            for (Runnable restore : List.<Runnable>of(
+                    () -> prefs.setPref(FPref.UI_SHOW_ACTIONABLE_HIGHLIGHTS, highlights),
+                    () -> prefs.setPref(FPref.UI_RECORD_REPLAYS, replays),
+                    () -> prefs.setPref(FPref.PLAYER_NAME, playerName),
+                    () -> MyRandom.setRandom(previousRandom))) {
+                try { restore.run(); }
+                catch (RuntimeException | Error secondary) {
+                    if (restoration == null) restoration = secondary;
+                    else if (restoration != secondary) restoration.addSuppressed(secondary);
+                }
+            }
+            if (primary == null) {
+                if (restoration instanceof RuntimeException e) throw e;
+                if (restoration instanceof Error e) throw e;
+            }
         }
     }
 
