@@ -2,6 +2,20 @@
 
 Last updated: 2026-10-18
 
+## Stage D1 portrait battlefield submitted for review
+- Stage C is accepted within its bounded scope by the owner. The new
+  [static battlefield](../experiments/battlefield-static/README.md) displays five
+  original allowlisted DTO snapshots, original skin textures, life/hand/land,
+  turn/phase, stack/target and contextual choices. It is explicitly disconnected;
+  taps preview typed payloads and never simulate an engine response.
+- [Actual local-file Chromium verification](experiments/portrait-battlefield-results.md):
+  five complete 390×844 portrait views, seven offered-choice payloads unchanged
+  after taps, keyboard checks, smaller/landscape overflow checks, real screenshots,
+  zero browser errors and no HTTP(S) page requests. No listener was necessary.
+- Actual iPhone Safari and JVM connectivity remain unverified. No Java, original
+  asset, dependency, service/network configuration or historical evidence changes.
+  Next: review D1, then stop; connection work needs a separate instruction.
+
 ## Failure-cleanup verification submitted for review
 - [Exactly two authorized offline Maven/Surefire runs](experiments/cleanup-verification-results.md)
   passed sequentially on reviewed source `ffd0ec1e`: capture cleanup 1 PASS/exit

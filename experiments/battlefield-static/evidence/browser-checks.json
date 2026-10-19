@@ -1,0 +1,226 @@
+{
+  "method": "Actual local Chromium, file URL, Playwright pipe; no HTTP server",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "deviceScaleFactor": 1,
+  "mobileEmulation": true,
+  "touchEmulation": true,
+  "actualIphoneSafariTested": false,
+  "errors": [],
+  "externalRequests": [],
+  "checks": [
+    {
+      "snapshot": "before-cast",
+      "revision": 3,
+      "offeredChoices": 2,
+      "payloadsMatchOffers": true,
+      "actionsDidNotAdvanceSnapshot": true,
+      "geometry": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "scrollY": 0,
+        "documentHeight": 844,
+        "actionsBottom": 832,
+        "targets": [
+          {
+            "text": "1. Before cast2. Choose a target3. Pay with Mountain4. Spell on the stack5. After resolution",
+            "width": 277.765625,
+            "height": 44
+          },
+          {
+            "text": "Lightning Bolt, Hand, untapped; Cast Lightning Bolt, preview only",
+            "width": 124,
+            "height": 140
+          },
+          {
+            "text": "Cast Lightning Bolt",
+            "width": 175,
+            "height": 46
+          },
+          {
+            "text": "Pass priority",
+            "width": 175,
+            "height": 46
+          }
+        ]
+      }
+    },
+    {
+      "snapshot": "target",
+      "revision": 4,
+      "offeredChoices": 2,
+      "payloadsMatchOffers": true,
+      "actionsDidNotAdvanceSnapshot": true,
+      "geometry": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "scrollY": 0,
+        "documentHeight": 844,
+        "actionsBottom": 832,
+        "targets": [
+          {
+            "text": "1. Before cast2. Choose a target3. Pay with Mountain4. Spell on the stack5. After resolution",
+            "width": 277.765625,
+            "height": 44
+          },
+          {
+            "text": "Target opponent · 20 life · preview only",
+            "width": 336,
+            "height": 52
+          },
+          {
+            "text": "Target you · 20 life · preview only",
+            "width": 336,
+            "height": 52
+          },
+          {
+            "text": "Target opponent",
+            "width": 175,
+            "height": 46
+          },
+          {
+            "text": "Target you",
+            "width": 175,
+            "height": 46
+          }
+        ]
+      }
+    },
+    {
+      "snapshot": "payment",
+      "revision": 5,
+      "offeredChoices": 1,
+      "payloadsMatchOffers": true,
+      "actionsDidNotAdvanceSnapshot": true,
+      "geometry": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "scrollY": 0,
+        "documentHeight": 844,
+        "actionsBottom": 832,
+        "targets": [
+          {
+            "text": "1. Before cast2. Choose a target3. Pay with Mountain4. Spell on the stack5. After resolution",
+            "width": 277.765625,
+            "height": 44
+          },
+          {
+            "text": "Mountain, Battlefield, untapped; Activate Mountain, preview only",
+            "width": 88,
+            "height": 116
+          },
+          {
+            "text": "Activate Mountain",
+            "width": 358,
+            "height": 46
+          }
+        ]
+      }
+    },
+    {
+      "snapshot": "stack",
+      "revision": 6,
+      "offeredChoices": 1,
+      "payloadsMatchOffers": true,
+      "actionsDidNotAdvanceSnapshot": true,
+      "geometry": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "scrollY": 0,
+        "documentHeight": 844,
+        "actionsBottom": 832,
+        "targets": [
+          {
+            "text": "1. Before cast2. Choose a target3. Pay with Mountain4. Spell on the stack5. After resolution",
+            "width": 277.765625,
+            "height": 44
+          },
+          {
+            "text": "Pass priority",
+            "width": 358,
+            "height": 46
+          }
+        ]
+      }
+    },
+    {
+      "snapshot": "resolved",
+      "revision": 7,
+      "offeredChoices": 1,
+      "payloadsMatchOffers": true,
+      "actionsDidNotAdvanceSnapshot": true,
+      "geometry": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "scrollY": 0,
+        "documentHeight": 844,
+        "actionsBottom": 832,
+        "targets": [
+          {
+            "text": "1. Before cast2. Choose a target3. Pay with Mountain4. Spell on the stack5. After resolution",
+            "width": 277.765625,
+            "height": 44
+          },
+          {
+            "text": "Pass priority",
+            "width": 358,
+            "height": 46
+          }
+        ]
+      }
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 720
+      },
+      "noHorizontalOverflow": true,
+      "verticalScrollingAllowed": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 667
+      },
+      "noHorizontalOverflow": true,
+      "verticalScrollingAllowed": true
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "noHorizontalOverflow": true,
+      "verticalScrollingAllowed": true
+    }
+  ],
+  "screenshots": [
+    "proposal-390x844.png",
+    "before-cast-390x844.png",
+    "target-390x844.png",
+    "payment-390x844.png",
+    "stack-390x844.png",
+    "resolved-390x844.png"
+  ],
+  "browserVersion": "155.0.8059.82",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+  "keyboardEnterAndEscape": true,
+  "typedChoicePreviewsVerified": 7,
+  "sourceHashes": {
+    "index.html": "66e9fb5ef3041f47cd39e74f02e7a3c2ce6b81727c287b66ad6da43dac080018",
+    "battlefield.css": "85771865d689285f03957bec39767a383a94886847c4d3c9f7228657556fe10f",
+    "battlefield.js": "4646d47949c9258e8f79c7cf6d01bb643fd025ba2520e137042572eee746abf0",
+    "fixtures.js": "383b1cb4393427ddeee07671049c1810249b906892a4aa89347a6dabf5841c0e",
+    "scripts/extract-fixtures.cjs": "1fb247d3bf6f0a282b09ee1144f738477bacd7b34683b980a93511b328c75b81",
+    "scripts/verify-browser.cjs": "23ce5cdf8ad794d783967c6e0f8c5f8a5aa483b242c01d03ca87f7fbcd12ec7d"
+  },
+  "passed": true,
+  "browserContextClosed": true
+}

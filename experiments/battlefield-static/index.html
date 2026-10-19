@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Forge · Portrait battlefield fixture</title>
+  <link rel="stylesheet" href="battlefield.css">
+  <script src="fixtures.js" defer></script>
+  <script src="battlefield.js" defer></script>
+</head>
+<body>
+  <main class="table">
+    <header class="masthead"><div><span class="eyebrow">FORGE ADVENTURE WEB</span><h1>Battlefield</h1></div><span class="study">D1 / PORTRAIT</span></header>
+    <p class="connection"><span aria-hidden="true">●</span> Static fixture · JVM not connected</p>
+    <div class="fixture-picker"><label for="snapshot">View snapshot</label><select id="snapshot"></select></div>
+    <p class="fixture-note">Choose a recorded view. Actions only preview a payload.</p>
+    <section id="board" class="board" aria-label="Recorded battlefield">
+      <div id="opponent"></div>
+      <section class="opponent-field" aria-label="Opponent battlefield"><span class="zone-label">OPPONENT BATTLEFIELD</span><div id="opponent-cards"></div></section>
+      <section class="stack-zone" aria-label="Stack and spell being cast"><div class="turn-bar"><span id="phase"></span><span id="revision"></span></div><div id="stack"></div></section>
+      <section class="player-field" aria-label="Your battlefield"><span class="zone-label">YOUR BATTLEFIELD</span><div id="lands"></div></section>
+      <div id="player"></div>
+      <section class="hand-zone" aria-label="Your visible hand"><div class="zone-heading"><span class="zone-label" id="hand-title">YOUR HAND</span><span id="graveyard"></span></div><div id="hand"></div></section>
+    </section>
+    <section class="decision-zone" aria-labelledby="decision-title"><div class="decision-heading"><h2 id="decision-title"></h2><span class="preview-label">PREVIEW ONLY</span></div><div id="choices"></div></section>
+    <noscript>This static battlefield requires JavaScript to display its recorded snapshots. It is not connected to Forge.</noscript>
+  </main>
+  <dialog id="proposal" aria-labelledby="proposal-title" aria-describedby="proposal-note">
+    <span class="eyebrow">ACTION DRAFT</span><h2 id="proposal-title"></h2>
+    <p id="proposal-note">Not sent to Forge. No engine response. The snapshot has not changed.</p>
+    <pre id="payload" tabindex="0" aria-label="Proposed typed action payload"></pre>
+    <button id="close-proposal" type="button">Close preview</button>
+  </dialog>
+</body>
+</html>
