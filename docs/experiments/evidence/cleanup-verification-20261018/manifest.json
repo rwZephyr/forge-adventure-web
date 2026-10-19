@@ -4,7 +4,7 @@
   "basePr": 22,
   "updatedPr": 23,
   "runCount": 2,
-  "normalization": "UTF-8 without BOM and LF; trailing whitespace/terminal blank lines removed. Workspace/JDK paths use <WORKSPACE>/<JDK17>; XML hostname uses HOST-REDACTED; VM lambda suffixes normalized. Entire Surefire system-properties blocks omitted for privacy. No log event, test outcome, exception, time or process-exit result otherwise omitted. Private originals, raw cache inventories and passive process-observer script retained outside Git.",
+  "normalization": "UTF-8 without BOM and LF; trailing whitespace/terminal blank lines removed. Workspace/JDK paths use <WORKSPACE>/<JDK17>; XML hostname uses HOST-REDACTED; VM lambda suffixes normalized. Entire Surefire system-properties blocks omitted for privacy. No log event, test outcome, exception, time or process-exit result otherwise omitted. Private originals, raw cache inventories and passive process-observer script retained outside Git. Empty files remain zero bytes.",
   "transforms": {
     "cleanup-success-new/console.log": {
       "originalSha256": "8d9e87005746031a94213fab0344fc7f7befa338944fc3d5ebb44646fb5e821e",
@@ -73,8 +73,8 @@
     "cleanup-success-new/launcher-stderr.log": {
       "originalSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "originalBytes": 0,
-      "publishedSha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
-      "publishedBytes": 1,
+      "publishedSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "publishedBytes": 0,
       "surefireSystemPropertiesOmitted": false,
       "hostnamePlaceholderApplied": false
     },
@@ -145,8 +145,8 @@
     "cleanup-unanswered-new/launcher-stderr.log": {
       "originalSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "originalBytes": 0,
-      "publishedSha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
-      "publishedBytes": 1,
+      "publishedSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "publishedBytes": 0,
       "surefireSystemPropertiesOmitted": false,
       "hostnamePlaceholderApplied": false
     },
@@ -195,8 +195,8 @@
     },
     {
       "path": "cleanup-success-new/launcher-stderr.log",
-      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
-      "bytes": 1
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
     },
     {
       "path": "cleanup-success-new/launcher-stdout.log",
@@ -240,8 +240,8 @@
     },
     {
       "path": "cleanup-unanswered-new/launcher-stderr.log",
-      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
-      "bytes": 1
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
     },
     {
       "path": "cleanup-unanswered-new/launcher-stdout.log",
