@@ -1,0 +1,90 @@
+/* SPDX-License-Identifier: GPL-3.0-or-later */
+* { box-sizing: border-box; }
+:root { color-scheme: dark; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #f3eee2; background: #101917; }
+body { margin: 0; }
+button, select { font: inherit; color: inherit; }
+button, select, summary { touch-action: manipulation; }
+button { cursor: pointer; }
+button:focus-visible, select:focus-visible, pre:focus-visible { outline: 3px solid #ffe1a0; outline-offset: 3px; }
+.table { max-width: 480px; min-height: 100vh; min-height: 100svh; margin: auto; padding: max(12px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) max(12px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left)); display: flex; flex-direction: column; }
+.masthead { display: flex; justify-content: space-between; align-items: center; }
+.eyebrow, .zone-label, .study, .preview-label { font-size: 10px; letter-spacing: .13em; font-weight: 650; color: #bdc8bf; }
+.eyebrow { color: #dfc28a; font-size: 9px; }
+.masthead .eyebrow { display: block; line-height: 1.1; }
+.zone-label { display: block; line-height: 1.2; }
+h1 { font: 24px/1.1 Georgia, serif; margin: 2px 0 0; letter-spacing: -.025em; }
+.study { font-size: 9px; align-self: flex-end; padding-bottom: 3px; }
+.connection { color: #f2d0a0; font-size: 12px; margin: 6px 0; }
+.connection span { color: #e2af67; font-size: 8px; padding-right: 4px; }
+.fixture-picker { display: flex; align-items: center; gap: 10px; }
+.fixture-picker label { font-size: 11px; color: #bdc8bf; }
+select { flex: 1; min-width: 0; min-height: 44px; background: #1c2a26; border: 1px solid #536057; border-radius: 8px; padding: 0 9px; font-size: 13px; }
+.fixture-note { font-size: 10px; color: #bcc7be; margin: 5px 0 8px; }
+.board { flex: 1; display: flex; flex-direction: column; border: 1px solid #4a5749; border-radius: 13px; padding: 10px; background: linear-gradient(#111c18e8, #11231dce 43%, #101e1bec), url('../../forge-gui/res/skins/default/adv_bg_match.jpg') center / cover; box-shadow: 0 12px 36px #0004; }
+.seat { width: 100%; display: flex; align-items: center; gap: 10px; min-height: 52px; padding: 7px 10px; border: 1px solid #596459; border-radius: 9px; background: #15221f; text-align: left; }
+.sigil { display: grid; place-items: center; width: 32px; height: 32px; border: 1px solid #a09475; border-radius: 50%; font: 17px Georgia, serif; color: #e8d7b1; background: #3c352a; }
+.sigil.self { background: #27453c; border-color: #7f9a82; color: #daf0d9; }
+.seat-name { font-size: 14px; font-weight: 600; flex: 1; }
+.seat-name small { display: block; font-size: 8px; letter-spacing: .09em; color: #bbc5bb; margin-top: 4px; }
+.life { font: 29px/1 Georgia, serif; }
+.life-label { font-size: 8px; letter-spacing: .06em; color: #c0c7bb; }
+.selectable { border: 2px dashed #d6b572; }
+.selected-target { border-color: #efc679; box-shadow: inset 0 0 0 1px #efc679; }
+.selected-target small { color: #f4d294; }
+.opponent-field { padding: 8px 4px 6px; min-height: 54px; }
+.empty-field { margin: 6px 0 0; font-size: 11px; color: #bdc7be; }
+.turn-bar { display: flex; align-items: center; justify-content: space-between; gap: 8px; font-size: 11px; border-top: 1px solid #71816b6b; padding-top: 7px; margin-bottom: 6px; }
+#phase { color: #e4d4ac; }
+#revision { font-size: 9px; color: #bdc7be; }
+.stack-zone { padding: 0 4px 8px; border-bottom: 1px solid #71816b6b; }
+.stack-heading { display: flex; align-items: center; gap: 6px; }
+.stack-count { font-size: 10px; color: #e0dac6; }
+.empty-stack { font-size: 11px; color: #c2cbbf; margin: 5px 0 0; line-height: 1.5; }
+.spell-line { margin: 6px 0 0; font: 15px Georgia, serif; color: #ffe0ae; }
+.spell-target { font: 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin-left: 10px; color: #f4d294; }
+.target-note, .payment-note { font-size: 11px; margin: 7px 0 0; color: #f2d6a7; }
+.payment-note { display: flex; align-items: center; gap: 7px; }
+.red-mana { display: inline-block; width: 20px; height: 20px; background: url('../../forge-gui/res/skins/default/sprite_manaicons.png') -82.5px -.5px / 123.5px 246px; flex-shrink: 0; }
+.player-field { padding: 9px 4px 7px; flex: 1; }
+#lands { display: flex; align-items: center; min-height: 138px; }
+.land-well { width: 156px; height: 138px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 5px; }
+.tap-label { font-size: 10px; color: #e3dfcc; }
+.card { display: block; position: relative; flex-shrink: 0; padding: 0; border: 0; border-radius: 7px; background: none; text-align: left; color: #251e14; }
+.card-face { display: flex; flex-direction: column; width: 100%; height: 100%; padding: 5px; border: 3px solid #151712; border-radius: 7px; background-size: cover; box-shadow: 0 5px 12px #0009; }
+.land-face { background-image: url('../../forge-gui/res/skins/default/IMG_CARDBG_L.png'); }
+.bolt-face { background-image: url('../../forge-gui/res/skins/default/IMG_CARDBG_R.png'); }
+.card-title { padding: 4px 3px; font: bold 12px/1.1 Georgia, serif; background: #eee2c6; border: 1px solid #403e31; border-radius: 4px; white-space: nowrap; }
+.card-art { margin-top: 4px; display: grid; place-items: center; flex: 1; min-height: 0; border: 1px solid #292d22; background: linear-gradient(145deg, #495449e8, #1e2823ef); }
+.bolt-face .card-art { background: linear-gradient(145deg, #713a28ec, #391d17f0); }
+.card-art svg { display: block; width: 65%; height: 85%; fill: #d7c49a; filter: drop-shadow(0 2px 3px #0005); }
+.bolt-face .card-art svg { fill: #ffd398; }
+.card-art .snow { fill: #f0e6cc; }
+.card-zone { display: block; padding: 5px 2px 2px; color: #fbf0da; font-size: 8px; font-weight: 650; letter-spacing: .055em; text-shadow: 0 1px 3px #000; }
+.land-card { width: 88px; height: 116px; }
+.land-card[data-tapped='true'] { transform: rotate(90deg); margin-bottom: 15px; }
+.land-card[data-tapped='true'] + .tap-label { margin-top: -15px; }
+.hand-card { width: 124px; height: 140px; }
+.offered-card { outline: 2px solid #e7be76; outline-offset: 2px; }
+.hand-zone { padding: 11px 4px 4px; }
+.zone-heading { display: flex; align-items: center; justify-content: space-between; gap: 6px; }
+#graveyard { font-size: 9px; color: #d6c8a9; }
+#hand { display: flex; justify-content: center; align-items: center; gap: 10px; min-height: 149px; padding-top: 9px; }
+#hand.empty { min-height: 60px; }
+.empty-hand { font-size: 12px; color: #bac8bc; margin: 12px 0; }
+.decision-zone { padding-top: 8px; }
+.decision-heading { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 6px; }
+h2 { margin: 0; font-size: 13px; font-weight: 550; }
+.preview-label { font-size: 8px; color: #e3c594; }
+#choices { display: flex; gap: 8px; }
+#choices button { flex: 1; min-width: 0; min-height: 46px; border-radius: 8px; padding: 8px; font-size: 12px; line-height: 1.3; font-weight: 650; }
+.primary-choice { background: #e5c083; border: 1px solid #f6d9a9; color: #25261c; }
+.secondary-choice { background: #20372e; border: 1px solid #8a9b7f; color: #f1ecd9; }
+button:active { filter: brightness(.9); }
+dialog { width: min(358px, calc(100% - 32px)); max-height: calc(100svh - 48px); padding: 20px; background: #16251f; border: 1px solid #a18f69; border-radius: 13px; color: #f3eee2; box-shadow: 0 20px 80px #000b; }
+dialog::backdrop { background: #07110de0; }
+dialog h2 { font: 21px Georgia, serif; margin-top: 10px; }
+dialog p { font-size: 13px; line-height: 1.55; color: #d5d9ca; }
+pre { max-height: 45svh; overflow: auto; padding: 12px; background: #0c1712; border: 1px solid #4d624c; border-radius: 7px; white-space: pre-wrap; overflow-wrap: anywhere; font-size: 11px; line-height: 1.6; color: #f0d5a1; }
+#close-proposal { min-height: 46px; width: 100%; background: #e5c083; color: #25261c; border: 1px solid #f6d9a9; border-radius: 7px; font-size: 14px; font-weight: 600; }
+@media (min-height: 900px) { #lands { min-height: 175px; } .land-well { height: 168px; } .opponent-field { min-height: 85px; } }
+@media (max-width: 350px) { .table { padding-left: 10px; padding-right: 10px; } .fixture-note { font-size: 9px; } .study { display: none; } }

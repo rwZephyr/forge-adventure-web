@@ -1,0 +1,40 @@
+{
+  "policy": "Reference existing original Forge skin files in place; no copied, edited or downloaded image files. Preserve upstream licensing/attribution.",
+  "baseCommit": "f23a1a5b66b2b2a692be9082511eb4b4d3a6433f",
+  "assets": [
+    {
+      "path": "forge-gui/res/skins/default/adv_bg_match.jpg",
+      "sha256": "2773dc5d0993f0dd23d938b3db422156d835e120d23c17756a71dd805745c766",
+      "bytes": 140664,
+      "usage": "Battlefield backdrop"
+    },
+    {
+      "path": "forge-gui/res/skins/default/IMG_CARDBG_L.png",
+      "sha256": "c7c28c08370b2c0023a7587d1a9f10708da7c5e5e0e6e3ef50b9dcb9e293f089",
+      "bytes": 96677,
+      "usage": "Decorative Mountain face texture"
+    },
+    {
+      "path": "forge-gui/res/skins/default/IMG_CARDBG_R.png",
+      "sha256": "2c8349d493ff272736b024a5849e5356051b75a062343212774e7bb06fde3a1b",
+      "bytes": 97300,
+      "usage": "Decorative Lightning Bolt face texture; no rule text"
+    },
+    {
+      "path": "forge-gui/res/skins/default/sprite_manaicons.png",
+      "sha256": "8ace2d17bac055fd99c8cb249615b4b63d824ae089cb886a6ad3230cfc846b10",
+      "bytes": 203902,
+      "usage": "Original red mana symbol; CSS crop only"
+    }
+  ],
+  "redManaCrop": {
+    "source": "forge-gui/src/main/java/forge/localinstance/skin/FSkinProp.java",
+    "property": "IMG_MANA_R",
+    "x": 330,
+    "y": 2,
+    "width": 80,
+    "height": 80,
+    "sheetWidth": 494,
+    "sheetHeight": 984
+  }
+}
