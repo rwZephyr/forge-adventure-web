@@ -137,6 +137,11 @@ artifacts, HTML report assets, temporary profiles or original environment values
 committed. [Manifest](evidence/c1-identity-20261018/manifest.json) identifies the
 sanitized files and original hashes; originals/inventory snapshots stay local.
 
+Publication correction: the TestNG JUnit XML `hostname` attribute now uses
+`HOST-REDACTED`. Its manifest hash, byte count and normalization record were
+updated; the private original and original SHA-256 are preserved. This correction
+does not change `environmentRestored:false` or its unresolved limitation above.
+
 ## Exact reproduction (not a second-run authorization)
 
 Use the existing compiled PR #19 test/runtime and local-cache classpath produced

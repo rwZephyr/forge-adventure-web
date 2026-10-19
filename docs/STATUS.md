@@ -3,6 +3,9 @@
 Last updated: 2026-10-18
 
 ## C1 observation submitted for review
+- Publication correction: the public TestNG JUnit XML hostname is now
+  `HOST-REDACTED`, with updated manifest hash/size/normalization. Private original
+  preserved; `environmentRestored:false` unchanged. No test or observer changes.
 - [One passive identity run](experiments/c1-identity-results.md) extends only
   JdiWitness with opt-in `--c1`. Unchanged human Bolt TestNG case: 1 pass, observer
   and child exit 0. Initial and Game-0 Bolt questions use the same actual view

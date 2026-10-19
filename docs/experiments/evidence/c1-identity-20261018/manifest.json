@@ -32,9 +32,9 @@
       "bytes": 114577
     },
     {
-      "sha256": "7d333c1697be09ff0a63d099eea170e3b5fb1d9fa015ce3bb7f0d0576b647879",
+      "sha256": "9ab74d0d8b42d8628b0a68e4b50593bddf45ca9df6cb5b178de3e49af9743581",
       "path": "reports/TEST-forge.net.embedded.ProtocolGuiGameInProcessTest.xml",
-      "bytes": 507
+      "bytes": 505
     },
     {
       "sha256": "bca6575cd4ad1aa2c322c3fb02e6d5d345178d4cdea1b63f5ae6aabb5c9d95e2",
@@ -54,8 +54,9 @@
     },
     "reports/TEST-forge.net.embedded.ProtocolGuiGameInProcessTest.xml": {
       "originalSha256": "d6fb9b64eb0c7dd64eabd9fe72492c792774da0e91515ae1bc7d1612e76da99f",
-      "publishedSha256": "7d333c1697be09ff0a63d099eea170e3b5fb1d9fa015ce3bb7f0d0576b647879",
-      "bytes": 507
+      "publishedSha256": "9ab74d0d8b42d8628b0a68e4b50593bddf45ca9df6cb5b178de3e49af9743581",
+      "bytes": 505,
+      "hostnameNormalization": "The hostname attribute is replaced with HOST-REDACTED; original report preserved privately with originalSha256 unchanged."
     },
     "reports/testng-results.xml": {
       "originalSha256": "1facada295dbdc6c7153d5d6f47f214361fc3964bc85c3702a63a02170bce5b0",
@@ -84,5 +85,5 @@
     }
   },
   "date": "2026-10-18",
-  "normalization": "UTF-8/LF; trailing horizontal whitespace and terminal blank lines removed. Workspace/JDK absolute paths substituted; VM-generated /0x lambda address suffixes normalized. JDI object IDs and all event rows/counts retained. No generated HTML/assets, profiles, binaries or classpath/system-property exports included."
+  "normalization": "UTF-8/LF; trailing horizontal whitespace and terminal blank lines removed. Workspace/JDK absolute paths substituted; VM-generated /0x lambda address suffixes normalized. JDI object IDs and all event rows/counts retained. No generated HTML/assets, profiles, binaries or classpath/system-property exports included. The TestNG JUnit XML hostname attribute is replaced with HOST-REDACTED; the original report is preserved privately."
 }
