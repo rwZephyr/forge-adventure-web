@@ -88,3 +88,10 @@ pre { max-height: 45svh; overflow: auto; padding: 12px; background: #0c1712; bor
 #close-proposal { min-height: 46px; width: 100%; background: #e5c083; color: #25261c; border: 1px solid #f6d9a9; border-radius: 7px; font-size: 14px; font-weight: 600; }
 @media (min-height: 900px) { #lands { min-height: 175px; } .land-well { height: 168px; } .opponent-field { min-height: 85px; } }
 @media (max-width: 350px) { .table { padding-left: 10px; padding-right: 10px; } .fixture-note { font-size: 9px; } .study { display: none; } }
+/* Connected fixture controls; absent from the unchanged static demonstration. */
+body[data-live="true"] #access { display: grid; gap: .7rem; padding: 1rem; }
+body[data-live="true"] #access[hidden] { display: none; }
+body[data-live="true"] input, body[data-live="true"] .manual-controls button,
+body[data-live="true"] #connect { min-height: 44px; font: inherit; }
+body[data-live="true"] .manual-controls { padding: 1rem; }
+body[data-live="true"] .manual-controls p { color: #b6bac5; }

@@ -1,0 +1,444 @@
+{
+  "base": "55164bf309e1a0e38997c206762dc3a1c2635d81",
+  "normalization": "UTF-8/LF; trim trailing whitespace and terminal blank lines; omit complete Surefire system-properties blocks; replace workspace/JDK/user paths and XML hostname with documented placeholders; normalize VM lambda suffixes. Original files remain private. Identical before/after inventories share one published inventory. No test output or assertion removed outside system-property blocks.",
+  "files": [
+    {
+      "path": "inventory.json",
+      "sha256": "83d86d6a3e0d7b2dbf461d0f42a242d3627ac51669749bae40bee162707fc9ba",
+      "bytes": 670738,
+      "sources": [
+        {
+          "path": ".local-tools/browser-bolt/policy-1/integrity-before.json",
+          "sha256": "447bde2ec30b73e70c2aadf539fa55a73108428b7453e910c45809ffec39aba4",
+          "bytes": 675223
+        },
+        {
+          "path": ".local-tools/browser-bolt/policy-1/integrity-after.json",
+          "sha256": "447bde2ec30b73e70c2aadf539fa55a73108428b7453e910c45809ffec39aba4",
+          "bytes": 675223
+        },
+        {
+          "path": ".local-tools/browser-bolt/dto-1/integrity-before.json",
+          "sha256": "447bde2ec30b73e70c2aadf539fa55a73108428b7453e910c45809ffec39aba4",
+          "bytes": 675223
+        },
+        {
+          "path": ".local-tools/browser-bolt/dto-1/integrity-after.json",
+          "sha256": "447bde2ec30b73e70c2aadf539fa55a73108428b7453e910c45809ffec39aba4",
+          "bytes": 675223
+        },
+        {
+          "path": ".local-tools/browser-bolt/unanswered-1/integrity-before.json",
+          "sha256": "447bde2ec30b73e70c2aadf539fa55a73108428b7453e910c45809ffec39aba4",
+          "bytes": 675223
+        },
+        {
+          "path": ".local-tools/browser-bolt/unanswered-1/integrity-after.json",
+          "sha256": "447bde2ec30b73e70c2aadf539fa55a73108428b7453e910c45809ffec39aba4",
+          "bytes": 675223
+        },
+        {
+          "path": ".local-tools/browser-bolt/regressions-1/integrity-before.json",
+          "sha256": "447bde2ec30b73e70c2aadf539fa55a73108428b7453e910c45809ffec39aba4",
+          "bytes": 675223
+        },
+        {
+          "path": ".local-tools/browser-bolt/regressions-1/integrity-after.json",
+          "sha256": "447bde2ec30b73e70c2aadf539fa55a73108428b7453e910c45809ffec39aba4",
+          "bytes": 675223
+        }
+      ],
+      "systemPropertiesOmitted": false
+    },
+    {
+      "path": "policy-1/console.log",
+      "sha256": "b9850fa70243c6efa7eaf7512827db31679b7bdb19acb1112071fcac75417a30",
+      "bytes": 14490,
+      "sources": [
+        {
+          "path": ".local-tools/browser-bolt/policy-1/console.log",
+          "sha256": "c711ec29a81c15f9811a0fb0a888a3c50d6466073564e66ce544cff357c3c2dd",
+          "bytes": 16332
+        }
+      ],
+      "systemPropertiesOmitted": false
+    },
+    {
+      "path": "policy-1/driver.stdout.log",
+      "sha256": "b9850fa70243c6efa7eaf7512827db31679b7bdb19acb1112071fcac75417a30",
+      "bytes": 14490,
+      "sources": [
+        {
+          "path": ".local-tools/browser-bolt/policy-1/driver.stdout.log",
+          "sha256": "6a870e87049e3383e41b80824d1f0aeaa2cf3e6a3e223f2c2f070f310c5410ea",
+          "bytes": 16334
+        }
+      ],
+      "systemPropertiesOmitted": false
+    },
+    {
+      "path": "policy-1/driver.stderr.log",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "bytes": 1,
+      "sources": [
+        {
+          "path": ".local-tools/browser-bolt/policy-1/driver.stderr.log",
+          "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+          "bytes": 2
+        }
+      ],
+      "systemPropertiesOmitted": false
+    },
+    {
+      "path": "policy-1/result.json",
+      "sha256": "6e3cfe21c80758a233caf3ec3045ac4a5ed586b4d570d9126421e4b72426e3f7",
+      "bytes": 1070,
+      "sources": [
+        {
+          "path": ".local-tools/browser-bolt/policy-1/result.json",
+          "sha256": "32dc648015ed513f3609450c893b8f85413572ba310974e2aae03af9cec5031f",
+          "bytes": 1120
+        }
+      ],
+      "systemPropertiesOmitted": false
+    },
+    {
+      "path": "policy-1/reports/forge.net.embedded.ManualBrowserBoltHostTest.txt",
+      "sha256": "1e955389ef22fdd9c005972892d7cbc244ab8aef30aecf91db57336ab156954c",
+      "bytes": 339,
+      "sources": [
+        {
+          "path": ".local-tools/browser-bolt/policy-1/reports/forge.net.embedded.ManualBrowserBoltHostTest.txt",
+          "sha256": "0b88876d65e705b19b3f8fd482f0633b90fe6ff145f37fdc673b4c20a039e473",
+          "bytes": 343
+        }
+      ],
+      "systemPropertiesOmitted": false
+    },
+    {
+      "path": "policy-1/reports/TEST-forge.net.embedded.ManualBrowserBoltHostTest.xml",
+      "sha256": "135d29cb1a94665bce8bee44b83d821d4c823e5d38a4474537230dbe6a2dfe3c",
+      "bytes": 4591,
+      "sources": [
+        {
+          "path": ".local-tools/browser-bolt/policy-1/reports/TEST-forge.net.embedded.ManualBrowserBoltHostTest.xml",
+          "sha256": "bac3892cc2a3b98c4246234f0d487e159eff71be21bd368e8cadf92be8191dcd",
+          "bytes": 36705
+        }
+      ],
+      "systemPropertiesOmitted": true
+    },
+    {
+      "path": "policy-1/reports/testng-results.xml",
+      "sha256": "5f8762a9f8d953aa561a5b0933bbfb10d591c9fe8fa74942fc839c154cc80f8c",
+      "bytes": 10491,
+      "sources": [
+        {
+          "path": ".local-tools/browser-bolt/policy-1/reports/testng-results.xml",
+          "sha256": "d6ec652e82e775a00d953195a49cec8056ac5daf5c157aadbc3393c594ff4a11",
+          "bytes": 10638
+        }
+      ],
+      "systemPropertiesOmitted": false
+    },
+    {
+      "path": "dto-1/console.log",
+      "sha256": "6856343db8f21f108996602c7459aaf31a65e05edb05d7f44fc496497e58f809",
+      "bytes": 59970,
+      "sources": [
+        {
+          "path": ".local-tools/browser-bolt/dto-1/console.log",
+          "sha256": "53f4f02ada09574d6d67ed7a56c97997a69cff4f6f5d82b15ff4c29c38bd9ae0",
+          "bytes": 62089
+        }
+      ],
+      "systemPropertiesOmitted": false
+    },
+    {
+      "path": "dto-1/driver.stdout.log",
+      "sha256": "6856343db8f21f108996602c7459aaf31a65e05edb05d7f44fc496497e58f809",
+      "bytes": 59970,
+      "sources": [
+        {
+          "path": ".local-tools/browser-bolt/dto-1/driver.stdout.log",
+          "sha256": "4ca85f834bca4d76f12e4f5bc7e084ddd5d050fa07f66216ee018121cbd7fe85",
+          "bytes": 62091
+        }
+      ],
+      "systemPropertiesOmitted": false
+    },
+    {
+      "path": "dto-1/driver.stderr.log",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "bytes": 1,
+      "sources": [
+        {
+          "path": ".local-tools/browser-bolt/dto-1/driver.stderr.log",
+          "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+          "bytes": 2
+        }
+      ],
+      "systemPropertiesOmitted": false
+    },
+    {
+      "path": "dto-1/result.json",
+      "sha256": "2344bf986dd9c97648d77506706a8b4174f2c26eeaf360dbdb92a446b9c2fb2c",
+      "bytes": 1064,
+      "sources": [
+        {
+          "path": ".local-tools/browser-bolt/dto-1/result.json",
+          "sha256": "6a38f349919caf0161c9c3de90fdd5e27f2a37b224723af43e13a2694cc7cb2c",
+          "bytes": 1114
+        }
+      ],
+      "systemPropertiesOmitted": false
+    },
+    {
+      "path": "dto-1/reports/forge.net.embedded.ProtocolGuiGameInProcessTest.txt",
+      "sha256": "8fd223dd0cad12b8aef98be9bba23db3383b7216ddd39c723fd2f015ea32e1f9",
+      "bytes": 344,
+      "sources": [
+        {
+          "path": ".local-tools/browser-bolt/dto-1/reports/forge.net.embedded.ProtocolGuiGameInProcessTest.txt",
+          "sha256": "a6beafc710d597c27203e86e659aba0cd9aed54e1cbbc8ed3e7a9f25bc837d27",
+          "bytes": 348
+        }
+      ],
+      "systemPropertiesOmitted": false
+    },
+    {
+      "path": "dto-1/reports/TEST-forge.net.embedded.ProtocolGuiGameInProcessTest.xml",
+      "sha256": "ee531615b033154083b467119204a305bbfb0a08eaf3af70b74cd5f65b792e03",
+      "bytes": 46076,
+      "sources": [
+        {
+          "path": ".local-tools/browser-bolt/dto-1/reports/TEST-forge.net.embedded.ProtocolGuiGameInProcessTest.xml",
+          "sha256": "0234c9634ed29183cd89b0b08f945b2c5fb40c90f193ea46c3a8f3417ee24bab",
+          "bytes": 78637
+        }
+      ],
+      "systemPropertiesOmitted": true
+    },
+    {
+      "path": "dto-1/reports/testng-results.xml",
+      "sha256": "774396bbb1d6268d4477cd1eb0b4a44c5d7137d2f2bce83b3b74bbd1e62c95bb",
+      "bytes": 1062,
+      "sources": [
+        {
+          "path": ".local-tools/browser-bolt/dto-1/reports/testng-results.xml",
+          "sha256": "3e4f925b9e215179685948f0275b7ad9ed7ec1bb2edc08b2a18cd2c46eee0161",
+          "bytes": 1079
+        }
+      ],
+      "systemPropertiesOmitted": false
+    },
+    {
+      "path": "unanswered-1/console.log",
+      "sha256": "e304e6055c45ffed49c62310082b934a8510a66e38bbd7de6d7a0843a8c51c67",
+      "bytes": 37864,
+      "sources": [
+        {
+          "path": ".local-tools/browser-bolt/unanswered-1/console.log",
+          "sha256": "7fa76806ae4ab8ff3ef6bd9ea8dd27ff5863d5faee83d63afbfd2b940b22fc93",
+          "bytes": 39856
+        }
+      ],
+      "systemPropertiesOmitted": false
+    },
+    {
+      "path": "unanswered-1/driver.stdout.log",
+      "sha256": "e304e6055c45ffed49c62310082b934a8510a66e38bbd7de6d7a0843a8c51c67",
+      "bytes": 37864,
+      "sources": [
+        {
+          "path": ".local-tools/browser-bolt/unanswered-1/driver.stdout.log",
+          "sha256": "bf41b73f7c94362891e71b98df36c43f48b84e7b6780503e0e309d963ac022c0",
+          "bytes": 39858
+        }
+      ],
+      "systemPropertiesOmitted": false
+    },
+    {
+      "path": "unanswered-1/driver.stderr.log",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "bytes": 1,
+      "sources": [
+        {
+          "path": ".local-tools/browser-bolt/unanswered-1/driver.stderr.log",
+          "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+          "bytes": 2
+        }
+      ],
+      "systemPropertiesOmitted": false
+    },
+    {
+      "path": "unanswered-1/result.json",
+      "sha256": "574b0524945ea461b53b25ff3c27e1bb92ddbf22dfbd3ca79d2de9d2797a6d8e",
+      "bytes": 1079,
+      "sources": [
+        {
+          "path": ".local-tools/browser-bolt/unanswered-1/result.json",
+          "sha256": "f21a2ef5f14618913a0e48bfdac95378608c427acc1253075d72e37abda67222",
+          "bytes": 1129
+        }
+      ],
+      "systemPropertiesOmitted": false
+    },
+    {
+      "path": "unanswered-1/reports/forge.net.embedded.ProtocolGuiGameInProcessTest.txt",
+      "sha256": "57a7aa4ff6bb5fc5b7c2545d21d87fb0b1cdcb4c3e1bf26194924d9c64435e76",
+      "bytes": 344,
+      "sources": [
+        {
+          "path": ".local-tools/browser-bolt/unanswered-1/reports/forge.net.embedded.ProtocolGuiGameInProcessTest.txt",
+          "sha256": "b26e457adaf879ecff30191f9089d57d07155c75ea7bdba274583a97c82b3925",
+          "bytes": 348
+        }
+      ],
+      "systemPropertiesOmitted": false
+    },
+    {
+      "path": "unanswered-1/reports/TEST-forge.net.embedded.ProtocolGuiGameInProcessTest.xml",
+      "sha256": "53664d98c03c4555328c9f804f294a02fb3428abe63ae1bf98350fa7607bd304",
+      "bytes": 23951,
+      "sources": [
+        {
+          "path": ".local-tools/browser-bolt/unanswered-1/reports/TEST-forge.net.embedded.ProtocolGuiGameInProcessTest.xml",
+          "sha256": "e052176a4f91338d9c259a8765559de1d58019c1a8dc2b612592ad152d555807",
+          "bytes": 56426
+        }
+      ],
+      "systemPropertiesOmitted": true
+    },
+    {
+      "path": "unanswered-1/reports/testng-results.xml",
+      "sha256": "fa003fc1220a2f3fe7e0cba18c81fca1da6e405f211df499dd9f0a3c489aa72c",
+      "bytes": 1089,
+      "sources": [
+        {
+          "path": ".local-tools/browser-bolt/unanswered-1/reports/testng-results.xml",
+          "sha256": "accb525cef624a7820ad7ff00e11497dc004b50d1f6b570be01167e2736fb2bc",
+          "bytes": 1106
+        }
+      ],
+      "systemPropertiesOmitted": false
+    },
+    {
+      "path": "regressions-1/console.log",
+      "sha256": "d87307c57354885d902864d5cd6ff6c501fb46056d6b82ecacc94e31de8f501c",
+      "bytes": 68955,
+      "sources": [
+        {
+          "path": ".local-tools/browser-bolt/regressions-1/console.log",
+          "sha256": "3bcbcee579948c393d6e7660c20809d4122e8b95de490665f67edd9c993d2c41",
+          "bytes": 71216
+        }
+      ],
+      "systemPropertiesOmitted": false
+    },
+    {
+      "path": "regressions-1/driver.stdout.log",
+      "sha256": "d87307c57354885d902864d5cd6ff6c501fb46056d6b82ecacc94e31de8f501c",
+      "bytes": 68955,
+      "sources": [
+        {
+          "path": ".local-tools/browser-bolt/regressions-1/driver.stdout.log",
+          "sha256": "2d1f78e6979665dda6b20e3cc8f8c5bd992db2f534fed43e1705742f380e1ec1",
+          "bytes": 71218
+        }
+      ],
+      "systemPropertiesOmitted": false
+    },
+    {
+      "path": "regressions-1/driver.stderr.log",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "bytes": 1,
+      "sources": [
+        {
+          "path": ".local-tools/browser-bolt/regressions-1/driver.stderr.log",
+          "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+          "bytes": 2
+        }
+      ],
+      "systemPropertiesOmitted": false
+    },
+    {
+      "path": "regressions-1/result.json",
+      "sha256": "cb49974281e14dca7dbb6dbdc85a8fd207f524ff66c13d4c7b0b7c6822e9f3eb",
+      "bytes": 1080,
+      "sources": [
+        {
+          "path": ".local-tools/browser-bolt/regressions-1/result.json",
+          "sha256": "12e99166646c566562c16ba683b3d737b8fc35322de9734a9c3f045f61abde6f",
+          "bytes": 1130
+        }
+      ],
+      "systemPropertiesOmitted": false
+    },
+    {
+      "path": "regressions-1/reports/TEST-TestSuite.xml",
+      "sha256": "164273b4faa56372651143f8cef0aa21e1c217c4779bfb8953f7dbc1791df50f",
+      "bytes": 56068,
+      "sources": [
+        {
+          "path": ".local-tools/browser-bolt/regressions-1/reports/TEST-TestSuite.xml",
+          "sha256": "5f9ceeeb2fbf5fc6b1d42c35845b661dd70b233c9432af17387ab1bf6221bdb4",
+          "bytes": 89034
+        }
+      ],
+      "systemPropertiesOmitted": true
+    },
+    {
+      "path": "regressions-1/reports/testng-results.xml",
+      "sha256": "f7694f82f582935cf6c079c7405495b1c7833c1703365560731c20757a13cb79",
+      "bytes": 3409,
+      "sources": [
+        {
+          "path": ".local-tools/browser-bolt/regressions-1/reports/testng-results.xml",
+          "sha256": "edff4f63a7f28de9c2d2beb36f703979643e2f0f3e89988bd8a2e33dbaa13e5c",
+          "bytes": 3448
+        }
+      ],
+      "systemPropertiesOmitted": false
+    },
+    {
+      "path": "regressions-1/reports/TestSuite.txt",
+      "sha256": "2c6cda4087d79f96b4c865f4eae756709e24e141c5baf697ccf3528ab0418961",
+      "bytes": 268,
+      "sources": [
+        {
+          "path": ".local-tools/browser-bolt/regressions-1/reports/TestSuite.txt",
+          "sha256": "f67adcc8ac4c4b82d3ed71fda67b42023b44498bdde7f3abea737075d89450b3",
+          "bytes": 272
+        }
+      ],
+      "systemPropertiesOmitted": false
+    },
+    {
+      "path": "source-comparison.json",
+      "sha256": "7d6c96d0c76eb9f892c1b60bfbe6ccb4f723b5b229b86d97abbea072e2239b65",
+      "bytes": 284,
+      "sources": [
+        {
+          "path": ".local-tools/browser-bolt/source-comparison.json",
+          "sha256": "270aeb30252fb51c628626a4f8b32e6dd0961ea2925005ff21a51474ffd2c77d",
+          "bytes": 294
+        }
+      ],
+      "systemPropertiesOmitted": false
+    },
+    {
+      "path": "postflight.json",
+      "sha256": "e1cb832c57081a243be0915da3235a22f6c849f64df28bcef664cad66564a507",
+      "bytes": 263,
+      "sources": [
+        {
+          "path": ".local-tools/browser-bolt/postflight.json",
+          "sha256": "ae1bbfd0610c5f5588d7b2d18f5fbc80044dc9150cc13ca096ab982d2b6f375e",
+          "bytes": 270
+        }
+      ],
+      "systemPropertiesOmitted": false
+    }
+  ]
+}

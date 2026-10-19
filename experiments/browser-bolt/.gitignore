@@ -1,0 +1,2 @@
+# Only reviewed, sanitized offline evidence belongs in Git.
+!evidence/**/*.log

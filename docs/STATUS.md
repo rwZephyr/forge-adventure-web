@@ -1,6 +1,27 @@
 # Project status
 
-Last updated: 2026-10-18
+Last updated: 2026-10-19
+
+## Browser-controlled Bolt implementation: listener approval pending
+- Waypoint's approved bounded integration is on `codex/browser-bolt-manual`,
+  based on PR #24 (`55164bf3`), separately from PR #27. The latter remains
+  untouched/on execution HOLD; existing drafts stay unmerged.
+- [Manual mode and runbook](../experiments/browser-bolt/README.md) add an opt-in
+  test-owned JDK HTTP polling host and connected portrait page beside the
+  preserved scripted DTO peer and static demonstration. Server-bound capability,
+  strict Origin/Host/JSON policy, cached DTO frames and original EDT/C1 dispatch;
+  no production engine, dependency, source-gameplay or service changes.
+- [Actual offline results](experiments/browser-bolt-manual-results.md): new Java
+  compiled, 16/16 direct transport policy cases and the original scripted DTO
+  proof passed. The unanswered control passed with owner failure delivery and
+  no cast/payment/cleanup concession; all six accepted regressions passed.
+  Original capture/authorization/failure methods are unchanged. All four runs
+  record unchanged 2,086 protected hashes, 2,393 cache files and six parent
+  environment values; no Java process or port-8765 listener at postflight.
+- No listener or browser has run for this work. Manual owner-loop integration,
+  real HTTP shutdown and Safari remain unverified. Next: independent review,
+  then separately approved desktop loopback session; Tailscale needs later
+  approval. This remains a fixture-specific checkpoint, not a production adapter.
 
 ## Stage D1 portrait battlefield submitted for review
 - Stage C is accepted within its bounded scope by the owner. The new

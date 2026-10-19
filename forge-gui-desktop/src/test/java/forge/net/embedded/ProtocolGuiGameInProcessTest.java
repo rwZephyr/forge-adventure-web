@@ -46,7 +46,8 @@ import static org.testng.Assert.assertTrue;
 
 /**
  * A stock {@code PlayerControllerHuman} plays against the AI through {@link ProtocolGuiGame}
- * and an in-process {@link IRemote}. No FServerManager, FGameClient, socket or Netty channel.
+ * and an in-process {@link IRemote}. Automated cases use no FServerManager, FGameClient, socket or Netty channel.
+ * The separately approved, opt-in manual-browser method alone adds a disposable HTTP listener.
  */
 public class ProtocolGuiGameInProcessTest {
 
@@ -255,7 +256,7 @@ public class ProtocolGuiGameInProcessTest {
     }
 
     /** Immutable records belong only to the Java test oracle, never to a browser payload. */
-    private enum BoltMode { HUMAN, AI, EMPTY, UNANSWERED, CAPTURE, DTO, DTO_UNANSWERED }
+    private enum BoltMode { HUMAN, AI, EMPTY, UNANSWERED, CAPTURE, DTO, DTO_UNANSWERED, MANUAL_BROWSER }
 
     private record Prompt(Object input, Object[] buttons) { }
     private record FailureArtifact(String action, String input, long threadId, String thread,
@@ -342,7 +343,7 @@ public class ProtocolGuiGameInProcessTest {
 
         BoltScript(BoltMode mode) {
             this.mode = mode;
-            port = mode == BoltMode.DTO || mode == BoltMode.DTO_UNANSWERED ? new DtoPort(this) : null;
+            port = mode == BoltMode.DTO || mode == BoltMode.DTO_UNANSWERED || mode == BoltMode.MANUAL_BROWSER ? new DtoPort(this) : null;
             Deck humanDeck = new Deck("Human Bolt");
             boolean humanBolt = humanCase();
             humanDeck.getMain().add("Mountain", humanBolt ? 39 : 40);
@@ -810,21 +811,21 @@ public class ProtocolGuiGameInProcessTest {
     }
 
     // The peer sees only these immutable values. Everything below DtoPort stays private Java.
-    private record Face(String handle, String name, String zone, String controller, boolean tapped) { }
-    private record Seat(String handle, boolean self, int life) { }
-    private record StackFace(String source, List<String> targets) { StackFace { targets = List.copyOf(targets); } }
-    private record Choice(String id, String operation, String entity) { }
-    private record Decision(String id, String kind, String source, List<String> selected, int min, int max, List<Choice> choices) {
+    record Face(String handle, String name, String zone, String controller, boolean tapped) { }
+    record Seat(String handle, boolean self, int life) { }
+    record StackFace(String source, List<String> targets) { StackFace { targets = List.copyOf(targets); } }
+    record Choice(String id, String operation, String entity) { }
+    record Decision(String id, String kind, String source, List<String> selected, int min, int max, List<Choice> choices) {
         Decision { selected = List.copyOf(selected); choices = List.copyOf(choices); }
     }
-    private record Payment(List<String> remaining, int redPool) { Payment { remaining = List.copyOf(remaining); } }
-    private record Frame(String match, String session, long revision, int turn, String phase, List<Seat> players,
+    record Payment(List<String> remaining, int redPool) { Payment { remaining = List.copyOf(remaining); } }
+    record Frame(String match, String session, long revision, int turn, String phase, List<Seat> players,
                          List<Face> cards, List<StackFace> stack, Payment payment, Decision prompt) {
         Frame { players = List.copyOf(players); cards = List.copyOf(cards); stack = List.copyOf(stack); }
     }
-    private record Payload(String type, int version, String match, String session, long revision, String prompt, String choice) { }
-    private record Action(String id, Payload payload) { }
-    private record Receipt(String status, String code) { }
+    record Payload(String type, int version, String match, String session, long revision, String prompt, String choice) { }
+    record Action(String id, Payload payload) { }
+    record Receipt(String status, String code) { }
 
     /** No constructor, field, method argument or result carries a Forge object or server reference. */
     private static final class BrowserPeer {
@@ -1094,6 +1095,114 @@ public class ProtocolGuiGameInProcessTest {
     @Test(timeOut = 180_000)
     public void browserDtoUnansweredPromptIsReported() throws Exception { runBoltCase(BoltMode.DTO_UNANSWERED); }
 
+    /** Explicitly selected only; no listener or FModel initialization on ordinary test discovery. */
+    @Test(timeOut = 900_000)
+    public void manualBrowserBoltSession() throws Exception {
+        if (!Boolean.getBoolean("forge.browser.listenerApproved")) throw new org.testng.SkipException("Manual listener requires separate owner approval");
+        runBoltCase(BoltMode.MANUAL_BROWSER);
+    }
+
+    private void runManualBrowser(BoltScript s) throws Exception {
+        var published = new java.util.concurrent.atomic.AtomicReference<Frame>();
+        var boundHost = new java.util.concurrent.atomic.AtomicReference<ManualBrowserBoltHost>();
+        ManualBrowserBoltHost.Session session = new ManualBrowserBoltHost.Session() {
+            public Frame frame() { return published.get(); }
+            public java.util.concurrent.CompletableFuture<Receipt> submit(Action action) {
+                return s.port.submit(s.port.trusted, action, work -> FThreads.invokeInEdtLater(() -> {
+                    if (boundHost.get().abortRequested() || !boundHost.get().currentOutcome().equals("ACTIVE")) s.abort(new IllegalStateException("Manual session no longer admits actions"));
+                    work.run(); // Original dispatch begins with checkFailure before graph access.
+                }));
+            }
+        };
+        var host = ManualBrowserBoltHost.forApprovedRun(session);
+        boundHost.set(host);
+        Throwable primary = null;
+        try {
+            host.start();
+            s.match.setStartGameHook(s::setup); s.match.setEndGameHook(s::ended);
+            s.match.startMatch(GameType.Constructed, null, List.of(s.humanRegistration, s.aiRegistration), s.humanRegistration, s.gui);
+            long deadline = System.nanoTime() + TimeUnit.MINUTES.toNanos(10);
+            final Object[] publishedInput = {null};
+            while (!s.resolved) {
+                s.checkFailure();
+                if (host.abortRequested()) { host.outcome(host.transportFailed() ? "FAILED" : "ABORTED"); throw new IllegalStateException("Manual browser session aborted or transport failed"); }
+                if (System.nanoTime() >= deadline) { host.outcome("EXPIRED"); throw new java.util.concurrent.TimeoutException("Manual interaction expired"); }
+                Prompt prompt = s.prompts.poll(100, TimeUnit.MILLISECONDS);
+                if (prompt == null) continue;
+                if (!s.ready) {
+                    manualEdt(s, () -> { s.act(prompt); return null; }); // Original explicit Play/Keep bootstrap only.
+                    continue;
+                }
+                manualEdt(s, () -> {
+                    // Refreshes never renew a published capability; cached HTTP reads never enter here.
+                    if (s.input() == publishedInput[0]) return null;
+                    Frame frame = s.port.prepare(prompt); // Original consumed-payment filter and full checkpoint unchanged.
+                    if (frame != null) {
+                        publishedInput[0] = prompt.input();
+                        if (s.resolved) {
+                            frame = new Frame(frame.match(),frame.session(),frame.revision(),frame.turn(),frame.phase(),frame.players(),frame.cards(),frame.stack(),frame.payment(),null);
+                            s.port.published.set(frame); // Revoke terminal choices before publishing to the browser.
+                        }
+                        published.set(frame);
+                    }
+                    return null;
+                });
+            }
+            s.require(s.stackSeen && s.targetSelected && s.manualMana && s.port.question.get() == 3
+                    && s.port.dispatches == 4 && s.abilityReplies == 2 && s.manaReplies == 1,
+                    "manual browser sequence confirmed by original Forge oracle and C1 replies");
+            host.outcome("TERMINAL");
+            long inspection = System.nanoTime() + TimeUnit.MINUTES.toNanos(2);
+            while (!host.finishRequested()) {
+                s.checkFailure();
+                if (host.abortRequested()) { host.outcome(host.transportFailed() ? "FAILED" : "ABORTED"); throw new IllegalStateException("Terminal inspection aborted or transport failed"); }
+                if (System.nanoTime() >= inspection) { host.outcome("EXPIRED"); throw new java.util.concurrent.TimeoutException("Terminal inspection expired"); }
+                Thread.sleep(100); // Owner thread only; no original input latch or EDT wait.
+            }
+            s.checkFailure();
+            if (host.abortRequested()) { host.outcome(host.transportFailed() ? "FAILED" : "ABORTED"); throw new IllegalStateException("Abort vetoes terminal cleanup"); }
+            if (System.nanoTime() >= inspection) { host.outcome("EXPIRED"); throw new java.util.concurrent.TimeoutException("Terminal inspection expired before cleanup"); }
+            host.close(); // Transport failure vetoes success cleanup before any concession.
+            s.checkFailure();
+            if (host.abortRequested()) { host.outcome(host.transportFailed() ? "FAILED" : "ABORTED"); throw new IllegalStateException("Abort during shutdown vetoes cleanup"); }
+            s.finishCleanly(); // Existing PR #23 success policy, explicitly harness cleanup, not browser gameplay.
+            s.checkFailure();
+            host.outcome("PASSED");
+        } catch (Exception | Error error) {
+            primary = error; s.abort(error); host.failUnlessEnded(); throw error;
+        } finally {
+            Throwable finalFailure = primary;
+            for (java.util.concurrent.Callable<Void> finish : List.<java.util.concurrent.Callable<Void>>of(
+                    () -> { host.close(); return null; }, () -> { host.writeOutcome(); return null; })) {
+                try { finish.call(); } catch (Exception | Error secondary) {
+                    s.abort(secondary);
+                    if (finalFailure == null) finalFailure = secondary; else if (finalFailure != secondary) finalFailure.addSuppressed(secondary);
+                }
+            }
+            if (primary == null) {
+                if (finalFailure instanceof Exception e) throw e;
+                if (finalFailure instanceof Error e) throw e;
+            }
+        }
+    }
+
+    private static <T> T manualEdt(BoltScript s, java.util.concurrent.Callable<T> work) throws Exception {
+        var future = new java.util.concurrent.FutureTask<T>(() -> { s.checkFailure(); return work.call(); });
+        FThreads.invokeInEdtLater(future);
+        long deadline = System.nanoTime() + TimeUnit.SECONDS.toNanos(15);
+        while (true) {
+            s.checkFailure();
+            try { return future.get(100, TimeUnit.MILLISECONDS); }
+            catch (java.util.concurrent.TimeoutException waiting) {
+                if (System.nanoTime() >= deadline) { s.abort(waiting); throw waiting; }
+            } catch (java.util.concurrent.ExecutionException wrapped) {
+                if (wrapped.getCause() instanceof Exception e) throw e;
+                if (wrapped.getCause() instanceof Error e) throw e;
+                throw new AssertionError(wrapped.getCause());
+            }
+        }
+    }
+
     @Test(timeOut = 180_000)
     public void aiBoltRunsThroughOriginalPhaseLoop() throws Exception { runBoltCase(BoltMode.AI); }
 
@@ -1134,7 +1243,7 @@ public class ProtocolGuiGameInProcessTest {
                 script.receivedFailureByOwner = true;
                 script.trace("negative-owner-received", "artifactThread=" + artifact.threadId() + " sameAtomicArtifact=true noCastOrPayment=true");
             } else {
-                script.run();
+                if (mode == BoltMode.MANUAL_BROWSER) runManualBrowser(script); else script.run();
                 assertTrue(script.failure.get() == null && !script.gui.isPaused(), "zero unanswered failures or paused GUI");
             }
             assertTrue(Thread.getAllStackTraces().keySet().stream().noneMatch(t -> t.isAlive() && t.getName().equals("Game AI Eval")), "no evaluator survives scenario cleanup");

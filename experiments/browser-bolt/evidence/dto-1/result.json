@@ -1,0 +1,50 @@
+{
+  "label": "dto-1",
+  "verifyOnly": true,
+  "check": "dto",
+  "listenerApproved": false,
+  "nativeExit": 0,
+  "startedUtc": "2026-10-19T22:17:48.2897829Z",
+  "endedUtc": "2026-10-19T22:19:19.3113830Z",
+  "primaryFailureType": null,
+  "secondaryFailures": [],
+  "environmentUnchanged": true,
+  "environmentChecks": [
+    {
+      "name": "TMP",
+      "exactMatch": true
+    },
+    {
+      "name": "LOCALAPPDATA",
+      "exactMatch": true
+    },
+    {
+      "name": "APPDATA",
+      "exactMatch": true
+    },
+    {
+      "name": "TEMP",
+      "exactMatch": true
+    },
+    {
+      "name": "JAVA_HOME",
+      "exactMatch": true
+    },
+    {
+      "name": "JAVA_TOOL_OPTIONS",
+      "exactMatch": true
+    }
+  ],
+  "protectedFileCount": 2086,
+  "cacheFileCount": 2393,
+  "integrityChecked": true,
+  "sourceChanges": [],
+  "cacheChanges": [],
+  "driverPid": 87340,
+  "driverExited": true,
+  "observedDriverExit": 0,
+  "timedOut": false,
+  "forceTerminationRequested": false,
+  "descendantExitIndependentlyObserved": false,
+  "unconditionalWallClockGuarantee": false
+}

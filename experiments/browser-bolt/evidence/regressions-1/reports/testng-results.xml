@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-10-19T15:23:22 PDT" name="Surefire suite" finished-at="2026-10-19T15:23:59 PDT" duration-ms="37692">
+    <groups>
+    </groups>
+    <test started-at="2026-10-19T15:23:22 PDT" name="Surefire test" finished-at="2026-10-19T15:23:59 PDT" duration-ms="37692">
+      <class name="forge.net.embedded.ProtocolGuiGameInProcessTest">
+        <test-method signature="aiBoltRunsThroughOriginalPhaseLoop()[pri:0, instance:forge.net.embedded.ProtocolGuiGameInProcessTest@7c7b252e]" started-at="2026-10-19T15:23:22 PDT" name="aiBoltRunsThroughOriginalPhaseLoop" finished-at="2026-10-19T15:23:57 PDT" duration-ms="35396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aiBoltRunsThroughOriginalPhaseLoop -->
+        <test-method signature="aiEmptyHandDoesNotCastOrPay()[pri:0, instance:forge.net.embedded.ProtocolGuiGameInProcessTest@7c7b252e]" started-at="2026-10-19T15:23:57 PDT" name="aiEmptyHandDoesNotCastOrPay" finished-at="2026-10-19T15:23:58 PDT" duration-ms="322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aiEmptyHandDoesNotCastOrPay -->
+        <test-method signature="humanBoltTargetsOpponentWithManualMountainPayment()[pri:0, instance:forge.net.embedded.ProtocolGuiGameInProcessTest@7c7b252e]" started-at="2026-10-19T15:23:58 PDT" name="humanBoltTargetsOpponentWithManualMountainPayment" finished-at="2026-10-19T15:23:58 PDT" duration-ms="453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- humanBoltTargetsOpponentWithManualMountainPayment -->
+        <test-method signature="humanControllerRunsThroughInProcessRemote()[pri:0, instance:forge.net.embedded.ProtocolGuiGameInProcessTest@7c7b252e]" started-at="2026-10-19T15:23:58 PDT" name="humanControllerRunsThroughInProcessRemote" finished-at="2026-10-19T15:23:59 PDT" duration-ms="723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- humanControllerRunsThroughInProcessRemote -->
+        <test-method signature="unansweredRequiredPromptIsReportedToTestOwner()[pri:0, instance:forge.net.embedded.ProtocolGuiGameInProcessTest@7c7b252e]" started-at="2026-10-19T15:23:59 PDT" name="unansweredRequiredPromptIsReportedToTestOwner" finished-at="2026-10-19T15:23:59 PDT" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unansweredRequiredPromptIsReportedToTestOwner -->
+      </class> <!-- forge.net.embedded.ProtocolGuiGameInProcessTest -->
+      <class name="forge.net.embedded.ProtocolGuiGameSingleThreadTest">
+        <test-method signature="inputsCanBeAnsweredOnTheWaitingThread()[pri:0, instance:forge.net.embedded.ProtocolGuiGameSingleThreadTest@a1153bc]" started-at="2026-10-19T15:23:59 PDT" name="inputsCanBeAnsweredOnTheWaitingThread" finished-at="2026-10-19T15:23:59 PDT" duration-ms="597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputsCanBeAnsweredOnTheWaitingThread -->
+      </class> <!-- forge.net.embedded.ProtocolGuiGameSingleThreadTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

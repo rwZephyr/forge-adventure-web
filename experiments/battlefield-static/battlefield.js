@@ -3,8 +3,10 @@
   'use strict';
   const $ = id => document.getElementById(id);
   const freeze = value => { if (value && typeof value === 'object') { Object.values(value).forEach(freeze); Object.freeze(value); } return value; };
-  const fixtures = freeze(window.FORGE_FIXTURES);
-  let current = fixtures.snapshots[0];
+  const live = document.body.dataset.live === 'true';
+  const fixtures = live ? null : freeze(window.FORGE_FIXTURES);
+  let current = live ? null : fixtures.snapshots[0];
+  let liveSubmit = null, liveBusy = true;
   let actionSequence = 0;
   const node = (tag, className, text) => {
     const el = document.createElement(tag); if (className) el.className = className;
@@ -17,12 +19,14 @@
 
   function propose(choice) {
     // No transport, reducer, simulated receipt or game mutation. Copy only the offered capability.
+    if (!current || (live && (liveBusy || !liveSubmit))) return;
     const f = current.frame;
     if (!f.prompt?.choices.includes(choice)) return;
-    const action = { id: `static-preview-${++actionSequence}`, payload: {
+    const action = { id: live ? `browser-${Date.now()}-${++actionSequence}` : `static-preview-${++actionSequence}`, payload: {
       type: 'action', version: 1, match: f.match, session: f.session,
       revision: f.revision, prompt: f.prompt.id, choice: choice.id
     } };
+    if (live) { liveSubmit(action); return; }
     $('proposal-title').textContent = label(choice);
     $('payload').textContent = JSON.stringify(action, null, 2);
     $('proposal').showModal();
@@ -37,11 +41,11 @@
     const selected = f.prompt?.selected.includes(player.handle) || f.stack.some(s => s.targets.includes(player.handle));
     const el = choice ? button(choice, 'seat selectable') : node('div', 'seat');
     el.replaceChildren(); el.dataset.self = String(player.self);
-    if (choice) el.setAttribute('aria-label', `${label(choice)} · ${player.life} life · preview only`);
+    if (choice) el.setAttribute('aria-label', `${label(choice)} · ${player.life} life${live ? '' : ' · preview only'}`);
     if (selected) el.classList.add('selected-target');
     el.append(node('span', `sigil ${player.self ? 'self' : ''}`, player.self ? 'Y' : 'O'));
     const name = node('span', 'seat-name', player.self ? 'You' : 'Opponent');
-    name.append(node('small', '', selected ? 'SELECTED TARGET' : choice ? 'TAP TO PREVIEW TARGET' : player.self ? 'YOUR SIDE' : 'OPPOSING PLAYER'));
+    name.append(node('small', '', selected ? 'SELECTED TARGET' : choice ? (live ? 'TAP TO SELECT TARGET' : 'TAP TO PREVIEW TARGET') : player.self ? 'YOUR SIDE' : 'OPPOSING PLAYER'));
     el.append(name, node('span', 'life', String(player.life)), node('span', 'life-label', 'LIFE'));
     return el;
   }
@@ -49,7 +53,7 @@
     const choice = current.frame.prompt?.choices.find(c => c.entity === face.handle && ['cast', 'mana'].includes(c.operation));
     const el = choice ? button(choice, `card ${size}`) : node('article', `card ${size}`);
     el.replaceChildren(); el.dataset.card = face.name; el.dataset.tapped = String(face.tapped);
-    el.setAttribute('aria-label', `${face.name}, ${face.zone}, ${face.tapped ? 'tapped' : 'untapped'}${choice ? `; ${label(choice)}, preview only` : ''}`);
+    el.setAttribute('aria-label', `${face.name}, ${face.zone}, ${face.tapped ? 'tapped' : 'untapped'}${choice ? `; ${label(choice)}${live ? '' : ', preview only'}` : ''}`);
     const visual = node('span', `card-face ${face.name === 'Mountain' ? 'land-face' : 'bolt-face'}`);
     visual.append(node('span', 'card-title', face.name));
     const art = node('span', 'card-art'); art.setAttribute('aria-hidden', 'true');
@@ -82,7 +86,7 @@
     const f = current.frame;
     $('board').dataset.revision = String(f.revision);
     $('phase').textContent = `Turn ${f.turn} · ${f.phase === 'MAIN1' ? 'Main phase 1' : f.phase}`;
-    $('revision').textContent = `Snapshot r${f.revision}`;
+    $('revision').textContent = `${live ? 'Engine frame' : 'Snapshot'} r${f.revision}`;
     const self = f.players.find(p => p.self), opponent = f.players.find(p => !p.self);
     $('opponent').replaceChildren(seat(opponent)); $('player').replaceChildren(seat(self));
     const opposing = f.cards.filter(c => c.zone === 'Battlefield' && c.controller === opponent.handle);
@@ -104,6 +108,14 @@
     // Presentation order only: preserve both original player capabilities, prefer the demonstrated opponent target.
     if (f.prompt?.kind === 'target') choices.sort((a, b) => Number(a.entity === self.handle) - Number(b.entity === self.handle));
     $('choices').replaceChildren(...choices.map((c, i) => button(c, i === 0 ? 'primary-choice' : 'secondary-choice')));
+  }
+  if (live) {
+    window.FORGE_LIVE_VIEW = Object.freeze({
+      frame(frame) { current = { frame: freeze(frame) }; render(); },
+      busy(value) { liveBusy = value; document.querySelectorAll('#board button, #choices button').forEach(el => { el.disabled = value; }); },
+      onAction(callback) { liveSubmit = callback; }
+    });
+    return;
   }
   fixtures.snapshots.forEach((s, i) => { const option = node('option', '', `${i + 1}. ${s.label}`); option.value = s.key; $('snapshot').append(option); });
   $('snapshot').addEventListener('change', event => {
