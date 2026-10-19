@@ -2,6 +2,24 @@
 
 Last updated: 2026-10-18
 
+## Stage C DTO proof submitted with a cleanup blocker
+- [Implementation and evidence](experiments/stage-c-dto-results.md): coherent
+  fixture checkpoint gate passed, followed by 3/3 fresh final-source DTO Bolt
+  runs, the DTO unanswered control and 6/6 original regressions. Original Forge
+  performed player targeting, manual Mountain payment and 20 → 17 resolution.
+- Type-allowlisted immutable DTOs, exact C1 authorization, live EDT revalidation,
+  duplicate/stale/hidden/revoked/superseded action controls and cached resync are
+  test-only. No browser, transport, accounts, Adventure or runtime adaptation.
+- **Blocker:** the first capture-hook placement failure triggered existing
+  cleanup concession while Game-1 was active, producing overlapping original
+  Game-0/Game-1 graph callbacks. Full publication review identified the secondary
+  cleanup failure after the final runs; implementation/testing stopped. Later
+  successes do not resolve it. Review before acceptance or Safari work.
+- All new launcher restoration checks pass; historical C1 false result remains
+  unchanged. Offline cache unchanged, no Java process remains. Existing PRs stay
+  draft/unmerged. Next: independent review and a separately approved bounded
+  failure-cleanup policy; no production synchronization workaround implemented.
+
 ## C1 observation submitted for review
 - Publication correction: the public TestNG JUnit XML hostname is now
   `HOST-REDACTED`, with updated manifest hash/size/normalization. Private original

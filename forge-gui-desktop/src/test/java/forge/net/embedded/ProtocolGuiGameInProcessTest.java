@@ -255,7 +255,7 @@ public class ProtocolGuiGameInProcessTest {
     }
 
     /** Immutable records belong only to the Java test oracle, never to a browser payload. */
-    private enum BoltMode { HUMAN, AI, EMPTY, UNANSWERED }
+    private enum BoltMode { HUMAN, AI, EMPTY, UNANSWERED, CAPTURE, DTO, DTO_UNANSWERED }
 
     private record Prompt(Object input, Object[] buttons) { }
     private record FailureArtifact(String action, String input, long threadId, String thread,
@@ -311,6 +311,7 @@ public class ProtocolGuiGameInProcessTest {
     private static final class BoltScript {
         final long started = System.nanoTime();
         final BoltMode mode;
+        final DtoPort port;
         final List<forge.game.card.Card> mountains = new ArrayList<>();
         final java.util.Set<Integer> boltIds = new java.util.HashSet<>();
         volatile int chosenBoltId;
@@ -334,8 +335,9 @@ public class ProtocolGuiGameInProcessTest {
 
         BoltScript(BoltMode mode) {
             this.mode = mode;
+            port = mode == BoltMode.DTO || mode == BoltMode.DTO_UNANSWERED ? new DtoPort(this) : null;
             Deck humanDeck = new Deck("Human Bolt");
-            boolean humanBolt = mode == BoltMode.HUMAN || mode == BoltMode.UNANSWERED;
+            boolean humanBolt = humanCase();
             humanDeck.getMain().add("Mountain", humanBolt ? 39 : 40);
             if (humanBolt) humanDeck.getMain().add("Lightning Bolt", 1);
             Deck aiDeck = new Deck("AI");
@@ -344,7 +346,7 @@ public class ProtocolGuiGameInProcessTest {
             humanRegistration = new RegisteredPlayer(humanDeck).setPlayer(new LobbyPlayerHuman("Human Bolt"));
             aiRegistration = new RegisteredPlayer(aiDeck).setPlayer(GamePlayerUtil.createAiPlayer("AI"));
         }
-        boolean humanCase() { return mode == BoltMode.HUMAN || mode == BoltMode.UNANSWERED; }
+        boolean humanCase() { return mode != BoltMode.AI && mode != BoltMode.EMPTY; }
         forge.player.PlayerControllerHuman controller() {
             forge.game.Game game = match.getGame();
             if (game == null) return null;
@@ -384,12 +386,13 @@ public class ProtocolGuiGameInProcessTest {
         }
         Object answer(GuiGameEvent event) {
             long caller = Thread.currentThread().getId();
-            if (mode == BoltMode.UNANSWERED && event.getMethod() == ProtocolMethod.getAbilityToPlay) {
+            if ((mode == BoltMode.UNANSWERED || mode == BoltMode.DTO_UNANSWERED) && event.getMethod() == ProtocolMethod.getAbilityToPlay) {
                 failurePositionUntouched = match.getGame().getStack().isEmpty() && ai.getLife() == 20
                         && human.getLife() == 20 && !mountain.isTapped() && human.getManaPool().isEmpty();
                 require(failurePositionUntouched, "unanswered control before cast/payment/damage");
                 throw fail("required-question", "deliberately unanswered getAbilityToPlay", null);
             }
+            if (port != null) return port.answer(event);
             trace("reply-enter-" + event.getMethod(), "waiter=" + gui.waitState());
             if (event.getMethod() != ProtocolMethod.getAbilityToPlay) throw fail("required-question", "unsupported " + event.getMethod(), null);
             Object[] a = event.getObjects();
@@ -453,6 +456,66 @@ public class ProtocolGuiGameInProcessTest {
             require(gui.waiter != null && gui.waiter.getId() == loopThreadId, "same original loop owns input wait");
             require(gui.latch != null && gui.latch.getCount() == 1 && gui.waiter.getState() == Thread.State.WAITING,
                     "checkpoint requires original game latch parked: " + gui.waitState());
+        }
+        /** Bounded fixture checkpoint, not a general graph lock. Driver is the only action producer. */
+        void captureCheckpoint(Object expected) throws Exception {
+            require(javax.swing.SwingUtilities.isEventDispatchThread() && ready, "capture on displayed fixture input");
+            parked();
+            require(input() == expected && controller().getInputQueue().getInput() == expected, "same original queued input");
+            require(java.util.Arrays.stream(gui.waiter.getStackTrace()).anyMatch(f -> f.getClassName().equals("java.util.concurrent.CountDownLatch") && f.getMethodName().equals("await")), "original latch stack");
+            var field = forge.util.ThreadUtil.class.getDeclaredField("gameThreadPool");
+            field.setAccessible(true);
+            var pool = (java.util.concurrent.ThreadPoolExecutor) field.get(null);
+            long submitted = pool.getTaskCount(), completed = pool.getCompletedTaskCount();
+            trace("capture-workers", "submitted=" + submitted + " completed=" + completed + " active=" + pool.getActiveCount() + " queued=" + pool.getQueue().size());
+            require(pool.getActiveCount() == 1 && pool.getQueue().isEmpty(), "only parked loop active; no queued worker");
+            for (var entry : Thread.getAllStackTraces().entrySet()) {
+                Thread thread = entry.getKey();
+                require(!thread.isAlive() || !thread.getName().equals("Game AI Eval"), "no AI evaluation during capture");
+                if (thread != gui.waiter && thread.getName().startsWith("Game-") && thread.isAlive()) {
+                    require(thread.getState() == Thread.State.TIMED_WAITING
+                            && java.util.Arrays.stream(entry.getValue()).anyMatch(f -> f.getClassName().equals("java.util.concurrent.ThreadPoolExecutor") && f.getMethodName().equals("getTask")), "other game worker must be idle in original executor");
+                }
+            }
+            boolean outer = gui.enterWalk("capture");
+            require(outer, "capture outside original graph callbacks");
+            try {
+                var game = match.getGame();
+                require(!game.getTracker().isFrozen(), "tracker fully published");
+                String first = captureFingerprint();
+                require(first.equals(captureFingerprint()), "repeat engine/view graph read coherent");
+                require(input() == expected && gui.latch.getCount() == 1 && gui.waiter.getState() == Thread.State.WAITING,
+                        "same parked input after read");
+                require(pool.getTaskCount() == submitted && pool.getCompletedTaskCount() == completed && pool.getActiveCount() == 1,
+                        "no worker submission/completion during capture");
+                trace("capture-coherent", "submitted=" + submitted + " completed=" + completed + " active=1 fingerprint=" + first);
+            } finally { gui.leaveWalk("capture", outer); }
+        }
+        String captureFingerprint() {
+            var game = match.getGame();
+            require(game.getPhaseHandler().getPhase() == game.getView().getPhase(), "engine/view phase matches");
+            StringBuilder out = new StringBuilder(game.getView().getTurn() + ":" + game.getView().getPhase());
+            for (var p : List.of(human, ai)) {
+                require(p.getLife() == p.getView().getLife(), "engine/view life matches");
+                out.append('|').append(p.getId()).append(':').append(p.getLife());
+                out.append("/pool:").append(p.getManaPool().totalMana());
+                for (var z : List.of(forge.game.zone.ZoneType.Hand, forge.game.zone.ZoneType.Battlefield, forge.game.zone.ZoneType.Graveyard)) {
+                    for (var card : p.getCardsIn(z)) {
+                        require(card.getView().getZone() == z && card.getView().isTapped() == card.isTapped(), "engine/view card zone/tap matches");
+                        out.append('/').append(z).append(':').append(card.getId()).append(':').append(card.isTapped());
+                    }
+                }
+            }
+            require(game.getStack().size() == game.getView().getStack().size(), "engine/view stack count matches");
+            for (var item : game.getStack()) {
+                var sa = item.getSpellAbility();
+                out.append("/stack:").append(sa.getId()).append(':').append(com.google.common.collect.ImmutableList.copyOf(sa.getTargets().getTargetPlayers()).stream().map(p -> p.getId()).toList())
+                        .append(':').append(sa.getPayingMana().stream().map(m -> m.color() + ":" + m.sourceCard().getId()).toList());
+            }
+            var paidFor = human.getPaidForSA();
+            if (paidFor != null) out.append("/pay:").append(paidFor.getId()).append(':').append(paidFor.getManaCostBeingPaid())
+                    .append(':').append(com.google.common.collect.ImmutableList.copyOf(paidFor.getTargets().getTargetPlayers()).stream().map(p -> p.getId()).toList());
+            return out.toString();
         }
         void visibility(String stage) {
             parked();
@@ -566,12 +629,18 @@ public class ProtocolGuiGameInProcessTest {
                 trace("ai-success", "humanLife=3->0 winner=AI graveyardBolt=" + chosenBoltId);
             } catch (Throwable t) { fail("end-game", t.toString(), t); }
         }
-        void act(Prompt prompt) {
+        void act(Prompt prompt) throws Exception {
             Object current = input();
             if (current != prompt.input()) { trace("discard-obsolete-button-event", ""); return; }
             require(javax.swing.SwingUtilities.isEventDispatchThread(), "controller action on EDT");
             require(!gui.isPaused(), "GUI never paused");
             Object[] b = prompt.buttons();
+            // An already-submitted payment refresh is not a decision checkpoint. Do not read its graph.
+            if (ready && mode == BoltMode.CAPTURE && manualMana && current == paymentInput) {
+                trace("discard-consumed-payment-before-capture", "worker may still be active; no graph read");
+                return;
+            }
+            if (ready && mode == BoltMode.CAPTURE) captureCheckpoint(current);
             IGameController c = gui.getGameController((PlayerView) b[0]);
             trace("action", "buttons=" + b[1] + "/" + b[2] + " waiter=" + gui.waitState());
             if (!ready && current instanceof forge.gamemodes.match.input.InputConfirm
@@ -610,6 +679,10 @@ public class ProtocolGuiGameInProcessTest {
                     checkFailure();
                     Prompt prompt = prompts.poll(100, TimeUnit.MILLISECONDS);
                     if (prompt == null) continue;
+                    if (port != null && ready) {
+                        port.step(prompt);
+                        continue;
+                    }
                     var done = new java.util.concurrent.CountDownLatch(1);
                     FThreads.invokeInEdtLater(() -> {
                         try { act(prompt); } catch (Throwable t) { fail("EDT-action", t.toString(), t); }
@@ -620,6 +693,7 @@ public class ProtocolGuiGameInProcessTest {
                 }
                 checkFailure();
                 require(resolved, "scenario completed");
+                if (port != null) port.completed();
                 if (humanCase()) require(abilityReplies == 2 && manaReplies == 1, "human Bolt exact original ability replies");
                 else require(abilityReplies == 0 && manaReplies == 0 && (mode == BoltMode.EMPTY || naturalOutcome), "AI scenario without scripted spell/payment decision");
             } finally {
@@ -633,10 +707,288 @@ public class ProtocolGuiGameInProcessTest {
         }
     }
 
+    // The peer sees only these immutable values. Everything below DtoPort stays private Java.
+    private record Face(String handle, String name, String zone, String controller, boolean tapped) { }
+    private record Seat(String handle, boolean self, int life) { }
+    private record StackFace(String source, List<String> targets) { StackFace { targets = List.copyOf(targets); } }
+    private record Choice(String id, String operation, String entity) { }
+    private record Decision(String id, String kind, String source, List<String> selected, int min, int max, List<Choice> choices) {
+        Decision { selected = List.copyOf(selected); choices = List.copyOf(choices); }
+    }
+    private record Payment(List<String> remaining, int redPool) { Payment { remaining = List.copyOf(remaining); } }
+    private record Frame(String match, String session, long revision, int turn, String phase, List<Seat> players,
+                         List<Face> cards, List<StackFace> stack, Payment payment, Decision prompt) {
+        Frame { players = List.copyOf(players); cards = List.copyOf(cards); stack = List.copyOf(stack); }
+    }
+    private record Payload(String type, int version, String match, String session, long revision, String prompt, String choice) { }
+    private record Action(String id, Payload payload) { }
+    private record Receipt(String status, String code) { }
+
+    /** No constructor, field, method argument or result carries a Forge object or server reference. */
+    private static final class BrowserPeer {
+        int actions;
+        boolean paymentSeen, stackSeen, resolutionSeen;
+        Action choose(Frame frame) {
+            paymentSeen |= frame.payment() != null;
+            stackSeen |= !frame.stack().isEmpty();
+            if (frame.players().stream().anyMatch(p -> !p.self() && p.life() == 17)) { resolutionSeen = true; return null; }
+            Choice choice = frame.prompt().choices().stream().filter(c -> switch (c.operation()) {
+                case "target" -> frame.players().stream().anyMatch(p -> !p.self() && p.handle().equals(c.entity()));
+                case "cast", "mana", "pass" -> true;
+                default -> false;
+            }).findFirst().orElseThrow();
+            return new Action("client-" + ++actions, new Payload("action", 1, frame.match(), frame.session(), frame.revision(), frame.prompt().id(), choice.id()));
+        }
+    }
+
+    private static final class DtoPort {
+        private record Binding(Choice choice, Object entity, Object input) { }
+        private record Authorization(forge.game.spellability.SpellAbility spell, SpellAbilityView spellView,
+                                     forge.game.spellability.SpellAbility mana, SpellAbilityView manaView) { }
+        private record Pending(Payload payload, java.util.concurrent.CompletableFuture<Receipt> result) { }
+        final BoltScript s;
+        final BrowserPeer peer = new BrowserPeer();
+        final Object trusted = new Object();
+        final String match = token(), session = token();
+        final java.util.concurrent.atomic.AtomicReference<Frame> published = new java.util.concurrent.atomic.AtomicReference<>();
+        final java.util.concurrent.atomic.AtomicReference<Authorization> authorization = new java.util.concurrent.atomic.AtomicReference<>();
+        final AtomicInteger question = new AtomicInteger();
+        final Map<String, Object> entities = new java.util.HashMap<>(); // EDT-confined live handles.
+        final Map<String, Binding> bindings = new java.util.HashMap<>();
+        final Map<String, Pending> ledger = new java.util.LinkedHashMap<>(); // guarded by this.
+        long revision;
+        boolean inFlight, controls;
+        int dispatches, rejected;
+        DtoPort(BoltScript s) { this.s = s; }
+        static String token() { return java.util.UUID.randomUUID().toString(); }
+        String handle(Object entity) {
+            for (var entry : entities.entrySet()) if (entry.getValue() == entity) return entry.getKey();
+            String handle = token(); entities.put(handle, entity); return handle;
+        }
+        boolean visible(CardView card) {
+            return card != null && card.getZone() != null && !card.isFaceDown()
+                    && card.canBeShownTo(s.human.getView()) && card.canFaceDownBeShownTo(s.human.getView())
+                    && (card.getZone() != forge.game.zone.ZoneType.Hand || card.getController() == s.human.getView())
+                    && java.util.Set.of(forge.game.zone.ZoneType.Hand, forge.game.zone.ZoneType.Battlefield,
+                    forge.game.zone.ZoneType.Stack, forge.game.zone.ZoneType.Graveyard).contains(card.getZone());
+        }
+        Frame prepare(Prompt prompt) throws Exception {
+            if (s.input() != prompt.input() || s.manualMana && s.input() == s.paymentInput) return null;
+            s.captureCheckpoint(prompt.input());
+            if (s.input() instanceof forge.gamemodes.match.input.InputPassPriority) s.observePriority();
+            boolean outer = s.gui.enterWalk("dto-project");
+            try {
+                entities.clear(); bindings.clear();
+                var seats = new ArrayList<Seat>(); var faces = new ArrayList<Face>(); var stack = new ArrayList<StackFace>();
+                for (var p : List.of(s.human, s.ai)) seats.add(new Seat(handle(p.getView()), p == s.human, p.getLife()));
+                java.util.function.Consumer<forge.game.card.Card> addFace = card -> {
+                    CardView view = card.getView(); s.require(visible(view), "project only permitted face");
+                    String h = handle(view);
+                    if (faces.stream().noneMatch(f -> f.handle().equals(h))) faces.add(new Face(h, card.getName(), view.getZone().name(), handle(view.getController()), card.isTapped()));
+                };
+                for (var p : List.of(s.human, s.ai)) for (var z : List.of(forge.game.zone.ZoneType.Battlefield, forge.game.zone.ZoneType.Graveyard))
+                    for (var card : p.getCardsIn(z)) addFace.accept(card);
+                for (var card : s.human.getCardsIn(forge.game.zone.ZoneType.Hand)) addFace.accept(card);
+                for (var item : s.match.getGame().getStack()) {
+                    var ability = item.getSpellAbility(); addFace.accept(ability.getHostCard());
+                    var targets = new ArrayList<String>(); for (var p : ability.getTargets().getTargetPlayers()) targets.add(handle(p.getView()));
+                    stack.add(new StackFace(handle(ability.getHostCard().getView()), targets));
+                }
+                Object input = s.input(); var choices = new ArrayList<Choice>(); String kind; Payment payment = null;
+                String source = ""; var selected = new ArrayList<String>();
+                if (input instanceof forge.gamemodes.match.input.InputSelectTargets || input instanceof forge.gamemodes.match.input.InputPayManaOfCostPayment) {
+                    var spell = authorization.get().spell(); addFace.accept(spell.getHostCard());
+                    source = handle(spell.getHostCard().getView());
+                    for (var target : spell.getTargets().getTargetPlayers()) selected.add(handle(target.getView()));
+                }
+                if (input instanceof forge.gamemodes.match.input.InputPassPriority) {
+                    kind = "priority";
+                    if (!s.castRequested) {
+                        var abilities = s.bolt.getAllPossibleAbilities(s.human, true);
+                        s.require(abilities.size() == 1 && abilities.get(0).isSpell(), "one original playable Bolt ability");
+                        var spell = abilities.get(0);
+                        authorization.set(new Authorization(spell, spell.getView(), null, null));
+                        offer(choices, "cast", s.bolt.getView(), input);
+                    }
+                    s.require(Boolean.TRUE.equals(prompt.buttons()[3]), "original priority button enabled");
+                    offer(choices, "pass", null, input);
+                } else if (input instanceof forge.gamemodes.match.input.InputSelectTargets) {
+                    kind = "target";
+                    var selection = s.gui.getSelection();
+                    s.require(selection.min() == 1 && selection.max() == 1, "original Bolt target cardinality");
+                    for (Object target : selection.targets()) {
+                        s.require(target instanceof PlayerView && entities.containsValue(target), "only visible offered player targets");
+                        offer(choices, "target", target, input);
+                    }
+                } else if (input instanceof forge.gamemodes.match.input.InputPayManaOfCostPayment) {
+                    kind = "payment";
+                    var auth = authorization.get(); var mana = s.mountain.getManaAbilities();
+                    s.require(mana.size() == 1 && s.controller().getActivateDescription(s.mountain.getView()) != null, "original usable Mountain ability");
+                    authorization.set(new Authorization(auth.spell(), auth.spellView(), mana.get(0), mana.get(0).getView()));
+                    var cost = s.human.getPaidForSA().getManaCostBeingPaid();
+                    payment = new Payment(cost.getUnpaidShards().stream().map(Enum::name).toList(), s.human.getManaPool().getAmountOfColor(forge.card.MagicColor.RED));
+                    offer(choices, "mana", s.mountain.getView(), input); // No Auto/OK capability.
+                } else throw s.fail("dto-input", "unsupported original decision", null);
+                var frame = new Frame(match, session, ++revision, s.match.getGame().getView().getTurn(), s.match.getGame().getView().getPhase().name(), seats, faces, stack,
+                        payment, new Decision(token(), kind, source, selected, 1, 1, choices));
+                auditDto(frame);
+                for (Object entity : entities.values()) if (entity instanceof CardView card) s.require(visible(card), "live registry excludes hidden cards");
+                published.set(frame);
+                System.out.println("[browser-frame] " + frame);
+                return frame;
+            } finally { s.gui.leaveWalk("dto-project", outer); }
+        }
+        void offer(List<Choice> choices, String operation, Object entity, Object input) {
+            Choice choice = new Choice(token(), operation, entity == null ? "" : handle(entity));
+            choices.add(choice); bindings.put(choice.id(), new Binding(choice, entity, input));
+        }
+        Object answer(GuiGameEvent event) {
+            s.require(event.getMethod() == ProtocolMethod.getAbilityToPlay, "no unspecified synchronous question");
+            var auth = authorization.get(); s.require(auth != null, "immutable authorization published before dispatch");
+            var offered = (List<SpellAbilityView>) event.getObjects()[1];
+            int step = question.get();
+            s.require(offered.size() == 1 && step < 3, "exact authorized singleton sequence");
+            var ability = step < 2 ? auth.spell() : auth.mana();
+            var view = step < 2 ? auth.spellView() : auth.manaView();
+            s.require(ability != null && offered.get(0) == view && ability.getView() == view, "C1 exact offered view/ability binding");
+            try {
+                var field = forge.player.PlayerControllerHuman.class.getDeclaredField("spellViewCache"); field.setAccessible(true);
+                var cache = (Map<SpellAbilityView, forge.game.spellability.SpellAbility>) field.get(s.controller());
+                s.require(cache.size() == 1 && cache.entrySet().stream().anyMatch(e -> e.getKey() == view && e.getValue() == ability), "C1 live cache reference pair");
+            } catch (ReflectiveOperationException e) { throw s.fail("dto-authorization", "cache unavailable", e); }
+            s.require(step == 0 ? javax.swing.SwingUtilities.isEventDispatchThread() : Thread.currentThread().getName().equals(step == 1 ? "Game-0" : "Game-1"), "original question caller");
+            s.require(question.compareAndSet(step, step + 1), "single consumption of authorization");
+            if (step < 2) s.abilityReplies++; else s.manaReplies++;
+            s.trace("dto-authorized-reply", "step=" + step + " exactReferences=true");
+            return view;
+        }
+        java.util.concurrent.CompletableFuture<Receipt> reject(String code) {
+            rejected++; return java.util.concurrent.CompletableFuture.completedFuture(new Receipt("rejected", code));
+        }
+        synchronized java.util.concurrent.CompletableFuture<Receipt> submit(Object context, Action action, java.util.function.Consumer<Runnable> scheduler) {
+            if (context != trusted) return reject("unauthorized");
+            if (action == null || action.id() == null || action.id().isEmpty() || action.id().length() > 64) return reject("invalidAction");
+            var previous = ledger.get(action.id());
+            if (previous != null) return previous.payload().equals(action.payload()) ? previous.result() : reject("actionIdConflict");
+            var p = action.payload(); var f = published.get();
+            if (p == null || p.type() == null || p.match() == null || p.session() == null || p.prompt() == null || p.choice() == null
+                    || java.util.stream.Stream.of(p.type(), p.match(), p.session(), p.prompt(), p.choice()).anyMatch(v -> v.length() > 64)) return reject("invalidAction");
+            if (!p.type().equals("action") || p.version() != 1) return reject("invalidOperation");
+            if (!p.match().equals(match) || !p.session().equals(session)) return reject("unauthorized");
+            if (inFlight) return reject("busy");
+            if (f == null || f.prompt() == null || p.revision() != f.revision() || !p.prompt().equals(f.prompt().id())) return reject("staleDecision");
+            if (f.prompt().choices().stream().noneMatch(c -> c.id().equals(p.choice()))) return reject("unavailableChoice");
+            if (ledger.size() >= 256 || action.id().isEmpty() || action.id().length() > 64) return reject("invalidAction");
+            var result = new java.util.concurrent.CompletableFuture<Receipt>(); ledger.put(action.id(), new Pending(p, result)); inFlight = true;
+            scheduler.accept(() -> dispatch(action, result)); return result;
+        }
+        void dispatch(Action action, java.util.concurrent.CompletableFuture<Receipt> result) {
+            try {
+                s.require(javax.swing.SwingUtilities.isEventDispatchThread(), "same-runnable EDT recheck and dispatch");
+                var f = published.get(); var p = action.payload();
+                if (f == null || f.prompt() == null || f.revision() != p.revision() || !f.prompt().id().equals(p.prompt())) { result.complete(new Receipt("rejected", "staleDecision")); return; }
+                Binding b = bindings.get(p.choice());
+                if (b == null || b.input() != s.input() || b.entity() != null && (entities.get(b.choice().entity()) != b.entity()
+                        || b.entity() instanceof CardView card && !visible(card))) { result.complete(new Receipt("rejected", "unavailableChoice")); return; }
+                s.captureCheckpoint(b.input());
+                published.set(new Frame(match, session, f.revision(), f.turn(), f.phase(), f.players(), f.cards(), f.stack(), f.payment(), null));
+                dispatches++;
+                // No suspension, queued hop or cached off-thread entity between validation and original call.
+                switch (b.choice().operation()) {
+                    case "cast" -> { s.require(s.input() instanceof forge.gamemodes.match.input.InputPassPriority, "cast decision"); s.castRequested = true; s.require(s.controller().selectCard((CardView)b.entity(), null, null), "original cast action accepted"); }
+                    case "target" -> { s.require(s.input() instanceof forge.gamemodes.match.input.InputSelectTargets, "target decision"); s.targetSelected = true; s.controller().selectPlayer((PlayerView)b.entity(), null); }
+                    case "mana" -> { s.require(s.input() instanceof forge.gamemodes.match.input.InputPayManaOfCostPayment, "payment decision"); s.paymentInput = s.input(); s.manualMana = true; s.require(s.controller().selectCard((CardView)b.entity(), null, null), "original manual mana action accepted"); }
+                    case "pass" -> { s.require(s.input() instanceof forge.gamemodes.match.input.InputPassPriority, "ordinary priority decision"); s.controller().selectButtonOk(); }
+                    default -> throw s.fail("dto-operation", "unsupported operation", null);
+                }
+                result.complete(new Receipt("accepted", "controllerDispatched"));
+            } catch (Throwable t) {
+                s.fail("dto-dispatch", "original dispatch failure", t); result.completeExceptionally(t);
+            } finally { synchronized (this) { inFlight = false; } }
+        }
+        <T> T edt(java.util.concurrent.Callable<T> task) throws Exception {
+            var future = new java.util.concurrent.FutureTask<>(task); FThreads.invokeInEdtLater(future);
+            try { return future.get(15, TimeUnit.SECONDS); }
+            catch (Exception e) { s.checkFailure(); throw e; }
+        }
+        static Action action(Frame f, String id, String choice) { return new Action(id, new Payload("action", 1, f.match(), f.session(), f.revision(), f.prompt().id(), choice)); }
+        void rejected(Action a, Object context, String code, String before) throws Exception {
+            Object expected = edt(s::input);
+            int calls = dispatches;
+            var receipt = submit(context, a, FThreads::invokeInEdtLater).get(15, TimeUnit.SECONDS);
+            s.require(receipt.equals(new Receipt("rejected", code)) && calls == dispatches, "rejection receipt and zero controller calls: " + code);
+            s.require(before.equals(edt(() -> { s.captureCheckpoint(expected); return s.captureFingerprint(); })), "rejection did not advance original game or release input");
+        }
+        Frame controls(Frame f, Prompt prompt) throws Exception {
+            String before = edt(s::captureFingerprint); Choice first = f.prompt().choices().get(0);
+            rejected(action(f,"wrong-context",first.id()),new Object(),"unauthorized",before);
+            rejected(new Action("wrong-session",new Payload("action",1,match,"foreign",f.revision(),f.prompt().id(),first.id())),trusted,"unauthorized",before);
+            rejected(new Action("bad-operation",new Payload("cheat",1,match,session,f.revision(),f.prompt().id(),first.id())),trusted,"invalidOperation",before);
+            rejected(new Action("old-prompt",new Payload("action",1,match,session,f.revision(),"retired",first.id())),trusted,"staleDecision",before);
+            rejected(new Action("old-revision",new Payload("action",1,match,session,f.revision()-1,f.prompt().id(),first.id())),trusted,"staleDecision",before);
+            rejected(action(f,"unknown","unknown-handle"),trusted,"unavailableChoice",before);
+            // Private malicious injector only: legitimate peer never receives this hidden engine identity.
+            String hidden = edt(() -> String.valueOf(s.ai.getCardsIn(forge.game.zone.ZoneType.Hand).get(0).getId()));
+            rejected(action(f,"hidden",hidden),trusted,"unavailableChoice",before);
+            rejected(action(f,"entity-is-not-authority",first.entity()),trusted,"unavailableChoice",before);
+            var held = new ArrayList<Runnable>(); var stale = submit(trusted,action(f,"revoked",first.id()),held::add);
+            edt(() -> { entities.remove(first.entity()); return null; });
+            FThreads.invokeInEdtLater(held.get(0)); s.require(stale.get(15,TimeUnit.SECONDS).code().equals("unavailableChoice"), "live revoked handle rejected on EDT");
+            s.require(before.equals(edt(s::captureFingerprint)) && dispatches == 0, "revocation changed no game state");
+            Frame next = edt(() -> prepare(prompt)); held.clear();
+            var superseded = submit(trusted,action(next,"superseded",next.prompt().choices().get(0).id()),held::add);
+            Frame latest = edt(() -> prepare(prompt)); FThreads.invokeInEdtLater(held.get(0));
+            s.require(superseded.get(15,TimeUnit.SECONDS).code().equals("staleDecision") && dispatches == 0 && before.equals(edt(s::captureFingerprint)), "delayed superseded action cannot dispatch");
+            s.require(resync(trusted) == latest && resync(new Object()) == null, "authorized read-only cached resync does not create prompt/revision");
+            edt(() -> { s.captureCheckpoint(prompt.input()); return null; }); // Pending unanswered input stayed latched.
+            controls = true; s.trace("dto-negative-controls", "unauthorized hidden stale revoked superseded invalidOperation all rejected without controller calls");
+            return latest;
+        }
+        void step(Prompt prompt) throws Exception {
+            Frame frame = edt(() -> prepare(prompt)); if (frame == null) return;
+            if (s.resolved) { s.require(peer.choose(frame) == null, "peer received resolved DTO state"); return; }
+            if (!controls) frame = controls(frame, prompt);
+            String immutableBefore = frame.toString(); Action action = peer.choose(frame);
+            s.require(action != null, "peer selected a DTO capability");
+            var held = new ArrayList<Runnable>(); var pending = submit(trusted,action,held::add);
+            s.require(submit(trusted,action,FThreads::invokeInEdtLater) == pending && held.size() == 1, "pending duplicate shares original receipt/ticket");
+            var p = action.payload();
+            var conflict = new Action(action.id(),new Payload("action",1,match,session,p.revision(),"changed",p.choice()));
+            s.require(submit(trusted,conflict,FThreads::invokeInEdtLater).get().code().equals("actionIdConflict"), "distinct duplicate-ID conflict code");
+            FThreads.invokeInEdtLater(held.get(0));
+            try { s.require(pending.get(15,TimeUnit.SECONDS).status().equals("accepted"), "original controller dispatched"); }
+            catch (Exception e) { s.checkFailure(); throw e; }
+            s.require(submit(trusted,action,FThreads::invokeInEdtLater) == pending, "terminal duplicate returns same receipt before stale checks");
+            s.require(frame.toString().equals(immutableBefore), "old frame remains immutable after engine mutation");
+            s.trace("dto-action", "id=" + action.id() + " accepted oneDispatch=true duplicatePendingAndTerminal=true actionIdConflict=true");
+        }
+        Frame resync(Object context) { return context == trusted ? published.get() : null; }
+        void completed() { s.require(controls && question.get() == 3 && dispatches == 4 && peer.paymentSeen && peer.stackSeen && peer.resolutionSeen, "complete DTO sequence and negative controls"); }
+        static void auditDto(Object value) throws Exception {
+            if (value == null || value instanceof String || value instanceof Integer || value instanceof Long || value instanceof Boolean) return;
+            if (value instanceof List<?> list) {
+                for (Object item : list) auditDto(item);
+                try { ((List<Object>)list).add(null); throw new IllegalStateException("mutable DTO list"); } catch (UnsupportedOperationException expected) { }
+                return;
+            }
+            if (!java.util.Set.of(Frame.class, Seat.class, Face.class, StackFace.class, Payment.class, Decision.class, Choice.class).contains(value.getClass())) throw new IllegalStateException("non-DTO object crossed peer boundary");
+            for (var field : value.getClass().getRecordComponents()) auditDto(field.getAccessor().invoke(value));
+        }
+    }
+
     @Test(timeOut = 180_000)
     public void humanBoltTargetsOpponentWithManualMountainPayment() throws Exception {
         runBoltCase(BoltMode.HUMAN);
     }
+
+    @Test(timeOut = 180_000)
+    public void humanBoltCaptureCheckpoint() throws Exception { runBoltCase(BoltMode.CAPTURE); }
+
+    @Test(timeOut = 180_000)
+    public void humanBoltThroughBrowserDtos() throws Exception { runBoltCase(BoltMode.DTO); }
+
+    @Test(timeOut = 180_000)
+    public void browserDtoUnansweredPromptIsReported() throws Exception { runBoltCase(BoltMode.DTO_UNANSWERED); }
 
     @Test(timeOut = 180_000)
     public void aiBoltRunsThroughOriginalPhaseLoop() throws Exception { runBoltCase(BoltMode.AI); }
@@ -662,7 +1014,7 @@ public class ProtocolGuiGameInProcessTest {
             prefs.setPref(FPref.PLAYER_NAME, "Bolt Fixture");
             MyRandom.setRandom(new Random(7));
             var script = new BoltScript(mode);
-            if (mode == BoltMode.UNANSWERED) {
+            if (mode == BoltMode.UNANSWERED || mode == BoltMode.DTO_UNANSWERED) {
                 AssertionError received = null;
                 try { script.run(); } catch (AssertionError expected) { received = expected; }
                 var artifact = script.failure.get();

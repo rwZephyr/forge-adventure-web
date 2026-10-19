@@ -1,0 +1,41 @@
+-------------------------------------------------------------------------------
+Test set: forge.net.embedded.ProtocolGuiGameInProcessTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 29.56 s <<< FAILURE! -- in forge.net.embedded.ProtocolGuiGameInProcessTest
+forge.net.embedded.ProtocolGuiGameInProcessTest.humanBoltCaptureCheckpoint -- Time elapsed: 21.09 s <<< FAILURE!
+java.lang.AssertionError: Owner received atomic failure: FailureArtifact[action=assertion, input=InputPayManaOfCostPayment@463588188, threadId=121, thread=AWT-EventQueue-0, reason=only parked loop active; no queued worker, error=java.lang.IllegalStateException: assertion: only parked loop active; no queued worker]
+	at forge.net.embedded.ProtocolGuiGameInProcessTest$BoltScript.checkFailure(ProtocolGuiGameInProcessTest.java:371)
+	at forge.net.embedded.ProtocolGuiGameInProcessTest$BoltScript.run(ProtocolGuiGameInProcessTest.java:672)
+	at forge.net.embedded.ProtocolGuiGameInProcessTest.runBoltCase(ProtocolGuiGameInProcessTest.java:736)
+	at forge.net.embedded.ProtocolGuiGameInProcessTest.humanBoltCaptureCheckpoint(ProtocolGuiGameInProcessTest.java:695)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+	at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.lang.IllegalStateException: assertion: only parked loop active; no queued worker
+	at forge.net.embedded.ProtocolGuiGameInProcessTest$BoltScript.fail(ProtocolGuiGameInProcessTest.java:364)
+	at forge.net.embedded.ProtocolGuiGameInProcessTest$BoltScript.require(ProtocolGuiGameInProcessTest.java:370)
+	at forge.net.embedded.ProtocolGuiGameInProcessTest$BoltScript.captureCheckpoint(ProtocolGuiGameInProcessTest.java:467)
+	at forge.net.embedded.ProtocolGuiGameInProcessTest$BoltScript.act(ProtocolGuiGameInProcessTest.java:627)
+	at forge.net.embedded.ProtocolGuiGameInProcessTest$BoltScript.lambda$run$11(ProtocolGuiGameInProcessTest.java:668)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:771)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:722)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:716)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:741)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)

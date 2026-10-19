@@ -1,0 +1,50 @@
+{
+  "case": "unanswered",
+  "label": "unanswered-final",
+  "maven": false,
+  "nativeExit": 0,
+  "startedUtc": "2026-10-19T02:26:05.0445599Z",
+  "endedUtc": "2026-10-19T02:26:35.1702774Z",
+  "testSourceSha256": "4a98d6d6dcdbed15f50206065ce54200cab92e530b8d9d1630b3e89f741daf16",
+  "sourceUnchangedDuringRun": true,
+  "restorationPreflightPassed": true,
+  "environmentRestored": true,
+  "environmentChecks": [
+    {
+      "name": "JAVA_HOME",
+      "beforeExists": false,
+      "afterExists": false,
+      "exactMatch": true
+    },
+    {
+      "name": "JAVA_TOOL_OPTIONS",
+      "beforeExists": false,
+      "afterExists": false,
+      "exactMatch": true
+    },
+    {
+      "name": "APPDATA",
+      "beforeExists": true,
+      "afterExists": true,
+      "exactMatch": true
+    },
+    {
+      "name": "LOCALAPPDATA",
+      "beforeExists": true,
+      "afterExists": true,
+      "exactMatch": true
+    },
+    {
+      "name": "TEMP",
+      "beforeExists": true,
+      "afterExists": true,
+      "exactMatch": true
+    },
+    {
+      "name": "TMP",
+      "beforeExists": true,
+      "afterExists": true,
+      "exactMatch": true
+    }
+  ]
+}
