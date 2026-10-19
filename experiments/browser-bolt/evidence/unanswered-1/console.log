@@ -1,0 +1,368 @@
+Picked up JAVA_TOOL_OPTIONS: -Duser.home=<WORKSPACE>/.local-tools/browser-bolt/unanswered-1/home -Djava.io.tmpdir=<WORKSPACE>/.local-tools/browser-bolt/unanswered-1/tmp -Djava.awt.headless=true -Xmx1536m
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO]
+[INFO] Forge Parent                                                       [pom]
+[INFO] Forge Core                                                         [jar]
+[INFO] Forge Game                                                         [jar]
+[INFO] Forge AI                                                           [jar]
+[INFO] Forge Gui                                                          [jar]
+[INFO] Forge                                                              [jar]
+[INFO]
+[INFO] ----------------------------< forge:forge >-----------------------------
+[INFO] Building Forge Parent 2.0.16-SNAPSHOT                              [1/6]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO]
+[INFO] --- enforcer:3.3.0:enforce (enforce-versions) @ forge ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] Rule 1: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] Rule 2: org.apache.maven.enforcer.rules.RequirePluginVersions passed
+[INFO]
+[INFO] --- checkstyle:3.1.2:check (checkstyle-validation) @ forge ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO]
+[INFO] --------------------------< forge:forge-core >--------------------------
+[INFO] Building Forge Core 2.0.16-SNAPSHOT                                [2/6]
+[INFO]   from forge-core\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- enforcer:3.3.0:enforce (enforce-versions) @ forge-core ---
+[INFO] Rule 2: org.apache.maven.enforcer.rules.RequirePluginVersions passed
+[INFO]
+[INFO] --- checkstyle:3.1.2:check (checkstyle-validation) @ forge-core ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO]
+[INFO] --- resources:3.3.1:resources (default-resources) @ forge-core ---
+[INFO] skip non existing resourceDirectory <WORKSPACE>\forge-core\src\main\resources
+[INFO]
+[INFO] --- compiler:3.8.1:compile (default-compile) @ forge-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 154 source files to <WORKSPACE>\forge-core\target\classes
+[INFO] /<WORKSPACE>/forge-core/src/main/java/forge/card/CardRules.java: Some input files use or override a deprecated API.
+[INFO] /<WORKSPACE>/forge-core/src/main/java/forge/card/CardRules.java: Recompile with -Xlint:deprecation for details.
+[INFO] /<WORKSPACE>/forge-core/src/main/java/forge/util/BagRandomizer.java: Some input files use unchecked or unsafe operations.
+[INFO] /<WORKSPACE>/forge-core/src/main/java/forge/util/BagRandomizer.java: Recompile with -Xlint:unchecked for details.
+[INFO]
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ forge-core ---
+[INFO] skip non existing resourceDirectory <WORKSPACE>\forge-core\src\test\resources
+[INFO]
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ forge-core ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- surefire:3.1.2:test (default-test) @ forge-core ---
+[INFO] No tests to run.
+[INFO]
+[INFO] --------------------------< forge:forge-game >--------------------------
+[INFO] Building Forge Game 2.0.16-SNAPSHOT                                [3/6]
+[INFO]   from forge-game\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- enforcer:3.3.0:enforce (enforce-versions) @ forge-game ---
+[INFO] Rule 2: org.apache.maven.enforcer.rules.RequirePluginVersions passed
+[INFO]
+[INFO] --- checkstyle:3.1.2:check (checkstyle-validation) @ forge-game ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO]
+[INFO] --- resources:3.3.1:resources (default-resources) @ forge-game ---
+[INFO] skip non existing resourceDirectory <WORKSPACE>\forge-game\src\main\resources
+[INFO]
+[INFO] --- compiler:3.8.1:compile (default-compile) @ forge-game ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 822 source files to <WORKSPACE>\forge-game\target\classes
+[INFO] /<WORKSPACE>/forge-game/src/main/java/forge/game/GameLog.java: Some input files use or override a deprecated API.
+[INFO] /<WORKSPACE>/forge-game/src/main/java/forge/game/GameLog.java: Recompile with -Xlint:deprecation for details.
+[INFO] /<WORKSPACE>/forge-game/src/main/java/forge/trackable/TrackableObject.java: Some input files use unchecked or unsafe operations.
+[INFO] /<WORKSPACE>/forge-game/src/main/java/forge/trackable/TrackableObject.java: Recompile with -Xlint:unchecked for details.
+[INFO]
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ forge-game ---
+[INFO] skip non existing resourceDirectory <WORKSPACE>\forge-game\src\test\resources
+[INFO]
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ forge-game ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to <WORKSPACE>\forge-game\target\test-classes
+[INFO]
+[INFO] --- surefire:3.1.2:test (default-test) @ forge-game ---
+[INFO]
+[INFO] ---------------------------< forge:forge-ai >---------------------------
+[INFO] Building Forge AI 2.0.16-SNAPSHOT                                  [4/6]
+[INFO]   from forge-ai\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- enforcer:3.3.0:enforce (enforce-versions) @ forge-ai ---
+[INFO] Rule 2: org.apache.maven.enforcer.rules.RequirePluginVersions passed
+[INFO]
+[INFO] --- checkstyle:3.1.2:check (checkstyle-validation) @ forge-ai ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO]
+[INFO] --- resources:3.3.1:resources (default-resources) @ forge-ai ---
+[INFO] skip non existing resourceDirectory <WORKSPACE>\forge-ai\src\main\resources
+[INFO]
+[INFO] --- compiler:3.8.1:compile (default-compile) @ forge-ai ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 192 source files to <WORKSPACE>\forge-ai\target\classes
+[INFO] /<WORKSPACE>/forge-ai/src/main/java/forge/ai/simulation/GameCopier.java: Some input files use or override a deprecated API.
+[INFO] /<WORKSPACE>/forge-ai/src/main/java/forge/ai/simulation/GameCopier.java: Recompile with -Xlint:deprecation for details.
+[INFO] /<WORKSPACE>/forge-ai/src/main/java/forge/ai/simulation/GameCopier.java: Some input files use unchecked or unsafe operations.
+[INFO] /<WORKSPACE>/forge-ai/src/main/java/forge/ai/simulation/GameCopier.java: Recompile with -Xlint:unchecked for details.
+[INFO]
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ forge-ai ---
+[INFO] skip non existing resourceDirectory <WORKSPACE>\forge-ai\src\test\resources
+[INFO]
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ forge-ai ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- surefire:3.1.2:test (default-test) @ forge-ai ---
+[INFO] No tests to run.
+[INFO]
+[INFO] --------------------------< forge:forge-gui >---------------------------
+[INFO] Building Forge Gui 2.0.16-SNAPSHOT                                 [5/6]
+[INFO]   from forge-gui\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- enforcer:3.3.0:enforce (enforce-versions) @ forge-gui ---
+[INFO] Rule 2: org.apache.maven.enforcer.rules.RequirePluginVersions passed
+[INFO]
+[INFO] --- checkstyle:3.1.2:check (checkstyle-validation) @ forge-gui ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO]
+[INFO] --- resources:3.3.1:resources (default-resources) @ forge-gui ---
+[INFO] Copying 3 resources from src\main\resources to target\classes
+[INFO]
+[INFO] --- compiler:3.8.1:compile (default-compile) @ forge-gui ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 464 source files to <WORKSPACE>\forge-gui\target\classes
+[INFO] /<WORKSPACE>/forge-gui/src/main/java/forge/gamemodes/quest/QuestUtilCards.java: Some input files use or override a deprecated API.
+[INFO] /<WORKSPACE>/forge-gui/src/main/java/forge/gamemodes/quest/QuestUtilCards.java: Recompile with -Xlint:deprecation for details.
+[INFO] /<WORKSPACE>/forge-gui/src/main/java/forge/gamemodes/match/input/InputSelectEntitiesFromList.java: Some input files use unchecked or unsafe operations.
+[INFO] /<WORKSPACE>/forge-gui/src/main/java/forge/gamemodes/match/input/InputSelectEntitiesFromList.java: Recompile with -Xlint:unchecked for details.
+[INFO]
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ forge-gui ---
+[INFO] Copying 1 resource from src\test\resources to target\test-classes
+[INFO]
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ forge-gui ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to <WORKSPACE>\forge-gui\target\test-classes
+[INFO] /<WORKSPACE>/forge-gui/src/test/java/forge/gamemodes/replay/ReplayRecordingShould.java: <WORKSPACE>\forge-gui\src\test\java\forge\gamemodes\replay\ReplayRecordingShould.java uses or overrides a deprecated API.
+[INFO] /<WORKSPACE>/forge-gui/src/test/java/forge/gamemodes/replay/ReplayRecordingShould.java: Recompile with -Xlint:deprecation for details.
+[INFO]
+[INFO] --- surefire:3.1.2:test (default-test) @ forge-gui ---
+[INFO]
+[INFO] ----------------------< forge:forge-gui-desktop >-----------------------
+[INFO] Building Forge 2.0.16-SNAPSHOT                                     [6/6]
+[INFO]   from forge-gui-desktop\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- enforcer:3.3.0:enforce (enforce-versions) @ forge-gui-desktop ---
+[INFO] Rule 2: org.apache.maven.enforcer.rules.RequirePluginVersions passed
+[INFO]
+[INFO] --- checkstyle:3.1.2:check (checkstyle-validation) @ forge-gui-desktop ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO]
+[INFO] --- build-helper:3.6.0:released-version (released-version) @ forge-gui-desktop ---
+[INFO]
+[INFO] --- build-helper:3.6.0:parse-version (parse-version) @ forge-gui-desktop ---
+[INFO]
+[INFO] --- build-helper:3.6.0:timestamp-property (timestamp-property) @ forge-gui-desktop ---
+[WARNING] Using platform locale (en_CA actually) to format date/time, i.e. build is platform dependent!
+[INFO]
+[INFO] --- build-helper:3.6.0:regex-property (regex-property) @ forge-gui-desktop ---
+[INFO]
+[INFO] --- groovy:2.1.1:execute (get-changelog-from-tag) @ forge-gui-desktop ---
+WARNING: No forge- tags found. CHANGES.txt will be empty.
+[INFO]
+[INFO] --- resources:3.3.1:resources (default-resources) @ forge-gui-desktop ---
+[INFO] Copying 2 resources from filters to target\classes
+[INFO]
+[INFO] --- compiler:3.8.1:compile (default-compile) @ forge-gui-desktop ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 409 source files to <WORKSPACE>\forge-gui-desktop\target\classes
+[INFO] /<WORKSPACE>/forge-gui-desktop/src/main/java/forge/screens/match/controllers/CLog.java: Some input files use or override a deprecated API.
+[INFO] /<WORKSPACE>/forge-gui-desktop/src/main/java/forge/screens/match/controllers/CLog.java: Recompile with -Xlint:deprecation for details.
+[INFO] /<WORKSPACE>/forge-gui-desktop/src/main/java/forge/screens/match/CMatchUI.java: Some input files use unchecked or unsafe operations.
+[INFO] /<WORKSPACE>/forge-gui-desktop/src/main/java/forge/screens/match/CMatchUI.java: Recompile with -Xlint:unchecked for details.
+[INFO]
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ forge-gui-desktop ---
+[INFO] skip non existing resourceDirectory <WORKSPACE>\forge-gui-desktop\src\test\resources
+[INFO]
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ forge-gui-desktop ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 144 source files to <WORKSPACE>\forge-gui-desktop\target\test-classes
+[INFO] /<WORKSPACE>/forge-gui-desktop/src/test/java/forge/gamemodes/net/WireDeserializationTest.java: <WORKSPACE>\forge-gui-desktop\src\test\java\forge\gamemodes\net\WireDeserializationTest.java uses or overrides a deprecated API.
+[INFO] /<WORKSPACE>/forge-gui-desktop/src/test/java/forge/gamemodes/net/WireDeserializationTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] /<WORKSPACE>/forge-gui-desktop/src/test/java/forge/net/embedded/ProtocolGuiGameInProcessTest.java: Some input files use unchecked or unsafe operations.
+[INFO] /<WORKSPACE>/forge-gui-desktop/src/test/java/forge/net/embedded/ProtocolGuiGameInProcessTest.java: Recompile with -Xlint:unchecked for details.
+[INFO]
+[INFO] --- surefire:3.1.2:test (default-test) @ forge-gui-desktop ---
+[INFO] Using auto detected provider org.apache.maven.surefire.testng.TestNGProvider
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+Picked up JAVA_TOOL_OPTIONS: -Duser.home=<WORKSPACE>/.local-tools/browser-bolt/unanswered-1/home -Djava.io.tmpdir=<WORKSPACE>/.local-tools/browser-bolt/unanswered-1/tmp -Djava.awt.headless=true -Xmx1536m
+[INFO] Running forge.net.embedded.ProtocolGuiGameInProcessTest
+Language 'en-US' loaded successfully.
+(ThreadUtil first call): Running with priority 5
+Read cards: 34088 files in 3 ms (25 parts) using thread pool
+Upcoming set Marvel: Darkhold Destiny (MDD) dated in the future. All `upcoming` cards will be added to this set with unknown rarity.
+The card A-Alrund's Epiphany was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card A-Baba Lysaga, Night Witch was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card A-Divide by Zero was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card A-Esika's Chariot was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card A-Faceless Haven was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card A-Fires of Invention was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card A-Goldspan Dragon was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card A-Hullbreaker Horror was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card A-Kumano Faces Kakkazan was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card A-Luminarch Aspirant was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card A-Monster Manual was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card A-Omnath, Locus of Creation was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card A-The Meathook Massacre was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card A-Unholy Heat was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card Blinding Radiance was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card Goblin Bruiser was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card Ogre Painbringer was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card Titanic Pelagosaur was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+The card Treetop Recluse was not assigned to any set. Adding it to UNKNOWN set... to fix see res/editions/ folder.
+Upcoming set Marvel: Darkhold Destiny (MDD) dated in the future. All `upcoming` cards will be added to this set with unknown rarity.
+Read cards: 857 files in 0 ms (8 parts) using thread pool
+15:21:55 [INFO ] TestUtils: [TestConfig] checksum=stable, deltasync=on
+[bolt] bootstrapMs=26847.629 mode=DTO_UNANSWERED
+Unable to load music file: ..\forge-gui\res\music\match\Hitman.mp3
+[bolt] ns=617068000 site=DTO_UNANSWERED:updateGameView-enter tid=62 thread=TestNG-method=browserDtoUnansweredPromptIsReported-1 edt=false input=none waiter=none
+[bolt] ns=697262300 site=DTO_UNANSWERED:updateGameView-return tid=62 thread=TestNG-method=browserDtoUnansweredPromptIsReported-1 edt=false input=none waiter=none
+[bolt] ns=697738500 site=DTO_UNANSWERED:updateGameView-enter tid=62 thread=TestNG-method=browserDtoUnansweredPromptIsReported-1 edt=false input=none waiter=none
+[bolt] ns=728533300 site=DTO_UNANSWERED:updateGameView-return tid=62 thread=TestNG-method=browserDtoUnansweredPromptIsReported-1 edt=false input=none waiter=none
+[bolt] ns=732991000 site=DTO_UNANSWERED:updateGameView-enter tid=62 thread=TestNG-method=browserDtoUnansweredPromptIsReported-1 edt=false input=none waiter=none
+[bolt] ns=733556400 site=DTO_UNANSWERED:updateGameView-return tid=62 thread=TestNG-method=browserDtoUnansweredPromptIsReported-1 edt=false input=none waiter=none
+[bolt] ns=1260232600 site=DTO_UNANSWERED:handleGameEvents-enter tid=119 thread=Game-0 edt=false input=none waiter=none
+15:21:56 [INFO ] ProtocolGuiGame: Sending batch of 7: [GameEventZone x4, GameEventShuffle x2, GameEventFlipCoin]
+15:21:56 [INFO ] DeltaSyncManager: [DeltaSync] New objects: 163, Deltas: 0
+[bolt] ns=1275168000 site=DTO_UNANSWERED:handleGameEvents-return tid=119 thread=Game-0 edt=false input=none waiter=none
+[bolt] ns=1286329200 site=DTO_UNANSWERED:await-enter tid=119 thread=Game-0 edt=false input=InputConfirm@15792279 count=1
+[bolt] ns=1291306800 site=DTO_UNANSWERED:prompt-updateButtons tid=120 thread=AWT-EventQueue-0 edt=true input=InputConfirm@15792279 waiter=119:Game-0:RUNNABLE:latch=1
+[bolt] ns=1295351400 site=DTO_UNANSWERED:prompt-showPromptMessage tid=120 thread=AWT-EventQueue-0 edt=true input=InputConfirm@15792279 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1321584200 site=DTO_UNANSWERED:action tid=120 thread=AWT-EventQueue-0 edt=true input=InputConfirm@15792279 buttons=Play/Draw waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1325023400 site=DTO_UNANSWERED:await-return tid=119 thread=Game-0 edt=false input=InputLockUI@1632676440 count=0
+[bolt] ns=1549901100 site=DTO_UNANSWERED:handleGameEvents-enter tid=119 thread=Game-0 edt=false input=InputLockUI@1632676440 waiter=119:Game-0:RUNNABLE:latch=0
+15:21:56 [INFO ] ProtocolGuiGame: Sending batch of 43: [GameEventGameStarted, GameEventZone x28, GameEventCardChangeZone x14]
+15:21:56 [INFO ] DeltaSyncManager: [DeltaSync] New objects: 28, Deltas: 2
+[bolt] ns=1555843900 site=DTO_UNANSWERED:handleGameEvents-return tid=119 thread=Game-0 edt=false input=InputLockUI@1632676440 waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=1556235300 site=DTO_UNANSWERED:await-enter tid=119 thread=Game-0 edt=false input=InputConfirmMulligan@1495801185 count=1
+[bolt] ns=1556437000 site=DTO_UNANSWERED:prompt-updateButtons tid=120 thread=AWT-EventQueue-0 edt=true input=InputConfirmMulligan@1495801185 waiter=119:Game-0:RUNNABLE:latch=1
+[bolt] ns=1556832700 site=DTO_UNANSWERED:prompt-showPromptMessage tid=120 thread=AWT-EventQueue-0 edt=true input=InputConfirmMulligan@1495801185 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1557130300 site=DTO_UNANSWERED:action tid=120 thread=AWT-EventQueue-0 edt=true input=InputConfirmMulligan@1495801185 buttons=Keep/Mulligan waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1557587000 site=DTO_UNANSWERED:await-return tid=119 thread=Game-0 edt=false input=InputLockUI@339403243 count=0
+[bolt] ns=1789503400 site=DTO_UNANSWERED:fixture tid=119 thread=Game-0 edt=false input=InputLockUI@339403243 human=0 ai=1 boltIds=[1] mountain=2 timeout=5
+[bolt] ns=1794273000 site=DTO_UNANSWERED:handleGameEvents-enter tid=119 thread=Game-0 edt=false input=InputLockUI@339403243 waiter=119:Game-0:RUNNABLE:latch=0
+15:21:56 [INFO ] ProtocolGuiGame: Sending batch of 259: [GameEventAddLog x2, GameEventTurnBegan, GameEventTurnPhase x2, GameEventZone x170, GameEventCardChangeZone x83, GameEventPlayerPriority]
+15:21:56 [INFO ] DeltaSyncManager: [DeltaSync] New objects: 28, Deltas: 3
+[bolt] ns=1803781700 site=DTO_UNANSWERED:handleGameEvents-return tid=119 thread=Game-0 edt=false input=InputLockUI@339403243 waiter=119:Game-0:RUNNABLE:latch=0
+[bolt] ns=1950436900 site=DTO_UNANSWERED:await-enter tid=119 thread=Game-0 edt=false input=InputPassPriority@300014023 count=1
+[bolt] ns=1950545100 site=DTO_UNANSWERED:updateGameView-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:RUNNABLE:latch=1
+[bolt] ns=1951670500 site=DTO_UNANSWERED:updateGameView-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1959068300 site=DTO_UNANSWERED:prompt-showPromptMessage tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1959405900 site=DTO_UNANSWERED:prompt-updateButtons tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1966818700 site=DTO_UNANSWERED:capture-workers tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 submitted=1 completed=0 active=1 queued=0
+[bolt] ns=1968062100 site=DTO_UNANSWERED:capture-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1975696400 site=DTO_UNANSWERED:capture-coherent tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 submitted=1 completed=0 active=1 fingerprint=1:MAIN1|0:20/pool:0/Hand:1:false/Battlefield:2:false|1:20/pool:0/Hand:52:false
+[bolt] ns=1976005000 site=DTO_UNANSWERED:capture-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=1982402500 site=DTO_UNANSWERED:visibility-initial tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 allowedFaceCount=2 hiddenFaceCount=78 rawGraphPrivate=true
+[bolt] ns=1982590500 site=DTO_UNANSWERED:dto-project-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[browser-frame] Frame[match=095787ad-9e7a-4fe1-9116-b34ff5129efd, session=1cad1f34-5e2b-4dfb-a3b0-1bc79b0fe950, revision=1, turn=1, phase=MAIN1, players=[Seat[handle=4dcfd7d9-21fc-407a-84f5-36eb9a931feb, self=true, life=20], Seat[handle=1143185b-3e23-4529-89e7-d90040fec448, self=false, life=20]], cards=[Face[handle=902e9c2f-c575-48e4-98cd-fd8fc9aae50f, name=Mountain, zone=Battlefield, controller=4dcfd7d9-21fc-407a-84f5-36eb9a931feb, tapped=false], Face[handle=ba93e30c-5c9c-48a1-85ce-dd1d48590a12, name=Lightning Bolt, zone=Hand, controller=4dcfd7d9-21fc-407a-84f5-36eb9a931feb, tapped=false]], stack=[], payment=null, prompt=Decision[id=79cd7eb8-fcbf-4c2f-b025-11dce6dccd7b, kind=priority, source=, selected=[], min=1, max=1, choices=[Choice[id=725f0953-af90-4ffa-ad9e-ab255bcd186c, operation=cast, entity=ba93e30c-5c9c-48a1-85ce-dd1d48590a12], Choice[id=835eaa97-d640-41a2-8fd9-d7c644bb168a, operation=pass, entity=]]]]
+[bolt] ns=2025168800 site=DTO_UNANSWERED:dto-project-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=2032603700 site=DTO_UNANSWERED:capture-workers tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 submitted=1 completed=0 active=1 queued=0
+[bolt] ns=2033579200 site=DTO_UNANSWERED:capture-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=2033805200 site=DTO_UNANSWERED:capture-coherent tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 submitted=1 completed=0 active=1 fingerprint=1:MAIN1|0:20/pool:0/Hand:1:false/Battlefield:2:false|1:20/pool:0/Hand:52:false
+[bolt] ns=2033879800 site=DTO_UNANSWERED:capture-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=2035095400 site=DTO_UNANSWERED:capture-workers tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 submitted=1 completed=0 active=1 queued=0
+[bolt] ns=2035899300 site=DTO_UNANSWERED:capture-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=2036093900 site=DTO_UNANSWERED:capture-coherent tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 submitted=1 completed=0 active=1 fingerprint=1:MAIN1|0:20/pool:0/Hand:1:false/Battlefield:2:false|1:20/pool:0/Hand:52:false
+[bolt] ns=2036167600 site=DTO_UNANSWERED:capture-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=2036957300 site=DTO_UNANSWERED:capture-workers tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 submitted=1 completed=0 active=1 queued=0
+[bolt] ns=2038427700 site=DTO_UNANSWERED:capture-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=2038615300 site=DTO_UNANSWERED:capture-coherent tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 submitted=1 completed=0 active=1 fingerprint=1:MAIN1|0:20/pool:0/Hand:1:false/Battlefield:2:false|1:20/pool:0/Hand:52:false
+[bolt] ns=2038691000 site=DTO_UNANSWERED:capture-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=2039464300 site=DTO_UNANSWERED:capture-workers tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 submitted=1 completed=0 active=1 queued=0
+[bolt] ns=2040522100 site=DTO_UNANSWERED:capture-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=2040688600 site=DTO_UNANSWERED:capture-coherent tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 submitted=1 completed=0 active=1 fingerprint=1:MAIN1|0:20/pool:0/Hand:1:false/Battlefield:2:false|1:20/pool:0/Hand:52:false
+[bolt] ns=2040761900 site=DTO_UNANSWERED:capture-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=2041450800 site=DTO_UNANSWERED:capture-workers tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 submitted=1 completed=0 active=1 queued=0
+[bolt] ns=2042152500 site=DTO_UNANSWERED:capture-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=2042313200 site=DTO_UNANSWERED:capture-coherent tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 submitted=1 completed=0 active=1 fingerprint=1:MAIN1|0:20/pool:0/Hand:1:false/Battlefield:2:false|1:20/pool:0/Hand:52:false
+[bolt] ns=2042408000 site=DTO_UNANSWERED:capture-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=2043760500 site=DTO_UNANSWERED:capture-workers tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 submitted=1 completed=0 active=1 queued=0
+[bolt] ns=2044482800 site=DTO_UNANSWERED:capture-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=2044668000 site=DTO_UNANSWERED:capture-coherent tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 submitted=1 completed=0 active=1 fingerprint=1:MAIN1|0:20/pool:0/Hand:1:false/Battlefield:2:false|1:20/pool:0/Hand:52:false
+[bolt] ns=2044744600 site=DTO_UNANSWERED:capture-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=2045953000 site=DTO_UNANSWERED:capture-workers tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 submitted=1 completed=0 active=1 queued=0
+[bolt] ns=2046779300 site=DTO_UNANSWERED:capture-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=2046958100 site=DTO_UNANSWERED:capture-coherent tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 submitted=1 completed=0 active=1 fingerprint=1:MAIN1|0:20/pool:0/Hand:1:false/Battlefield:2:false|1:20/pool:0/Hand:52:false
+[bolt] ns=2047037100 site=DTO_UNANSWERED:capture-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=2047820500 site=DTO_UNANSWERED:capture-workers tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 submitted=1 completed=0 active=1 queued=0
+[bolt] ns=2048528400 site=DTO_UNANSWERED:capture-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=2048699800 site=DTO_UNANSWERED:capture-coherent tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 submitted=1 completed=0 active=1 fingerprint=1:MAIN1|0:20/pool:0/Hand:1:false/Battlefield:2:false|1:20/pool:0/Hand:52:false
+[bolt] ns=2048773600 site=DTO_UNANSWERED:capture-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=2053027500 site=DTO_UNANSWERED:capture-workers tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 submitted=1 completed=0 active=1 queued=0
+[bolt] ns=2053922300 site=DTO_UNANSWERED:capture-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=2054130500 site=DTO_UNANSWERED:capture-coherent tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 submitted=1 completed=0 active=1 fingerprint=1:MAIN1|0:20/pool:0/Hand:1:false/Battlefield:2:false|1:20/pool:0/Hand:52:false
+[bolt] ns=2054230200 site=DTO_UNANSWERED:capture-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=2054774500 site=DTO_UNANSWERED:visibility-initial tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 allowedFaceCount=2 hiddenFaceCount=78 rawGraphPrivate=true
+[bolt] ns=2054862000 site=DTO_UNANSWERED:dto-project-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[browser-frame] Frame[match=095787ad-9e7a-4fe1-9116-b34ff5129efd, session=1cad1f34-5e2b-4dfb-a3b0-1bc79b0fe950, revision=2, turn=1, phase=MAIN1, players=[Seat[handle=eb845763-1cae-4030-8268-f3f1ebe62e52, self=true, life=20], Seat[handle=07433b55-b001-482e-9e13-fd634b759bf4, self=false, life=20]], cards=[Face[handle=8571e77a-29ea-4d05-adcd-21a8b8e85873, name=Mountain, zone=Battlefield, controller=eb845763-1cae-4030-8268-f3f1ebe62e52, tapped=false], Face[handle=c9fdc062-0470-414a-acb1-65799dc8be4e, name=Lightning Bolt, zone=Hand, controller=eb845763-1cae-4030-8268-f3f1ebe62e52, tapped=false]], stack=[], payment=null, prompt=Decision[id=f04d89ce-ec48-4ebd-ba3b-5151d0f9e0ee, kind=priority, source=, selected=[], min=1, max=1, choices=[Choice[id=c6a7de2f-1191-44c1-81dd-1efe306121d9, operation=cast, entity=c9fdc062-0470-414a-acb1-65799dc8be4e], Choice[id=2df658cc-63f9-4d1f-8b84-affeebd96744, operation=pass, entity=]]]]
+[bolt] ns=2056822700 site=DTO_UNANSWERED:dto-project-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=2057885800 site=DTO_UNANSWERED:capture-workers tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 submitted=1 completed=0 active=1 queued=0
+[bolt] ns=2058703200 site=DTO_UNANSWERED:capture-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=2058870400 site=DTO_UNANSWERED:capture-coherent tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 submitted=1 completed=0 active=1 fingerprint=1:MAIN1|0:20/pool:0/Hand:1:false/Battlefield:2:false|1:20/pool:0/Hand:52:false
+[bolt] ns=2058942300 site=DTO_UNANSWERED:capture-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=2059492700 site=DTO_UNANSWERED:visibility-initial tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 allowedFaceCount=2 hiddenFaceCount=78 rawGraphPrivate=true
+[bolt] ns=2059669800 site=DTO_UNANSWERED:dto-project-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[browser-frame] Frame[match=095787ad-9e7a-4fe1-9116-b34ff5129efd, session=1cad1f34-5e2b-4dfb-a3b0-1bc79b0fe950, revision=3, turn=1, phase=MAIN1, players=[Seat[handle=82687929-07f4-438f-a83e-649c636e8af9, self=true, life=20], Seat[handle=6fc01733-e40d-437f-9afa-e2ac22839ba2, self=false, life=20]], cards=[Face[handle=da1d4737-9be5-441a-bdd9-415a8db3e3be, name=Mountain, zone=Battlefield, controller=82687929-07f4-438f-a83e-649c636e8af9, tapped=false], Face[handle=536e525f-46e3-4d49-b307-310405626e6c, name=Lightning Bolt, zone=Hand, controller=82687929-07f4-438f-a83e-649c636e8af9, tapped=false]], stack=[], payment=null, prompt=Decision[id=3cf85757-ef22-402f-ab5a-682b6b27bb6e, kind=priority, source=, selected=[], min=1, max=1, choices=[Choice[id=5eec24a6-f773-41bb-be92-5ec67440d6ae, operation=cast, entity=536e525f-46e3-4d49-b307-310405626e6c], Choice[id=d0183199-c704-4a4f-b213-0d525a53933e, operation=pass, entity=]]]]
+[bolt] ns=2062588500 site=DTO_UNANSWERED:dto-project-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=2065456700 site=DTO_UNANSWERED:capture-workers tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 submitted=1 completed=0 active=1 queued=0
+[bolt] ns=2067080000 site=DTO_UNANSWERED:capture-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=2067315900 site=DTO_UNANSWERED:capture-coherent tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 submitted=1 completed=0 active=1 fingerprint=1:MAIN1|0:20/pool:0/Hand:1:false/Battlefield:2:false|1:20/pool:0/Hand:52:false
+[bolt] ns=2067413200 site=DTO_UNANSWERED:capture-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=2067608400 site=DTO_UNANSWERED:dto-negative-controls tid=62 thread=TestNG-method=browserDtoUnansweredPromptIsReported-1 edt=false input=InputPassPriority@300014023 unauthorized hidden stale revoked superseded invalidOperation all rejected without controller calls
+[bolt] ns=2073243100 site=DTO_UNANSWERED:capture-workers tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 submitted=1 completed=0 active=1 queued=0
+[bolt] ns=2074180300 site=DTO_UNANSWERED:capture-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=2074368900 site=DTO_UNANSWERED:capture-coherent tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 submitted=1 completed=0 active=1 fingerprint=1:MAIN1|0:20/pool:0/Hand:1:false/Battlefield:2:false|1:20/pool:0/Hand:52:false
+[bolt] ns=2074454400 site=DTO_UNANSWERED:capture-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=2076819600 site=DTO_UNANSWERED:updateGameView-enter tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[bolt] ns=2077804300 site=DTO_UNANSWERED:updateGameView-return tid=120 thread=AWT-EventQueue-0 edt=true input=InputPassPriority@300014023 waiter=119:Game-0:WAITING:latch=1
+[bolt] DTO_UNANSWERED:ATOMIC-FAILURE cachedInput=true FailureArtifact[action=required-question, input=InputPassPriority@300014023, threadId=120, thread=AWT-EventQueue-0, reason=deliberately unanswered getAbilityToPlay, error=java.lang.IllegalStateException: required-question: deliberately unanswered getAbilityToPlay]
+[bolt] ns=2091809100 site=DTO_UNANSWERED:negative-owner-received tid=62 thread=TestNG-method=browserDtoUnansweredPromptIsReported-1 edt=false input=InputPassPriority@300014023 artifactThread=120 sameAtomicArtifact=true noCastOrPayment=true
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 37.57 s -- in forge.net.embedded.ProtocolGuiGameInProcessTest
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Forge Parent 2.0.16-SNAPSHOT:
+[INFO]
+[INFO] Forge Parent ....................................... SUCCESS [  2.224 s]
+[INFO] Forge Core ......................................... SUCCESS [ 12.653 s]
+[INFO] Forge Game ......................................... SUCCESS [ 21.495 s]
+[INFO] Forge AI ........................................... SUCCESS [  4.299 s]
+[INFO] Forge Gui .......................................... SUCCESS [ 10.094 s]
+[INFO] Forge .............................................. SUCCESS [01:01 min]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:52 min
+[INFO] Finished at: 2026-10-19T15:21:57-07:00
+[INFO] ------------------------------------------------------------------------

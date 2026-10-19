@@ -1,0 +1,7 @@
+{
+  "observedUtc": "2026-10-19T22:44:09.8753119Z",
+  "listener": [
+    "127.0.0.1:8765"
+  ],
+  "cleanupConcessionsBeforeFinish": 0
+}

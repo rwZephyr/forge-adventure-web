@@ -1,0 +1,10 @@
+{
+  "processId": 86472,
+  "purpose": "passive process observer only",
+  "identityVerified": true,
+  "observedExit": true,
+  "exitCode": -1,
+  "terminationReason": "Observer included itself in passive root matching; all actual fixture descendants already exited 0",
+  "fixtureProcessTerminated": false,
+  "priorStopAttemptRefusedDueToUtcComparison": true
+}

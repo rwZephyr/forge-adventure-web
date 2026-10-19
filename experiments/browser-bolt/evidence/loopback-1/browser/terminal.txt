@@ -1,0 +1,39 @@
+- main:
+  - generic: FORGE ADVENTURE WEB
+  - heading "Manual Bolt" [level=1]
+  - status: Forge verified the Bolt sequence. Inspect the final frame, then finish this test.
+  - paragraph: Cast Bolt → target Opponent → activate Mountain → pass priority. Forge decides the result. This is a bounded test, not a complete encounter.
+  - region "Original Forge battlefield":
+    - generic: O
+    - text: Opponent
+    - generic: OPPOSING PLAYER
+    - generic: "17"
+    - generic: LIFE
+    - region "Opponent battlefield":
+      - generic: OPPONENT BATTLEFIELD
+      - paragraph: No battlefield cards shown
+    - region "Stack and spell being cast":
+      - generic: Turn 1 · Main phase 1
+      - generic: Engine frame r5
+      - generic: STACK
+      - generic: "0"
+      - paragraph: The stack is empty
+    - region "Your battlefield":
+      - generic: YOUR BATTLEFIELD
+      - article "Mountain, Battlefield, tapped":
+        - generic: Mountain
+        - generic: BATTLEFIELD
+      - generic: Mountain · Tapped
+    - generic: "Y"
+    - text: You
+    - generic: YOUR SIDE
+    - generic: "20"
+    - generic: LIFE
+    - region "Your visible hand":
+      - generic: YOUR HAND · 0 SHOWN
+      - generic: "Graveyard: Lightning Bolt"
+      - paragraph: No cards shown in hand
+  - heading "No current decision" [level=2]
+  - button "Finish test inspection"
+  - button "Abort test"
+  - paragraph: Finish ends the fixture. Any subsequent harness concession is cleanup, not browser gameplay. Closing this page does not pass or answer an input.

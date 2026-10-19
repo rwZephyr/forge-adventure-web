@@ -1,0 +1,292 @@
+{
+  "executedHead": "bc0d5257cd77b839d8073675056bc35858c686a6",
+  "authorization": "https://github.com/rwZephyr/forge-adventure-web/pull/28#issuecomment-6278836774",
+  "normalization": "Original private files preserved; text UTF-8/LF with trailing whitespace/terminal blank lines trimmed; Surefire system-property blocks omitted; workspace/JDK/user paths and hostnames substituted; VM lambda suffixes normalized. PNGs unedited. Before/after inventories deduplicated against the unchanged previously published inventory. Capability file never copied.",
+  "files": [
+    {
+      "path": "console.log",
+      "sha256": "5675d66d9c88b62ee9437febeea3a4ea7c980d1d37261aca85d02d39000f6b73",
+      "bytes": 49894,
+      "originalPath": ".local-tools/browser-bolt/loopback-1/console.log",
+      "originalSha256": "14e7096c5ec5113fbdbe4345642bdeea051f0782ad6a835933f02c362b68f956",
+      "originalBytes": 51958,
+      "systemPropertiesOmitted": false,
+      "binaryUnchanged": false
+    },
+    {
+      "path": "driver.stdout.log",
+      "sha256": "5675d66d9c88b62ee9437febeea3a4ea7c980d1d37261aca85d02d39000f6b73",
+      "bytes": 49894,
+      "originalPath": ".local-tools/browser-bolt/loopback-1/driver.stdout.log",
+      "originalSha256": "a59448381f45383bc93a7facae15f526698a65cf401a4041260abb2943363027",
+      "originalBytes": 51960,
+      "systemPropertiesOmitted": false,
+      "binaryUnchanged": false
+    },
+    {
+      "path": "driver.stderr.log",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "bytes": 1,
+      "originalPath": ".local-tools/browser-bolt/loopback-1/driver.stderr.log",
+      "originalSha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "originalBytes": 2,
+      "systemPropertiesOmitted": false,
+      "binaryUnchanged": false
+    },
+    {
+      "path": "result.json",
+      "sha256": "ba47567b316e96c6c2062175ebaeb23892e47fff99a5ea3cccf982bf90f9069d",
+      "bytes": 1072,
+      "originalPath": ".local-tools/browser-bolt/loopback-1/result.json",
+      "originalSha256": "5c1c127f05e4bab22bba3518e769aad6f47653470a866a29c69f6c9b9e804b3a",
+      "originalBytes": 1122,
+      "systemPropertiesOmitted": false,
+      "binaryUnchanged": false
+    },
+    {
+      "path": "manual-host-result.json",
+      "sha256": "22969af60a49879f733ee6dd7cbac1ede03656f3180d4a661b6729b629b824ae",
+      "bytes": 121,
+      "originalPath": ".local-tools/browser-bolt/loopback-1/manual-host-result.json",
+      "originalSha256": "22969af60a49879f733ee6dd7cbac1ede03656f3180d4a661b6729b629b824ae",
+      "originalBytes": 121,
+      "systemPropertiesOmitted": false,
+      "binaryUnchanged": false
+    },
+    {
+      "path": "before-finish.json",
+      "sha256": "5165ca9681b1da93a187d37477bc22a522ee5342a7898c4df12142e21701d250",
+      "bytes": 133,
+      "originalPath": ".local-tools/browser-bolt/loopback-1/before-finish.json",
+      "originalSha256": "ce722b2ce56d86a3e9f1cf00e74694c120a3dd14402cc60163bdebe7b7ed05c6",
+      "originalBytes": 140,
+      "systemPropertiesOmitted": false,
+      "binaryUnchanged": false
+    },
+    {
+      "path": "postflight.json",
+      "sha256": "e12e7ceefacfce84c2dfc5b02968e787b41b32b5f27f9716269cc557fe5cf8f0",
+      "bytes": 107,
+      "originalPath": ".local-tools/browser-bolt/loopback-1/postflight.json",
+      "originalSha256": "bab5d3e7a62ac4eaacd6d17a390b97242029258b59dfd25bb0195c94e2877a84",
+      "originalBytes": 112,
+      "systemPropertiesOmitted": false,
+      "binaryUnchanged": false
+    },
+    {
+      "path": "reports/forge.net.embedded.ProtocolGuiGameInProcessTest.txt",
+      "sha256": "1a3411ca20e8332d9e0166eef44091f1017526d07c8b2f2ee0d7e69a27fb7bb8",
+      "bytes": 344,
+      "originalPath": ".local-tools/browser-bolt/loopback-1/reports/forge.net.embedded.ProtocolGuiGameInProcessTest.txt",
+      "originalSha256": "d7904306f7ff17fad9a763f2745c3fde38755a239a3208705a8203486b7b75c6",
+      "originalBytes": 348,
+      "systemPropertiesOmitted": false,
+      "binaryUnchanged": false
+    },
+    {
+      "path": "reports/TEST-forge.net.embedded.ProtocolGuiGameInProcessTest.xml",
+      "sha256": "f242b18e9814d14a4d53e30f5493ea6664a3bba6a15938f1629d6192cf925c03",
+      "bytes": 35979,
+      "originalPath": ".local-tools/browser-bolt/loopback-1/reports/TEST-forge.net.embedded.ProtocolGuiGameInProcessTest.xml",
+      "originalSha256": "46a65a447da82ed6874482c030184ffd5bd0a1bf90ace9d7cf7b6da8be3cca09",
+      "originalBytes": 68795,
+      "systemPropertiesOmitted": true,
+      "binaryUnchanged": false
+    },
+    {
+      "path": "reports/testng-results.xml",
+      "sha256": "c81d7fb86f4178a53884a3afa6a5ae40dee972ac3c3778025568b4d9c14ca219",
+      "bytes": 1056,
+      "originalPath": ".local-tools/browser-bolt/loopback-1/reports/testng-results.xml",
+      "originalSha256": "89f7f241f23bc51ddc331c3490b2d073a712d7396d5824bda70984b4be4c84f2",
+      "originalBytes": 1073,
+      "systemPropertiesOmitted": false,
+      "binaryUnchanged": false
+    },
+    {
+      "path": "browser/after-cast.png",
+      "sha256": "181ba25504bf54d369097206f6f35d671410263696eac3d8f446f6f3c65f5baf",
+      "bytes": 54609,
+      "originalPath": ".local-tools/browser-bolt/loopback-1/browser/after-cast.png",
+      "originalSha256": "181ba25504bf54d369097206f6f35d671410263696eac3d8f446f6f3c65f5baf",
+      "originalBytes": 54609,
+      "systemPropertiesOmitted": false,
+      "binaryUnchanged": true
+    },
+    {
+      "path": "browser/after-cast.txt",
+      "sha256": "05f0605a1f02fafaeb708fece622ac3aa6a50591cee7227c2e76ea0ef67c5d87",
+      "bytes": 1635,
+      "originalPath": ".local-tools/browser-bolt/loopback-1/browser/after-cast.txt",
+      "originalSha256": "d8984c947aea87c7c09f30b7e6502c6ce60cf2ea6489ff72bafde6c5c2f89b26",
+      "originalBytes": 1634,
+      "systemPropertiesOmitted": false,
+      "binaryUnchanged": false
+    },
+    {
+      "path": "browser/browser-facts.json",
+      "sha256": "382ed49b32a65fdd4282855b5536af1eea16468416fccb66cbcd2374f03e2675",
+      "bytes": 372,
+      "originalPath": ".local-tools/browser-bolt/loopback-1/browser/browser-facts.json",
+      "originalSha256": "382ed49b32a65fdd4282855b5536af1eea16468416fccb66cbcd2374f03e2675",
+      "originalBytes": 372,
+      "systemPropertiesOmitted": false,
+      "binaryUnchanged": false
+    },
+    {
+      "path": "browser/console-warnings-errors.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "originalPath": ".local-tools/browser-bolt/loopback-1/browser/console-warnings-errors.json",
+      "originalSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "originalBytes": 3,
+      "systemPropertiesOmitted": false,
+      "binaryUnchanged": false
+    },
+    {
+      "path": "browser/events.json",
+      "sha256": "5c95cb4ba7929d25c89c6646a5efa496fc77ead625bab60ca66c2ae4bca03378",
+      "bytes": 14742,
+      "originalPath": ".local-tools/browser-bolt/loopback-1/browser/events.json",
+      "originalSha256": "5c95cb4ba7929d25c89c6646a5efa496fc77ead625bab60ca66c2ae4bca03378",
+      "originalBytes": 14742,
+      "systemPropertiesOmitted": false,
+      "binaryUnchanged": false
+    },
+    {
+      "path": "browser/finished.txt",
+      "sha256": "2f68e35157f0c4d336f30ee4e65c24f97eaed1f03a15fc8e128d2eaadc7f9b8c",
+      "bytes": 1615,
+      "originalPath": ".local-tools/browser-bolt/loopback-1/browser/finished.txt",
+      "originalSha256": "f3f96059566bfcdc5670104a5506bdd7884eb96252694be17553c5a8c8d5c560",
+      "originalBytes": 1614,
+      "systemPropertiesOmitted": false,
+      "binaryUnchanged": false
+    },
+    {
+      "path": "browser/initial.png",
+      "sha256": "5dc5f75969894fbd0270980f9a4cdcfc358bb06043786e4d7f54209aa21e0e4b",
+      "bytes": 53004,
+      "originalPath": ".local-tools/browser-bolt/loopback-1/browser/initial.png",
+      "originalSha256": "5dc5f75969894fbd0270980f9a4cdcfc358bb06043786e4d7f54209aa21e0e4b",
+      "originalBytes": 53004,
+      "systemPropertiesOmitted": false,
+      "binaryUnchanged": true
+    },
+    {
+      "path": "browser/initial.txt",
+      "sha256": "ca2b83fe80928ef9518b9d0d624e1915f5b0134dc2c445d00a45f08f7b3e1b91",
+      "bytes": 1566,
+      "originalPath": ".local-tools/browser-bolt/loopback-1/browser/initial.txt",
+      "originalSha256": "4786034e76b09fe6bffc703e3393cdf7aa95fb6105f5250ec9306205cdf1067d",
+      "originalBytes": 1565,
+      "systemPropertiesOmitted": false,
+      "binaryUnchanged": false
+    },
+    {
+      "path": "browser/payment.png",
+      "sha256": "ce64575a861c2d38733a82980bce73d1ea04dfe731d6b57e492bc67cfebb4876",
+      "bytes": 53653,
+      "originalPath": ".local-tools/browser-bolt/loopback-1/browser/payment.png",
+      "originalSha256": "ce64575a861c2d38733a82980bce73d1ea04dfe731d6b57e492bc67cfebb4876",
+      "originalBytes": 53653,
+      "systemPropertiesOmitted": false,
+      "binaryUnchanged": true
+    },
+    {
+      "path": "browser/payment.txt",
+      "sha256": "7257beabc79917c7fced655db2d8310d52aca3ce46fbfe1bdcef9056082efcdf",
+      "bytes": 1606,
+      "originalPath": ".local-tools/browser-bolt/loopback-1/browser/payment.txt",
+      "originalSha256": "8de66a68914bbf1d84955bc2de15524701064d9cae76d763e3ed4fa738926c30",
+      "originalBytes": 1605,
+      "systemPropertiesOmitted": false,
+      "binaryUnchanged": false
+    },
+    {
+      "path": "browser/stack.png",
+      "sha256": "09ffe8cdaeaeeab725186adf5fb479f0746e552b90d33ab062208ae6726d2682",
+      "bytes": 49644,
+      "originalPath": ".local-tools/browser-bolt/loopback-1/browser/stack.png",
+      "originalSha256": "09ffe8cdaeaeeab725186adf5fb479f0746e552b90d33ab062208ae6726d2682",
+      "originalBytes": 49644,
+      "systemPropertiesOmitted": false,
+      "binaryUnchanged": true
+    },
+    {
+      "path": "browser/stack.txt",
+      "sha256": "887cb4bf71b93605f14e669200bf6a02ae29f59f5340da4271549d2ba6de662c",
+      "bytes": 1462,
+      "originalPath": ".local-tools/browser-bolt/loopback-1/browser/stack.txt",
+      "originalSha256": "cd050e08d630ae22babb4994cffa6cc57ce943e12c70e42d2954116c610e79e0",
+      "originalBytes": 1461,
+      "systemPropertiesOmitted": false,
+      "binaryUnchanged": false
+    },
+    {
+      "path": "browser/terminal.png",
+      "sha256": "8f22a9371af28c47005cb5db4cfbef1792f35860f6674b34a5058433e52a987b",
+      "bytes": 49248,
+      "originalPath": ".local-tools/browser-bolt/loopback-1/browser/terminal.png",
+      "originalSha256": "8f22a9371af28c47005cb5db4cfbef1792f35860f6674b34a5058433e52a987b",
+      "originalBytes": 49248,
+      "systemPropertiesOmitted": false,
+      "binaryUnchanged": true
+    },
+    {
+      "path": "browser/terminal.txt",
+      "sha256": "df16a38632e12fcbc14c80d994ab6e4be51397de808a919e9c3404636e06c8cb",
+      "bytes": 1536,
+      "originalPath": ".local-tools/browser-bolt/loopback-1/browser/terminal.txt",
+      "originalSha256": "ed6289f4b93a232d9b49080fbae74785a016e9e5638e0a29eb48e50a965cd6e8",
+      "originalBytes": 1535,
+      "systemPropertiesOmitted": false,
+      "binaryUnchanged": false
+    },
+    {
+      "path": "preflight.json",
+      "sha256": "3be41abe831a46b8109012c10254766c278769b45296b69ce4fab46dab9efad0",
+      "bytes": 247,
+      "originalPath": ".local-tools/browser-bolt/loopback-preflight.json",
+      "originalSha256": "72e87e161746f2a0e9e7c5e20c1ef3fa63f8051a1f379e9d30a387f6c6e40fc9",
+      "originalBytes": 256,
+      "systemPropertiesOmitted": false,
+      "binaryUnchanged": false
+    },
+    {
+      "path": "process-observation.json",
+      "sha256": "ff6a806f19489b5c567b42a500bbb2f24cf22d19b94fee68924c18b4489f9da9",
+      "bytes": 1645,
+      "originalPath": ".local-tools/browser-bolt/loopback-process-observation-final.json",
+      "originalSha256": "6ca763b9fc7ce20f6c8b77e4aaf5dc4d01373847f0dcf2992fc9497fa7916e39",
+      "originalBytes": 1717,
+      "systemPropertiesOmitted": false,
+      "binaryUnchanged": false
+    },
+    {
+      "path": "observer-stop.json",
+      "sha256": "d954bd28ae183b5e4d0fe85a4d338c982fcbab635ede31fc471c3bb3356d3436",
+      "bytes": 356,
+      "originalPath": ".local-tools/browser-bolt/loopback-observer-stop.json",
+      "originalSha256": "3b04ab25ccc0905d64624a7b5ab6458fe896b2b2919457f029e28391c92157f8",
+      "originalBytes": 366,
+      "systemPropertiesOmitted": false,
+      "binaryUnchanged": false
+    },
+    {
+      "path": "process-assessment.json",
+      "sha256": "59237f8018e11246303e8de9a8427073c4d17fe917874d05e5ef672f8562e429",
+      "bytes": 2093,
+      "derivedFrom": "process-observation.json and result.json"
+    }
+  ],
+  "sharedInventory": {
+    "path": "../inventory.json",
+    "sha256": "83d86d6a3e0d7b2dbf461d0f42a242d3627ac51669749bae40bee162707fc9ba",
+    "bytes": 670738,
+    "originalBeforeAndAfterSha256": "447bde2ec30b73e70c2aadf539fa55a73108428b7453e910c45809ffec39aba4",
+    "originalBytes": 675223,
+    "protectedFiles": 2086,
+    "cacheFiles": 2393
+  }
+}

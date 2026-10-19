@@ -1,0 +1,10 @@
+{
+  "capabilityInputCleared": true,
+  "controlsDisabled": true,
+  "finalStatus": "Test finish requested. Final frame retained. Harness cleanup is separate from browser gameplay; check the owner-side PASS/shutdown report.",
+  "viewport": {
+    "height": 571,
+    "width": 319
+  },
+  "userAgent": "Unavailable through the read-only browser API; not independently queried"
+}

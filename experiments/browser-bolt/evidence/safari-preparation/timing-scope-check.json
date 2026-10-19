@@ -1,0 +1,21 @@
+{
+  "base": "87a063749d67c2585ebd3431f0187f60b273cdd0",
+  "checks": {
+    "forge-gui-desktop/src/test/java/forge/net/embedded/ProtocolGuiGameInProcessTest.java": {
+      "exactExpectedTimingEditOnly": true,
+      "sha256": "032548760a906216ed59bde82b7e1f3aa61293ea69c4bc0a5264225029297769"
+    },
+    "experiments/browser-bolt/Run-Manual.ps1": {
+      "exactExpectedTimingEditOnly": true,
+      "sha256": "4ee4615422bdceb97d50aac7cf196a6c5cbd02dc48685fce7dfb6b32fa939c15"
+    },
+    "unchangedFiles": [
+      "forge-gui-desktop/src/test/java/forge/net/embedded/ManualBrowserBoltHost.java",
+      "forge-gui-desktop/src/test/java/forge/net/embedded/ManualBrowserBoltHostTest.java",
+      "forge-gui-desktop/src/test/java/forge/net/embedded/ProtocolGuiGameSingleThreadTest.java",
+      "experiments/battlefield-static/live-client.js",
+      "experiments/battlefield-static/battlefield.js",
+      "experiments/battlefield-static/live.html"
+    ]
+  }
+}

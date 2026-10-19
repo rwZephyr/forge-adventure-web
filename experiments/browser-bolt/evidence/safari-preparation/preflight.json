@@ -1,0 +1,20 @@
+{
+  "observedUtc": "2026-10-19T23:12:42.2691264Z",
+  "head": "87a063749d67c2585ebd3431f0187f60b273cdd0",
+  "branch": "codex/browser-bolt-manual",
+  "workingTreeClean": true,
+  "assignedAddress": [
+    {
+      "adapter": "Tailscale",
+      "description": "Tailscale Tunnel",
+      "operationalStatus": "Up",
+      "address": "100.122.229.121"
+    }
+  ],
+  "port8765Listeners": [],
+  "safariLabelUnused": true,
+  "jdkPresent": true,
+  "portableMavenPresent": true,
+  "offlineCachePresent": true,
+  "pr27LocalHead": "cdda588e449754352790f7bb02c065fe881a7bed"
+}

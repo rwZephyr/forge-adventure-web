@@ -1,0 +1,10 @@
+{
+  "base": "55164bf309e1a0e38997c206762dc3a1c2635d81",
+  "lfNormalizedSectionsIdentical": {
+    "original-dto-port": true,
+    "original-fixture-capture-and-failure-policy": true,
+    "historical-single-thread-test": true,
+    "static-index": true,
+    "static-fixtures": true
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "observedUtc": "2026-10-19T22:45:19.185653Z",
+  "rootIds": [
+    86984,
+    86472
+  ],
+  "processes": [
+    {
+      "id": 97712,
+      "parent": 79172,
+      "name": "java.exe",
+      "createdUtc": "2026-10-19T22:40:50.673163Z",
+      "retained": true,
+      "exited": true,
+      "exitCode": 0,
+      "exitUtc": "2026-10-19T22:44:37.9004646Z"
+    },
+    {
+      "id": 102244,
+      "parent": 94580,
+      "name": "java.exe",
+      "createdUtc": "2026-10-19T22:41:54.570465Z",
+      "retained": true,
+      "exited": true,
+      "exitCode": 0,
+      "exitUtc": "2026-10-19T22:44:37.7813578Z"
+    },
+    {
+      "id": 94580,
+      "parent": 97712,
+      "name": "cmd.exe",
+      "createdUtc": "2026-10-19T22:41:54.471786Z",
+      "retained": true,
+      "exited": true,
+      "exitCode": 0,
+      "exitUtc": "2026-10-19T22:44:37.8385737Z"
+    },
+    {
+      "id": 86472,
+      "parent": 22512,
+      "name": "pwsh.exe",
+      "createdUtc": "2026-10-19T22:41:38.366329Z",
+      "retained": true,
+      "exited": false,
+      "exitCode": null,
+      "exitUtc": null
+    },
+    {
+      "id": 79172,
+      "parent": 86984,
+      "name": "cmd.exe",
+      "createdUtc": "2026-10-19T22:40:50.459419Z",
+      "retained": true,
+      "exited": true,
+      "exitCode": 0,
+      "exitUtc": "2026-10-19T22:44:37.9861359Z"
+    },
+    {
+      "id": 86984,
+      "parent": 99064,
+      "name": "pwsh.exe",
+      "createdUtc": "2026-10-19T22:40:50.008328Z",
+      "retained": true,
+      "exited": true,
+      "exitCode": 0,
+      "exitUtc": "2026-10-19T22:44:38.0000498Z"
+    }
+  ],
+  "errors": [],
+  "passiveOnly": true,
+  "cimDeadlineGuaranteed": false
+}

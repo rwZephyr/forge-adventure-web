@@ -1,0 +1,65 @@
+{
+  "actualRootFromLauncherResult": 86984,
+  "actualFixtureProcesses": [
+    {
+      "id": 97712,
+      "parent": 79172,
+      "name": "java.exe",
+      "createdUtc": "2026-10-19T22:40:50.673163Z",
+      "retained": true,
+      "exited": true,
+      "exitCode": 0,
+      "exitUtc": "2026-10-19T22:44:37.9004646Z"
+    },
+    {
+      "id": 102244,
+      "parent": 94580,
+      "name": "java.exe",
+      "createdUtc": "2026-10-19T22:41:54.570465Z",
+      "retained": true,
+      "exited": true,
+      "exitCode": 0,
+      "exitUtc": "2026-10-19T22:44:37.7813578Z"
+    },
+    {
+      "id": 94580,
+      "parent": 97712,
+      "name": "cmd.exe",
+      "createdUtc": "2026-10-19T22:41:54.471786Z",
+      "retained": true,
+      "exited": true,
+      "exitCode": 0,
+      "exitUtc": "2026-10-19T22:44:37.8385737Z"
+    },
+    {
+      "id": 79172,
+      "parent": 86984,
+      "name": "cmd.exe",
+      "createdUtc": "2026-10-19T22:40:50.459419Z",
+      "retained": true,
+      "exited": true,
+      "exitCode": 0,
+      "exitUtc": "2026-10-19T22:44:37.9861359Z"
+    },
+    {
+      "id": 86984,
+      "parent": 99064,
+      "name": "pwsh.exe",
+      "createdUtc": "2026-10-19T22:40:50.008328Z",
+      "retained": true,
+      "exited": true,
+      "exitCode": 0,
+      "exitUtc": "2026-10-19T22:44:38.0000498Z"
+    }
+  ],
+  "allFiveObservedExitedZero": true,
+  "observerFalseRootExcludedOnlyFromThisDerivedAssessment": 86472,
+  "rawObservationPreserved": "process-observation.json",
+  "observerTermination": "observer-stop.json",
+  "limitations": [
+    "Initial sandbox CIM query was denied; no fixture retry; read-only observation outside sandbox succeeded.",
+    "Passive observer root substring matched its own script; raw extra root preserved.",
+    "First observer stop attempt refused on a UTC/local-time comparison; no process killed then. Read-only check established 0.0004 ms creation-time difference; only observer subsequently stopped.",
+    "No fixture process killed; no independent absolute OS/CIM deadline guarantee."
+  ]
+}

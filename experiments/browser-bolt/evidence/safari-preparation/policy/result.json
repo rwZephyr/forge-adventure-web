@@ -1,0 +1,50 @@
+{
+  "label": "safari-prep-policy-1",
+  "verifyOnly": true,
+  "check": "policy",
+  "listenerApproved": false,
+  "nativeExit": 0,
+  "startedUtc": "2026-10-19T23:13:07.5718303Z",
+  "endedUtc": "2026-10-19T23:14:19.0568804Z",
+  "primaryFailureType": null,
+  "secondaryFailures": [],
+  "environmentUnchanged": true,
+  "environmentChecks": [
+    {
+      "name": "TMP",
+      "exactMatch": true
+    },
+    {
+      "name": "TEMP",
+      "exactMatch": true
+    },
+    {
+      "name": "JAVA_TOOL_OPTIONS",
+      "exactMatch": true
+    },
+    {
+      "name": "APPDATA",
+      "exactMatch": true
+    },
+    {
+      "name": "LOCALAPPDATA",
+      "exactMatch": true
+    },
+    {
+      "name": "JAVA_HOME",
+      "exactMatch": true
+    }
+  ],
+  "protectedFileCount": 2086,
+  "cacheFileCount": 2393,
+  "integrityChecked": true,
+  "sourceChanges": [],
+  "cacheChanges": [],
+  "driverPid": 67412,
+  "driverExited": true,
+  "observedDriverExit": 0,
+  "timedOut": false,
+  "forceTerminationRequested": false,
+  "descendantExitIndependentlyObserved": false,
+  "unconditionalWallClockGuarantee": false
+}

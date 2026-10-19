@@ -1,0 +1,41 @@
+- main:
+  - generic: FORGE ADVENTURE WEB
+  - heading "Manual Bolt" [level=1]
+  - status: Connecting to the isolated fixture…
+  - paragraph: Cast Bolt → target Opponent → activate Mountain → pass priority. Forge decides the result. This is a bounded test, not a complete encounter.
+  - region "Original Forge battlefield":
+    - generic: O
+    - text: Opponent
+    - generic: OPPOSING PLAYER
+    - generic: "20"
+    - generic: LIFE
+    - region "Opponent battlefield":
+      - generic: OPPONENT BATTLEFIELD
+      - paragraph: No battlefield cards shown
+    - region "Stack and spell being cast":
+      - generic: Turn 1 · Main phase 1
+      - generic: Engine frame r1
+      - generic: STACK
+      - generic: "0"
+      - paragraph: The stack is empty
+    - region "Your battlefield":
+      - generic: YOUR BATTLEFIELD
+      - article "Mountain, Battlefield, untapped":
+        - generic: Mountain
+        - generic: BATTLEFIELD
+      - generic: Mountain · Untapped
+    - generic: "Y"
+    - text: You
+    - generic: YOUR SIDE
+    - generic: "20"
+    - generic: LIFE
+    - region "Your visible hand":
+      - generic: YOUR HAND · 1 SHOWN
+      - button "Lightning Bolt, Hand, untapped; Cast Lightning Bolt":
+        - generic: Lightning Bolt
+        - generic: IN YOUR HAND
+  - heading "Choose an action" [level=2]
+  - button "Cast Lightning Bolt"
+  - button "Pass priority"
+  - button "Abort test"
+  - paragraph: Finish ends the fixture. Any subsequent harness concession is cleanup, not browser gameplay. Closing this page does not pass or answer an input.

@@ -1,6 +1,59 @@
 # Project status
 
-Last updated: 2026-10-18
+Last updated: 2026-10-19
+
+## Safari preparation complete; listener OFF, waiting for START
+- [Conditional Safari preparation](experiments/browser-bolt-safari-preparation.md)
+  extends manual timing only: interaction 25 minutes, terminal inspection 5,
+  manual TestNG 35 and listener-mode launcher 40. Scripted checks stay unchanged;
+  capture/C1/authorization/cleanup/security and PR #27 are untouched.
+- Actual focused offline check: compilation and 16 policy cases PASS, Maven 0;
+  exact timing-only source comparison and PowerShell AST parse PASS. Protected
+  hashes/cache and six parent environment values unchanged during verification.
+  No Safari listener, capability or countdown started; no new gameplay run.
+- Verified Tailscale adapter Up with `100.122.229.121`, port 8765 free and
+  `safari-1` unused; recheck on START. Owner confirmed private manual entry from
+  Silent's screen into Safari. READY handoff includes URL/code-file path and
+  timer semantics. Codex will announce LIVE only after actual readiness and
+  supervise the exact command. Stop now for the owner's explicit START.
+
+## First approved browser-controlled Bolt session passed
+- [One loopback run](experiments/browser-bolt-loopback-results.md) at reviewed
+  PR #28 head `bc0d5257` passed: observed browser UI actions cast original Bolt,
+  target opponent, manually activate Mountain and pass priority. Five ordered
+  DTO frames ended at opponent 17/player 20, empty stack and Bolt in graveyard,
+  independently confirmed by Forge before harness cleanup.
+- Agent-operated local in-app Chromium, actual 319×571 viewport; no independently
+  human-operated or Safari claim. Terminal frame retained and explicitly
+  acknowledged. TestNG 1 PASS, Maven/driver 0, host `PASSED` / shutdown `CLOSED`.
+  Both retained JVMs and actual driver exited 0; postflight zero Java/8765
+  listeners. Protected/cache inventories and six environment values unchanged.
+- Full evidence includes diagnostic limits: one failed post-finish screenshot
+  (not retried), passive collector self-match/owned-observer shutdown, and stale
+  UI status wording. Implementation/original offline evidence are unchanged.
+  No fixture retry or unrelated service/network change. Next: Waypoint review;
+  no further execution or Safari exposure authorized. PR #27 stays on HOLD.
+
+## Browser-controlled Bolt implementation: historical offline baseline
+- Waypoint's approved bounded integration is on `codex/browser-bolt-manual`,
+  based on PR #24 (`55164bf3`), separately from PR #27. The latter remains
+  untouched/on execution HOLD; existing drafts stay unmerged.
+- [Manual mode and runbook](../experiments/browser-bolt/README.md) add an opt-in
+  test-owned JDK HTTP polling host and connected portrait page beside the
+  preserved scripted DTO peer and static demonstration. Server-bound capability,
+  strict Origin/Host/JSON policy, cached DTO frames and original EDT/C1 dispatch;
+  no production engine, dependency, source-gameplay or service changes.
+- [Actual offline results](experiments/browser-bolt-manual-results.md): new Java
+  compiled, 16/16 direct transport policy cases and the original scripted DTO
+  proof passed. The unanswered control passed with owner failure delivery and
+  no cast/payment/cleanup concession; all six accepted regressions passed.
+  Original capture/authorization/failure methods are unchanged. All four runs
+  record unchanged 2,086 protected hashes, 2,393 cache files and six parent
+  environment values; no Java process or port-8765 listener at postflight.
+- No listener or browser has run for this work. Manual owner-loop integration,
+  real HTTP shutdown and Safari remain unverified. Next: independent review,
+  then separately approved desktop loopback session; Tailscale needs later
+  approval. This remains a fixture-specific checkpoint, not a production adapter.
 
 ## Stage D1 portrait battlefield submitted for review
 - Stage C is accepted within its bounded scope by the owner. The new
