@@ -1,0 +1,2 @@
+Picked up JAVA_TOOL_OPTIONS: -Duser.home=<WORKSPACE>/.local-tools/c1-identity-20261018/one-run/home -Djava.io.tmpdir=<WORKSPACE>/.local-tools/c1-identity-20261018/one-run/tmp -Djava.awt.headless=true -Xmx1536m
+TestNG JDI: path=true test=true actionsEdt=true latch=true exit=0 rows=59
