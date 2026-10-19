@@ -2,6 +2,21 @@
 
 Last updated: 2026-10-19
 
+## Stage D3c safety correction submitted; execution explicitly blocked
+- [Source-only safety correction](experiments/bolt-lifecycle-launcher-safety.md)
+  separates cleanup steps for every retained process, preserves the original
+  ErrorRecord/stage across cleanup and outer-finally failures, and verifies the
+  actual expected main-class argument with fail-closed restricted parsing.
+- Final 30/30 non-launching synthetic helper checks passed, including original
+  exception identity and continuation after kill/wait/disposal/recording errors.
+  Source and output hashes are published; Java and historical evidence unchanged.
+- CIM requests now have operation timeouts, but an unconditional supervision
+  bound is not established. The launcher unconditionally stops before helper
+  load/CIM/process startup. No bypass; fresh approval alone cannot remove it.
+- Next: Marvin's independent source review and separate review of the remaining
+  supervision boundary. No launcher execution, Java, compilation, installation,
+  networking or service changes. This amendment does not self-approve execution.
+
 ## Stage D3c launcher amendment submitted without execution
 - [Source-only amendment](experiments/bolt-lifecycle-launcher-correction.md)
   uses `[regex]::Escape` and records separate child executable/entry-point,

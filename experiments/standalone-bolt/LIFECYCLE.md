@@ -15,3 +15,10 @@ evidence remain unchanged. The separately approved
 adds privacy-safe identity diagnostics and explicit literal matching; it has only
 static verification and has not been executed. Fresh execution needs separate
 owner approval after review.
+
+The subsequent [source-only safety correction](../../docs/experiments/bolt-lifecycle-launcher-safety.md)
+adds independent cleanup, primary-failure retention and strict main-argument
+validation. Its 30 synthetic helper checks do not start the launcher or Java.
+**Execution remains HOLD:** an unconditional gate now stops before helper load,
+CIM or process startup until the supervision-boundary limitation is reviewed.
+Do not invoke `Run-Lifecycle.ps1` to verify this correction.
