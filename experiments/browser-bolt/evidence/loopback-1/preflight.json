@@ -1,0 +1,9 @@
+{
+  "observedUtc": "2026-10-19T22:40:41.3312009Z",
+  "branch": "codex/browser-bolt-manual",
+  "head": "bc0d5257cd77b839d8073675056bc35858c686a6",
+  "workingTreeClean": true,
+  "freshLabel": true,
+  "port8765Listeners": [],
+  "javaProcesses": []
+}

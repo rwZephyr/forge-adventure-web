@@ -1,5 +1,10 @@
 # Browser-controlled Bolt · disposable manual fixture
 
+**Execution update:** the one separately approved `loopback-1` session passed
+at reviewed head `bc0d5257`; see [actual results and limits](../../docs/experiments/browser-bolt-loopback-results.md).
+That label/authorization is spent. The command below is historical reproduction
+documentation, not permission for another run. No Safari session is authorized.
+
 This opt-in test host connects the accepted Stage C DTO boundary to the portrait
 battlefield. It uses the original Forge JVM, controller, targeting, manual
 Mountain activation, priority and resolution. It is **not a production adapter,

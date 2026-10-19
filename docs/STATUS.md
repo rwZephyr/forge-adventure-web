@@ -2,7 +2,24 @@
 
 Last updated: 2026-10-19
 
-## Browser-controlled Bolt implementation: listener approval pending
+## First approved browser-controlled Bolt session passed
+- [One loopback run](experiments/browser-bolt-loopback-results.md) at reviewed
+  PR #28 head `bc0d5257` passed: observed browser UI actions cast original Bolt,
+  target opponent, manually activate Mountain and pass priority. Five ordered
+  DTO frames ended at opponent 17/player 20, empty stack and Bolt in graveyard,
+  independently confirmed by Forge before harness cleanup.
+- Agent-operated local in-app Chromium, actual 319×571 viewport; no independently
+  human-operated or Safari claim. Terminal frame retained and explicitly
+  acknowledged. TestNG 1 PASS, Maven/driver 0, host `PASSED` / shutdown `CLOSED`.
+  Both retained JVMs and actual driver exited 0; postflight zero Java/8765
+  listeners. Protected/cache inventories and six environment values unchanged.
+- Full evidence includes diagnostic limits: one failed post-finish screenshot
+  (not retried), passive collector self-match/owned-observer shutdown, and stale
+  UI status wording. Implementation/original offline evidence are unchanged.
+  No fixture retry or unrelated service/network change. Next: Waypoint review;
+  no further execution or Safari exposure authorized. PR #27 stays on HOLD.
+
+## Browser-controlled Bolt implementation: historical offline baseline
 - Waypoint's approved bounded integration is on `codex/browser-bolt-manual`,
   based on PR #24 (`55164bf3`), separately from PR #27. The latter remains
   untouched/on execution HOLD; existing drafts stay unmerged.

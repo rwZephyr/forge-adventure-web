@@ -1,0 +1,73 @@
+{
+  "browser": "Codex local in-app Chromium via CUA",
+  "interaction": "Agent clicked one observed UI action at a time; not an independently human-operated test",
+  "viewport": {
+    "width": 319,
+    "height": 571
+  },
+  "events": [
+    {
+      "event": "connected-initial",
+      "at": "2026-10-19T22:42:58.388Z",
+      "dom": "- main:\n  - generic: FORGE ADVENTURE WEB\n  - heading \"Manual Bolt\" [level=1]\n  - status: Connecting to the isolated fixture…\n  - paragraph: Cast Bolt → target Opponent → activate Mountain → pass priority. Forge decides the result. This is a bounded test, not a complete encounter.\n  - region \"Original Forge battlefield\":\n    - generic: O\n    - text: Opponent\n    - generic: OPPOSING PLAYER\n    - generic: \"20\"\n    - generic: LIFE\n    - region \"Opponent battlefield\":\n      - generic: OPPONENT BATTLEFIELD\n      - paragraph: No battlefield cards shown\n    - region \"Stack and spell being cast\":\n      - generic: Turn 1 · Main phase 1\n      - generic: Engine frame r1\n      - generic: STACK\n      - generic: \"0\"\n      - paragraph: The stack is empty\n    - region \"Your battlefield\":\n      - generic: YOUR BATTLEFIELD\n      - article \"Mountain, Battlefield, untapped\":\n        - generic: Mountain\n        - generic: BATTLEFIELD\n      - generic: Mountain · Untapped\n    - generic: \"Y\"\n    - text: You\n    - generic: YOUR SIDE\n    - generic: \"20\"\n    - generic: LIFE\n    - region \"Your visible hand\":\n      - generic: YOUR HAND · 1 SHOWN\n      - button \"Lightning Bolt, Hand, untapped; Cast Lightning Bolt\":\n        - generic: Lightning Bolt\n        - generic: IN YOUR HAND\n  - heading \"Choose an action\" [level=2]\n  - button \"Cast Lightning Bolt\"\n  - button \"Pass priority\"\n  - button \"Abort test\"\n  - paragraph: Finish ends the fixture. Any subsequent harness concession is cleanup, not browser gameplay. Closing this page does not pass or answer an input."
+    },
+    {
+      "event": "pending-before-cast",
+      "at": "2026-10-19T22:43:15.717Z",
+      "elapsedSinceInitialMs": 17329,
+      "dom": "- main:\n  - generic: FORGE ADVENTURE WEB\n  - heading \"Manual Bolt\" [level=1]\n  - status: Connecting to the isolated fixture…\n  - paragraph: Cast Bolt → target Opponent → activate Mountain → pass priority. Forge decides the result. This is a bounded test, not a complete encounter.\n  - region \"Original Forge battlefield\":\n    - generic: O\n    - text: Opponent\n    - generic: OPPOSING PLAYER\n    - generic: \"20\"\n    - generic: LIFE\n    - region \"Opponent battlefield\":\n      - generic: OPPONENT BATTLEFIELD\n      - paragraph: No battlefield cards shown\n    - region \"Stack and spell being cast\":\n      - generic: Turn 1 · Main phase 1\n      - generic: Engine frame r1\n      - generic: STACK\n      - generic: \"0\"\n      - paragraph: The stack is empty\n    - region \"Your battlefield\":\n      - generic: YOUR BATTLEFIELD\n      - article \"Mountain, Battlefield, untapped\":\n        - generic: Mountain\n        - generic: BATTLEFIELD\n      - generic: Mountain · Untapped\n    - generic: \"Y\"\n    - text: You\n    - generic: YOUR SIDE\n    - generic: \"20\"\n    - generic: LIFE\n    - region \"Your visible hand\":\n      - generic: YOUR HAND · 1 SHOWN\n      - button \"Lightning Bolt, Hand, untapped; Cast Lightning Bolt\":\n        - generic: Lightning Bolt\n        - generic: IN YOUR HAND\n  - heading \"Choose an action\" [level=2]\n  - button \"Cast Lightning Bolt\"\n  - button \"Pass priority\"\n  - button \"Abort test\"\n  - paragraph: Finish ends the fixture. Any subsequent harness concession is cleanup, not browser gameplay. Closing this page does not pass or answer an input."
+    },
+    {
+      "event": "clicked-cast",
+      "at": "2026-10-19T22:43:16.625Z"
+    },
+    {
+      "event": "after-cast",
+      "at": "2026-10-19T22:43:20.051Z",
+      "dom": "- main:\n  - generic: FORGE ADVENTURE WEB\n  - heading \"Manual Bolt\" [level=1]\n  - status: Controller dispatched. Waiting for the next Forge frame.\n  - paragraph: Cast Bolt → target Opponent → activate Mountain → pass priority. Forge decides the result. This is a bounded test, not a complete encounter.\n  - region \"Original Forge battlefield\":\n    - button \"Target opponent · 20 life\":\n      - generic: O\n      - text: Opponent\n      - generic: TAP TO SELECT TARGET\n      - generic: \"20\"\n      - generic: LIFE\n    - region \"Opponent battlefield\":\n      - generic: OPPONENT BATTLEFIELD\n      - paragraph: No battlefield cards shown\n    - region \"Stack and spell being cast\":\n      - generic: Turn 1 · Main phase 1\n      - generic: Engine frame r2\n      - generic: STACK\n      - generic: \"0\"\n      - paragraph: Casting Lightning Bolt · not on the stack yet\n    - region \"Your battlefield\":\n      - generic: YOUR BATTLEFIELD\n      - article \"Mountain, Battlefield, untapped\":\n        - generic: Mountain\n        - generic: BATTLEFIELD\n      - generic: Mountain · Untapped\n    - button \"Target you · 20 life\":\n      - generic: \"Y\"\n      - text: You\n      - generic: TAP TO SELECT TARGET\n      - generic: \"20\"\n      - generic: LIFE\n    - region \"Your visible hand\":\n      - generic: YOUR HAND · 0 SHOWN\n      - paragraph: No cards shown in hand\n  - heading \"Choose a player target\" [level=2]\n  - button \"Target opponent\"\n  - button \"Target you\"\n  - button \"Abort test\"\n  - paragraph: Finish ends the fixture. Any subsequent harness concession is cleanup, not browser gameplay. Closing this page does not pass or answer an input."
+    },
+    {
+      "event": "clicked-opponent-target",
+      "at": "2026-10-19T22:43:29.201Z"
+    },
+    {
+      "event": "after-target",
+      "at": "2026-10-19T22:43:31.835Z",
+      "dom": "- main:\n  - generic: FORGE ADVENTURE WEB\n  - heading \"Manual Bolt\" [level=1]\n  - status: Controller dispatched. Waiting for the next Forge frame.\n  - paragraph: Cast Bolt → target Opponent → activate Mountain → pass priority. Forge decides the result. This is a bounded test, not a complete encounter.\n  - region \"Original Forge battlefield\":\n    - generic: O\n    - text: Opponent\n    - generic: SELECTED TARGET\n    - generic: \"20\"\n    - generic: LIFE\n    - region \"Opponent battlefield\":\n      - generic: OPPONENT BATTLEFIELD\n      - paragraph: No battlefield cards shown\n    - region \"Stack and spell being cast\":\n      - generic: Turn 1 · Main phase 1\n      - generic: Engine frame r3\n      - generic: STACK\n      - generic: \"0\"\n      - paragraph: Casting Lightning Bolt · not on the stack yet\n      - paragraph: \"Selected target: Opponent\"\n      - paragraph: Need red mana · 0 red in pool\n    - region \"Your battlefield\":\n      - generic: YOUR BATTLEFIELD\n      - button \"Mountain, Battlefield, untapped; Activate Mountain\":\n        - generic: Mountain\n        - generic: BATTLEFIELD\n      - generic: Mountain · Untapped\n    - generic: \"Y\"\n    - text: You\n    - generic: YOUR SIDE\n    - generic: \"20\"\n    - generic: LIFE\n    - region \"Your visible hand\":\n      - generic: YOUR HAND · 0 SHOWN\n      - paragraph: No cards shown in hand\n  - heading \"Pay with Mountain\" [level=2]\n  - button \"Activate Mountain\"\n  - button \"Abort test\"\n  - paragraph: Finish ends the fixture. Any subsequent harness concession is cleanup, not browser gameplay. Closing this page does not pass or answer an input."
+    },
+    {
+      "event": "clicked-manual-mountain",
+      "at": "2026-10-19T22:43:39.634Z"
+    },
+    {
+      "event": "after-mana",
+      "at": "2026-10-19T22:43:42.633Z",
+      "dom": "- main:\n  - generic: FORGE ADVENTURE WEB\n  - heading \"Manual Bolt\" [level=1]\n  - status: Controller dispatched. Waiting for the next Forge frame.\n  - paragraph: Cast Bolt → target Opponent → activate Mountain → pass priority. Forge decides the result. This is a bounded test, not a complete encounter.\n  - region \"Original Forge battlefield\":\n    - generic: O\n    - text: Opponent\n    - generic: SELECTED TARGET\n    - generic: \"20\"\n    - generic: LIFE\n    - region \"Opponent battlefield\":\n      - generic: OPPONENT BATTLEFIELD\n      - paragraph: No battlefield cards shown\n    - region \"Stack and spell being cast\":\n      - generic: Turn 1 · Main phase 1\n      - generic: Engine frame r4\n      - generic: STACK\n      - generic: \"1\"\n      - paragraph: Lightning Bolt→ Opponent\n    - region \"Your battlefield\":\n      - generic: YOUR BATTLEFIELD\n      - article \"Mountain, Battlefield, tapped\":\n        - generic: Mountain\n        - generic: BATTLEFIELD\n      - generic: Mountain · Tapped\n    - generic: \"Y\"\n    - text: You\n    - generic: YOUR SIDE\n    - generic: \"20\"\n    - generic: LIFE\n    - region \"Your visible hand\":\n      - generic: YOUR HAND · 0 SHOWN\n      - paragraph: No cards shown in hand\n  - heading \"Choose an action\" [level=2]\n  - button \"Pass priority\"\n  - button \"Abort test\"\n  - paragraph: Finish ends the fixture. Any subsequent harness concession is cleanup, not browser gameplay. Closing this page does not pass or answer an input."
+    },
+    {
+      "event": "clicked-pass-priority",
+      "at": "2026-10-19T22:43:52.196Z"
+    },
+    {
+      "event": "after-pass",
+      "at": "2026-10-19T22:43:57.536Z",
+      "dom": "- main:\n  - generic: FORGE ADVENTURE WEB\n  - heading \"Manual Bolt\" [level=1]\n  - status: Forge verified the Bolt sequence. Inspect the final frame, then finish this test.\n  - paragraph: Cast Bolt → target Opponent → activate Mountain → pass priority. Forge decides the result. This is a bounded test, not a complete encounter.\n  - region \"Original Forge battlefield\":\n    - generic: O\n    - text: Opponent\n    - generic: OPPOSING PLAYER\n    - generic: \"17\"\n    - generic: LIFE\n    - region \"Opponent battlefield\":\n      - generic: OPPONENT BATTLEFIELD\n      - paragraph: No battlefield cards shown\n    - region \"Stack and spell being cast\":\n      - generic: Turn 1 · Main phase 1\n      - generic: Engine frame r5\n      - generic: STACK\n      - generic: \"0\"\n      - paragraph: The stack is empty\n    - region \"Your battlefield\":\n      - generic: YOUR BATTLEFIELD\n      - article \"Mountain, Battlefield, tapped\":\n        - generic: Mountain\n        - generic: BATTLEFIELD\n      - generic: Mountain · Tapped\n    - generic: \"Y\"\n    - text: You\n    - generic: YOUR SIDE\n    - generic: \"20\"\n    - generic: LIFE\n    - region \"Your visible hand\":\n      - generic: YOUR HAND · 0 SHOWN\n      - generic: \"Graveyard: Lightning Bolt\"\n      - paragraph: No cards shown in hand\n  - heading \"No current decision\" [level=2]\n  - button \"Finish test inspection\"\n  - button \"Abort test\"\n  - paragraph: Finish ends the fixture. Any subsequent harness concession is cleanup, not browser gameplay. Closing this page does not pass or answer an input."
+    },
+    {
+      "event": "clicked-harness-finish",
+      "at": "2026-10-19T22:44:36.124Z"
+    },
+    {
+      "event": "after-harness-finish",
+      "at": "2026-10-19T22:44:36.185Z",
+      "dom": "- main:\n  - generic: FORGE ADVENTURE WEB\n  - heading \"Manual Bolt\" [level=1]\n  - status: Forge verified the Bolt sequence. Inspect the final frame, then finish this test.\n  - paragraph: Cast Bolt → target Opponent → activate Mountain → pass priority. Forge decides the result. This is a bounded test, not a complete encounter.\n  - region \"Original Forge battlefield\":\n    - generic: O\n    - text: Opponent\n    - generic: OPPOSING PLAYER\n    - generic: \"17\"\n    - generic: LIFE\n    - region \"Opponent battlefield\":\n      - generic: OPPONENT BATTLEFIELD\n      - paragraph: No battlefield cards shown\n    - region \"Stack and spell being cast\":\n      - generic: Turn 1 · Main phase 1\n      - generic: Engine frame r5\n      - generic: STACK\n      - generic: \"0\"\n      - paragraph: The stack is empty\n    - region \"Your battlefield\":\n      - generic: YOUR BATTLEFIELD\n      - article \"Mountain, Battlefield, tapped\":\n        - generic: Mountain\n        - generic: BATTLEFIELD\n      - generic: Mountain · Tapped\n    - generic: \"Y\"\n    - text: You\n    - generic: YOUR SIDE\n    - generic: \"20\"\n    - generic: LIFE\n    - region \"Your visible hand\":\n      - generic: YOUR HAND · 0 SHOWN\n      - generic: \"Graveyard: Lightning Bolt\"\n      - paragraph: No cards shown in hand\n  - heading \"No current decision\" [level=2]\n  - button \"Finish test inspection\" [disabled]\n  - button \"Abort test\"\n  - paragraph: Finish ends the fixture. Any subsequent harness concession is cleanup, not browser gameplay. Closing this page does not pass or answer an input."
+    },
+    {
+      "event": "final-read-only-observation",
+      "at": "2026-10-19T22:44:52.241Z",
+      "dom": "- main:\n  - generic: FORGE ADVENTURE WEB\n  - heading \"Manual Bolt\" [level=1]\n  - status: Test finish requested. Final frame retained. Harness cleanup is separate from browser gameplay; check the owner-side PASS/shutdown report.\n  - paragraph: Cast Bolt → target Opponent → activate Mountain → pass priority. Forge decides the result. This is a bounded test, not a complete encounter.\n  - region \"Original Forge battlefield\":\n    - generic: O\n    - text: Opponent\n    - generic: OPPOSING PLAYER\n    - generic: \"17\"\n    - generic: LIFE\n    - region \"Opponent battlefield\":\n      - generic: OPPONENT BATTLEFIELD\n      - paragraph: No battlefield cards shown\n    - region \"Stack and spell being cast\":\n      - generic: Turn 1 · Main phase 1\n      - generic: Engine frame r5\n      - generic: STACK\n      - generic: \"0\"\n      - paragraph: The stack is empty\n    - region \"Your battlefield\":\n      - generic: YOUR BATTLEFIELD\n      - article \"Mountain, Battlefield, tapped\":\n        - generic: Mountain\n        - generic: BATTLEFIELD\n      - generic: Mountain · Tapped\n    - generic: \"Y\"\n    - text: You\n    - generic: YOUR SIDE\n    - generic: \"20\"\n    - generic: LIFE\n    - region \"Your visible hand\":\n      - generic: YOUR HAND · 0 SHOWN\n      - generic: \"Graveyard: Lightning Bolt\"\n      - paragraph: No cards shown in hand\n  - heading \"No current decision\" [level=2]\n  - button \"Finish test inspection\" [disabled]\n  - button \"Abort test\" [disabled]\n  - paragraph: Finish ends the fixture. Any subsequent harness concession is cleanup, not browser gameplay. Closing this page does not pass or answer an input.",
+      "screenshotAfterFinish": "Capture failed once; not retried"
+    }
+  ],
+  "capabilityPublished": false
+}

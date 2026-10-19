@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-10-19T15:42:03 PDT" name="Surefire suite" finished-at="2026-10-19T15:44:37 PDT" duration-ms="153507">
+    <groups>
+    </groups>
+    <test started-at="2026-10-19T15:42:03 PDT" name="Surefire test" finished-at="2026-10-19T15:44:37 PDT" duration-ms="153507">
+      <class name="forge.net.embedded.ProtocolGuiGameInProcessTest">
+        <test-method signature="manualBrowserBoltSession()[pri:0, instance:forge.net.embedded.ProtocolGuiGameInProcessTest@459e9125]" started-at="2026-10-19T15:42:04 PDT" name="manualBrowserBoltSession" finished-at="2026-10-19T15:44:37 PDT" duration-ms="153453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manualBrowserBoltSession -->
+      </class> <!-- forge.net.embedded.ProtocolGuiGameInProcessTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

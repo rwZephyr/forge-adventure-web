@@ -1,5 +1,11 @@
 # Manual browser Bolt: implementation and offline verification
 
+This report preserves the original offline verification at `bc0d5257`.
+The subsequently authorized **single** browser session is recorded separately
+in [loopback results](browser-bolt-loopback-results.md); original logs below
+are unchanged. Statements about no listener execution describe this historical
+offline phase.
+
 Waypoint's bounded integration direction is implemented on
 `codex/browser-bolt-manual`, based on PR #24 at
 `55164bf309e1a0e38997c206762dc3a1c2635d81`. Existing drafts stay unmerged.
