@@ -1,0 +1,282 @@
+{
+  "ownerLocalDate": "2026-10-18",
+  "reviewedSourceCommit": "ffd0ec1e4a3c79026aa3aa03f726e8d6be5a5b83",
+  "basePr": 22,
+  "updatedPr": 23,
+  "runCount": 2,
+  "normalization": "UTF-8 without BOM and LF; trailing whitespace/terminal blank lines removed. Workspace/JDK paths use <WORKSPACE>/<JDK17>; XML hostname uses HOST-REDACTED; VM lambda suffixes normalized. Entire Surefire system-properties blocks omitted for privacy. No log event, test outcome, exception, time or process-exit result otherwise omitted. Private originals, raw cache inventories and passive process-observer script retained outside Git. Empty files remain zero bytes.",
+  "transforms": {
+    "cleanup-success-new/console.log": {
+      "originalSha256": "8d9e87005746031a94213fab0344fc7f7befa338944fc3d5ebb44646fb5e821e",
+      "originalBytes": 42808,
+      "publishedSha256": "28fa9f223d404cdfeabc5005912f3ac762cdd789d33cfa3179601f44aa020c0d",
+      "publishedBytes": 40768,
+      "surefireSystemPropertiesOmitted": false,
+      "hostnamePlaceholderApplied": false
+    },
+    "cleanup-success-new/result.json": {
+      "originalSha256": "1d8f19573616b5014ed9488ba83c1728a4a823b4251dad55d305783c8a3d4163",
+      "originalBytes": 1184,
+      "publishedSha256": "17674da1a20d7a17053c990c766f8b34c3958c66a8f432bc6944f07e0d4a0487",
+      "publishedBytes": 1134,
+      "surefireSystemPropertiesOmitted": false,
+      "hostnamePlaceholderApplied": false
+    },
+    "cleanup-success-new/reports/forge.net.embedded.ProtocolGuiGameInProcessTest.txt": {
+      "originalSha256": "412c561c1028bdb9c0b5fc035f50e0a2003346d4cada18b73ef8a8eb9ad38f7d",
+      "originalBytes": 348,
+      "publishedSha256": "941e005352f4b2b79f2a436c2995a25fac2ac88479f647022119622d1e6530bd",
+      "publishedBytes": 344,
+      "surefireSystemPropertiesOmitted": false,
+      "hostnamePlaceholderApplied": false
+    },
+    "cleanup-success-new/reports/TEST-forge.net.embedded.ProtocolGuiGameInProcessTest.xml": {
+      "originalSha256": "1955a7ff8bb6846a344f6b8b9d7d9e3c198ec70ff075255d5318349dd6f47191",
+      "originalBytes": 59308,
+      "publishedSha256": "2c043e0b256aee507bc381d5a1e2959be88d4bb74b0a009cfad163f89e317fc9",
+      "publishedBytes": 26785,
+      "surefireSystemPropertiesOmitted": true,
+      "hostnamePlaceholderApplied": false
+    },
+    "cleanup-success-new/reports/testng-results.xml": {
+      "originalSha256": "e7f522a59773a5f8b9092bda6fc29e432e8f191003730ce488fb9b18a4b58cd3",
+      "originalBytes": 1076,
+      "publishedSha256": "bbb580b64f7fcd3fdcb54520e4522ef9523b945074951a8666c17f8cfbb86d89",
+      "publishedBytes": 1059,
+      "surefireSystemPropertiesOmitted": false,
+      "hostnamePlaceholderApplied": false
+    },
+    "cleanup-success-new/process-observation.json": {
+      "originalSha256": "a7fd70ec1a4a2d597dc0f899ce294aba4592950f589ab9d25eba58af3aae9476",
+      "originalBytes": 3143,
+      "publishedSha256": "010bba708cf0a80d38a3c9ad95bc0307b5232c19ed5048b377b8b4cd41d718a8",
+      "publishedBytes": 2761,
+      "surefireSystemPropertiesOmitted": false,
+      "hostnamePlaceholderApplied": false
+    },
+    "cleanup-success-new/process-before.json": {
+      "originalSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "originalBytes": 3,
+      "publishedSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "publishedBytes": 3,
+      "surefireSystemPropertiesOmitted": false,
+      "hostnamePlaceholderApplied": false
+    },
+    "cleanup-success-new/launcher-stdout.log": {
+      "originalSha256": "1d8f19573616b5014ed9488ba83c1728a4a823b4251dad55d305783c8a3d4163",
+      "originalBytes": 1184,
+      "publishedSha256": "17674da1a20d7a17053c990c766f8b34c3958c66a8f432bc6944f07e0d4a0487",
+      "publishedBytes": 1134,
+      "surefireSystemPropertiesOmitted": false,
+      "hostnamePlaceholderApplied": false
+    },
+    "cleanup-success-new/launcher-stderr.log": {
+      "originalSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "originalBytes": 0,
+      "publishedSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "publishedBytes": 0,
+      "surefireSystemPropertiesOmitted": false,
+      "hostnamePlaceholderApplied": false
+    },
+    "cleanup-unanswered-new/console.log": {
+      "originalSha256": "d4bb09a878f952e560d3c3d7435aa5551b47dc4b217f64c841f3ea01bf7aa52e",
+      "originalBytes": 39765,
+      "publishedSha256": "afc70f52f975bee279a2b34d5f5c3a0d24418299aa44c6a6482a8b450acf5451",
+      "publishedBytes": 37773,
+      "surefireSystemPropertiesOmitted": false,
+      "hostnamePlaceholderApplied": false
+    },
+    "cleanup-unanswered-new/result.json": {
+      "originalSha256": "fab78dc41322e5d04521eeefe715e6e1328f9fc4ca4114f3abbd2c1157e61dfe",
+      "originalBytes": 1190,
+      "publishedSha256": "861363ef1ac5ea6e8df3db62a0aa1bc31a231a21a48365f228a242aae7803214",
+      "publishedBytes": 1140,
+      "surefireSystemPropertiesOmitted": false,
+      "hostnamePlaceholderApplied": false
+    },
+    "cleanup-unanswered-new/reports/forge.net.embedded.ProtocolGuiGameInProcessTest.txt": {
+      "originalSha256": "69e194f5c7a4a318d739879042c7955cdeb85d696b705ef9d7334839971bb9b6",
+      "originalBytes": 348,
+      "publishedSha256": "1bb212229e42e461d849395bdad87e5012746f7b022f3b22f3e83256bedbe5b5",
+      "publishedBytes": 344,
+      "surefireSystemPropertiesOmitted": false,
+      "hostnamePlaceholderApplied": false
+    },
+    "cleanup-unanswered-new/reports/TEST-forge.net.embedded.ProtocolGuiGameInProcessTest.xml": {
+      "originalSha256": "94174d39841fe6fa5d9b0f8c8eb2dc4e7f860548c440313e41ed12939b3e6d34",
+      "originalBytes": 56284,
+      "publishedSha256": "f03ff665001b04f35c2968a95cc5c137b1e430ca58fe7cc4e7590ff47645b720",
+      "publishedBytes": 23787,
+      "surefireSystemPropertiesOmitted": true,
+      "hostnamePlaceholderApplied": false
+    },
+    "cleanup-unanswered-new/reports/testng-results.xml": {
+      "originalSha256": "9306060812bc9b29de4962041e2210a557133db89b2019db2cb3a902a2d6edb7",
+      "originalBytes": 1106,
+      "publishedSha256": "cf3fb3afadc627606a7a511508b38f01c491d04a06f6feab9bec5df64ed94bb0",
+      "publishedBytes": 1089,
+      "surefireSystemPropertiesOmitted": false,
+      "hostnamePlaceholderApplied": false
+    },
+    "cleanup-unanswered-new/process-observation.json": {
+      "originalSha256": "784291401e05bc11a16adffb224625067560e0f4d34775870b1809ef77c05969",
+      "originalBytes": 3163,
+      "publishedSha256": "1f164add4c4f0046a163a939bfa51c1b8772890f08942e8d63abe96a700cb3b6",
+      "publishedBytes": 2781,
+      "surefireSystemPropertiesOmitted": false,
+      "hostnamePlaceholderApplied": false
+    },
+    "cleanup-unanswered-new/process-before.json": {
+      "originalSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "originalBytes": 3,
+      "publishedSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "publishedBytes": 3,
+      "surefireSystemPropertiesOmitted": false,
+      "hostnamePlaceholderApplied": false
+    },
+    "cleanup-unanswered-new/launcher-stdout.log": {
+      "originalSha256": "fab78dc41322e5d04521eeefe715e6e1328f9fc4ca4114f3abbd2c1157e61dfe",
+      "originalBytes": 1190,
+      "publishedSha256": "861363ef1ac5ea6e8df3db62a0aa1bc31a231a21a48365f228a242aae7803214",
+      "publishedBytes": 1140,
+      "surefireSystemPropertiesOmitted": false,
+      "hostnamePlaceholderApplied": false
+    },
+    "cleanup-unanswered-new/launcher-stderr.log": {
+      "originalSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "originalBytes": 0,
+      "publishedSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "publishedBytes": 0,
+      "surefireSystemPropertiesOmitted": false,
+      "hostnamePlaceholderApplied": false
+    },
+    "after-a-gate.json": {
+      "originalSha256": "3b39330359b345cbd556e3e5a7ea5c3602ea63974aac90f03ca53b83dfdbf502",
+      "originalBytes": 321,
+      "publishedSha256": "5fe5cd478713a197c89d3417ccf959598eba93ec52c7522f6879d39f7e65052a",
+      "publishedBytes": 311,
+      "surefireSystemPropertiesOmitted": false,
+      "hostnamePlaceholderApplied": false
+    },
+    "after-b-gate.json": {
+      "originalSha256": "b644ca9c97414c3bc96b3a3b64859258dea0431cca8cacfcc2a031235565d7eb",
+      "originalBytes": 481,
+      "publishedSha256": "29d3881beb6d5da26a710c621fe68754bbb1fa4a8f3a8723ad41bd726e629133",
+      "publishedBytes": 463,
+      "surefireSystemPropertiesOmitted": false,
+      "hostnamePlaceholderApplied": false
+    }
+  },
+  "files": [
+    {
+      "path": "after-a-gate.json",
+      "sha256": "5fe5cd478713a197c89d3417ccf959598eba93ec52c7522f6879d39f7e65052a",
+      "bytes": 311
+    },
+    {
+      "path": "after-b-gate.json",
+      "sha256": "29d3881beb6d5da26a710c621fe68754bbb1fa4a8f3a8723ad41bd726e629133",
+      "bytes": 463
+    },
+    {
+      "path": "integrity.json",
+      "sha256": "0f1daacd73d0135dd4744b445b45d853b1dfc53123a3d57eb9a38549989a5d9d",
+      "bytes": 3444
+    },
+    {
+      "path": "runs.json",
+      "sha256": "b1d45300a408d9e1b2bbed99bc5d191a59f55227bfdd903d60e4566066a51680",
+      "bytes": 2385
+    },
+    {
+      "path": "cleanup-success-new/console.log",
+      "sha256": "28fa9f223d404cdfeabc5005912f3ac762cdd789d33cfa3179601f44aa020c0d",
+      "bytes": 40768
+    },
+    {
+      "path": "cleanup-success-new/launcher-stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "cleanup-success-new/launcher-stdout.log",
+      "sha256": "17674da1a20d7a17053c990c766f8b34c3958c66a8f432bc6944f07e0d4a0487",
+      "bytes": 1134
+    },
+    {
+      "path": "cleanup-success-new/process-before.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    {
+      "path": "cleanup-success-new/process-observation.json",
+      "sha256": "010bba708cf0a80d38a3c9ad95bc0307b5232c19ed5048b377b8b4cd41d718a8",
+      "bytes": 2761
+    },
+    {
+      "path": "cleanup-success-new/result.json",
+      "sha256": "17674da1a20d7a17053c990c766f8b34c3958c66a8f432bc6944f07e0d4a0487",
+      "bytes": 1134
+    },
+    {
+      "path": "cleanup-success-new/reports/forge.net.embedded.ProtocolGuiGameInProcessTest.txt",
+      "sha256": "941e005352f4b2b79f2a436c2995a25fac2ac88479f647022119622d1e6530bd",
+      "bytes": 344
+    },
+    {
+      "path": "cleanup-success-new/reports/TEST-forge.net.embedded.ProtocolGuiGameInProcessTest.xml",
+      "sha256": "2c043e0b256aee507bc381d5a1e2959be88d4bb74b0a009cfad163f89e317fc9",
+      "bytes": 26785
+    },
+    {
+      "path": "cleanup-success-new/reports/testng-results.xml",
+      "sha256": "bbb580b64f7fcd3fdcb54520e4522ef9523b945074951a8666c17f8cfbb86d89",
+      "bytes": 1059
+    },
+    {
+      "path": "cleanup-unanswered-new/console.log",
+      "sha256": "afc70f52f975bee279a2b34d5f5c3a0d24418299aa44c6a6482a8b450acf5451",
+      "bytes": 37773
+    },
+    {
+      "path": "cleanup-unanswered-new/launcher-stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "cleanup-unanswered-new/launcher-stdout.log",
+      "sha256": "861363ef1ac5ea6e8df3db62a0aa1bc31a231a21a48365f228a242aae7803214",
+      "bytes": 1140
+    },
+    {
+      "path": "cleanup-unanswered-new/process-before.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    {
+      "path": "cleanup-unanswered-new/process-observation.json",
+      "sha256": "1f164add4c4f0046a163a939bfa51c1b8772890f08942e8d63abe96a700cb3b6",
+      "bytes": 2781
+    },
+    {
+      "path": "cleanup-unanswered-new/result.json",
+      "sha256": "861363ef1ac5ea6e8df3db62a0aa1bc31a231a21a48365f228a242aae7803214",
+      "bytes": 1140
+    },
+    {
+      "path": "cleanup-unanswered-new/reports/forge.net.embedded.ProtocolGuiGameInProcessTest.txt",
+      "sha256": "1bb212229e42e461d849395bdad87e5012746f7b022f3b22f3e83256bedbe5b5",
+      "bytes": 344
+    },
+    {
+      "path": "cleanup-unanswered-new/reports/TEST-forge.net.embedded.ProtocolGuiGameInProcessTest.xml",
+      "sha256": "f03ff665001b04f35c2968a95cc5c137b1e430ca58fe7cc4e7590ff47645b720",
+      "bytes": 23787
+    },
+    {
+      "path": "cleanup-unanswered-new/reports/testng-results.xml",
+      "sha256": "cf3fb3afadc627606a7a511508b38f01c491d04a06f6feab9bec5df64ed94bb0",
+      "bytes": 1089
+    }
+  ]
+}
