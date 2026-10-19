@@ -1,0 +1,12 @@
+{
+  "run": "A",
+  "gatePassed": true,
+  "cacheFiles": 2393,
+  "cacheChanges": [],
+  "protectedChanges": [],
+  "environmentRestored": true,
+  "testSourceSha256": "ca1c9cc44601a7a46255dd791b9d6d4e2335d49d4f7ea0907680b8a45ed08ed7",
+  "cleanupConcedeCount": 1,
+  "graphOverlapCount": 0,
+  "processesExited": true
+}

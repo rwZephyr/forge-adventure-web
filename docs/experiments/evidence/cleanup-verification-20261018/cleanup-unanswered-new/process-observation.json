@@ -1,0 +1,42 @@
+{
+  "case": "unanswered",
+  "label": "cleanup-unanswered-new",
+  "runner": "offline Maven / Surefire fork",
+  "startedUtc": "2026-10-19T03:46:54.8713523Z",
+  "finishedObservingUtc": "2026-10-19T03:47:59.7039965Z",
+  "elapsedSeconds": 64.8326442,
+  "launcherPid": 73104,
+  "launcherHasExited": true,
+  "launcherExitCode": 0,
+  "monitorDeadlineSeconds": 240,
+  "monitorExpired": false,
+  "pollIntervalMilliseconds": 150,
+  "javaBefore": [],
+  "observedOwnedJava": [
+    {
+      "pid": 82328,
+      "parentPid": 66608,
+      "role": "maven",
+      "commandLine": "\"<JDK17>\\bin\\java.exe\"       --enable-native-access=ALL-UNNAMED          -classpath \"<WORKSPACE>\\.local-tools\\apache-maven-3.9.16\\boot\\plexus-classworlds-2.11.0.jar\"   \"-Dclassworlds.conf=<WORKSPACE>\\.local-tools\\apache-maven-3.9.16\\bin\\m2.conf\"   \"-Dmaven.home=<WORKSPACE>\\.local-tools\\apache-maven-3.9.16\"   \"-Dlibrary.jansi.path=<WORKSPACE>\\.local-tools\\apache-maven-3.9.16\\lib\\jansi-native\"   \"-Dmaven.multiModuleProjectDirectory=<WORKSPACE>\"   org.codehaus.plexus.classworlds.launcher.Launcher  -o -B -ntp -T1 -Dmaven.repo.local=<WORKSPACE>/.local-tools/m2 -pl forge-gui-desktop -am -Dtest=forge.net.embedded.ProtocolGuiGameInProcessTest#browserDtoUnansweredPromptIsReported -Dsurefire.failIfNoSpecifiedTests=false -DfailIfNoTests=false test",
+      "createdUtc": "2026-10-19T03:46:55.4260270Z",
+      "firstObservedUtc": "2026-10-19T03:46:55.6905213Z",
+      "hasExited": true,
+      "exitCode": 0,
+      "exitedUtc": "2026-10-19T03:47:59.1511466Z"
+    },
+    {
+      "pid": 59912,
+      "parentPid": 11472,
+      "role": "surefire-fork",
+      "commandLine": "\"<JDK17>\\bin\\java\"  --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.time=ALL-UNNAMED --add-opens java.base/java.text=ALL-UNNAMED --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.util.regex=ALL-UNNAMED --add-opens java.base/java.util.stream=ALL-UNNAMED --add-opens java.base/java.lang.reflect=ALL-UNNAMED --add-opens java.desktop/javax.imageio.spi=ALL-UNNAMED -jar <WORKSPACE>\\.local-tools\\stage-c-dto-20261018\\cleanup-unanswered-new\\tmp\\surefire4356951092518759809\\surefirebooter-20261018204737472_3.jar <WORKSPACE>\\.local-tools\\stage-c-dto-20261018\\cleanup-unanswered-new\\tmp\\surefire4356951092518759809 2026-10-18T20-47-05_077-jvmRun1 surefire-20261018204737472_1tmp surefire_0-20261018204737472_2tmp",
+      "createdUtc": "2026-10-19T03:47:37.5709310Z",
+      "firstObservedUtc": "2026-10-19T03:47:37.8761334Z",
+      "hasExited": true,
+      "exitCode": 0,
+      "exitedUtc": "2026-10-19T03:47:59.0736317Z"
+    }
+  ],
+  "javaAfter": [],
+  "remainingOwnedJava": [],
+  "note": "Passive process observation only. No process termination or test instrumentation."
+}

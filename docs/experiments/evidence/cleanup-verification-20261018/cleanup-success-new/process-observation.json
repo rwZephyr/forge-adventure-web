@@ -1,0 +1,42 @@
+{
+  "case": "capture",
+  "label": "cleanup-success-new",
+  "runner": "offline Maven / Surefire fork",
+  "startedUtc": "2026-10-19T03:45:08.9539471Z",
+  "finishedObservingUtc": "2026-10-19T03:46:16.5900923Z",
+  "elapsedSeconds": 67.6361452,
+  "launcherPid": 77088,
+  "launcherHasExited": true,
+  "launcherExitCode": 0,
+  "monitorDeadlineSeconds": 240,
+  "monitorExpired": false,
+  "pollIntervalMilliseconds": 150,
+  "javaBefore": [],
+  "observedOwnedJava": [
+    {
+      "pid": 77300,
+      "parentPid": 81752,
+      "role": "surefire-fork",
+      "commandLine": "\"<JDK17>\\bin\\java\"  --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.time=ALL-UNNAMED --add-opens java.base/java.text=ALL-UNNAMED --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.util.regex=ALL-UNNAMED --add-opens java.base/java.util.stream=ALL-UNNAMED --add-opens java.base/java.lang.reflect=ALL-UNNAMED --add-opens java.desktop/javax.imageio.spi=ALL-UNNAMED -jar <WORKSPACE>\\.local-tools\\stage-c-dto-20261018\\cleanup-success-new\\tmp\\surefire14346628089295208477\\surefirebooter-20261018204553580_3.jar <WORKSPACE>\\.local-tools\\stage-c-dto-20261018\\cleanup-success-new\\tmp\\surefire14346628089295208477 2026-10-18T20-45-18_599-jvmRun1 surefire-20261018204553580_1tmp surefire_0-20261018204553580_2tmp",
+      "createdUtc": "2026-10-19T03:45:53.6772510Z",
+      "firstObservedUtc": "2026-10-19T03:45:53.7959141Z",
+      "hasExited": true,
+      "exitCode": 0,
+      "exitedUtc": "2026-10-19T03:46:15.8323229Z"
+    },
+    {
+      "pid": 70888,
+      "parentPid": 81440,
+      "role": "maven",
+      "commandLine": "\"<JDK17>\\bin\\java.exe\"       --enable-native-access=ALL-UNNAMED          -classpath \"<WORKSPACE>\\.local-tools\\apache-maven-3.9.16\\boot\\plexus-classworlds-2.11.0.jar\"   \"-Dclassworlds.conf=<WORKSPACE>\\.local-tools\\apache-maven-3.9.16\\bin\\m2.conf\"   \"-Dmaven.home=<WORKSPACE>\\.local-tools\\apache-maven-3.9.16\"   \"-Dlibrary.jansi.path=<WORKSPACE>\\.local-tools\\apache-maven-3.9.16\\lib\\jansi-native\"   \"-Dmaven.multiModuleProjectDirectory=<WORKSPACE>\"   org.codehaus.plexus.classworlds.launcher.Launcher  -o -B -ntp -T1 -Dmaven.repo.local=<WORKSPACE>/.local-tools/m2 -pl forge-gui-desktop -am -Dtest=forge.net.embedded.ProtocolGuiGameInProcessTest#humanBoltCaptureCheckpoint -Dsurefire.failIfNoSpecifiedTests=false -DfailIfNoTests=false test",
+      "createdUtc": "2026-10-19T03:45:09.5593650Z",
+      "firstObservedUtc": "2026-10-19T03:45:09.7633226Z",
+      "hasExited": true,
+      "exitCode": 0,
+      "exitedUtc": "2026-10-19T03:46:15.9101931Z"
+    }
+  ],
+  "javaAfter": [],
+  "remainingOwnedJava": [],
+  "note": "Passive process observation only. No process termination or test instrumentation."
+}

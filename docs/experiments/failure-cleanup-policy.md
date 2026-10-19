@@ -1,10 +1,13 @@
-# Test-only failure cleanup: review gate
+# Test-only failure cleanup: policy and scoped verification
 
 2026-10-18. Stacked on [PR #22](https://github.com/rwZephyr/forge-adventure-web/pull/22)
 at `a8c7e0dde0882b27770844500a50253ede39fd90`, following
 [Marvin's review](https://github.com/rwZephyr/forge-adventure-web/pull/22#issuecomment-6258639071).
-**Source proposal only: no compilation, tests or new runtime results.** The three
-successful DTO runs, regressions and original failed gate remain unchanged.
+The initial publication was a source-only review gate. Following Marvin's
+GO WITH CONDITIONS and separate owner authorization, [exactly two scoped
+Maven/Surefire verification runs passed](cleanup-verification-results.md) on
+the unchanged reviewed test source. The three successful DTO runs, regressions
+and original failed gate remain unchanged; none was repeated.
 
 Only `ProtocolGuiGameInProcessTest.java` changes among executable files. No
 production synchronization, observer, launcher, dependency or fixture-content
@@ -81,7 +84,8 @@ Admission is the linearization point for the **start of** a clean termination
 action. A later error cannot undo an already-admitted controller call. It
 revokes subsequent work and remains observable; this policy does not promise
 to interrupt or roll back Forge inside `concede()`. This distinction, including
-the admission/call boundary, requires Marvin's review before execution.
+the admission/call boundary, was explicitly accepted in Marvin's source review.
+The two authorized runs do not force a post-admission race.
 
 ## Bounded isolated-process exit
 
@@ -90,7 +94,8 @@ join, interrupt or shut down Forge workers, and does not call `System.exit`
 from a test. An abandoned match must end with its **isolated test JVM**, not be
 reused for another scenario in that JVM. Any future failure-path verification
 must select one case in the existing isolated launcher, rather than the
-multi-method regression selection. No run is authorized by this document.
+multi-method regression selection. The two separately authorized checks are
+recorded in the results; any additional run needs separate authorization.
 
 Source/bytecode inspection, without executing tests, establishes:
 
@@ -102,10 +107,13 @@ Source/bytecode inspection, without executing tests, establishes:
   be released to let the runner terminate its process.
 - The cached TestNG 7.10.2 `org.testng.TestNG.main` calls `privateMain`, obtains
   `getStatus()` and calls `System.exit(status)` after reporting. Thus AWT EDT
-  survival alone cannot keep that normally completed CLI process alive.
+  survival alone cannot keep that normally completed CLI process alive. This
+  direct CLI path was **not run** in the two Maven checks.
 - The cached Surefire 3.1.2 `ForkedBooter` likewise uses `acknowledgedExit`, a
   last-ditch shutdown task and `System.exit` after provider completion. Its
   process-exit code is not a substitute for the TestNG result reported to Maven.
+  **This forked runner/provider path is the one actually used and observed in
+  the two verification runs**, not `TestNG.main`.
 
 These existing runner exit paths preserve TestNG's owner failure/report and
 end all threads in the child JVM. No new process is launched by this correction.
@@ -119,14 +127,15 @@ the failed JVM. No such supervisor is implemented here.
 
 ## Verification and next gate
 
-Performed only source/diff review, `git diff --check`, unchanged-file comparison
-and read-only `javap -c -p` inspection of the two **already cached** runner
-classes. No Maven, javac, test invocation, download, listener or environment
-change. PR #22's evidence and the historical observer reports are untouched.
+Before runtime authorization, checks were limited to source/diff review,
+`git diff --check`, unchanged-file comparison and read-only `javap -c -p`
+inspection of the two **already cached** runner classes. No tests were run
+during that source-review gate.
 
-**Unverified:** compilation and runtime behavior of this correction, including
-the revised success-only termination checkpoint. Existing positive evidence
-continues to describe PR #22's source, not this source. Next: Marvin's independent
-exception/interleaving/exit-policy review; then owner approval of a bounded
-failure-path verification if warranted. No positive-path cosmetic reruns or
-Safari work are included.
+The subsequently authorized [runtime evidence](cleanup-verification-results.md)
+now records one successful cleanup case and one passing unanswered-prompt
+negative control, each compiled offline and run in a separate Surefire fork.
+Source and cache hashes stayed unchanged. All other exception/interleaving
+claims remain source-reviewed rather than individually fault-injected.
+PR #22's evidence and historical observer reports are untouched. Next: review
+the two new results, then standby. No further run or Safari work is included.

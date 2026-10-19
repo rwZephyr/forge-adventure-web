@@ -2,13 +2,28 @@
 
 Last updated: 2026-10-18
 
-## Failure-cleanup correction awaiting code review
+## Failure-cleanup verification submitted for review
+- [Exactly two authorized offline Maven/Surefire runs](experiments/cleanup-verification-results.md)
+  passed sequentially on reviewed source `ffd0ec1e`: capture cleanup 1 PASS/exit
+  0, then unanswered-required-prompt negative control 1 PASS/exit 0. The internal
+  intentional failure reached the owner with the exact artifact/cause checks;
+  no gameplay was credited, no cleanup concession or graph overlap occurred.
+- Run A had one success-only concession after its terminal coherent checkpoint.
+  Both separate Surefire forks exited 0; no Java process remained. Both six-key
+  restoration checks passed; 2,393 cache files and 17 protected source/config
+  hashes stayed unchanged. Test-policy source and launcher were not modified.
+- New sanitized evidence is separate from PR #22's historical records. The
+  three successful DTO runs and regressions were not repeated. This verifies
+  the Surefire fork/provider path, not direct TestNG-main execution. Next:
+  independent evidence review, then standby; no further implementation or runs.
+
+## Failure-cleanup source review (historical gate)
 - [Test-only policy](experiments/failure-cleanup-policy.md) removes the mutating
   failure `finally`, preserves the actual owner Throwable and gates clean
   termination on all success assertions plus the existing settled checkpoint.
   Atomic abort/termination arbitration revokes queued cleanup on prior failure;
   preference restoration cannot replace an unwinding primary.
-- **Uncompiled and untested by instruction.** PR #22's original failure, three
+- **At initial publication, uncompiled and untested by instruction.** PR #22's original failure, three
   successful DTO runs and regressions are preserved unchanged. Existing runner
   exit behavior was inspected without executing tests; no external watchdog is
   added or claimed. Next: Marvin's review before any separately approved run.
