@@ -1,0 +1,128 @@
+{
+  "kind": "non-launching synthetic helper checks",
+  "javaLaunched": false,
+  "launcherBodyExecuted": false,
+  "processMethods": "in-memory fake ScriptMethods only",
+  "checks": [
+    {
+      "name": "parse-Run-Lifecycle.ps1",
+      "passed": true
+    },
+    {
+      "name": "parse-LauncherSafety.ps1",
+      "passed": true
+    },
+    {
+      "name": "parse-Test-LauncherSafetyStatic.ps1",
+      "passed": true
+    },
+    {
+      "name": "unconditional-safety-gate-before-helper-load",
+      "passed": true
+    },
+    {
+      "name": "literal-main",
+      "passed": true
+    },
+    {
+      "name": "wrong-main-with-decoy-argument",
+      "passed": true
+    },
+    {
+      "name": "class-suffix",
+      "passed": true
+    },
+    {
+      "name": "wrong-class-case",
+      "passed": true
+    },
+    {
+      "name": "quoted-main",
+      "passed": true
+    },
+    {
+      "name": "argument-file",
+      "passed": true
+    },
+    {
+      "name": "jar-entry",
+      "passed": true
+    },
+    {
+      "name": "unclosed-quote",
+      "passed": true
+    },
+    {
+      "name": "quote-concatenation",
+      "passed": true
+    },
+    {
+      "name": "extra-application-argument",
+      "passed": true
+    },
+    {
+      "name": "option-and-classpath-decoys",
+      "passed": true
+    },
+    {
+      "name": "missing-command-line",
+      "passed": true
+    },
+    {
+      "name": "network-debug-transport-rejected",
+      "passed": true
+    },
+    {
+      "name": "later-observer-cleanup-after-child-failures",
+      "passed": true
+    },
+    {
+      "name": "failed-child-all-cleanup-steps-attempted",
+      "passed": true
+    },
+    {
+      "name": "both-process-records-retained",
+      "passed": true
+    },
+    {
+      "name": "false-wait-recorded",
+      "passed": true
+    },
+    {
+      "name": "kill-wait-dispose-secondary-errors",
+      "passed": true
+    },
+    {
+      "name": "restoration-and-evidence-continue",
+      "passed": true
+    },
+    {
+      "name": "original-error-record-identity",
+      "passed": true
+    },
+    {
+      "name": "original-exception-reaches-owner",
+      "passed": true
+    },
+    {
+      "name": "privacy-no-primary-message",
+      "passed": true
+    },
+    {
+      "name": "primary-and-secondary-stages-retained",
+      "passed": true
+    },
+    {
+      "name": "first-finally-failure-becomes-primary",
+      "passed": true
+    },
+    {
+      "name": "disposal-after-recording-failure",
+      "passed": true
+    },
+    {
+      "name": "recording-failure-retained",
+      "passed": true
+    }
+  ]
+}

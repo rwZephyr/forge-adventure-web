@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "label": "d3c-first-1",
+  "executedCommit": "f7e9e1fdba6ce56fa050c37f7f527c554e402e38",
+  "authorization": "https://github.com/rwZephyr/forge-adventure-web/pull/27#issuecomment-6275217598",
+  "outcome": "BLOCKED: launcher child executable/entry-point validation",
+  "privateOriginalsPreserved": true,
+  "normalization": [
+    "Repository absolute Windows/forward-slash path -> <REPO>",
+    "Generated lambda /0x address -> /<runtime-lambda-address> if present",
+    "CRLF/CR -> LF; UTF-8 without BOM",
+    "No result flags, hashes, process identities or errors changed"
+  ],
+  "privacyCheck": "Host/user/profile and credential-pattern checks passed; log contents inspected",
+  "supplementalProvenance": {
+    "launcher-failure.txt": "Post-run transcription of execution-tool exception and command exit, not a redirected raw stream",
+    "post-exit-observation.json": "Post-run read-only Get-Process checks of recorded owned PIDs"
+  },
+  "absentOutputs": [
+    "target-process.json",
+    "target.stdout.log",
+    "target.stderr.log",
+    "driver-result.json",
+    "ordering-result.json"
+  ],
+  "absentReason": "Launcher terminated owned processes before the observer recorded its successful connector-launch/target-PID checkpoint; the exact interruption point is unobserved. Empty ordering.jsonl preserved; missing outputs are not synthesized.",
+  "sourceSha256": {
+    "Run-Lifecycle.ps1": "b5aeddf863dc9149b6e7304a819fd38ee1871af8e2038aeacf2ff76892b3e625",
+    "src/experiment/BoltLifecycleMain.java": "d0bc9ea98e7b4094eee4b44b7b855645415146e32e476eed9b3430b3ed2582d5",
+    "src/experiment/BoltLifecycleObserver.java": "816b80d00624e67a82a7b3a204636a5923700ececea75727d38aad6a671c830c",
+    "src/experiment/LifecycleJson.java": "db6e5a601deb6e2a40ad3215111309cca55029af0eacc3c9f3fbf591e37dc462"
+  },
+  "files": [
+    {
+      "file": "compile.stdout.log",
+      "privateBytes": 2,
+      "privateSha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "publicBytes": 1,
+      "publicSha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "file": "compile.stderr.log",
+      "privateBytes": 274,
+      "privateSha256": "bc840d3381c787a27323dd6dce13f9301a372ef5aea34ee433a6bac4a3a677b4",
+      "publicBytes": 197,
+      "publicSha256": "e25c3f4c1bdefaa57bc9e5ae4bbf88f3116ecf9c061ee0186e2cb5afd1217bba"
+    },
+    {
+      "file": "observer.stdout.log",
+      "privateBytes": 2,
+      "privateSha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+      "publicBytes": 1,
+      "publicSha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "file": "observer.stderr.log",
+      "privateBytes": 274,
+      "privateSha256": "bc840d3381c787a27323dd6dce13f9301a372ef5aea34ee433a6bac4a3a677b4",
+      "publicBytes": 197,
+      "publicSha256": "e25c3f4c1bdefaa57bc9e5ae4bbf88f3116ecf9c061ee0186e2cb5afd1217bba"
+    },
+    {
+      "file": "ordering.jsonl",
+      "privateBytes": 0,
+      "privateSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "publicBytes": 0,
+      "publicSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "inputs.json",
+      "privateBytes": 10126,
+      "privateSha256": "61c632d7d834ef8229b00cc7d09bcef0443c58fdf97f40dbb230d64137088ade",
+      "publicBytes": 10011,
+      "publicSha256": "b29970545ad46e97f6400207e55043c913a8a943e5c036ad30ed189ffa0f6677"
+    },
+    {
+      "file": "integrity-before.json",
+      "privateBytes": 675452,
+      "privateSha256": "4d7ba83bbae84a2177f99a3c6f234ac648095fc4dccf0f3c16cc07ab37119399",
+      "publicBytes": 670966,
+      "publicSha256": "3197c327f2c70742fbd02219828a39b28242e1ad0fdeb0066e7e8c024f11cbf4"
+    },
+    {
+      "file": "integrity-after.json",
+      "privateBytes": 675452,
+      "privateSha256": "4d7ba83bbae84a2177f99a3c6f234ac648095fc4dccf0f3c16cc07ab37119399",
+      "publicBytes": 670966,
+      "publicSha256": "3197c327f2c70742fbd02219828a39b28242e1ad0fdeb0066e7e8c024f11cbf4"
+    },
+    {
+      "file": "result.json",
+      "privateBytes": 1639,
+      "privateSha256": "41feb8b502bd2bfc21cae277988c364f9fca8a17b302e800f1a6a9d3c629a1f3",
+      "publicBytes": 1567,
+      "publicSha256": "a93b060e68bdca5f06e1a12978fb931909d2c2c275205f40a808bab6854a1f6f"
+    },
+    {
+      "file": "post-exit-observation.json",
+      "privateBytes": 357,
+      "privateSha256": "69481294400ccdb898a101112d5a0f67805df467f7cb27f8a23690eff0cd9208",
+      "publicBytes": 339,
+      "publicSha256": "2a2cff0e8dc061ec93bfab0d855b4e74351ab7de23d1cb15f74f4b8f7ace6b80"
+    },
+    {
+      "file": "launcher-failure.txt",
+      "privateBytes": 604,
+      "privateSha256": "8490da29c1befd23d04d3a23efb00190e8f9ede08b2149bbf17ce84dcff40541",
+      "publicBytes": 603,
+      "publicSha256": "3bd9ed07f6dd3c252655a975f04e7400790a6add2e37b63e35224b49807422bb"
+    }
+  ]
+}

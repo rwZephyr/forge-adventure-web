@@ -1,0 +1,22 @@
+{
+  "kind": "static source and synthetic helper evidence only",
+  "baseCommit": "c43d0bba9a3e9c67a26af79a42824e6bf80359c8",
+  "lifecycleExecutions": 0,
+  "javaExecutions": 0,
+  "checks": 30,
+  "passed": 30,
+  "hardDeadlineEstablished": false,
+  "executionGate": "HOLD before helper load/CIM/process start",
+  "privateOriginalPreserved": true,
+  "normalization": "CRLF/CR to LF, UTF-8 without BOM; no content redacted",
+  "sourceSha256": {
+    "Run-Lifecycle.ps1": "af56cbb5575e598fee12be08b309f0592123bfe09d0f7d72c3031657286e237a",
+    "LauncherSafety.ps1": "7d14fe0c9f342db215f4ed9f1efa73f62ae2d2f9c524b14af81a9432c01f1363",
+    "Test-LauncherSafetyStatic.ps1": "2fad4a97b77568e27e8d0e5411419d75619924a1515e1ec91ed20abd5c87d356"
+  },
+  "file": "checks.json",
+  "privateBytes": 2660,
+  "privateSha256": "8c4e3b8a07a9002f815bc4bce333de380a55c2971facc1f48c8fff6f10258a04",
+  "publicBytes": 2532,
+  "publicSha256": "32698ebabe0c909197acdeb96ed8b759857b9c4e31e0fa184e8f4584bd544546"
+}

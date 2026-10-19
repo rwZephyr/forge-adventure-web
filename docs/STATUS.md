@@ -2,6 +2,51 @@
 
 Last updated: 2026-10-19
 
+## Stage D3c safety correction submitted; execution explicitly blocked
+- [Source-only safety correction](experiments/bolt-lifecycle-launcher-safety.md)
+  separates cleanup steps for every retained process, preserves the original
+  ErrorRecord/stage across cleanup and outer-finally failures, and verifies the
+  actual expected main-class argument with fail-closed restricted parsing.
+- Final 30/30 non-launching synthetic helper checks passed, including original
+  exception identity and continuation after kill/wait/disposal/recording errors.
+  Source and output hashes are published; Java and historical evidence unchanged.
+- CIM requests now have operation timeouts, but an unconditional supervision
+  bound is not established. The launcher unconditionally stops before helper
+  load/CIM/process startup. No bypass; fresh approval alone cannot remove it.
+- Next: Marvin's independent source review and separate review of the remaining
+  supervision boundary. No launcher execution, Java, compilation, installation,
+  networking or service changes. This amendment does not self-approve execution.
+
+## Stage D3c launcher amendment submitted without execution
+- [Source-only amendment](experiments/bolt-lifecycle-launcher-correction.md)
+  uses `[regex]::Escape` and records separate child executable/entry-point,
+  parent and creation-time diagnostics with bounded allowlisted summaries.
+  Ownership checks, deadlines and process cleanup remain fail-closed.
+- Actual historical source has one backslash before the dot and already matches
+  the dotted class in isolation, contrary to the review's two-backslash premise.
+  The original run's cause remains unresolved; no runtime fix is claimed.
+- Static PowerShell parsing and isolated regex expressions passed; no launcher
+  body, helper, Java process, compilation or witness run was executed. Historical
+  failure evidence and private originals are unchanged. Next: independent source
+  review; any fresh run needs separate explicit owner approval.
+
+## Stage D3c single attempt blocked at launch supervision
+- [Actual results and evidence](experiments/bolt-lifecycle-witness-results.md)
+  record the one owner-authorized attempt of #27 head `f7e9e1fd`, using the
+  exact documented command and fresh `d3c-first-1` label. Offline compilation
+  passed; the launcher then failed its child executable/entry-point guard.
+- Both owned Java processes were force-terminated and observed exited. The
+  lifecycle trace is empty; target logs/results were not produced. Actual CIM
+  comparison values were not retained, so the failing comparison/reason remains
+  unknown. No lifecycle, C1, payment or original-game result is claimed.
+- Six environment checks passed; 2,087 protected files and 2,393 cache files
+  unchanged. Sanitized retained logs, inventories, process results and explicit
+  missing-output/provenance notes are published. No source fix or retry occurred.
+- Next: independent review of this blocker and supervision diagnostics. Any
+  correction or fresh run requires separate approval. Witness source, original
+  Forge and historical evidence are unchanged; no projector, await-entry hold,
+  listener, dependency or service/network change. Stop for review.
+
 ## Stage D3b stopped at capture-ownership gate
 - [Phase 1 source audit](architecture/d3b-capture-ordering.md), stacked on #25,
   did not establish a reusable capture permit covering Game-0, EDT prompt work

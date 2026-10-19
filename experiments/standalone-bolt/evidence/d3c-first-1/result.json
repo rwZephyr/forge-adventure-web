@@ -1,0 +1,72 @@
+{
+  "label": "d3c-first-1",
+  "passed": false,
+  "startedUtc": "2026-10-19T19:17:34.9391603Z",
+  "endedUtc": "2026-10-19T19:17:38.7594192Z",
+  "environmentRestored": true,
+  "restorationPreflightPassed": true,
+  "environmentChecks": [
+    {
+      "name": "JAVA_HOME",
+      "exactMatch": true
+    },
+    {
+      "name": "JAVA_TOOL_OPTIONS",
+      "exactMatch": true
+    },
+    {
+      "name": "APPDATA",
+      "exactMatch": true
+    },
+    {
+      "name": "LOCALAPPDATA",
+      "exactMatch": true
+    },
+    {
+      "name": "TEMP",
+      "exactMatch": true
+    },
+    {
+      "name": "TMP",
+      "exactMatch": true
+    }
+  ],
+  "protectedFileCount": 2087,
+  "cacheFileCount": 2393,
+  "sourceChanges": [],
+  "cacheChanges": [],
+  "processes": [
+    {
+      "role": "compile",
+      "pid": 92840,
+      "parentPid": 86436,
+      "startedUtc": "2026-10-19T19:17:34.9786728Z",
+      "exitUtc": "2026-10-19T19:17:37.2289300Z",
+      "exitCode": 0,
+      "hasExited": true,
+      "timeout": false,
+      "forceTerminatedByLauncher": false
+    },
+    {
+      "role": "JDI-target",
+      "pid": 31148,
+      "parentPid": 93492,
+      "hasExited": true,
+      "forceTerminatedByLauncher": true,
+      "exitCode": -1
+    },
+    {
+      "role": "observer",
+      "pid": 93492,
+      "parentPid": 86436,
+      "startedUtc": "2026-10-19T19:17:37.2853145Z",
+      "exitUtc": "2026-10-19T19:17:37.6120109Z",
+      "exitCode": -1,
+      "hasExited": true,
+      "timeout": false,
+      "forceTerminatedByLauncher": true
+    }
+  ],
+  "singleRun": true,
+  "noGameplayCleanup": true
+}

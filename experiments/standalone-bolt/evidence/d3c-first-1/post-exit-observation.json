@@ -1,0 +1,18 @@
+{
+  "observedUtc": "2026-10-19T19:18:19.0416270Z",
+  "method": "Get-Process by the three recorded owned PIDs after launcher exit; no process mutation",
+  "checks": [
+    {
+      "pid": 92840,
+      "present": false
+    },
+    {
+      "pid": 31148,
+      "present": false
+    },
+    {
+      "pid": 93492,
+      "present": false
+    }
+  ]
+}
